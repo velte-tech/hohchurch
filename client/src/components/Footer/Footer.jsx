@@ -42,19 +42,19 @@ function Footer() {
 
         <div className="foot_content">
           <div className="content_links">
-            <Link to="/contact" className="links">
+            <Link to="/contact" className="links linkAnima">
               Contact Us <span className="arrow"></span>
             </Link>
-            <Link to="/contact" className="links">
+            <Link to="/jobs" className="links linkAnima">
               jobs <span className="arrow"></span>
             </Link>
-            <Link to="/contact" className="links">
+            <Link to="/give" target="_blank" className="links linkAnima">
               Give <span className="arrow"></span>
             </Link>
-            <Link to="/contact" className="links">
+            <Link to="/contact" className="links linkAnima">
               FLATIRONS COLLEGE <span className="arrow"></span>
             </Link>
-            <Link to="/contact" className="links">
+            <Link to="/contact" className="links linkAnima">
               FLATIRONS ACADEMY <span className="arrow"></span>
             </Link>
           </div>
