@@ -1,9 +1,10 @@
 :root {
   --primary_color: #b5192a;
-  --primary_light: rgba(181, 25, 42,0.5);
+  --primary_light: rgba(181, 25, 42, 0.5);
   --black_color: #161414;
   --grey_color: #292828;
   --transition: 300ms ease;
+  --head_font: 3rem;
 }
 
 * {
@@ -56,16 +57,21 @@ img {
 
 /* Link arrow animation */
 
-/* .linkAnima {
+.linkAnima {
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+  transition: var(--transition);
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
 
 .linkAnima:hover {
   color: var(--primary_color);
   transform: translateX(15px);
-  align-items: center;
+  display: flex;
 }
 
 .arrow {
@@ -153,5 +159,30 @@ a:hover .arrow {
 }
 
 .hover_overlay:hover:before {
+  transform: scaleY(1);
+}
+
+.hover_overlay_2 {
+  position: relative;
+  z-index: 1;
+  padding: 0.3rem 0;
+}
+
+.hover_overlay_2:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: var(--primary_color);
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: 300ms ease-in-out;
+  display: inline-block;
+}
+
+.hover_overlay_2:hover:before {
   transform: scaleY(1);
 }
