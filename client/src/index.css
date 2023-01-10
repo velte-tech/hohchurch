@@ -132,7 +132,6 @@ a:hover .arrow::after {
 }
 
 a:hover .arrow {
-  translate: 200px;
   transform: rotate(90deg) translateY(-8px);
 }
 

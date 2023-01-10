@@ -11,17 +11,50 @@ function Sliders() {
     const sliderRef = useRef(null)
 
   const settings = {
+    arrows: false,
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToShow: 4.1,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1204,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 3.7,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1104,
+        settings: {
+          slidesToShow: 3.4,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      }, 
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3.2,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      }, 
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2.8,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2.4,
           slidesToScroll: 1,
           infinite: true,
         },
@@ -45,7 +78,7 @@ function Sliders() {
   };
 
   return (
-    <div className="slider_wrapper" >
+    <div className="slider_wrapper">
       <div className="slider_top">
         <p> </p>
         <div className="buttons text_center">

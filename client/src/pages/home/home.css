@@ -25,6 +25,7 @@
 }
 
 #home .showcase_content .links {
+  display: flex;
   padding: 0.8rem 0;
 }
 
@@ -128,7 +129,6 @@
 
 .home_welcome .right .text a {
   display: flex;
-  align-items: flex-start;
   justify-content: flex-start;
   padding: 0;
   flex-direction: row;
