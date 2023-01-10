@@ -1,0 +1,443 @@
+/* nav 1 style */
+
+.header-navbar {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    /* position: fixed; */
+}
+
+.header-wrapper {
+    background: #fff;
+    padding: 1rem 0;
+    position: relative;
+    /* position: fixed; */
+    width: 100%;
+    margin: auto;
+}
+
+.header-wrapper .header {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85%;
+    margin: auto;
+    /* position: relative; */
+    /* position: fixed; */
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 600px) {
+
+.header-wrapper .header {
+    max-width: 95%;
+    margin: auto;
+}
+
+}
+
+.header-wrapper .header .header-1 .logo {
+    height: 4rem;
+    object-fit: contain;
+}
+
+
+.header-wrapper .header .header-2 .loc {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #B5192A;
+   -webkit-text-stroke: .4px #000;
+   margin-right: 2rem;
+}
+.header-wrapper .header .header-2 a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.header-wrapper .header .header-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-wrapper .header .header-2 .menu-icon {
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    position: relative;
+}
+
+.header-wrapper .header .header-2 .menu-icon .menu-1 {
+    background:#B5192A;
+    width: 2rem;
+    height: .3rem;
+    transform: rotate(0deg);
+    transition: all .4s;
+    display: block;
+    transition: all .4s ease-in;
+}
+
+.header-wrapper .header .header-2 .menu-icon .menu-3 {
+    background:#B5192A;
+    width: 2rem;
+    height: .35rem;
+    transform: rotate(0deg);
+    transition: all .4s;
+    display: block;
+    transition: all .4s ease-in;
+}
+
+
+/* removing last line */
+/* .header-wrapper .header .header-2 .menu-icon .menu-3 {
+    display: none;
+} */
+
+.header-wrapper .header .header-2 .menu-icon .menu-2 {
+    background:#B5192A;
+    width: 3rem;
+    height: .3rem;
+    margin: .3rem 0;
+    display: block;
+    transition: all .4s ease-in; 
+}
+
+.header-wrapper .header .header-2 .menu-icon a .menu-1 {
+    transition: all .2s ease-in;
+}
+
+.header-wrapper .header .header-2 .menu-icon a .menu-3 {
+    transition: all .2s ease-in;
+}
+
+.header-wrapper .header .header-2 .menu-icon a:hover .menu-1 {
+    width: 3rem;
+}
+
+.header-wrapper .header .header-2 .menu-icon a:hover .menu-3 {
+    width: 3rem;
+}
+
+/* .header-wrapper .header .header-2 .menu-icon .menu-1 {
+    transition: all .2s ease-in;
+}
+
+.header-wrapper .header .header-2 .menu-icon .menu-1:hover {
+    width: 3rem;
+} */
+
+/* nav 1 style end */
+
+.menu-overlay {
+    position: fixed;
+    /* background: rgb(59, 54, 54); */
+    background: url('../../Assets/images/nnav.jpg') no-repeat center center/cover;
+    /* background: #B5192A; */
+    height: 100vh;
+    width: 100%;
+    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+    z-index: 3;
+    /* top: -100%; */
+    top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-overlay {
+    height: 100vh;
+    width: 100%;
+    transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+}
+
+.hamBox {
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 5;
+}
+
+/* .hamBoxOpen {
+    background: blue;
+} */
+
+.header-wrapper .header .header-2 .menu-icon .menu-1.spin{
+    transform: rotate(135deg);
+    background: #fff;
+    width: 3rem;
+    height: .2rem;
+    z-index: 5;
+}
+
+
+.header-wrapper .header .header-2 .menu-icon .menu-2.spin {
+    transform: rotate(225deg);
+    background: #fff;
+    /* top: 1rem; */
+    width: 3rem;
+    margin: 0 0;
+    height: .2rem;
+    z-index: 5;
+}
+
+.header-wrapper .header .header-2 .menu-icon .menu-3.spin {
+    /* transform: rotate(525deg);
+    background: rgb(255, 255, 255); */
+    display: none;
+}
+
+
+/* overlay nav links  */
+
+/* ul removed */
+
+.nav-links {
+    position: absolute;
+    top: 30%;
+    margin: 0 0;
+    padding: 0 0;
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: baseline ;
+    width: 100%;
+    margin: auto;
+    /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-links {
+    position: absolute;
+    top: 20%;
+    flex-direction: column;
+    left: 40%;
+}
+
+}
+@media screen and (max-width: 600px) {
+    .nav-links {
+    position: absolute;
+    top: 20%;
+    flex-direction: column;
+    left: 25%;
+}
+}
+
+.nav-links .nav-item {
+    list-style: none;
+    position: relative;
+}
+
+
+.nav-links .nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    transition: all .2s cubic-bezier(0.16, 1, 0.3, 1);
+    /* margin: 0 1rem; */
+}
+
+@media screen and (max-width: 1000px) {
+   .nav-links .nav-item a {
+    margin-bottom: 2rem;
+}
+}
+
+.nav-links .nav-item a:hover {
+    color: #B5192A;
+}
+/* ul end */
+/* 
+.nav-item-wrapper:after {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: -10%;
+    width: auto;
+    height: 100%;
+    background: green;
+    margin: auto 10rem;
+} */
+
+
+/* adding shape */
+
+.nav-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    display: block;
+}
+.nav-item .hel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    display: block;
+}
+
+
+.nav-links .nav-item .hel {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    transition: all .2s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+}
+
+.nav-item a .shape {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background: #B5192A;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.nav-item .hel .shape {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background: #B5192A;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+/* adding shape */
+
+
+/* overlay nav links end */
+
+
+/* DROPDOWN */
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    /* margin: 0 1rem; */
+    width: 185px;
+}
+
+.neww {
+    width: 100px;
+    margin: 0 1rem;
+}
+
+.dropdown-menu a {
+    position: absolute;
+    left: 0;
+    /* background: rgb(31, 30, 30); */
+    /* color: #B5192A; */
+    color: rgb(55, 30, 220);
+    font-size: 10px;
+    top: calc(100% + .5rem);
+    padding: .8rem;
+    border-radius: .25rem;
+    /* display: none; */
+    padding-left: 0;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .1);
+    z-index: 999;
+    /* width: 100%; */
+    display: none;
+    /* transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out; */
+    transition: all .3s ease-in-out;
+    width: 185px;
+}
+
+@media screen and (max-width: 1000px) {
+.nav-item {
+    width: fit-content;
+}
+
+
+.dropdown-menu a {
+    width: fit-content;
+}
+
+}
+
+.dropdown-menu {
+     padding-top: 1rem;
+}
+
+.nav-item:hover .dropdown-menu a {
+    display: block;
+    transition: all .3s ease-in-out;
+}
+
+.men {
+    font-size: 22px;
+    margin-right: .5rem;
+}
+
+.zenn {
+    margin-left: 1rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+.men {
+    margin: 2rem 0;
+}
+}
+
+/* DROPDOWN */
+
+
+
+
+
+
+
+
+
+/* LOCATION BUTTON TOGGLE */
+.toggle--button {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #B5192A;
+    -webkit-text-stroke: .4px #000;
+    margin-right: 2rem;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.toggle--close {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #B5192A;
+    -webkit-text-stroke: .4px #000;
+    margin-right: 2rem;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+button {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #B5192A;
+    -webkit-text-stroke: .4px #000;
+    margin-right: 2rem;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* .close {
+    display: none;
+} */
+
+/* .open: {
+    display: none;
+} */
+
+
