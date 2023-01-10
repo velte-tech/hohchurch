@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Slides from "../../components/msgSlider/slider";
 
-
 // Images
 import churchImg from "../../assets/images/church.jpg";
 import outreachImg from "../../assets/images/outreach.jpg";
@@ -19,8 +18,6 @@ import messageImg3 from "../../assets/images/church2.jpg";
 import messageImg4 from "../../assets/images/church3.jpg";
 import messageImg5 from "../../assets/images/church4.jpg";
 import messageImg6 from "../../assets/images/church5.jpg";
-
-
 
 function Home() {
   useEffect(() => {
@@ -61,17 +58,14 @@ function Home() {
         {/* ======= WELCOME SECTION ======= */}
         <div className="home_welcome">
           <div className="left">
-            <p 
-            data-aos="fade-right"
-            data-aos-anchor-placement="top-bottom"
-            >
+            <p data-aos="fade-right" data-aos-anchor-placement="top-bottom">
               Welcome to HoH-church
-              </p>
+            </p>
             <p
-            data-aos="fade-right"
-            data-aos-delay="100"
-            // data-aos-offset="200"
-            data-aos-anchor-placement="center-bottom"
+              data-aos="fade-right"
+              data-aos-delay="100"
+              // data-aos-offset="200"
+              data-aos-anchor-placement="center-bottom"
             >
               We're a church that meets at five locations around Denver, and
               online. Join us for an in-person service or online
@@ -156,63 +150,62 @@ function Home() {
           </div>
         </div>
 
-                        {/* ======= MESSAGES SECTION ======= */}
+        {/* ======= MESSAGES SECTION ======= */}
         <div className="home_message">
           <div className="message_wrapper container text_center">
-          <div className="top">
-            <h2>PAST Messages</h2>
-            <p>Checkout out past sermons and services held by HOH-CHURCH.</p>
-          </div>
-
-          <div className="bottom">
-            <div className="up">
-            <div className="box">
-            <Link className="hover_overlay">
-            <img  src={messageImg1} alt="" />
-              </Link>            
-              <Link className="btn">VIEW</Link>
+            <div className="top">
+              <h2>PAST Messages</h2>
+              <p>Checkout out past sermons and services held by HOH-CHURCH.</p>
             </div>
 
-            <div className="box">
-            <Link className="hover_overlay">
-            <img src={messageImg2} alt="" />
-              </Link>
-              <Link className="btn">VIEW</Link>
-            </div>
-            <div className="box">
-            <Link className="hover_overlay">
-            <img src={messageImg3} alt="" />
-              </Link>
-              <Link className="btn">VIEW</Link>
-            </div>
-            </div>
+            <div className="bottom">
+              <div className="up">
+                <div className="box">
+                  <Link className="hover_overlay">
+                    <img src={messageImg1} alt="" />
+                  </Link>
+                  <Link className="btn">VIEW</Link>
+                </div>
 
-            <div className="down">
-            <div className="box">
-            <Link className="hover_overlay">
-            <img src={messageImg4} alt="" />
-              </Link>            
-              <Link className="btn">VIEW</Link>
+                <div className="box">
+                  <Link className="hover_overlay">
+                    <img src={messageImg2} alt="" />
+                  </Link>
+                  <Link className="btn">VIEW</Link>
+                </div>
+                <div className="box">
+                  <Link className="hover_overlay">
+                    <img src={messageImg3} alt="" />
+                  </Link>
+                  <Link className="btn">VIEW</Link>
+                </div>
+              </div>
+
+              <div className="down">
+                <div className="box">
+                  <Link className="hover_overlay">
+                    <img src={messageImg4} alt="" />
+                  </Link>
+                  <Link className="btn">VIEW</Link>
+                </div>
+                <div className="box">
+                  <Link className="hover_overlay">
+                    <img src={messageImg5} alt="" />
+                  </Link>
+                  <Link className="btn">VIEW</Link>
+                </div>
+                <div className="box">
+                  <Link className="hover_overlay">
+                    <img src={messageImg6} alt="" />
+                  </Link>
+                  <Link className="btn">VIEW</Link>
+                </div>
+              </div>
             </div>
-            <div className="box">
-              <Link className="hover_overlay">
-              <img src={messageImg5} alt="" />
-              </Link>
-              <Link className="btn">VIEW</Link>
-            </div>
-            <div className="box">
-              <Link className="hover_overlay">
-              <img src={messageImg6} alt="" />
-              </Link>
-              <Link className="btn">VIEW</Link>
-            </div>
-            </div>
-          </div>           
           </div>
         </div>
-        
+
         <Slides />
-        
       </section>
     </>
   );

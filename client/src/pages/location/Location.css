@@ -5,7 +5,7 @@ a {
 
 .location-page {
      background: #fff;
-     padding-top: 5rem;
+     padding-top: 3rem;
 }
 
 .loc-wrapper {
@@ -29,15 +29,18 @@ a {
 }
 
 .loc-wrapper .loc .loc-1 {
-    font-size: 70px;
+    font-size: var(--head_font);
     font-weight: 700;
 }
 
 
-.loc-wrapper .loc .loc-2 {
-    font-size: 30px;
+.loc-wrapper .loc .loc-2 a {
+    /* font-size: 16px; */
     font-weight: 700;
+    justify-content: flex-start;
+    padding: 0;
     padding-top: 1rem;
+    color: #000;
 }
 
 @media screen and (max-width: 801px) {
@@ -81,7 +84,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 
 @media screen and (max-width: 850px) {
@@ -104,7 +107,8 @@ a {
     justify-content: flex-start;
     border-bottom: #000 solid 2px;
     /* padding-bottom: 5rem; */
-    height: 550px;
+    /* height: 250px; */
+    /* min-height: 450px; */
     margin: 0 2rem;
 }
 
@@ -131,7 +135,8 @@ a {
 
 @media screen and (min-width: 851px) {
    .campus-wrapper .campus {
-    height: 850px;
+    /* height: 850px; */
+    /* height: 850px; */
     border-bottom: 100%;
     /* width: 90%;
     margin: auto; */
@@ -141,70 +146,74 @@ a {
 }
 
 .city {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     color: #000;
 }
 
 .city-1 {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     color: #000;
     margin-bottom: 2rem;
 }
 
-.broad {
-    font-size: 25px;
-    font-weight: 600;
+.broad-1 {
+    font-size: 20px;
+    font-weight: 700;
     color: #000;
-    margin: 1.5rem 0;
+    /* margin-bottom: 5rem; */
+    /* margin: 1.5rem 0; */
 }
 
 .add {
-    font-size: 25px;
+    /* font-size: 25px; */
     font-weight: 600;
     color: #B5192A;
     margin-top: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .add:hover {
-    background: #B5192A;
+    /* background: #B5192A; */
     color: #000;
     padding: 1.5rem auto;
 }
 
 .ser {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 600;
     color: #000;
     /* margin-top: 1.5rem; */
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 .day {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 600;
     color: #000;
-    /* margin-top: 1.5rem; */
-    margin-bottom: 1.5rem;
+    margin: 0.5rem 0;
+    /* margin-bottom: 1.5rem; */
 }
 
 .day-1 {
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 400;
     color: #000;
-    margin-bottom: 2rem;
+    margin-bottom: 0.75rem;
+    /* margin-bottom: 2rem; */
 }
 
 .info a {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
     color: #000;
-    /* margin-top: 1.5rem; */
+    justify-content: flex-start;
+      /* margin-top: 1.5rem; */
+      padding: 0;
     margin-bottom: 1.5rem;
 }
-
+/* 
 .info a:hover {
     color: #B5192A;
-}
+} */

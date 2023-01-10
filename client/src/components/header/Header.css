@@ -4,12 +4,13 @@
     width: 100%;
     margin: auto;
     position: relative;
-    /* position: fixed; */
+    position: fixed;
+    z-index: 7;
 }
 
 .header-wrapper {
     background: #fff;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     position: relative;
     /* position: fixed; */
     width: 100%;
@@ -83,7 +84,7 @@
 .header-wrapper .header .header-2 .menu-icon .menu-3 {
     background:#B5192A;
     width: 2rem;
-    height: .35rem;
+    height: .3rem;
     transform: rotate(0deg);
     transition: all .4s;
     display: block;
@@ -134,7 +135,7 @@
 .menu-overlay {
     position: fixed;
     /* background: rgb(59, 54, 54); */
-    background: url('../../Assets/images/nnav.jpg') no-repeat center center/cover;
+    background: url('../../assets/images/nnav.jpg') no-repeat center center/cover;
     /* background: #B5192A; */
     height: 100vh;
     width: 100%;
@@ -198,7 +199,7 @@
 
 .nav-links {
     position: absolute;
-    top: 30%;
+    top: 25%;
     margin: 0 0;
     padding: 0 0;
     display: flex;
