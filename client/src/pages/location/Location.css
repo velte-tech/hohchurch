@@ -1,0 +1,210 @@
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.location-page {
+     background: #fff;
+     padding-top: 5rem;
+}
+
+.loc-wrapper {
+    /* background: #fff; */
+    max-width: 85%;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 600px) {
+.loc-wrapper {
+    max-width: 90%;
+    margin: auto;
+}
+}
+
+.loc-wrapper .loc {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.loc-wrapper .loc .loc-1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+
+.loc-wrapper .loc .loc-2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+@media screen and (max-width: 801px) {
+ .loc-wrapper .loc .loc-1 {
+    font-size: 50px;
+    text-align: center;
+} 
+.loc-wrapper .loc .loc-2 {
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 600px) {
+ .loc-wrapper .loc .loc-1 {
+    font-size: 30px;
+}
+
+.loc-wrapper .loc .loc-2 {
+    font-size: 25px;
+    padding-top: 1rem;
+}
+}
+
+.container {
+    max-width: 85%;
+    margin: auto;
+}
+
+/* campus styles */
+
+
+.campus-wrapper  {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-bottom: 5rem;
+    }
+
+.campus-wrapper .campus-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 7rem;
+}
+
+@media screen and (max-width: 850px) {
+.campus-wrapper .campus-1 {
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    max-width: 100%;
+    margin: auto;
+}
+.campus-wrapper {
+    margin-top: 7rem;
+}
+
+}
+
+.campus-wrapper .campus {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: #000 solid 2px;
+    /* padding-bottom: 5rem; */
+    height: 550px;
+    margin: 0 2rem;
+}
+
+@media screen and (max-width: 850px) {
+    .campus-wrapper .campus {
+    height: 750px;
+    border-bottom: 100%;
+    width: 100%;
+    margin: auto;
+}
+}
+
+
+@media screen and (max-width: 850px) {
+   .campus-wrapper .campus {
+    height: 600px;
+    border-bottom: 100%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 9rem;
+}
+
+}
+
+@media screen and (min-width: 851px) {
+   .campus-wrapper .campus {
+    height: 850px;
+    border-bottom: 100%;
+    /* width: 90%;
+    margin: auto; */
+    margin-bottom: 1rem;
+}
+
+}
+
+.city {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+}
+
+.city-1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.broad {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    margin: 1.5rem 0;
+}
+
+.add {
+    font-size: 25px;
+    font-weight: 600;
+    color: #B5192A;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.add:hover {
+    background: #B5192A;
+    color: #000;
+    padding: 1.5rem auto;
+}
+
+.ser {
+    font-size: 35px;
+    font-weight: 600;
+    color: #000;
+    /* margin-top: 1.5rem; */
+    margin-bottom: 1.5rem;
+}
+
+.day {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    /* margin-top: 1.5rem; */
+    margin-bottom: 1.5rem;
+}
+
+.day-1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.info a {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    /* margin-top: 1.5rem; */
+    margin-bottom: 1.5rem;
+}
+
+.info a:hover {
+    color: #B5192A;
+}
