@@ -139,10 +139,17 @@ function Header() {
             </li>
 
             <li className="nav-item zenn">
-              <NavLink to="/About" onClick={() => setNavOpen(!navOpen)}>
+
+              {/* <NavLink to="/About" onClick={() => setNavOpen(!navOpen)}>
+                <div className="shape"></div>
+                <span className="men">ABOUT</span>
+              </NavLink> */}
+
+              <NavLink>
                 <div className="shape"></div>
                 <span className="men">ABOUT</span>
               </NavLink>
+
               <div className="nav-item-wrapper"></div>
 
               {/* drop-dowm */}
