@@ -433,12 +433,15 @@ button {
     cursor: pointer;
 }
 
-/* .close {
-    display: none;
-} */
-
-/* .open: {
-    display: none;
-} */
 
 
+.btn-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconn {
+    margin-right: .5rem;
+    color: #B5192A;
+}
