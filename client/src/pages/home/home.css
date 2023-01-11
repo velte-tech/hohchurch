@@ -248,40 +248,6 @@
   padding: 0 2px;
 }
 
-.home_message .bottom .up .btn,
-.home_message .bottom .down .btn {
-  position: relative;
-  color: #000;
-  font-weight: 500;
-  padding: 0.75rem 2.3rem;
-  margin: 0.75rem;
-  border: 1px solid var(--primary_color);
-  transition: transform var(--transition);
-}
-
-.home_message .bottom .up .btn:hover,
-.home_message .bottom .down .btn:hover {
-  color: #fff;
-}
-
-.home_message .bottom .up .btn::before,
-.home_message .bottom .down .btn::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  padding: 0.75rem 2.3rem;
-  background-color: var(--primary_color);
-  transform-origin: top;
-  transition: transform var(--transition);
-  transform: scaleX(0);
-}
-
-.home_message .bottom .up .btn:hover::before,
-.home_message .bottom .down .btn:hover::before {
-  transform: scaleX(1);
-}
-
 @media screen and (max-width: 1200px) {
   .home_welcome .left {
     width: 100%;

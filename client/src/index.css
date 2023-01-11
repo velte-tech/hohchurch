@@ -41,6 +41,7 @@ p {
 }
 
 img {
+  object-fit: cover;
   display: block;
   width: 100%;
 }
@@ -184,4 +185,39 @@ a:hover .arrow {
 
 .hover_overlay_2:hover:before {
   transform: scaleY(1);
+}
+
+/* btn */
+.btn,
+.btn {
+  position: relative;
+  color: #000;
+  font-weight: 500;
+  padding: 0.75rem 2.3rem;
+  margin: 0.75rem;
+  border: 1px solid var(--primary_color);
+  transition: transform var(--transition);
+}
+
+.btn:hover,
+.btn:hover{
+  color: #fff;
+}
+
+.btn::before,
+ .btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 0.75rem 2.3rem;
+  background-color: var(--primary_color);
+  transform-origin: top;
+  transition: transform var(--transition);
+  transform: scaleX(0);
+}
+
+ .btn:hover::before,
+ .btn:focus::before {
+  transform: scaleX(1);
 }
