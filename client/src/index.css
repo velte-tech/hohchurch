@@ -52,6 +52,12 @@ img {
   margin: auto;
 }
 
+.container-2 {
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
 .text_center {
   text-align: center;
 }
@@ -187,6 +193,8 @@ a:hover .arrow {
   transform: scaleY(1);
 }
 
+
+
 /* btn */
 .btn,
 .btn {
@@ -220,4 +228,15 @@ a:hover .arrow {
  .btn:hover::before,
  .btn:focus::before {
   transform: scaleX(1);
+}
+
+
+h1 {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+  font-size: 2rem;
+}
 }

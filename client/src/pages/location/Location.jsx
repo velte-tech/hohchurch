@@ -1,6 +1,5 @@
 import React from "react";
 import "./Location.css";
-// import logo from '../../Assets/images/logo.png';
 import { Link } from "react-router-dom";
 
 const Location = () => {
@@ -36,7 +35,7 @@ const Location = () => {
               <div className="day">Sunday: 9 & 11 AM</div>
 
               <div className="info">
-                <Link to="/" className="links linkAnima">
+                <Link to="/Aurora" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
                 </Link>
               </div>
@@ -58,7 +57,7 @@ const Location = () => {
               <div className="day">Sunday: 9, 11 AM, & 6: 30 PM</div>
 
               <div className="info">
-                <Link to="/" className="links linkAnima">
+                <Link to="/Denver" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
                 </Link>
               </div>
@@ -80,7 +79,7 @@ const Location = () => {
               <div className="day">Sunday: 9 & 11 AM</div>
 
               <div className="info">
-                <Link to="/" className="links linkAnima">
+                <Link to="/Lafayette" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
                 </Link>
               </div>
@@ -104,7 +103,7 @@ const Location = () => {
               <div className="day">Sunday: 9 & 11 AM</div>
 
               <div className="info">
-                <Link to="/" className="links linkAnima">
+                <Link to="/Longmont" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
                 </Link>
               </div>
@@ -128,7 +127,7 @@ const Location = () => {
               <div className="day-1">* ASL Interpreted Service</div>
 
               <div className="info">
-                <Link to="/" className="links linkAnima">
+                <Link to="/West" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
                 </Link>
               </div>
