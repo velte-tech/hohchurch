@@ -1,13 +1,23 @@
 import { React } from 'react'
 import './About_HOH.css'
 import { Link } from 'react-router-dom'
+import { useEffect } from "react";
+import AOS from "aos";
 
 
 
 
 const About_HOH = () => {
 
-  
+  useEffect(() => {
+    AOS.init({
+        duration: 500,
+        once: false,
+        mirror: true,
+      },
+      []
+    );
+  });
 
   return (
     
@@ -179,7 +189,11 @@ const About_HOH = () => {
         <div className='kg-hh-wrapper'>
           <div className='kg-hh container'>
 
-            <div className='kg'>
+            <div className='kg'
+              data-aos="fade-right"
+                data-aos-delay="300"
+                data-aos-anchor-placement="center-bottom"
+            >
               <div className='kg-1'>
                 KINGDOM ALLIANCE MENTORSHIP
               </div>
@@ -196,7 +210,11 @@ const About_HOH = () => {
               </div>
             </div>
 
-            <div className='hh'>
+            <div className='hh'
+              data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-anchor-placement="center-bottom"
+            >
               <div className='hh-1'>
                 HIGHWAY HOUSING
               </div>

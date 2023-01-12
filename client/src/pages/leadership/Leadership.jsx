@@ -6,13 +6,23 @@ import l1 from "../../assets/images/l1.webp";
 import con from "../../assets/images/con.jpg";
 
 import { MdMailOutline } from 'react-icons/md';
+import { useEffect } from "react";
+import AOS from "aos";
 
 
 
 
 const Leadership = () => {
 
-
+   useEffect(() => {
+     AOS.init({
+         duration: 500,
+         once: false,
+         mirror: true,
+       },
+       []
+     );
+   });
 
   return (
 
@@ -218,7 +228,11 @@ const Leadership = () => {
 
         <div className='alone-wrapper'>
           <div className='alone'>
-            <div className='alone-1'>
+            <div className='alone-1'
+                data-aos="fade-right"
+                data-aos-delay="300"
+                data-aos-anchor-placement="center-bottom"
+            >
 
               <div className='lone-1'>
                 WE DON'T DO THIS <br></br> ALONE
@@ -241,11 +255,19 @@ const Leadership = () => {
 
             <div className='alone-2'>
 
-              <div className='pic'>
+              <div className='pic'
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <img src={con} alt="" />
               </div>
 
-              <div className='shape-2 slide-3'>
+              <div className='shape-2'
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-anchor-placement="center-bottom"
+              >
               </div>
 
             </div>
