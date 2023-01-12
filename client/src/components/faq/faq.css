@@ -44,18 +44,30 @@
   align-items: center;
   justify-content: center;
   padding: 2px;
+  transition: transform var(--transition);
+}
+
+.faq_wrapper .question .activated {
+  transform: rotate(180deg);
 }
 
 .faq_wrapper .question p {
   transition: color var(--transition);
 }
 
-.faq_wrapper .question:hover p {
+.faq_wrapper .question:hover p, 
+.faq_wrapper .question:focus p {
   color: var(--primary_color);
 }
 
 .faq_wrapper .accordion .dropdown {
-  transition: 300ms ease-in;
+  transition: 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.faq_wrapper .accordion .dropdown.drop {
+  transform: translateY(-50%);
+  height: 0;
 }
 
 .faq_wrapper .accordion .dropdown p {
