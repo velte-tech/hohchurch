@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Leadership.css'
 // Images
 import l1 from "../../assets/images/l1.webp";
-import con from "../../assets/images/con.jpg";
+import naruto from "../../assets/images/naruto.jpg";
 
 import { MdMailOutline } from 'react-icons/md';
 import { useEffect } from "react";
@@ -230,8 +230,7 @@ const Leadership = () => {
           <div className='alone'>
             <div className='alone-1'
                 data-aos="fade-right"
-                data-aos-delay="300"
-                data-aos-anchor-placement="center-bottom"
+                
             >
 
               <div className='lone-1'>
@@ -257,16 +256,15 @@ const Leadership = () => {
 
               <div className='pic'
                 data-aos="fade-left"
-                data-aos-delay="300"
-                data-aos-anchor-placement="center-bottom"
+                
               >
-                <img src={con} alt="" />
+                <img src={naruto} alt="" />
               </div>
 
               <div className='shape-2'
                 data-aos="fade-left"
-                data-aos-delay="300"
-                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="400"
+                
               >
               </div>
 

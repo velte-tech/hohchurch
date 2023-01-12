@@ -191,8 +191,7 @@ const About_HOH = () => {
 
             <div className='kg'
               data-aos="fade-right"
-                data-aos-delay="300"
-                data-aos-anchor-placement="center-bottom"
+                
             >
               <div className='kg-1'>
                 KINGDOM ALLIANCE MENTORSHIP
@@ -212,8 +211,7 @@ const About_HOH = () => {
 
             <div className='hh'
               data-aos="fade-left"
-                data-aos-delay="300"
-                data-aos-anchor-placement="center-bottom"
+                
             >
               <div className='hh-1'>
                 HIGHWAY HOUSING

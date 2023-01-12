@@ -50,6 +50,8 @@ a {
 } 
 .loc-wrapper .loc .loc-2 {
     text-align: center;
+    max-width: 80%;
+    margin: auto;
 }
 }
 
