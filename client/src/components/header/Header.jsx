@@ -22,7 +22,7 @@ function Header() {
 
   const [navOpen, setNavOpen] = useState(false);
 
-  const [locOpen, setLocOpen] = useState(false);
+  // const [locOpen, setLocOpen] = useState(false);
 
   const [state, setState] = useState("home");
 
@@ -52,7 +52,7 @@ function Header() {
               >
                 <span className="btn-name">
                   <CgClose className="iconn" />
-                  CLOSE
+                  <span className="loc-n1">CLOSE</span>
                 </span>
               </button>
 
@@ -64,7 +64,7 @@ function Header() {
               >
                 <span className="btn-name">
                   <ImLocation className="iconn" />
-                  LOCATION & TIMES
+                  <span className="loc-n1">LOCATION & TIMES</span>
                 </span>
               </button>
             </div>
@@ -140,15 +140,12 @@ function Header() {
 
             <li className="nav-item zenn">
 
-              {/* <NavLink to="/About" onClick={() => setNavOpen(!navOpen)}>
-                <div className="shape"></div>
+              {/* <NavLink> */}
+                <div className="hel">
+                  <div className="shape"></div>
                 <span className="men">ABOUT</span>
-              </NavLink> */}
-
-              <NavLink>
-                <div className="shape"></div>
-                <span className="men">ABOUT</span>
-              </NavLink>
+                </div>
+              {/* </NavLink> */}
 
               <div className="nav-item-wrapper"></div>
 

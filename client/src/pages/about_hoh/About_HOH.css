@@ -201,8 +201,15 @@
     }
 }
 
-.hoo {
+.hoo a {
     color: var(--primary_color);
+}
+.hoo a:hover {
+    color: #000;
+}
+
+.hoo-1 .hoo:hover {
+    color: #000;
 }
 
 
@@ -317,9 +324,10 @@
     }
 
     .hh-3 .links {
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
-        /* font-size: 16px; */
+        padding: 0;
+        margin: 0;
     }
 }
 

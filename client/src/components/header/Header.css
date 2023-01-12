@@ -252,6 +252,13 @@
 }
 }
 
+
+@media screen and (max-width: 600x) {
+    .nav-links .nav-item a {
+        font-size: 20px;
+    }
+}
+
 .nav-links .nav-item a:hover {
     color: #B5192A;
 }
@@ -334,23 +341,19 @@
 .dropdown-menu a {
     position: absolute;
     left: 0;
-    /* background: rgb(31, 30, 30); */
-    /* color: #B5192A; */
     color: rgb(55, 30, 220);
     font-size: 10px;
     top: calc(100% + .5rem);
     padding: .8rem;
     border-radius: .25rem;
-    /* display: none; */
     padding-left: 0;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .1);
     z-index: 999;
-    /* width: 100%; */
-    display: none;
-    /* transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out; */
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
     transition: all .3s ease-in-out;
     width: 185px;
+    display: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -371,6 +374,17 @@
 
 .nav-item:hover .dropdown-menu a {
     display: block;
+    transition: all .3s ease-in-out;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.nav-item:hover {
+    display: block;
+    transition: all .3s ease-in-out;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
     transition: all .3s ease-in-out;
 }
 
@@ -393,7 +407,11 @@
 /* DROPDOWN */
 
 
-
+@media screen and (max-width: 600x) {
+    .nav-links .nav-item a {
+        font-size: 20px;
+    }
+}
 
 
 
@@ -444,4 +462,11 @@ button {
 .iconn {
     margin-right: .5rem;
     color: #B5192A;
+}
+
+
+@media screen and (max-width: 800px) {
+    .btn-name .loc-n1 {
+        display: none !important;
+    }
 }

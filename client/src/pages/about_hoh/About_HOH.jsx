@@ -1,8 +1,14 @@
-import React from 'react'
+import { React } from 'react'
 import './About_HOH.css'
 import { Link } from 'react-router-dom'
 
+
+
+
 const About_HOH = () => {
+
+  
+
   return (
     
     <div className='about-hoh-page'>
@@ -139,7 +145,8 @@ const About_HOH = () => {
           <div className='interested container'>
             <div className='line-1'></div>
             <div className='int'>
-              If you 're interested in who leads Flatirons, <br></br> learn more on our <span className='hoo'>Leadership page</span>
+              If you 're interested in who leads Flatirons, <br></br> learn more on our <span className='
+              hoo '><Link to='/Leadership' className='hover_overlay'>Leadership page</Link></span>
             </div>
             <div className='line-1'></div>
           </div>
@@ -179,7 +186,7 @@ const About_HOH = () => {
 
               <div className='kg-2'>
                 Baptism is the public demonstration by an individual acknowledging that they have been saved by grace through their faith in Jesus.This is depicted by being dunked underwater symbolizing the death, burial and resurrection in Jesus <span className='hoo'>(Romans 4: 9 - 12, Romans 6: 3 - 4).</span> For information on infant and child dedication, look out
-                for the next event on our <span className='hoo'>Kids page</span>
+                for the next event on our <Link to='/Kids' className='hover_overlay hoo-1'><span className='hoo'>Kids page</span></Link>.
               </div>
 
               <div className='kg-3'>

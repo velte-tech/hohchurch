@@ -1,4 +1,4 @@
-import React from 'react'
+import {React} from 'react'
 import { Link } from 'react-router-dom';
 import './Leadership.css'
 // Images
@@ -11,6 +11,9 @@ import { MdMailOutline } from 'react-icons/md';
 
 
 const Leadership = () => {
+
+
+
   return (
 
     <div className='leadership-page'>
@@ -152,7 +155,7 @@ const Leadership = () => {
                     <div className='lead-title'>
                       <span className='past'>Lead Pastor</span>
 
-                      <Link to='/Messages' className='over_overlay'>
+                      <Link to='/Messages' className='hover_overlay'>
                         <MdMailOutline />
                       </Link>
                     </div>
@@ -218,7 +221,7 @@ const Leadership = () => {
             <div className='alone-1'>
 
               <div className='lone-1'>
-                WE DON 'T DO THIS <br></br> ALONE
+                WE DON'T DO THIS <br></br> ALONE
               </div>
               <div className='lone-2'>
                 Just like a board of directors helps a company thrive, our Elders helps our staff make the best decisions
@@ -242,7 +245,7 @@ const Leadership = () => {
                 <img src={con} alt="" />
               </div>
 
-              <div className='shape-2'>
+              <div className='shape-2 slide-3'>
               </div>
 
             </div>
