@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import { faqData } from "./data";
 import "./faq.css";
 import { IconContext } from "react-icons";
-import {
-  MdOutlineKeyboardArrowDown,
-  MdOutlineKeyboardArrowUp,
-} from "react-icons/md";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 // const Dropdown = styled
 
@@ -35,15 +32,13 @@ function Faq() {
               <div className="accordion">
                 <div className="question" onClick={() => toggle(index) } key={index}>
                   <p>{item.question}</p>
-                  <span > {clicked === index ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowUp />}
+
+                    <span className={clicked === index ? "activated" :""}> <MdOutlineKeyboardArrowDown />
                   </span>
                 </div>
 
-                <div className="dropdown">
-                    {clicked === index ? (
+                <div className={clicked === index ? "dropdown" :" dropdown  drop"}>
                         <p>{item.answer}</p>
-
-                    ): null}
                 </div>
               </div>
             );
@@ -53,5 +48,6 @@ function Faq() {
     </section>
   );
 }
+
 
 export default Faq;

@@ -1,0 +1,60 @@
+.item {
+  border-bottom: 1px solid #a7a9ac;
+  cursor: pointer;
+}
+
+.item .title p {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.item a {
+  text-transform: uppercase;
+}
+
+.item .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0.5rem 0; */
+}
+
+.title span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.content {
+  height: 0;
+  padding-top: 0.5rem;
+  overflow: hidden;
+  transition: height ease 400ms ;
+}
+
+.content.animated {
+  height: 220px;
+}
+
+.content .edit {
+  color: #000;
+  margin: 0.5rem 0;
+  padding-left: 0;
+}
+
+.title span {
+  color: var(--primary_color);
+  font-size: 2rem;
+}
+
+.title span.rotate_icon {
+  transform: rotate(180deg);
+  transition: transform 300ms ease-in-out;
+}
+
+
+@media screen and (max-width:600px) {
+  .content.animated {
+    height: auto;
+  }
+}
