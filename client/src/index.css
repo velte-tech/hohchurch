@@ -46,6 +46,10 @@ img {
   width: 100%;
 }
 
+#super {
+  overflow: hidden;
+}
+
 .container {
   max-width: 85%;
   height: 100%;
@@ -67,6 +71,7 @@ img {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
+  width: fit-content;
 }
 
 .linkAnima:hover {
@@ -188,8 +193,7 @@ a:hover .arrow {
 }
 
 /* btn */
-.btn,
-.btn {
+.btn{
   position: relative;
   color: #000;
   font-weight: 500;

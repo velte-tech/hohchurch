@@ -1,0 +1,285 @@
+#lafayette_showcase {
+  background: url("../../assets/images/aurora.png") no-repeat center
+    center/cover;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+#lafayette_showcase h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+#lafayette_showcase .date {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#lafayette_showcase .laf_asl {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 1rem;
+}
+
+.about_welcome .left .asl_welcome {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ======= MINISTIES SECTION ======= */
+
+#ministries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  height: auto;
+}
+
+#ministries .ministries_wrapper {
+  width: 700px;
+}
+
+#ministries .ministries_wrapper h1 {
+  margin-bottom: 1.5rem;
+}
+
+
+/* ======= SERVE_DIVIDER SECTION ======= */
+#serve_divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 300px;
+  background-color: #000;
+  line-height: 1.3;
+}
+
+#serve_divider h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+#serve_divider .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+#serve_divider .bottom a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--primary_color);
+  text-transform: uppercase;
+}
+
+#serve_divider .bottom a:hover {
+  color: #fff;
+}
+
+/* ======= LAFAYETTE_EVENTS SECTION ======= */
+
+#lafayette_events .about_welcome {
+  flex-direction: column;
+}
+
+#lafayette_events .about_welcome h2 {
+  align-self: flex-start;
+  padding: 2rem 0;
+  width: 70%;
+  margin: auto;
+  font-size: var(--head_font);
+}
+
+#lafayette_events .about_welcome .right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.3rem;
+  padding: 0 1rem;
+  position: none;
+  position: relative;
+  right: -200px;
+  margin-bottom: 3rem;
+}
+
+#lafayette_events .about_welcome .right .card {
+  bottom: 0;
+}
+
+#lafayette_events .about_welcome .right .text {
+  bottom: 0;
+  height: 75%;
+}
+
+#lafayette_events .about_welcome .right .card:hover .text {
+  height: 85%;
+}
+
+#lafayette_events .about_welcome .right .text p:first-child {
+  margin-bottom: 7rem;
+  text-shadow: 1px 1px #000 ;
+}
+
+#lafayette_events .about_welcome .right .card:hover p:first-child {
+  margin-bottom: 0;
+}
+
+/* ======= LONGMONT_REACH SECTION ======= */
+#lafayette_reach {
+  min-height: 400px;
+  margin: 5rem 0;
+}
+
+#lafayette_reach .reach_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+  height: 100%;
+}
+
+#lafayette_reach .reach_wrapper .right {
+  max-width: 100%;
+  padding: 1rem 0;
+  margin-right: 4rem;
+}
+
+#lafayette_reach .reach_wrapper .right {
+  padding-left: 1rem;
+}
+
+#lafayette_reach .reach_wrapper .right p:nth-child(2) {
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+/* ====== About_Showcase ====== */
+
+@media screen and (max-width: 1140px) {
+  #lafayette_events .about_welcome h2 {
+    width: 80%;
+  }
+
+  #lafayette_events .about_welcome .right {
+    right: -100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #lafayette_events .about_welcome h2 {
+    width: 100%;
+  }
+
+  #lafayette_events .about_welcome .right {
+    right: 0;
+  }
+
+  #lafayette_events .about_welcome .right .text {
+    height: 60%;
+  }
+
+  #lafayette_events .about_welcome .right .card:hover .text {
+    height: 60%;
+  }
+
+  #lafayette_events .about_welcome .right .text p {
+    margin-bottom: 3rem;
+  }
+
+  #lafayette_events .about_welcome .right .text p:first-child {
+    margin-bottom: 0rem;
+  }
+
+   /* ======= LAFAYETTE_REACH SECTION ======= */
+   #lafayette_reach  {
+    margin-top: 3rem;
+    min-height: auto;
+}
+
+#lafayette_reach .reach_wrapper {
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    margin: auto;
+}
+
+
+#lafayette_reach .reach_wrapper .right {
+  padding: 1rem;
+  margin-right: 0;
+}
+
+}
+
+@media screen and (max-width:800px) {
+  #ministries .ministries_wrapper {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about_showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  #about_showcase .date {
+    font-size: 1.5rem;
+  }
+
+  #lafayette_events .about_welcome {
+    max-width: 100%;
+  }
+
+  #lafayette_events .about_welcome .left {
+    margin-top: 0;
+    padding: 1rem;
+  }
+
+  #lafayette_events .about_welcome .right .shape {
+    bottom: 20rem;
+    height: 160px;
+    margin-bottom: 2rem;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  #lafayette_events .about_welcome h2 {
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  #ministries .ministries_wrapper {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  #serve_divider h2 {
+    font-size: 2rem;
+  }
+  
+  #serve_divider .bottom {
+    gap: 3rem;
+  }
+
+  #serve_divider .bottom a {
+    font-size: 1.3rem;
+  }
+  
+}
