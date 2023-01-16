@@ -1,0 +1,401 @@
+.out-showcase {
+    background: url('../../assets/images/ottt.png') no-repeat center center/cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.out-case {
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+}
+
+.out-text {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+@media screen and (max-width: 600px) {
+    .out-showcase {
+    height: 70vh;
+}
+
+}
+
+
+/* local outreach  */
+
+.local-wrapper {
+    background: #fff;
+    margin: 5rem 0;
+}
+
+.local-case {
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.local-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.ll-1 {
+    color: var(--primary_color);
+    border-bottom: var(--primary_color) solid 2px;
+    padding: 0 .5rem;
+    margin-right: 4rem;
+}
+
+.ll-2 {
+    color: #000;
+    border-bottom: #000 solid 2px;
+    padding: 0 .5rem;
+}
+
+.local-2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    margin: 2rem 0;
+}
+
+.local-3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.local-4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.local-5 {
+    background-color: #000;
+    height: 2px;
+    width: 100%;
+}
+
+/* local outreach end */
+
+
+
+/* outreach groups sponsors */
+
+
+.out-spo-wrapper {
+    background: #fff;
+}
+
+.out-spo-case {
+    max-width: 85%;
+    margin: auto;
+}
+
+.out-sop-show {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.out-sop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sop-1 img {
+    object-fit: cover;
+}
+
+.sop-2 {
+    color: var(--primary_color);
+    font-size: 16px;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.sop-2:hover {
+    color: #000;
+}
+
+.sop-3 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.sop-4 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    margin: .6rem 0;
+}
+
+.out-sop .linkAnima {
+    justify-content: flex-start;
+    padding: 0;
+    color: #000;
+}
+.out-sop .linkAnima:hover {
+    color: var(--primary_color);
+}
+
+.sop-6 {
+    background: #000;
+    width: 100%;
+    height: 2px;
+    margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 755px) {
+    .out-sop-show {
+    flex-direction: column;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .out-sop {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    }
+
+    .out-spo-case {
+    max-width: 90%;
+    margin: auto;
+}
+}
+
+
+/* outreach groups sponsors end */
+
+
+/* wan to get connected */
+.to-get {
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    .to-get {
+    font-size: 1.6rem;
+}
+}
+/* wan to get connected end */
+
+
+/* connect forms */
+
+.form-wrapper {
+    background: #F2F2F2;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.form-case {
+    max-width: 99%;
+    margin: auto;
+}
+
+.form-connect {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.fmcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.fm-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #000;
+    width: 45%;
+}
+
+.i-name .star-form {
+    color: var(--primary_color);
+}
+
+.i-name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.i-form {
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    padding: .45rem .6rem;
+}
+
+.email-phone-wrapper {
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.email-phone {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* .em-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+} */
+
+
+.iii {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heya {
+    padding: .2rem .5rem;
+    border: #000 2px solid;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    height: 36px;
+}
+
+.ooo {
+    border-radius: 0 5px 5px 0;
+    width: 100%;
+    margin-right: 3rem;
+    height: 36px;
+}
+.ooo-2 {
+    border-radius: 0 5px 5px 0;
+    width: 100%;
+    margin-right: 3rem;
+    height: 36px;
+}
+
+.em-4 .btn {
+    color: var(--primary_color);
+    font-weight: 600;
+    padding: .5rem 1rem;
+}
+
+.em-4 .btn:hover {
+    color: #fff;
+}
+
+
+.em-3 {
+    margin-right: 2rem;
+}
+
+/* btn */
+/* btn */
+.btn,
+.btn {
+  position: relative;
+  color: #000;
+  font-weight: 500;
+  padding: 0.75rem 2.3rem;
+  margin: 0.75rem;
+  border: 1px solid var(--primary_color);
+  transition: transform var(--transition);
+  transition: all .3s ease-in;
+}
+
+.btn:hover,
+.btn:hover{
+  color: #fff;
+  background-color: var(--primary_color);
+}
+
+.btn::before,
+ .btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 0.75rem 2.3rem;
+  background-color: var(--primary_color);
+  transform-origin: top;
+  transition: transform var(--transition);
+  transform: scaleX(0);
+}
+
+ .btn:hover::before,
+ .btn:focus::before {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 800px) {
+    .fmcase {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fm-1 {
+        width: 85%;
+    }
+
+    .fm-1:nth-child(1) {
+        margin-bottom: 2rem;
+    }
+
+    .email-phone {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: center ;
+    }
+
+    .em-1, .em-2 {
+        width: 85%;
+        margin-right: 0;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .em-3, .em-4 {
+        margin-left: 10%;
+    }
+}
+
+/* connect forms end */
