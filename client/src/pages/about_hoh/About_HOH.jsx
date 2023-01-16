@@ -28,7 +28,7 @@ const About_HOH = () => {
         <div className='hoh-showcase'>
           <div className='hoh-text-showcase'>
             <div className='hoh-text'>
-              <h1>ABOUT HOH</h1>
+              <h1 className='focus-in-contract-bck'>ABOUT HOH</h1>
           </div>
           </div>
         </div>
@@ -41,7 +41,7 @@ const About_HOH = () => {
         <div className='vision-wrapper container'>
           <div className='vision'>
             <div className='line-1'></div>
-            <div className='tt-1'>
+            <div className='tt-1 focus-in-contract-bck'>
               OUR VISION
             </div>
 
@@ -64,7 +64,7 @@ const About_HOH = () => {
           <div className='values'>
             <div className='values-showcase'>
               <div className='values-text-case container'>
-                <div className='values-tt1'>
+                <div className='values-tt1 focus-in-contract-bck'>
                   OUR VALUES
                 </div>
                 
@@ -171,7 +171,7 @@ const About_HOH = () => {
           <div className='values'>
             <div className='values-showcase'>
               <div className='values-text-case container'>
-                <div className='values-tt1'>
+                <div className='values-tt1 focus-in-contract-bck'>
                   BAPTISM & COMMUNION
                 </div>
                 
@@ -193,7 +193,7 @@ const About_HOH = () => {
               data-aos="fade-right"
                 
             >
-              <div className='kg-1'>
+              <div className='kg-1 focus-in-contract-bck'>
                 KINGDOM ALLIANCE MENTORSHIP
               </div>
 
@@ -213,7 +213,7 @@ const About_HOH = () => {
               data-aos="fade-left"
                 
             >
-              <div className='hh-1'>
+              <div className='hh-1 focus-in-contract-bck'>
                 HIGHWAY HOUSING
               </div>
 

@@ -1,0 +1,351 @@
+.group-page {
+    background: #fff;
+}
+
+/* showcase */
+.group-showcase {
+    background: url('../../assets/images/churchteam.jpg') no-repeat center center/cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.group-case {
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+}
+
+.group-text {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+@media screen and (max-width: 600px) {
+    .group-showcase {
+    height: 70vh;
+}
+
+}
+
+/* showcase end */
+
+
+/* shape and map */
+
+
+.map-shape-wrapper {
+    margin-bottom: 40rem;
+}
+
+.map-shape {
+    position: relative;
+}
+
+.mp-sp .mp {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    top: -100px;
+    z-index: 2;
+}
+
+.mp-sp .mp img {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.mp img {
+    object-fit: contain;
+}
+
+.sp .map-shape {
+    right: 0;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+    height: 24rem;
+    width: 85%;
+    background-color: var(--primary_color);
+    position: absolute;
+    top: 170px;
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 951px) {
+        .map-shape-wrapper {
+        display: none;
+    }
+}
+
+
+/* shape and map end */
+
+
+
+/* search bar */
+
+
+.sh-wrapper {
+    background: #fff;
+    margin: 5rem 0;
+}
+
+.sh-wrapper .sh-case {
+    max-width: 70%;
+    margin: auto;
+}
+
+.sh-case .sh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #000 solid 2px;
+    padding: 0 .5rem;
+    padding-bottom: .8rem;
+    width: 100%;
+    position: relative;
+}
+
+.sh .sh-1 {
+    width: 80%;
+}
+
+.sh .sh-1 .sh-tt {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    width: 100%;
+}
+
+.sh .sh-1 .sh-tt:focus {
+    outline: none;
+}
+
+.sh .sh-1 .sh-tt::placeholder {
+    color: #000;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.sh .sh-2 {
+    width: 20%;
+    margin: auto;
+}
+
+.sh .sh-2 a {
+    color: var(--primary_color);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.sh .sh-2 a:hover {
+    color: #000;
+}
+
+/* search bar end */
+
+
+
+
+
+/* group heading */
+
+
+.group-head-wrapper {
+    max-width: 70%;
+    margin: auto;
+}
+
+.group-head-case {
+    margin: 4rem 0;
+}
+
+.group-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.g-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #000 solid 1px;
+    padding-bottom: .6rem;
+}
+
+.g-head2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.g-head2 .gh-3 {
+    margin-right: .4rem;
+}
+
+
+.g-head .gh-1 {
+    font-size: 16px;
+    color: #000;
+    margin-right: .9rem;
+}
+
+
+/* group heading end */
+
+
+.church-group-wrapper {
+    margin: 5rem 0;
+}
+
+.church-group-case {
+    max-width: 70%;
+    margin: auto;
+}
+
+.church-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+}
+
+
+.church-group .ch-gr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 1rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    .church-group {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .church-group .ch-gr {
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    .church-group-case {
+        max-width: 90%;
+        margin: auto;
+    }
+
+}
+
+.ch-gr-1  {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ch-gr-2  {
+    font-size: 16px;
+    font-weight: 500;
+    margin: .7rem 0;
+}
+
+.ch-gr-3  {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary_color);
+}
+
+.ch-gr-3:hover  {
+    color: #000;
+    cursor: pointer;
+}
+
+.ch-gr-4 .linkAnima  {
+    padding: 0;
+    justify-content: flex-start;
+    color: #000;
+    margin-top: .7rem;
+    margin-bottom: 2rem;
+}
+.ch-gr-4 .linkAnima:hover  {
+    color: var(--primary_color);
+}
+
+.ch-gr-5  {
+    background-color: #000;
+    height: 2px;
+    width: 110%;
+}
+
+
+
+
+/* individual church group */
+
+
+
+/* second group dropdown list */
+
+
+.group-dropdown-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+}
+
+.group-dropdown {
+    width: 400px; 
+    /* margin: 100px auto; */
+    position: relative;
+    user-select: none;
+}
+.group-dropdown .dropdown-btn {
+    padding: 10px;
+    background: #fcfcfc;
+    border-bottom: #000 solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.group-dropdown .dropdown-content {
+    position: absolute;
+    top: 110%;
+    padding: 10px ;
+    font-weight: 600;
+    font-size: 17px;
+    background: #fcfcfc;
+    border: #000 solid 1px;
+    color: #000; 
+    width: 100%;   
+}
+
+.group-dropdown .dropdown-content .dropdown-item {
+    padding: 10px; 
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.group-dropdown .dropdown-content .dropdown-item:hover {
+    background: var(--primary_color); 
+    color: #fff;
+}
+
+
+/* second group dropdown list end */
+

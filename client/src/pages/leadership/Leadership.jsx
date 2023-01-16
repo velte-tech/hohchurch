@@ -33,7 +33,7 @@ const Leadership = () => {
         <div className='leadership-showcase'>
           <div className='leadership-show'>
             <div className='leadership-text'>
-              <h1>LEADERSHIP</h1>
+              <h1 className='focus-in-contract-bck'>LEADERSHIP</h1>
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@ const Leadership = () => {
           <div className='values'>
             <div className='values-showcase'>
               <div className='values-text-case    container'>
-                <div className='values-tt1'>
+                < div className = 'values-tt1 focus-in-contract-bck' >
                   OUR ELDERS
                 </div>
                 
