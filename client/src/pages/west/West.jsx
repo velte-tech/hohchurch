@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./west.css";
+import "./West.css";
 import Search from '../../components/searchLocate/Search';
 import AboutSlideIn from '../../components/aboutSlideIn/AboutSlideIn';
 import westImg from "../../assets/images/westVolunteer.jpg";
