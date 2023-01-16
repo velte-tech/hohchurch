@@ -50,6 +50,8 @@ a {
 } 
 .loc-wrapper .loc .loc-2 {
     text-align: center;
+    max-width: 80%;
+    margin: auto;
 }
 }
 
@@ -96,7 +98,7 @@ a {
     margin: auto;
 }
 .campus-wrapper {
-    margin-top: 7rem;
+    margin-top: 3rem;
 }
 
 }
@@ -114,7 +116,7 @@ a {
 
 @media screen and (max-width: 850px) {
     .campus-wrapper .campus {
-    height: 750px;
+    /* height: 750px; */
     border-bottom: 100%;
     width: 100%;
     margin: auto;
@@ -124,11 +126,11 @@ a {
 
 @media screen and (max-width: 850px) {
    .campus-wrapper .campus {
-    height: 600px;
+    /* height: 600px; */
     border-bottom: 100%;
-    width: 90%;
+    width: 100%;
     margin: auto;
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
 }
 
 }
