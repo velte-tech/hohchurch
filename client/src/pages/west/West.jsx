@@ -28,7 +28,7 @@ const West = () => {
   return (
     <div id='super'>
     <section id="about_showcase">
-      <h1>DENVER</h1>
+      <h1>WEST</h1>
       <p className='date'>SUNDAY: 9 & 11AM</p>
       <Search />
     </section>

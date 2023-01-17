@@ -7,8 +7,12 @@
   text-transform: capitalize;
   font-size: 22px;
   font-weight: 600;
+  transition: color var(--transition);
 }
 
+.item .title:hover p{
+  color: var(--primary_color);
+}
 .item a {
   text-transform: uppercase;
 }
