@@ -36,9 +36,9 @@ const Lafayette = () => {
   return (
     <div id="super">
       <section id="lafayette_showcase">
-        <h1>LAFAYETTE</h1>
-        <p className="date">SUNDAY: 9* & 11 AM</p>
-        <p className="laf_asl">ASL INTERPRETATION service</p>
+        <h1 className="focus-in-contract-bck">LAFAYETTE</h1>
+        <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p>
+        <p className="laf_asl focus-in-contract-bck">ASL INTERPRETATION service</p>
         <Search />
       </section>
 

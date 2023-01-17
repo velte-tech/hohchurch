@@ -28,8 +28,8 @@ const West = () => {
   return (
     <div id='super'>
     <section id="about_showcase">
-      <h1>DENVER</h1>
-      <p className='date'>SUNDAY: 9 & 11AM</p>
+      <h1 className="focus-in-contract-bck">DENVER</h1>
+      <p className='date focus-in-contract-bck'>SUNDAY: 9 & 11AM</p>
       <Search />
     </section>
     <section>
