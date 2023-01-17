@@ -1,0 +1,68 @@
+#min-group-wrapper {
+    
+}
+
+.min-group {
+
+}
+
+
+/* showcase */
+
+.min-group-showcase {
+    background: url('../../assets/images/kidd.png') no-repeat center center/cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.min-group-case {
+    background: rgba(0, 0, 0, .2);
+    height: 100%;
+}
+
+.min-group-txt {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+@media screen and (max-width: 600px) {
+    .min-group-showcase {
+        height: 70vh;
+    }
+}
+
+/* showcase end */
+
+/* kids cards section */
+
+
+
+.kids-cards-wrapper {
+    background: #fff;
+    position: relative;
+}
+
+.kids-cards-case {
+    max-width: 80%;
+    margin: auto;
+}
+
+.kd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* kids cards section end */

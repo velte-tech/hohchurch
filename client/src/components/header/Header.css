@@ -8,24 +8,23 @@
     z-index: 7;
 }
 
+
+
 .header-wrapper {
-    background: #fff;
-    /* padding: 1rem 0; */
+    background: transparent;
     position: relative;
-    /* position: fixed; */
     width: 100%;
     margin: auto;
+    transition: all .2s ease-in;
 }
 
 .header-wrapper .header {
-    background: #fff;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 85%;
     margin: auto;
-    /* position: relative; */
-    /* position: fixed; */
     z-index: 2;
 }
 
@@ -122,13 +121,6 @@
     width: 3rem;
 }
 
-/* .header-wrapper .header .header-2 .menu-icon .menu-1 {
-    transition: all .2s ease-in;
-}
-
-.header-wrapper .header .header-2 .menu-icon .menu-1:hover {
-    width: 3rem;
-} */
 
 /* nav 1 style end */
 
@@ -247,7 +239,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-   .nav-links .nav-item a {
+   .nav-links .nav-item {
     margin-bottom: 2rem;
 }
 }
@@ -259,21 +251,15 @@
     }
 }
 
-.nav-links .nav-item a:hover {
+/* .nav-links .nav-item a:hover {
     color: #B5192A;
+} */
+
+.nav-item .neww .hover_overlay {
+    width: 100%;
 }
 /* ul end */
-/* 
-.nav-item-wrapper:after {
-    content: '';
-    position: absolute;
-    top: 120px;
-    left: -10%;
-    width: auto;
-    height: 100%;
-    background: green;
-    margin: auto 10rem;
-} */
+
 
 
 /* adding shape */
@@ -318,6 +304,10 @@
     width: 2.5rem;
 }
 
+.nav-item .men:hover {
+    color: #B5192A;
+}
+
 /* adding shape */
 
 
@@ -334,8 +324,12 @@
 }
 
 .neww {
-    width: 100px;
+    width: 115px;
     margin: 0 1rem;
+}
+
+.neww:hover {
+    color: #fff;
 }
 
 .dropdown-menu a {
@@ -426,7 +420,7 @@
     -webkit-text-stroke: .4px #000;
     margin-right: 2rem;
     border: none;
-    background: #fff;
+    /* background: #fff; */
     cursor: pointer;
 }
 
@@ -437,7 +431,8 @@
     -webkit-text-stroke: .4px #000;
     margin-right: 2rem;
     border: none;
-    background: #fff;
+    /* background: #fff; */
+    background: transparent;
     cursor: pointer;
 }
 button {
@@ -447,7 +442,8 @@ button {
     -webkit-text-stroke: .4px #000;
     margin-right: 2rem;
     border: none;
-    background: #fff;
+    /* background: #fff; */
+    background: transparent;
     cursor: pointer;
 }
 
@@ -470,3 +466,15 @@ button {
         display: none !important;
     }
 }
+
+
+
+/* transparent bg */
+
+.header-bg {
+    background: rgba(255, 255, 255, 0.7);
+    transition: all .2s ease-in;
+
+}
+
+/* transparent bg end */
