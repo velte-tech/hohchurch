@@ -1,0 +1,81 @@
+
+/* ======= LONGMONT_REACH SECTION ======= */
+#west_reach {
+    min-height: 400px;
+    margin-top: 5rem;
+  }
+  
+  #west_reach .reach_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+    height: 100%;
+  }
+
+  #west_reach .reach_wrapper .right {
+    max-width: 100%;
+    padding: 1rem 0;
+    margin-right: 4rem;
+  }
+  
+  #west_reach .reach_wrapper .right {
+    padding-left: 1rem;
+  }
+  
+  #west_reach .reach_wrapper .right p:nth-child(2) {
+    line-height: 1.3;
+    font-weight: 700;
+  }
+
+  /* ======= WEST_MINISTRIES SECTION ======= */
+#wester_ministries {
+  margin: 5rem 0;
+}
+
+#wester_ministries .about_welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#wester_ministries .about_welcome h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+  align-self: flex-start;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#wester_ministries .about_welcome .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  position: initial;
+}
+
+#wester_ministries .about_welcome .right .text {
+  height: 60%;
+}
+
+/* #wester_ministries .about_welcome .right .text p:first-child {
+  margin-bottom: 3rem;
+} */
+
+#wester_ministries .about_welcome .right .card:hover .text p:first-child {
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+
+  /* =======MEDIA QUERIES ======= */
+  @media screen and (max-width:1000px){
+    #west_reach .reach_wrapper {
+        flex-direction: column;
+      }
+  }
+  
