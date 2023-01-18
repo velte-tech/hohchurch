@@ -25,24 +25,27 @@ function Header() {
 
   const navigate = useNavigate();
 
+  // const toggle = (screen) => {
+  //   if (screen === "l&t") {
+  //     navigate("/location");
+  //   } else {
+  //     navigate("/");
+  //   }
+  //   setState(screen);
+  // };
+
+  const [navOpen, setNavOpen] = useState(false);
+
+  const [state, setState] = useState("home");
+
   const toggle = (screen) => {
     if (screen === "l&t") {
       navigate("/location");
     } else {
-      navigate("/");
+      navigate(-1);
     }
-    setState(screen);
-  };
-
-  const [navOpen, setNavOpen] = useState(false);
-
-  // const [locOpen, setLocOpen] = useState(false);
-
-  const [state, setState] = useState("home");
-
-  // const toggle = () => {
-  //   setState(!state);
-  // }
+    setState(screen)
+  }
 
   return (
     <div className={color ? 'header-navbar header-bg' : 'header-navbar'}>
