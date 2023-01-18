@@ -1,0 +1,444 @@
+
+/* two info buttons  */
+
+.sch-form-wrapper {
+    max-width: 80%;
+    margin: auto;
+}
+
+.sch-form-case {
+    margin: 5rem 0;
+}
+
+.info-butts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+
+.my-btn {
+    background: var(--primary_color);
+    color: #fff;
+    padding: 1rem 1.4rem;
+    font-size: 1rem;
+    border: #fff solid 5px;
+    transition: all .3s ease-in;
+    -webkit-text-stroke: none;
+}
+
+.my-btn:hover {
+    color: #fff;
+    border: var(--primary_color) 5px solid;
+    background: #fff;
+    -webkit-text-stroke: none;
+}
+
+@media screen and (max-width: 950px) {
+    .info-butts {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.my-btn {
+    margin-bottom: 2rem;
+}
+.my-btn:nth-child(4) {
+    margin-bottom: 0;
+}
+
+}
+
+
+/* .ms-wrapper {
+   background: #EFEFEF;
+} */
+
+.ms-case {
+    max-width: 90%;
+    margin: auto;
+}
+
+.ms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tt-1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.tt-2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wed-wrapper {
+    width: 100%;
+}
+
+.wed-ngt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.wed-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wed-1 {
+    background: var(--primary_color);
+    width: 30%;
+    height: 3px;
+}
+
+.wed-2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 1.5rem 0;
+}
+
+.wed-4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 1.3rem;
+}
+.wed-5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.wed-right {
+    width: 50%;
+}
+
+.wed-right img {
+    object-fit: cover;
+    border-radius: 8px;
+    height: 300px;
+}
+
+@media screen and (max-width: 950px) {
+    .wed-ngt {
+    flex-direction: column;
+}
+
+.wed-left {
+    width: 100%;
+    margin: 3rem;
+}
+.wed-right {
+    width: 100%;
+}
+
+.wed-1 {
+    width: 50%;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+    .wed-2 {
+    font-size: 25px;
+}   
+.wed-5, .wed-4 {
+    font-size: 17px;
+}
+}
+
+
+/* students rally  */
+
+
+.stura-wrapper {
+    margin: 5rem;
+}
+
+.stural-txt {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.ral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ral-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.rt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+}
+
+.rt-1 {
+    background: url('../../assets/images/rt1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.rt-1a {
+    background: url('../../assets/images/rt2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.rt-1b {
+    background: url('../../assets/images/rt3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.rt-1-o {
+    width: 100%;
+    height: 100%;
+    background: rgba(208, 47, 47, 0.6);
+    height: 100%;
+    transition: all .3s ease-in;
+    position: relative;
+    display: none;
+    transition: all .3s ease-in;
+}
+
+
+.rt-1-tt {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.rt-1-tt .linkAnima {
+    justify-content: flex-start;
+    padding: 0;
+    color: #fff;
+}
+
+.rt-1-tt .linkAnima .arrow {
+    background: #fff;
+}
+.rt-1-tt .linkAnima .arrow::before {
+    background: #fff;
+}
+.rt-1-tt .linkAnima .arrow::after {
+    background: #fff;
+}
+
+.rt-1:hover .rt-1-o {
+    display: block;
+    transition: all .3s ease-in;
+}
+.rt-1a:hover .rt-1-o {
+    display: block;
+    transition: all .3s ease-in;
+}
+.rt-1b:hover .rt-1-o {
+    display: block;
+    transition: all .3s ease-in;
+}
+
+.rt-2 {
+    font-size: 20px;
+    color: var(--primary_color);
+    margin: 1rem;
+    font-weight: 700;
+}
+.rt-3, .rt-4 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.rt-5 {
+    margin-top: 1rem;
+}
+
+.rt-5 .btn {
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .ral-top {
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.rt {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.rt:nth-child(3) {
+    margin-bottom: 0;
+}
+}
+
+
+
+/* fourth display  */
+
+.holi-wrapper {
+    max-width: 90%;
+    margin: auto;
+}
+
+.holi-txt {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+.holi-case {
+    width: 100%;
+}
+
+.holi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.holi-left {
+    width: 45%;
+}
+.holi-right {
+    width: 45%;
+}
+
+.cale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #EFEFEF 3px solid;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.cale-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    background: #EFEFEF;
+    padding: .6rem 0;
+}
+.cale-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 2rem;
+}
+
+.ct1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+}
+.ct2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+.cc1 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary_color);
+    cursor: pointer;
+}
+
+.cc1:hover {
+    color: #000;
+}
+
+.cc2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+}
+
+
+@media screen and (max-width: 1002px) {
+
+    .holi {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .holi-left {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.holi-right {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .cc1 {
+    font-size: 17px;
+}
+.cc2 {
+    font-size: 16px;
+}
+.cale-2{
+    padding-left: 1rem;
+}
+}
+
+/* fourth display end */
+
+/* students rally end */
+
+
+
+/* two info buttons end */

@@ -1,12 +1,25 @@
 import React from 'react'
 import './Kids.css'
 import { Link } from 'react-router-dom'
-// import kdd1 from "../../assets/images/kidd1.png";
-// import kdd2 from "../../assets/images/kidd2.png";
-// import kdd3 from "../../assets/images/kidd3.png";
+import AOS from "aos";
+import { useEffect } from 'react';
+import sem111 from "../../assets/images/sem111.jpg";
+import kmmm from "../../assets/images/kmmm.jpg";
+
+
 
 
 const Kids = () => {
+
+  useEffect(() => {
+    AOS.init({
+        duration: 500,
+        // offet: 1000,
+      },
+      []
+    );
+  });
+
   return (
     <div id='min-group-wrapper'>
       <div className='min-group'>
@@ -39,9 +52,98 @@ const Kids = () => {
 
             <div className='kids-cards-show'>
 
-              <div className='kids-cards'>
-                
+              {/* card 1111111 */}
+
+              <div className='kids-cards-1'
+                data-aos="fade-left"
+                data-aos-delay="600"
+                data-aos-anchor-placement="top center"
+              >
+                <div className='kc-a'>
+                  <div className='kk-s-over'>
+                    <div className='kk-s'></div>
+                    <div className='kk-txt'>
+                    EARLY CHILDHOOD
+                    </div>
+                  </div>
+                </div>
+
+                <div className='kc-b'>
+                  <div className='kk-txt-1'>
+                    This Week's Lesson <br></br>
+                    Kids - Christmas
+                  </div>
+                  
+                  <div className='kk-txt-2'>
+                    CHRISTMAS -
+                    NOV. & EC.
+                  </div>
+                </div>
               </div>
+
+              {/* card 11111 end */}
+
+              {/* card 1111111 */}
+
+              <div className='kids-cards-1'
+                data-aos="fade-left"
+                data-aos-delay="610"
+                data-aos-anchor-placement="top center"
+              >
+                <div className='kc-a2'>
+                  <div className='kk-s-over'>
+                    <div className='kk-s'></div>
+                    <div className='kk-txt'>
+                    EARLY CHILDHOOD
+                    </div>
+                  </div>
+                </div>
+
+                <div className='kc-b'>
+                  <div className='kk-txt-1'>
+                    This Week's Lesson <br></br>
+                    Kids - Christmas
+                  </div>
+                  
+                  <div className='kk-txt-2'>
+                    CHRISTMAS -
+                    NOV. & EC.
+                  </div>
+                </div>
+              </div>
+
+              {/* card 11111 end */}
+
+              {/* card 1111111 */}
+
+              <div className='kids-cards-1'
+                data-aos="fade-right"
+                data-aos-delay="620"
+                data-aos-anchor-placement="top center"
+              >
+                <div className='kc-a3'>
+                  <div className='kk-s-over'>
+                    <div className='kk-s'></div>
+                    <div className='kk-txt'>
+                    EARLY CHILDHOOD
+                    </div>
+                  </div>
+                </div>
+
+                <div className='kc-b'>
+                  <div className='kk-txt-1'>
+                    This Week's Lesson <br></br>
+                    Kids - Christmas
+                  </div>
+                  
+                  <div className='kk-txt-2'>
+                    CHRISTMAS -
+                    NOV. & EC.
+                  </div>
+                </div>
+              </div>
+
+              {/* card 11111 end */}
 
             </div>
 
@@ -53,6 +155,207 @@ const Kids = () => {
 
 
         {/* kids cards section end */}
+
+
+        {/* kids outreach */}
+
+
+        <div className='kid-out-wrapper'>
+          <div className='kids-out-show'>
+            <div className='kids-out'>
+
+              <div className='kids-aa'
+                data-aos="fade-right"
+                data-aos-delay="600"
+                data-aos-anchor-placement="top center"
+              >
+                <div className='ka-case'>
+                  <div className='ka-over'>
+                    <div className='ka-s'></div>
+                    <div className='ka-txt'>KIDS OUTREACH</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className='kids-bb'
+                data-aos="fade-left"
+                data-aos-delay="600"
+                data-aos-anchor-placement="top center"
+              >
+                <div className='kb-show'>
+                  <div className='kb-txt-1'>
+                    Friends Around The World
+                  </div>
+                  <div className='kb-txt-2'>
+                    Friends Around <br></br> The World
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>  
+        </div>
+
+
+        {/* kids outreachend */}
+
+
+        {/* select your campus  */}
+
+        
+        <div className='sel-cam-wrapper'>
+          <div className='sel-cam-case'>
+            <div className='sel-cam'>
+              <div className='sc-a'>
+                For More Information and Events
+              </div>
+
+              <div className='sc-b focus-in-contract-bck'>
+                Select Your Campus
+              </div>
+
+              <div className='sc-c'></div>
+            </div>
+          </div>
+        </div>
+
+
+        {/* select your campus end */}
+
+
+        {/* kids with special needs */}
+
+        
+        <div className='special-wrapper'>
+          <div className='special-case'>
+            <div className='special'>
+              <div className='spec-a'>
+                KIDS WITH SPECIAL NEEDS
+              </div>
+
+              <div className='spec-b'>
+                Available at our Lafayette Campus, Circle of Friends strives to create an excellent environment
+                for kids with special needs and their families.We provide opportunities
+                for parents to attend church worry - free, knowing that their kids also get to hear about the awesome love of Jesus
+                while being cared
+                for and loved by staff and volunteers gifted with a passion to serve this population.
+              </div>
+
+              <div className='spec-c'>
+                <Link className="linkAnima">
+                  CONTACT CIRCLE OF FRIENDS <span className="arrow"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* kids with special needs end */}
+
+
+        {/* ministrt events */}
+
+        <div className='min-eve-wrapper'>
+          <div className='min-eve-txt'>
+            Ministry Events
+          </div>
+        </div>
+
+        {/* ministrt events end */}
+
+
+        {/* seminar card  */}
+
+        
+        <div className='seminar-wrapper'>
+          <div className='seminar-case'>
+            <div className='seminar-show'>
+
+              <div className='seminar'>
+                <div className='sem-a'
+                data-aos="fade-right"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+                ></div>
+
+                <div className='sem-b'
+                data-aos="fade-right"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+                >
+                  <img src={sem111} alt="" />
+                </div>
+
+                <div className='sem-c'
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+                >
+                  <div className='sem-c-1'>
+                    <div className='sem-c-txt-1'>
+                      LAFAYETTE INFANT & CHILD <br></br>
+                      DEDICATION
+                    </div>
+                    <div className='sem-c-txt-2'>
+                      February 18, 2023 | Lafayette
+                    </div>
+                    <div className='sem-c-txt-3'>
+                      At Flatirons, Infant & Child dedication is an opportunity
+                      for parents to make a commitment...
+                    </div>
+                    <div className='sem-c-txt-4'>
+                      <Link className="linkAnima">
+                        LEARN MORE <span className="arrow"></span>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className='sem-c-2'></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        {/* seminar card end */}
+
+
+        {/* ministry director  */}
+
+
+        <div className='min-dir-wrapper'>
+          <div className='min-dir-case'>
+            <div className='min-dir'>
+              <div className='mindir-a'>
+                <img
+                  src={kmmm} alt=""
+                data-aos="fade-right"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+                />
+              </div>
+
+              <div className='mindir-b'
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+              >
+                <div className='dir-a'>ALYSA DUDREY</div>
+                <div className='dir-b'>
+                  Lafayette Kids Ministry Director
+                </div>
+                <div className='dir-c'>
+                  <Link className="linkAnima" to="/contact">
+                    Contact <span className="arrow"></span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        {/* ministry director end */}
 
       </div>
     </div>

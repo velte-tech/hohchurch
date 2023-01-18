@@ -1,10 +1,10 @@
-#min-group-wrapper {
+/* #min-group-wrapper {
     
 }
 
 .min-group {
 
-}
+} */
 
 
 /* showcase */
@@ -49,20 +49,670 @@
 }
 
 .kids-cards-case {
-    max-width: 80%;
+    max-width: 85%;
     margin: auto;
 }
 
-.kd {
+.kids-cards-show {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.kids-cards-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 31%;
+}
+
+.kc-a {
+    background: url('../../assets/images/tddd1.jpg') no-repeat center center/cover;
+    height: 27rem;
+    width: 100%;
+    position: relative;
+    top: -6rem;
+    transition: all .3s ease-in;
+}
+.kc-a2 {
+    background: url('../../assets/images/tddd2.jpg') no-repeat center center/cover;
+    height: 27rem;
+    width: 100%;
+    position: relative;
+    top: -6rem;
+    transition: all .3s ease-in;
+}
+.kc-a3 {
+    background: url('../../assets/images/tddd3.jpg') no-repeat center center/cover;
+    height: 27rem;
+    width: 100%;
+    position: relative;
+    top: -6rem;
+    transition: all .3s ease-in;
+}
+
+.kk-s {
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+    background: var(--primary_color);
+    height: 3rem;
+    width: 85%;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+
+.kids-cards-1:hover .kk-s-over {
+    background: rgba(208, 47, 47, 0.6);
+    height: 100%;
+    transition: all .3s ease-in;
+}
+
+.kk-txt {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    top: 2.5rem;
+}
+
+.kc-b {
+    background: #414141;
+    height: 16rem;
+    width: 100%;
+    position: relative;
+    top: -6.5rem;
+}
+
+.kc-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.kk-txt-1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+
+.kk-txt-2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--primary_color);
+}
+
+.kids-cards-1:hover .kc-b {
+    background: var(--primary_color);
+    transition: all .2s ease-in;
+}
+
+.kids-cards-1:hover .kk-txt-2 {
+    color: #fff;
+    transition: all .2s ease-in;
+}
+
+
+@media screen and (max-width: 950px) {
+    .kids-cards-show {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .kids-cards-1 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .kk-s {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+     .kk-s {
+        width: 75%;
+    }
+
+    .kk-txt-2 {
+    font-size: 1.5rem;
+}
+}
+
+
+/* kids cards section end */
+
+
+
+
+/* kids outreach */
+
+.kid-out-wrapper {
+    margin-bottom: 5rem;
+}
+
+
+.kids-out-show {
+    max-width: 85%;
+    margin: auto;
+}
+
+.kids-out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kids-aa {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.ka-case {
+    background: url('../../assets/images/glll.jpg') no-repeat center center/cover;
+    height: 22rem;
+    position: relative;
+}
+
+.ka-s {
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+    background: var(--primary_color);
+    height: 3rem;
+    width: 35%;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+
+.ka-txt {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    top: 2.5rem;
+}
+
+.kids-out:hover .ka-over {
+    background: rgba(208, 47, 47, 0.6);
+    height: 100%;
+    transition: all .3s ease-in;
+}
+
+
+.kids-bb {
+    width: 35%;
+    background: #414141;
+    height: 22rem;
+}
+
+.kb-show {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.kb-txt-1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.kb-txt-2 {
+    color: var(--primary_color);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.kids-out:hover .kids-bb {
+    background: var(--primary_color);
+    transition: all .3s ease-in;
+}
+.kids-out:hover .kb-txt-2 {
+    color: #fff;
+    transition: all .3s ease-in;
+}
+
+@media screen and (max-width: 950px) {
+    .kids-out {
+    flex-direction: column;
+}
+
+.kids-aa {
+    width: 100%;
+}
+.kids-bb {
+    width: 100%;
+    height: 15rem;
+}
+
+.kb-txt-2 {
+    font-size: 25px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+    .kb-txt-2 {
+    font-size: 22px;
+}
+}
+
+/* kids outreachend */
+
+
+/* select campus  */
+
+.sel-cam-wrapper {
+    margin-bottom: 7rem;
+}
+
+.sel-cam-case {
+    max-width: 85%;
+    margin: auto;
+}
+
+.sel-cam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sc-a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.sc-b {
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .sc-b {
+    font-size: 30px;
+}
+}
+
+/* select campus end */
+
+
+
+/* kids with special needs  */
+
+.special-wrapper {
+    margin-bottom: 6rem;
+}
+
+
+.special-case {
+    max-width: 85%;
+    margin: auto;
+}
+
+.special {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.spec-a {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.spec-b {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.spec-c .linkAnima {
+    color: #000;
+    padding: 0;
+    justify-content: flex-start;
+    font-weight: 700;
+}
+.spec-c .linkAnima:hover {
+    color: var(--primary_color);
+}
+
+@media screen and (max-width: 600px) {
+    .spec-a {
+    font-size: 22px;
+}   
+}
+
+/* kids with special needs end */
+
+
+/* ministry events */
+
+.min-eve-wrapper {
+    max-width: 85%;
+    margin: auto;
+}
+
+.min-eve-txt {
+    font-size: 40px;
+    color: #000;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+    .min-eve-txt {
+        font-size: 30px;
+    }
+}
+
+/* ministry events end */
+
+
+
+
+/* seminar card  */
+
+
+.seminar-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.seminar-case {
+    margin-bottom: 12rem;
+}
+
+.seminar {
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.sem-a {
+    clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
+    height: 270px;
+    width: 30%;
+    background-color: var(--primary_color);
+    position: absolute; 
+    left: 0;
+    top: 6rem;
+}
+
+.sem-b img {
+    object-fit: cover;
+    border-radius: 7px;
+    width: 520px;
+}
+
+.sem-b {
+    position: absolute;
+    /* left: 10rem; */
+    left: 10%;
+    top: .2rem;
+}
+
+
+.sem-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   box-shadow: 0px 10px 20px 14px rgba(0,0,0,0.42);
+    position: relative;
+    right: -11rem;
+    top: 2rem;
+    /* width: 500px; */
+    width: 35%;
+    height: 290px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.sem-c:hover {
+    scale: 1.1;
+    transition: all .2s ease-in-out;
+}
+
+
+.sem-c-1 {
+    background: #EFEFEF;
+    width: 90%;
+    height: 100%;
+}
+.sem-c-2 {
+    background: rgb(255, 255, 255);
+    width: 10%;
+    height: 100%;
+}
+
+.sem-c-txt-1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: .7rem;
+}
+
+.sem-c-txt-2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-bottom: .5rem;
+}
+.sem-c-txt-3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.sem-c-txt-4 .linkAnima {
+    padding: 0;
+    justify-content: flex-start;
+    color: #000;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.sem-c-txt-4 .linkAnima:hover {
+    color: var(--primary_color);
+}
+
+
+@media screen and (max-width: 960px) {
+    .seminar {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seminar-case {
+        margin-bottom: 27rem;
+    }
+
+    .sem-c {
+        right: -8rem;
+        top: 19rem;
+        width: 65%;
+        /* flex-direction: column; */
+    }
+
+    .sem-b img {
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width: 895px) {
+    .sem-c {
+        right: -9rem;
+        top: 22rem;
+        width: 60%;
+        /* flex-direction: column; */
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .sem-c {
+        right: -7rem;
+        top: 18rem;
+        width: 60%;
+    }
 }
 
 
 
+@media screen and (max-width: 700px) {
+    .sem-c {
+        right: -5.4rem;
+        top: 17rem;
+        width: 70%;
+        height: 370px;
+    }
+
+      .sem-b img {
+        width: 86%;
+    }
+
+    .sem-a {
+        width: 60%;
+        height: 130px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .seminar-case {
+    margin-bottom: 14rem;
+}
+
+    .sem-c {
+        right: -3.3rem;
+        top: 10rem;
+        width: 70%;
+        height: 390px;
+    }
+
+      .sem-b img {
+        width: 86%;
+    }
+
+    .sem-a {
+        width: 60%;
+        height: 130px;
+    }
+}
+
+
+/* seminar card end  */
+
+
+/* ministry director  */
+
+.min-dir-case {
+    width: 100%;
+    background: #EFEFEF;
+}
+
+.min-dir {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.mindir-a {
+    width: 40%;
+}
+
+.mindir-a img {
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.mindir-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.dir-a {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.dir-b {
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.dir-c .linkAnima {
+    color: #000;
+    padding: 0;
+    justify-content: flex-start;
+    font-weight: 700;
+}
+
+.dir-c .linkAnima:hover {
+    color: var(--primary_color);
+}
+
+
+@media screen and (max-width: 950px) {
+    .min-dir-case {
+        width: 85%;
+        margin: auto;
+        background: #fff;
+    }
+
+    .min-dir {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+
+    .mindir-a {
+        width: 100%;
+        height: 300px;
+    }
+    .mindir-b {
+        width: 100%;
+        background: #EFEFEF;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 3rem;
+    }
+}
 
 
 
-
-/* kids cards section end */
+/* ministry director end */
