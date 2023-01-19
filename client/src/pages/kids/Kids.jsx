@@ -5,6 +5,7 @@ import AOS from "aos";
 import { useEffect } from 'react';
 import sem111 from "../../assets/images/sem111.jpg";
 import kmmm from "../../assets/images/kmmm.jpg";
+import Kids_campus from '../../components/kids_campus/Kids_campus';
 
 
 
@@ -200,10 +201,13 @@ const Kids = () => {
         {/* kids outreachend */}
 
 
+        <Kids_campus />
+
+
         {/* select your campus  */}
 
         
-        <div className='sel-cam-wrapper'>
+        {/* <div className='sel-cam-wrapper'>
           <div className='sel-cam-case'>
             <div className='sel-cam'>
               <div className='sc-a'>
@@ -217,7 +221,7 @@ const Kids = () => {
               <div className='sc-c'></div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
         {/* select your campus end */}

@@ -1,0 +1,37 @@
+/* #kcomp-wrapper {
+    width: 100%;
+    margin: auto;
+} */
+
+.kdd-it {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.kdd-it1 {
+     font-size: 50px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.kcomp-show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#kdd {
+    border: none;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    border-bottom: #000 solid 2px;
+    margin-bottom: 4rem;
+    outline: none;
+}
+
