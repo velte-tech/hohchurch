@@ -1,14 +1,22 @@
 import React from 'react'
 import './Students_groups.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import weddd from "../../assets/images/weddd.jpg";
 import { Link } from 'react-router-dom';
 import worr from '../../assets/images/DD.webp'
-// import rt2 from "../../assets/images/rt2.jpg";
-// import rt3 from "../../assets/images/rt3.jpg";
-    
+import AOS from "aos";
 
 const Students_groups = () => {
+
+    // animation
+    useEffect(() => {
+        AOS.init({
+                duration: 500,
+                // offet: 1000,
+            },
+            []
+        );
+    });
 
      // button info
      const [showFirst, setShowFirst] = useState(false);
@@ -84,7 +92,11 @@ const Students_groups = () => {
 
                               <div className='wed-wrapper'>
                                 <div className='wed-case'>
-                                    <div className='wed-ngt'>
+                                      <div className='wed-ngt'
+                                        data-aos="fade-right"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                      >
                                         <div className='wed-left'>
                                             <div className='wed-1'></div>
                                             <div className='wed-2'>
@@ -99,7 +111,11 @@ const Students_groups = () => {
                                             </div>
                                         </div>
                                         
-                                        <div className='wed-right'>
+                                          <div className='wed-right'
+                                            data-aos="fade-left"
+                                            data-aos-anchor-placement="center-bottom"
+                                            data-aos-delay="600"
+                                          >
                                             <img src={weddd} alt=""/>
                                         </div>
                                     </div>
@@ -129,7 +145,11 @@ const Students_groups = () => {
                                   <div className='ral-wrapper'>
                                       <div className='ral-case'>
                                         <div className='ral'>
-                                            <div className='ral-top'>
+                                            <div className='ral-top'
+                                                data-aos="fade-right"
+                                                data-aos-anchor-placement="center-bottom"
+                                                data-aos-delay="600"
+                                            >
                                                 
                                                 {/* RT  */}
                                                 
@@ -224,7 +244,11 @@ const Students_groups = () => {
                                                 
                                             </div>
                                             
-                                            <div className='ral-bot'>
+                                              <div className='ral-bot'
+                                                data-aos="fade-left"
+                                                data-aos-anchor-placement="center-bottom"
+                                                data-aos-delay="600"
+                                              >
                                                 <button className='btn'>
                                                     LIVESTREAM LINK
                                                 </button>
@@ -265,7 +289,11 @@ const Students_groups = () => {
                               <div className='wed-wrapper'>
                                 <div className='wed-case'>
                                     <div className='wed-ngt'>
-                                        <div className='wed-left'>
+                                        <div className='wed-left'
+                                                data-aos="fade-right"
+                                                data-aos-anchor-placement="center-bottom"
+                                                data-aos-delay="600"
+                                        >
                                             <div className='wed-1'></div>
                                             <div className='wed-2'>
                                                 WORSHIP WITH US
@@ -280,7 +308,11 @@ const Students_groups = () => {
                                             </div>
                                         </div>
                                         
-                                        <div className='wed-right'>
+                                        <div className='wed-right'
+                                                data-aos="fade-left"
+                                                data-aos-anchor-placement="center-bottom"
+                                                data-aos-delay="600"
+                                        >
                                             <img src={worr} alt=""/>
                                         </div>
                                     </div>
@@ -300,14 +332,18 @@ const Students_groups = () => {
                 {
                     showFourth && (
                         <div className='holi-wrapper'>
-                            <div className='holi-txt'>
+                            <div className='holi-txt focus-in-contract-bck'>
                                 HOLIDAY BREAK...NO GROUP DEC 21, DEC 28 OR JAN 4 TH
                               </div>
                               
                               <div className='holi-case'>
                                   
                                 <div className='holi'>
-                                    <div className='holi-left'>
+                                    <div className='holi-left'
+                                        data-aos="fade-right"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                    >
                                         <div className='cale'>
                                             <div className='cale-1'>
                                                 <div className='ct1'>18</div>
@@ -324,7 +360,11 @@ const Students_groups = () => {
                                         </div>
                                     </div>
                                     
-                                    <div className='holi-right'>
+                                    <div className='holi-right'
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                    >
                                         <div className='cale'>
                                             <div className='cale-1'>
                                                 <div className='ct1'>25</div>
@@ -343,7 +383,11 @@ const Students_groups = () => {
                                 </div>
                                  
                                 <div className='holi'>
-                                    <div className='holi-left'>
+                                    <div className='holi-left'
+                                    data-aos="fade-right"
+                                    data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                    >
                                         <div className='cale'>
                                             <div className='cale-1'>
                                                 <div className='ct1'>18</div>
@@ -360,7 +404,11 @@ const Students_groups = () => {
                                         </div>
                                     </div>
                                     
-                                    <div className='holi-right'>
+                                    <div className='holi-right'
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                    >
                                         <div className='cale'>
                                             <div className='cale-1'>
                                                 <div className='ct1'>25</div>
@@ -379,7 +427,11 @@ const Students_groups = () => {
                                 </div>
                                  
                                 <div className='holi'>
-                                    <div className='holi-left'>
+                                    <div className='holi-left'
+                                        data-aos="fade-right"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                    >
                                         <div className='cale'>
                                             <div className='cale-1'>
                                                 <div className='ct1'>18</div>
@@ -396,7 +448,11 @@ const Students_groups = () => {
                                         </div>
                                     </div>
                                     
-                                    <div className='holi-right'>
+                                    <div className='holi-right'
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                    >
                                         <div className='cale'>
                                             <div className='cale-1'>
                                                 <div className='ct1'>25</div>
@@ -415,7 +471,11 @@ const Students_groups = () => {
                                 </div>
                                  
                                 <div className='holi'>
-                                    <div className='holi-left'>
+                                    <div className='holi-left'
+                                        data-aos="fade-right"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                    >
                                         <div className='cale'>
                                             <div className='cale-1'>
                                                 <div className='ct1'>18</div>
@@ -432,7 +492,11 @@ const Students_groups = () => {
                                         </div>
                                     </div>
                                     
-                                    <div className='holi-right'>
+                                    <div className='holi-right'
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                    >
                                         <div className='cale'>
                                             <div className='cale-1'>
                                                 <div className='ct1'>25</div>
@@ -451,7 +515,11 @@ const Students_groups = () => {
                                 </div>
                                  
                                 <div className='holi'>
-                                    <div className='holi-left'>
+                                    <div className='holi-left'
+                                        data-aos="fade-right"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                    >
                                         <div className='cale'>
                                             <div className='cale-1'>
                                                 <div className='ct1'>18</div>
@@ -468,7 +536,11 @@ const Students_groups = () => {
                                         </div>
                                     </div>
                                     
-                                    <div className='holi-right'>
+                                    <div className='holi-right'
+                                        data-aos="fade-left"
+                                        data-aos-anchor-placement="center-bottom"
+                                        data-aos-delay="600"
+                                    >
                                         <div className='cale'>
                                             <div className='cale-1'>
                                                 <div className='ct1'>25</div>

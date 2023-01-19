@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom'
 import AOS from "aos";
 import { useEffect, useState } from 'react';
 import Students_groups from '../../components/students_groups/Students_groups';
+import { GrMail } from 'react-icons/gr';
+import { AiTwotonePhone } from 'react-icons/ai';
+import { MdAllInbox } from 'react-icons/md';
 
 
 const Students = () => {
@@ -125,7 +128,7 @@ const Students = () => {
 
               <div className='nxtgen-right'>
                 <div className='nxt-pic'
-                  data-aos="fade-leftt"
+                  data-aos="fade-left"
                   data-aos-anchor-placement="center-bottom"
                   data-aos-delay="600"
                 >
@@ -155,6 +158,188 @@ const Students = () => {
         </div>
 
         {/* newslettr end */}
+
+        
+
+
+
+        {/* NEWSLETTER FORMS */}
+
+        
+        <div className='newsform-wrapper'>
+          <div className='newsform-case'>
+            <div className='newsform'>
+
+              <div className='news-left'
+                data-aos="fade-right"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+              >
+                <div className='nl-a'>
+                  MIDDLE SCHOOL
+                </div>
+
+                <div className='nl-b'>
+                  
+                  {/* <form> */}
+
+                    <div className='nl'>
+                      <div className='nl1'>
+                        <div className='ft-1'>FIRST NAME</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      <div className='nl2'>
+                        <input></input>
+                      </div>
+                    </div>
+
+                    <div className='nl'>
+                      <div className='nl1'>
+                        <div className='ft-1'>LAST NAME</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      <div className='nl2'>
+                        <input></input>
+                      </div>
+                  </div>
+                  
+                    <div className='nl'>
+                      <div className='nl1'>
+                        <div className='ft-1'>EMAIL</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      <div className='nl2'>
+                        <div className='sinn'><MdAllInbox /></div>
+                        <input className='zinn'></input>
+                      </div>
+                    </div>
+             
+                    <div className='nl'>
+                      <div className='nl1'>
+                        <div className='ft-1'>MOBILE PHONE</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      <div className='nl2'>
+                        <div className='sinn'><AiTwotonePhone /></div>
+                        <input className='zinn'></input>
+                      </div>
+                    </div>
+                    
+                    <div className='nl'>
+                    
+                      <div className='nl1'>
+                        <div className='ft-1'>CAMPUS</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      
+                      <select id="campp" name="campp">
+                        <option value="nott">Please Select</option>
+                        <option value="lafa">Lafayette Campus</option>
+                        <option value="aurora">Aurora Campus</option>
+                        <option value="denv">Denver Campus</option>
+                        <option value="west">West Campus</option>
+                        <option value="longm">Longmont Campus</option>
+                        <option value="online">Online Campus</option>
+                      </select>
+
+                  </div>
+
+                  <button className='btn'>SUBSCRIBE</button>
+
+                  {/* </form> */}
+
+                </div>
+              </div>
+
+              <div className='news-right'
+                data-aos="fade-left"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="600"
+              >
+                <div className='nl-a'>
+                  HIGH SCHOOL
+                </div>
+
+                <div className='nl-b'>
+                  
+                  {/* <form> */}
+
+                    <div className='nl'>
+                      <div className='nl1'>
+                        <div className='ft-1'>FIRST NAME</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      <div className='nl2'>
+                        <input></input>
+                      </div>
+                    </div>
+
+                    <div className='nl'>
+                      <div className='nl1'>
+                        <div className='ft-1'>LAST NAME</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      <div className='nl2'>
+                        <input></input>
+                      </div>
+                  </div>
+                  
+                    <div className='nl'>
+                      <div className='nl1'>
+                        <div className='ft-1'>EMAIL</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      <div className='nl2'>
+                        <div className='sinn'><MdAllInbox /></div>
+                        <input className='zinn'></input>
+                      </div>
+                    </div>
+             
+                    <div className='nl'>
+                      <div className='nl1'>
+                        <div className='ft-1'>MOBILE PHONE</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      <div className='nl2'>
+                        <div className='sinn'><AiTwotonePhone /></div>
+                        <input className='zinn'></input>
+                      </div>
+                    </div>
+                    
+                    <div className='nl'>
+                    
+                      <div className='nl1'>
+                        <div className='ft-1'>CAMPUS</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      
+                      <select id="campp" name="campp">
+                        <option value="nott">Please Select</option>
+                        <option value="lafa">Lafayette Campus</option>
+                        <option value="aurora">Aurora Campus</option>
+                        <option value="denv">Denver Campus</option>
+                        <option value="west">West Campus</option>
+                        <option value="longm">Longmont Campus</option>
+                        <option value="online">Online Campus</option>
+                      </select>
+
+                  </div>
+
+                  <button className='btn'>SUBSCRIBE</button>
+
+                  {/* </form> */}
+
+                </div>
+              </div>
+
+             
+
+            </div>
+          </div>
+        </div>
+
+
+        {/* NEWSLETTER FORMS END */}
 
 
         

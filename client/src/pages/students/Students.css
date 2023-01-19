@@ -326,3 +326,156 @@
 
 /* kids news letter end */
 
+
+
+/* news letter form  */
+
+.newsform-wrapper {
+    max-width: 70%;
+    margin: auto;
+}
+
+.newsform-case {
+    margin-bottom: 5rem;
+}
+
+.newsform {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.news-left {
+    width: 45%;
+    border-bottom: #000 solid 1px;
+    padding-bottom: 4rem;
+}
+
+.nl-a {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.news-right {
+    width: 45%;
+    border-bottom: #000 solid 1px;
+    padding-bottom: 4rem;
+}
+
+.nl-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.nl {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 1.7rem;
+}
+
+.nl1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .3rem;
+}
+
+.ft-1 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.ft-2 {
+    background-color: var(--primary_color);
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: .4rem;
+}
+
+
+.nl2 input {
+    /* width: 400px; */
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: #9b9696 solid 1px;
+}
+
+.nl2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* width: 400px; */
+}
+
+.sinn {
+    padding: .3rem .6rem;
+    border: #9b9696 solid 2px;
+    border-right: none;
+    height: 2.54rem;
+    background: #EFEFEF;
+    border-radius: 5px 0 0 5px;
+}
+
+.nl2 .zinn {
+    border-radius: 0 5px 5px 0;
+}
+
+.nl-b .btn {
+    font-size: 1.1rem;
+}
+
+
+#campp {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .newsform {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-left {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+.news-right {
+    width: 100%;
+    margin: auto;
+}
+
+.newsform-wrapper {
+    max-width: 80%;
+}
+
+.nl-b {
+    justify-content: flex-start;
+    align-items: center;
+}
+}
+
+
+
+
+/* news letter form End */
+
