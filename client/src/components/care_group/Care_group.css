@@ -1,0 +1,64 @@
+.cg-wrapper {
+    max-width: 80%;
+    margin: auto;
+}
+
+.cg-case {
+    margin-top: 1rem;
+}
+
+.my-btn1 {
+    color: #000;
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1rem;
+    outline: none;
+}
+
+.cg-show .info-butts {
+    border-bottom: solid rgb(156, 156, 156) 2px;
+    justify-content: flex-start;
+    padding-left: 3rem;
+}
+
+.my-btn1:hover {
+    color: var(--primary_color);
+    margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.info-showw {
+    border-bottom: solid rgb(156, 156, 156) 2px;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+}
+
+.seco-show .txt {
+    color: #000;
+    font-size: 16px;
+}
+
+.ress {
+    color: var(--primary_color);
+    cursor: pointer;
+}
+
+.ress:hover {
+    color: #000;
+}
+
+
+@media screen and (max-width: 600px) {
+    .cg-show .info-butts {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+.my-btn1 {
+    margin-left: 0;
+}
+}
+

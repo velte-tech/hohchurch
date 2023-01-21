@@ -1,0 +1,100 @@
+.yg-wrapper {
+    max-width: 85%;
+    margin: auto;
+}
+
+.yg-case {
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+}
+
+.yg-show .info-butts {
+    justify-content: center;
+}
+
+.yg-show .info-butts button {
+    border: none;
+    color: #000;
+    border-bottom: #000 solid 2px;
+    padding: 0;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+    background: none;
+    font-size: 1.4rem;
+}
+
+.yg-show .info-butts button:hover {
+    color: var(--primary_color);
+    border-bottom: var(--primary_color) solid 2px;
+    padding-bottom: 1rem;
+    transition: all .3s ease-in-out;
+}
+.yg-show .info-butts button:focus {
+    color: var(--primary_color);
+    border-bottom: var(--primary_color) solid 2px;
+    padding-bottom: 1rem;
+}
+
+
+/* SHOW FIRST  */
+
+
+.gta-wrapper {
+    width: 100%;
+}
+
+/* .gta-case {
+    display: ;
+} */
+
+.gt-1 {
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-connect input  {
+    border: #a7a7a7 solid 1px;
+}
+
+.form-connect .heya  {
+    border: #a7a7a7 solid 1px;
+    color: #a7a7a7;
+}
+
+.btd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btd .star-form {
+    margin-left: .3rem;
+}
+
+.mddt {
+    width: 120px;
+}
+
+
+.gt2 .form-case {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.gt-2 .form-wrapper {
+    width: 100%;
+}
+.gt-2 .form-connect {
+    width: 100%;
+}
+
+.gt2 button {
+    margin-left: 2rem;
+}
+
+/* SHOW FIRST END */

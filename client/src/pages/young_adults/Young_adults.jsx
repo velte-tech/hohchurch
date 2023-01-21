@@ -10,6 +10,7 @@ import ya2 from "../../assets/images/ya2.jpg";
 import comingSoon from "../../assets/images/comingSoon.jpg";
 import pdd from "../../assets/images/yyaa.png";
 import { MdAllInbox } from 'react-icons/md';
+import Young_groups from '../../components/young_groups/Young_groups';
 
 
 
@@ -152,6 +153,7 @@ const Young_adults = () => {
 
         {/* component plug  */}
 
+        <Young_groups />
 
         {/* component plug end */}
 
