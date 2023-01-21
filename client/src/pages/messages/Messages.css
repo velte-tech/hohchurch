@@ -1,0 +1,215 @@
+#message_showcase{
+    height: 37rem;
+}
+
+#message_showcase .showcase_wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../../assets//images/message.jpg")no-repeat center center/cover;
+}
+
+#message_showcase .showcase_wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+#message_showcase .showcase_wrapper p {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+
+#message_showcase .showcase_wrapper h2 {
+    font-size: 4rem;
+    color: #fff;
+    position: relative;
+}
+
+
+
+/* ======= MESSAGE_MESSAGES SECTION ======= */
+#message_messages {
+    background: #000;
+    min-height: 40rem;
+    padding: 1rem;
+}
+
+#message_messages .messages_wrapper {
+    max-width: 1000px;
+    margin: 3rem auto;
+    height: 100%;
+}
+
+#message_messages .messages_wrapper .search{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#message_messages .messages_wrapper .search span {
+    position: absolute;
+    left: 0;
+    color: #fff;
+    font-size: 1.3rem;
+    padding-left: 0.5rem;
+    pointer-events: none;
+}
+
+#message_messages .messages_wrapper .search input {
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+#message_messages .messages_wrapper .search input:focus ~ span{
+    display: none;
+}
+
+#message_messages .messages_wrapper .search .search_icon {
+    position: absolute;
+    right: 0;
+    color: var(--primary_color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#message_messages .filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    color: #fff;
+}
+
+#message_messages .message_card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+#message_messages .message_card a {
+    background-color: rgb(43, 43, 43);
+    transition: all var(--transition);
+}
+
+#message_messages .message_card a:hover {
+    background-color: var(--primary_color);
+}
+
+#message_messages .message_card a:hover .bottom p {
+    color: #fff;
+}
+
+#message_messages .message_card img {
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#message_messages .message_card .bottom {
+    padding: 1rem;
+}
+
+#message_messages .message_card .bottom p {
+    color: #fff;
+    transition: all var(--transition);
+}
+
+#message_messages .message_card .bottom p:first-child {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#message_messages .message_card .bottom p:last-child {
+    color: var(--primary_color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#message_messages .filter_option p{
+    color:#fff;
+}
+
+#message_messages .message_main .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#message_messages .pagination {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    list-style: none;
+    color: var(--primary_color);
+}
+
+#message_messages .pagination .page-item .page-link {
+    padding: 0.5rem 0.75rem;
+    list-style: none;
+    color: var(--primary_color);
+}
+
+#message_messages .pagination .page-item .page-link:hover,
+#message_messages .pagination .page-item .page-link:focus {
+    background-color: var(--primary_color);
+    color: #fff;
+}
+
+
+
+
+
+/* ======= MEDIA QUERY ======= */
+@media screen and (max-width:900px) {
+    #message_showcase .showcase_wrapper h2 {
+        font-size: 3rem;
+    }
+
+    
+#message_messages .filter {
+    flex-direction: column;
+}
+
+#message_messages .message_card {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media screen and (max-width:600px) {
+    #message_showcase .showcase_wrapper h2 {
+        font-size: 2.3rem;
+        line-height: 1.3;
+    }
+
+    #message_messages .message_card {
+        grid-template-columns: 1fr;
+    }
+
+    #message_messages .pagination {
+        padding: 0;
+        text-align: center;
+        line-height: 1;
+    }
+}

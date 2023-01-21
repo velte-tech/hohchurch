@@ -1,0 +1,44 @@
+#give_header {
+    background: url("../../assets/images/pexels-martin-péchy-2078264\ 1.png")no-repeat center center/cover;
+}
+
+#give_header .header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#give_header .header_wrapper .left img {
+    width: 50px;
+}
+
+#give_header .header_wrapper .right {
+    display: flex;
+    gap: 2rem;
+}
+
+#give_header .header_wrapper .right a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#give_header .header_wrapper .right a:focus {
+    color: var(--primary_color);
+}
+
+
+/* ======= MEDIA QUERY ======= */
+@media screen and (max-width:500px) {
+    #give_header {
+        padding: 0 1rem;
+    }
+    
+    #give_header .container {
+        max-width: 100%;
+    }
+
+    #give_header .header_wrapper .right {
+        gap: 1rem;
+    }
+}

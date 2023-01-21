@@ -84,7 +84,7 @@
   bottom: 3rem;
   box-shadow: 
   0 6px 10px rgb(0 0 0 / 8%), 
-  0 0 6px rgb(0 0 0 / 5%);;
+  0 0 6px rgb(0 0 0 / 5%);
 }
 
 .home_welcome .right .card:hover .text {
@@ -357,7 +357,6 @@
     padding: 2rem 0;
   }
 }
-/*  */
 
 #home {
   overflow-x: hidden;
@@ -562,7 +561,7 @@
 
 .home_message {
   min-height: 40rem;
-  margin: 3rem auto;
+  margin: 5rem auto;
 }
 
 .home_message .message_wrapper .top h2 {
@@ -1100,5 +1099,3 @@
     gap: 3rem;
   }
 }
-
-/*  */
