@@ -1,0 +1,20 @@
+.filter_option select {
+    padding: 1rem;
+    color: #fff;
+    background: transparent;
+}
+
+.filter_option select option {
+    color: #000;
+    font-size: 16px;
+    padding: 1rem ;
+    margin: 2rem 0;
+}
+
+.filter_option select option:hover {
+    color: #000;
+    font-size: 16px;
+    padding: 1rem ;
+    margin: 2rem 0;
+    background-color: red;
+}
