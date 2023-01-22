@@ -201,7 +201,7 @@ const Students = () => {
                       <div className='nl2'>
                         <input></input>
                       </div>
-                  </div>
+                    </div>
                   
                     <div className='nl'>
                       <div className='nl1'>
