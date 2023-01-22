@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './Groups.css'
-import mappp from "../../assets/images/Figmap.png";
 import { Link } from 'react-router-dom'; 
 // import AOS from "aos";
 import { ImSearch } from 'react-icons/im';
+import GoogleMap from "../../components/GoogleMap/GoogleMap";
 
 
 const Groups = () => {
@@ -52,7 +52,7 @@ const Groups = () => {
                     // data-aos="fade-left"
                     // data-aos-delay="400"
                   >
-                    <img src={mappp} alt="" />
+                    <GoogleMap />
                   </div>
 
                   <div className='sp'>
