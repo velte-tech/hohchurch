@@ -21,8 +21,8 @@ const Aurora = () => {
   return (
     <div id='super'>
       <section id="about_showcase">
-        <h1>AURORA</h1>
-        <p className='date'>SUNDAY: 9 & 11AM</p>
+        <h1 className='focus-in-contract-bck'>AURORA</h1>
+        <p className='date focus-in-contract-bck'>SUNDAY: 9 & 11AM</p>
         <Search />
       </section>
 
@@ -73,7 +73,7 @@ const Aurora = () => {
       </section>
 
       <section id="aurora_events">
-        <h1>Events @ Aurora Campus</h1>
+        <h1 className='focus-in-contract-bck'>Events @ Aurora Campus</h1>
       </section>
     </div>
   )

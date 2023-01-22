@@ -30,8 +30,8 @@ const Longmont = () => {
   return (
     <div id="super">
       <section id="about_showcase">
-        <h1>Longmont</h1>
-        <p className="date">SUNDAY: 9 & 11 AM</p>
+        <h1 className="focus-in-contract-bck">Longmont</h1>
+        <p className="date focus-in-contract-bck">SUNDAY: 9 & 11 AM</p>
         <Search />
       </section>
 
