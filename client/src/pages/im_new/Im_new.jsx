@@ -5,8 +5,9 @@ import AOS from "aos";
 import "./Im_new.css";
 import slideImage from "../../assets/images/newExpect.png"
 import Faq from '../../components/faq/Faq';
+import GoogleMap from '../../components/GoogleMap/GoogleMap';
 
-import mapImage from "../../assets/images/Figmap.png"
+// import mapImage from "../../assets/images/Figmap.png"
 
 const Im_new = () => {
   useEffect(() => {
@@ -53,9 +54,10 @@ const Im_new = () => {
         <div className="ask text_center" >
           <Link className="btn" to="/cantact">DO YOU HAVE ANY<br/> QUESTIONS</Link>
         </div>
-        <div className="main_map">
+        {/* <div className="main_map">
           <img src={mapImage} alt="" />
-        </div>
+        </div> */}
+        <GoogleMap />
       </section>
 
     </div>
