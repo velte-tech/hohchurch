@@ -1,0 +1,7 @@
+.mapouter {
+    max-width: 100%;
+}
+
+#gmap_canvas{
+    max-width: 100%;
+}
