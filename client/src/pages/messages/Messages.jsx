@@ -1,18 +1,16 @@
 import React from "react";
 import "./Messages.css";
-import { Link } from "react-router-dom";
 import { CgSearchLoading } from "react-icons/cg";
 import FilterMsg from "../../components/filter_message/FilterMsg";
-import ReactPaginate from "react-paginate";
-import msgImage from "../../assets/images/church2.jpg";
+import MsgPagination from "../../components/MsgPagination/MsgPagination";
 
 
 
 
 const Messages = () => {
-  const handlePageClick = (event) => {
-    console.log(event.selected);
-  };
+  let filterValueChanged =(e)=> { 
+    console.log(e.target.value)
+  }
 
   return (
     <div>
@@ -34,7 +32,7 @@ const Messages = () => {
           {/* ======= FILTER ======= */}
           <div className="filter">
             <FilterMsg>
-              <select name="" id="">
+              <select name="isAvailable" onChange={filterValueChanged} id="">
                 <option value="all serias">ALL SERIES</option>
                 <option value="dance">Dance</option>
                 <option value="dark force">Dark Force</option>
@@ -95,91 +93,7 @@ const Messages = () => {
               </select>
             </FilterMsg>
           </div>
-            <div className="messages_main">
-              <div className="message_card">
-                <Link>
-                  <img src={msgImage} alt="" />
-                  <div className="bottom">
-                    <p>OUR NEXT GUEST</p>
-                    <p>Burn The Ships - Week 1</p>
-                  </div>
-                </Link>
-                <Link>
-                  <img src={msgImage} alt="" />
-                  <div className="bottom">
-                    <p>OUR NEXT GUEST</p>
-                    <p>Burn The Ships - Week 1</p>
-                  </div>
-                </Link>
-                <Link>
-                  <img src={msgImage} alt="" />
-                  <div className="bottom">
-                    <p>OUR NEXT GUEST</p>
-                    <p>Burn The Ships - Week 1</p>
-                  </div>
-                </Link>
-                <Link>
-                  <img src={msgImage} alt="" />
-                  <div className="bottom">
-                    <p>OUR NEXT GUEST</p>
-                    <p>Burn The Ships - Week 1</p>
-                  </div>
-                </Link>
-                <Link>
-                  <img src={msgImage} alt="" />
-                  <div className="bottom">
-                    <p>OUR NEXT GUEST</p>
-                    <p>Burn The Ships - Week 1</p>
-                  </div>
-                </Link>
-                <Link>
-                  <img src={msgImage} alt="" />
-                  <div className="bottom">
-                    <p>OUR NEXT GUEST</p>
-                    <p>Burn The Ships - Week 1</p>
-                  </div>
-                </Link>
-                <Link>
-                  <img src={msgImage} alt="" />
-                  <div className="bottom">
-                    <p>OUR NEXT GUEST</p>
-                    <p>Burn The Ships - Week 1</p>
-                  </div>
-                </Link>
-                <Link>
-                  <img src={msgImage} alt="" />
-                  <div className="bottom">
-                    <p>OUR NEXT GUEST</p>
-                    <p>Burn The Ships - Week 1</p>
-                  </div>
-                </Link>
-                <Link>
-                  <img src={msgImage} alt="" />
-                  <div className="bottom">
-                    <p>OUR NEXT GUEST</p>
-                    <p>Burn The Ships - Week 1</p>
-                  </div>
-                </Link>
-              </div>
-
-              <ReactPaginate
-                breakLabel={"..."}
-                nextLabel={"Next"}
-                onPageChange={handlePageClick}
-                // Displayed Page Range = {5}
-                pageCount={25}
-                previousLabel={"Previous"}
-                marginPagesDisplayed={3}
-                pageRangeDisplayed={2}
-                containerClassName={"pagination"}
-                pageClassName={"page-item"}
-                pageLinkClassName={"page-link"}
-                previousClassName={"page-item"}
-                previousLinkClassName={"page-link"}
-                nextClassName={"page-item"}
-                nextLinkClassName={"page-link"}
-              />
-            </div>
+           <MsgPagination />
         </div>
       </section>
     </div>

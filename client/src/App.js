@@ -31,7 +31,8 @@ import {
   Parents,
   Care,
   Messages,
-  NotFound
+  Registration,
+  NotFound,
 } from "./pages/index";
 
 //Layouts
@@ -91,7 +92,8 @@ const router = createBrowserRouter(
 
     <Route path="/give" element = {<GiveLayout />}>   
     <Route path="/give" element= {<Give />} />
-    
+    <Route path="give/register" element= {<Registration />} />
+
     </Route>
   
   

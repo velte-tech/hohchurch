@@ -1,0 +1,125 @@
+import msgImage1 from "../../assets/images/church2.jpg";
+
+export const items = [
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 1",
+    // isAvailable: true,
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 1",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 1",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 1",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 1",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 1",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 2",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 2",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 2",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 2",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 2",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 2",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 3",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 3",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 3",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 3",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 3",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 3",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 4",
+  },
+  {
+    id: 1,
+    img: msgImage1,
+    title: "OUR NEXT GUEST",
+    heading: " Burn The Ships - Week 4",
+  },
+];
