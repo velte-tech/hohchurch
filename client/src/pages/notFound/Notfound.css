@@ -1,0 +1,45 @@
+#not_found {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+#not_found h2 {
+    font-size: 2rem;
+}
+
+#not_found p:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#not_found a {
+    color: var(--primary_color);
+    transition: all var(--transition);
+    font-weight: 600;
+}
+
+#not_found a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+#not_found .main {
+    max-width: 400px;
+}
+
+@media screen and (max-width:600px) {
+    #not_found h2 {
+        font-size: 1.7rem;
+    }
+    
+    #not_found p:nth-child(2) {
+        font-size: 2rem;
+    }
+}

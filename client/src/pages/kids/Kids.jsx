@@ -308,7 +308,7 @@ const Kids = () => {
                       for parents to make a commitment...
                     </div>
                     <div className='sem-c-txt-4'>
-                      <Link className="linkAnima">
+                      <Link to='/Lafayette' className="linkAnima">
                         LEARN MORE <span className="arrow"></span>
                       </Link>
                     </div>

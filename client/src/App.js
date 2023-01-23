@@ -89,9 +89,12 @@ const router = createBrowserRouter(
 
     </Route>
 
-    <Route path="/give" element = {<GiveLayout />}>
-    <Route path="give" element= {<Give />} />
+    <Route path="/give" element = {<GiveLayout />}>   
+    <Route path="/give" element= {<Give />} />
+    
     </Route>
+  
+  
     </Route>
   )
 );
