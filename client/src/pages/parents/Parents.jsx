@@ -14,6 +14,7 @@ import ParentSlide from '../../components/parentSlide/ParentSlide';
 import ya1 from "../../assets/images/ya1.jpg";
 import ya2 from "../../assets/images/ya2.jpg";
 import comingSoon from "../../assets/images/comingSoon.jpg";
+// import ParentsButts from '../../components/parentsButts/ParentsButts';
 
 
 
@@ -180,7 +181,7 @@ const Parents = () => {
 
           {/* LETTER SIGN UP PLUG */}
 
-
+          {/* <ParentsButts /> */}
 
           {/* LETTER SIGN UP PLUG END */}
 

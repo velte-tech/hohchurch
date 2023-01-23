@@ -1,0 +1,91 @@
+
+/* two info buttons  */
+
+.sch-form-wrapper22 {
+    max-width: 80%;
+    margin: auto;
+}
+
+.sch-form-case {
+    margin: 5rem 0;
+}
+
+.info-butts22 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+
+.my-btn2 {
+    color: #000;
+    font-size: 1.3rem;
+    transition: all .2s ease-in;
+    -webkit-text-stroke: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    padding: 0 3rem;
+    border-bottom: #000 solid 1px;
+    padding-bottom: 1rem;
+}
+
+.my-btn2:hover {
+    color: var(--primary_color);
+}
+
+.bti {
+    color: var(--primary_color);
+}
+/* 
+.bti:focus {
+    transform: rotate(180deg);
+}
+.bti:active .bti:focus {
+    transform: rotate(180deg);
+} */
+
+
+@media screen and (max-width: 950px) {
+    .info-butts22 {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.my-btn2 {
+    margin-bottom: 2rem;
+}
+/* .my-btn2:nth-child(4) {
+    margin-bottom: 0;
+} */
+
+}
+
+
+
+/* INFO - SHOW 2  */
+
+
+.info-show2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.pns-wrapper {
+    width: 45%;
+}
+
+.pns-wrapper .btn {
+    font-size: 1.1rem;
+}
+
+
+
+/* INFO - SHOW 2 END */
+
