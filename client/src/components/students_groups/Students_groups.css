@@ -34,6 +34,12 @@
     background: #fff;
     -webkit-text-stroke: none;
 }
+.my-btn:focus {
+    color: #fff;
+    border: var(--primary_color) 5px solid;
+    background: #fff;
+    -webkit-text-stroke: none;
+}
 
 @media screen and (max-width: 950px) {
     .info-butts {

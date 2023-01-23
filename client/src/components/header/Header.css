@@ -235,11 +235,7 @@
 }
 
 
-@media screen and (max-width: 600x) {
-    .nav-links .nav-item a {
-        font-size: 20px;
-    }
-}
+
 
 
 .nav-item .neww .hover_overlay {
@@ -387,7 +383,7 @@
 /* DROPDOWN */
 
 
-@media screen and (max-width: 600x) {
+@media screen and (max-width: 600px) {
     .nav-links .nav-item a {
         font-size: 20px;
     }
@@ -399,7 +395,7 @@
 
 
 /* LOCATION BUTTON TOGGLE */
-.toggle--button {
+/* .toggle--button {
     font-size: 1.3rem;
     font-weight: 900;
     color: #B5192A;
@@ -418,7 +414,9 @@
     border: none;
     background: transparent;
     cursor: pointer;
-}
+} */
+
+
 button {
     font-size: 1.3rem;
     font-weight: 900;
@@ -461,3 +459,13 @@ button {
 }
 
 /* transparent bg end */
+
+@media screen and (max-width: 600px) {
+    .nav-links .nav-item a  {
+        font-size: 20px;
+    }
+
+    .men {
+        font-size: 20px;
+    }
+}

@@ -9,6 +9,12 @@
     height: 100%;
 }
 
+@media screen and (max0width: 600px) {
+    .min-group-showcase-1 {
+    height: 70vh;
+}
+}
+
 /* students section 2  */
 
 
