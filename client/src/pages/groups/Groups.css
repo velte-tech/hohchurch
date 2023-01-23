@@ -48,6 +48,7 @@
 
 .mp-sp .mp {
     width: 80%;
+    /* height: 900px; */
     position: absolute;
     right: 0;
     top: -100px;
@@ -72,7 +73,7 @@
     width: 85%;
     background-color: var(--primary_color);
     position: absolute;
-    top: 170px;
+    top: 100px;
     z-index: 1;
 }
 
