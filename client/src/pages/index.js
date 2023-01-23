@@ -24,6 +24,7 @@ export { default as Parents } from "./parents/Parents"
 export { default as Prayer } from "./prayer/Prayer"
 export { default as Students } from "./students/Students"
 export { default as Young_adults } from "./young_adults/Young_adults"
+export { default as Registration } from "./Registration/Registration"
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import registration from "registration.css";
+import "./registration.css";
 
 function Registration() {
   return (

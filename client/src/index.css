@@ -212,12 +212,11 @@ a:hover .arrow {
 }
 
 .btn:hover,
-.btn:hover{
+.btn:focus{
   color: #fff;
 }
 
-.btn::before,
- .btn::before {
+.btn::before {
   content: "";
   position: absolute;
   z-index: -1;
