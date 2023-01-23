@@ -119,10 +119,12 @@ const Students = () => {
                   From cradle to college, we want to come alongside you to help you grow in a relationship with Christ.NEXTGEN Ministries include Kids, Students, College, and Parents Ministry.
                 </div>
                 <div className='nxt-l3'>
-                  <button className='btn'>SERVE</button>
+                  <Link className='btn' to='/Ministries'>SERVE</Link>
                 </div>
                 <div className='nxt-l4'>
-                  <button className='btn'>RESOURCES</button>
+                  <Link className='btn'>
+                    RESOURCES
+                  </Link>
                 </div>
               </div>
 
@@ -201,7 +203,7 @@ const Students = () => {
                       <div className='nl2'>
                         <input></input>
                       </div>
-                  </div>
+                    </div>
                   
                     <div className='nl'>
                       <div className='nl1'>

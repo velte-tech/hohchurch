@@ -243,7 +243,7 @@
 .kids-out:hover .ka-over {
     background: rgba(208, 47, 47, 0.6);
     height: 100%;
-    transition: all .3s ease-in;
+    transition: all .2s ease-in;
 }
 
 
@@ -279,11 +279,11 @@
 
 .kids-out:hover .kids-bb {
     background: var(--primary_color);
-    transition: all .3s ease-in;
+    transition: all .2s ease-in;
 }
 .kids-out:hover .kb-txt-2 {
     color: #fff;
-    transition: all .3s ease-in;
+    transition: all .2s ease-in;
 }
 
 @media screen and (max-width: 950px) {
@@ -469,6 +469,12 @@
     object-fit: cover;
     border-radius: 7px;
     width: 520px;
+}
+.sem-b img:hover {
+    scale: 1.1;
+    transition: all .3s ease-in-out;
+    z-index: 4;
+    cursor: pointer;
 }
 
 .sem-b {
