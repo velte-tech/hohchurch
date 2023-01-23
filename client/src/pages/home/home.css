@@ -996,6 +996,11 @@
   padding: 0 2px;
 }
 
+.home_message .message_wrapper .bottom .up a,
+.home_message .message_wrapper .bottom .down a {
+  transition: all var(--transition);
+}
+
 @media screen and (max-width: 1200px) {
   .home_welcome .left {
     width: 100%;
