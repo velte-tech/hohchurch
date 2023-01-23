@@ -18,12 +18,6 @@ const PcheckBox = () => {
         value={checked}
         onChange={handleChange}
       />
-      
-      <Checkbox
-        label="Elementary"
-        value={checked}
-        onChange={handleChange}
-      />
 
     </div>
     
