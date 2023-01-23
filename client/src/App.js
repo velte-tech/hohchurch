@@ -90,10 +90,13 @@ const router = createBrowserRouter(
 
     </Route>
 
-    <Route path="/give" element = {<GiveLayout />}>
+    <Route path="/give" element = {<GiveLayout />}>   
     <Route path="/give" element= {<Give />} />
     <Route path="/register" element= {<Registration />} />
+
     </Route>
+  
+  
     </Route>
   )
 );
