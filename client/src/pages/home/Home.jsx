@@ -97,7 +97,7 @@ function Home() {
               <img src={outreachImg} alt="" />
               <div className="text">
                 <p className="hover_overlay ">Outreach & Trips</p>
-                <p>Finf our service time and direction to our locations</p>
+                <p>Find our service time and direction to our locations</p>
                 <Link className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -113,7 +113,7 @@ function Home() {
               <img src={newHereImg} alt="" />
               <div className="text">
                 <p className="hover_overlay ">New Here?</p>
-                <p>Finf our service time and direction to our locations</p>
+                <p>Find our service time and direction to our locations</p>
                 <Link to="/about" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
