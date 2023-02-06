@@ -1,12 +1,12 @@
 #home {
   overflow-x: hidden;
-  /* width: 100vw; */
+  width: 100vw;
 }
 
 #home .home_showcase {
   min-height: 40rem;
-  background: url("../../assets/images/pexels-martin-péchy-2078264\ 1.png")
-    no-repeat center center/cover;
+  background: url("../../assets/images/new-showcase.jpg") no-repeat center
+    center/cover;
 }
 
 #home .showcase_content {
@@ -82,9 +82,7 @@
   border-radius: 0.5rem;
   overflow: hidden;
   bottom: 3rem;
-  box-shadow: 
-  0 6px 10px rgb(0 0 0 / 8%), 
-  0 0 6px rgb(0 0 0 / 5%);
+  box-shadow: 0 6px 10px rgb(0 0 0 / 8%), 0 0 6px rgb(0 0 0 / 5%);
 }
 
 .home_welcome .right .card:hover .text {
@@ -138,7 +136,6 @@
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
-  
 }
 
 .home_welcome .right .shape {
@@ -342,7 +339,7 @@
     margin-top: 0;
     padding: 1rem;
   }
-  
+
   .home_welcome .right .shape {
     bottom: 20rem;
     height: 160px;
@@ -495,7 +492,6 @@
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
-  
 }
 
 .home_welcome .right .shape {
@@ -732,7 +728,7 @@
   .home_welcome .left {
     margin-top: 0;
   }
-  
+
   .home_welcome .right .shape {
     bottom: 17rem;
     height: 160px;
@@ -883,7 +879,6 @@
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
-  
 }
 
 .home_welcome .right .shape {
@@ -1091,7 +1086,7 @@
   .home_welcome .left {
     margin-top: 0;
   }
-  
+
   .home_welcome .right .shape {
     bottom: 17rem;
     height: 160px;

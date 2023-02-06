@@ -1,7 +1,6 @@
 export {default as Home} from "./home/Home"
 export {default as Contact} from "./contact/Contact"
 export {default as Service} from "./service/Service"
-export {default as About} from "./about/About"
 export {default as Jobs} from "./jobs/Jobs"
 export { default as Give } from "./give/Give"
 
@@ -20,11 +19,14 @@ export { default as Location } from "./location/Location"
 export { default as Messages } from "./messages/Messages"
 export { default as Ministries } from "./ministries/Ministries"
 export { default as Outreach } from "./outreach/Outreach"
-export { default as Parents } from "./parents/Parents"
-export { default as Prayer } from "./prayer/Prayer"
-export { default as Students } from "./students/Students"
-export { default as Young_adults } from "./young_adults/Young_adults"
-export { default as Registration } from "./Registration/Registration"
+export { default as Parents } from "./parents/Parents";
+export { default as Prayer } from "./prayer/Prayer";
+export { default as Students } from "./students/Students";
+export { default as Young_adults } from "./young_adults/Young_adults";
+export { default as Registration } from "./Registration/Registration";
+export { default as Newsletter } from "./newsletter/Newsletter";
+export { default as Serve } from "./serve/Serve";
+export { default as Sermon } from "./sermons/Sermon";
 
 
 

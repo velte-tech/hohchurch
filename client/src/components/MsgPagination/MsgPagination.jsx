@@ -1,31 +1,30 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
 import "./msgPagination.css";
 import { items } from "./Data";
 
-function Items({currentItems}) {
-    return (
-      <>
-        {currentItems &&
-          currentItems.map((item) => (
-            <Link>
+function Items({ currentItems }) {
+  return (
+    <>
+      {currentItems &&
+        currentItems.map((item) => (
+          <Link>
             <img src={item.img} alt="" />
             <div className="bottom">
               <p>{item.title}</p>
               <p>{item.heading}</p>
             </div>
           </Link>
-          ))}
-      </>
-    );
-  }
+        ))}
+    </>
+  );
+}
 function MsgPagination() {
-//   const handlePageClick = (event) => {
-//     console.log(event.selected);
-//   };
-  
- 
+  //   const handlePageClick = (event) => {
+  //     console.log(event.selected);
+  //   };
+
   const [itemOffset, setItemOffset] = useState(0);
   const itemsPerPage = 6;
 
@@ -33,20 +32,16 @@ function MsgPagination() {
   const currentItems = items.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(items.length / itemsPerPage);
 
-
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
     setItemOffset(newOffset);
   };
-  
-  return (
 
+  return (
     <>
       <div className="messages_main">
         <div className="message_card">
-         
-            <Items currentItems={currentItems} />
-
+          <Items currentItems={currentItems} />
         </div>
 
         <ReactPaginate

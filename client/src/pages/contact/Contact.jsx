@@ -22,7 +22,9 @@ function Contact() {
             <p>Phone | 303-664-5524</p>
             <p>
               Email |
-              <Link className="hover_overlay">info@flatironschurch.com</Link>{" "}
+              <Link className="hover_overlay">
+                info@highwayofholinesschurch.com
+              </Link>{" "}
             </p>
           </div>
         </div>
@@ -39,7 +41,9 @@ function Contact() {
             connected with others at Flatirons that understand your struggle and
             can offer hope.
           </p>
-          <Link className="btn">SUBMIT A PRAYR REQUEST</Link>
+          <Link to="/prayer" className="btn">
+            SUBMIT A PRAYR REQUEST
+          </Link>
         </div>
       </section>
 
@@ -48,7 +52,7 @@ function Contact() {
         <div className="form_wrapper container">
           <form autoComplete="off">
             <ul>
-              <li>
+              {/* <li>
                 <label for="interest">
                   Choose the type of Question or Interest
                   <span className="star_sign"> *</span>
@@ -75,7 +79,7 @@ function Contact() {
                     </option>
                   </select>
                 </div>
-              </li>
+              </li> */}
 
               <li>
                 <label>
@@ -94,7 +98,7 @@ function Contact() {
               </li>
 
               <li>
-                <label for="fiel_5">
+                <label for="field_5">
                   Email <span className="start_sign">*</span>
                 </label>
                 <div>
@@ -102,8 +106,8 @@ function Contact() {
                 </div>
               </li>
 
-              <li>
-                <label for="fiel_6">
+              {/* <li>
+                <label for="field_6">
                   Cell Phone Number
                   <span className="start_sign"> *</span>
                 </label>
@@ -179,9 +183,9 @@ function Contact() {
                     placeholder
                   ></textarea>
                 </div>
-              </li>
+              </li> */}
 
-              <li>
+              {/* <li>
                 <label id="field14">
                   Which is your primary campus?
                   <span className="star_sign"> *</span>
@@ -250,10 +254,10 @@ function Contact() {
                     <label for="field20">Longmont Campus</label>
                   </span>
                 </div>
-              </li>
+              </li> */}
 
               <li>
-                <input type="submit" value="Submit"/>
+                <input type="submit" value="Submit" />
               </li>
             </ul>
           </form>

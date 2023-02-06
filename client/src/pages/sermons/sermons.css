@@ -1,0 +1,22 @@
+#sermon_video {
+  padding: 5rem 0;
+  background: #000;
+}
+
+#sermon_video .video_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+#sermon_video .utube_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* #id iframe {
+  max-width: 100%;
+} */

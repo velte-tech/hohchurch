@@ -37,13 +37,13 @@ const Longmont = () => {
 
       <section id="longmont_about">
         <div className="about_wrapper container">
-        <h1 className="text_center">ABOUT</h1>
-        <p className="text_center">
-          Since our doors opened in 2018, our heart has been to share the
-          awesome love of Jesus to the community of Longmont. We exist to live
-          out and show that amazing grace to all.{" "}(
-          <Link className="hover_overlay">John 15:12</Link>) .
-        </p>
+          <h1 className="text_center">ABOUT</h1>
+          <p className="text_center">
+            Since our doors opened in 2018, our heart has been to share the
+            awesome love of Jesus to the community of Longmont. We exist to live
+            out and show that amazing grace to all. (
+            <Link className="hover_overlay">John 15:12</Link>) .
+          </p>
         </div>
       </section>
 
@@ -218,7 +218,7 @@ const Longmont = () => {
               <div className="text">
                 <p className="hover_overlay ">VOLUNTEER @ LONGMONT</p>
                 <p>Finf our service time and direction to our locations</p>
-                <Link className="linkAnima">
+                <Link to="/serve" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>

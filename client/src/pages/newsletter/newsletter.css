@@ -1,0 +1,144 @@
+#newsletter .newsletter_showcase {
+  background: url("../../assets/images/stuu1.jpg") no-repeat center center/cover;
+  height: 37rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.newsletter_showcase::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.newsletter_showcase h1 {
+  color: #fff;
+  font-size: var(--head_font);
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter_form {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 85%;
+  margin: auto;
+}
+
+#newsletter form {
+  margin: 5rem auto;
+  width: 100%;
+}
+
+#newsletter label {
+  margin-bottom: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#newsletter .star::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  margin-left: 2px;
+  background: rgb(207, 2, 2);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+#newsletter input,
+#newsletter select {
+  display: block;
+  width: 350px;
+  height: 41px;
+  outline: 0;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#newsletter input {
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+  color: #bdbdbd;
+}
+
+#newsletter input[type="submit"] {
+  width: 100px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid var(--primary_color);
+  border-radius: 0;
+  color: #000;
+  background-color: #fff;
+  transition: 300ms ease;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+#newsletter input[type="submit"]:hover {
+  background-color: var(--primary_color);
+  color: #fff;
+}
+
+#newsletter select {
+  padding: 0.2rem;
+  font-size: 1rem;
+  color: #bdbdbd;
+}
+
+#newsletter input:focus,
+#newsletter select:focus {
+  box-shadow: 1px 1px 5px 3px rgba(164, 191, 202, 0.4);
+}
+
+#newsletter .name,
+#newsletter .contact {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ============ MEDIA QUERY ========== */
+
+@media screen and (max-width: 1000px) {
+  .newsletter_form {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #newsletter .name,
+  #newsletter .contact {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #newsletter input,
+  #newsletter select {
+    width: 100%;
+  }
+
+  #newsletter input[type="submit"] {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .newsletter_showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .newsletter_form {
+    max-width: 100%;
+  }
+
+  #newsletter form {
+    margin: 3rem auto;
+  }
+}

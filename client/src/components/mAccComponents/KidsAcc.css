@@ -10,7 +10,7 @@
   transition: color var(--transition);
 }
 
-.item .title:hover p{
+.item .title:hover p {
   color: var(--primary_color);
 }
 .item a {
@@ -33,11 +33,7 @@
   height: 0;
   padding-top: 0.5rem;
   overflow: hidden;
-  transition: height ease 400ms ;
-}
-
-.content.animated {
-  height: 220px;
+  transition: height ease 400ms;
 }
 
 .content .edit {
@@ -54,11 +50,4 @@
 .title span.rotate_icon {
   transform: rotate(180deg);
   transition: transform 300ms ease-in-out;
-}
-
-
-@media screen and (max-width:600px) {
-  .content.animated {
-    height: auto;
-  }
 }
