@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import { slideData } from "./data";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 
-export default function Sliders({ title }) {
+function Sliders() {
   const sliderRef = useRef();
   // const sermon = useLoaderData();
 
@@ -137,3 +137,5 @@ export default function Sliders({ title }) {
 
 //   return res.json();
 // };
+
+export default Sliders;
