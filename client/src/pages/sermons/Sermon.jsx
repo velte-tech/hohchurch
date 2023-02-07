@@ -1,6 +1,6 @@
 import React from "react";
 import "./sermons.css";
-import Slide from "../../components/msgSlider/Slider";
+import Slide from "../../components/msgSlider/slider";
 // import { useLoaderData, useParams } from "react-router-dom";
 
 export default function Sermon() {
