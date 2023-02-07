@@ -2,8 +2,8 @@ import {React} from 'react'
 import { Link } from 'react-router-dom';
 import './Leadership.css'
 // Images
-import l1 from "../../assets/images/antt.jpg";
-import naruto from "../../assets/images/naruto.jpg";
+import l1 from "../../assets/images/ss1.jpeg";
+import naruto from "../../assets/images/nat3.jpeg";
 
 import { MdMailOutline } from 'react-icons/md';
 import { useEffect } from "react";
