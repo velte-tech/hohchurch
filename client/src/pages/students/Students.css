@@ -31,7 +31,7 @@
 }
 
 .stu-left {
-    width: 55%;
+    width: 50%;
     position: relative;
     top: -5rem;
     left: 0;
@@ -62,7 +62,7 @@
 
 
 .stu-right {
-    width: 30%;
+    width: 40%;
     color: #fff;
     display: flex;
     flex-direction: column;

@@ -3,7 +3,7 @@ import "./home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Slides from "../../components/msgSlider/Slider";
+import Slides from "../../components/msgSlider/slider";
 
 // Images
 import churchImg from "../../assets/images/church.jpg";
