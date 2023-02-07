@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -8,7 +9,7 @@ import {
 import {
   Home,
   Contact,
-  About,
+  // About,
   Service,
   Jobs,
   Give,
@@ -25,6 +26,7 @@ import {
   Ministries,
   Outreach,
   Kids,
+  Kids_Detail,
   Students,
   Prayer,
   Young_adults,
@@ -45,7 +47,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index exact element={<Home />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/about" element={<About />} />
+      {/* <Route path="/about" element={<About />} /> */}
       <Route path="/service" element={<Service />} />
       <Route path="/jobs" element={<Jobs />} />
       <Route path="*" element={<NotFound />} />
@@ -74,6 +76,8 @@ const router = createBrowserRouter(
       <Route path="/Outreach" element={<Outreach />} />
 
       <Route path="/Kids" element={<Kids />} />
+      
+      <Route path="/Kids_Detail" element={<Kids_Detail />} />
 
       <Route path="/Students" element={<Students />} />
 

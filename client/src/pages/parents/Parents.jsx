@@ -2,7 +2,7 @@ import React from 'react'
 import './Parents.css'
 import { Link } from 'react-router-dom'
 import AOS from "aos";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import prayy from "../../assets/images/prayy.jpg";
 import stuu from "../../assets/images/stuu12.jpg";
 import pasem from "../../assets/images/pasem.webp";
@@ -40,7 +40,7 @@ const Parents = () => {
           <div className='min-group-case-1'>
             <div className='min-group-txt'>
               <h1 className='focus-in-contract-bck'>
-                PARENTS
+                MENS & WOMEN FELLOWSHIP
               </h1>
             
             </div>
@@ -63,25 +63,32 @@ const Parents = () => {
                 >
                   <div className='pgl'>
                     <div className='pgl-1'>
-                      NEXTGEN MINISTRIES
+                      MEN FELLOWSHIP
                     </div>
+
                     <div className='pgl-2'>
                       From cradle to college, we want to come alongside you to help you grow in a relationship with Christ.NEXTGEN Ministries include Kids, Students, College, and Parents Ministry.
                     </div>
+
+                    <div className='pgl-2 df'>
+                      Next Meeting: Wednesday at 6: 30 PM 
+                     
+                    </div>
+                    
                     <div className='pgl-3'>
 
                       <div className='nxt-l3'>
 
-                        <Link className='btn' to='/Ministries'>
-                          SERVE
+                        <Link className='btn' to='/Groups'>
+                          JOIN US
                         </Link>
 
                       </div>
-                      <div className='nxt-l4'>
+                      {/* <div className='nxt-l4'>
                         <Link className='btn' to='/Ministries'>
                           RESOURCES
                         </Link>
-                      </div>
+                      </div> */}
 
                     </div>
                   </div>
@@ -141,14 +148,20 @@ const Parents = () => {
                     data-aos-delay="600"
                 >
                   <div className='rrr-1'>
-                    JOIN US
+                    WOMEN FELLOWSHIP
                   </div>
+
                   <div className='rrr-2'>
                     God chose YOU to raise your kid(s). That's a big job, so let's take a minute to ReSet. Take a breath, follow Jesus & lead with our Online Parenting Summit starting August 6.
                   </div>
+
+                  <div className='rrr-2 df'>
+                    Next Meeting: Wednesday at 6: 30 PM
+                  </div>
+                  
                   <div className='rrr-3'>
-                    <Link className='btn'>
-                      LEARN MORE
+                    <Link to='/Groups' className='btn'>
+                      JOIN US
                     </Link>
                   </div>
                 </div>
@@ -193,7 +206,7 @@ const Parents = () => {
             <div className='ngp-case'>
               <div className='ngp-show'>
                 <div className='ngp-txt'>
-                  NEXTGEN MINISTRIES
+                  OLD-TIMERS FELLOWSHIP
                 </div>
 
                 <div className='ngp-plug'>

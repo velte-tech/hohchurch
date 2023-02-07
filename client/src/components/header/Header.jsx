@@ -81,7 +81,7 @@ function Header() {
               >
                 <span className="btn-name">
                   <ImLocation className="iconn" />
-                  <span className="loc-n1">LOCATION & TIMES</span>
+                  <span className="loc-n1">EVENTS & TIMES</span>
                 </span>
               </button>
             </div>
@@ -136,19 +136,19 @@ function Header() {
 
               <div className="dropdown-menu">
                 <Link to="/Aurora" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  AURORA
+                  HOH HARVEST
                 </Link>
                 <Link to="/Denver" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  DENVER
+                  HOH HARVEST
                 </Link>
                 <Link to="/Lafayette" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  LAFAYETTE
+                  HOH HARVEST
                 </Link>
                 <Link to="/Longmont" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  LONGMONT
+                  HOH HARVEST
                 </Link>
                 <Link to="/West" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  WEST
+                  HOH HARVEST
                 </Link>
               </div>
 

@@ -139,7 +139,10 @@
     overflow: hidden;
     z-index: 3;
     top: 0;
+    opacity: 1;
 }
+
+
 
 @media screen and (max-width: 1000px) {
   .menu-overlay {
@@ -466,18 +469,7 @@ button {
 
 .header-bg {
     background: rgba(255, 255, 255, 0.7);
-    transition: all .2s ease-in;
-
+    transition: all .2s ease-in-out;
 }
 
 /* transparent bg end */
-
-/* @media screen and (max-width: 600px) {
-    .nav-links .nav-item a  {
-        font-size: 19px;
-    }
-
-    .men {
-        font-size: 19px;
-    }
-} */

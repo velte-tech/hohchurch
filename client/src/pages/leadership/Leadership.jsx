@@ -2,7 +2,7 @@ import {React} from 'react'
 import { Link } from 'react-router-dom';
 import './Leadership.css'
 // Images
-import l1 from "../../assets/images/l1.webp";
+import l1 from "../../assets/images/antt.jpg";
 import naruto from "../../assets/images/naruto.jpg";
 
 import { MdMailOutline } from 'react-icons/md';
@@ -246,7 +246,7 @@ const Leadership = () => {
               </div>
               <div className='lone-4'>
                 <Link to='/' className='hover_overlay'>
-                  elders @flatironschurch.com
+                  veltetechnology.com
                 </Link>
               </div>
               

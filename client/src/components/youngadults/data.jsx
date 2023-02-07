@@ -1,6 +1,6 @@
 export const yaData = [{
         question: "Live with meaning.",
-        answer: "Influence the world around you. And we're not talking about having thousands of followers on Instagram. Flatirons YA is a community ready to live with purpose to influence the world around us. "
+        answer: "Influence the world around you. And we're not talking about having thousands of followers on Instagram. Holiness of Highway YA is a community ready to live with purpose to influence the world around us. "
     },
     {
         question: "Live in an authentic community.",
