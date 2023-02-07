@@ -9,7 +9,6 @@ import {
 import {
   Home,
   Contact,
-  // About,
   Service,
   Jobs,
   Give,
@@ -47,7 +46,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index exact element={<Home />} />
       <Route path="/contact" element={<Contact />} />
-      {/* <Route path="/about" element={<About />} /> */}
+    
       <Route path="/service" element={<Service />} />
       <Route path="/jobs" element={<Jobs />} />
       <Route path="*" element={<NotFound />} />
