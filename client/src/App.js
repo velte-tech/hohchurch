@@ -31,24 +31,28 @@ import {
   Parents,
   Care,
   Messages,
-  Registration,
+  Newsletter,
+  Serve,
+  Sermon,
   NotFound,
 } from "./pages/index";
 
 //Layouts
 import Layout from "./Layouts/Layout";
-import GiveLayout from "./Layouts/GiveLayout";
+import SlideContent from "./Layouts/SlideContent";
+import { SermonDetailLoader } from "./pages/sermons/Sermon";
+// import Sliders, { SermonLoder } from "./components/msgSlider/Slider";
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/">
     <Route path="/" element={<Layout />}>
       <Route index exact element={<Home />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/about" element={<About />} />
       <Route path="/service" element={<Service />} />
       <Route path="/jobs" element={<Jobs />} />
+      <Route path="/newsletter" element={<Newsletter />} />
+      <Route path="/serve" element={<Serve />} />
       <Route path="*" element={<NotFound />} />
         
       <Route path="/location" element={<Location />} />
@@ -88,15 +92,20 @@ const router = createBrowserRouter(
       
        <Route path="/Messages" element={<Messages />} />
 
-    </Route>
+        <Route path="/sermon" element={<SlideContent/>}>
+          {/* <Route 
+          index
+          element= {<Sliders/>}
+          loader={SermonLoder}
+          /> */}
+        <Route 
+        path="/sermon"
+        element={<Sermon />}
+        // Loader={SermonDetailLoader}
+         />
+        </Route>
 
-    <Route path="/give" element = {<GiveLayout />}>   
     <Route path="/give" element= {<Give />} />
-    <Route path="give/register" element= {<Registration />} />
-
-    </Route>
-  
-  
     </Route>
   )
 );

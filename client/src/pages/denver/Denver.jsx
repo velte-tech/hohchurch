@@ -56,9 +56,9 @@ const Denver = () => {
             >
               <img src={bellImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">VOLUNTEER @ DENVER</p>
+                <p className="hover_overlay ">HOH Church Young Adults</p>
                 <p>Finf our service time and direction to our locations</p>
-                <Link to="/about" className="linkAnima">
+                <Link to="/Young_adults" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -75,31 +75,33 @@ const Denver = () => {
       <section id="denver_reach">
         <div className="reach_wrapper">
           <div className="left">
-            <img 
-            src={personImg} alt=""
-            data-aos="fade-right"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-delay="600"
-             />
+            <img
+              src={personImg}
+              alt=""
+              data-aos="fade-right"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-delay="600"
+            />
           </div>
-          <div 
-          className="right"
-          data-aos="fade-left"
-          data-aos-delay="600"
-          data-aos-anchor-placement="top center"
+          <div
+            className="right"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-anchor-placement="top center"
           >
             <h2>STEFAN GUZOWSKI</h2>
             <p>
-              I first started coming to Flatirons when a
-              coworker invited me in 2008 but it was a trip to Afghanistan that
-              changed my life forever. After an internship here where I met my
-              wife, Mollie, I came on staff in January 2014. We have two twin
-              babies, Bear and Elliot, and my "little brother" from Big Brothers
-              Big Sisters just graduated high school. I love Denver and our
-              relentless pursuit to reach this community and tell them about
-              Jesus' love.
+              I first started coming to Flatirons when a coworker invited me in
+              2008 but it was a trip to Afghanistan that changed my life
+              forever. After an internship here where I met my wife, Mollie, I
+              came on staff in January 2014. We have two twin babies, Bear and
+              Elliot, and my "little brother" from Big Brothers Big Sisters just
+              graduated high school. I love Denver and our relentless pursuit to
+              reach this community and tell them about Jesus' love.
             </p>
-            <Link className="linkAnima" to="/contact">Contact <span className="arrow"></span></Link>
+            <Link className="linkAnima">
+              Contact <span className="arrow"></span>
+            </Link>
           </div>
         </div>
       </section>
@@ -109,28 +111,40 @@ const Denver = () => {
         <div className="denver_events_wrapper">
           <h2>Events @ Denver Campus</h2>
           <div className="card_wrapper">
-          <div className="card">
+            <div className="card">
               <img src={breakfast} alt="" />
               <div className="text">
-                <p className="hover_overlay ">PANCAKE BREAKFAST <br />JANUARY 15, 2023</p>
-                <p>Pancake Day! Join us for a Pancake Breakfast on the 3rd Sunday of...</p>
-                <Link className="linkAnima">
+                <p className="hover_overlay ">
+                  PANCAKE BREAKFAST <br />
+                  JANUARY 15, 2023
+                </p>
+                <p>
+                  Pancake Day! Join us for a Pancake Breakfast on the 3rd Sunday
+                  of...
+                </p>
+                <Link to="/" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
             </div>
-          <div className="card">
+            <div className="card">
               <img src={comingSoon} alt="" />
               <div className="text">
-                <p className="hover_overlay ">COMING <br />SOON!</p>
-                <p>Coming Soon! Connect - Every Thursday. A place to connect, make new...</p>
+                <p className="hover_overlay ">
+                  COMING <br />
+                  SOON!
+                </p>
+                <p>
+                  Coming Soon! Connect - Every Thursday. A place to connect,
+                  make new...
+                </p>
                 <Link className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
             </div>
           </div>
-          </div>
+        </div>
       </section>
     </div>
   );

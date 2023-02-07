@@ -9,11 +9,11 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 function Faq() {
   const [clicked, setClicked] = useState(false);
 
-  const toggle = index => {
-    if(clicked === index) {
-        return setClicked(null)
+  const toggle = (index) => {
+    if (clicked === index) {
+      return setClicked(null);
     }
-    setClicked(index)
+    setClicked(index);
   };
 
   return (
@@ -26,19 +26,26 @@ function Faq() {
         }}
       >
         <div className="faq_wrapper">
-          <h1>FAQ</h1>
+          <h1>Frequently Asked Questions</h1>
           {faqData.map((item, index) => {
             return (
               <div className="accordion">
-                <div className="question" onClick={() => toggle(index) } key={index}>
+                <div
+                  className="question"
+                  onClick={() => toggle(index)}
+                  key={index}
+                >
                   <p>{item.question}</p>
 
-                    <span className={clicked === index ? "activated" :""}> <MdOutlineKeyboardArrowDown />
+                  <span className={clicked === index ? "activated" : ""}>
+                    {" "}
+                    <MdOutlineKeyboardArrowDown />
                   </span>
                 </div>
-
-                <div className={clicked === index ? "dropdown" :" dropdown  drop"}>
-                        <p>{item.answer}</p>
+                <div
+                  className={clicked === index ? "dropdown" : " dropdown  drop"}
+                >
+                  <p>{item.answer}</p>
                 </div>
               </div>
             );
@@ -48,6 +55,5 @@ function Faq() {
     </section>
   );
 }
-
 
 export default Faq;

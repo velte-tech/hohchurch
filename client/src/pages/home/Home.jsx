@@ -3,7 +3,7 @@ import "./home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Slides from "../../components/msgSlider/slider";
+import Slides from "../../components/msgSlider/Slider";
 
 // Images
 import churchImg from "../../assets/images/church.jpg";
@@ -46,7 +46,7 @@ function Home() {
                   <span className="arrow"></span>
                 </Link>
 
-                <Link className="link linkAnima">
+                <Link to="/messages" className="link linkAnima">
                   More In This series
                   <span className="arrow"></span>
                 </Link>
@@ -82,7 +82,7 @@ function Home() {
               <div className="text">
                 <p className="hover_overlay ">Church Services & Time</p>
                 <p>Find our service time and direction to our locations</p>
-                <Link className="linkAnima">
+                <Link to="/groups" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -98,7 +98,7 @@ function Home() {
               <div className="text">
                 <p className="hover_overlay ">Outreach & Trips</p>
                 <p>Find our service time and direction to our locations</p>
-                <Link className="linkAnima">
+                <Link to="/outreach" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -114,7 +114,7 @@ function Home() {
               <div className="text">
                 <p className="hover_overlay ">New Here?</p>
                 <p>Find our service time and direction to our locations</p>
-                <Link to="/about" className="linkAnima">
+                <Link to="/im_new" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -136,7 +136,7 @@ function Home() {
 
             <div className="right">
               <h1 className="text_center">
-                DOWNLOAD THE NEW HOH-CHURCH COMMUNITY CHURCH APP
+                DOWNLOAD THE NEW HIGHWAY HOLINESS CHURCH APP
               </h1>
               <div className="bottom">
                 <Link className="hover_overlay">

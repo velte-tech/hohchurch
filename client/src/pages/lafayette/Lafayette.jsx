@@ -4,10 +4,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Lafayette.css";
-import {
-  MdOutlineDataExploration,
-  MdOutlineKeyboardArrowDown,
-} from "react-icons/md";
 import Search from "../../components/searchLocate/Search";
 import SingleCard from "../../components/aboutSlideIn/SingleCard";
 import gatheringImg from "../../assets/images/gathering.jpg";
@@ -22,7 +18,6 @@ import lafPastorImg from "../../assets/images/lafayette_pastor.jpg";
 import KidsAcc from "../../components/mAccComponents/KidsAcc";
 
 const Lafayette = () => {
-
   useEffect(() => {
     AOS.init(
       {
@@ -38,7 +33,9 @@ const Lafayette = () => {
       <section id="lafayette_showcase">
         <h1 className="focus-in-contract-bck">LAFAYETTE</h1>
         <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p>
-        <p className="laf_asl focus-in-contract-bck">ASL INTERPRETATION service</p>
+        <p className="laf_asl focus-in-contract-bck">
+          ASL INTERPRETATION service
+        </p>
         <Search />
       </section>
 
@@ -71,7 +68,7 @@ const Lafayette = () => {
               <div className="text">
                 <p className="hover_overlay ">Outreach & Trips</p>
                 <p>Find our service time and direction to our locations</p>
-                <Link className="linkAnima">
+                <Link to="/outreach" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -87,7 +84,7 @@ const Lafayette = () => {
               <div className="text">
                 <p className="hover_overlay ">INFANT & CHILD DEDICATION</p>
                 <p>Find our service time and direction to our locations</p>
-                <Link to="/about" className="linkAnima">
+                <Link to="/kids" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -100,7 +97,6 @@ const Lafayette = () => {
           </div>
         </div>
       </section>
-
 
       {/* ======= MINISTRIES SECTION ======= */}
 
@@ -120,8 +116,8 @@ const Lafayette = () => {
               <Link to="/students" className="btn">
                 STUDENTS
               </Link>
-              <Link to="/college" className="btn">
-                COLLEGE
+              <Link to="/care" className="btn">
+                CARE
               </Link>
               <Link to="/parents" className="btn">
                 PARENTS
@@ -131,13 +127,13 @@ const Lafayette = () => {
 
           <KidsAcc label="Groups">
             <p>
-              Join us and meet other adults in the 55+ community at Flatirons! We
-              will be hosting monthly luncheons and organizing events for many
-              interests. Our monthly luncheons include a delicious lunch,
+              Join us and meet other adults in the 55+ community at Flatirons!
+              We will be hosting monthly luncheons and organizing events for
+              many interests. Our monthly luncheons include a delicious lunch,
               information about how you can get plugged in at Flatirons and
               encouraging speakers.
             </p>
-            <Link className="linkAnima edit">
+            <Link to="/groups" className="linkAnima edit">
               Learn More <span className="arrow"></span>
             </Link>
           </KidsAcc>
@@ -167,7 +163,7 @@ const Lafayette = () => {
               emotional struggles, drug and alcohol dependence, sexual issues,
               and physical and emotional abuse.
             </p>
-            <Link className="linkAnima edit">
+            <Link to="/care" className="linkAnima edit">
               Learn More <span className="arrow"></span>
             </Link>
           </KidsAcc>
@@ -177,13 +173,12 @@ const Lafayette = () => {
               broken and forgotten. Each campus strives to partner with local
               organizations serving their local community.
             </p>
-            <Link className="linkAnima edit">
+            <Link to="/parents" className="linkAnima edit">
               Learn More <span className="arrow"></span>
             </Link>
           </KidsAcc>
         </div>
       </section>
-
 
       {/* ======= SERVE DIVIDER SETION ======= */}
       <section id="serve_divider">
@@ -227,7 +222,7 @@ const Lafayette = () => {
                   Join us for a weekly study and discussion about the truths in
                   the...
                 </p>
-                <Link to="/about" className="linkAnima">
+                <Link to="/" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -240,7 +235,7 @@ const Lafayette = () => {
                   <br />
                   JANUARY 20, 2023
                 </p>
-                <Link to="/about" className="linkAnima">
+                <Link to="/" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -272,7 +267,7 @@ const Lafayette = () => {
                   Sex is a nerve wrecking topic for many parents to consider
                   talking...
                 </p>
-                <Link to="/about" className="linkAnima">
+                <Link to="/" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -289,7 +284,7 @@ const Lafayette = () => {
                   Come join us for a luncheon and meet other adults in the 55+
                   community...
                 </p>
-                <Link to="/about" className="linkAnima">
+                <Link to="/" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
