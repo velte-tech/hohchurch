@@ -4,20 +4,19 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Slides from "../../components/msgSlider/slider";
+<<<<<<< HEAD
+=======
+import { FaFacebook } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { FiInstagram } from "react-icons/fi";
+import { AiFillYoutube } from "react-icons/ai";
+>>>>>>> update
 
 // Images
 import churchImg from "../../assets/images/church.jpg";
 import outreachImg from "../../assets/images/outreach.jpg";
 import newHereImg from "../../assets/images/newHere.jpg";
 import phoneImg from "../../assets/images/phone 1.png";
-import androidImg from "../../assets/images/android 1.png";
-import iosImg from "../../assets/images/ios 1.png";
-import messageImg1 from "../../assets/images/church6.jpg";
-import messageImg2 from "../../assets/images/church1.jpg";
-import messageImg3 from "../../assets/images/church2.jpg";
-import messageImg4 from "../../assets/images/church3.jpg";
-import messageImg5 from "../../assets/images/church4.jpg";
-import messageImg6 from "../../assets/images/church5.jpg";
 
 function Home() {
   useEffect(() => {
@@ -136,15 +135,32 @@ function Home() {
 
             <div className="right">
               <h1 className="text_center">
-                DOWNLOAD THE NEW HIGHWAY HOLINESS CHURCH APP
+                GET SOCIAL WITH US <br /> (HIGHWAY OF HOLINESS CHURCH)
               </h1>
               <div className="bottom">
-                <Link className="hover_overlay">
-                  <img src={androidImg} alt="" />
-                </Link>
-                <Link className="hover_overlay">
-                  <img src={iosImg} alt="" />
-                </Link>
+                <a
+                  href="https://web.facebook.com/HighwayofHolinessUK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook />
+                </a>
+
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <FiInstagram />
+                </a>
+
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <AiFillTwitterCircle />
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@highwayofholinesschristian7997"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillYoutube />
+                </a>
               </div>
             </div>
           </div>
@@ -161,44 +177,136 @@ function Home() {
             <div className="bottom">
               <div className="up">
                 <div className="box">
-                  <Link className="hover_overlay">
-                    <img src={messageImg1} alt="" />
-                  </Link>
-                  <Link className="btn">VIEW</Link>
+                  <div className="hover_overlay">
+                    <iframe
+                      id="utube_video"
+                      width="560"
+                      height="270"
+                      src="https://www.youtube.com/embed/NAg3fUq66-o"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <a
+                    className="btn"
+                    target="_blank"
+                    href="https://youtu.be/NAg3fUq66-o"
+                  >
+                    VIEW
+                  </a>
                 </div>
 
                 <div className="box">
-                  <Link className="hover_overlay">
-                    <img src={messageImg2} alt="" />
-                  </Link>
-                  <Link className="btn">VIEW</Link>
+                  <div className="hover_overlay">
+                    <iframe
+                      id="utube_video"
+                      width="560"
+                      height="270"
+                      src="https://www.youtube.com/embed/aDfTtKRBnBc"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+
+                  <a
+                    className="btn"
+                    target="_blank"
+                    href="https://www.youtube.com/live/aDfTtKRBnBc?feature=share"
+                  >
+                    VIEW
+                  </a>
                 </div>
                 <div className="box">
-                  <Link className="hover_overlay">
-                    <img src={messageImg3} alt="" />
-                  </Link>
-                  <Link className="btn">VIEW</Link>
+                  <div className="hover_overlay">
+                    <iframe
+                      id="utube_video"
+                      width="560"
+                      height="270"
+                      src="https://www.youtube.com/embed/ZQyO7YDV0Us"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <a
+                    className="btn"
+                    target="_blank"
+                    href="https://www.youtube.com/live/ZQyO7YDV0Us?feature=share"
+                  >
+                    VIEW
+                  </a>
                 </div>
               </div>
 
               <div className="down">
                 <div className="box">
-                  <Link className="hover_overlay">
-                    <img src={messageImg4} alt="" />
-                  </Link>
-                  <Link className="btn">VIEW</Link>
+                  <div className="hover_overlay">
+                    <iframe
+                      id="utube_video"
+                      width="560"
+                      height="270"
+                      src="https://www.youtube.com/embed/L2gIEE64KbU"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <a
+                    className="btn"
+                    target="_blank"
+                    href="https://www.youtube.com/live/L2gIEE64KbU?feature=share"
+                  >
+                    VIEW
+                  </a>
                 </div>
                 <div className="box">
-                  <Link className="hover_overlay">
-                    <img src={messageImg5} alt="" />
-                  </Link>
-                  <Link className="btn">VIEW</Link>
+                  <div className="hover_overlay">
+                    <iframe
+                      id="utube_video"
+                      width="560"
+                      height="270"
+                      src="https://www.youtube.com/embed/S-vIVk55kbg"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <a
+                    className="btn"
+                    target="_blank"
+                    href=" https://www.youtube.com/live/S-vIVk55kbg?feature=share"
+                  >
+                    VIEW
+                  </a>
                 </div>
+
                 <div className="box">
-                  <Link className="hover_overlay">
-                    <img src={messageImg6} alt="" />
-                  </Link>
-                  <Link className="btn">VIEW</Link>
+                  <div className="hover_overlay">
+                    <iframe
+                      id="utube_video"
+                      width="560"
+                      height="270"
+                      src="https://www.youtube.com/embed/5lqmtiGC0WM"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <a
+                    className="btn"
+                    target="_blank"
+                    href="https://www.youtube.com/live/5lqmtiGC0WM?feature=share"
+                  >
+                    VIEW
+                  </a>
                 </div>
               </div>
             </div>

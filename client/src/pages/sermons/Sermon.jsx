@@ -24,9 +24,7 @@ export default function Sermon() {
         </div>
       </section>
       <section id="sermon_text">
-        <div className="sermon_text_wrapper">
-          <h2>THE MOUNTAIN OF EDUCATION</h2>
-        </div>
+        <div className="sermon_text_wrapper"></div>
       </section>
       <Slide />
       {/* sideData={slideData.filter((slideData) => slideData.names != "Jack Ryne")} */}
