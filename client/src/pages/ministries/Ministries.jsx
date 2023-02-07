@@ -1,7 +1,7 @@
 import {React, useEffect} from 'react'
 import './Ministries.css'
 import bapp from "../../assets/images/cx5.jpeg";
-import bapp1 from "../../assets/images/kmm.jpeg";
+// import bapp1 from "../../assets/images/kmm.jpeg";
 import bapp2 from "../../assets/images/ya22.jpeg";
 import bapp3 from "../../assets/images/gpo1.jpeg";
 import bapp4 from "../../assets/images/gpo2.jpeg";

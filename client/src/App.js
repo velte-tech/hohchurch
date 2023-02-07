@@ -46,11 +46,9 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index exact element={<Home />} />
       <Route path="/contact" element={<Contact />} />
-    
       <Route path="/service" element={<Service />} />
       <Route path="/jobs" element={<Jobs />} />
-      <Route path="*" element={<NotFound />} />
-        
+      <Route path="*" element={<NotFound />} />  
       <Route path="/location" element={<Location />} />
 
       <Route path="/About_HOH" element={<About_HOH />} />
@@ -88,7 +86,7 @@ const router = createBrowserRouter(
 
       <Route path="/Care" element={<Care />} />
       
-       <Route path="/Messages" element={<Messages />} />
+      <Route path="/Messages" element={<Messages />} />
 
     </Route>
 

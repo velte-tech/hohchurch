@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 import spp1 from "../../assets/images/spp1.png";
 import spp2 from "../../assets/images/spp2.png";
 import spp3 from "../../assets/images/spp3.png";
-import { MdCheckBox } from 'react-icons/md';
+// import { MdCheckBox } from 'react-icons/md';
 import { GrMail } from 'react-icons/gr';
 import { AiTwotonePhone } from 'react-icons/ai';
-import Box_check from '../../components/checkbox/Box_check';
+// import Box_check from '../../components/checkbox/Box_check';
 
 
 const Outreach = () => {
