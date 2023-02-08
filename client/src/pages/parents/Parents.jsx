@@ -146,7 +146,7 @@ const Parents = () => {
                     God chose YOU to raise your kid(s). That's a big job, so let's take a minute to ReSet. Take a breath, follow Jesus & lead with our Online Parenting Summit starting August 6.
                   </div>
                   <div className='rrr-3'>
-                    <Link className='btn'>
+                    <Link to='/contact' className='btn'>
                       LEARN MORE
                     </Link>
                   </div>
