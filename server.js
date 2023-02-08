@@ -7,7 +7,7 @@ global.__basedir = __dirname;
 //connectDB
 connectDB();
 
-const app = require('./backend/prod');
+const app = require('./prod');
 
 const PORT = process.env.PORT || 5000;
 const server = app.listen(PORT, ()=>console.log(`HOH Server running on port http://localhost:${PORT} and on ${process.env.NODE_ENV} mode`))
