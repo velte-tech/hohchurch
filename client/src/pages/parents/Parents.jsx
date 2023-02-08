@@ -2,7 +2,7 @@ import React from 'react'
 import './Parents.css'
 import { Link } from 'react-router-dom'
 import AOS from "aos";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import prayy from "../../assets/images/prayy.jpg";
 import stuu from "../../assets/images/stuu12.jpg";
 import pasem from "../../assets/images/pasem.webp";
@@ -10,7 +10,7 @@ import dday from "../../assets/images/dday.webp";
 import spot1 from "../../assets/images/spot1.webp";
 import spot2 from "../../assets/images/spot2.webp";
 import spot3 from "../../assets/images/spot3.webp";
-import ParentSlide from '../../components/parentSlide/ParentSlide';
+// import ParentSlide from '../../components/parentSlide/ParentSlide';
 import ya1 from "../../assets/images/ya1.jpg";
 import ya2 from "../../assets/images/ya2.jpg";
 import comingSoon from "../../assets/images/comingSoon.jpg";
@@ -75,13 +75,12 @@ const Parents = () => {
                         <Link className='btn' to='/Ministries'>
                           SERVE
                         </Link>
-
                       </div>
-                      <div className='nxt-l4'>
+                      {/* <div className='nxt-l4'>
                         <Link className='btn' to='/Ministries'>
                           RESOURCES
                         </Link>
-                      </div>
+                      </div> */}
 
                     </div>
                   </div>
@@ -317,7 +316,7 @@ const Parents = () => {
           
           {/* PARENT SLIDE PLUG  */}
 
-          <ParentSlide />
+          {/* <ParentSlide /> */}
 
           {/* PARENT SLIDE PLUG END */}
 

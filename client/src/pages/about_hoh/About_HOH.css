@@ -186,6 +186,7 @@
 
 
 .interested-wrapper {
+    padding-top: 8rem;
     padding-bottom: 8rem;
 }
 
@@ -362,6 +363,22 @@
     width: 100%;
     margin: auto;
     }
+}
+
+
+
+.abt-hp {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.ps-l {
+    width: 50%;
+}
+
+.ps-r {
+    width: 50%;
 }
 
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import './Care.css'
 import AOS from "aos";
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Care_group from '../../components/care_group/Care_group';
 import Faq_care from '../../components/faq_care/Faq_care';
-import CareSlide from '../../components/careSlide/CareSlide';
+// import CareSlide from '../../components/careSlide/CareSlide';
 
 const Care = () => {
 
@@ -193,21 +193,21 @@ const Care = () => {
           {/* care slide  */}
 
           
-          <div className='care-slide-wrapper'>
+          {/* <div className='care-slide-wrapper'>
             <div className='care-slide-case'>
               <div className='care-slide-show'>
                 <div className='care-slide-txt focus-in-contract-bck'>
                   12 STEP SHIFT SERIES
                 </div>
 
-                {/* SILDE */}
+                
 
                 <CareSlide />
 
-                {/* SILDE END */}
+               
               </div> 
             </div>
-          </div>
+          </div> */}
 
 
           {/* care slide end */}
