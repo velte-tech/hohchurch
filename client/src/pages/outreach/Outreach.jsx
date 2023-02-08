@@ -1,9 +1,9 @@
 import React from 'react'
 import './Outreach.css'
 import { Link } from 'react-router-dom'
-import spp1 from "../../assets/images/spp1.png";
-import spp2 from "../../assets/images/spp2.png";
-import spp3 from "../../assets/images/spp3.png";
+import spp1 from "../../assets/images/spp1.jpg";
+import spp2 from "../../assets/images/spp2.jpg";
+import spp3 from "../../assets/images/spp3.jpg";
 // import { MdCheckBox } from 'react-icons/md';
 import { GrMail } from 'react-icons/gr';
 import { AiTwotonePhone } from 'react-icons/ai';

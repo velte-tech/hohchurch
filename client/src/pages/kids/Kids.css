@@ -70,6 +70,7 @@
     align-items: center;
     cursor: pointer;
     width: 31%;
+    transition: all .3s ease-in-out;
 }
 
 .kdt {
@@ -96,12 +97,11 @@
 }
 .kc-a3 {
     background: url('../../assets/images/x4.jpeg') no-repeat center center/cover;
-    /* background: url('../../assets/images/tddd3.jpg') no-repeat center center/cover; */
     height: 27rem;
     width: 100%;
     position: relative;
     top: -6rem;
-    transition: all .3s ease-in;
+    transition: all .3s ease-in-out;
 }
 
 .kk-s {

@@ -98,11 +98,13 @@
 
 .lead-pic {
     width: 250px;
+    height: 220px;
 }
 
 .lead-pic img {
     object-fit: contain;
     border-radius: 5px;
+    width: 100%;
 }
 
 .lead-name {

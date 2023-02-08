@@ -61,7 +61,7 @@ return (
               data-aos-anchor-placement="top center"
             >
 
-              <Link to='/Kids_Detail' className='kdt'>
+              <Link className='kdt'>
                 <div className='kc-a'>
                 <div className='kk-s-over'>
                   <div className='kk-s'></div>
@@ -96,7 +96,7 @@ return (
               data-aos-delay="610"
               data-aos-anchor-placement="top center"
             >
-              <Link to='/Kids_Detail' className='kdt'>
+              <Link  className='kdt'>
 
               <div className='kc-a2'>
                 <div className='kk-s-over'>
@@ -132,7 +132,7 @@ return (
               data-aos-delay="620"
               data-aos-anchor-placement="top center"
             >
-              <Link to='/Kids_Detail' className='kdt'>
+              <Link className='kdt'>
 
               <div className='kc-a3'>
                 <div className='kk-s-over'>
