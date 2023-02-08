@@ -1,11 +1,12 @@
 import React from "react";
 import "./sermons.css";
 import Slide from "../../components/msgSlider/slider";
-// import { useLoaderData, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { slideData } from "../../components/msgSlider/data";
 
 export default function Sermon() {
-  // const { id } = useParams();
-  // const sermon = useLoaderData();
+  const { id } = useParams();
+  const item = slideData.find((item) => item.id === id);
 
   return (
     <div>
@@ -15,7 +16,7 @@ export default function Sermon() {
             id="utube_video"
             width="760"
             height="415"
-            src="https://www.youtube.com/embed/BWDPWx6DNqM"
+            src={item.utube}
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -23,19 +24,7 @@ export default function Sermon() {
           ></iframe>
         </div>
       </section>
-      <section id="sermon_text">
-        <div className="sermon_text_wrapper"></div>
-      </section>
       <Slide />
-      {/* sideData={slideData.filter((slideData) => slideData.names != "Jack Ryne")} */}
     </div>
   );
 }
-
-//load sermon details
-// export const SermonDetailLoader = async ({ params }) => {
-//   const { id } = params;
-//   const res = await fetch("" + id);
-
-//   return res.json();
-// };

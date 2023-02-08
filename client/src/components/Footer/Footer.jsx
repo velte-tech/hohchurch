@@ -48,7 +48,7 @@ function Footer() {
             <Link to="/about_hoh" className="links linkAnima">
               ABOUT-HOH <span className="arrow"></span>
             </Link>
-            <Link to="/give" target="_blank" className="links linkAnima">
+            <Link to="/give" className="links linkAnima">
               Give <span className="arrow"></span>
             </Link>
             <Link to="/ministries" className="links linkAnima">

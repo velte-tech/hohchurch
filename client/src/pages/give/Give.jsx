@@ -18,8 +18,7 @@ function Give() {
               </p>
               <p>
                 God Bless you and welcome to our HoH online giving platform.You
-                can make your online payments for offering many other programmes
-                here...Thank You.
+                can make your online donation here...Thank You.
               </p>
             </div>
           </div>
@@ -49,10 +48,6 @@ function Give() {
             <div className="give_input">
               <label for="password">PASSWORD</label>
               <input id="password" type="password" required />
-            </div>
-            <div className="check">
-              <input type="checkbox" id="checked" />
-              <label for="checked"> Keep me logged in</label>
             </div>
             <div className="bottom_links">
               <input type="submit" name="LOGIN" className="btn" />

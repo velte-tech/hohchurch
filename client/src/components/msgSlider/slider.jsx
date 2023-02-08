@@ -115,7 +115,7 @@ function Sliders() {
       </div>
       <Slider ref={sliderRef} {...settings}>
         {slideData.map((item) => (
-          <Link to="/sermon" key={item.id} className="card">
+          <Link to={`/sermon/${item.id}`} key={item.id} className="card">
             <div className="card_top">
               <h2 className="text_on_img">{item.title}</h2>
               <img src={item.image} alt={item.title} />

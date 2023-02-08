@@ -4,19 +4,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Slides from "../../components/msgSlider/slider";
-<<<<<<< HEAD
-=======
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
 import { AiFillYoutube } from "react-icons/ai";
->>>>>>> update
 
 // Images
 import churchImg from "../../assets/images/church.jpg";
 import outreachImg from "../../assets/images/outreach.jpg";
 import newHereImg from "../../assets/images/newHere.jpg";
-import phoneImg from "../../assets/images/phone 1.png";
+import phoneImg from "../../assets/images/phone-app.png";
 
 function Home() {
   useEffect(() => {
