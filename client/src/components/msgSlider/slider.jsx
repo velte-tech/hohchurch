@@ -17,7 +17,7 @@ function Sliders() {
     infinite: true,
     speed: 500,
     slidesToShow: 4.2,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {

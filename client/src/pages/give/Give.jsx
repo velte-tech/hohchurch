@@ -38,7 +38,7 @@ function Give() {
         </div>
       </section>
 
-      <section id="give_form">
+      {/* <section id="give_form">
         <div className="give_form_wrapper container">
           <form>
             <div className="give_input">
@@ -56,7 +56,7 @@ function Give() {
             </div>
           </form>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
