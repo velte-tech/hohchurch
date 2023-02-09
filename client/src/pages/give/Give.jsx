@@ -1,36 +1,69 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 import "./give.css";
+import { MdOutlineDoubleArrow } from "react-icons/md";
+import paymentOptions from "../../assets/images/payment_options.png";
 
 function Give() {
   return (
     <>
-    <section id="give_login">
-      <div className="login_wrapper container">
-      <p>LOGIN</p>
-      <form>
-        <div className="give_input">
-        <label for="username">USERNAME</label>
-        <input id="username" type="text" required/>
+      <section id="give_showcase">
+        <div className="give_showcase_wrapper container">
+          <div className="left">
+            <div className="text">
+              <p>
+                Highway Of Holiness Church
+                <br />
+                (Online Giving)
+              </p>
+              <p>
+                God Bless you and welcome to our HoH online giving platform.You
+                can make your online payments for offering many other programmes
+                here...Thank You.
+              </p>
+            </div>
+          </div>
+          <div className="right">
+            <div className="top">
+              <p>Make Your Donation</p>
+            </div>
+            <div className="payment_img">
+              <img src={paymentOptions} alt="" />
+            </div>
+          </div>
         </div>
-        <div className="give_input">
-        <label for="password">PASSWORD</label>
-        <input id='password' type="password" required/>
+        <div className="arrow_down">
+          <a href="#give_form">
+            <MdOutlineDoubleArrow />
+          </a>
         </div>
-        <div className="check">
-        <input type="checkbox" id="checked" />
-        <label for="checked"> Keep me logged in</label>
+      </section>
+
+      <section id="give_form">
+        <div className="give_form_wrapper container">
+          <form>
+            <div className="give_input">
+              <label for="username">USERNAME</label>
+              <input id="username" type="text" required />
+            </div>
+            <div className="give_input">
+              <label for="password">PASSWORD</label>
+              <input id="password" type="password" required />
+            </div>
+            <div className="check">
+              <input type="checkbox" id="checked" />
+              <label for="checked"> Keep me logged in</label>
+            </div>
+            <div className="bottom_links">
+              <input type="submit" name="LOGIN" className="btn" />
+              <Link className="btn_l">REGISTER</Link>
+              <Link className="btn_l">FORGOT ACCOUNT</Link>
+            </div>
+          </form>
         </div>
-        <div className="bottom_links">
-          <input type="submit" name="LOGIN" className="btn"/>
-          <Link className='btn_l'>REGISTER</Link>
-          <Link className='btn_l'>FORGOT ACCOUNT</Link>
-        </div>
-      </form>
-      </div>
-    </section>
+      </section>
     </>
-  )
+  );
 }
 
-export default Give
+export default Give;

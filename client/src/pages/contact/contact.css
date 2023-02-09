@@ -61,7 +61,7 @@
 #contact_prayer {
   background: url("../../assets/images/prayer.jpg") no-repeat center
     center/cover;
-    background-attachment: fixed;
+  background-attachment: fixed;
   position: relative;
   min-height: 300px;
   display: flex;
@@ -94,90 +94,134 @@
 }
 
 #contact_prayer .prayer_section h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 #contact_prayer .prayer_section a {
   color: #fff;
 }
 
-
 /* ====== CONTACT_FORM SECTION ======= */
 #contact_form {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 #contact_form .form_wrapper ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
 
 #contact_form .form_wrapper label {
-    font-weight: 600;
-    font-size: 18px;
-    color: #5a5a5a;
+  font-weight: 600;
+  font-size: 18px;
+  color: #5a5a5a;
 }
 
 #contact_form .form_wrapper label span {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: red;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: red;
 }
 
 #contact_form .form_wrapper input,
-#contact_form .form_wrapper select {
-    display: block;
-    height: 30px;
+#contact_form .form_wrapper select,
+#contact_form .form_wrapper textarea {
+  display: block;
+  width: 500px;
+  border: 1px solid #aaaaaa;
+  outline: none;
+  font-size: 1.2rem;
+  color: #aaaaaa;
+}
+
+#contact_form .form_wrapper input:focus,
+#contact_form .form_wrapper select:focus {
+  box-shadow: inset 1px 1px 5px 0px rgba(209, 209, 209, 0.5),
+    inset -1px -1px 5px 0px rgba(197, 197, 197, 0.5);
+}
+
+#contact_form .form_wrapper input {
+  height: 40px;
 }
 
 #contact_form .form_wrapper input[type="email"],
 #contact_form .form_wrapper select {
-    width: 500px;
+  width: 500px;
 }
 
-#contact_form .form_wrapper li .name_input{
-   display: flex;
-   flex-direction: row;
-   gap: 10px;
+#contact_form .form_wrapper li .name_input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
-#contact_form .form_wrapper li .name_input label{
-   font-size: 14px;
-   font-weight: 400;
+#contact_form .form_wrapper li .name_input label {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 #contact_form .form_wrapper li .phone_input {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #contact_form .form_wrapper li .phone_input .dash {
-    width: 10px;
-    height: 1px;
-    background-color: #5a5a5a;
-    margin: 0.5rem;
+  width: 10px;
+  height: 1px;
+  background-color: #5a5a5a;
+  margin: 0.5rem;
 }
 
 #contact_form .form_wrapper li .radio_campus span {
-    display: flex;
-    gap: 0.7rem;
+  display: flex;
+  gap: 0.7rem;
 }
 
 #contact_form .form_wrapper li .radio_campus span label {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 #contact_form .form_wrapper input[type="submit"] {
-    background-color: #fff;
-    width: 70px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #fff;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--primary_color);
+  background-color: var(--primary_color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all var(--transition);
 }
 
+#contact_form .form_wrapper input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
 
+@media screen and (max-width: 1100px) {
+  #contact_form .form_wrapper li .name_input {
+    flex-direction: column;
+  }
+
+  #contact_form .form_wrapper input,
+  #contact_form .form_wrapper select {
+    width: 100%;
+  }
+
+  #contact_form .form_wrapper input[type="email"] {
+    width: 100%;
+  }
+
+  #contact_form .form_wrapper li textarea {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 650px) {
   #contact_showcase .showcase_wrapper h2 {
@@ -207,22 +251,10 @@
   #contact_prayer .prayer_section h2 {
     font-size: 1.5rem;
     line-height: 1.3;
-}
+  }
 
-
-#contact_form .form_wrapper{
-   max-width: 100%;
-   padding: 1rem;
-}
-
-
-#contact_form .form_wrapper input[type="email"],
-#contact_form .form_wrapper select {
-    width: 100%;
-}
-
-#contact_form .form_wrapper li textarea {
-    width: 100%;
-}
-
+  #contact_form .form_wrapper {
+    max-width: 100%;
+    padding: 1rem;
+  }
 }

@@ -4,7 +4,6 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
 import { AiFillYoutube } from "react-icons/ai";
-// import { CgToday } from "react-icons/cg";
 
 function Footer() {
   return (
@@ -12,7 +11,7 @@ function Footer() {
       <div className="footer_wrapper container text_center">
         <div className="social">
           <a
-            href="http://facebook.com"
+            href="https://web.facebook.com/HighwayofHolinessUK"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -33,7 +32,7 @@ function Footer() {
             <FiInstagram />
           </a>
           <a
-            href="http://facebook.com"
+            href="https://www.youtube.com/@highwayofholinesschristian7997"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -62,16 +61,17 @@ function Footer() {
 
           <div className="content_bottom text_center">
             <a
-              href="https://www.google.com/maps/@7.9044654,-1.0304069,7z"
+              href="https://www.google.com/maps/place/Highway+of+Holiness+Christian+Love+Centre/@51.5839588,-0.0629812,15z/data=!4m5!3m4!1s0x0:0x4ecefdf5708bc80e!8m2!3d51.584364!4d-0.0632244"
               target="_blank"
               rel="noopener noreferrer"
               className="hover_overlay"
             >
-              400 W South Boulder Road, Suite 1700 Lafayette, CO 80026
+              Unit 8, 2-8 Fountayne Rd, London N15 4QL, United Kingdom
             </a>
-            <p>+212 0254 520 21</p>
+            <p>+442088084444</p>
             <p>
-              © 2023 Highway Of Holiness Church | Developed by
+              © {new Date().getFullYear()} Highway Of Holiness Church |
+              Developed by
               <a target="_blank" rel="noreferrer" href="http://veltetech.com/">
                 Velte Technology Solutions
               </a>

@@ -128,20 +128,6 @@ const Im_new = () => {
               data-aos-anchor-placement="center-bottom"
             ></div>
           </div>
-
-          {/* <p>Hi...</p>
-          <p>
-            The Highway of Holiness Church (HOH) is an Evangelical, Charismatic
-            Christian Church that centers on companionship, love, and care. We
-            seek to exalt the Lord and build up His people via collective
-            worship and teachings that emphasize the sufficiency of God and His
-            Word......
-          </p>
-          <div>
-            <Link to="/About_HOH" className="btn">
-              KNOW MORE
-            </Link>
-          </div> */}
         </div>
       </section>
       <Faq />

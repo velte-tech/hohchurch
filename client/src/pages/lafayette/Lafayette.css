@@ -51,7 +51,6 @@
   margin-bottom: 1.5rem;
 }
 
-
 /* ======= SERVE_DIVIDER SECTION ======= */
 #serve_divider {
   display: flex;
@@ -91,6 +90,8 @@
 
 #lafayette_events .about_welcome {
   flex-direction: column;
+  max-width: 90%;
+  margin: auto;
 }
 
 #lafayette_events .about_welcome h2 {
@@ -103,14 +104,12 @@
 
 #lafayette_events .about_welcome .right {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
   padding: 0 1rem;
   position: none;
   position: relative;
-  right: -200px;
   margin-bottom: 3rem;
 }
 
@@ -129,7 +128,7 @@
 
 #lafayette_events .about_welcome .right .text p:first-child {
   margin-bottom: 7rem;
-  text-shadow: 1px 1px #000 ;
+  text-shadow: 1px 1px #000;
 }
 
 #lafayette_events .about_welcome .right .card:hover p:first-child {
@@ -164,6 +163,10 @@
 #lafayette_reach .reach_wrapper .right p:nth-child(2) {
   line-height: 1.3;
   font-weight: 700;
+}
+
+#lafayette_reach .reach_wrapper .right A {
+  transition: var(--transition);
 }
 
 /* ====== About_Showcase ====== */
@@ -203,28 +206,31 @@
     margin-bottom: 0rem;
   }
 
-   /* ======= LAFAYETTE_REACH SECTION ======= */
-   #lafayette_reach  {
+  /* ======= LAFAYETTE_EVENTS SECTION ======= */
+  #lafayette_events .about_welcome .right {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ======= LAFAYETTE_REACH SECTION ======= */
+  #lafayette_reach {
     margin-top: 3rem;
     min-height: auto;
-}
+  }
 
-#lafayette_reach .reach_wrapper {
+  #lafayette_reach .reach_wrapper {
     flex-direction: column;
     background-color: transparent;
     width: 100%;
     margin: auto;
+  }
+
+  #lafayette_reach .reach_wrapper .right {
+    padding: 1rem;
+    margin-right: 0;
+  }
 }
 
-
-#lafayette_reach .reach_wrapper .right {
-  padding: 1rem;
-  margin-right: 0;
-}
-
-}
-
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   #ministries .ministries_wrapper {
     width: 85%;
   }
@@ -254,11 +260,6 @@
     margin-bottom: 2rem;
   }
 
-}
-
-
-@media screen and (max-width: 600px) {
-
   #lafayette_events .about_welcome h2 {
     padding: 1rem 2rem;
     font-size: 1.7rem;
@@ -273,7 +274,7 @@
   #serve_divider h2 {
     font-size: 2rem;
   }
-  
+
   #serve_divider .bottom {
     gap: 3rem;
   }
@@ -281,5 +282,9 @@
   #serve_divider .bottom a {
     font-size: 1.3rem;
   }
-  
+
+  /* ======= LAFAYETTE_EVENTS SECTION ======= */
+  #lafayette_events .about_welcome .right {
+    grid-template-columns: 1fr;
+  }
 }

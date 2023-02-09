@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./contact.css";
 
 function Contact() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div>
       <section id="contact_showcase">
@@ -15,13 +24,13 @@ function Contact() {
         <div className="contact_wrapper">
           <div className="card">
             <p>
-              Central Office Address | 400 W South Boulder Road, Suite 1700
-              Lafayette, CO 80026
+              Central Office Address | Unit 8, 2-8 Fountayne Rd, London N15 4QL,
+              United Kingdom
             </p>
             <p>Office Hours | M-TH, 10:00 AM – 4:00 PM</p>
-            <p>Phone | 303-664-5524</p>
+            <p>Phone | +442088084444</p>
             <p>
-              Email |
+              Email |{" "}
               <Link className="hover_overlay">
                 info@highwayofholinesschurch.com
               </Link>{" "}
@@ -50,7 +59,7 @@ function Contact() {
       {/* ======= CONTACT_FORM SECTION ======= */}
       <section id="contact_form">
         <div className="form_wrapper container">
-          <form autoComplete="off">
+          <form autoComplete="off" onSubmit={handleSubmit}>
             <ul>
               {/* <li>
                 <label for="interest">
@@ -87,11 +96,23 @@ function Contact() {
                 </label>
                 <div className="name_input">
                   <span>
-                    <input name="fiel_3" type="text" required />
+                    <input
+                      name="fiel_3"
+                      type="text"
+                      required
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                    />
                     <label for="field_3">First</label>
                   </span>
                   <span>
-                    <input name="fiel_4" type="text" required />
+                    <input
+                      name="fiel_4"
+                      type="text"
+                      required
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
+                    />
                     <label for="field_4">Last</label>
                   </span>
                 </div>
@@ -102,7 +123,13 @@ function Contact() {
                   Email <span className="start_sign">*</span>
                 </label>
                 <div>
-                  <input name="field_5" type="email" />
+                  <input
+                    name="field_5"
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
                 </div>
               </li>
 
@@ -170,7 +197,7 @@ function Contact() {
                     <label for="field_12">###</label>
                   </span>
                 </div>
-              </li>
+              </li> */}
 
               <li>
                 <label for="field13">Comments and Questions</label>
@@ -178,12 +205,14 @@ function Contact() {
                   <textarea
                     name="field13"
                     id="field13"
-                    cols="50"
                     rows="10"
+                    required
                     placeholder
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
-              </li> */}
+              </li>
 
               {/* <li>
                 <label id="field14">
