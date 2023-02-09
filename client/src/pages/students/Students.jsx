@@ -4,9 +4,9 @@ import stuu22 from "../../assets/images/stuu22.jpg";
 import nxtt from "../../assets/images/nxtt.jpg";
 import { Link } from 'react-router-dom'
 import AOS from "aos";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Students_groups from '../../components/students_groups/Students_groups';
-import { GrMail } from 'react-icons/gr';
+// import { GrMail } from 'react-icons/gr';
 import { AiTwotonePhone } from 'react-icons/ai';
 import { MdAllInbox } from 'react-icons/md';
 
@@ -73,15 +73,26 @@ const Students = () => {
                   data-aos-delay="600"
               >
                 <div className='stu-txt1'>
-                  FLATIRONS STUDENTS
+                  STUDENTS
                 </div>
 
                 <div className='stu-txt2'>
-                  Every student deserves to have friends and a place where they can belong and connect with others.And Flatirons Students exists to do just that.
+                  {/* Every student deserves to have friends and a place where they can belong and connect with others.And Flatirons Students exists to do just that. */}
+
+                  Every student should have friends and a place to fit in and make connections with
+                  other people.To that end, HOH Students was created.
                 </div>
 
                 <div className='stu-txt3'>
-                  Flatirons Students, worship on Sunday’ s at 11 AM and meet on Wednesday nights throughout the school year.Once a month we have an all - student rally in Lafayette.All other Wednesdays students meet in groups at your their campus.
+                  {/* Flatirons Students, worship on Sunday’ s at 11 AM and meet on Wednesday nights throughout the school year.Once a month we have an all - student rally in Lafayette.All other Wednesdays students meet in groups at your their campus. */}
+
+                  HOH is dedicated to assisting students in moving closer to Christ despite the
+                  changes brought on by school, friends, significant others, and family.The HOH
+                  Students worship on Wednesday nights during the academic year and attend
+                  Sunday services at 11 AM. We hold an all - student rally in Lafayette once every
+                  month.All other Wednesdays students meet in groups at their campus.Students
+                  have the chance to participate in life groups where they can hang out with like -
+                    minded peers and devoted leaders as they begin their spiritual journey.
                 </div>
 
               </div>
@@ -121,11 +132,11 @@ const Students = () => {
                 <div className='nxt-l3'>
                   <Link className='btn' to='/Ministries'>SERVE</Link>
                 </div>
-                <div className='nxt-l4'>
+                {/* <div className='nxt-l4'>
                   <Link className='btn'>
                     RESOURCES
                   </Link>
-                </div>
+                </div> */}
               </div>
 
               <div className='nxtgen-right'>
@@ -172,11 +183,7 @@ const Students = () => {
           <div className='newsform-case'>
             <div className='newsform'>
 
-              <div className='news-left'
-                data-aos="fade-right"
-                data-aos-anchor-placement="center-bottom"
-                data-aos-delay="600"
-              >
+              <div className='news-left'>
                 <div className='nl-a'>
                   MIDDLE SCHOOL
                 </div>
@@ -227,7 +234,7 @@ const Students = () => {
                       </div>
                     </div>
                     
-                    <div className='nl'>
+                    {/* <div className='nl'>
                     
                       <div className='nl1'>
                         <div className='ft-1'>CAMPUS</div>
@@ -244,7 +251,7 @@ const Students = () => {
                         <option value="online">Online Campus</option>
                       </select>
 
-                  </div>
+                  </div> */}
 
                   <button className='btn'>SUBSCRIBE</button>
 
@@ -253,11 +260,7 @@ const Students = () => {
                 </div>
               </div>
 
-              <div className='news-right'
-                data-aos="fade-left"
-                  data-aos-anchor-placement="center-bottom"
-                  data-aos-delay="600"
-              >
+              <div className='news-right'>
                 <div className='nl-a'>
                   HIGH SCHOOL
                 </div>
@@ -308,7 +311,7 @@ const Students = () => {
                       </div>
                     </div>
                     
-                    <div className='nl'>
+                    {/* <div className='nl'>
                     
                       <div className='nl1'>
                         <div className='ft-1'>CAMPUS</div>
@@ -325,7 +328,7 @@ const Students = () => {
                         <option value="online">Online Campus</option>
                       </select>
 
-                  </div>
+                  </div> */}
 
                   <button className='btn'>SUBSCRIBE</button>
 

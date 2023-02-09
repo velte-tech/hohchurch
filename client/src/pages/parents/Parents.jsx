@@ -2,7 +2,7 @@ import React from 'react'
 import './Parents.css'
 import { Link } from 'react-router-dom'
 import AOS from "aos";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import prayy from "../../assets/images/prayy.jpg";
 import stuu from "../../assets/images/stuu12.jpg";
 import pasem from "../../assets/images/pasem.webp";
@@ -10,10 +10,11 @@ import dday from "../../assets/images/dday.webp";
 import spot1 from "../../assets/images/spot1.webp";
 import spot2 from "../../assets/images/spot2.webp";
 import spot3 from "../../assets/images/spot3.webp";
-import ParentSlide from '../../components/parentSlide/ParentSlide';
+// import ParentSlide from '../../components/parentSlide/ParentSlide';
 import ya1 from "../../assets/images/ya1.jpg";
 import ya2 from "../../assets/images/ya2.jpg";
 import comingSoon from "../../assets/images/comingSoon.jpg";
+import ParentsButts from '../../components/parentsButts/ParentsButts';
 
 
 
@@ -74,13 +75,12 @@ const Parents = () => {
                         <Link className='btn' to='/Ministries'>
                           SERVE
                         </Link>
-
                       </div>
-                      <div className='nxt-l4'>
+                      {/* <div className='nxt-l4'>
                         <Link className='btn' to='/Ministries'>
                           RESOURCES
                         </Link>
-                      </div>
+                      </div> */}
 
                     </div>
                   </div>
@@ -146,7 +146,7 @@ const Parents = () => {
                     God chose YOU to raise your kid(s). That's a big job, so let's take a minute to ReSet. Take a breath, follow Jesus & lead with our Online Parenting Summit starting August 6.
                   </div>
                   <div className='rrr-3'>
-                    <Link className='btn'>
+                    <Link to='/contact' className='btn'>
                       LEARN MORE
                     </Link>
                   </div>
@@ -180,7 +180,7 @@ const Parents = () => {
 
           {/* LETTER SIGN UP PLUG */}
 
-
+          <ParentsButts />
 
           {/* LETTER SIGN UP PLUG END */}
 
@@ -316,7 +316,7 @@ const Parents = () => {
           
           {/* PARENT SLIDE PLUG  */}
 
-          <ParentSlide />
+          {/* <ParentSlide /> */}
 
           {/* PARENT SLIDE PLUG END */}
 

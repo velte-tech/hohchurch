@@ -4,7 +4,8 @@
 
 /* showcase */
 .group-showcase {
-    background: url('../../assets/images/churchteam.jpg') no-repeat center center/cover;
+    /* background: url('../../assets/images/churchteam.jpg') no-repeat center center/cover; */
+    background: url('../../assets/images/ll1.jpeg') no-repeat center center/cover;
     height: 80vh;
     width: 100%;
 }

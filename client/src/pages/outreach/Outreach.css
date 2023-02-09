@@ -1,5 +1,6 @@
 .out-showcase {
-    background: url('../../assets/images/ottt.png') no-repeat center center/cover;
+    background: url('../../assets/images/gpo3.jpeg') no-repeat center center/cover;
+    /* background: url('../../assets/images/ottt.png') no-repeat center center/cover; */
     height: 80vh;
     width: 100%;
 }
@@ -121,12 +122,20 @@
 .out-sop {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
+/* .sop-1  {
+    width: 250px;
+    height: 100px;
+} */
+
 .sop-1 img {
-    object-fit: cover;
+    object-fit: contain;
+    width: 80%;
+    margin: auto;
+    height: 200px;
 }
 
 .sop-2 {
@@ -147,7 +156,8 @@
 
 .sop-4 {
     font-size: 16px;
-    color: #000;
+    color: var(--primary_color);
+    /* color: #000; */
     font-weight: 500;
     margin: .6rem 0;
 }
@@ -168,6 +178,33 @@
     margin-top: 2.5rem;
 }
 
+@media screen and (max-width: 950px) {
+    .out-sop-show {
+    flex-direction: column;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .out-sop {
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    }
+
+    .out-spo-case {
+    max-width: 90%;
+    margin: auto;
+}
+/* .sop-1  {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 12rem;
+} */
+}
+
+/* 
 @media screen and (max-width: 755px) {
     .out-sop-show {
     flex-direction: column;
@@ -187,7 +224,7 @@
     margin: auto;
 }
 }
-
+ */
 
 /* outreach groups sponsors end */
 
@@ -272,7 +309,7 @@
 
 .email-phone {
     display: flex;
-    /* justify-content: space-between; */
+    /* flex-direction: column; */
     align-items: flex-start;
     width: 100%;
 }
@@ -323,9 +360,9 @@
 }
 
 
-.em-3 {
+/* .em-3 {
     margin-right: 2rem;
-}
+} */
 
 /* btn */
 /* btn */
@@ -364,6 +401,11 @@
  .btn:focus::before {
   transform: scaleX(1);
 }
+
+.em-4 .btn {
+    margin: 0;
+}
+
 
 @media screen and (max-width: 800px) {
     .fmcase {

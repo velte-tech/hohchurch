@@ -3,7 +3,7 @@ import './About_HOH.css'
 import { Link } from 'react-router-dom'
 import { useEffect } from "react";
 import AOS from "aos";
-
+import kmmm from "../../assets/images/pastor-alex.jpg";
 
 
 
@@ -28,7 +28,8 @@ const About_HOH = () => {
         <div className='hoh-showcase'>
           <div className='hoh-text-showcase'>
             <div className='hoh-text'>
-              <h1 className='focus-in-contract-bck'>ABOUT HOH</h1>
+              {/* <h1 className='focus-in-contract-bck'> ABOUT </h1> */}
+              <h1 className='focus-in-contract-bck'>  HIGHWAY OF HOLINESS</h1>
           </div>
           </div>
         </div>
@@ -42,11 +43,20 @@ const About_HOH = () => {
           <div className='vision'>
             <div className='line-1'></div>
             <div className='tt-1 focus-in-contract-bck'>
-              OUR VISION
+              {/* OUR VISION */}
+              ABOUT
             </div>
 
             <div className='tt-2'>
-              bring the awesome life of Christ to people in a lost and <br></br> broken world
+              {/* bring the awesome life of Christ to people in a lost and <br></br> broken world */}
+
+              The Highway of Holiness Church(HOH) is an Evangelical, Charismatic Christian
+              Church that centers on companionship, love, and care.We seek to exalt the Lord
+              and build up His people via collective worship and teachings that emphasize the
+              sufficiency of God and His Word.By centering our community life on Jesus, we
+              hope to become a cross - class, multiracial place where people from many
+              backgrounds and viewpoints can come together in harmony.
+
             </div>
             <div className='line-1'></div>
           </div>
@@ -65,12 +75,72 @@ const About_HOH = () => {
             <div className='values-showcase'>
               <div className='values-text-case container'>
                 <div className='values-tt1 focus-in-contract-bck'>
-                  OUR VALUES
+                  {/* OUR VALUES */}
+
+                  OUR HISTORY
                 </div>
                 
-                <div className='values-tt2 hover_overlay'>
-                  ACTS 2: 42 - 47
+                <div className='values-tt2'>
+                  {/* ACTS 2: 42 - 47 */}
+
+                  On January 1 st, 2000, The Highway of Holiness(HOH) was formally established
+                  as a church in London, United Kingdom.A tiny classroom was used for the inaugural meeting, which had a starting attendance of only approximately twenty persons.
+
                 </div>
+
+
+                <div className='values-tt2'>
+                 Between January 1, 2000, and, January 31, 2000, the membership quickly
+                 increased to about 50 individuals who regularly attended.Early church gatherings
+                 were held in a variety of locations, including private homes.
+                 HOH moved into a rented unit at Unit 8 Fountayne House, 2 - 8 Fountayne Road, in
+                  London, United Kingdom, in 2001, and this location has served as its headquarters
+                 ever since
+                </div>
+
+                
+                <div className='values-tt2'>
+                  The membership increased to over hundreds over these time periods.During this
+                  time, there were also active efforts to plant new churches missionaries, and local
+                  congregations were started in nations like Pakistan, Ghana, Sudan, etc.
+
+                </div>
+
+                
+                <div className='values-tt2'>
+                  In 2012, the HOH established a tutorial institution(schools)— Kingdom Lifestyle
+                  Mission(KLM) which provides after - school programs or tutoring
+                  for Christian
+                  children in other dominant religious countries.KLM is found in Ghana, Pakistan,
+                    Sudan, Ethiopia, etc.As a charity, KLM seeks to inspire, engage and create
+                  opportunities
+                  for underprivileged children across the globe.
+
+                </div>
+
+                
+                <div className='values-tt2'>
+                  Again in 2009, the church established a homeless shelter called Highway Shelter
+                  where those living on the streets of London may go
+                  for food and visit with the
+                  pastor and his wife, "Pastor Alex Gyasi."
+                  Since the HOH first opened its doors,
+                  about 1000 people have received assistance with accommodation, food, and
+                  counseling, as well as the chance to connect with other people through its highway
+                  housing program.
+
+                </div>
+
+                
+                <div className='values-tt2'>
+                The Highway of Holiness Christian Love Centre(HOH) is a socially conscious
+                Christian church that upholds the philosophy of Human dignity and Excellence.It
+                engages in promoting and staging events whose impact has reached the depths of
+                London society and brought Christ to the doorsteps of the people.
+
+                </div>
+
+                
               </div>
             </div>
           </div>
@@ -83,7 +153,7 @@ const About_HOH = () => {
 
         {/* BIBLICAL LIST */}
 
-        <div className='biblical-wrapper'>
+        {/* <div className='biblical-wrapper'>
           <div className='biblical container-2'>
 
             <div className='bib'>
@@ -142,9 +212,57 @@ const About_HOH = () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
         {/* BIBLICAL LIST END */}
+
+
+
+
+
+        {/* ministry director  */}
+
+
+      <div className='min-dir-wrapper'>
+        <div className='min-dir-case'>
+          <div className='min-dir'>
+            <div className='mindir-a ps-l'>
+              <img
+                src={kmmm} alt=""
+              data-aos="fade-right"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-delay="600"
+              />
+            </div>
+
+            <div className='mindir-b ps-r'
+              data-aos="fade-left"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-delay="600"
+            >
+              <div className='dir-a'> PASTOR ALEX GYASI (HEAD PASTOR) </div>
+              
+              {/* <div className='abt-hp'>
+                HEAD PASTOR
+              </div> */}
+              
+              <div className='abt-hp'>
+                Pastor Alex Gyasi is a spiritual leader who is responsible
+                for guiding the congregation towards a deeper understanding and relationship with God. He sermons, offers counsel to members, and provides guidance on spiritual and moral issues. In addition to preaching and teaching, He also oversee various programs and activities within the church, such as outreach efforts, youth groups, and mission trips.
+              </div>
+              
+              <div className='dir-c'>
+                <Link className="linkAnima" to="/contact">
+                  Contact <span className="arrow"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {/* ministry director end */}
 
 
 
@@ -155,7 +273,7 @@ const About_HOH = () => {
           <div className='interested container'>
             <div className='line-1'></div>
             <div className='int'>
-              If you 're interested in who leads Flatirons, <br></br> learn more on our <span className='
+              If you 're interested in who leads Highway of Holiness Church, <br></br> learn more on our <span className='
               hoo '><Link to='/Leadership' className='hover_overlay'>Leadership page</Link></span>
             </div>
             <div className='line-1'></div>
@@ -213,11 +331,11 @@ const About_HOH = () => {
               data-aos="fade-left"
                 
             >
-              <div className='hh-1 focus-in-contract-bck'>
+              <div className='hh-1a focus-in-contract-bck'>
                 HIGHWAY HOUSING
               </div>
 
-              <div className='hh-2'>
+              <div className='hh-2a'>
                 Communion is a symbolic meal, eaten with others, to remember Jesus and what He has accomplished
                 for us on the cross <span className='hoo'>(Matthew 26: 26 - 28, Luke 22: 19 - 20)</span> .Bread and juice are available in the back of the auditorium.
               </div>
