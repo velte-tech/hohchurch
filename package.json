@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && node server.js",
+    "start": "node server.js",
     "start:dev": "nodemon server.js",
     "client-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
