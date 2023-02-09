@@ -3,7 +3,7 @@ import './About_HOH.css'
 import { Link } from 'react-router-dom'
 import { useEffect } from "react";
 import AOS from "aos";
-
+import kmmm from "../../assets/images/pastor-alex.jpg";
 
 
 
@@ -153,7 +153,7 @@ const About_HOH = () => {
 
         {/* BIBLICAL LIST */}
 
-        <div className='biblical-wrapper'>
+        {/* <div className='biblical-wrapper'>
           <div className='biblical container-2'>
 
             <div className='bib'>
@@ -212,9 +212,57 @@ const About_HOH = () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
         {/* BIBLICAL LIST END */}
+
+
+
+
+
+        {/* ministry director  */}
+
+
+      <div className='min-dir-wrapper'>
+        <div className='min-dir-case'>
+          <div className='min-dir'>
+            <div className='mindir-a ps-l'>
+              <img
+                src={kmmm} alt=""
+              data-aos="fade-right"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-delay="600"
+              />
+            </div>
+
+            <div className='mindir-b ps-r'
+              data-aos="fade-left"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-delay="600"
+            >
+              <div className='dir-a'> PASTOR ALEX GYASI (HEAD PASTOR) </div>
+              
+              {/* <div className='abt-hp'>
+                HEAD PASTOR
+              </div> */}
+              
+              <div className='abt-hp'>
+                Pastor Alex Gyasi is a spiritual leader who is responsible
+                for guiding the congregation towards a deeper understanding and relationship with God. He sermons, offers counsel to members, and provides guidance on spiritual and moral issues. In addition to preaching and teaching, He also oversee various programs and activities within the church, such as outreach efforts, youth groups, and mission trips.
+              </div>
+              
+              <div className='dir-c'>
+                <Link className="linkAnima" to="/contact">
+                  Contact <span className="arrow"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {/* ministry director end */}
 
 
 
