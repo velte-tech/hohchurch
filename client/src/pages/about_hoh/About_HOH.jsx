@@ -220,49 +220,47 @@ const About_HOH = () => {
 
 
 
-        {/* ministry director  */}
+      {/* PASTOR ALEX */}
 
-
-      <div className='min-dir-wrapper'>
-        <div className='min-dir-case'>
-          <div className='min-dir'>
-            <div className='mindir-a ps-l'>
-              <img
-                src={kmmm} alt=""
-              data-aos="fade-right"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-delay="600"
-              />
-            </div>
-
-            <div className='mindir-b ps-r'
-              data-aos="fade-left"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-delay="600"
-            >
-              <div className='dir-a'> PASTOR ALEX GYASI (HEAD PASTOR) </div>
-              
-              {/* <div className='abt-hp'>
-                HEAD PASTOR
-              </div> */}
-              
-              <div className='abt-hp'>
-                Pastor Alex Gyasi is a spiritual leader who is responsible
-                for guiding the congregation towards a deeper understanding and relationship with God. He sermons, offers counsel to members, and provides guidance on spiritual and moral issues. In addition to preaching and teaching, He also oversee various programs and activities within the church, such as outreach efforts, youth groups, and mission trips.
+        <div className='ps-alex-wrapper'>
+          <div className='ps-alex-show'>
+            <div className='ps-alex-case'>
+              <div className='ps-left'>
+                <div className='psl-pic'
+                data-aos="fade-right"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+                >
+                  <img src={kmmm} alt="" />
+                </div>
               </div>
-              
-              <div className='dir-c'>
-                <Link className="linkAnima" to="/contact">
-                  Contact <span className="arrow"></span>
-                </Link>
+
+
+              <div className='ps-right'
+                data-aos="fade-left"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-delay="600"
+              >
+                <div className='psr1'>
+                  ALEX GYASI (HEAD PASTOR)
+                </div>
+
+                <div className='psr2'>
+                  Pastor Alex Gyasi is a spiritual leader who is responsible
+                  for guiding the congregation towards a deeper understanding and relationship with God.He sermons, offers counsel to members, and provides guidance on spiritual and moral issues.In addition to preaching and teaching, He also oversee various programs and activities within the church, such as outreach efforts, youth groups, and mission trips.
+                </div>
+
+                <div className='psr3'>
+                  <Link to="/"className="links linkAnima">
+                  CONTACT <span className="arrow"></span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-
-      {/* ministry director end */}
+      {/* PASTOR ALEX end */}
 
 
 
