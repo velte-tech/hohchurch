@@ -13,7 +13,7 @@ import { AiFillYoutube } from "react-icons/ai";
 import churchImg from "../../assets/images/church.jpg";
 import outreachImg from "../../assets/images/outreach.jpg";
 import newHereImg from "../../assets/images/newHere.jpg";
-import phoneImg from "../../assets/images/phone-app.png";
+import phonexxx from "../../assets/images/phone-app.png";
 
 function Home() {
   useEffect(() => {
@@ -127,7 +127,7 @@ function Home() {
         <div className="home_app">
           <div className="container app_wrapper">
             <div className="left">
-              <img src={phoneImg} alt="" />
+              <img src={phonexxx} alt="" />
             </div>
 
             <div className="right">
