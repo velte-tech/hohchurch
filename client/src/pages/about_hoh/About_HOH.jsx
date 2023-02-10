@@ -245,7 +245,10 @@ const About_HOH = () => {
                   ALEX GYASI (HEAD PASTOR)
                 </div>
 
-                <div className='psr2'></div>
+                <div className='psr2'>
+                  Pastor Alex Gyasi is a spiritual leader who is responsible
+                  for guiding the congregation towards a deeper understanding and relationship with God.He sermons, offers counsel to members, and provides guidance on spiritual and moral issues.In addition to preaching and teaching, He also oversee various programs and activities within the church, such as outreach efforts, youth groups, and mission trips.
+                </div>
 
                 <div className='psr3'>
                   <Link to="/"className="links linkAnima">
