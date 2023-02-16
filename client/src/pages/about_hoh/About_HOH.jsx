@@ -220,49 +220,47 @@ const About_HOH = () => {
 
 
 
-        {/* ministry director  */}
+      {/* PASTOR ALEX */}
 
-
-      <div className='min-dir-wrapper'>
-        <div className='min-dir-case'>
-          <div className='min-dir'>
-            <div className='mindir-a ps-l'>
-              <img
-                src={kmmm} alt=""
-              data-aos="fade-right"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-delay="600"
-              />
-            </div>
-
-            <div className='mindir-b ps-r'
-              data-aos="fade-left"
-              data-aos-anchor-placement="center-bottom"
-              data-aos-delay="600"
-            >
-              <div className='dir-a'> PASTOR ALEX GYASI (HEAD PASTOR) </div>
-              
-              {/* <div className='abt-hp'>
-                HEAD PASTOR
-              </div> */}
-              
-              <div className='abt-hp'>
-                Pastor Alex Gyasi is a spiritual leader who is responsible
-                for guiding the congregation towards a deeper understanding and relationship with God. He sermons, offers counsel to members, and provides guidance on spiritual and moral issues. In addition to preaching and teaching, He also oversee various programs and activities within the church, such as outreach efforts, youth groups, and mission trips.
+        <div className='ps-alex-wrapper'>
+          <div className='ps-alex-show'>
+            <div className='ps-alex-case'>
+              <div className='ps-left'>
+                <div className='psl-pic'
+                data-aos="fade-right"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+                >
+                  <img src={kmmm} alt="" />
+                </div>
               </div>
-              
-              <div className='dir-c'>
-                <Link className="linkAnima" to="/contact">
-                  Contact <span className="arrow"></span>
-                </Link>
+
+
+              <div className='ps-right'
+                data-aos="fade-left"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-delay="600"
+              >
+                <div className='psr1'>
+                  PASTOR ALEX GYESI (HEAD PASTOR)
+                </div>
+
+                <div className='psr2'>
+                  Pastor Alex Gyasi is a spiritual leader who is responsible
+                  for guiding the congregation towards a deeper understanding and relationship with God.He sermons, offers counsel to members, and provides guidance on spiritual and moral issues.In addition to preaching and teaching, He also oversee various programs and activities within the church, such as outreach efforts, youth groups, and mission trips.
+                </div>
+
+                <div className='psr3'>
+                  <Link to="/"className="links linkAnima">
+                  CONTACT <span className="arrow"></span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-
-      {/* ministry director end */}
+      {/* PASTOR ALEX end */}
 
 
 
@@ -285,7 +283,7 @@ const About_HOH = () => {
 
         {/* BAPTISM & COMMUNION */}
 
-        <div className='values-wrapper'>
+        {/* <div className='values-wrapper'>
           <div className='values'>
             <div className='values-showcase'>
               <div className='values-text-case container'>
@@ -296,16 +294,61 @@ const About_HOH = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* BAPTISM & COMMUNION END */}
+
+
+
+        {/* mission statement  */}
+        
+
+      <div className='ms-stat-wrapper'>
+          <div className='ms-stat-case'>
+            <div className='ms-stat-show'>
+              
+              <div id='lshape'>
+              <div class="l-shape">
+              <div class="box-1"></div>
+              <div class="box-2"></div>
+              </div>
+             </div>
+
+
+              <div className='ms-stat'>
+                <div className='ms1'>
+                MISSION STATEMENT
+              </div>
+              {/* <span>"</span> */}
+              <div className='ms2'>
+                Our mission is to glorify God by making disciples of Jesus Christ who love God, love others, and serve the world. We aim to provide a welcoming and supportive community where people from all walks of life can come to worship, learn, and grow in their faith. We strive to teach and model the love of Christ, and to share the hope and grace of the gospel with our local community and beyond. Through our various ministries and outreach programs, we seek to meet the physical, emotional, and spiritual needs of those around us, and to be a positive influence in our world. Ultimately, our desire is to be faithful to God's call on our lives, and to live out the love and compassion of Jesus in all that we do.
+              </div>
+              <div className='ms22'>
+                Of course, the exact wording and focus of a church's mission statement may vary depending on the specific denomination, culture, and context of the church. But in general, a good mission statement should express the church's core values, vision, and purpose, and serve as a guide for its ministry and outreach. It should inspire and motivate both members of the congregation and those who may be seeking to connect with the church.
+              </div>
+              {/* <span> "</span> */}
+              </div>
+
+              <div id='lshape2'>
+                <div class="l-shape2">
+              <div class="box-12"></div>
+              <div class="box-22"></div>
+              </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+
+
+      {/* mission statement end */}
 
 
         {/* KINGDOM & HIGHWAY */}
 
 
         <div className='kg-hh-wrapper'>
-          <div className='kg-hh container'>
+          <div className='kg-hh'>
 
             <div className='kg'
               data-aos="fade-right"
@@ -316,8 +359,7 @@ const About_HOH = () => {
               </div>
 
               <div className='kg-2'>
-                Baptism is the public demonstration by an individual acknowledging that they have been saved by grace through their faith in Jesus.This is depicted by being dunked underwater symbolizing the death, burial and resurrection in Jesus <span className='hoo'>(Romans 4: 9 - 12, Romans 6: 3 - 4).</span> For information on infant and child dedication, look out
-                for the next event on our <Link to='/Kids' className='hover_overlay hoo-1'><span className='hoo'>Kids page</span></Link>.
+                Kingdom Culture Alliance is a forum for ministries who desire to build their character and capacity.
               </div>
 
               <div className='kg-3'>
@@ -327,25 +369,63 @@ const About_HOH = () => {
               </div>
             </div>
 
-            <div className='hh'
-              data-aos="fade-left"
-                
-            >
+            <div className='hh' >
               <div className='hh-1a focus-in-contract-bck'>
                 HIGHWAY HOUSING
               </div>
 
               <div className='hh-2a'>
-                Communion is a symbolic meal, eaten with others, to remember Jesus and what He has accomplished
-                for us on the cross <span className='hoo'>(Matthew 26: 26 - 28, Luke 22: 19 - 20)</span> .Bread and juice are available in the back of the auditorium.
+                The Highway House Shelter is more than a homeless shelter. We are a shelter based in Tottenham, London that houses up to 35 men at a time. Since we opened our doors in 2009, almost 1000 people have been helped with shelter, food and counselling, along with the opportunity
+                for much needed companionship with others.
               </div>
 
               <div className='hh-3'>
-                <Link to="/"className="links linkAnima">
-                  MORE INFO ABOUT HIGHWAY HOUSING <span className="arrow"></span>
-                </Link>
+
+                <a target="_blank" href="https://hohcentre.co.uk/" rel="noreferrer">
+
+                  <div
+                    className = "links linkAnima" >
+                      MORE INFO ABOUT HIGHWAY HOUSING <span className = "arrow" > </span>
+                  </div>              
+
+                </a>
+
               </div>
             </div>
+
+            {/* KLM  */}
+
+            <div className='klm-case'
+              data-aos="fade-left"
+            >
+              <div className='klm-show'>
+
+                 <div className='hh-1a focus-in-contract-bck'>
+                KINGDOM LIFESTYLE MISSION
+              </div>
+
+              <div className='hh-2a'>
+                Kingdom Lifestyle Mission(KLM) provides FREE supplementary education
+                for underprivileged children.KLM runs free weekly Saturday schools and vacation classes during school holidays.Our goal is to help children in deprived communities.
+              </div>
+
+              <div className='hh-3'>
+
+                {/* <a target="_blank" href="https://hohcentre.co.uk/"> */}
+
+                  <Link
+                    className = "links linkAnima" >
+                      MORE INFO ABOUT KLM <span className = "arrow" > </span>
+                  </Link>              
+
+                {/* </a> */}
+
+              </div>
+
+              </div>
+            </div>
+
+            {/* KLM END */}
 
           </div>
         </div>
