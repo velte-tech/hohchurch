@@ -13,14 +13,7 @@ import { AiFillYoutube } from "react-icons/ai";
 import churchImg from "../../assets/images/church.jpg";
 import outreachImg from "../../assets/images/outreach.jpg";
 import newHereImg from "../../assets/images/newHere.jpg";
-<<<<<<< HEAD
-import phoneImg from "../../assets/images/phone-app.png";
-=======
-
 import phonexxx from "../../assets/images/phone-app.png";
-
-
->>>>>>> 4a33397821ed94e672301d561718da3f786b6cc5
 
 function Home() {
   useEffect(() => {
