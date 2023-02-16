@@ -40,6 +40,10 @@ import {
 import Layout from "./Layouts/Layout";
 import SlideContent from "./Layouts/SlideContent";
 
+// import { SermonDetailLoader } from "./pages/sermons/Sermon";
+// import Sliders, { SermonLoder } from "./components/msgSlider/Slider";
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -382,7 +382,7 @@ return (
             >
               <div className='dir-a'>REV ANITA </div>
               <div className='dir-b'>
-                Lafayette Kids Ministry Director
+              Kids Ministry Director
               </div>
               <div className='dir-c'>
                 <Link className="linkAnima" to="/contact">
