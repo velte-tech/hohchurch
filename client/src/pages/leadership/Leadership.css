@@ -60,6 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .leaders-case-2 {
@@ -67,6 +68,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
@@ -89,7 +91,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .one-1 {
@@ -97,11 +99,12 @@
 }
 
 .lead-pic {
-    width: 250px;
-    height: 220px;
+    width: 420px;
+    height: 300px;
 }
 
 .lead-pic img {
+    /* object-fit: cover; */
     object-fit: contain;
     border-radius: 5px;
     width: 100%;
@@ -155,13 +158,49 @@
 
 @media screen and (max-width: 600px) {
     .lead-pic {
-    width: 120px;
+    /* width: 120px; */
+    width: 100%;
     object-fit: cover;
     }
 
     .one-2 {
         margin-top: 2rem;
     }
+
+    /* addons */
+
+    .leaders-case {
+   flex-direction: column;
+}
+
+.leaders-case-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaders-case-2 {
+    flex-direction: column;
+}
+
+
+
+.leaders-show {
+    flex-direction: column;
+}
+
+.leaders-show-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.leader-1 {
+    flex-direction: column;
+}
+
+    /* addons end */
 
 }
 
@@ -188,8 +227,8 @@
 .alone-1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 40%;
     margin-left: 10%;
 }
@@ -202,9 +241,9 @@
 } */
 
 .lone-1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
 }
 
 @media screen and (max-width: 600px) {
@@ -215,20 +254,20 @@
 
 .lone-2 {
     font-size: 16px;
-    font-weight: 700;
-    text-align: center;
+    font-weight: 600;
+    text-align: left;
     margin: 1rem 0;
 }
 
 .lone-3 {
     font-size: 16px;
-    font-weight: 800;
-    text-align: center;
+    font-weight: 600;
+    text-align: left;
 }
 
 .lone-4 a {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     color: var(--primary_color);
 }

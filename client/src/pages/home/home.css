@@ -3,15 +3,30 @@
   overflow-x: hidden;
 }
 
+
+
 #home .home_showcase {
   min-height: 40rem;
-  background: url("../../assets/images/home-showcase.png") no-repeat center
+  background: url("../../assets/images/tmm3.jpeg") no-repeat center
     center/cover !important;
+    position: relative;
+}
+
+#home .home_showcase:after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  inset: 0;
+  z-index: 1;
 }
 
 #home .showcase_content {
   transform: translateY(17rem);
   /* max-width: 45rem; */
+      position: relative;
+    z-index: 2;
+
+
 }
 #home .showcase_content .top p {
   color: #fff;
@@ -734,11 +749,11 @@
   overflow-x: hidden;
 }
 
-#home .home_showcase {
+/* #home .home_showcase {
   min-height: 40rem;
   background: url("../../assets/images/home-showcase.png") no-repeat center
     center/cover !important;
-}
+} */
 
 #home .showcase_content {
   transform: translateY(17rem);
