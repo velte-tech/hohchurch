@@ -1,12 +1,12 @@
 import { React } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Leadership.css";
 // Images
 import l1 from "../../assets/images/pastor-alex.jpg";
 import l22 from "../../assets/images/pswomen.jpeg";
 import l33 from "../../assets/images/psroll.jpeg";
 import naruto from "../../assets/images/leaders-hoh.jpg";
-import { MdMailOutline } from "react-icons/md";
+// import { MdMailOutline } from "react-icons/md";
 import { useEffect } from "react";
 import AOS from "aos";
 
@@ -37,129 +37,167 @@ const Leadership = () => {
 
         {/* leaders */}
 
-        <div className="leaders-wrapper">
-          <div className="leaders-main">
-            <div className="leaders-case">
-              <div className="lead-case-1">
-                {/* lead show-1  */}
+        <div id="leade-wrapper">
+          <div className="leade-case">
+            <div className="leade-show">
 
-                <div className="leaders-show">
-                  <div className="leader-1 one-1">
-                    <sdiv className="lead-pic">
+              <div className="lead-flex-case">
+
+                <div className="lead-flex-show">
+
+                {/* fleaders 3 flex  */}
+                
+                  <div className="lead-flex">
+
+                    <div className="lf1-pic">
                       <img src={l1} alt="" />
-                    </sdiv>
-
-                    <div className="lead-name">Pastor Alex Gyesi</div>
-
-                    <div className="lead-title">
-                      <span className="past">Head Pastor</span>
-
-                      <Link to="/Messages" className="hover_overlay">
-                        <MdMailOutline />
-                      </Link>
                     </div>
-                  </div>
+                    <div className="lf12">
+                      Pastor Alex Gyesi
+                    </div>
+                    <div className="lf3">
+                      Head Pastor
+                    </div>
 
-                  <div className="leader-1 one-1">
-                    <div className="lead-pic">
+                  </div>
+                  
+                  <div className="lead-flex">
+
+                    <div className="lf1-pic">
                       <img src={l22} alt="" />
                     </div>
-
-                    <div className="lead-name">Pastor Dorcas Gyesi</div>
-
-                    <div className="lead-title">
-                      <span className="past">Head Pastor</span>
-
-                      <Link to="/Messages" className="hover_overlay">
-                        <MdMailOutline />
-                      </Link>
+                    <div className="lf12">
+                      Pastor Dorcas Gyesi
                     </div>
+                    <div className="lf3">
+                      Head Pastor
+                    </div>
+
                   </div>
-                </div>
+                  
+                  <div className="lead-flex">
 
-                {/* lead show end-1 */}
-
-                {/* lead show-2  */}
-
-                <div className="leaders-show">
-                  <div className="leader-1">
-                    <div className="lead-pic">
-                      <img src={l1} alt="" />
-                    </div>
-
-                    <div className="lead-name">Pastor Men Fellowship</div>
-
-                    <div className="lead-title">
-                      <span className="past">Leader For Men Fellowship</span>
-
-                      <Link to="/Messages" className="hover_overlay">
-                        <MdMailOutline />
-                      </Link>
-                    </div>
-                  </div>
-
-                  <div className="leader-1">
-                    <div className="lead-pic">
-                      <img src={l1} alt="" />
-                    </div>
-
-                    <div className="lead-name">Pastor Women Fellowship</div>
-
-                    <div className="lead-title">
-                      <span className="past">Leader For Women Fellowship</span>
-
-                      <Link to="/Messages" className="hover_overlay">
-                        <MdMailOutline />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                {/* lead show end-2 */}
-              </div>
-
-              <div className="lead-case-2">
-                {/* lead show-2  */}
-
-                <div className="leaders-show-2">
-                  <div className="leader-1 one-1 one-2">
-                    <div className="lead-pic">
+                    <div className="lf1-pic">
                       <img src={l33} alt="" />
                     </div>
-
-                    <div className="lead-name">Rev Rolland Owusu Mensah</div>
-
-                    <div className="lead-title">
-                      <span className="past">Pastor Rolland</span>
-
-                      <Link to="/Messages" className="hover_overlay">
-                        <MdMailOutline />
-                      </Link>
+                    <div className="lf12">
+                      Rev Rolland Owusu Mensah
                     </div>
+                    <div className="lf3">
+                      Pastor Rolland
+                    </div>
+
                   </div>
+                  
+                {/* fleaders 3 flex end */}
 
-                  <div className="leader-1">
-                    <div className="lead-pic">
-                      <img src={l1} alt="" />
-                    </div>
-
-                    <div className="lead-name">Pastor Youth Group</div>
-
-                    <div className="lead-title">
-                      <span className="past">Leader For Youth Group</span>
-
-                      <Link to="/Messages" className="hover_overlay">
-                        <MdMailOutline />
-                      </Link>
-                    </div>
-                  </div>
                 </div>
 
-                {/* lead show end-2 */}
+                <div className="lead-flex-show">
+
+                {/* fleaders 3 flex  */}
+                
+                  <div className="lead-flex">
+
+                    <div className="lf1-pic">
+                      <img src={l1} alt="" />
+                    </div>
+                    <div className="lf12">
+                      MInister Hannah
+                    </div>
+                    <div className="lf3">
+                      Leader For Peace Group
+                    </div>
+
+                  </div>
+                  
+                  <div className="lead-flex">
+
+                    <div className="lf1-pic">
+                      <img src={l1} alt="" />
+                    </div>
+                    <div className="lf12">
+                      Minister Dorcas
+                    </div>
+                    <div className="lf3">
+                      Leader For Power Group
+                    </div>
+
+                  </div>
+                  
+                  <div className="lead-flex">
+
+                    <div className="lf1-pic">
+                      <img src={l1} alt="" />
+                    </div>
+                    <div className="lf12">
+                      Minister Jodie
+                    </div>
+                    <div className="lf3">
+                      Leader For Joy Group
+                    </div>
+
+                  </div>
+                  
+                {/* fleaders 3 flex end */}
+
+                </div>
+                
+                <div className="lead-flex-show">
+
+                {/* fleaders 3 flex  */}
+                
+                  <div className="lead-flex">
+
+                    <div className="lf1-pic">
+                      <img src={l1} alt="" />
+                    </div>
+                    <div className="lf12">
+                      Minister Julie
+                    </div>
+                    <div className="lf3">
+                      Leader For Faith Group
+                    </div>
+
+                  </div>
+                  
+                  <div className="lead-flex">
+
+                    <div className="lf1-pic">
+                      <img src={l1} alt="" />
+                    </div>
+                    <div className="lf12">
+                      Minister Mable
+                    </div>
+                    <div className="lf3">
+                      Leader For Love Group
+                    </div>
+
+                  </div>
+                  
+                  <div className="lead-flex">
+
+                    <div className="lf1-pic">
+                      <img src={l1} alt="" />
+                    </div>
+                    <div className="lf12">
+                      Minister Marcia
+                    </div>
+                    <div className="lf3">
+                      Leader For Hope Group
+                    </div>
+
+                  </div>
+                  
+                {/* fleaders 3 flex end */}
+
+                </div>
+                
               </div>
+
             </div>
           </div>
-        </div>
+       </div>
 
         {/* leaders end */}
 
@@ -170,7 +208,7 @@ const Leadership = () => {
             <div className="values-showcase">
               <div className="values-text-case    container">
                 <div className="values-tt1 focus-in-contract-bck">
-                  OUR ELDERS
+                  OUR LEADERS
                 </div>
               </div>
             </div>

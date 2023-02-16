@@ -255,6 +255,11 @@
 .ch-gr-1  {
     font-size: 18px;
     font-weight: 700;
+    color: var(--primary_color);
+}
+
+.ch-gr-1:nth-child(2) {
+    color: #000;
 }
 
 .ch-gr-2  {

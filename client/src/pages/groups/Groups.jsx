@@ -105,21 +105,23 @@ return (
 
             <div className='ch-gr'>
               <div className='ch-gr-1'>
-               CHURCH CONGREGATION
+               PEACE GROUP
+              </div>
+              <div className='ch-gr-1'>
+                LEADER - HANNAH
               </div>
               <div className='ch-gr-2'>
-                
-                PRAYER MEETING
-                <br></br>
+              
+                {/* <br></br> */}
                 Wednesday: 7.30 pm - 8.30 pm
                 <br></br>
-                BIBLE STUDIES
-                <br></br>
-                Friday: 7.30 - 9 pm
-                <br></br>
+                {/* BIBLE STUDIES
+                <br></br> */}
+                {/* Friday: 7.30 - 9 pm */}
+                {/* <br></br> */}
                 WORSHIP SERVICE
-                <br></br>
-                Sunday
+                {/* <br></br> */}
+                {/* Sunday */}
 
               </div>
               <div className='ch-gr-3 hover_overlay'>
@@ -135,7 +137,10 @@ return (
             
             <div className='ch-gr'>
               <div className='ch-gr-1'>
-                LEADERS MEETING
+                POWER GROUP
+              </div>
+              <div className='ch-gr-1'>
+                 LEADER - DORCAS
               </div>
               <div className='ch-gr-2'>
                 Wednesday at 6: 30 PM <br></br>
@@ -154,7 +159,10 @@ return (
             
             <div className='ch-gr'>
               <div className='ch-gr-1'>
-                MENS FELLOWSHIP
+               JOY GROUP
+              </div>
+              <div className='ch-gr-1'>
+               LEADER - JODIE
               </div>
               <div className='ch-gr-2'>
                 Wednesday at 6: 30 PM <br></br>
@@ -179,7 +187,10 @@ return (
 
             <div className='ch-gr'>
               <div className='ch-gr-1'>
-                WOMEN FELLOWSHIP
+                FAITH GROUP
+              </div>
+              <div className='ch-gr-1'>
+                LEADER - JOLIE
               </div>
               <div className='ch-gr-2'>
                 Wednesday at 6: 30 PM <br></br>
@@ -198,7 +209,10 @@ return (
             
             <div className='ch-gr'>
               <div className='ch-gr-1'>
-                CHILDREN MINISTRY
+                HOPE GROUP 
+              </div>
+              <div className='ch-gr-1'>
+                MARCIA 
               </div>
               <div className='ch-gr-2'>
                 Wednesday at 6: 30 PM <br></br>
@@ -217,7 +231,10 @@ return (
             
             <div className='ch-gr'>
               <div className='ch-gr-1'>
-               YOUTH MINISTRY
+               LOVE GROUP
+              </div>
+              <div className='ch-gr-1'>
+               LEADER MABEL
               </div>
               <div className='ch-gr-2'>
                 Wednesday at 6: 30 PM <br></br>
