@@ -1,37 +1,37 @@
 #longmont_about {
-    margin: 3rem 0;
-    padding: 1rem;
+  margin: 3rem 0;
+  padding: 1rem;
 }
 
 #longmont_about .about_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #longmont_about h1 {
-    font-size: var(--head_font);
-    border-top: 2px solid var(--primary_color);
-    border-bottom: 2px solid var(--primary_color);
-    display: inline-block;
-    padding: 0.5rem;
+  font-size: var(--head_font);
+  border-top: 2px solid var(--primary_color);
+  border-bottom: 2px solid var(--primary_color);
+  display: inline-block;
+  padding: 0.5rem;
 }
 
 #longmont_about p {
-    font-size: 1.1rem;
-    line-height: 1.2;
-    font-weight: 600;
-    padding: 1.5rem ;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 600;
+  padding: 1.5rem;
 }
 
 #longmont_about p a {
-    color: var(--primary_color);
+  color: var(--primary_color);
+  transition: var(--transition);
 }
 
 #longmont_about p a:hover {
-    color: #fff;
+  color: #fff;
 }
-
 
 #longmont_reach {
   min-height: 400px;
@@ -55,10 +55,9 @@
   padding-left: 1rem;
 }
 
-
 /* ======= LONGMONT_PODCAST ======= */
 #longmont_podcast {
-    display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -66,99 +65,96 @@
   min-height: 450px;
 }
 
-#longmont_podcast .left{
-    width: 60%;
-    height: 100%;
-    position: relative;
-    transform: translateY(-7rem);
-  }
+#longmont_podcast .left {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  transform: translateY(-7rem);
+}
 
-  #longmont_podcast img{
-    height: 350px;
-  }
+#longmont_podcast img {
+  height: 350px;
+}
 
-  
-  #longmont_podcast .right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    padding-top: 3rem ;
-    transform: translateY(-7rem);
-    padding: 1rem;
-  }
-  
-  #longmont_podcast .right h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2rem;
-    width: 50%;
-    line-height: 1;
-  }
-  
-  #longmont_podcast .right p {
-    line-height: 1.5;
-    margin: 0.5rem 0;
-    max-width: 400px;
-  }
+#longmont_podcast .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding-top: 3rem;
+  transform: translateY(-7rem);
+  padding: 1rem;
+}
 
-  #longmont_podcast .right .social_icons a {
-    color: #000;
-    font-size: 3rem;
-    line-height: 1;
-    margin: 10px;
-  }
-  
-  #longmont_podcast .right .linkAnima {
-    color: var(--primary_color);
-    text-transform: uppercase;
-    font-weight: 700;
-    justify-content: left;
-    padding: 0;
-    width: fit-content;
-  }
-  
-  
-  #longmont_podcast .left .shape_2 {
-    clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
-    height: 270px;
-    width: 103%;
-    background-color: var(--primary_color);
-    position: absolute;
-    left: 0;
-    bottom: -3rem;
-    z-index: -1;
-  }
+#longmont_podcast .right h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 50%;
+  line-height: 1;
+}
 
+#longmont_podcast .right p {
+  line-height: 1.5;
+  margin: 0.5rem 0;
+  max-width: 400px;
+}
+
+#longmont_podcast .right .social_icons a {
+  color: #000;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 10px;
+}
+
+#longmont_podcast .right .linkAnima {
+  color: var(--primary_color);
+  text-transform: uppercase;
+  font-weight: 700;
+  justify-content: left;
+  padding: 0;
+  width: fit-content;
+}
+
+#longmont_podcast .left .shape_2 {
+  clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
+  height: 270px;
+  width: 103%;
+  background-color: var(--primary_color);
+  position: absolute;
+  left: 0;
+  bottom: -3rem;
+  z-index: -1;
+}
 
 /* ======= LONGMONT_MINISTRIES SECTION ======= */
 #longmont_ministries {
-    margin: 5rem 0;
+  margin: 5rem 0;
 }
 
 #longmont_ministries .about_welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  #longmont_ministries .about_welcome h2{
-    font-size: 2rem;
-    text-transform: uppercase;
-    align-self: flex-start;
-    padding: 0.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  #longmont_ministries .about_welcome .right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    width: 100%;
-    position: initial;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#longmont_ministries .about_welcome h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  align-self: flex-start;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#longmont_ministries .about_welcome .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  position: initial;
+}
 
 @media screen and (max-width: 1000px) {
   /* ======= LAFAYETTE_REACH SECTION ======= */
@@ -185,40 +181,35 @@
 
   /* ======= PODCAST SECTION ==== */
   #longmont_podcast {
-  flex-direction: column;
-  margin-top: 8rem;
-  gap: 3rem;
-}
-
-#longmont_podcast .left {
-    width: 100%;
-
+    flex-direction: column;
+    margin-top: 8rem;
+    gap: 3rem;
   }
 
-#longmont_podcast .right {
+  #longmont_podcast .left {
     width: 100%;
-
   }
 
-#longmont_podcast .right h1 {
+  #longmont_podcast .right {
+    width: 100%;
+  }
+
+  #longmont_podcast .right h1 {
     width: 100%;
     padding: 0.5rem 1rem;
-
   }
 
-#longmont_podcast .right p {
+  #longmont_podcast .right p {
     max-width: 100%;
-
   }
 }
 
-
 @media screen and (max-width: 600px) {
-    #longmont_about .about_wrapper {
-        max-width: 100%;
-    }
-    
-    #longmont_ministries .about_welcome {
-        max-width: 100%;
-      }
+  #longmont_about .about_wrapper {
+    max-width: 100%;
+  }
+
+  #longmont_ministries .about_welcome {
+    max-width: 100%;
+  }
 }

@@ -152,7 +152,7 @@ const Longmont = () => {
             data-aos-delay="300"
             data-aos-anchor-placement="center-bottom"
           >
-            THE LONG HAUL PODCAST
+            HoH Social Media Engaements
           </h1>
           <p
             data-aos="fade-left"
@@ -167,7 +167,7 @@ const Longmont = () => {
           <div className="social_icons">
             <a
               className="hover_overlay text_center"
-              href="http://facebook.com"
+              href="https://web.facebook.com/HighwayofHolinessUK"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -176,7 +176,7 @@ const Longmont = () => {
 
             <a
               className="hover_overlay text_center"
-              href="http://utube.com"
+              href="https://www.youtube.com/@highwayofholinesschristian7997"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -216,8 +216,8 @@ const Longmont = () => {
             >
               <img src={voluImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">VOLUNTEER @ LONGMONT</p>
-                <p>Finf our service time and direction to our locations</p>
+                <p className="hover_overlay ">VOLUNTEER</p>
+                <p>Find our service time and direction to our locations</p>
                 <Link to="/serve" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -232,9 +232,9 @@ const Longmont = () => {
             >
               <img src={newsImage} alt="" />
               <div className="text">
-                <p className="hover_overlay ">DAN'S NEWLETTER</p>
-                <p>Finf our service time and direction to our locations</p>
-                <Link to="/about" className="linkAnima">
+                <p className="hover_overlay ">NEWLETTER</p>
+                <p>Find our service time and direction to our locations</p>
+                <Link to="/newsletter" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>

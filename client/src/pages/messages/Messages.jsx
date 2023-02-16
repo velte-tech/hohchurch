@@ -1,7 +1,7 @@
 import React from "react";
 import "./Messages.css";
 import { CgSearchLoading } from "react-icons/cg";
-import FilterMsg from "../../components/filter_message/FilterMsg";
+// import FilterMsg from "../../components/filter_message/FilterMsg";
 import MsgPagination from "../../components/MsgPagination/MsgPagination";
 
 const Messages = () => {
@@ -23,9 +23,7 @@ const Messages = () => {
           </div>
 
           {/* ======= FILTER ======= */}
-          <div className="filter">
-            <FilterMsg />
-          </div>
+          <div className="filter">{/* <FilterMsg /> */}</div>
           <MsgPagination />
         </div>
       </section>
