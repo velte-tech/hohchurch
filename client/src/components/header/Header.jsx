@@ -81,7 +81,7 @@ function Header() {
               >
                 <span className="btn-name">
                   <ImLocation className="iconn" />
-                  <span className="loc-n1">LOCATION & TIMES</span>
+                  <span className="loc-n1"> EVENTS & TIME </span>
                 </span>
               </button>
             </div>

@@ -1,7 +1,6 @@
-.about-hoh-page {
-    /* position: relative; */
+/* .about-hoh-page {
     background: #fff;
-}
+} */
 
 .hoh-showcase {
     background: url('../../assets/images/k5.jpeg') no-repeat center center/cover;
@@ -243,17 +242,21 @@
 
 .kg-hh-wrapper {
     padding: 5rem 0;
+    max-width: 90%;
+    margin: auto;
 }
 
 .kg-hh {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
 }
 
 
 .kg {
-    width: 45%;
+    width: 32%;
+    /* width: 45%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -261,7 +264,7 @@
 }
 
 .kg-1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--primary_color);
@@ -275,7 +278,7 @@
 
 .kg-2 {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 
@@ -298,29 +301,34 @@
 }
 
 .hh {
-    width: 45%;
+    /* width: 45%; */
+    width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
+.klm-case {
+    width: 32%;
+}
+
 .hh-1a {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--primary_color);
 }
 
 @media screen and (max-width: 600px) {
-    .hh-1 {
+    .hh-1a {
     font-size: 19px;
 }
 }
 
 .hh-2a {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 
@@ -340,6 +348,11 @@
     width: 100%;
     margin: auto;
     }
+
+    .klm-case {
+    width: 100%;
+    margin-top: 2rem;
+}
 
     .hh-3 .links {
         justify-content: center;
@@ -363,6 +376,11 @@
     width: 100%;
     margin: auto;
     }
+
+    .klm-case {
+    width: 100%;
+    margin-top: 2rem;
+}
 }
 
 
@@ -494,3 +512,164 @@
 
 
 /* PASTOR ALEX  END */
+
+
+
+/* MISSION STATEMENT  */
+
+
+.ms-stat-wrapper {
+    width: 100%;
+    background: url('../../assets/images/nnav.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.ms-stat-case {
+    max-width: 90%;
+    margin: auto;
+    color: #fff;
+    padding: 5rem 0;
+}
+
+.ms-stat-show {
+    position: relative;
+}
+
+.ms-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 90%;
+    margin: auto;
+}
+
+.ms1 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+
+.ms2 {
+    font-weight: 600;
+    font-size: 16px;
+    /* margin-top: 1rem; */
+    line-height: 1.7;
+}
+.ms22 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
+
+
+/* span {
+    font-size: 50px;
+} */
+
+/* span:first-child {
+    text-align: left;
+}
+span:last-child {
+    text-align: right;
+} */
+
+.l-shape {
+  position: relative;
+  height: 100px; /* reduce the height to make it thinner */
+}
+
+.box-1 {
+  position: absolute;
+  width: 10px; /* reduce the width to make it thinner */
+  height: 100%; /* occupy full height of parent element */
+  background-color: var(--primary_color); /* set the same color */
+  top: 3rem;
+  left: 0;
+}
+
+.box-2 {
+  position: absolute;
+  width: 200px; /* occupy full width of parent element */
+  height: 10px; /* reduce the height to make it thinner */
+  background-color: var(--primary_color); /* set the same color */
+  bottom: 50px;
+  left: 0;
+}
+
+
+.l-shape2 {
+  position: relative;
+  height: 100px; /* reduce the height to make it thinner */
+  /* transform: rotate(90deg); */
+}
+
+.box-12 {
+  position: absolute;
+  width: 10px; /* reduce the width to make it thinner */
+  height: 100%; /* occupy full height of parent element */
+  background-color: var(--primary_color); /* set the same color */
+  top: 0;
+  right: 0;
+}
+
+.box-22 {
+  position: absolute;
+  width: 200px; /* occupy full width of parent element */
+  height: 10px; /* reduce the height to make it thinner */
+  background-color: var(--primary_color); /* set the same color */
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .ms-stat-case {
+    max-width: 90%;
+    padding: 2rem 0;
+}
+
+.box-1 {
+  position: absolute;
+  width: 10px; /* reduce the width to make it thinner */
+  height: 100%; /* occupy full height of parent element */
+  background-color: #f00; /* set the same color */
+  top: 3rem;
+  left: 0;
+}
+
+.box-2 {
+  position: absolute;
+  width: 200px; /* occupy full width of parent element */
+  height: 10px; /* reduce the height to make it thinner */
+  background-color: #f00; /* set the same color */
+  bottom: 50px;
+  left: 0;
+}
+
+.box-12 {
+  position: absolute;
+  width: 10px; /* reduce the width to make it thinner */
+  height: 100%; /* occupy full height of parent element */
+  background-color: var(--primary_color); /* set the same color */
+  top: -20px;
+  right: 0;
+}
+
+.box-22 {
+  position: absolute;
+  width: 200px; /* occupy full width of parent element */
+  height: 10px; /* reduce the height to make it thinner */
+  background-color: var(--primary_color); /* set the same color */
+  bottom: 20px;
+  right: 0;
+}
+
+}
+
+
+
+
+/* MISSION STATEMENT END */
