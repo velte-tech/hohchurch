@@ -1,63 +1,60 @@
-
-#denver_reach  {
-    min-height: 400px;
-    margin-top: 5rem ;
+#denver_reach {
+  min-height: 400px;
+  margin-top: 5rem;
 }
 
 #denver_reach .reach_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #efefef;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+  height: 100%;
 }
 
 .reach_wrapper .left {
-    max-width: 40%;
+  max-width: 40%;
 }
 
 .reach_wrapper .left img {
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
 }
-
 
 .reach_wrapper .right {
   max-width: 100%;
-    margin-right: 4rem;
+  margin-right: 4rem;
 }
 
 .reach_wrapper .right h2 {
-    font-size: 30px;
-    line-height: 1;
+  font-size: 30px;
+  line-height: 1;
 }
 
 .reach_wrapper .right p {
-    padding: 0.7rem 0;
-    font-size: 1rem;
+  padding: 0.7rem 0;
+  font-size: 1rem;
 }
 
 .reach_wrapper .right a {
-    color: #000;
-    justify-content: flex-start;
-    padding: 0.5rem 0;
-    font-weight: 700;
-    transition: color var(--transition);
+  color: #000;
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+  font-weight: 700;
+  transition: var(--transition);
 }
 
 .reach_wrapper .right a:hover,
 .reach_wrapper .right a:focus {
-    color: var(--primary_color);
+  color: var(--primary_color);
 }
-
 
 /* ======= SECTION: DENVER EVENTS ======= */
 
 .denver_events_wrapper {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .denver_events_wrapper h2 {
@@ -66,106 +63,103 @@
 }
 
 .denver_events_wrapper .card_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .denver_events_wrapper .card {
-    position: relative;
-    height: 25rem;
-    width: 100%;
-    border-radius: 0.4rem;
-    overflow: hidden;
-    bottom: 3rem;
-    cursor: pointer;
-    box-shadow: 0 6px 10px rgb(0 0 0 / 8%), 
-    0 0 6px rgb(0 0 0 / 5%);;
-  }
-  
-  .denver_events_wrapper .card:hover .text {
-    transform: translateY(0rem);
-    background-color: var(--grey_color);
-  }
-  
-  .denver_events_wrapper .card img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-  
-  .denver_events_wrapper .card .text {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    height: 60%;
-    width: 100%;
-    transition: var(--transition);
-    transform: translateY(7rem);
-  }
-  
-  .denver_events_wrapper .card .text p {
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 0.5rem;
-    display: inline-block;
-  }
-  
-  .denver_events_wrapper .card .text p:first-child {
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1.5;
-    margin-bottom: 2.5rem;
-  }
-  
-  .denver_events_wrapper .card:hover .text p:first-child {
-    margin-bottom: 0;
-  }
-  
-  .denver_events_wrapper .card .text a {
-    justify-content: flex-start;
-    padding: 0;
+  position: relative;
+  height: 25rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  bottom: 3rem;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgb(0 0 0 / 8%), 0 0 6px rgb(0 0 0 / 5%);
+}
+
+.denver_events_wrapper .card:hover .text {
+  transform: translateY(0rem);
+  background-color: var(--grey_color);
+}
+
+.denver_events_wrapper .card img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.denver_events_wrapper .card .text {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  height: 60%;
+  width: 100%;
+  transition: var(--transition);
+  transform: translateY(7rem);
+}
+
+.denver_events_wrapper .card .text p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.denver_events_wrapper .card .text p:first-child {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+.denver_events_wrapper .card:hover .text p:first-child {
+  margin-bottom: 0;
+}
+
+.denver_events_wrapper .card .text a {
+  justify-content: flex-start;
+  padding: 0;
+}
+
+/* ======= MEDIA QUERY ======= */
+
+@media screen and (max-width: 1000px) {
+  #denver_reach {
+    margin-top: 3rem;
+    min-height: auto;
   }
 
-
-                             /* ======= MEDIA QUERY ======= */
-
-  @media screen and (max-width:1000px) { 
-    #denver_reach  {
-      margin-top: 3rem;
-      min-height: auto;
-  }
-  
   #denver_reach .reach_wrapper {
-      flex-direction: column;
-      background-color: transparent;
-      width: 85%;
-      margin: auto;
+    flex-direction: column;
+    background-color: transparent;
+    width: 85%;
+    margin: auto;
   }
-  
+
   .reach_wrapper .left {
-      max-width: 100%;
-  } 
+    max-width: 100%;
+  }
 
   .reach_wrapper .right {
     padding: 1rem;
     margin-right: 0;
     background-color: #efefef;
-}
-
-
-    /* ======= EVENT SECTION =======   */
-    .denver_events_wrapper {
-      width: 85%;
-      flex-direction: column;
   }
 
-    .denver_events_wrapper .card_wrapper {
-      flex-direction: column;
+  /* ======= EVENT SECTION =======   */
+  .denver_events_wrapper {
+    width: 85%;
+    flex-direction: column;
+  }
+
+  .denver_events_wrapper .card_wrapper {
+    flex-direction: column;
   }
 
   .denver_events_wrapper .card_wrapper .text {
@@ -177,22 +171,20 @@
   .denver_events_wrapper .card .text p:first-child {
     margin-bottom: 0;
   }
-  
-  } 
-  
+}
 
-  @media screen and (max-width:600px) {  
-    #denver_reach .reach_wrapper {
-      width: 100%;
+@media screen and (max-width: 600px) {
+  #denver_reach .reach_wrapper {
+    width: 100%;
   }
 
-    /* ======= EVENT SECTION =======   */
-    .denver_events_wrapper {
-      width: 100%;
-      padding: 1rem;
+  /* ======= EVENT SECTION =======   */
+  .denver_events_wrapper {
+    width: 100%;
+    padding: 1rem;
   }
 
   .denver_events_wrapper h2 {
     font-size: 1.6rem;
   }
-  }
+}

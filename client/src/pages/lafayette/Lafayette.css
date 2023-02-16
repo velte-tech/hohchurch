@@ -165,7 +165,7 @@
   font-weight: 700;
 }
 
-#lafayette_reach .reach_wrapper .right A {
+#lafayette_reach .reach_wrapper .right a {
   transition: var(--transition);
 }
 

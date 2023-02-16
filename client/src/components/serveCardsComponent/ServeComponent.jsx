@@ -17,10 +17,10 @@ function ServeComponent(props) {
       <div className="bottom">
         <h3>{props.head}</h3>
         <div className="links">
-          <a href="/give" target="_blank" className="linkAnima">
+          {/* <a href="/give" className="linkAnima">
             {props.text_1}
             <span className="arrow"></span>
-          </a>
+          </a> */}
           <Link className="linkAnima" onClick={() => setReveal(!reveal)}>
             {props.text_2}
             <span className="arrow"></span>

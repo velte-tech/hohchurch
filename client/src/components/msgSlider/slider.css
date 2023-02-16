@@ -71,10 +71,12 @@
 
 .slider_wrapper .card .title {
   text-transform: uppercase;
+  color: #cccc;
 }
 
 .slider_wrapper .card .head {
   color: var(--primary_color);
+  color: #fff;
   font-weight: 500;
   font-size: 1.3rem;
   text-transform: capitalize;
@@ -83,6 +85,7 @@
 
 .slider_wrapper .card .name {
   text-transform: capitalize;
+  color: #f4f4f4;
 }
 
 .slider_wrapper .card .card_bottom {

@@ -8,7 +8,6 @@ import {
 import {
   Home,
   Contact,
- 
   Service,
   Jobs,
   Give,
@@ -40,8 +39,10 @@ import {
 //Layouts
 import Layout from "./Layouts/Layout";
 import SlideContent from "./Layouts/SlideContent";
+
 // import { SermonDetailLoader } from "./pages/sermons/Sermon";
 // import Sliders, { SermonLoder } from "./components/msgSlider/Slider";
+
 
 
 const router = createBrowserRouter(
@@ -93,15 +94,10 @@ const router = createBrowserRouter(
        <Route path="/Messages" element={<Messages />} />
 
         <Route path="/sermon" element={<SlideContent/>}>
-          {/* <Route 
-          index
-          element= {<Sliders/>}
-          loader={SermonLoder}
-          /> */}
+     
         <Route 
-        path="/sermon"
+        path="/sermon/:id"
         element={<Sermon />}
-        // Loader={SermonDetailLoader}
          />
         </Route>
 

@@ -13,10 +13,7 @@ import { AiFillYoutube } from "react-icons/ai";
 import churchImg from "../../assets/images/church.jpg";
 import outreachImg from "../../assets/images/outreach.jpg";
 import newHereImg from "../../assets/images/newHere.jpg";
-
 import phonexxx from "../../assets/images/phone-app.png";
-
-
 
 function Home() {
   useEffect(() => {

@@ -18,8 +18,7 @@ function Give() {
               </p>
               <p>
                 God Bless you and welcome to our HoH online giving platform.You
-                can make your online payments for offering many other programmes
-                here...Thank You.
+                can make your online donation here...Thank You.
               </p>
             </div>
           </div>
@@ -39,7 +38,7 @@ function Give() {
         </div>
       </section>
 
-      <section id="give_form">
+      {/* <section id="give_form">
         <div className="give_form_wrapper container">
           <form>
             <div className="give_input">
@@ -50,10 +49,6 @@ function Give() {
               <label for="password">PASSWORD</label>
               <input id="password" type="password" required />
             </div>
-            <div className="check">
-              <input type="checkbox" id="checked" />
-              <label for="checked"> Keep me logged in</label>
-            </div>
             <div className="bottom_links">
               <input type="submit" name="LOGIN" className="btn" />
               <Link className="btn_l">REGISTER</Link>
@@ -61,7 +56,7 @@ function Give() {
             </div>
           </form>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

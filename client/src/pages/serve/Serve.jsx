@@ -107,13 +107,6 @@ function Serve() {
               text_2="LEARN MORE"
               detail="Saying Yes to serving with the Flatirons Creative team opens opportunities to create content from anything like our weekend services to NextGen events to ministry retreats and more, as a way of showing how lives are continually being changed through the awesome life of Christ. If you are a photographer, videographer, graphic designer, or artist, our creative team would love to connect. Let us know a little about yourself and how you create in the comment section!"
             />
-            <ServeComponent
-              img={riseImg}
-              head="ASL Ministry"
-              text_1="SIGN UP"
-              text_2="LEARN MORE"
-              detail="Saying Yes to serving with the Flatirons Creative team opens opportunities to create content from anything like our weekend services to NextGen events to ministry retreats and more, as a way of showing how lives are continually being changed through the awesome life of Christ. If you are a photographer, videographer, graphic designer, or artist, our creative team would love to connect. Let us know a little about yourself and how you create in the comment section!"
-            />
           </div>
           <div className="right">
             <ServeComponent
@@ -147,13 +140,6 @@ function Serve() {
             <ServeComponent
               img={riseImg}
               head="Kids Ministry"
-              text_1="SIGN UP"
-              text_2="LEARN MORE"
-              detail="Saying Yes to serving with the Flatirons Creative team opens opportunities to create content from anything like our weekend services to NextGen events to ministry retreats and more, as a way of showing how lives are continually being changed through the awesome life of Christ. If you are a photographer, videographer, graphic designer, or artist, our creative team would love to connect. Let us know a little about yourself and how you create in the comment section!"
-            />
-            <ServeComponent
-              img={riseImg}
-              head="Worship"
               text_1="SIGN UP"
               text_2="LEARN MORE"
               detail="Saying Yes to serving with the Flatirons Creative team opens opportunities to create content from anything like our weekend services to NextGen events to ministry retreats and more, as a way of showing how lives are continually being changed through the awesome life of Christ. If you are a photographer, videographer, graphic designer, or artist, our creative team would love to connect. Let us know a little about yourself and how you create in the comment section!"
