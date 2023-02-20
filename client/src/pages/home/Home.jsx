@@ -8,6 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
 import { AiFillYoutube } from "react-icons/ai";
+import ScrollToTop from "../../components/ScrollToTop/index";
 
 // Images
 import churchImg from "../../assets/images/church.jpg";
@@ -312,6 +313,7 @@ function Home() {
 
         <Slides />
       </section>
+      <ScrollToTop />
     </>
   );
 }

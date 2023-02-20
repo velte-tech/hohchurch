@@ -1,22 +1,21 @@
-import React from 'react'
-import './Students.css'
+import React from "react";
+import "./Students.css";
 import stuu22 from "../../assets/images/stuu22.jpg";
 import nxtt from "../../assets/images/nxtt.jpg";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import AOS from "aos";
-import { useEffect } from 'react';
-import Students_groups from '../../components/students_groups/Students_groups';
+import { useEffect } from "react";
+import Students_groups from "../../components/students_groups/Students_groups";
 // import { GrMail } from 'react-icons/gr';
-import { AiTwotonePhone } from 'react-icons/ai';
-import { MdAllInbox } from 'react-icons/md';
-
+import { AiTwotonePhone } from "react-icons/ai";
+import { MdAllInbox } from "react-icons/md";
+import ScrollToTop from "../../components/ScrollToTop/index";
 
 const Students = () => {
-
-
   // animation
   useEffect(() => {
-    AOS.init({
+    AOS.init(
+      {
         duration: 500,
         // offet: 1000,
       },
@@ -25,17 +24,14 @@ const Students = () => {
   });
 
   return (
-    <div id='students-wrapper'>
-      <div className='students-case'>
-
+    <div id="students-wrapper">
+      <div className="students-case">
         {/* showcase */}
-        <div className='min-group-showcase-1'>
-          <div className='min-group-case-1'>
-            <div className='min-group-txt'>
-              <h1 className='focus-in-contract-bck'>
-                STUDENTS
-              </h1>
-              <h2 className='focus-in-contract-bck'>
+        <div className="min-group-showcase-1">
+          <div className="min-group-case-1">
+            <div className="min-group-txt">
+              <h1 className="focus-in-contract-bck">STUDENTS</h1>
+              <h2 className="focus-in-contract-bck">
                 MIDDLE SCHOOL & HIGH SCHOOL
               </h2>
             </div>
@@ -45,65 +41,61 @@ const Students = () => {
 
         {/* students section 2  */}
 
-        
-        <div className='stusec2-wrapper'>
-          <div className='stusec2-case'>
-            <div className='stusec2'>
-              <div className='stu-left'>
-                <div className='stu-pic'>
+        <div className="stusec2-wrapper">
+          <div className="stusec2-case">
+            <div className="stusec2">
+              <div className="stu-left">
+                <div className="stu-pic">
                   <img
-                  src={stuu22} alt=""
-                  data-aos="fade-right"
-                  data-aos-anchor-placement="center-bottom"
-                  data-aos-delay="600"
-                />
+                    src={stuu22}
+                    alt=""
+                    data-aos="fade-right"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-delay="600"
+                  />
                 </div>
 
-                <div className='stu-shp'
+                <div
+                  className="stu-shp"
                   data-aos="fade-right"
                   data-aos-anchor-placement="center-bottom"
                   data-aos-delay="620"
-                >
-                </div>
+                ></div>
               </div>
 
-              <div className='stu-right'
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="center-bottom"
-                  data-aos-delay="600"
+              <div
+                className="stu-right"
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
               >
-                <div className='stu-txt1'>
-                  STUDENTS
-                </div>
+                <div className="stu-txt1">STUDENTS</div>
 
-                <div className='stu-txt2'>
+                <div className="stu-txt2">
                   {/* Every student deserves to have friends and a place where they can belong and connect with others.And Flatirons Students exists to do just that. */}
-
-                  Every student should have friends and a place to fit in and make connections with
-                  other people.To that end, HOH Students was created.
+                  Every student should have friends and a place to fit in and
+                  make connections with other people.To that end, HOH Students
+                  was created.
                 </div>
 
-                <div className='stu-txt3'>
+                <div className="stu-txt3">
                   {/* Flatirons Students, worship on Sunday’ s at 11 AM and meet on Wednesday nights throughout the school year.Once a month we have an all - student rally in Lafayette.All other Wednesdays students meet in groups at your their campus. */}
-
-                  HOH is dedicated to assisting students in moving closer to Christ despite the
-                  changes brought on by school, friends, significant others, and family.The HOH
-                  Students worship on Wednesday nights during the academic year and attend
-                  Sunday services at 11 AM. We hold an all - student rally in Lafayette once every
-                  month.All other Wednesdays students meet in groups at their campus.Students
-                  have the chance to participate in life groups where they can hang out with like -
-                    minded peers and devoted leaders as they begin their spiritual journey.
+                  HOH is dedicated to assisting students in moving closer to
+                  Christ despite the changes brought on by school, friends,
+                  significant others, and family.The HOH Students worship on
+                  Wednesday nights during the academic year and attend Sunday
+                  services at 11 AM. We hold an all - student rally in Lafayette
+                  once every month.All other Wednesdays students meet in groups
+                  at their campus.Students have the chance to participate in
+                  life groups where they can hang out with like - minded peers
+                  and devoted leaders as they begin their spiritual journey.
                 </div>
-
               </div>
             </div>
           </div>
         </div>
 
-
         {/* students section 2 end */}
-
-
 
         {/* two info buttons  */}
 
@@ -111,26 +103,27 @@ const Students = () => {
 
         {/* two info buttons end */}
 
-    
-
         {/* next gen  */}
 
-        <div className='nxtgen-wrapper'>
-          <div className='nxtgen-case'>
-            <div className='nxtgen'>
-              <div className='nxtgen-left'
-                  data-aos="fade-right"
-                  data-aos-anchor-placement="center-bottom"
-                  data-aos-delay="600"
+        <div className="nxtgen-wrapper">
+          <div className="nxtgen-case">
+            <div className="nxtgen">
+              <div
+                className="nxtgen-left"
+                data-aos="fade-right"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
               >
-                <div className='nxt-l1'>
-                  NEXTGEN MINISTRIES
+                <div className="nxt-l1">NEXTGEN MINISTRIES</div>
+                <div className="nxt-l2">
+                  From cradle to college, we want to come alongside you to help
+                  you grow in a relationship with Christ.NEXTGEN Ministries
+                  include Kids, Students, College, and Parents Ministry.
                 </div>
-                <div className='nxt-l2'>
-                  From cradle to college, we want to come alongside you to help you grow in a relationship with Christ.NEXTGEN Ministries include Kids, Students, College, and Parents Ministry.
-                </div>
-                <div className='nxt-l3'>
-                  <Link className='btn' to='/Ministries'>SERVE</Link>
+                <div className="nxt-l3">
+                  <Link className="btn" to="/Ministries">
+                    SERVE
+                  </Link>
                 </div>
                 {/* <div className='nxt-l4'>
                   <Link className='btn'>
@@ -139,17 +132,18 @@ const Students = () => {
                 </div> */}
               </div>
 
-              <div className='nxtgen-right'>
-                <div className='nxt-pic'
+              <div className="nxtgen-right">
+                <div
+                  className="nxt-pic"
                   data-aos="fade-left"
                   data-aos-anchor-placement="center-bottom"
                   data-aos-delay="600"
                 >
-                  <img
-                  src={nxtt} alt=""/>
+                  <img src={nxtt} alt="" />
                 </div>
 
-                <div className='nxt-shp'
+                <div
+                  className="nxt-shp"
                   data-aos="fade-left"
                   data-aos-anchor-placement="center-bottom"
                   data-aos-delay="610"
@@ -161,157 +155,74 @@ const Students = () => {
 
         {/* next gen end */}
 
-
         {/* newslettr  */}
 
-        <div className='kid-news-wrapper'>
-          <div className='kid-news-txt focus-in-contract-bck'>
+        <div className="kid-news-wrapper">
+          <div className="kid-news-txt focus-in-contract-bck">
             Parent Newsletter Sign - Up
           </div>
         </div>
 
         {/* newslettr end */}
 
-        
-
-
-
         {/* NEWSLETTER FORMS */}
 
-        
-        <div className='newsform-wrapper'>
-          <div className='newsform-case'>
-            <div className='newsform'>
+        <div className="newsform-wrapper">
+          <div className="newsform-case">
+            <div className="newsform">
+              <div className="news-left">
+                <div className="nl-a">MIDDLE SCHOOL</div>
 
-              <div className='news-left'>
-                <div className='nl-a'>
-                  MIDDLE SCHOOL
-                </div>
-
-                <div className='nl-b'>
-                  
+                <div className="nl-b">
                   {/* <form> */}
 
-                    <div className='nl'>
-                      <div className='nl1'>
-                        <div className='ft-1'>FIRST NAME</div>
-                        <div className='ft-2'></div>
-                      </div>
-                      <div className='nl2'>
-                        <input></input>
-                      </div>
+                  <div className="nl">
+                    <div className="nl1">
+                      <div className="ft-1">FIRST NAME</div>
+                      <div className="ft-2"></div>
                     </div>
-
-                    <div className='nl'>
-                      <div className='nl1'>
-                        <div className='ft-1'>LAST NAME</div>
-                        <div className='ft-2'></div>
-                      </div>
-                      <div className='nl2'>
-                        <input></input>
-                      </div>
+                    <div className="nl2">
+                      <input></input>
                     </div>
-                  
-                    <div className='nl'>
-                      <div className='nl1'>
-                        <div className='ft-1'>EMAIL</div>
-                        <div className='ft-2'></div>
-                      </div>
-                      <div className='nl2'>
-                        <div className='sinn'><MdAllInbox /></div>
-                        <input className='zinn'></input>
-                      </div>
-                    </div>
-             
-                    <div className='nl'>
-                      <div className='nl1'>
-                        <div className='ft-1'>MOBILE PHONE</div>
-                        <div className='ft-2'></div>
-                      </div>
-                      <div className='nl2'>
-                        <div className='sinn'><AiTwotonePhone /></div>
-                        <input className='zinn'></input>
-                      </div>
-                    </div>
-                    
-                    {/* <div className='nl'>
-                    
-                      <div className='nl1'>
-                        <div className='ft-1'>CAMPUS</div>
-                        <div className='ft-2'></div>
-                      </div>
-                      
-                      <select id="campp" name="campp">
-                        <option value="nott">Please Select</option>
-                        <option value="lafa">Lafayette Campus</option>
-                        <option value="aurora">Aurora Campus</option>
-                        <option value="denv">Denver Campus</option>
-                        <option value="west">West Campus</option>
-                        <option value="longm">Longmont Campus</option>
-                        <option value="online">Online Campus</option>
-                      </select>
-
-                  </div> */}
-
-                  <button className='btn'>SUBSCRIBE</button>
-
-                  {/* </form> */}
-
-                </div>
-              </div>
-
-              <div className='news-right'>
-                <div className='nl-a'>
-                  HIGH SCHOOL
-                </div>
-
-                <div className='nl-b'>
-                  
-                  {/* <form> */}
-
-                    <div className='nl'>
-                      <div className='nl1'>
-                        <div className='ft-1'>FIRST NAME</div>
-                        <div className='ft-2'></div>
-                      </div>
-                      <div className='nl2'>
-                        <input></input>
-                      </div>
-                    </div>
-
-                    <div className='nl'>
-                      <div className='nl1'>
-                        <div className='ft-1'>LAST NAME</div>
-                        <div className='ft-2'></div>
-                      </div>
-                      <div className='nl2'>
-                        <input></input>
-                      </div>
                   </div>
-                  
-                    <div className='nl'>
-                      <div className='nl1'>
-                        <div className='ft-1'>EMAIL</div>
-                        <div className='ft-2'></div>
-                      </div>
-                      <div className='nl2'>
-                        <div className='sinn'><MdAllInbox /></div>
-                        <input className='zinn'></input>
-                      </div>
+
+                  <div className="nl">
+                    <div className="nl1">
+                      <div className="ft-1">LAST NAME</div>
+                      <div className="ft-2"></div>
                     </div>
-             
-                    <div className='nl'>
-                      <div className='nl1'>
-                        <div className='ft-1'>MOBILE PHONE</div>
-                        <div className='ft-2'></div>
-                      </div>
-                      <div className='nl2'>
-                        <div className='sinn'><AiTwotonePhone /></div>
-                        <input className='zinn'></input>
-                      </div>
+                    <div className="nl2">
+                      <input></input>
                     </div>
-                    
-                    {/* <div className='nl'>
+                  </div>
+
+                  <div className="nl">
+                    <div className="nl1">
+                      <div className="ft-1">EMAIL</div>
+                      <div className="ft-2"></div>
+                    </div>
+                    <div className="nl2">
+                      <div className="sinn">
+                        <MdAllInbox />
+                      </div>
+                      <input className="zinn"></input>
+                    </div>
+                  </div>
+
+                  <div className="nl">
+                    <div className="nl1">
+                      <div className="ft-1">MOBILE PHONE</div>
+                      <div className="ft-2"></div>
+                    </div>
+                    <div className="nl2">
+                      <div className="sinn">
+                        <AiTwotonePhone />
+                      </div>
+                      <input className="zinn"></input>
+                    </div>
+                  </div>
+
+                  {/* <div className='nl'>
                     
                       <div className='nl1'>
                         <div className='ft-1'>CAMPUS</div>
@@ -330,27 +241,97 @@ const Students = () => {
 
                   </div> */}
 
-                  <button className='btn'>SUBSCRIBE</button>
+                  <button className="btn">SUBSCRIBE</button>
 
                   {/* </form> */}
-
                 </div>
               </div>
 
-             
+              <div className="news-right">
+                <div className="nl-a">HIGH SCHOOL</div>
 
+                <div className="nl-b">
+                  {/* <form> */}
+
+                  <div className="nl">
+                    <div className="nl1">
+                      <div className="ft-1">FIRST NAME</div>
+                      <div className="ft-2"></div>
+                    </div>
+                    <div className="nl2">
+                      <input></input>
+                    </div>
+                  </div>
+
+                  <div className="nl">
+                    <div className="nl1">
+                      <div className="ft-1">LAST NAME</div>
+                      <div className="ft-2"></div>
+                    </div>
+                    <div className="nl2">
+                      <input></input>
+                    </div>
+                  </div>
+
+                  <div className="nl">
+                    <div className="nl1">
+                      <div className="ft-1">EMAIL</div>
+                      <div className="ft-2"></div>
+                    </div>
+                    <div className="nl2">
+                      <div className="sinn">
+                        <MdAllInbox />
+                      </div>
+                      <input className="zinn"></input>
+                    </div>
+                  </div>
+
+                  <div className="nl">
+                    <div className="nl1">
+                      <div className="ft-1">MOBILE PHONE</div>
+                      <div className="ft-2"></div>
+                    </div>
+                    <div className="nl2">
+                      <div className="sinn">
+                        <AiTwotonePhone />
+                      </div>
+                      <input className="zinn"></input>
+                    </div>
+                  </div>
+
+                  {/* <div className='nl'>
+                    
+                      <div className='nl1'>
+                        <div className='ft-1'>CAMPUS</div>
+                        <div className='ft-2'></div>
+                      </div>
+                      
+                      <select id="campp" name="campp">
+                        <option value="nott">Please Select</option>
+                        <option value="lafa">Lafayette Campus</option>
+                        <option value="aurora">Aurora Campus</option>
+                        <option value="denv">Denver Campus</option>
+                        <option value="west">West Campus</option>
+                        <option value="longm">Longmont Campus</option>
+                        <option value="online">Online Campus</option>
+                      </select>
+
+                  </div> */}
+
+                  <button className="btn">SUBSCRIBE</button>
+
+                  {/* </form> */}
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-
         {/* NEWSLETTER FORMS END */}
-
-
-        
       </div>
+      <ScrollToTop />
     </div>
-  )
-}
+  );
+};
 
-export default Students
+export default Students;
