@@ -16,6 +16,7 @@ import seminerImg from "../../assets/images/seminer.jpg";
 import menImg from "../../assets/images/men.jpg";
 import lafPastorImg from "../../assets/images/lafayette_pastor.jpg";
 import KidsAcc from "../../components/mAccComponents/KidsAcc";
+import ScrollToTop from "../../components/ScrollToTop/index";
 
 const Lafayette = () => {
   useEffect(() => {
@@ -331,6 +332,7 @@ const Lafayette = () => {
           </div>
         </div>
       </section>
+      <ScrollToTop />
     </div>
   );
 };

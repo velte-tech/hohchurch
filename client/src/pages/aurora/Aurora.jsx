@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Search from "../../components/searchLocate/Search";
 import AboutSlideIn from "../../components/aboutSlideIn/AboutSlideIn";
 import bellImg from "../../assets/images/churchBell.jpg";
+import ScrollToTop from "../../components/ScrollToTop/index";
 
 const Aurora = () => {
   useEffect(() => {
@@ -72,6 +73,7 @@ const Aurora = () => {
       <section id="aurora_events">
         <h1 className="focus-in-contract-bck">Events @ Aurora Campus</h1>
       </section>
+      <ScrollToTop />
     </div>
   );
 };
