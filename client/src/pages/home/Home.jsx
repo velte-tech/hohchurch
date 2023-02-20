@@ -15,6 +15,8 @@ import outreachImg from "../../assets/images/outreach.jpg";
 import newHereImg from "../../assets/images/newHere.jpg";
 import phonexxx from "../../assets/images/phone-app.png";
 
+import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+
 function Home() {
   useEffect(() => {
     AOS.init(
@@ -312,6 +314,7 @@ function Home() {
 
         <Slides />
       </section>
+      <ScrollToTop />
     </>
   );
 }

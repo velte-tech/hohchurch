@@ -15,6 +15,7 @@ import studentsImg from "../../assets/images/students.jpg";
 import connectImg from "../../assets/images/connect.jpg";
 import kidsImg from "../../assets/images/kids.jpg";
 import podcastImg from "../../assets/images/podcast.jpg";
+import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const Longmont = () => {
   useEffect(() => {
@@ -247,6 +248,7 @@ const Longmont = () => {
           </div>
         </div>
       </section>
+      <ScrollToTop />
     </div>
   );
 };

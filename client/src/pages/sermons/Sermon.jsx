@@ -3,6 +3,7 @@ import "./sermons.css";
 import Slide from "../../components/msgSlider/slider";
 import { useParams } from "react-router-dom";
 import { slideData } from "../../components/msgSlider/data";
+import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 export default function Sermon() {
   const { id } = useParams();
@@ -25,6 +26,7 @@ export default function Sermon() {
         </div>
       </section>
       <Slide />
+      <ScrollToTop />
     </div>
   );
 }

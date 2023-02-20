@@ -6,6 +6,7 @@ import l1 from "../../assets/images/pastor-alex.jpg";
 import l22 from "../../assets/images/pswomen.jpeg";
 import l33 from "../../assets/images/psroll.jpeg";
 import naruto from "../../assets/images/leaders-hoh.jpg";
+import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 // import { MdMailOutline } from "react-icons/md";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -40,164 +41,100 @@ const Leadership = () => {
         <div id="leade-wrapper">
           <div className="leade-case">
             <div className="leade-show">
-
               <div className="lead-flex-case">
-
                 <div className="lead-flex-show">
+                  {/* fleaders 3 flex  */}
 
-                {/* fleaders 3 flex  */}
-                
                   <div className="lead-flex">
-
                     <div className="lf1-pic">
                       <img src={l1} alt="" />
                     </div>
-                    <div className="lf12">
-                      Pastor Alex Gyesi
-                    </div>
-                    <div className="lf3">
-                      Head Pastor
-                    </div>
-
+                    <div className="lf12">Pastor Alex Gyesi</div>
+                    <div className="lf3">Head Pastor</div>
                   </div>
-                  
-                  <div className="lead-flex">
 
+                  <div className="lead-flex">
                     <div className="lf1-pic">
                       <img src={l22} alt="" />
                     </div>
-                    <div className="lf12">
-                      Pastor Dorcas Gyesi
-                    </div>
-                    <div className="lf3">
-                      Head Pastor
-                    </div>
-
+                    <div className="lf12">Pastor Dorcas Gyesi</div>
+                    <div className="lf3">Head Pastor</div>
                   </div>
-                  
-                  <div className="lead-flex">
 
+                  <div className="lead-flex">
                     <div className="lf1-pic">
                       <img src={l33} alt="" />
                     </div>
-                    <div className="lf12">
-                      Rev Rolland Owusu Mensah
-                    </div>
-                    <div className="lf3">
-                      Pastor Rolland
-                    </div>
-
+                    <div className="lf12">Rev Rolland Owusu Mensah</div>
+                    <div className="lf3">Pastor Rolland</div>
                   </div>
-                  
-                {/* fleaders 3 flex end */}
 
+                  {/* fleaders 3 flex end */}
                 </div>
 
                 <div className="lead-flex-show">
+                  {/* fleaders 3 flex  */}
 
-                {/* fleaders 3 flex  */}
-                
                   <div className="lead-flex">
-
                     <div className="lf1-pic">
                       <img src={l1} alt="" />
                     </div>
-                    <div className="lf12">
-                      MInister Hannah
-                    </div>
-                    <div className="lf3">
-                      Leader For Peace Group
-                    </div>
-
+                    <div className="lf12">MInister Hannah</div>
+                    <div className="lf3">Leader For Peace Group</div>
                   </div>
-                  
-                  <div className="lead-flex">
 
+                  <div className="lead-flex">
                     <div className="lf1-pic">
                       <img src={l1} alt="" />
                     </div>
-                    <div className="lf12">
-                      Minister Dorcas
-                    </div>
-                    <div className="lf3">
-                      Leader For Power Group
-                    </div>
-
+                    <div className="lf12">Minister Dorcas</div>
+                    <div className="lf3">Leader For Power Group</div>
                   </div>
-                  
-                  <div className="lead-flex">
 
+                  <div className="lead-flex">
                     <div className="lf1-pic">
                       <img src={l1} alt="" />
                     </div>
-                    <div className="lf12">
-                      Minister Jodie
-                    </div>
-                    <div className="lf3">
-                      Leader For Joy Group
-                    </div>
-
+                    <div className="lf12">Minister Jodie</div>
+                    <div className="lf3">Leader For Joy Group</div>
                   </div>
-                  
-                {/* fleaders 3 flex end */}
 
+                  {/* fleaders 3 flex end */}
                 </div>
-                
+
                 <div className="lead-flex-show">
+                  {/* fleaders 3 flex  */}
 
-                {/* fleaders 3 flex  */}
-                
                   <div className="lead-flex">
-
                     <div className="lf1-pic">
                       <img src={l1} alt="" />
                     </div>
-                    <div className="lf12">
-                      Minister Julie
-                    </div>
-                    <div className="lf3">
-                      Leader For Faith Group
-                    </div>
-
+                    <div className="lf12">Minister Julie</div>
+                    <div className="lf3">Leader For Faith Group</div>
                   </div>
-                  
-                  <div className="lead-flex">
 
+                  <div className="lead-flex">
                     <div className="lf1-pic">
                       <img src={l1} alt="" />
                     </div>
-                    <div className="lf12">
-                      Minister Mable
-                    </div>
-                    <div className="lf3">
-                      Leader For Love Group
-                    </div>
-
+                    <div className="lf12">Minister Mable</div>
+                    <div className="lf3">Leader For Love Group</div>
                   </div>
-                  
-                  <div className="lead-flex">
 
+                  <div className="lead-flex">
                     <div className="lf1-pic">
                       <img src={l1} alt="" />
                     </div>
-                    <div className="lf12">
-                      Minister Marcia
-                    </div>
-                    <div className="lf3">
-                      Leader For Hope Group
-                    </div>
-
+                    <div className="lf12">Minister Marcia</div>
+                    <div className="lf3">Leader For Hope Group</div>
                   </div>
-                  
-                {/* fleaders 3 flex end */}
 
+                  {/* fleaders 3 flex end */}
                 </div>
-                
               </div>
-
             </div>
           </div>
-       </div>
+        </div>
 
         {/* leaders end */}
 
@@ -222,19 +159,24 @@ const Leadership = () => {
         <div className="alone-wrapper">
           <div className="alone">
             <div className="alone-1" data-aos="fade-right">
-              <div className="lone-1">
-                WE DON'T DO THIS ALONE
-              </div>
+              <div className="lone-1">WE DON'T DO THIS ALONE</div>
               <div className="lone-2">
-
-                leadership typically refers to the group of individuals who oversee the affairs and operations of an organization.The exact structure of church leadership can vary depending on the denomination and the size of the congregation, but there are some common roles and responsibilities that many church leaders share.
-
+                leadership typically refers to the group of individuals who
+                oversee the affairs and operations of an organization.The exact
+                structure of church leadership can vary depending on the
+                denomination and the size of the congregation, but there are
+                some common roles and responsibilities that many church leaders
+                share.
               </div>
 
               <div className="lone-3">
-                Effective church leadership requires a combination of spiritual maturity, organizational skills, and interpersonal abilities. Strong communication skills, the ability to collaborate with others, and a deep commitment to the church 's mission and values.
+                Effective church leadership requires a combination of spiritual
+                maturity, organizational skills, and interpersonal abilities.
+                Strong communication skills, the ability to collaborate with
+                others, and a deep commitment to the church 's mission and
+                values.
               </div>
-              
+
               {/* <div className="lone-3">Contact our elders at</div> */}
 
               {/* <div className="lone-4">
@@ -242,7 +184,6 @@ const Leadership = () => {
                   elders@highwayofholinesschurch.com
                 </Link>
               </div> */}
-
             </div>
 
             <div className="alone-2">
@@ -261,6 +202,7 @@ const Leadership = () => {
 
         {/* ALONE END */}
       </div>
+      <ScrollToTop />
     </div>
   );
 };
