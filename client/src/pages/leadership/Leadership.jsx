@@ -1,7 +1,6 @@
 import { React } from "react";
 import { Link } from "react-router-dom";
 import "./Leadership.css";
-import ScrollToTop from "../../components/ScrollToTop/index";
 // Images
 import l1 from "../../assets/images/pastor-alex.jpg";
 import l22 from "../../assets/images/pswomen.jpeg";
@@ -185,24 +184,19 @@ const Leadership = () => {
         <div className="alone-wrapper">
           <div className="alone">
             <div className="alone-1" data-aos="fade-right">
-              <div className="lone-1">WE DON'T DO THIS ALONE</div>
+              <div className="lone-1">
+                WE DON'T DO THIS ALONE
+              </div>
               <div className="lone-2">
-                leadership typically refers to the group of individuals who
-                oversee the affairs and operations of an organization.The exact
-                structure of church leadership can vary depending on the
-                denomination and the size of the congregation, but there are
-                some common roles and responsibilities that many church leaders
-                share.
+
+                leadership typically refers to the group of individuals who oversee the affairs and operations of an organization.The exact structure of church leadership can vary depending on the denomination and the size of the congregation, but there are some common roles and responsibilities that many church leaders share.
+
               </div>
 
               <div className="lone-3">
-                Effective church leadership requires a combination of spiritual
-                maturity, organizational skills, and interpersonal abilities.
-                Strong communication skills, the ability to collaborate with
-                others, and a deep commitment to the church 's mission and
-                values.
+                Effective church leadership requires a combination of spiritual maturity, organizational skills, and interpersonal abilities. Strong communication skills, the ability to collaborate with others, and a deep commitment to the church 's mission and values.
               </div>
-
+              
               {/* <div className="lone-3">Contact our elders at</div> */}
 
               {/* <div className="lone-4">
@@ -210,6 +204,7 @@ const Leadership = () => {
                   elders@highwayofholinesschurch.com
                 </Link>
               </div> */}
+
             </div>
 
             <div className="alone-2">
@@ -228,7 +223,6 @@ const Leadership = () => {
 
         {/* ALONE END */}
       </div>
-      <ScrollToTop />
     </div>
   );
 };

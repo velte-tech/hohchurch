@@ -1,64 +1,80 @@
-import React from "react";
-import "./Groups.css";
-import { Link } from "react-router-dom";
+import React from 'react'
+import './Groups.css'
+import { Link } from 'react-router-dom'; 
 // import AOS from "aos";
 // import { ImSearch } from 'react-icons/im';
 import GoogleMap from "../../components/GoogleMap/GoogleMap";
-import ScrollToTop from "../../components/ScrollToTop/index";
+
 
 const Groups = () => {
-  // const [selects, setSelects] = useState();
 
-  // const [isActive, setIsActive] = useState(false)
+// const [selects, setSelects] = useState();  
 
-  // const [selected, setSelected] = useState('');
+// const [isActive, setIsActive] = useState(false)
 
-  return (
-    <div className="group-page">
-      <div className="gropup-wrapper">
-        <div className="group-showcase">
-          <div className="group-case">
-            {/* showcase text */}
-            <div className="group-text">
-              <h1 className="focus-in-contract-bck">GROUPS FINDER</h1>
+// const [selected, setSelected] = useState('');
 
-              <h2 className="focus-in-contract-bck">
-                TIMES ARE IN MOUNTAIN TIMEZONE
-              </h2>
-            </div>
-            {/* showcase text */}
+
+
+return (
+  
+
+    <div className='group-page'>
+    <div className='gropup-wrapper'>
+
+      <div className='group-showcase'>
+        <div className='group-case'>
+
+          {/* showcase text */}
+          <div className='group-text'>
+
+            <h1 className='focus-in-contract-bck'>
+              GROUPS FINDER
+            </h1>
+
+            <h2 className='focus-in-contract-bck'>
+              TIMES ARE IN MOUNTAIN TIMEZONE
+            </h2>
+
           </div>
+          {/* showcase text */}
+
         </div>
+      </div>
 
         {/* shape and map */}
 
-        <div className="map-shape-wrapper">
-          <div className="map-shape">
-            <div className="mp-sp">
-              <div
-                className="mp slide-in-right"
-                // data-aos="fade-left"
-                // data-aos-delay="400"
-              >
-                <GoogleMap />
-              </div>
-
-              <div className="sp">
-                <div
-                  className="map-shape silde-in-right"
+          
+          <div className='map-shape-wrapper'>
+            <div className='map-shape'>
+              <div className='mp-sp'>
+                <div className='mp slide-in-right' 
                   // data-aos="fade-left"
-                  // data-aos-delay="500"
-                ></div>
+                  // data-aos-delay="400"
+                >
+                  <GoogleMap />
+                </div>
+
+                <div className='sp'>
+                  <div className='map-shape silde-in-right'
+                    // data-aos="fade-left"
+                    // data-aos-delay="500"
+                  >
+                    
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* shape and map end */}
 
-        {/* search bar */}
+      {/* shape and map end */}
+      
 
-        {/* <div className='sh-wrapper'>
+      {/* search bar */}
+
+      
+      {/* <div className='sh-wrapper'>
         <div className='sh-case'>
 
           <div className='sh'>
@@ -74,150 +90,167 @@ const Groups = () => {
         </div>
       </div> */}
 
-        {/* search bar end */}
+      {/* search bar end */}
 
-        {/* individual church groups */}
 
-        <div className="church-group-wrapper">
-          <div className="church-group-case">
-            {/* group flex */}
-            <div className="church-group">
-              <div className="ch-gr">
-                <div className="ch-gr-1">CHURCH CONGREGATION</div>
-                <div className="ch-gr-2">
-                  PRAYER MEETING
-                  <br></br>
-                  Wednesday: 7.30 pm - 8.30 pm
-                  <br></br>
-                  BIBLE STUDIES
-                  <br></br>
-                  Friday: 7.30 - 9 pm
-                  <br></br>
-                  WORSHIP SERVICE
-                  <br></br>
-                  Sunday
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div>
-                <div className="ch-gr-4">
-                  <Link className="linkAnima">
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
-                </div>
-                <div className="ch-gr-5"></div>
+
+      {/* individual church groups */}
+
+
+      <div className='church-group-wrapper'>
+        <div className='church-group-case'>
+
+          {/* group flex */}
+          <div className='church-group'>
+
+            <div className='ch-gr'>
+              <div className='ch-gr-1'>
+               CHURCH CONGREGATION
               </div>
+              <div className='ch-gr-2'>
+                
+                PRAYER MEETING
+                <br></br>
+                Wednesday: 7.30 pm - 8.30 pm
+                <br></br>
+                BIBLE STUDIES
+                <br></br>
+                Friday: 7.30 - 9 pm
+                <br></br>
+                WORSHIP SERVICE
+                <br></br>
+                Sunday
 
-              <div className="ch-gr">
-                <div className="ch-gr-1">LEADERS MEETING</div>
-                <div className="ch-gr-2">
-                  Wednesday at 6: 30 PM <br></br>
-                  Content: WeekendMessage
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div>
-                <div className="ch-gr-4">
-                  <Link className="linkAnima">
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
-                </div>
-                <div className="ch-gr-5"></div>
               </div>
-
-              <div className="ch-gr">
-                <div className="ch-gr-1">MENS FELLOWSHIP</div>
-                <div className="ch-gr-2">
-                  Wednesday at 6: 30 PM <br></br>
-                  Content: WeekendMessage
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div>
-                <div className="ch-gr-4">
-                  <Link className="linkAnima">
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
-                </div>
-                <div className="ch-gr-5"></div>
+              <div className='ch-gr-3 hover_overlay'>
+                Unit 8 Fountayne House <br></br>
+                2-8 Fountayne Road <br></br>
+                London 4QL
               </div>
+              <div className='ch-gr-4'>
+                <Link className='linkAnima'>MORE INFO <span className="arrow"></span> </Link>
+              </div>
+              <div className='ch-gr-5'></div>
             </div>
-            {/* group flex end */}
-
-            {/* group flex */}
-            <div className="church-group">
-              <div className="ch-gr">
-                <div className="ch-gr-1">WOMEN FELLOWSHIP</div>
-                <div className="ch-gr-2">
-                  Wednesday at 6: 30 PM <br></br>
-                  Content: WeekendMessage
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div>
-                <div className="ch-gr-4">
-                  <Link className="linkAnima">
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
-                </div>
-                <div className="ch-gr-5"></div>
+            
+            <div className='ch-gr'>
+              <div className='ch-gr-1'>
+                LEADERS MEETING
               </div>
-
-              <div className="ch-gr">
-                <div className="ch-gr-1">CHILDREN MINISTRY</div>
-                <div className="ch-gr-2">
-                  Wednesday at 6: 30 PM <br></br>
-                  Content: WeekendMessage
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div>
-                <div className="ch-gr-4">
-                  <Link className="linkAnima">
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
-                </div>
-                <div className="ch-gr-5"></div>
+              <div className='ch-gr-2'>
+                Wednesday at 6: 30 PM <br></br>
+                Content: WeekendMessage
               </div>
-
-              <div className="ch-gr">
-                <div className="ch-gr-1">YOUTH MINISTRY</div>
-                <div className="ch-gr-2">
-                  Wednesday at 6: 30 PM <br></br>
-                  Content: WeekendMessage
-                </div>
-                <div className="ch-gr-3 hover_overlay">
+              <div className='ch-gr-3 hover_overlay'>
                   Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div>
-                <div className="ch-gr-4">
-                  <Link className="linkAnima">
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
-                </div>
-                <div className="ch-gr-5"></div>
+                2-8 Fountayne Road <br></br>
+                London 4QL
               </div>
+              <div className='ch-gr-4'>
+                <Link className='linkAnima'>MORE INFO <span className="arrow"></span> </Link>
+              </div>
+              <div className='ch-gr-5'></div>
             </div>
-            {/* group flex end */}
+            
+            <div className='ch-gr'>
+              <div className='ch-gr-1'>
+                MENS FELLOWSHIP
+              </div>
+              <div className='ch-gr-2'>
+                Wednesday at 6: 30 PM <br></br>
+                Content: WeekendMessage
+              </div>
+              <div className='ch-gr-3 hover_overlay'>
+                 Unit 8 Fountayne House <br></br>
+                2-8 Fountayne Road <br></br>
+                London 4QL
+              </div>
+              <div className='ch-gr-4'>
+                <Link className='linkAnima'>MORE INFO <span className="arrow"></span> </Link>
+              </div>
+              <div className='ch-gr-5'></div>
+            </div>
+
           </div>
+          {/* group flex end */}
+          
+          {/* group flex */}
+          <div className='church-group'>
+
+            <div className='ch-gr'>
+              <div className='ch-gr-1'>
+                WOMEN FELLOWSHIP
+              </div>
+              <div className='ch-gr-2'>
+                Wednesday at 6: 30 PM <br></br>
+                Content: WeekendMessage
+              </div>
+              <div className='ch-gr-3 hover_overlay'>
+                  Unit 8 Fountayne House <br></br>
+                2-8 Fountayne Road <br></br>
+                London 4QL
+              </div>
+              <div className='ch-gr-4'>
+                <Link className='linkAnima'>MORE INFO <span className="arrow"></span> </Link>
+              </div>
+              <div className='ch-gr-5'></div>
+            </div>
+            
+            <div className='ch-gr'>
+              <div className='ch-gr-1'>
+                CHILDREN MINISTRY
+              </div>
+              <div className='ch-gr-2'>
+                Wednesday at 6: 30 PM <br></br>
+                Content: WeekendMessage
+              </div>
+              <div className='ch-gr-3 hover_overlay'>
+                  Unit 8 Fountayne House <br></br>
+                2-8 Fountayne Road <br></br>
+                London 4QL
+              </div>
+              <div className='ch-gr-4'>
+                <Link className='linkAnima'>MORE INFO <span className="arrow"></span> </Link>
+              </div>
+              <div className='ch-gr-5'></div>
+            </div>
+            
+            <div className='ch-gr'>
+              <div className='ch-gr-1'>
+               YOUTH MINISTRY
+              </div>
+              <div className='ch-gr-2'>
+                Wednesday at 6: 30 PM <br></br>
+                Content: WeekendMessage
+              </div>
+              <div className='ch-gr-3 hover_overlay'>
+                  Unit 8 Fountayne House <br></br>
+                2-8 Fountayne Road <br></br>
+                London 4QL
+              </div>
+              <div className='ch-gr-4'>
+                <Link className='linkAnima'>MORE INFO <span className="arrow"></span> </Link>
+              </div>
+              <div className='ch-gr-5'></div>
+            </div>
+
+          </div>
+          {/* group flex end */}
+
+
         </div>
-
-        {/* individual church groups end */}
       </div>
-      <ScrollToTop />
-    </div>
-  );
-};
 
-export default Groups;
+
+
+      {/* individual church groups end */}
+
+    </div>
+  </div>
+  
+)
+}
+
+
+
+export default Groups

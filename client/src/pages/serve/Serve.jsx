@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ServeComponent from "../../components/serveCardsComponent/ServeComponent";
 import riseImg from "../../assets/images/kdd4.png";
-import ScrollToTop from "../../components/ScrollToTop";
 
 function Serve() {
   useEffect(() => {
@@ -155,7 +154,6 @@ function Serve() {
           </div>
         </div>
       </section>
-      <ScrollToTop />
     </div>
   );
 }

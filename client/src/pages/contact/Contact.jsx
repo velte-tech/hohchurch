@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./contact.css";
-import ScrollToTop from "../../components/ScrollToTop/index";
 
 function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -222,7 +221,6 @@ function Contact() {
           </form>
         </div>
       </section>
-      <ScrollToTop />
     </div>
   );
 }

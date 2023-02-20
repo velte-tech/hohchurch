@@ -7,7 +7,6 @@ import Search from "../../components/searchLocate/Search";
 import SingleCard from "../../components/aboutSlideIn/SingleCard";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillYoutube } from "react-icons/ai";
-import ScrollToTop from "../../components/ScrollToTop/index";
 
 import newsImage from "../../assets/images/newsletter.jpg";
 import voluImg from "../../assets/images/westVolunteer.jpg";
@@ -248,7 +247,6 @@ const Longmont = () => {
           </div>
         </div>
       </section>
-      <ScrollToTop />
     </div>
   );
 };

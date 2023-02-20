@@ -10,7 +10,6 @@ import bellImg from "../../assets/images/churchBell.jpg";
 import personImg from "../../assets/images/denverPerson.jpg";
 import breakfast from "../../assets/images/breakfast.jpg";
 import comingSoon from "../../assets/images/comingSoon.jpg";
-import ScrollToTop from "../../components/ScrollToTop/index";
 
 const Denver = () => {
   useEffect(() => {
@@ -147,7 +146,6 @@ const Denver = () => {
           </div>
         </div>
       </section>
-      <ScrollToTop />
     </div>
   );
 };

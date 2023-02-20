@@ -7,7 +7,6 @@ import newAboutImage from "../../assets/images/new-about.jpg";
 import singersImage from "../../assets/images/new-singers.jpg";
 import Faq from "../../components/faq/Faq";
 import GoogleMap from "../../components/GoogleMap/GoogleMap";
-import ScrollToTop from "../../components/ScrollToTop/index";
 
 // import mapImage from "../../assets/images/Figmap.png"
 
@@ -145,7 +144,6 @@ const Im_new = () => {
         </div> */}
         <GoogleMap />
       </section>
-      <ScrollToTop />
     </div>
   );
 };

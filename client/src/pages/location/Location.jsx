@@ -1,7 +1,6 @@
 import React from "react";
 import "./Location.css";
 import { Link } from "react-router-dom";
-import ScrollToTop from "../../components/ScrollToTop/index";
 
 const Location = () => {
   return (
@@ -163,7 +162,6 @@ const Location = () => {
 
         {/* campuses */}
       </div>
-      <ScrollToTop />
     </div>
   );
 };

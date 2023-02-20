@@ -1,6 +1,5 @@
 import React from "react";
 import "./newsletter.css";
-import ScrollToTop from "../../components/ScrollToTop/index";
 
 function Newsletter() {
   const handleSubmit = (e) => {
@@ -63,7 +62,6 @@ function Newsletter() {
           <input type="submit" value="SUBCRIBE" />
         </form>
       </div>
-      <ScrollToTop />
     </section>
   );
 }

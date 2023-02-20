@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./give.css";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 import paymentOptions from "../../assets/images/payment_options.png";
-import ScrollToTop from "../../components/ScrollToTop/index";
 
 function Give() {
   return (
@@ -58,7 +57,6 @@ function Give() {
           </form>
         </div>
       </section> */}
-      <ScrollToTop />
     </>
   );
 }

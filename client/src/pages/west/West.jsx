@@ -12,7 +12,6 @@ import familyNightImg from "../../assets/images/family_night.jpg";
 import openHouseImg from "../../assets/images/open_house.jpg";
 import hikingImg from "../../assets/images/hiking.jpg";
 import marriageImg from "../../assets/images/marriage.jpg";
-import ScrollToTop from "../../components/ScrollToTop/index";
 
 const West = () => {
   useEffect(() => {
@@ -183,7 +182,6 @@ const West = () => {
           </div>
         </div>
       </section>
-      <ScrollToTop />
     </div>
   );
 };
