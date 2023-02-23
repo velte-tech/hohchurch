@@ -31,7 +31,9 @@ const Lafayette = () => {
   return (
     <div id="super">
       <section id="lafayette_showcase">
-        <h1 className="focus-in-contract-bck">LAFAYETTE</h1>
+        <h1 className="focus-in-contract-bck">
+          ADULTS RETREAT
+        </h1>
         <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p>
         <p className="laf_asl focus-in-contract-bck">
           ASL INTERPRETATION service

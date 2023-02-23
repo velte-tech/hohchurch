@@ -25,7 +25,9 @@ const Denver = () => {
   return (
     <div id="super">
       <section id="about_showcase">
-        <h1 className="focus-in-contract-bck">DENVER</h1>
+        <h1 className="focus-in-contract-bck">
+          YOUTH & YOUNG ADULTS RETREAT
+        </h1>
         <p className="date focus-in-contract-bck">SUNDAY: 9,11 AM & 6:30PM</p>
         <Search />
       </section>
