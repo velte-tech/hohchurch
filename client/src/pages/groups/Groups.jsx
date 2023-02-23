@@ -83,6 +83,8 @@ const Groups = () => {
 
         <div className="church-group-wrapper">
           <div className="church-group-case">
+            
+            
             {/* group flex */}
             <div className="church-group">
               <div className="ch-gr">
@@ -218,6 +220,73 @@ const Groups = () => {
               </div>
             </div>
             {/* group flex end */}
+            
+            
+            {/* group flex */}
+            <div className="church-group">
+              <div className="ch-gr">
+                <div className="ch-gr-1">MEN'S GROUP</div>
+                <div className="ch-gr-1">LEADER - JOLIE</div>
+                <div className="ch-gr-2">
+                  Wednesday at 6: 30 PM <br></br>
+                  Content: WeekendMessage
+                </div>
+                <div className="ch-gr-3 hover_overlay">
+                  Unit 8 Fountayne House <br></br>
+                  2-8 Fountayne Road <br></br>
+                  London 4QL
+                </div>
+                <div className="ch-gr-4">
+                  <Link className="linkAnima">
+                    MORE INFO <span className="arrow"></span>{" "}
+                  </Link>
+                </div>
+                <div className="ch-gr-5"></div>
+              </div>
+
+              <div className="ch-gr">
+                <div className="ch-gr-1">WOMEN'S GROUP</div>
+                <div className="ch-gr-1">MARCIA</div>
+                <div className="ch-gr-2">
+                  Wednesday at 6: 30 PM <br></br>
+                  Content: WeekendMessage
+                </div>
+                <div className="ch-gr-3 hover_overlay">
+                  Unit 8 Fountayne House <br></br>
+                  2-8 Fountayne Road <br></br>
+                  London 4QL
+                </div>
+                <div className="ch-gr-4">
+                  <Link className="linkAnima">
+                    MORE INFO <span className="arrow"></span>{" "}
+                  </Link>
+                </div>
+                <div className="ch-gr-5"></div>
+              </div>
+
+              <div className="ch-gr">
+                <div className="ch-gr-1">WEEKLY PROGRAMMES</div>
+                <div className="ch-gr-1">LEADER MABEL</div>
+                <div className="ch-gr-2">
+                  Wednesday at 6: 30 PM <br></br>
+                  Content: WeekendMessage
+                </div>
+                <div className="ch-gr-3 hover_overlay">
+                  Unit 8 Fountayne House <br></br>
+                  2-8 Fountayne Road <br></br>
+                  London 4QL
+                </div>
+                <div className="ch-gr-4">
+                  <Link className="linkAnima">
+                    MORE INFO <span className="arrow"></span>{" "}
+                  </Link>
+                </div>
+                <div className="ch-gr-5"></div>
+              </div>
+            </div>
+            {/* group flex end */}
+            
+            
           </div>
         </div>
 

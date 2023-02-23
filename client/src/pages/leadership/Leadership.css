@@ -8,7 +8,8 @@
 
 .leadership-showcase {
     background: url('../../assets/images/abthh.jpg') no-repeat center center/cover;
-    height: 80vh;
+    /* height: 80vh; */
+    height: 100vh;
     width: 100%;
 }
 
@@ -30,15 +31,60 @@
     transform: translate(-50%, -50%)
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .leadership-showcase {
     height: 70vh;
 }
-
-}
+} */
 
 
 /* SHOWCASE END */
+
+
+
+/* .leadd info  */
+
+
+.leadd-info-case {
+    padding-top: 4rem;
+}
+
+.leadd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.leadd .tt-3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary_color);
+    text-transform: uppercase;
+}
+
+.leadd .tt-2 {
+    color: #000;
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* @media screen and (max-width: 600px) {
+    .leadd .tt-3 {
+    font-size: 18px;
+}
+.leadd .tt-2 {
+    font-size: 16px;
+}
+} */
+
+
+/* .leadd info end */
 
 
 

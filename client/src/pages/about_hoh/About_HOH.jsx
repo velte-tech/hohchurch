@@ -3,7 +3,9 @@ import "./About_HOH.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
-import kmmm from "../../assets/images/pastor-alex.jpg";
+// import kmmm from "../../assets/images/pastor-alex.jpg";
+// import kmmm2 from "../../assets/images/alexdocas.jpg";
+import kmmm3 from "../../assets/images/alexdocas2.jpg";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const About_HOH = () => {
@@ -37,25 +39,150 @@ const About_HOH = () => {
 
         {/* our vision */}
 
-        <div className="vision-wrapper container">
-          <div className="vision">
-            <div className="line-1"></div>
+        <div className="vision-wrapper">
+          <div className="vision container">
+              
+            <div className="line-case">
+              <div className="line-1"></div>
+            </div>
+              
+            <div className="about-info-case">
+              
             <div className="tt-1 focus-in-contract-bck">
-              {/* OUR VISION */}
-              ABOUT
+              ABOUT US
+            </div>  
+              
+            {/* <div className="tt-3">
+              Leadership – Pastor and Mama D.
             </div>
 
-            <div className="tt-2">
-              {/* bring the awesome life of Christ to people in a lost and <br></br> broken world */}
-              The Highway of Holiness Church(HOH) is an Evangelical, Charismatic
-              Christian Church that centers on companionship, love, and care.We
-              seek to exalt the Lord and build up His people via collective
-              worship and teachings that emphasize the sufficiency of God and
-              His Word.By centering our community life on Jesus, we hope to
-              become a cross - class, multiracial place where people from many
-              backgrounds and viewpoints can come together in harmony.
+            <div className="tt-2"> 
+                Pastor Alex and Pastor Dorcas are the head shepherds of Highway of Holiness Church. <br></br>
+                They are assisted by Pastor Roland Owusu– Mensah and His Wife Mabel Owusu - mensah.   
+            </div> */}
+            
+            <div className="tt-3">
+              Fellowship Groups
             </div>
-            <div className="line-1"></div>
+            
+            <div className="tt-2"> 
+                The church congregation is sectioned  into 5 fellowship groups that our lead by …
+            </div>
+            
+            {/* BIBLICAL LIST */}
+
+        <div className='biblical-wrapper'>
+          <div className='biblical'>
+
+            <div className='bib'>
+              <div className='bib-1'>
+                1. LOVE GROUP
+                  <span className='hoo'>
+                    (1 Corinthians 13: 4 - 7)
+                  </span>
+              </div>
+              <div className='bib-2'>
+                Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, and endures all things. <br></br>
+                  {/* <span className='hoo'>
+                    (1 Corinthians 13: 4 - 7)
+                  </span> */}
+              </div>
+            </div>
+            
+            <div className='bib'>
+              <div className='bib-1'>
+                2. FAITH GROUP
+                  <span className='hoo'>
+                    (Hebrews 11: 1)
+                  </span>
+              </div>
+              <div className='bib-2'>
+                Now faith is the assurance of things hoped for, the conviction of things not seen. <br></br>
+                  {/* <span className='hoo'>
+                    (1 Corinthians 13: 4 - 7)
+                  </span> */}
+              </div>
+            </div>
+            
+            <div className='bib'>
+              <div className='bib-1'>
+                3. PEACE GROUP
+                  <span className='hoo'>
+                    (Philippians 4: 7)
+                  </span>
+              </div>
+              <div className='bib-2'>
+                And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus. 
+                  {/* <span className='hoo'>
+                    (1 Corinthians 13: 4 - 7)
+                  </span> */}
+              </div>
+            </div>
+            
+            <div className='bib'>
+              <div className='bib-1'>
+                4. HOPE GROUP
+                  <span className='hoo'>
+                    (Romans 15: 13)
+                  </span>
+              </div>
+              <div className='bib-2'>
+                May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope. <br></br>
+                  {/* <span className='hoo'>
+                    (1 Corinthians 13: 4 - 7)
+                  </span> */}
+              </div>
+            </div>
+            
+            <div className='bib'>
+              <div className='bib-1'>
+                5. POWER GROUP
+                  <span className='hoo'>
+                    (Luke 24: 49)
+                  </span>
+              </div>
+              <div className='bib-2'>
+                I am going to send you what my Father has promised; but stay in the city until you have been clothed with power from on high. <br></br>
+                  {/* <span className='hoo'>
+                    (1 Corinthians 13: 4 - 7)
+                  </span> */}
+              </div>
+            </div>
+            
+            <div className='bib'>
+              <div className='bib-1'>
+                MENS'S FELLOWSHIP
+              </div>
+              {/* <div className='bib-2'>
+                Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, and endures all things.
+              </div> */}
+            </div>
+            
+            <div className='bib'>
+              <div className='bib-1'>
+                WOMEN'S FELLOWSHIP 
+                  {/* <span className='hoo'>
+                    (1 Corinthians 13: 4 - 7)
+                  </span> */}
+              </div>
+              {/* <div className='bib-2'>
+                Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, and endures all things. 
+              </div> */}
+            </div>
+            
+            
+
+          </div>
+        </div>
+
+        {/* BIBLICAL LIST END */}
+            
+            </div>
+              
+            <div className="line-case">
+              <div className="line-1"></div>
+            </div>
+                   
           </div>
         </div>
 
@@ -209,7 +336,7 @@ const About_HOH = () => {
                   data-aos-anchor-placement="center-bottom"
                   data-aos-delay="600"
                 >
-                  <img src={kmmm} alt="" />
+                  <img src={kmmm3} alt="" />
                 </div>
               </div>
 
@@ -219,16 +346,20 @@ const About_HOH = () => {
                 data-aos-anchor-placement="center-bottom"
                 data-aos-delay="600"
               >
-                <div className="psr1">PASTOR ALEX GYESI (HEAD PASTOR)</div>
+                <div className="psr1">
+                  Welcome address from Pastor Alex and Pastor Dorcas
+                </div>
 
                 <div className="psr2">
-                  Pastor Alex Gyasi is a spiritual leader who is responsible for
+                  {/* Pastor Alex Gyasi is a spiritual leader who is responsible for
                   guiding the congregation towards a deeper understanding and
                   relationship with God.He sermons, offers counsel to members,
                   and provides guidance on spiritual and moral issues.In
                   addition to preaching and teaching, He also oversee various
                   programs and activities within the church, such as outreach
-                  efforts, youth groups, and mission trips.
+                  efforts, youth groups, and mission trips. */}
+
+                    We warmly welcome you to Highway of Holiness Church, a place of faith, fellowship and freedom in Christ.  Here at HOH everything we do is centred on the living word of God, the Holy Bible.We believe that the answers to life’ s questions are found within the pages of God’ s holy word. This is the source we stand on to teach, equip and edify God’ s children.  Our desire is to demonstrate how you can live a purposeful life in Christ, being fruitful in your gifts and bringing others to His Kingdom. As believers in Christ we are here on earth to be ambassadors of God’ s Kingdom and we do this by demonstrating Gods love to the world.
                 </div>
 
                 <div className="psr3">
@@ -299,28 +430,18 @@ const About_HOH = () => {
                 <div className="ms1">MISSION STATEMENT</div>
                 {/* <span>"</span> */}
                 <div className="ms2">
-                  Our mission is to glorify God by making disciples of Jesus
-                  Christ who love God, love others, and serve the world. We aim
-                  to provide a welcoming and supportive community where people
-                  from all walks of life can come to worship, learn, and grow in
-                  their faith. We strive to teach and model the love of Christ,
-                  and to share the hope and grace of the gospel with our local
-                  community and beyond. Through our various ministries and
-                  outreach programs, we seek to meet the physical, emotional,
-                  and spiritual needs of those around us, and to be a positive
-                  influence in our world. Ultimately, our desire is to be
-                  faithful to God's call on our lives, and to live out the love
-                  and compassion of Jesus in all that we do.
+                  To follow God fully and lead nations to eternity through teaching the word of God and the practical demonstration of the love of God to the world.
                 </div>
                 <div className="ms22">
-                  Of course, the exact wording and focus of a church's mission
-                  statement may vary depending on the specific denomination,
-                  culture, and context of the church. But in general, a good
-                  mission statement should express the church's core values,
-                  vision, and purpose, and serve as a guide for its ministry and
-                  outreach. It should inspire and motivate both members of the
-                  congregation and those who may be seeking to connect with the
-                  church.
+                  My wife and I started our ministry 33 years ago when we said“ YES!”to God’ s call. Since then have not looked back. We have embarked on many projects, ranging from providing supplementary education
+                  for children in deprived areas - to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site.We have witnessed first - hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.
+                  Life comes with its challenges, sometimes you may feel discouraged or attacked but we believe through the power of God you can overcome every barrier and set back, that things can take a turn
+                  for the better. We welcome you to join the church family
+                  if you do not already belong to one and would like you to know that we are available to visit you, offer counselling, be a listening ear and offer prayer.
+                  As you
+                  continue to explore this website you can find out more details on;
+                  coming to worship with us in person at a Sunday service, upcoming events, the missions we currently run in London and internationally, our church fellowship groups and much more. We are excited or what God is about to do and want you to be a part of it.Take care and God bless.
+
                 </div>
                 {/* <span> "</span> */}
               </div>
@@ -343,12 +464,13 @@ const About_HOH = () => {
           <div className="kg-hh">
             <div className="kg" data-aos="fade-right">
               <div className="kg-1 focus-in-contract-bck">
-                KINGDOM ALLIANCE MENTORSHIP
+                KINGDOM CULTURE ALLIANCE 
               </div>
 
               <div className="kg-2">
-                Kingdom Culture Alliance is a forum for ministries who desire to
-                build their character and capacity.
+                Kingdom Culture Alliance(KCA) is a forum
+                for leaders and ministers who desire to build their character and capacity
+                for the advancement of the Kingdom of God.
               </div>
 
               <div className="kg-3">
