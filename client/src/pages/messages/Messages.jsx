@@ -3,6 +3,7 @@ import "./Messages.css";
 import { CgSearchLoading } from "react-icons/cg";
 // import FilterMsg from "../../components/filter_message/FilterMsg";
 import MsgPagination from "../../components/MsgPagination/MsgPagination";
+import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const Messages = () => {
   return (
@@ -27,6 +28,7 @@ const Messages = () => {
           <MsgPagination />
         </div>
       </section>
+      <ScrollToTop />
     </div>
   );
 };

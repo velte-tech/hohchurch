@@ -139,20 +139,20 @@ function Header() {
                   EASTER SERVICE
                 </Link>
                 <Link to="/Denver" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  YOUTH & YOUNG ADULTS RETREAT
+                  YOUTH RETREAT
                 </Link>
                 <Link to="/Lafayette" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
                   ADULTS RETREAT
                 </Link>
                 <Link to="/Longmont" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  LOCAL COMMUNITY MISSIONS - DAY CENTER
+                  WEEKLY PROGRAMMES
                 </Link>
-                <Link to="/West" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                {/* <Link to="/West" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
                   HIGHWAY YOUTH CLUB
                 </Link>
                 <Link to="/West" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
                   21ST CENTURY EDUCATION
-                </Link>
+                </Link> */}
               </div>
 
               {/* drop-dowm end */}
