@@ -23,11 +23,13 @@ const Groups = () => {
           <div className="group-case">
             {/* showcase text */}
             <div className="group-text">
-              <h1 className="focus-in-contract-bck">GROUPS FINDER</h1>
+                <h1 className="focus-in-contract-bck">
+                  FELLOWSHIP GROUPS
+                </h1>
 
-              <h2 className="focus-in-contract-bck">
+              {/* <h2 className="focus-in-contract-bck">
                 TIMES ARE IN MOUNTAIN TIMEZONE
-              </h2>
+              </h2> */}
             </div>
             {/* showcase text */}
           </div>
