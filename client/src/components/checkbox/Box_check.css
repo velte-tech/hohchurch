@@ -1,3 +1,20 @@
 .box-check input {
    margin-right: .5rem;
 }
+
+.ch-head {
+   font-size: 16px;
+   color: #000;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+.checkbox-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.item-box {
+   margin-left: .7rem;
+}
