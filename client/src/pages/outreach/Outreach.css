@@ -68,30 +68,56 @@
 .local-2 {
     font-size: 2rem;
     font-weight: 600;
-    color: #000;
+    color: var(--primary_color);
     margin: 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .local-3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #000;
-    text-align: center;
+    text-align: left;
     margin-bottom: 1.5rem;
 }
 
 .local-4 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
     text-align: center;
     margin-bottom: 3.5rem;
 }
 
 .local-5 {
-    background-color: #000;
+    background-color: var(--primary_color);
     height: 2px;
     width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+.local-2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary_color);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.local-3 {
+    font-size: 16px;
+}
+
+.local-4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
 }
 
 /* local outreach end */
@@ -106,7 +132,7 @@
 }
 
 .out-spo-case {
-    max-width: 85%;
+    width: 85%;
     margin: auto;
 }
 
@@ -114,6 +140,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    /* align-items: center; */
+    gap: 2em;
     width: 100%;
     margin-bottom: 2rem;
 }
@@ -123,6 +151,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* width: ; */
 }
 
 /* .sop-1  {
@@ -154,9 +183,10 @@
 }
 
 .sop-4 {
-    font-size: 16px;
+    font-size: 1.5rem;
     color: var(--primary_color);
-    /* color: #000; */
+    text-align: center;
+    text-transform: capitalize;
     font-weight: 500;
     margin: .6rem 0;
 }
@@ -203,27 +233,11 @@
 } */
 }
 
-/* 
-@media screen and (max-width: 755px) {
-    .out-sop-show {
-    flex-direction: column;
-    margin-bottom: 3rem;
-    justify-content: center;
-    align-items: center;
-    }
-
-    .out-sop {
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4rem;
-    }
-
-    .out-spo-case {
-    max-width: 90%;
-    margin: auto;
+@media screen and (max-width: 600px) {
+    .sop-4 {
+    font-size: 1.3rem;
 }
 }
- */
 
 /* outreach groups sponsors end */
 
@@ -266,6 +280,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
 }
 
 .fmcase {
@@ -346,6 +361,13 @@
     width: 100%;
     margin-right: 3rem;
     height: 36px;
+}
+
+.em-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
 }
 
 .em-4 .btn {
@@ -438,6 +460,10 @@
     .em-3, .em-4 {
         margin-left: 10%;
     }
+
+    .em-4 {
+    width: 80%;
+}
 }
 
 /* connect forms end */
