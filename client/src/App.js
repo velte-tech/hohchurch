@@ -33,6 +33,8 @@ import {
   Newsletter,
   Serve,
   Sermon,
+  PrivacyPolicy,
+  TermsAndConditions,
   NotFound,
 } from "./pages/index";
 
@@ -42,8 +44,6 @@ import SlideContent from "./Layouts/SlideContent";
 
 // import { SermonDetailLoader } from "./pages/sermons/Sermon";
 // import Sliders, { SermonLoder } from "./components/msgSlider/Slider";
-
-
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -55,7 +55,7 @@ const router = createBrowserRouter(
       <Route path="/newsletter" element={<Newsletter />} />
       <Route path="/serve" element={<Serve />} />
       <Route path="*" element={<NotFound />} />
-        
+
       <Route path="/location" element={<Location />} />
 
       <Route path="/About_HOH" element={<About_HOH />} />
@@ -90,18 +90,17 @@ const router = createBrowserRouter(
       <Route path="/Parents" element={<Parents />} />
 
       <Route path="/Care" element={<Care />} />
-      
-       <Route path="/Messages" element={<Messages />} />
 
-        <Route path="/sermon" element={<SlideContent/>}>
-     
-        <Route 
-        path="/sermon/:id"
-        element={<Sermon />}
-         />
-        </Route>
+      <Route path="/Messages" element={<Messages />} />
 
-    <Route path="/give" element= {<Give />} />
+      <Route path="/Terms" element={<TermsAndConditions />} />
+      <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+
+      <Route path="/sermon" element={<SlideContent />}>
+        <Route path="/sermon/:id" element={<Sermon />} />
+      </Route>
+
+      <Route path="/give" element={<Give />} />
     </Route>
   )
 );

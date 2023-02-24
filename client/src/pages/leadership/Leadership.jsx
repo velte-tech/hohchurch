@@ -36,6 +36,29 @@ const Leadership = () => {
         </div>
         {/* shwowcse end */}
 
+
+
+      <div className="leadd-info-case">
+        <div className="leadd-info-show container">
+          
+          <div className="leadd">
+            <div className="tt-3">
+              Leadership – Pastor and Mama D.
+            </div>
+
+            <div className="tt-2"> 
+                Pastor Alex and Pastor Dorcas are the head shepherds of Highway of Holiness Church.     
+            </div>
+            <div className="tt-2"> 
+                They are assisted by Pastor Roland Owusu– Mensah and His Wife Mabel Owusu - Mensah.
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
         {/* leaders */}
 
         <div id="leade-wrapper">

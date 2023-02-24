@@ -101,10 +101,10 @@ function Footer() {
 
           <div className="content_Quick_links menu">
             <h3 className="footer_menu_head">permalinks</h3>
-            <Link to="/contact" className="links linkAnima">
+            <Link to="/Terms" className="links linkAnima">
               Terms & Conditions <span className="arrow"></span>
             </Link>
-            <Link to="/" className="links linkAnima">
+            <Link to="/PrivacyPolicy" className="links linkAnima">
               Privacy & Policy <span className="arrow"></span>
             </Link>
             <Link to="/" className="links linkAnima">

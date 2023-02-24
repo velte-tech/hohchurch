@@ -31,6 +31,7 @@ const Lafayette = () => {
 
   return (
     <div id="super">
+<<<<<<< HEAD
       <section id="adult_retreat_showcase">
         <div className="showcase_wrapper">
           <h1 className="focus-in-contract-bck">ADULT RETREAT</h1>
@@ -40,6 +41,17 @@ const Lafayette = () => {
           </p>
           <Search />
         </div>
+=======
+      <section id="lafayette_showcase">
+        <h1 className="focus-in-contract-bck">
+          ADULTS RETREAT
+        </h1>
+        <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p>
+        <p className="laf_asl focus-in-contract-bck">
+          ASL INTERPRETATION service
+        </p>
+        <Search />
+>>>>>>> 464c81fd5a856295a6c5dece5b300ad1f250358c
       </section>
 
       <section>

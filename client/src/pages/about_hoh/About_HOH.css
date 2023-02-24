@@ -5,12 +5,13 @@
 .hoh-showcase {
     background: url('../../assets/images/k5.jpeg') no-repeat center center/cover;
     /* background: url('../../assets/images/abbtt.jpg') no-repeat center center/cover; */
-    height: 80vh;
+    /* height: 80vh; */
+    height: 100vh;
     width: 100%;
 }
 
 .hoh-text-showcase {
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .6);
     height: 100%;
 }
 
@@ -26,18 +27,19 @@
 }
 
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
         .hoh-showcase {
         height: 70vh;
     }
-}
+} */
 
 
 
 /* our vision */
 
-.vision-wrapper {
+/* .vision-wrapper {
     padding: 6rem 0;
+    width: 100%;
 }
 
 .vision-wrapper .vision {
@@ -45,12 +47,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .line-1 {
     background: var(--primary_color);
     height: 3px;
-    /* width: 15%; */
     width: 200px;
 }
 
@@ -65,13 +67,20 @@
 
 .vision-wrapper .vision .tt-2 {
     color: #000;
-    /* font-size: 25px; */
     font-size: 17px;
     line-height: 1.6;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
     margin-bottom: 2rem;
     margin-top: 1rem;
+}
+
+.vision-wrapper .vision .tt-3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary_color);
 }
 
 
@@ -83,9 +92,75 @@
         font-size: 18px;
     }
 
-}
+} */
 
 /* our vision */
+
+
+/* OUR VISION 2  */
+
+
+
+.vision-wrapper {
+    padding: 6rem 0;
+    width: 100%;
+}
+
+.line-case {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-case .line-1 {
+    background: var(--primary_color);
+    height: 3px;
+    width: 70%;
+}
+
+.about-info-case {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+    margin: 3rem 0;
+}
+
+.vision-wrapper .vision .tt-1 {
+    color: var(--primary_color);
+    font-size: 3rem;
+    line-height: normal;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+
+.vision-wrapper .vision .tt-2 {
+    color: #000;
+    font-size: 17px;
+    line-height: 1.6;
+    font-weight: 500;
+    text-align: left;
+}
+
+.vision-wrapper .vision .tt-3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.about-info-case .tt-3 {
+    color: #000;
+}
+
+
+
+
+
+/* OUR VISION 2 END */
 
 
 /* OUR VALUES  */
@@ -120,7 +195,7 @@
     color: #fff;
     /* font-size: 22px; */
     font-size: 17px;
-    line-height: 1.6;
+    line-height: 1.7;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -134,23 +209,24 @@
 /* BIBLICAL  */
 
 
-.biblical-wrapper {
+/* .biblical-wrapper {
     padding: 5rem 0;
-}
+} */
 
 .biblical-wrapper .biblical {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 1em;
 }
 
-.biblical-wrapper .biblical .bib {
+/* .biblical-wrapper .biblical .bib {
     margin: 1rem 0;
-}
+} */
 
 .biblical-wrapper .biblical .bib .bib-1 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     color: #000;
     margin-bottom: .5rem;
@@ -166,11 +242,18 @@
     font-size: 16px;
     font-weight: 600;
     color: #000;
+    line-height: 1.7;
 }
 
-.biblical-wrapper .biblical .bib .bib-2 span {
+/* .biblical-wrapper .biblical .bib .bib-2 span {
     color: var(--primary_color);
     cursor: pointer;
+} */
+
+.biblical-wrapper .biblical .bib .bib-1 span {
+    color: var(--primary_color);
+    cursor: pointer;
+    margin-left: 1rem;
 }
 
 
@@ -423,6 +506,7 @@
 
 .psl-pic img {
     object-fit: cover;
+    /* object-fit: contain; */
     width: 100%;
     height: 500px;
     clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);
@@ -440,7 +524,7 @@
 
 .psr1 {
     font-size: 1.5rem;
-    color: #000;
+    color: var(--primary_color);
     font-weight: 800;
 }
 

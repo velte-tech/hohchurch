@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import yaa from "../../assets/images/yaa.jpg";
 import Aboutya from "../../components/youngadults/Aboutya";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import ya1 from "../../assets/images/ya1.jpg";
 import ya2 from "../../assets/images/ya2.jpg";
 import comingSoon from "../../assets/images/comingSoon.jpg";
 import pdd from "../../assets/images/yyaa.png";
 import { MdAllInbox } from "react-icons/md";
-import Young_groups from "../../components/young_groups/Young_groups";
+// import Young_groups from "../../components/young_groups/Young_groups";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const Young_adults = () => {
@@ -26,7 +26,10 @@ const Young_adults = () => {
   });
 
   return (
-    <div className="youngadd-wrapper">
+    
+    <div id="super">
+
+      <div className="youngadd-wrapper">
       <div className="youngadd-case">
         {/* showcase */}
         <div className="min-group-showcase-ya">
@@ -148,7 +151,7 @@ const Young_adults = () => {
 
         {/* component plug  */}
 
-        <Young_groups />
+        {/* <Young_groups /> */}
 
         {/* component plug end */}
 
@@ -281,6 +284,9 @@ const Young_adults = () => {
       </div>
       <ScrollToTop />
     </div>
+
+    </div>
+
   );
 };
 

@@ -31,11 +31,19 @@ const Longmont = () => {
   return (
     <div id="super">
       <section id="about_showcase">
+<<<<<<< HEAD
         <div className="showcase_wrapper">
           <h1 className="focus-in-contract-bck">WEEKLY PROGRAMMES</h1>
           <p className="date focus-in-contract-bck">SUNDAY: 9 & 11 AM</p>
           <Search />
         </div>
+=======
+        <h1 className="focus-in-contract-bck">
+          LOCAL COMMUNITY MISSIONS - DAY CENTER
+        </h1>
+        <p className="date focus-in-contract-bck">SUNDAY: 9 & 11 AM</p>
+        <Search />
+>>>>>>> 464c81fd5a856295a6c5dece5b300ad1f250358c
       </section>
 
       <section id="longmont_about">

@@ -20,7 +20,10 @@ const Care = () => {
   });
 
   return (
-    <div className="care-wrapper">
+    
+    <div id="super">
+
+      <div className="care-wrapper">
       <div className="care-case">
         <div className="care-show">
           {/* showcase */}
@@ -185,6 +188,9 @@ const Care = () => {
       </div>
       <ScrollToTop />
     </div>
+
+    </div>
+
   );
 };
 
