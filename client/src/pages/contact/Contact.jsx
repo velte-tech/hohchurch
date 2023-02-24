@@ -47,12 +47,12 @@ function Contact() {
         <div className="prayer_section container text_center">
           <h2>WHEN LIFE HURTS, PRAYER HELPS!</h2>
           <p>
-            You are not alone in your situation! The Flatirons Prayer Team
-            exists to call on God for those in need. Please share your requests
-            with us so that we can stand alongside you in prayer. If you need
-            some additional support, let us know so that we can help you get
-            connected with others at Flatirons that understand your struggle and
-            can offer hope.
+            You are not alone in your situation! The Highway Of Holiness Church
+            Prayer Team exists to call on God for those in need. Please share
+            your requests with us so that we can stand alongside you in prayer.
+            If you need some additional support, let us know so that we can help
+            you get connected with others at Flatirons that understand your
+            struggle and can offer hope.
           </p>
           <Link to="/prayer" className="btn">
             SUBMIT A PRAYR REQUEST
