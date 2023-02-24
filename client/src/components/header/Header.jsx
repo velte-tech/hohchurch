@@ -136,20 +136,23 @@ function Header() {
 
               <div className="dropdown-menu">
                 <Link to="/Aurora" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  HOH HARVEST
+                  EASTER SERVICE
                 </Link>
                 <Link to="/Denver" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  HOH HARVEST
+                  YOUTH RETREAT
                 </Link>
                 <Link to="/Lafayette" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  HOH HARVEST
+                  ADULTS RETREAT
                 </Link>
                 <Link to="/Longmont" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  HOH HARVEST
+                  WEEKLY PROGRAMMES
+                </Link>
+                {/* <Link to="/West" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                  HIGHWAY YOUTH CLUB
                 </Link>
                 <Link to="/West" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
-                  HOH HARVEST
-                </Link>
+                  21ST CENTURY EDUCATION
+                </Link> */}
               </div>
 
               {/* drop-dowm end */}

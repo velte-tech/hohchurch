@@ -30,7 +30,10 @@ const Parents = () => {
   });
 
   return (
-    <div id="parents-wrapper">
+    
+    <div id="super">
+
+      <div id="parents-wrapper">
       <div className="parents-case">
         <div className="parents.show">
           {/* showcase */}
@@ -382,6 +385,9 @@ const Parents = () => {
       </div>
       <ScrollToTop />
     </div>
+
+    </div>
+
   );
 };
 

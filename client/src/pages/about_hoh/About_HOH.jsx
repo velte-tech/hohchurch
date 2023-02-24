@@ -19,7 +19,10 @@ const About_HOH = () => {
   });
 
   return (
-    <div className="about-hoh-page">
+    
+    <div id="super">
+
+      <div className="about-hoh-page">
       <div className="hoh-wrapper">
         {/* showcase */}
         <div className="hoh-showcase">
@@ -416,6 +419,9 @@ const About_HOH = () => {
       </div>
       <ScrollToTop />
     </div>
+
+    </div>
+
   );
 };
 

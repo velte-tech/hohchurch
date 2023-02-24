@@ -20,7 +20,10 @@ const Kids = () => {
   });
 
   return (
-    <div id="min-group-wrapper">
+    
+    <div id="super">
+
+      <div id="min-group-wrapper">
       <div className="min-group">
         {/* showcase */}
         <div className="min-group-showcase">
@@ -335,6 +338,9 @@ const Kids = () => {
       </div>
       <ScrollToTop />
     </div>
+
+    </div>
+
   );
 };
 

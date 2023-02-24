@@ -97,7 +97,7 @@ const ParentsButts = () => {
                                 </div>
                             </div>
                             
-                            <div className='nl'>
+                            {/* <div className='nl'>
                     
                                 <div className='nl1'>
                                     <div className='ft-1'>CAMPUS</div>
@@ -114,7 +114,7 @@ const ParentsButts = () => {
                                     <option value="online">Online Campus</option>
                                 </select>
 
-                            </div>
+                            </div> */}
                             
                             
                             {/* <PcheckBox /> */}

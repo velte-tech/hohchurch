@@ -14,7 +14,10 @@ const Groups = () => {
   // const [selected, setSelected] = useState('');
 
   return (
-    <div className="group-page">
+    
+    <div id="super">
+
+      <div className="group-page">
       <div className="gropup-wrapper">
         <div className="group-showcase">
           <div className="group-case">
@@ -222,6 +225,9 @@ const Groups = () => {
       </div>
       <ScrollToTop />
     </div>
+
+    </div>
+
   );
 };
 
