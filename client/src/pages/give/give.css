@@ -47,8 +47,15 @@
 }
 
 .give_showcase_wrapper .right img {
-  width: 300px;
+  width: 200px;
   margin-top: 1rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.give_showcase_wrapper .donate_link {
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 .arrow_down {

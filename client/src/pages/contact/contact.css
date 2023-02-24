@@ -184,6 +184,10 @@
   font-weight: 400;
 }
 
+/* #contact_form .form_wrapper input[type="checkbox"] {
+
+} */
+
 #contact_form .form_wrapper input[type="submit"] {
   background-color: #fff;
   width: 100px;

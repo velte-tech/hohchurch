@@ -1,15 +1,11 @@
-
 #home {
   overflow-x: hidden;
 }
 
-
-
 #home .home_showcase {
   min-height: 40rem;
-  background: url("../../assets/images/tmm3.jpeg") no-repeat center
-    center/cover !important;
-    position: relative;
+  background: url("../../assets/images/tmm3.jpeg") no-repeat center center/cover !important;
+  position: relative;
 }
 
 #home .home_showcase:after {
@@ -23,10 +19,8 @@
 #home .showcase_content {
   transform: translateY(17rem);
   /* max-width: 45rem; */
-      position: relative;
-    z-index: 2;
-
-
+  position: relative;
+  z-index: 2;
 }
 #home .showcase_content .top p {
   color: #fff;
@@ -66,6 +60,7 @@
   align-self: flex-start;
   padding: 1rem 0;
   width: 90%;
+  margin-top: 2rem;
 }
 
 .home_welcome .left p {
@@ -78,7 +73,18 @@
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.3;
+  padding-bottom: 0;
 }
+
+#home .home_welcome .left .title {
+  font-size: 1.5rem;
+  color: var(--primary_color);
+}
+
+/* .home_welcome .left p:nth-child(2) {
+  font-size: 1.3rem;
+  font-weight: 500;
+} */
 
 .home_welcome .right {
   width: 60%;
@@ -387,7 +393,7 @@
 }
 
 .home_welcome .left p {
-  width: 300px;
+  width: 90%;
   padding: 1rem 0;
 }
 
@@ -1461,6 +1467,9 @@
 
   .home_welcome .left {
     margin-top: 0;
+  }
+  .home_welcome .left p {
+    padding: 1rem;
   }
 
   .home_welcome .right .shape {

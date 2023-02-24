@@ -31,13 +31,15 @@ const Lafayette = () => {
 
   return (
     <div id="super">
-      <section id="lafayette_showcase">
-        <h1 className="focus-in-contract-bck">LAFAYETTE</h1>
-        <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p>
-        <p className="laf_asl focus-in-contract-bck">
-          ASL INTERPRETATION service
-        </p>
-        <Search />
+      <section id="adult_retreat_showcase">
+        <div className="showcase_wrapper">
+          <h1 className="focus-in-contract-bck">ADULT RETREAT</h1>
+          <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p>
+          <p className="laf_asl focus-in-contract-bck">
+            House of Holiness Church
+          </p>
+          <Search />
+        </div>
       </section>
 
       <section>
@@ -53,7 +55,7 @@ const Lafayette = () => {
               We're a church that meets at five locations around Denver, and
               online. Join us for an in-person service or online
             </p>
-            <p className="asl_welcome">ASL Interpreted Service at 9AM</p>
+            <p className="asl_welcome">Adult Retreat Service at 9AM</p>
           </div>
 
           <div className="right">

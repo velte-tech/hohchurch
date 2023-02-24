@@ -18,9 +18,13 @@ function Footer() {
             <Link to="/about_hoh" className="links linkAnima">
               ABOUT-HOH <span className="arrow"></span>
             </Link>
-            <Link to="/give" className="links linkAnima">
+            <a
+              href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=L5USDDJ9JLKZJ"
+              target="_blank"
+              className="links linkAnima"
+            >
               Give <span className="arrow"></span>
-            </Link>
+            </a>
             <Link to="/ministries" className="links linkAnima">
               MINISTRIES <span className="arrow"></span>
             </Link>
@@ -82,7 +86,7 @@ function Footer() {
               <span className="arrow"></span>
             </a>
             <a
-              to={{ pathname: "" }}
+              href="https://linktr.ee/Shift.HY"
               target="_blank"
               className="links linkAnima"
             >
@@ -132,14 +136,14 @@ function Footer() {
                 <FaFacebook />
               </a>
               <a
-                href="http://facebook.com"
+                href="https://twitter.com/shift_hy"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillTwitterCircle />
               </a>
               <a
-                href="http://facebook.com"
+                href="https://www.instagram.com/shift.hy/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

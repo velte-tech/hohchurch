@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./give.css";
 import { MdOutlineDoubleArrow } from "react-icons/md";
-import paymentOptions from "../../assets/images/payment_options.png";
+// import paymentOptions from "../../assets/images/paypal_icon.jpg";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 function Give() {
@@ -28,12 +28,22 @@ function Give() {
               <p>Make Your Donation</p>
             </div>
             <div className="payment_img">
-              <img src={paymentOptions} alt="" />
+              {/* <img src={paymentOptions} alt="" /> */}
             </div>
+            <a
+              href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=L5USDDJ9JLKZJ"
+              target="_blank"
+              className="donate_link btn"
+            >
+              Donate
+            </a>
           </div>
         </div>
         <div className="arrow_down">
-          <a href="#give_form">
+          <a
+            target="_blank"
+            href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=L5USDDJ9JLKZJ"
+          >
             <MdOutlineDoubleArrow />
           </a>
         </div>

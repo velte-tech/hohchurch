@@ -36,10 +36,10 @@ function Home() {
             <div className="showcase_content">
               <div className="top">
                 <p>LATEST MESSAGE</p>
-                <p>THE HABIT OF GATHERING - WEEK 1</p>
+                <p>THE MOUNTAIN OF EDUCATION</p>
               </div>
               <div className="links">
-                <Link className="link linkAnima">
+                <Link to="/sermon/1" className="link linkAnima">
                   Watch Now
                   <span className="arrow"></span>
                 </Link>
@@ -56,9 +56,15 @@ function Home() {
         {/* ======= WELCOME SECTION ======= */}
         <div className="home_welcome">
           <div className="left">
-            <p data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-              Welcome to HoH-church
+            <p
+              className="title"
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom"
+            >
+              Welcome to Highway Of Holiness Church
             </p>
+
+            {/* <p>Highway Of Holiness Church</p> */}
             <p
               data-aos="fade-right"
               data-aos-delay="100"
@@ -145,11 +151,19 @@ function Home() {
                   <FaFacebook />
                 </a>
 
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/shift.hy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FiInstagram />
                 </a>
 
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://twitter.com/shift_hy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <AiFillTwitterCircle />
                 </a>
 

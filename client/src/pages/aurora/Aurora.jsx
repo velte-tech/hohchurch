@@ -22,9 +22,11 @@ const Aurora = () => {
   return (
     <div id="super">
       <section id="about_showcase">
-        <h1 className="focus-in-contract-bck">AURORA</h1>
-        <p className="date focus-in-contract-bck">SUNDAY: 9 & 11AM</p>
-        <Search />
+        <div className="showcase_wrapper">
+          <h1 className="focus-in-contract-bck">EASTER SERVICE</h1>
+          <p className="date focus-in-contract-bck">SUNDAY: 9 & 11AM</p>
+          <Search />
+        </div>
       </section>
 
       <section>

@@ -1,5 +1,6 @@
 #about_showcase {
-  background: url("../../assets/images/aurora.png") no-repeat center
+  position: relative;
+  background: url("../../assets/images/easterService.jpg") no-repeat center
     center/cover;
   min-height: 40rem;
   display: flex;
@@ -9,9 +10,27 @@
   text-transform: uppercase;
 }
 
+#about_showcase::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+#about_showcase .showcase_wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
 #about_showcase h1 {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 #about_showcase .date {
