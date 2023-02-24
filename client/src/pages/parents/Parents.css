@@ -1,15 +1,7 @@
 .min-group-showcase-parent {
     background: url('../../assets/images/parents.jpg') no-repeat center center/cover;
     height: 100vh;
-    width: 100%;
 }
-
-/* @media screen and (max-width: 600px) {
-    .min-group-showcase-parent {
-    height: 70vh;
-}
-
-} */
 
 
 /* parent gen  */

@@ -35,11 +35,13 @@ const Young_adults = () => {
         <div className="min-group-showcase-ya">
           <div className="min-group-case-ya">
             <div className="min-group-txt">
-              <h1 className="focus-in-contract-bck">YOUNG ADULTS</h1>
-              <h2 className="focus-in-contract-bck">
+                <h1 className="focus-in-contract-bck">YOUNG ADULTS</h1>
+                
+              {/* <h2 className="focus-in-contract-bck">
                 POST - COLLEGE <br></br>
                 AGE 22 - 30
-              </h2>
+              </h2> */}
+                
             </div>
           </div>
         </div>

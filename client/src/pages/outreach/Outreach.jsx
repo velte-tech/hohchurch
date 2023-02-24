@@ -1,15 +1,16 @@
 import React from "react";
 import "./Outreach.css";
 import { Link } from "react-router-dom";
-import spp1 from "../../assets/images/spp1.jpg";
-import spp2 from "../../assets/images/spp2.jpg";
-import spp3 from "../../assets/images/spp3.jpg";
+// import spp1 from "../../assets/images/spp1.jpg";
+// import spp2 from "../../assets/images/spp2.jpg";
+// import spp3 from "../../assets/images/spp3.jpg";
 // import { MdCheckBox } from 'react-icons/md';
 import { GrMail } from "react-icons/gr";
 import { AiTwotonePhone } from "react-icons/ai";
 // import Box_check from '../../components/checkbox/Box_check';
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 import CheckboxList from "../../components/checkbox/Box_check";
+import logo from "../../assets/brand/hohlogo.png";
 
 const Outreach = () => {
   return (
@@ -61,7 +62,7 @@ const Outreach = () => {
               {/* three flex */}
               <div className="out-sop">
                 <div className="sop-1">
-                  <img src={spp1} alt="" />
+                  <img src={logo} alt="" />
                 </div>
                 {/* <div className='sop-2 hover_overlay_2'>
                   180 Ministries | 3333 S Bannock <br></br>
@@ -93,7 +94,7 @@ const Outreach = () => {
               {/* three flex */}
               <div className="out-sop">
                 <div className="sop-1">
-                  <img src={spp2} alt="" />
+                  <img src={logo} alt="" />
                 </div>
                 {/* <div className='sop-2 hover_overlay_2'>
                   Collegiate Crossings | 1230 Banner <br></br>
@@ -125,7 +126,7 @@ const Outreach = () => {
               {/* three flex */}
               <div className="out-sop">
                 <div className="sop-1">
-                  <img src={spp3} alt="" />
+                  <img src={logo} alt="" />
                 </div>
                 {/* <div className='sop-2 hover_overlay_2'>
                   Echo | 27640 Hwy 74 <br></br>
@@ -154,7 +155,7 @@ const Outreach = () => {
               {/* three flex */}
               <div className="out-sop">
                 <div className="sop-1">
-                  <img src={spp3} alt="" />
+                  <img src={logo} alt="" />
                 </div>
                 {/* <div className='sop-2 hover_overlay_2'>
                   Echo | 27640 Hwy 74 <br></br>
@@ -220,7 +221,7 @@ const Outreach = () => {
               {/* three flex */}
               <div className="out-sop">
                 <div className="sop-1">
-                  <img src={spp1} alt="" />
+                  <img src={logo} alt="" />
                 </div>
                 {/* <div className='sop-2 hover_overlay_2'>
                   180 Ministries | 3333 S Bannock <br></br>
@@ -250,7 +251,7 @@ const Outreach = () => {
               {/* three flex */}
               <div className="out-sop">
                 <div className="sop-1">
-                  <img src={spp2} alt="" />
+                  <img src={logo} alt="" />
                 </div>
                 {/* <div className='sop-2 hover_overlay_2'>
                   Collegiate Crossings | 1230 Banner <br></br>
@@ -282,7 +283,7 @@ const Outreach = () => {
               {/* three flex */}
               <div className="out-sop">
                 <div className="sop-1">
-                  <img src={spp3} alt="" />
+                  <img src={logo} alt="" />
                 </div>
                 {/* <div className='sop-2 hover_overlay_2'>
                   Echo | 27640 Hwy 74 <br></br>
@@ -312,7 +313,7 @@ const Outreach = () => {
               {/* three flex */}
               <div className="out-sop">
                 <div className="sop-1">
-                  <img src={spp3} alt="" />
+                  <img src={logo} alt="" />
                 </div>
                 {/* <div className='sop-2 hover_overlay_2'>
                   Echo | 27640 Hwy 74 <br></br>

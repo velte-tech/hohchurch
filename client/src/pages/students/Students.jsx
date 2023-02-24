@@ -33,10 +33,15 @@ const Students = () => {
         <div className="min-group-showcase-1">
           <div className="min-group-case-1">
             <div className="min-group-txt">
-              <h1 className="focus-in-contract-bck">STUDENTS</h1>
-              <h2 className="focus-in-contract-bck">
+              
+              <h1 className="focus-in-contract-bck">
+                STUDENTS
+              </h1>
+              
+              {/* <h2 className="focus-in-contract-bck">
                 MIDDLE SCHOOL & HIGH SCHOOL
-              </h2>
+              </h2> */}
+              
             </div>
           </div>
         </div>
