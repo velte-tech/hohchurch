@@ -3,6 +3,7 @@ import "./Location.css";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
+
 const Location = () => {
   return (
     <div className="location-page">
@@ -12,7 +13,7 @@ const Location = () => {
 
           <div className="loc-2">
             <Link to="/contact" className="links linkAnima">
-              About Us <span className="arrow"></span>
+              Contact Us <span className="arrow"></span>
             </Link>
           </div>
         </div>
@@ -23,7 +24,7 @@ const Location = () => {
           <div className="campus-1">
             {/* campus flex */}
             <div className="campus">
-              <div className="city"> AURORA</div>
+              <div className="city">EASTER SERVICE</div>
 
               <div className="broad"></div>
 
@@ -45,7 +46,9 @@ const Location = () => {
 
             {/* campus flex */}
             <div className="campus">
-              <div className="city"> DENVER </div>
+              <div className="city">
+                YOUTH & YOUNG <br></br> ADULTS RETREAT
+              </div>
 
               <div className="broad"></div>
 
@@ -67,7 +70,7 @@ const Location = () => {
 
             {/* campus flex */}
             <div className="campus">
-              <div className="city"> LAFAYETTE </div>
+              <div className="city">ADULTS RETREAT</div>
 
               <div className="broad-1">Broadcast Location</div>
 
@@ -91,7 +94,7 @@ const Location = () => {
           <div className="campus-1">
             {/* campus flex */}
             <div className="campus">
-              <div className="city"> LONGMONT </div>
+              <div className="city">HIGHWAY YOUTH <br></br> CLUB</div>
 
               <div className="broad"></div>
 
@@ -113,7 +116,7 @@ const Location = () => {
 
             {/* campus flex */}
             <div className="campus">
-              <div className="city"> WEST </div>
+              <div className="city">21ST CENTURY <br></br> EDUCATION</div>
 
               <div className="broad"></div>
 
@@ -137,7 +140,7 @@ const Location = () => {
 
             {/* campus flex */}
             <div className="campus">
-              <div className="city-1"> ONLINE </div>
+              <div className="city-1">SHIFT</div>
 
               {/* <div className='broad'>
               Broadcast Location
