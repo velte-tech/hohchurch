@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./Header.css";
-import logo from "../../assets/brand/logo.png";
+import logo from "../../assets/brand/hohlogo.png";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { ImLocation } from "react-icons/im";
 import { CgClose } from "react-icons/cg";

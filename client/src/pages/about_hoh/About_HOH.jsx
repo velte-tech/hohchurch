@@ -475,7 +475,7 @@ const About_HOH = () => {
 
               <div className="kg-3">
                 <Link to="/" className="links linkAnima">
-                  MORE INFO ABOUT KAM <span className="arrow"></span>
+                  MORE INFO ABOUT KCA <span className="arrow"></span>
                 </Link>
               </div>
             </div>

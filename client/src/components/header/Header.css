@@ -38,9 +38,24 @@
 
 }
 
-.header-wrapper .header .header-1 .logo {
+.header-wrapper .header .header-1 {
     height: 4rem;
-    object-fit: contain;
+    width: 4rem;
+    padding: .5rem 0;
+}
+
+
+.header-wrapper .header .header-1 a .logo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .header-wrapper .header .header-1 {
+    height: 3rem;
+    width: 3rem;
+}
 }
 
 

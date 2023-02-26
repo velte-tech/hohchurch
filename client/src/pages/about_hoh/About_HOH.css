@@ -1,13 +1,8 @@
-/* .about-hoh-page {
-    background: #fff;
-} */
+
 
 .hoh-showcase {
     background: url('../../assets/images/k5.jpeg') no-repeat center center/cover;
-    /* background: url('../../assets/images/abbtt.jpg') no-repeat center center/cover; */
-    /* height: 80vh; */
     height: 100vh;
-    width: 100%;
 }
 
 .hoh-text-showcase {
@@ -156,6 +151,22 @@
     color: #000;
 }
 
+
+@media screen and (max-width: 600px) {
+    .vision-wrapper .vision .tt-1 {
+    font-size: 1.5rem;
+}
+
+
+.vision-wrapper .vision .tt-2 {
+    color: #000;
+    font-size: 16px;
+}
+
+.vision-wrapper .vision .tt-3 {
+    font-size: 18px;
+}
+}
 
 
 

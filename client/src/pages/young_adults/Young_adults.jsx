@@ -28,17 +28,18 @@ const Young_adults = () => {
   return (
     <div id="super">
       <div className="youngadd-wrapper">
-        <div className="youngadd-case">
-          {/* showcase */}
-          <div className="min-group-showcase-ya">
-            <div className="min-group-case-ya">
-              <div className="min-group-txt">
+      <div className="youngadd-case">
+        {/* showcase */}
+        <div className="min-group-showcase-ya">
+          <div className="min-group-case-ya">
+            <div className="min-group-txt">
                 <h1 className="focus-in-contract-bck">YOUNG ADULTS</h1>
-                <h2 className="focus-in-contract-bck">
-                  POST - COLLEGE <br></br>
-                  AGE 22 - 30
-                </h2>
-              </div>
+                
+              {/* <h2 className="focus-in-contract-bck">
+                POST - COLLEGE <br></br>
+                AGE 22 - 30
+              </h2> */}
+                
             </div>
           </div>
           {/* showcase end */}

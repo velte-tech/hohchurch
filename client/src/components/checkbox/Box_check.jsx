@@ -1,34 +1,37 @@
-import React from 'react'
+import React, { useState } from "react";
 import './Box_check.css'
 
-const Box_check = () => {
 
-     const [checked, setChecked] = React.useState(false);
+function CheckboxList() {
+  const [checkedItem, setCheckedItem] = useState("");
 
-     const handleChange = () => {
-         setChecked(!checked);
-     };
+  const handleChange = (event) => {
+    setCheckedItem(event.target.name);
+  };
+
+  const checkboxes = [
+    { name: "item1", key: "checkbox1", label: "Membership" },
+    { name: "item2", key: "checkbox2", label: "Volunteer" },
+    { name: "item3", key: "checkbox3", label: "Counelling" },
+  ];
 
   return (
-   <div className='box-check'>
-      <Checkbox
-        label="SMS"
-        value={checked}
-        onChange={handleChange}
-      />
-
-      {/* <p>Is "My Value" checked? {checked.toString()}</p> */}
+    <div className="checkbox-list-container">
+      <h2 className="ch-head">INTEREST</h2>
+      {checkboxes.map((item) => (
+        <label key={item.key}>
+          {item.label}
+          <input
+            className="item-box"
+            type="checkbox"
+            name={item.name}
+            checked={checkedItem === item.name}
+            onChange={handleChange}
+          />
+        </label>
+      ))}
     </div>
-  );
-};
-
-const Checkbox = ({ label, value, onChange }) => {
-  return (
-    <label>
-      <input type="checkbox" checked={value} onChange={onChange} />
-      {label}
-    </label>
   );
 }
 
-export default Box_check
+export default CheckboxList;

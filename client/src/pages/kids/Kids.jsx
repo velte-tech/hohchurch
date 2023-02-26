@@ -30,7 +30,7 @@ const Kids = () => {
           <div className="min-group-case">
             <div className="min-group-txt">
               <h1 className="focus-in-contract-bck">KIDS MINISTRY</h1>
-              <h2 className="focus-in-contract-bck">BIRTH - FIFTH GRADE</h2>
+              {/* <h2 className="focus-in-contract-bck">BIRTH - FIFTH GRADE</h2> */}
             </div>
           </div>
         </div>
