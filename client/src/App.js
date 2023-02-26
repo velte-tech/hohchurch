@@ -15,10 +15,10 @@ import {
   Im_new,
   About_HOH,
   Leadership,
-  Aurora,
-  Denver,
-  Lafayette,
-  Longmont,
+  EasterService,
+  YouthRetreat,
+  AdultsRetreat,
+  WeeklyRetreat,
   West,
   Groups,
   Ministries,
@@ -32,6 +32,7 @@ import {
   Messages,
   Newsletter,
   Serve,
+  MessageDetailPage,
   Sermon,
   PrivacyPolicy,
   TermsAndConditions,
@@ -41,6 +42,7 @@ import {
 //Layouts
 import Layout from "./Layouts/Layout";
 import SlideContent from "./Layouts/SlideContent";
+import MessageDetail from "./Layouts/MessageDetail";
 
 // import { SermonDetailLoader } from "./pages/sermons/Sermon";
 // import Sliders, { SermonLoder } from "./components/msgSlider/Slider";
@@ -63,13 +65,13 @@ const router = createBrowserRouter(
 
       <Route path="/Leadership" element={<Leadership />} />
 
-      <Route path="/Aurora" element={<Aurora />} />
+      <Route path="/Easter_service" element={<EasterService />} />
 
-      <Route path="/Denver" element={<Denver />} />
+      <Route path="/Youth_retreat" element={<YouthRetreat />} />
 
-      <Route path="/Lafayette" element={<Lafayette />} />
+      <Route path="/Adult_retreat" element={<AdultsRetreat />} />
 
-      <Route path="/Longmont" element={<Longmont />} />
+      <Route path="/Weekly_programmes" element={<WeeklyRetreat />} />
 
       <Route path="/West" element={<West />} />
 
@@ -95,6 +97,10 @@ const router = createBrowserRouter(
 
       <Route path="/Terms" element={<TermsAndConditions />} />
       <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+
+      <Route path="/message" element={<MessageDetail />}>
+        <Route path="/message/:id" element={<MessageDetailPage />} />
+      </Route>
 
       <Route path="/sermon" element={<SlideContent />}>
         <Route path="/sermon/:id" element={<Sermon />} />

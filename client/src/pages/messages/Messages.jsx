@@ -11,7 +11,7 @@ const Messages = () => {
       <section id="message_showcase">
         <div className="showcase_wrapper text_center">
           <p>LATEST MESSAGE</p>
-          <h2>BURN THE SHIPS - WEEK 1</h2>
+          <h2>THE MOUNTAIN OF EDUCATION</h2>
         </div>
       </section>
 

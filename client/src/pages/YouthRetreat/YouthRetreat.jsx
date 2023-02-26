@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Denver.css";
+import "./YouthRetreat.css";
 import Search from "../../components/searchLocate/Search";
 import AboutSlideIn from "../../components/aboutSlideIn/AboutSlideIn";
 import bellImg from "../../assets/images/churchBell.jpg";
-import personImg from "../../assets/images/denverPerson.jpg";
+import personImg from "../../assets/images/ya22.jpeg";
 import breakfast from "../../assets/images/breakfast.jpg";
 import comingSoon from "../../assets/images/comingSoon.jpg";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
@@ -25,21 +25,12 @@ const Denver = () => {
 
   return (
     <div id="super">
-<<<<<<< HEAD
       <section id="denver_showcase">
         <div className="showcase_wrapper">
           <h1 className="focus-in-contract-bck">YOUTH RETREAT</h1>
           <p className="date focus-in-contract-bck">SUNDAY: 9,11 AM & 6:30PM</p>
           <Search />
         </div>
-=======
-      <section id="about_showcase">
-        <h1 className="focus-in-contract-bck">
-          YOUTH & YOUNG ADULTS RETREAT
-        </h1>
-        <p className="date focus-in-contract-bck">SUNDAY: 9,11 AM & 6:30PM</p>
-        <Search />
->>>>>>> 464c81fd5a856295a6c5dece5b300ad1f250358c
       </section>
 
       <section>
@@ -52,8 +43,9 @@ const Denver = () => {
           >
             <p>ABOUT US</p>
             <p>
-              We're a church that meets at five locations around Denver, and
-              online. Join us for an in-person service or online
+              Youth retreat at Highway Of Holiness Church has alot to offer by
+              bringing young people of all walks of life to connect with each
+              other in the name name of our lord and saviour Jesus Christ.
             </p>
           </div>
 
@@ -68,8 +60,8 @@ const Denver = () => {
             >
               <img src={bellImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">HOH Church Young Adults</p>
-                <p>Finf our service time and direction to our locations</p>
+                <p className="hover_overlay ">HOH-Church Young Adults</p>
+                <p>Joins us and connect with the family.</p>
                 <Link to="/Young_adults" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -101,15 +93,12 @@ const Denver = () => {
             data-aos-delay="600"
             data-aos-anchor-placement="top center"
           >
-            <h2>STEFAN GUZOWSKI</h2>
+            <h2>YOUTH RETREAT</h2>
             <p>
-              I first started coming to Flatirons when a coworker invited me in
-              2008 but it was a trip to Afghanistan that changed my life
-              forever. After an internship here where I met my wife, Mollie, I
-              came on staff in January 2014. We have two twin babies, Bear and
-              Elliot, and my "little brother" from Big Brothers Big Sisters just
-              graduated high school. I love Denver and our relentless pursuit to
-              reach this community and tell them about Jesus' love.
+              Yought Retreat started at Highway Of Holiness church to focus on
+              bringingthe young people of Highway Of Holiness church together
+              and learn more about the changing society and to up-lift the young
+              generation. reach this community and tell them about Jesus' love.
             </p>
             <Link className="linkAnima">
               Contact <span className="arrow"></span>
@@ -121,7 +110,7 @@ const Denver = () => {
       {/* ======= SECTION: DENVER_EVENTS ======= */}
       <section id="denver_events">
         <div className="denver_events_wrapper">
-          <h2>Events @ Denver Campus</h2>
+          <h2> Youth Retreat Events</h2>
           <div className="card_wrapper">
             <div className="card">
               <img src={breakfast} alt="" />

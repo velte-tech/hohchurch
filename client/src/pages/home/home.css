@@ -66,6 +66,7 @@
 .home_welcome .left p {
   width: 300px;
   padding: 1rem 0;
+  line-height: 1.5;
 }
 
 .home_welcome .left p:first-child {

@@ -70,9 +70,11 @@ function Home() {
               data-aos-delay="100"
               // data-aos-offset="200"
               data-aos-anchor-placement="center-bottom"
+              className="home_text"
             >
-              We're a church that meets at five locations around Denver, and
-              online. Join us for an in-person service or online
+              We meet on Wednesdays from 12- 1pm, 3-4pm on our telephone prayer
+              line and at 7.30pm on our church premises We meet on facebook live
+              every Friday at 7.30pm for our Bible Academy
             </p>
           </div>
           <div className="right">
