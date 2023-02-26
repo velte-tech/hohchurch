@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Aurora.css";
+import "./EasterService.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -22,11 +22,11 @@ const Aurora = () => {
   return (
     <div id="super">
       <section id="about_showcase">
-        <h1 className="focus-in-contract-bck">
-          EASTER SERVICE
-        </h1>
-        <p className="date focus-in-contract-bck">SUNDAY: 9 & 11AM</p>
-        <Search />
+        <div className="showcase_wrapper">
+          <h1 className="focus-in-contract-bck">EASTER SERVICE</h1>
+          <p className="date focus-in-contract-bck">SUNDAY: 9 & 11AM</p>
+          <Search />
+        </div>
       </section>
 
       <section>
@@ -39,10 +39,13 @@ const Aurora = () => {
           >
             <p>ABOUT US</p>
             <p>
-              We're a church that meets at five locations around Denver, and
-              online. Join us for an in-person service or online
+              Youth retreat at Highway Of Holiness Church has alot to offer by
+              bringing young people of all walks of life to connect with each
+              other in the name name of out lord and saviour Jesus Christ.
             </p>
-            <Link className="btn">VISIT OUR LOCATION</Link>
+            <Link to="/contact" className="btn">
+              VISIT OUR LOCATION
+            </Link>
           </div>
 
           <div className="right">
@@ -56,8 +59,8 @@ const Aurora = () => {
             >
               <img src={bellImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">GIVING @ AURORA</p>
-                <p>Find our service time and direction to our locations</p>
+                <p className="hover_overlay ">GIVING @ HoH</p>
+                <p>Support thr work of God, for in giving shall ye receive.</p>
                 <Link to="/About_HOH" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -73,7 +76,7 @@ const Aurora = () => {
       </section>
 
       <section id="aurora_events">
-        <h1 className="focus-in-contract-bck">Events @ Aurora Campus</h1>
+        <h1 className="focus-in-contract-bck">Easter Events</h1>
       </section>
       <ScrollToTop />
     </div>

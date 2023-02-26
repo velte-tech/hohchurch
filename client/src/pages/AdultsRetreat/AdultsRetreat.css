@@ -1,5 +1,6 @@
-#lafayette_showcase {
-  background: url("../../assets/images/aurora.png") no-repeat center
+#adult_retreat_showcase {
+  position: relative;
+  background: url("../../assets/images/adult_retreat.jpg") no-repeat center
     center/cover;
   min-height: 40rem;
   display: flex;
@@ -9,20 +10,38 @@
   text-transform: uppercase;
 }
 
-#lafayette_showcase h1 {
-  color: #fff;
-  font-size: 4rem;
+#adult_retreat_showcase::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
 }
 
-#lafayette_showcase .date {
+#adult_retreat_showcase .showcase_wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+#adult_retreat_showcase h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#adult_retreat_showcase .date {
   color: #fff;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
-#lafayette_showcase .laf_asl {
+#adult_retreat_showcase .laf_asl {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 1;
   margin: 1rem;

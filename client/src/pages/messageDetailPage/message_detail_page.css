@@ -1,0 +1,18 @@
+#message_video {
+  padding: 5rem 0;
+  background: #000;
+}
+
+#message_video .video_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+#message_video .utube_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

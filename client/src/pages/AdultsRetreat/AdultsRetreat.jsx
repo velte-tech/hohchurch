@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Lafayette.css";
+import "./AdultsRetreat.css";
 import Search from "../../components/searchLocate/Search";
 import SingleCard from "../../components/aboutSlideIn/SingleCard";
 import gatheringImg from "../../assets/images/gathering.jpg";
@@ -14,7 +14,7 @@ import elderlyImg from "../../assets/images/elderly.jpg";
 import parentsImg from "../../assets/images/parents.jpg";
 import seminerImg from "../../assets/images/seminer.jpg";
 import menImg from "../../assets/images/men.jpg";
-import lafPastorImg from "../../assets/images/lafayette_pastor.jpg";
+import lafPastorImg from "../../assets/images/pastordocas.jpg";
 import KidsAcc from "../../components/mAccComponents/KidsAcc";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
@@ -31,15 +31,15 @@ const Lafayette = () => {
 
   return (
     <div id="super">
-      <section id="lafayette_showcase">
-        <h1 className="focus-in-contract-bck">
-          ADULTS RETREAT
-        </h1>
-        <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p>
-        <p className="laf_asl focus-in-contract-bck">
-          ASL INTERPRETATION service
-        </p>
-        <Search />
+      <section id="adult_retreat_showcase">
+        <div className="showcase_wrapper">
+          <h1 className="focus-in-contract-bck">ADULT RETREAT</h1>
+          <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p>
+          <p className="laf_asl focus-in-contract-bck">
+            House of Holiness Church
+          </p>
+          <Search />
+        </div>
       </section>
 
       <section>
@@ -52,10 +52,10 @@ const Lafayette = () => {
           >
             <p>ABOUT US</p>
             <p>
-              We're a church that meets at five locations around Denver, and
-              online. Join us for an in-person service or online
+              Adult Retreat is a retreat programme held by Highway of Holiness
+              Church for members from age 25 and above.
             </p>
-            <p className="asl_welcome">ASL Interpreted Service at 9AM</p>
+            <p className="asl_welcome">Adult Retreat Service at 9AM</p>
           </div>
 
           <div className="right">
@@ -130,11 +130,9 @@ const Lafayette = () => {
 
           <KidsAcc label="Groups">
             <p>
-              Join us and meet other adults in the 55+ community at Flatirons!
-              We will be hosting monthly luncheons and organizing events for
-              many interests. Our monthly luncheons include a delicious lunch,
-              information about how you can get plugged in at Flatirons and
-              encouraging speakers.
+              Community at Highway Of Holiness is where you are able to find a
+              place that makes you feel comfortable to socialize and most
+              importantly interact comfortably with your peers. .
             </p>
             <Link to="/groups" className="linkAnima edit">
               Learn More <span className="arrow"></span>
@@ -143,11 +141,8 @@ const Lafayette = () => {
 
           <KidsAcc label="55+">
             <p>
-              oin us and meet other adults in the 55+ community at Flatirons! We
-              will be hosting monthly luncheons and organizing events for many
-              interests. Our monthly luncheons include a delicious lunch,
-              information about how you can get plugged in at Flatirons and
-              encouraging speakers.
+              Join us and meet other adults in the 55+ community at Highway of
+              Holiness Church We host monthly programmes for many interests.
             </p>
             <Link className="linkAnima edit">
               Learn More <span className="arrow"></span>
@@ -161,10 +156,10 @@ const Lafayette = () => {
               <br /> <br /> Pastoral Care appointments are available for
               individuals or couples who need prayer, resources, or direction.
               Shift is a 12 Step program offered every Friday night at our
-              Lafayette campus. Journey with others confronting issues such as
-              marriage and relationship, conflicts, loneliness, depression,
-              emotional struggles, drug and alcohol dependence, sexual issues,
-              and physical and emotional abuse.
+              Highway of Holiness Church. Journey with others confronting issues
+              such as marriage and relationship, conflicts, loneliness,
+              depression, emotional struggles, drug and alcohol dependence,
+              sexual issues, and physical and emotional abuse.
             </p>
             <Link to="/care" className="linkAnima edit">
               Learn More <span className="arrow"></span>
@@ -195,7 +190,7 @@ const Lafayette = () => {
       {/* ======= LAFAYETTE SECTION ======= */}
       <section id="lafayette_events">
         <div className="about_welcome">
-          <h2>Events @ Lafayette Campus</h2>
+          <h2>Events</h2>
           <div className="right">
             <div className="card">
               <img src={menImg} alt="" />
@@ -217,7 +212,7 @@ const Lafayette = () => {
               <img src={womenImg} alt="" />
               <div className="text">
                 <p className="hover_overlay ">
-                  LAFAYETTE WOMEN'S CONNECT
+                  HoH WOMEN'S CONNECT
                   <br />
                   JANUARY 18, 2023
                 </p>
@@ -250,10 +245,7 @@ const Lafayette = () => {
                   55+ MONTHLY LUNCHEON - JANUARY
                   <br /> JANUARY 23, 2023
                 </p>
-                <p>
-                  Come join us for a luncheon and meet other adults in the 55+
-                  community...
-                </p>
+                <p>Come join us and other adults in the 55+ community...</p>
                 <Link to="/about" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -279,14 +271,11 @@ const Lafayette = () => {
               <img src={seminerImg} alt="" />
               <div className="text">
                 <p className="hover_overlay ">
-                  55+ MONTHLY LUNCHEON - FEBRUARY
+                  55+ MONTHLY EVENTS - FEBRUARY
                   <br />
                   FEBRUARY 13, 2023
                 </p>
-                <p>
-                  Come join us for a luncheon and meet other adults in the 55+
-                  community...
-                </p>
+                <p>Come join us and other adults in the 55+ community...</p>
                 <Link to="/" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -313,20 +302,20 @@ const Lafayette = () => {
             data-aos-delay="600"
             data-aos-anchor-placement="top center"
           >
-            <h2>HEATHER JACKSON</h2>
-            <p>Lafayette Campus Pastor</p>
+            <h2>Pastor Dorcas Gyesi</h2>
+            <p>Pastor</p>
             <p>
-              My family first visited Flatirons one Saturday night after being
-              invited. We didn’t know it at the time of course, but we’d dropped
-              right into the middle of a values series. Halfway through his
-              message on the Fruit of the Spirit, Jim pivoted and challenged
-              everyone to jump in and serve in Kids Ministry. It was powerful,
-              convicting, beautiful, and compelling—my husband Chris and I
-              attended the training and started serving the next weekend! We had
-              found our church. Flatirons is unlike any church we’ve
-              experienced: vulnerable, authentic teaching, real people, doing
-              life and chasing after Jesus together. Married since 1993, Chris
-              and I have two daughters, Grace and Lily.
+              My family first visited Highway Of Holiness Church one Saturday
+              night after being invited. We didn’t know it at the time of
+              course, but we’d dropped right into the middle of a values series.
+              Halfway through his message on the Fruit of the Spirit, Jim
+              pivoted and challenged everyone to jump in and serve in Kids
+              Ministry. It was powerful, convicting, beautiful, and
+              compelling—my husband Chris and I attended the training and
+              started serving the next weekend! We had found our church. Highway
+              Of Holiness Church is unlike any church we’ve experienced:
+              vulnerable, authentic teaching, real people, doing life and
+              chasing after Jesus together.
             </p>
             <Link className="linkAnima" to="/contact">
               Contact <span className="arrow"></span>

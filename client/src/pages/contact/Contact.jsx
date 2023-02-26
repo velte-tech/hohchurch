@@ -8,6 +8,9 @@ function Contact() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [membership, setMembership] = useState("");
+  const [counselling, setCounselling] = useState("");
+  const [volunteer, setVolunteer] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,12 +47,12 @@ function Contact() {
         <div className="prayer_section container text_center">
           <h2>WHEN LIFE HURTS, PRAYER HELPS!</h2>
           <p>
-            You are not alone in your situation! The Flatirons Prayer Team
-            exists to call on God for those in need. Please share your requests
-            with us so that we can stand alongside you in prayer. If you need
-            some additional support, let us know so that we can help you get
-            connected with others at Flatirons that understand your struggle and
-            can offer hope.
+            You are not alone in your situation! The Highway Of Holiness Church
+            Prayer Team exists to call on God for those in need. Please share
+            your requests with us so that we can stand alongside you in prayer.
+            If you need some additional support, let us know so that we can help
+            you get connected with others at Flatirons that understand your
+            struggle and can offer hope.
           </p>
           <Link to="/prayer" className="btn">
             SUBMIT A PRAYR REQUEST
@@ -62,35 +65,6 @@ function Contact() {
         <div className="form_wrapper container">
           <form autoComplete="off" onSubmit={handleSubmit}>
             <ul>
-              {/* <li>
-                <label for="interest">
-                  Choose the type of Question or Interest
-                  <span className="star_sign"> *</span>
-                </label>
-                <div>
-                  <select name="interest" id="interest">
-                    <option value="(Select One)">(Select One)</option>
-                    <option value="General Inquiry">General Inquiry</option>
-                    <option value="Add or Update My Contact Information">
-                      Add or Update My Contact Information
-                    </option>
-                    <option value="	my.flatironschurch.com Account Help">
-                      my.flatironschurch.com Account Help
-                    </option>
-                    <option value="My Story">My Story</option>
-                    <option value="In Need of Financial or Material Assistance">
-                      In Need of Financial or Material Assistance
-                    </option>
-                    <option value="Care Ministry / Pastoral Care">
-                      Care Ministry / Pastoral Care
-                    </option>
-                    <option value="Wedding Pastor Request">
-                      Wedding Pastor Request
-                    </option>
-                  </select>
-                </div>
-              </li> */}
-
               <li>
                 <label>
                   Name <span className="start_sign">*</span>
@@ -99,6 +73,7 @@ function Contact() {
                   <span>
                     <input
                       name="fiel_3"
+                      id="fiel_3"
                       type="text"
                       required
                       value={firstName}
@@ -109,6 +84,7 @@ function Contact() {
                   <span>
                     <input
                       name="fiel_4"
+                      id="fiel_4"
                       type="text"
                       required
                       value={lastName}
@@ -126,6 +102,7 @@ function Contact() {
                 <div>
                   <input
                     name="field_5"
+                    id="field_5"
                     type="email"
                     required
                     value={email}
@@ -135,68 +112,41 @@ function Contact() {
               </li>
 
               {/* <li>
-                <label for="field_6">
-                  Cell Phone Number
-                  <span className="start_sign"> *</span>
-                </label>
-
-                <div className="phone_input">
-                  <span>
-                    <input
-                      name="field_7"
-                      type="tel"
-                      size="3"
-                      maxlenght="3"
-                      required
-                    />
-                    <label for="field_7">###</label>
-                  </span>
-
-                  <span className="dash"></span>
-                  <span>
-                    <input
-                      name="field_8"
-                      type="tel"
-                      size="3"
-                      maxlenght="3"
-                      required
-                    />
-                    <label for="field_8">###</label>
-                  </span>
-                  <span className="dash"></span>
-                  <span>
-                    <input
-                      name="field_9"
-                      type="tel"
-                      size="4"
-                      maxlenght="4"
-                      required
-                    />
-                    <label for="field_9">###</label>
-                  </span>
+                <span style={{ display: "block" }}>
+                  Interests
+                </span>
+                <div className="interests">
+                  <label for="membership">Membership</label>
+                  <input
+                    type="checkbox"
+                    id="membership"
+                    name="membership"
+                    value={membership}
+                    onChange={(e) => setMembership(e.target.value)}
+                    required
+                  />
                 </div>
-              </li>
-
-              <li>
-                <label for="fiel_10">
-                  Alternate Phone Number
-                  <span className="start_sign"> *</span>
-                </label>
-                <div className="phone_input">
-                  <span>
-                    <input name="field_10" type="tel" size="3" maxlenght="3" />
-                    <label for="field_10">###</label>
-                  </span>
-                  <span className="dash"></span>
-                  <span>
-                    <input name="field_11" type="tel" size="3" maxlenght="3" />
-                    <label for="field_11">###</label>
-                  </span>
-                  <span className="dash"></span>
-                  <span>
-                    <input name="field_12" type="tel" size="4" maxlenght="4" />
-                    <label for="field_12">###</label>
-                  </span>
+                <div className="check">
+                  <label for="volunteer">Volunteer</label>
+                  <input
+                    type="checkbox"
+                    id="volunteer"
+                    name="volunteer"
+                    value={volunteer}
+                    onChange={(e) => setVolunteer(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="check">
+                  <label for="counselling">Counselling</label>
+                  <input
+                    type="checkbox"
+                    id="counselling"
+                    name="counselling"
+                    value={counselling}
+                    onChange={(e) => e.target.value}
+                    required
+                  />
                 </div>
               </li> */}
 

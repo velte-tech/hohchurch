@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import AOS from "aos";
-import "./Longmont.css";
+import "./WeeklyRetreat.css";
 import { Link } from "react-router-dom";
 import Search from "../../components/searchLocate/Search";
 import SingleCard from "../../components/aboutSlideIn/SingleCard";
@@ -10,7 +10,7 @@ import { AiFillYoutube } from "react-icons/ai";
 
 import newsImage from "../../assets/images/newsletter.jpg";
 import voluImg from "../../assets/images/westVolunteer.jpg";
-import longPastorImg from "../../assets/images/longmont_pastor.jpg";
+import longPastorImg from "../../assets/images/pastorinagbaja.jpg";
 import studentsImg from "../../assets/images/students.jpg";
 import connectImg from "../../assets/images/connect.jpg";
 import kidsImg from "../../assets/images/kids.jpg";
@@ -30,12 +30,12 @@ const Longmont = () => {
 
   return (
     <div id="super">
-      <section id="about_showcase">
-        <h1 className="focus-in-contract-bck">
-          LOCAL COMMUNITY MISSIONS - DAY CENTER
-        </h1>
-        <p className="date focus-in-contract-bck">SUNDAY: 9 & 11 AM</p>
-        <Search />
+      <section id="weekly_programme_showcase">
+        <div className="showcase_wrapper">
+          <h1 className="focus-in-contract-bck">WEEKLY PROGRAMMES</h1>
+          <p className="date focus-in-contract-bck">SUNDAY: 9 & 11 AM</p>
+          <Search />
+        </div>
       </section>
 
       <section id="longmont_about">
@@ -43,8 +43,8 @@ const Longmont = () => {
           <h1 className="text_center">ABOUT</h1>
           <p className="text_center">
             Since our doors opened in 2018, our heart has been to share the
-            awesome love of Jesus to the community of Longmont. We exist to live
-            out and show that amazing grace to all. (
+            awesome love of Jesus to the Highway of Holiness community. We exist
+            to live out and show that amazing grace to all. (
             <Link className="hover_overlay">John 15:12</Link>) .
           </p>
         </div>
@@ -67,7 +67,7 @@ const Longmont = () => {
             data-aos-delay="600"
             data-aos-anchor-placement="top center"
           >
-            <h2>DAN FOOTE</h2>
+            <h2>PASTOR ALEX GYESI</h2>
             <p>
               I’ve been skulking around the halls of Flatirons for over 10 years
               in a couple of different roles (Men’s Pastor, Groups Pastor and KM
@@ -94,12 +94,12 @@ const Longmont = () => {
             <div className="card">
               <img src={studentsImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">STUDENT MIN @ LONGMONT</p>
+                <p className="hover_overlay ">STUDENT MININISTRY</p>
                 <p>
-                  At Longmont Students we create an engaging community for
-                  students...
+                  At Highway of Holiness Church | we create an engaging
+                  community for students...
                 </p>
-                <Link to="/about" className="linkAnima">
+                <Link to="/Students" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -107,12 +107,12 @@ const Longmont = () => {
             <div className="card">
               <img src={connectImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">CONNECT</p>
+                <p className="hover_overlay ">CONNECT @ YOUTH RETREAT </p>
                 <p>
-                  Connect to the Community God made you for! Connect | Women We
-                  run...
+                  Connect to the Community God made you for! Connect | Youth
+                  Reatreat
                 </p>
-                <Link to="/about" className="linkAnima">
+                <Link to="/Youth_retreat" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -120,11 +120,12 @@ const Longmont = () => {
             <div className="card">
               <img src={kidsImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">KIDS MINISTRY @ LONGMONT</p>
+                <p className="hover_overlay ">KIDS MINISTRY @ HOH</p>
                 <p>
-                  Kids at Longmont have a blast, worship God, and learn Bible...
+                  Connect to the Community God made you for! Connect | Kids
+                  Ministry
                 </p>
-                <Link to="/about" className="linkAnima">
+                <Link to="/Kids" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -187,7 +188,7 @@ const Longmont = () => {
             </a>
           </div>
 
-          <Link className="linkAnima">
+          <Link to="/About_HoH" className="linkAnima">
             OUR BELIEFS <span className="arrow"></span>{" "}
           </Link>
         </div>
@@ -203,8 +204,8 @@ const Longmont = () => {
           >
             <p>ABOUT US</p>
             <p>
-              We're a church that meets at five locations around Denver, and
-              online. Join us for an in-person service or online
+              Eye-opening and insightful weekly programmes at Highway of
+              Holiness Church starts @ 9pm .
             </p>
           </div>
 
@@ -220,7 +221,9 @@ const Longmont = () => {
               <img src={voluImg} alt="" />
               <div className="text">
                 <p className="hover_overlay ">VOLUNTEER</p>
-                <p>Find our service time and direction to our locations</p>
+                <p>
+                  Be part of God's work by serving the community around you.
+                </p>
                 <Link to="/serve" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -236,7 +239,7 @@ const Longmont = () => {
               <img src={newsImage} alt="" />
               <div className="text">
                 <p className="hover_overlay ">NEWLETTER</p>
-                <p>Find our service time and direction to our locations</p>
+                <p>Get update from Highway of Holiness Church.</p>
                 <Link to="/newsletter" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>

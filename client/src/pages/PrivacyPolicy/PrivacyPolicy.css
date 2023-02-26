@@ -1,0 +1,38 @@
+#privacy_policy {
+  padding: 1rem;
+}
+
+#privacy_policy .privacy_wrapper {
+  padding: 5rem 2rem;
+}
+
+#privacy_policy p {
+  margin-bottom: 1rem;
+}
+
+#privacy_policy .p_head {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+#privacy_policy .p_sub_head {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  #privacy_policy {
+    padding: 1rem 0;
+  }
+
+  #privacy_policy .privacy_wrapper {
+    padding: 5rem 0;
+    max-width: 90%;
+  }
+
+  #privacy_policy .p_head {
+    font-size: 1.7rem;
+  }
+}

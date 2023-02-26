@@ -4,22 +4,23 @@ import ReactPaginate from "react-paginate";
 import "./msgPagination.css";
 import { items } from "./Data";
 
-function Items({ currentItems }) {
+export function Items({ currentItems }) {
   return (
     <>
       {currentItems &&
         currentItems.map((item) => (
-          <Link>
-            <img src={item.img} alt="" />
+          <Link to={`/message/${item.id}`} key={item.id}>
+            <img src={item.image} alt="" />
             <div className="bottom">
               <p>{item.title}</p>
-              <p>{item.heading}</p>
+              <p>{item.names}</p>
             </div>
           </Link>
         ))}
     </>
   );
 }
+
 function MsgPagination() {
   //   const handlePageClick = (event) => {
   //     console.log(event.selected);

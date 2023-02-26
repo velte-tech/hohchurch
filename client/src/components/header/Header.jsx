@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useState } from "react";
 import "./Header.css";
@@ -7,20 +6,18 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { ImLocation } from "react-icons/im";
 import { CgClose } from "react-icons/cg";
 
-
 function Header() {
-
-  // change bg 
-  const [color, setColor] = useState(false)
+  // change bg
+  const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 90) {
-      setColor(true)
+      setColor(true);
     } else {
-      setColor (false)
+      setColor(false);
     }
-  }
+  };
 
-  window.addEventListener('scroll', changeColor)
+  window.addEventListener("scroll", changeColor);
   // change bg end
 
   const navigate = useNavigate();
@@ -44,11 +41,11 @@ function Header() {
     } else {
       navigate(-1);
     }
-    setState(screen)
-  }
+    setState(screen);
+  };
 
   return (
-    <div className={color ? 'header-navbar header-bg' : 'header-navbar'}>
+    <div className={color ? "header-navbar header-bg" : "header-navbar"}>
       <div className="header-wrapper">
         <div className="header">
           <div className="header-1">
@@ -135,16 +132,32 @@ function Header() {
               {/* drop-dowm */}
 
               <div className="dropdown-menu">
-                <Link to="/Aurora" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Easter_service"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   EASTER SERVICE
                 </Link>
-                <Link to="/Denver" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Youth_retreat"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   YOUTH RETREAT
                 </Link>
-                <Link to="/Lafayette" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Adult_retreat"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   ADULTS RETREAT
                 </Link>
-                <Link to="/Longmont" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Weekly_programmes"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   WEEKLY PROGRAMMES
                 </Link>
                 {/* <Link to="/West" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
@@ -159,12 +172,11 @@ function Header() {
             </li>
 
             <li className="nav-item zenn">
-
               {/* <NavLink> */}
-                <div className="hel">
-                  <div className="shape"></div>
+              <div className="hel">
+                <div className="shape"></div>
                 <span className="men">ABOUT</span>
-                </div>
+              </div>
               {/* </NavLink> */}
 
               <div className="nav-item-wrapper"></div>
@@ -172,10 +184,18 @@ function Header() {
               {/* drop-dowm */}
 
               <div className="dropdown-menu">
-                <Link to="/About_HOH" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/About_HOH"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   ABOUT HOH
                 </Link>
-                <Link to="/Leadership" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Leadership"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   LEADERSHIP
                 </Link>
               </div>
@@ -195,13 +215,25 @@ function Header() {
               {/* drop-dowm */}
 
               <div className="dropdown-menu">
-                <Link to="/Groups" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Groups"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   GROUPS
                 </Link>
-                <Link to="/Ministries" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Ministries"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   MINISTRIES
                 </Link>
-                <Link to="/Outreach" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Outreach"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   OUTREACH
                 </Link>
               </div>
@@ -219,22 +251,46 @@ function Header() {
               {/* drop-dowm */}
 
               <div className="dropdown-menu">
-                <Link to="/Kids" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Kids"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   KIDS
                 </Link>
-                <Link to="/Students" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Students"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   STUDENTS
                 </Link>
-                <Link to="/Prayer" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Prayer"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   PRAYER
                 </Link>
-                <Link to="/Young_adults" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Young_adults"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   YOUNG ADULTS
                 </Link>
-                <Link to="/Parents" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Parents"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   PARENTS
                 </Link>
-                <Link to="/Care" onClick={() => setNavOpen(!navOpen)} className='hover_overlay'>
+                <Link
+                  to="/Care"
+                  onClick={() => setNavOpen(!navOpen)}
+                  className="hover_overlay"
+                >
                   CARE
                 </Link>
               </div>

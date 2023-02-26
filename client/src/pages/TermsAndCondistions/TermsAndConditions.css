@@ -1,0 +1,38 @@
+#terms_policy {
+  padding: 1rem;
+}
+
+#terms_policy .terms_wrapper {
+  padding: 5rem 2rem;
+}
+
+#terms_policy p {
+  margin-bottom: 1rem;
+}
+
+#terms_policy .p_head {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+#terms_policy .p_sub_head {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  #terms_policy {
+    padding: 1rem 0;
+  }
+
+  #terms_policy .privacy_wrapper {
+    padding: 5rem 0;
+    max-width: 90%;
+  }
+
+  #terms_policy .p_head {
+    font-size: 1.7rem;
+  }
+}

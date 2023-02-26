@@ -14,8 +14,8 @@ function SingleCard() {
         <img src={churchImg} alt="" />
         <div className="text">
           <p className="hover_overlay ">LEADERSHIP</p>
-          <p>Find our service time and direction to our locations</p>
-          <Link to="Leadership" className="linkAnima">
+          <p>Meet the elders and leader of Highway of Holiness Church.</p>
+          <Link to="/Leadership" className="linkAnima">
             Learn More <span className="arrow"></span>
           </Link>
         </div>
