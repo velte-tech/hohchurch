@@ -65,7 +65,7 @@ const Young_adults = () => {
                   data-aos-anchor-placement="center-bottom"
                   data-aos-delay="600"
                 >
-                  <div className="ya-tt1">ABOUT us</div>
+                  <div className="ya-tt1">ABOUT YA</div>
                   <div className="ya-tt2">
                     We are a community of young adults created by you and for
                     you. Here, we hope you discover how to live your life with
