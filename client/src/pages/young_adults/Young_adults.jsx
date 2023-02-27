@@ -8,7 +8,8 @@ import { useEffect } from "react";
 import ya1 from "../../assets/images/ya1.jpg";
 import ya2 from "../../assets/images/ya2.jpg";
 import comingSoon from "../../assets/images/comingSoon.jpg";
-import pdd from "../../assets/images/yyaa.png";
+// import pdd from "../../assets/images/yyaa.png";
+import pdd from "../../assets/brand/hohlogo.png";
 import { MdAllInbox } from "react-icons/md";
 // import Young_groups from "../../components/young_groups/Young_groups";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
@@ -34,10 +35,10 @@ const Young_adults = () => {
             <div className="min-group-case-ya">
               <div className="min-group-txt">
                 <h1 className="focus-in-contract-bck">YOUNG ADULTS</h1>
-                <h2 className="focus-in-contract-bck">
+                {/* <h2 className="focus-in-contract-bck">
                   POST - COLLEGE <br></br>
                   AGE 22 - 30
-                </h2>
+                </h2> */}
               </div>
             </div>
           </div>
@@ -65,7 +66,7 @@ const Young_adults = () => {
                   data-aos-anchor-placement="center-bottom"
                   data-aos-delay="600"
                 >
-                  <div className="ya-tt1">ABOUT YA</div>
+                  <div className="ya-tt1">ABOUT HOH YOUNG ADULTS</div>
                   <div className="ya-tt2">
                     We are a community of young adults created by you and for
                     you. Here, we hope you discover how to live your life with
@@ -96,12 +97,10 @@ const Young_adults = () => {
                       <img src={ya1} alt="" />
                       <div className="text">
                         <p>
-                          YA SWING & LINE DANCING SOCIAL - JANUARY 2023 JANUARY
-                          26, 2023
+                          MONDAY MEETING
                         </p>
                         <p>
-                          The people have spoken! Our top rated social from last
-                          year is...
+                          Join us this and every Sunday
                         </p>
                         <Link className="linkAnima">
                           Learn More <span className="arrow"></span>
@@ -111,10 +110,10 @@ const Young_adults = () => {
                     <div className="card">
                       <img src={comingSoon} alt="" />
                       <div className="text">
-                        <p>YA FEBRUARY GATHERING FEBRUARY 9, 2023</p>
+                        <p>HOH FEBRUARY GATHERING</p>
                         <p>
                           Join us on the evening of Thursday, February 9th
-                          starting at 7pm in the...
+                          starting at 7pm in the evening
                         </p>
                         <Link className="linkAnima">
                           Learn More <span className="arrow"></span>
@@ -125,12 +124,11 @@ const Young_adults = () => {
                       <img src={ya2} alt="" />
                       <div className="text">
                         <p>
-                          BINGO AT BARQUENTINE!YA FEBRUARY SOCIAL FEBRUARY 23,
-                          2023
+                          HOH MARCH GATHERING
                         </p>
                         <p>
-                          Join us on the evening of Thursday, February 23rd at
-                          Barquentine...
+                          Join us on the evening of Thursday, February 9 th
+                          starting at 7 pm on weekends
                         </p>
                         <Link className="linkAnima">
                           Learn More <span className="arrow"></span>
@@ -177,10 +175,10 @@ const Young_adults = () => {
                     data-aos-delay="600"
                   >
                     <div className="pod-tt1">
-                      CHECK OUT AND SUBSCRIBE TO <br></br>
-                      OUR FYA PODCAST
+                      GET CONNECTED TO OUR SOCIAL MEDIA PLATFORMS
                     </div>
-                    <div className="pod-tt2 hover_overlay">
+
+                    {/* <div className="pod-tt2 hover_overlay">
                       <Link className="linkAnima">
                         SPOTIFY <span className="arrow"></span>
                       </Link>
@@ -189,12 +187,41 @@ const Young_adults = () => {
                       <Link className="linkAnima">
                         APPLE <span className="arrow"></span>
                       </Link>
-                    </div>
+                    </div> */}
+                    
                     <div className="pod-tt2 hover_overlay">
-                      <Link className="linkAnima">
-                        YOUTUBE <span className="arrow"></span>
-                      </Link>
+                      <a
+                      className="linkAnima"
+                      href="https://www.youtube.com/@highwayofholinesschristian7997"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >
+                       YOUTUBE <span className="arrow"></span>
+                      </a>
                     </div>
+                        
+                    <div className="pod-tt2 hover_overlay">
+                      <a
+                      className="linkAnima"
+                      href = "https://web.facebook.com/HighwayofHolinessUK"
+                      target = "_blank"
+                      rel = "noopener noreferrer"
+                      >
+                       FACEBOOK <span className="arrow"></span>
+                      </a>
+                    </div>
+                        
+                    <div className="pod-tt2 hover_overlay">
+                      <a
+                      className="linkAnima"
+                      href = "https://www.instagram.com/shift.hy/"
+                      target = "_blank"
+                      rel = "noopener noreferrer"
+                      >
+                       INSTAGRAM <span className="arrow"></span>
+                      </a>
+                    </div>
+                    
                   </div>
                 </div>
                 <div className="pod-line"></div>

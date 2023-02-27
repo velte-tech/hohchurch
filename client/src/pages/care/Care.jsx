@@ -2,7 +2,7 @@ import React from "react";
 import "./Care.css";
 import AOS from "aos";
 import { useEffect } from "react";
-import Care_group from "../../components/care_group/Care_group";
+// import Care_group from "../../components/care_group/Care_group";
 import Faq_care from "../../components/faq_care/Faq_care";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 // import CareSlide from '../../components/careSlide/CareSlide';
@@ -82,7 +82,7 @@ const Care = () => {
                       <div className="hr-ff">
                         <div className="hh-1">Email |</div>
                         <div className="hh-2 hh-xx hover_overlay">
-                          care@flatironschurch.com
+                          care@hoh.com
                         </div>
                       </div>
                     </div>
@@ -97,7 +97,7 @@ const Care = () => {
 
           {/* care group  */}
 
-          <Care_group />
+          {/* <Care_group /> */}
 
           {/* care group end */}
 
@@ -132,7 +132,7 @@ const Care = () => {
                 <div className="d-txt3">
                   <span className="ddt1">Location:</span>
                   <span className="ddt2">
-                    Lafayette Campus, West End Auditorium{" "}
+                    HIGHWAY OF HOLINESS
                   </span>
                 </div>
                 <div className="d-txt3">
