@@ -287,7 +287,7 @@ const Kids = () => {
                       opportunity for parents to make a commitment...
                     </div>
                     <div className="sem-c-txt-4">
-                      <Link to="/Lafayette" className="linkAnima">
+                      <Link to="/ministries" className="linkAnima">
                         LEARN MORE <span className="arrow"></span>
                       </Link>
                     </div>

@@ -8,6 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
 import { AiFillYoutube } from "react-icons/ai";
+import kmmm3 from "../../assets/images/alexdocas2.jpg";
 
 // Images
 import churchImg from "../../assets/images/church.jpg";
@@ -132,6 +133,56 @@ function Home() {
             ></div>
           </div>
         </div>
+
+
+
+        {/* PASTOR ALEX */}
+
+        <div id="psalex">
+
+          <div className="ps-alex-wrapper">
+          <div className="ps-alex-show">
+            <div className="ps-alex-case">
+              <div className="ps-left">
+                <div
+                  className="psl-pic"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="600"
+                >
+                  <img src={kmmm3} alt="" />
+                </div>
+              </div>
+
+              <div
+                className="ps-right"
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+              >
+                <div className="psr1">
+                  Welcome address from Pastor Alex and Pastor Dorcas
+                </div>
+
+                <div className="psr2">
+                    We warmly welcome you to Highway of Holiness Church, a place of faith, fellowship and freedom in Christ.  Here at HOH everything we do is centred on the living word of God, the Holy Bible.We believe that the answers to life’ s questions are found within the pages of God’ s holy word. This is the source we stand on to teach, equip and edify God’ s children.  Our desire is to demonstrate how you can live a purposeful life in Christ, being fruitful in your gifts and bringing others to His Kingdom. As believers in Christ we are here on earth to be ambassadors of God’ s Kingdom and we do this by demonstrating Gods love to the world.
+                </div>
+
+                <div className="psr3">
+                  <Link to="/" className="links linkAnima">
+                    CONTACT <span className="arrow"></span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        {/* PASTOR ALEX end */}
+
+
 
         {/* ======= APP SECTION ======= */}
         <div className="home_app">
