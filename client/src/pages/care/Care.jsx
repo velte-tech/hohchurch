@@ -52,8 +52,8 @@ const Care = () => {
                   <div className="hl-tt2">
                     We understand that life gets hard and sometimes you need an
                     intentional strategy for change to work through your
-                    struggles.We provide several options to help meet your
-                    needs.Select one below for more information.
+                    struggles. We provide several options to help meet your
+                    needs. Select one below for more information.
                   </div>
                 </div>
 
@@ -66,8 +66,8 @@ const Care = () => {
                   <div className="hr-top">
                     <div className="hrt1">CONTACT US</div>
                     <div className="hrt2">
-                      For all Care Ministry Needs, please speak with your Campus
-                      Pastor or contact us directly at:
+                      For all Care Ministry Needs, please speak with our Head Pastor (Pastor Alex)
+                       or contact us directly at:
                     </div>
 
                     <div className="hrt3">

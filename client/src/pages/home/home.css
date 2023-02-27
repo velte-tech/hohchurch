@@ -1486,3 +1486,20 @@
     gap: 3rem;
   }
 }
+
+
+
+
+/* pastor alex  */
+#psalex {
+  padding: 5rem 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  #psalex {
+  padding: 0;
+  padding-bottom: 4rem;
+}
+}
+/* pastor alex end */

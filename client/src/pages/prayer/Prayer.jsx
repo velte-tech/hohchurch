@@ -103,7 +103,7 @@ const Prayer = () => {
               </div>
 
               <div className="pr-3">
-                <button className="btn">SAVE REQUEST</button>
+                <button className="btn">SEND REQUEST</button>
               </div>
             </div>
           </div>

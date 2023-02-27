@@ -47,7 +47,7 @@ const Students_groups = () => {
                       setShowThird(false);
                       setShowFourth(false);
                     }} className='my-btn'>
-                        STUDENTS RALLY
+                        STUDENTS MEETINGS
                     </button>
                     <button onClick={() => {
                       setShowThird(!showThird);
@@ -83,7 +83,7 @@ const Students_groups = () => {
                                 </div>
                                 
                                 <div className='tt-2'>
-                                    One of the greatest gifts a church can give to parents is to help foster an environment for your teen to develop relationships with a consistent adult leader and network of friends where they share their faith and do life together. That’s why we love groups, and they will meet on Campuses on Wednesday nights!
+                                    One of the greatest gifts a church can give to parents is to help foster an environment for your teen to develop relationships with a consistent adult leader and network of friends where they share their faith and do life together. That’s why we love groups.
                                 </div>
                                 </div>
                               </div>
@@ -137,7 +137,7 @@ const Students_groups = () => {
                         <div className='stural-wrapper'>
                             <div className='stural-case'>
                                 <div className='stural-txt'>
-                                    Rally happens on the first Wednesday of almost every month and is a chance for all campuses to gather, hang out, eat, worship, and learn more about Jesus. Below are our upcoming Rally dates. Click on them to learn more about Rally and to register your student for free transportation to Rally from your campus!
+                                    Group meetings happens on almost every month and is a chance for all to gather, hang out, eat, worship, and learn more about Jesus. Below are our upcoming meeting dates. Click on them to learn more.
                                 </div>
                                 
                                 {/* stural flex */}
@@ -164,7 +164,7 @@ const Students_groups = () => {
                                                         </div>
                                                     </div>
                                                     <div className='rt-2'>
-                                                        RALLY - FEBRUARY
+                                                        FEBRUARY MEETING
                                                     </div>
                                                     <div className='rt-3'>
                                                         Wednesday, February 01, 2023,
@@ -194,7 +194,7 @@ const Students_groups = () => {
                                                         </div>
                                                     </div>
                                                     <div className='rt-2'>
-                                                        RALLY - FEBRUARY
+                                                    FEBRUARY MEETING
                                                     </div>
                                                     <div className='rt-3'>
                                                         Wednesday, February 01, 2023,
@@ -224,7 +224,7 @@ const Students_groups = () => {
                                                         </div>
                                                     </div>
                                                     <div className='rt-2'>
-                                                        RALLY - FEBRUARY
+                                                        FEBRUARY MEETING
                                                     </div>
                                                     <div className='rt-3'>
                                                         Wednesday, February 01, 2023,
@@ -238,17 +238,17 @@ const Students_groups = () => {
                                                         </button>
                                                     </div>
                                                 </div>
-                                                  
+                                                
                                                 {/* RT END */}
-                                                                                                   
+                        
                                                 
                                             </div>
                                             
-                                              <div className='ral-bot'
+                                            <div className='ral-bot'
                                                 data-aos="fade-left"
                                                 data-aos-anchor-placement="center-bottom"
                                                 data-aos-delay="600"
-                                              >
+                                            >
                                                 <button className='btn'>
                                                     LIVESTREAM LINK
                                                 </button>
@@ -274,7 +274,7 @@ const Students_groups = () => {
                             <div className='ms-case'>
                                 <div className='ms'>
                                     <div className='tt-1'>
-                                   We encourage 6 th - 12 th graders to worship with their campus in the auditorium on Sundays at the 11 AM service.
+                                   We encourage 6 th - 12 th graders to worship with the congregation in the auditorium on Sundays at the 11 AM service.
                                 </div>
                                 
                                 <div className='tt-2'>
@@ -300,7 +300,7 @@ const Students_groups = () => {
                                             </div>
                                             <div className='wed-1'></div>
                                             <div className='wed-4'>
-                                                Meet us in the lobby before service
+                                                Join us for the service
                                             </div>
                                             <div className='wed-5'>
                                                 AUDITORIUM STUDENT SECTION <br></br>

@@ -80,21 +80,14 @@ const Students = () => {
                 <div className="stu-txt1">STUDENTS</div>
 
                 <div className="stu-txt2">
-                  {/* Every student deserves to have friends and a place where they can belong and connect with others.And Flatirons Students exists to do just that. */}
-                  Every student should have friends and a place to fit in and
-                  make connections with other people.To that end, HOH Students
+                  Every student should have friends and a place to fit in and make connections with other people. To that end, HOH Students
                   was created.
                 </div>
 
                 <div className="stu-txt3">
-                  {/* Flatirons Students, worship on Sunday’ s at 11 AM and meet on Wednesday nights throughout the school year.Once a month we have an all - student rally in Lafayette.All other Wednesdays students meet in groups at your their campus. */}
-                  HOH is dedicated to assisting students in moving closer to
-                  Christ despite the changes brought on by school, friends,
-                  significant others, and family.The HOH Students worship on
+                  HOH is dedicated to assisting students in moving closer to Christ despite the changes brought on by school, friends, significant others, and family. The HOH Students worship on
                   Wednesday nights during the academic year and attend Sunday
-                  services at 11 AM. We hold an all - student rally in Lafayette
-                  once every month.All other Wednesdays students meet in groups
-                  at their campus.Students have the chance to participate in
+                  services at 8 AM. Students have the chance to participate in
                   life groups where they can hang out with like - minded peers
                   and devoted leaders as they begin their spiritual journey.
                 </div>

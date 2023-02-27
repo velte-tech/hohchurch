@@ -381,11 +381,9 @@ const About_HOH = () => {
             <div className="line-1"></div>
             <div className="int">
               If you 're interested in who leads Highway of Holiness Church,{" "}
-              <br></br> learn more on our{" "}
+              learn more on our{" "}
               <span
-                className="
-              hoo "
-              >
+                className="hoo">
                 <Link to="/Leadership" className="hover_overlay">
                   Leadership page
                 </Link>
@@ -431,8 +429,9 @@ const About_HOH = () => {
                 {/* <span>"</span> */}
                 <div className="ms2">
                   To follow God fully and lead nations to eternity through teaching the word of God and the practical demonstration of the love of God to the world.
-                </div>
-                <div className="ms22">
+                  </div>
+                  
+                {/* <div className="ms22">
                   My wife and I started our ministry 33 years ago when we said“ YES!”to God’ s call. Since then have not looked back. We have embarked on many projects, ranging from providing supplementary education
                   for children in deprived areas - to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site.We have witnessed first - hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.
                   Life comes with its challenges, sometimes you may feel discouraged or attacked but we believe through the power of God you can overcome every barrier and set back, that things can take a turn
@@ -441,8 +440,8 @@ const About_HOH = () => {
                   As you
                   continue to explore this website you can find out more details on;
                   coming to worship with us in person at a Sunday service, upcoming events, the missions we currently run in London and internationally, our church fellowship groups and much more. We are excited or what God is about to do and want you to be a part of it.Take care and God bless.
-
-                </div>
+                </div> */}
+                
                 {/* <span> "</span> */}
               </div>
 
