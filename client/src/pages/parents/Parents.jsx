@@ -5,8 +5,9 @@ import AOS from "aos";
 import { useEffect } from "react";
 import prayy from "../../assets/images/prayy.jpg";
 import stuu from "../../assets/images/stuu12.jpg";
-import pasem from "../../assets/images/pasem.webp";
-import dday from "../../assets/images/dday.webp";
+// import pasem from "../../assets/images/pasem.webp";
+import pasem from "../../assets/brand/hohlogo.png";
+// import dday from "../../assets/images/dday.webp";
 import spot1 from "../../assets/images/spot1.webp";
 import spot2 from "../../assets/images/spot2.webp";
 import spot3 from "../../assets/images/spot3.webp";
@@ -176,7 +177,7 @@ const Parents = () => {
           <div className="ngp-wrapper">
             <div className="ngp-case">
               <div className="ngp-show">
-                <div className="ngp-txt">NEXTGEN MINISTRIES</div>
+                <div className="ngp-txt">HIGHWAY OF HOLINESS MINISTRIES</div>
 
                 <div className="ngp-plug">{/* PLUG */}</div>
               </div>
@@ -192,9 +193,10 @@ const Parents = () => {
               <div className="cardp">
                 <img src={ya1} alt="" />
                 <div className="text">
-                  <p>DISTRICT TAKEOVER @ NINJA NATION JANUARY 31ST</p>
-                  <p>January 31st Takeover at Ninja Nation</p>
-                  <Link className="linkAnima">
+                  <p>Highway Of Holiness Youth group</p>
+                  <p>Highway Of Holiness Youth group</p>
+                  
+                  <Link to='/young_adults' className="linkAnima">
                     Learn More <span className="arrow"></span>
                   </Link>
                 </div>
@@ -238,7 +240,7 @@ const Parents = () => {
                     data-aos-delay="600"
                   >
                     <div className="pppic">
-                      <img src={dday} alt="" />
+                      <img src={pasem} alt="" />
                     </div>
                   </div>
 
@@ -265,10 +267,17 @@ const Parents = () => {
                       Sharing stories, resources, and hope to parents, because
                       at the end of the day, you 're not alone.
                     </div>
-                    <div className="ppr-5">
-                      <Link className="linkAnima">
-                        LISTEN NOW <span className="arrow"></span>
-                      </Link>
+                      <div className="ppr-5">
+                        
+                        <a
+                          className="linkAnima"
+                        href="https://www.youtube.com/@highwayofholinesschristian7997"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        LISTEN  NOW <span className="arrow"></span>
+                      </a>
+                              
                     </div>
                   </div>
                 </div>
@@ -286,7 +295,7 @@ const Parents = () => {
 
           {/* RECOMMENDATION  */}
 
-          <div className="recom-wrapper">
+          {/* <div className="recom-wrapper">
             <div className="recom-show">
               <div className="recom-case">
                 <div className="recom">
@@ -355,7 +364,7 @@ const Parents = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* RECOMMENDATION END */}
 
@@ -364,15 +373,15 @@ const Parents = () => {
           <div className="counsel-wrapper">
             <div className="counsel-case">
               <div className="counsel-show">
-                <div className="counsel1">NEXTGEN COUNSELING REIMBURSEMENT</div>
+                <div className="counsel1">HIGHWAY OF HOLINESS COUNSELLING AND PRAYER REQUEST</div>
 
                 <div className="counsel2">
-                  This reimbursement program aids parents in getting the mental
+                  This program aids parents in getting the mental
                   health support they need to best walk alongside their kids.
                 </div>
 
                 <div className="counsel3">
-                  <Link className="linkAnima">
+                  <Link to='/prayer' className="linkAnima">
                     LEARN MORE <span className="arrow"></span>
                   </Link>
                 </div>

@@ -6,6 +6,7 @@ import AOS from "aos";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdAllInbox } from 'react-icons/md';
 // import PcheckBox from '../pcheckbox/PcheckBox';
+import Ministries from '../../pages/ministries/Ministries';
 
 
 
@@ -119,7 +120,7 @@ const ParentsButts = () => {
                             
                             {/* <PcheckBox /> */}
 
-                            <button className='btn'>SUBSCRIBE</button>
+                            <button className='btn'>SUBMIT</button>
                             
                         </div>
                     )
@@ -136,7 +137,7 @@ const ParentsButts = () => {
                                 <div className='pns-show'>
                                     <div className='pns'>
                                         <div className='pns1'>
-                                            We can't do this without you. We have volunteer opportunities in all of our NEXTGEN ministries.
+                                            We can't do this without you. We have volunteer opportunities in all of our Ministries
                                         </div>
                                         
                                         <div className='pns2'>
@@ -147,15 +148,15 @@ const ParentsButts = () => {
                                         
                                           
                                         <div className='pns2'>
-                                            <Link to='/Kids' className="linkAnima">
-                                            KIDS MINISTRY <span className="arrow"></span>
+                                            <Link to='/young_adults' className="linkAnima">
+                                            YOUTH MINISTRY <span className="arrow"></span>
                                             </Link>
                                         </div>
                                         
                                           
                                         <div className='pns2'>
-                                            <Link to='/Parents' className="linkAnima">
-                                            PARENTS MINISTRY <span className="arrow"></span>
+                                            <Link to='/outreach' className="linkAnima">
+                                            OUTREACH <span className="arrow"></span>
                                             </Link>
                                         </div>
                                         

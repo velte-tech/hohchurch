@@ -2,7 +2,7 @@ export const careData = [{
         question: "I'm New",
         answer1: " Please stop by our newcomers table so we can introduce ourselves, provide directions and answer your questions.  ",
 
-        answer2: " During the 8 pm Small Group hour, we recommend you attend our Men’s or Women’s 101 groups that is offered as an introduction to our program. One of our key leaders will explain Shift, our guidelines for small groups, and the small groups themselves, and will then answer any other questions you may have."
+        answer2: " During the 8 pm Small Group hour, we recommend you attend our Men’s or Women’s fellowship groups that is offered as an introduction to our program. One of our key leaders will explain Shift, our guidelines for small groups, and the groups themselves, and will then answer any other questions you may have."
     },
 
     {
@@ -11,7 +11,7 @@ export const careData = [{
         answer1: " Birth – 11 Years  ",
 
         answer2: " For safety reasons, children ages 12 and up must be accompanied by their parent or guardian at all times. Check-in begins at 6:30 PM and rooms open at 6:45 PM; pick up by 9:00 PM. ",
-        answer3: " $3 per child or $5 per family. "
+        // answer3: " $3 per child or $5 per family. "
     },
 
     {
@@ -70,11 +70,11 @@ export const careData = [{
 
         answer2: "Date: Tuesday, January 24th -May 2nd",
 
-        answer3: " Location: Lafayette Campus ",
+        answer3: "HIGHWAY OF HOLINESS",
 
-        answer4: " Time: 6:30-8:30 PM (doors open at 6:15pm, please check in at the kiosk in the main lobby of the Lafayette Campus to be assigned a group on the first night.)",
+        answer4: " Time: 6:30-8:30 PM (doors open at 6:15pm, please check in at the main lobby of Highway of Holiness to be assigned a group on the first night.)",
 
-        answer5: "Cost: Your small group leader will have all materials needed and will be collecting payment for your workbook. The cost of the workbook is $10. Please see a Care Ministry staff person if you need special arrangements.",
+        answer5: "Cost: Your group leader will have all materials needed and will be collecting payment for your workbook. Please see a Care Ministry staff person if you need special arrangements.",
 
         answer6: " Childcare will be provided. ",
 

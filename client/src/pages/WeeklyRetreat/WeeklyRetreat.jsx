@@ -42,9 +42,13 @@ const Longmont = () => {
         <div className="about_wrapper container">
           <h1 className="text_center">ABOUT</h1>
           <p className="text_center">
-            Since our doors opened in 2018, our heart has been to share the
-            awesome love of Jesus to the Highway of Holiness community. We exist
-            to live out and show that amazing grace to all. (
+            Our weekly Sunday celebration service takes place every Sunday on our church premises from 11.30 am– 13.30 pm.This is a time of joyous praise and worship, a word of teaching and encouragement is shared and we also dedicate time to prayer and communion.
+            We also meet every Monday, Tuesday and Thursday on our telephone prayer line from 7: 00 pm– 8: 00 pm
+            We meet on Wednesdays from 12 - 1 pm, 3 - 4 pm on our telephone prayer line and at 7.30 pm on our church premises
+            We meet on facebook live every Friday at 7.30 pm
+            for our Bible Academy
+            Prayer Line: 0330 9981 259
+ (
             <Link className="hover_overlay">John 15:12</Link>) .
           </p>
         </div>
@@ -69,16 +73,8 @@ const Longmont = () => {
           >
             <h2>PASTOR ALEX GYESI</h2>
             <p>
-              I’ve been skulking around the halls of Flatirons for over 10 years
-              in a couple of different roles (Men’s Pastor, Groups Pastor and KM
-              Creative Director). My wife, Amy, has been patient enough to
-              tolerate me for over 40 years and we’ve multiplied our end of the
-              Foote pond with two great kids, their wonderful spouses, and 5
-              perfect grandkids. I’ve been going to church since I was born, but
-              it wasn’t until my early 20s, that I discovered the difference
-              between going to church and following Jesus. Since then, I have
-              been on a journey to grow closer to Jesus—inviting others along
-              the way. I hope you join me.
+              My wife and I started our ministry 33 years ago when we said“ YES!”to God’ s call.Since then have not looked back.We have embarked on many projects, ranging from providing supplementary education
+              for children in deprived areas - to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site.We have witnessed first - hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.
             </p>
             <Link className="linkAnima" to="/contact">
               Contact <span className="arrow"></span>
@@ -205,7 +201,7 @@ const Longmont = () => {
             <p>ABOUT US</p>
             <p>
               Eye-opening and insightful weekly programmes at Highway of
-              Holiness Church starts @ 9pm .
+              Holiness Church starts from 11.30 am– 13.30 pm.
             </p>
           </div>
 

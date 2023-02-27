@@ -229,7 +229,7 @@
 @media screen and (max-width: 600px) {
     .nav-links {
     position: absolute;
-    top: 20%;
+    top: 15%;
     flex-direction: column;
     left: 25%;
 }
