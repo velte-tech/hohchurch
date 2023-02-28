@@ -305,17 +305,13 @@ const Lafayette = () => {
             <h2>Pastor Dorcas Gyesi</h2>
             <p>Pastor</p>
             <p>
-              My family first visited Highway Of Holiness Church one Saturday
-              night after being invited. We didn’t know it at the time of
-              course, but we’d dropped right into the middle of a values series.
-              Halfway through his message on the Fruit of the Spirit, Jim
-              pivoted and challenged everyone to jump in and serve in Kids
-              Ministry. It was powerful, convicting, beautiful, and
-              compelling—my husband Chris and I attended the training and
-              started serving the next weekend! We had found our church. Highway
-              Of Holiness Church is unlike any church we’ve experienced:
-              vulnerable, authentic teaching, real people, doing life and
-              chasing after Jesus together.
+              Life comes with its challenges, sometimes you may feel discouraged
+              or attacked but we believe through the power of God you can
+              overcome every barrier and set back, that things can take a turn
+              for the better. We welcome you to join the church family if you do
+              not already belong to one and would like you to know that we are
+              available to visit you, offer counselling, be a listening ear and
+              offer prayer.
             </p>
             <Link className="linkAnima" to="/contact">
               Contact <span className="arrow"></span>
