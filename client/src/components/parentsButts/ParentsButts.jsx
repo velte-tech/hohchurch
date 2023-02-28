@@ -65,7 +65,10 @@ const ParentsButts = () => {
 
                 {
                     showFirst && (
-                        <div className='pns-wrapper'>
+                        
+                        <form id='parent-form'>
+                            
+                            <div className='pns-wrapper'>
                             
                             <div className='nl'>
                                 <div className='nl1'>
@@ -98,31 +101,15 @@ const ParentsButts = () => {
                                 </div>
                             </div>
                             
-                            {/* <div className='nl'>
-                    
-                                <div className='nl1'>
-                                    <div className='ft-1'>CAMPUS</div>
-                                    <div className='ft-2'></div>
-                                </div>
-                                
-                                <select id="campp" name="campp">
-                                    <option value="nott">Please Select</option>
-                                    <option value="lafa">Lafayette Campus</option>
-                                    <option value="aurora">Aurora Campus</option>
-                                    <option value="denv">Denver Campus</option>
-                                    <option value="west">West Campus</option>
-                                    <option value="longm">Longmont Campus</option>
-                                    <option value="online">Online Campus</option>
-                                </select>
-
-                            </div> */}
-                            
                             
                             {/* <PcheckBox /> */}
 
                             <button className='btn'>SUBMIT</button>
                             
                         </div>
+                            
+                        </form>
+                        
                     )
                 }
                 

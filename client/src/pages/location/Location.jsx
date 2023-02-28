@@ -29,7 +29,8 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                1730 S Buckley <br></br> RdAurora, CO 80017
+                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
+                  United Kingdom
               </div>
 
               <div className="ser">SERVICES</div>
@@ -53,7 +54,8 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                2700 S.Downing <br></br> St.Denver, CO 80210
+                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
+                  United Kingdom
               </div>
 
               <div className="ser">SERVICES</div>
@@ -75,7 +77,8 @@ const Location = () => {
               <div className="broad-1">Broadcast Location</div>
 
               <div className="add hover_overlay_2">
-                1730 S Buckley <br></br> RdAurora, CO 80017
+                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
+                  United Kingdom
               </div>
 
               <div className="ser">SERVICES</div>
@@ -99,7 +102,8 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                1850 Industrial <br></br> Cr.Longmont, CO 80501
+                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
+                  United Kingdom
               </div>
 
               <div className="ser">SERVICES</div>
@@ -121,7 +125,8 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                24887 Genesee Trail <br></br> Rd.Golden, CO 80401
+                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
+                  United Kingdom
               </div>
 
               <div className="ser">SERVICES</div>

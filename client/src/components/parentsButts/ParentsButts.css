@@ -83,8 +83,13 @@
     align-items: flex-start;
 }
 
-.pns-wrapper {
+#parent-form {
     width: 45%;
+}
+
+.pns-wrapper {
+    /* width: 45%; */
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;

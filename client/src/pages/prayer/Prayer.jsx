@@ -47,12 +47,13 @@ const Prayer = () => {
               </div>
 
               <div className="pr-2">
+
                 <form className="pf">
                   <p className="pf-1">PRAYER REQUEST FORM</p>
 
                   <div className="nl">
                     <div className="nl1">
-                      <div className="ft-1">FIRST NAME</div>
+                      <div className="ft-1">FULL NAME</div>
                       <div className="ft-2"></div>
                     </div>
                     <div className="nl2">
@@ -73,23 +74,6 @@ const Prayer = () => {
                     </div>
                   </div>
 
-                  <div className="nl">
-                    <div className="nl1">
-                      <div className="ft-1">CAMPUS</div>
-                      <div className="ft-2"></div>
-                    </div>
-
-                    <select id="campp" name="campp">
-                      <option value="nott">Please Select</option>
-                      <option value="lafa">Lafayette Campus</option>
-                      <option value="aurora">Aurora Campus</option>
-                      <option value="denv">Denver Campus</option>
-                      <option value="west">West Campus</option>
-                      <option value="longm">Longmont Campus</option>
-                      <option value="online">Online Campus</option>
-                    </select>
-                  </div>
-
                   <div className="nl mess-ara">
                     <div className="nl1">
                       <div className="ft-1">REQUEST</div>
@@ -99,12 +83,15 @@ const Prayer = () => {
                       <textarea placeholder="Please pray that...(up to 500 characters)"></textarea>
                     </div>
                   </div>
+
+                  <div className="pr-3">
+                    <button className="btn">SEND REQUEST</button>
+                  </div>
+
                 </form>
+
               </div>
 
-              <div className="pr-3">
-                <button className="btn">SEND REQUEST</button>
-              </div>
             </div>
           </div>
         </div>
