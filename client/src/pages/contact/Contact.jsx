@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./contact.css";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -33,11 +34,12 @@ function Contact() {
             </p>
             <p>Office Hours | M-TH, 10:00 AM – 4:00 PM</p>
             <p>Phone | +442088084444</p>
+
             <p>
               Email |{" "}
-              <Link className="hover_overlay">
+              <a href="mailto:Info@hohcenter.com" className="hover_overlay">
                 info@highwayofholinesschurch.com
-              </Link>{" "}
+              </a>
             </p>
           </div>
         </div>

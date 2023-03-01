@@ -512,7 +512,7 @@
 }
 
 .ps-left {
-    width: 55%;
+    width: 50%;
 }
 
 .psl-pic img {
@@ -524,7 +524,7 @@
 }
 
 .ps-right {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -534,7 +534,7 @@
 }
 
 .psr1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--primary_color);
     font-weight: 800;
 }

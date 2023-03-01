@@ -357,6 +357,7 @@ const Outreach = () => {
 
         <div className="form-wrapper">
           <div className="form-case">
+            
             <form className="form-connect">
               <div className="fmcase">
 
@@ -432,6 +433,7 @@ const Outreach = () => {
 
               {/* SECOND FLEXX END */}
             </form>
+
           </div>
         </div>
 

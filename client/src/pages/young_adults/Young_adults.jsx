@@ -239,6 +239,7 @@ const Young_adults = () => {
                 <div className="yacon-1 focus-in-contract-bck">CONTACT US</div>
 
                 <div className="yacon-2">
+
                   <form
                     className="yac"
                     data-aos="fade-left"
@@ -290,9 +291,8 @@ const Young_adults = () => {
                         <textarea></textarea>
                       </div>
                     </div>
-                  </form>
 
-                  <div
+                    <div
                     className="yac-btt"
                     data-aos="fade-right"
                     data-aos-anchor-placement="center-bottom"
@@ -300,6 +300,11 @@ const Young_adults = () => {
                   >
                     <button className="btn">SUBMIT</button>
                   </div>
+
+                  </form>
+
+                  
+
                 </div>
               </div>
             </div>

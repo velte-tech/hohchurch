@@ -114,7 +114,8 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     border-bottom: #000 solid 2px;
-    /* margin: 0 2rem; */
+    width: 350px;
+    height: 420px;
 
 }
 

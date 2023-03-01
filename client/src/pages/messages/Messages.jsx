@@ -17,11 +17,11 @@ const Messages = () => {
 
       <section id="message_messages">
         <div className="messages_wrapper">
-          <div className="search">
+          {/* <div className="search">
             <input type="text" />
             <span>Search</span>
             <CgSearchLoading className="search_icon" />
-          </div>
+          </div> */}
 
           {/* ======= FILTER ======= */}
           <div className="filter">{/* <FilterMsg /> */}</div>

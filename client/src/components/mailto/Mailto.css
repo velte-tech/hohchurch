@@ -1,0 +1,36 @@
+#mailto-but button {
+    margin: 0;
+}
+
+
+/* mail  */
+
+.mall-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mall-btn .m-ico {
+    color: #000;
+}
+
+.mall-btn .m-ico:hover {
+    color: #fff;
+}
+
+.mall-btn .m-ico {
+    margin-left: .5rem;
+    border-radius: 50%;
+    border: #000 solid 2px;
+    padding: 2px 5px;
+    padding-bottom: 1px;
+    padding-top: 3px;
+    transition: all .3s ease-in-out;
+}
+.mall-btn.m-ico:hover {
+    border: var(--primary_color) solid 2px;
+    transition: all .3s ease-in-out;
+}
+
+/* mail end */

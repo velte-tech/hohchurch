@@ -58,7 +58,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 31%;
     transition: all .3s ease-in-out;
 }
@@ -104,11 +104,11 @@
     left: 0;
 }
 
-.kids-cards-1:hover .kk-s-over {
+/* .kids-cards-1:hover .kk-s-over {
     background: rgba(208, 47, 47, 0.6);
     height: 100%;
     transition: all .3s ease-in;
-}
+} */
 
 .kk-txt {
     font-size: 20px;
@@ -148,7 +148,7 @@
     color: var(--primary_color);
 }
 
-.kids-cards-1:hover .kc-b {
+/* .kids-cards-1:hover .kc-b {
     background: var(--primary_color);
     transition: all .2s ease-in;
 }
@@ -156,7 +156,7 @@
 .kids-cards-1:hover .kk-txt-2 {
     color: #fff;
     transition: all .2s ease-in;
-}
+} */
 
 
 @media screen and (max-width: 950px) {
@@ -213,7 +213,7 @@
     width: 65%;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .ka-case {
@@ -240,11 +240,11 @@
     top: 2.5rem;
 }
 
-.kids-out:hover .ka-over {
+/* .kids-out:hover .ka-over {
     background: rgba(208, 47, 47, 0.6);
     height: 100%;
     transition: all .2s ease-in;
-}
+} */
 
 
 .kids-bb {
@@ -260,7 +260,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .kb-txt-1 {
@@ -277,14 +277,14 @@
     text-transform: uppercase;
 }
 
-.kids-out:hover .kids-bb {
+/* .kids-out:hover .kids-bb {
     background: var(--primary_color);
     transition: all .2s ease-in;
 }
 .kids-out:hover .kb-txt-2 {
     color: #fff;
     transition: all .2s ease-in;
-}
+} */
 
 @media screen and (max-width: 950px) {
     .kids-out {
