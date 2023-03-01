@@ -54,22 +54,6 @@
 } */
 
 
-@media screen and (max-width: 950px) {
-    .info-butts22 {
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-
-.my-btn2 {
-    margin-bottom: 2rem;
-    width: 100%;
-}
-/* .my-btn2:nth-child(4) {
-    margin-bottom: 0;
-} */
-
-}
 
 
 
@@ -151,6 +135,30 @@
 }
 }
 
+
+
+
+@media screen and (max-width: 950px) {
+    .info-butts22 {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.my-btn2 {
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: 1.1rem;
+}
+/* .my-btn2:nth-child(4) {
+    margin-bottom: 0;
+} */
+
+#parent-form {
+    width: 100%;
+}
+
+}
 
 
 /* INFO - SHOW 2 END */
