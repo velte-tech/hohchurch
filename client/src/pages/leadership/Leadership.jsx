@@ -241,7 +241,11 @@ const Leadership = () => {
             </div>
 
             <div className="alone-2">
-              <div className="pic" data-aos="fade-left">
+              <div className="pic"
+                data-aos="fade-left"
+                data-aos-delay="200"
+                data-aos-anchor-placement="center-bottom">
+
                 <img src={naruto} alt="" />
               </div>
 
@@ -249,6 +253,7 @@ const Leadership = () => {
                 className="shape-2"
                 data-aos="fade-left"
                 data-aos-delay="400"
+                data-aos-anchor-placement="center-bottom"
               ></div>
             </div>
           </div>

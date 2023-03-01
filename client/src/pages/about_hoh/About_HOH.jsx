@@ -521,13 +521,16 @@ const About_HOH = () => {
                 </div>
 
                 <div className="hh-3">
-                  {/* <a target="_blank" href="https://hohcentre.co.uk/"> */}
-
-                  <Link className="links linkAnima">
-                    MORE INFO ABOUT KLM <span className="arrow"> </span>
-                  </Link>
-
-                  {/* </a> */}
+                  <a
+                    target="_blank"
+                    href="http://klmission.com/"
+                    rel="noreferrer"
+                  >
+                  <div className="links linkAnima">
+                    MORE INFO ABOUT KLM{" "}
+                    <span className="arrow"> </span>
+                  </div>
+                </a>
                 </div>
               </div>
             </div>
