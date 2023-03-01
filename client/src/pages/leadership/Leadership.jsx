@@ -1,5 +1,5 @@
 import { React } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Leadership.css";
 // Images
 import l1 from "../../assets/images/pastor-alex.jpg";
