@@ -133,7 +133,7 @@
 
 .lf1-pic img {
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
     /* width: 100%; */
     /* width: 300px; */
     height: 320px;
