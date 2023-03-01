@@ -35,9 +35,9 @@ function Contact() {
             <p>Phone | +442088084444</p>
             <p>
               Email |{" "}
-              <Link className="hover_overlay">
-                info@highwayofholinesschurch.com
-              </Link>{" "}
+              <a href="mailto:Info@hohcenter.com" className="hover_overlay">
+                Info@hohcenter.com
+              </a>
             </p>
           </div>
         </div>
