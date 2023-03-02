@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import './Box_check.css'
-
+import "./Box_check.css";
 
 function CheckboxList() {
   const [checkedItem, setCheckedItem] = useState("");
@@ -10,9 +9,9 @@ function CheckboxList() {
   };
 
   const checkboxes = [
-    { name: "item1", key: "checkbox1", label: "Membership" },
-    { name: "item2", key: "checkbox2", label: "Volunteer" },
-    { name: "item3", key: "checkbox3", label: "Counelling" },
+    { name: "membership", key: "checkbox1", label: "Membership" },
+    { name: "volunteer", key: "checkbox2", label: "Volunteer" },
+    { name: "councelling", key: "checkbox3", label: "Councelling" },
   ];
 
   return (

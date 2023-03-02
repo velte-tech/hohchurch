@@ -1,7 +1,5 @@
 import React from "react";
 import "./Messages.css";
-// import { CgSearchLoading } from "react-icons/cg";
-// import FilterMsg from "../../components/filter_message/FilterMsg";
 import MsgPagination from "../../components/MsgPagination/MsgPagination";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
@@ -17,12 +15,6 @@ const Messages = () => {
 
       <section id="message_messages">
         <div className="messages_wrapper">
-          {/* <div className="search">
-            <input type="text" />
-            <span>Search</span>
-            <CgSearchLoading className="search_icon" />
-          </div> */}
-
           {/* ======= FILTER ======= */}
           <div className="filter">{/* <FilterMsg /> */}</div>
           <MsgPagination />

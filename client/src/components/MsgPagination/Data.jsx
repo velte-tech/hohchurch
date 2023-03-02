@@ -52,7 +52,7 @@ export const items = [
   {
     id: "5",
     cart: "Soul winning series:",
-    image: image5,
+    image: image13,
     title: "Obligation of A Deciple 2",
     names: "Pastor Roland Mensah",
     utube: "//www.youtube.com/embed/HeAOov1SU5s",

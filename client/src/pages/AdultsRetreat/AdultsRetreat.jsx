@@ -305,8 +305,15 @@ const Lafayette = () => {
             <h2>Pastor Dorcas Gyesi</h2>
             <p>Pastor</p>
             <p>
-             My wife and I started our ministry 33 years ago when we said“ YES!”to God’ s call.Since then have not looked back.We have embarked on many projects, ranging from providing supplementary education
-             for children in deprived areas - to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site.We have witnessed first - hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.
+              My wife and I started our ministry 33 years ago when we said“
+              YES!”to God’ s call.Since then have not looked back.We have
+              embarked on many projects, ranging from providing supplementary
+              education for children in deprived areas - to running a homeless
+              shelter since 2009 till present day and many more ministries that
+              you will come across as you browse this site.We have witnessed
+              first - hand, how living a life fully surrendered to Christ can
+              positively impact you, your family, friends and society as a
+              whole.
             </p>
             <Link className="linkAnima" to="/contact">
               Contact <span className="arrow"></span>

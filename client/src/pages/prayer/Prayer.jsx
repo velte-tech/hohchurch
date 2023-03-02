@@ -47,8 +47,11 @@ const Prayer = () => {
               </div>
 
               <div className="pr-2">
-
-                <form className="pf">
+                <form
+                  action="https://formsubmit.co/88fcc1b06d43556476d88696654f2534"
+                  method="POST"
+                  className="pf"
+                >
                   <p className="pf-1">PRAYER REQUEST FORM</p>
 
                   <div className="nl">
@@ -57,7 +60,7 @@ const Prayer = () => {
                       <div className="ft-2"></div>
                     </div>
                     <div className="nl2">
-                      <input></input>
+                      <input required name="Full_name"></input>
                     </div>
                   </div>
 
@@ -70,7 +73,7 @@ const Prayer = () => {
                       <div className="sinn">
                         <MdAllInbox />
                       </div>
-                      <input className="zinn"></input>
+                      <input required name="Email" className="zinn"></input>
                     </div>
                   </div>
 
@@ -80,18 +83,19 @@ const Prayer = () => {
                       <div className="ft-2"></div>
                     </div>
                     <div className="nl2">
-                      <textarea placeholder="Please pray that...(up to 500 characters)"></textarea>
+                      <textarea
+                        required
+                        name="Prayer_request"
+                        placeholder="Please pray that...(up to 500 characters)"
+                      ></textarea>
                     </div>
                   </div>
 
                   <div className="pr-3">
                     <button className="btn">SEND REQUEST</button>
                   </div>
-
                 </form>
-
               </div>
-
             </div>
           </div>
         </div>
