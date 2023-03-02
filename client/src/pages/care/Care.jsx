@@ -82,7 +82,9 @@ const Care = () => {
                       <div className="hr-ff">
                         <div className="hh-1">Email |</div>
                         <div className="hh-2 hh-xx hover_overlay">
-                          care@hoh.com
+                          <a href="mailto:Info@hohcenter.com"     className="hover_overlay">
+                            Info@hohcenter.com
+                          </a>
                         </div>
                       </div>
                     </div>

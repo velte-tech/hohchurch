@@ -38,7 +38,7 @@ const Students_groups = () => {
                       setShowThird(false);
                       setShowFourth(false);
                     }} className='my-btn' >
-                        WEDNESDAY GROUPS
+                        STUDENTS GROUPS
                     </button>
                     
                     <button onClick={() => {

@@ -648,13 +648,13 @@
 
 .ms2 {
     font-weight: 600;
-    font-size: 16px;
-    /* margin-top: 1rem; */
+    font-size: 17px;
     line-height: 1.7;
+    text-align: center;
 }
 .ms22 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 1rem;
     line-height: 1.7;
 }

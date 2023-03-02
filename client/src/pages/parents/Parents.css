@@ -393,8 +393,11 @@
 
 @media screen and (max-width: 800px) {
     .pasem-pic {
-    width: 600px;
-    height: 700px;
+    width: 80%;
+    height: 350px;
+}
+.pasem-txt {
+    font-size: 19px;
 }
 }
 
@@ -416,6 +419,13 @@
 }
 }
 
+@media screen and (max-width: 600px) {
+    .pasem-pic {
+    width: 80%;
+    height: 200px;
+}
+}
+
 
 /* PARENTS MINISTRIES  */
 
@@ -425,7 +435,7 @@
 }
 
 .ngp-case {
-    max-width: 85%;
+    width: 85%;
     margin: auto;
 }
 

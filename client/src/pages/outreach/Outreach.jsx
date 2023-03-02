@@ -239,10 +239,16 @@ const Outreach = () => {
                 <div className="sop-4">KLM</div>
 
                 <div className="sop-5">
-                  <Link className="linkAnima">
-                    {" "}
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
+                  <a
+                    target="_blank"
+                    href="http://klmission.com/"
+                    rel="noreferrer"
+                  >
+                  <div className="links linkAnima">
+                    MORE INFO {" "}
+                    <span className="arrow"> </span>
+                  </div>
+                </a>
                 </div>
                 <div className="sop-6"></div>
               </div>
@@ -357,7 +363,7 @@ const Outreach = () => {
 
         <div className="form-wrapper">
           <div className="form-case">
-            
+
             <form className="form-connect">
               <div className="fmcase">
 
