@@ -3,17 +3,13 @@ import "./newsletter.css";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 function Newsletter() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <section id="newsletter">
       <div className="newsletter_showcase">
         <h1 className="focus-in-contract-bck">GET UPDATED</h1>
       </div>
       <div className="newsletter_form">
-        <form onSubmit={handleSubmit}>
+        <form action="https://formsubmit.co/" method="POST">
           <div className="name">
             <div className="firstname">
               <label for="firstname" className="star">
@@ -38,15 +34,15 @@ function Newsletter() {
               </div>
             </div>
             <div className="mobile">
-              <label for="mobile" className="star">
+              <label for="mobile_number" className="star">
                 MOBILE PHONE
               </label>
               <div className="i_input">
-                <input required type="text" name="mobile" id="mobile" />
+                <input required type="text" name="mobile_number" id="mobile" />
               </div>
             </div>
           </div>
-          <div className="campus">
+          {/* <div className="campus">
             <label for="campus" className="star">
               CAMPUS
             </label>
@@ -58,7 +54,7 @@ function Newsletter() {
               <option value="">Aurora Campus</option>
               <option value="">Online Campus</option>
             </select>
-          </div>
+          </div> */}
 
           <input type="submit" value="SUBCRIBE" />
         </form>

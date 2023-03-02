@@ -1,0 +1,14 @@
+/* .main_pag {
+  height: 100vh;
+}
+
+.main_pag .search {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.main_pag .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */

@@ -1,25 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
+import { CgSearchLoading } from "react-icons/cg";
 import "./msgPagination.css";
 import { items } from "./Data";
-
-export function Items({ currentItems }) {
-  return (
-    <>
-      {currentItems &&
-        currentItems.map((item) => (
-          <Link to={`/message/${item.id}`} key={item.id}>
-            <img src={item.image} alt="" />
-            <div className="bottom">
-              <p>{item.title}</p>
-              <p>{item.names}</p>
-            </div>
-          </Link>
-        ))}
-    </>
-  );
-}
 
 function MsgPagination() {
   //   const handlePageClick = (event) => {
@@ -27,7 +11,9 @@ function MsgPagination() {
   //   };
 
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 6;
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const itemsPerPage = 9;
 
   const endOffset = itemOffset + itemsPerPage;
   const currentItems = items.slice(itemOffset, endOffset);
@@ -41,8 +27,31 @@ function MsgPagination() {
   return (
     <>
       <div className="messages_main">
+        <div className="search">
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+          <span>Search</span>
+          <CgSearchLoading className="search_icon" />
+        </div>
         <div className="message_card">
-          <Items currentItems={currentItems} />
+          {items &&
+            currentItems
+              .filter((speaker) =>
+                speaker.names.toLowerCase().includes(searchQuery.toLowerCase())
+              )
+              .map((item) => (
+                <Link to={`/message/${item.id}`} key={item.id}>
+                  <img src={item.image} alt="" />
+                  <div className="bottom">
+                    <p>{item.title}</p>
+                    <p>{item.names}</p>
+                  </div>
+                </Link>
+              ))}
+          {/* <Items currentItems={currentItems} /> */}
         </div>
 
         <ReactPaginate

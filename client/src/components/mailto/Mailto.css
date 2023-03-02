@@ -28,6 +28,7 @@
     padding-top: 3px;
     transition: all .3s ease-in-out;
 }
+
 .mall-btn.m-ico:hover {
     border: var(--primary_color) solid 2px;
     transition: all .3s ease-in-out;

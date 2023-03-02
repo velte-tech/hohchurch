@@ -1,22 +1,9 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./contact.css";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
-import emailjs from "@emailjs/browser";
 
 function Contact() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [membership, setMembership] = useState("");
-  const [counselling, setCounselling] = useState("");
-  const [volunteer, setVolunteer] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <div>
       <section id="contact_showcase">
@@ -38,7 +25,7 @@ function Contact() {
             <p>
               Email |{" "}
               <a href="mailto:Info@hohcenter.com" className="hover_overlay">
-                info@highwayofholinesschurch.com
+                Info@hohcenter.com
               </a>
             </p>
           </div>
@@ -65,7 +52,11 @@ function Contact() {
       {/* ======= CONTACT_FORM SECTION ======= */}
       <section id="contact_form">
         <div className="form_wrapper container">
-          <form autoComplete="off" onSubmit={handleSubmit}>
+          <form
+            action="https://formsubmit.co/88fcc1b06d43556476d88696654f2534"
+            method="POST"
+            autoComplete="off"
+          >
             <ul>
               <li>
                 <label>
@@ -73,25 +64,11 @@ function Contact() {
                 </label>
                 <div className="name_input">
                   <span>
-                    <input
-                      name="fiel_3"
-                      id="fiel_3"
-                      type="text"
-                      required
-                      value={firstName}
-                      onChange={(e) => setFirstName(e.target.value)}
-                    />
+                    <input name="fiel_3" id="fiel_3" type="text" required />
                     <label for="field_3">First</label>
                   </span>
                   <span>
-                    <input
-                      name="fiel_4"
-                      id="fiel_4"
-                      type="text"
-                      required
-                      value={lastName}
-                      onChange={(e) => setLastName(e.target.value)}
-                    />
+                    <input name="fiel_4" id="fiel_4" type="text" required />
                     <label for="field_4">Last</label>
                   </span>
                 </div>
@@ -102,55 +79,9 @@ function Contact() {
                   Email <span className="start_sign">*</span>
                 </label>
                 <div>
-                  <input
-                    name="field_5"
-                    id="field_5"
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
+                  <input name="field_5" id="field_5" type="email" required />
                 </div>
               </li>
-
-              {/* <li>
-                <span style={{ display: "block" }}>
-                  Interests
-                </span>
-                <div className="interests">
-                  <label for="membership">Membership</label>
-                  <input
-                    type="checkbox"
-                    id="membership"
-                    name="membership"
-                    value={membership}
-                    onChange={(e) => setMembership(e.target.value)}
-                    required
-                  />
-                </div>
-                <div className="check">
-                  <label for="volunteer">Volunteer</label>
-                  <input
-                    type="checkbox"
-                    id="volunteer"
-                    name="volunteer"
-                    value={volunteer}
-                    onChange={(e) => setVolunteer(e.target.value)}
-                    required
-                  />
-                </div>
-                <div className="check">
-                  <label for="counselling">Counselling</label>
-                  <input
-                    type="checkbox"
-                    id="counselling"
-                    name="counselling"
-                    value={counselling}
-                    onChange={(e) => e.target.value}
-                    required
-                  />
-                </div>
-              </li> */}
 
               <li>
                 <label for="field13">Comments and Questions</label>
@@ -161,8 +92,6 @@ function Contact() {
                     rows="10"
                     required
                     placeholder
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
               </li>
