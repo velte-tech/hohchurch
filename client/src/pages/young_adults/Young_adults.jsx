@@ -96,12 +96,8 @@ const Young_adults = () => {
                     <div className="card">
                       <img src={ya1} alt="" />
                       <div className="text">
-                        <p>
-                          MONDAY MEETING
-                        </p>
-                        <p>
-                          Join us this and every Sunday
-                        </p>
+                        <p>MONDAY MEETING</p>
+                        <p>Join us this and every Sunday</p>
                         <Link className="linkAnima">
                           Learn More <span className="arrow"></span>
                         </Link>
@@ -123,9 +119,7 @@ const Young_adults = () => {
                     <div className="card">
                       <img src={ya2} alt="" />
                       <div className="text">
-                        <p>
-                          HOH MARCH GATHERING
-                        </p>
+                        <p>HOH MARCH GATHERING</p>
                         <p>
                           Join us on the evening of Thursday, February 9 th
                           starting at 7 pm on weekends
@@ -188,40 +182,39 @@ const Young_adults = () => {
                         APPLE <span className="arrow"></span>
                       </Link>
                     </div> */}
-                    
+
                     <div className="pod-tt2 hover_overlay">
                       <a
-                      className="linkAnima"
-                      href="https://www.youtube.com/@highwayofholinesschristian7997"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                        className="linkAnima"
+                        href="https://www.youtube.com/@highwayofholinesschristian7997"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                       YOUTUBE <span className="arrow"></span>
+                        YOUTUBE <span className="arrow"></span>
                       </a>
                     </div>
-                        
+
                     <div className="pod-tt2 hover_overlay">
                       <a
-                      className="linkAnima"
-                      href = "https://web.facebook.com/HighwayofHolinessUK"
-                      target = "_blank"
-                      rel = "noopener noreferrer"
+                        className="linkAnima"
+                        href="https://web.facebook.com/HighwayofHolinessUK"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                       FACEBOOK <span className="arrow"></span>
+                        FACEBOOK <span className="arrow"></span>
                       </a>
                     </div>
-                        
+
                     <div className="pod-tt2 hover_overlay">
                       <a
-                      className="linkAnima"
-                      href = "https://www.instagram.com/shift.hy/"
-                      target = "_blank"
-                      rel = "noopener noreferrer"
+                        className="linkAnima"
+                        href="https://www.instagram.com/shift.hy/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
-                       INSTAGRAM <span className="arrow"></span>
+                        INSTAGRAM <span className="arrow"></span>
                       </a>
                     </div>
-                    
                   </div>
                 </div>
                 <div className="pod-line"></div>
@@ -239,8 +232,9 @@ const Young_adults = () => {
                 <div className="yacon-1 focus-in-contract-bck">CONTACT US</div>
 
                 <div className="yacon-2">
-
                   <form
+                    action="https://formsubmit.co/info@hohcentre.co.uk"
+                    method="POST"
                     className="yac"
                     data-aos="fade-left"
                     data-aos-anchor-placement="center-bottom"
@@ -253,7 +247,7 @@ const Young_adults = () => {
                           <div className="ft-2"></div>
                         </div>
                         <div className="nl2">
-                          <input></input>
+                          <input name="first_name"></input>
                         </div>
                       </div>
                       <div className="nl">
@@ -262,7 +256,7 @@ const Young_adults = () => {
                           <div className="ft-2"></div>
                         </div>
                         <div className="nl2">
-                          <input></input>
+                          <input name="last_name"></input>
                         </div>
                       </div>
                     </div>
@@ -277,7 +271,7 @@ const Young_adults = () => {
                         <div className="sinn">
                           <MdAllInbox />
                         </div>
-                        <input className="zinn"></input>
+                        <input name="email" className="zinn"></input>
                       </div>
                     </div>
 
@@ -288,23 +282,19 @@ const Young_adults = () => {
                         <div className="ft-2"></div>
                       </div>
                       <div className="nl2">
-                        <textarea></textarea>
+                        <textarea name="message"></textarea>
                       </div>
                     </div>
 
                     <div
-                    className="yac-btt"
-                    data-aos="fade-right"
-                    data-aos-anchor-placement="center-bottom"
-                    data-aos-delay="600"
-                  >
-                    <button className="btn">SUBMIT</button>
-                  </div>
-
+                      className="yac-btt"
+                      data-aos="fade-right"
+                      data-aos-anchor-placement="center-bottom"
+                      data-aos-delay="600"
+                    >
+                      <button className="btn">SUBMIT</button>
+                    </div>
                   </form>
-
-                  
-
                 </div>
               </div>
             </div>

@@ -9,7 +9,11 @@ function Newsletter() {
         <h1 className="focus-in-contract-bck">GET UPDATED</h1>
       </div>
       <div className="newsletter_form">
-        <form action="https://formsubmit.co/" method="POST">
+        <form
+          action="https://formsubmit.co/info@hohcentre.co.uk"
+          method="POST"
+          title="Newsletter"
+        >
           <div className="name">
             <div className="firstname">
               <label for="firstname" className="star">

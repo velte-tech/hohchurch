@@ -53,42 +53,47 @@ function Contact() {
       <section id="contact_form">
         <div className="form_wrapper container">
           <form
-            action="https://formsubmit.co/88fcc1b06d43556476d88696654f2534"
+            action="https://formsubmit.co/info@hohcentre.co.uk"
             method="POST"
             autoComplete="off"
           >
             <ul>
               <li>
-                <label>
+                <label for="first_name">
                   Name <span className="start_sign">*</span>
                 </label>
                 <div className="name_input">
                   <span>
-                    <input name="fiel_3" id="fiel_3" type="text" required />
-                    <label for="field_3">First</label>
+                    <input
+                      name="first_name"
+                      id="first_name"
+                      type="text"
+                      required
+                    />
+                    <label for="first_name">First</label>
                   </span>
                   <span>
-                    <input name="fiel_4" id="fiel_4" type="text" required />
-                    <label for="field_4">Last</label>
+                    <input name="last_name" id="fiel_4" type="text" required />
+                    <label for="last_name">Last</label>
                   </span>
                 </div>
               </li>
 
               <li>
-                <label for="field_5">
+                <label for="email">
                   Email <span className="start_sign">*</span>
                 </label>
                 <div>
-                  <input name="field_5" id="field_5" type="email" required />
+                  <input name="email" id="email" type="email" required />
                 </div>
               </li>
 
               <li>
-                <label for="field13">Comments and Questions</label>
+                <label for="comments">Comments and Questions</label>
                 <div>
                   <textarea
-                    name="field13"
-                    id="field13"
+                    name="comments"
+                    id="comments"
                     rows="10"
                     required
                     placeholder

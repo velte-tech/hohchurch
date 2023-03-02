@@ -335,7 +335,7 @@ const Outreach = () => {
         <div className="form-wrapper">
           <div className="form-case">
             <form
-              action="https://formsubmit.co/apply@hohcentre.co.uk "
+              action="https://formsubmit.co/info@hohcentre.co.uk"
               method="POST"
               className="form-connect"
             >
