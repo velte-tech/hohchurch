@@ -1,20 +1,9 @@
 import React from "react";
 import "./Prayer.css";
-// import AOS from "aos";
-// import { useState, useEffect } from 'react';
 import { MdAllInbox } from "react-icons/md";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const Prayer = () => {
-  // animation
-  // useEffect(() => {
-  //   AOS.init({
-  //       duration: 500,
-  //       // offet: 1000,
-  //     },
-  //     []
-  //   );
-  // });
 
   return (
     <div id="prayer-wrapper">
