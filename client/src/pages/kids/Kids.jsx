@@ -221,10 +221,8 @@ const Kids = () => {
               </div>
 
               <div className="spec-b">
-                Train up a child in the way he should go; even when he is old he
-                will not depart from it.
-                <br></br>
-                <span className="hoo">Proverbs 22: 6</span>
+                Train up a child in the way he should go; even when he is old he will not depart from it.
+                {/* <br></br> */} <span className="hoo">Proverbs 22: 6</span>
               </div>
 
               {/* <div className='spec-c'>

@@ -160,7 +160,7 @@
 
 
 .group-head-wrapper {
-    max-width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -208,7 +208,7 @@
 }
 
 .church-group-case {
-    max-width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -217,6 +217,7 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 5rem;
+    width: 100%;
 }
 
 
@@ -225,29 +226,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 1rem;
-}
-
-
-@media screen and (max-width: 800px) {
-    .church-group {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        margin: auto;
-    }
-
-    .church-group .ch-gr {
-        justify-content: center;
-        margin: 2rem 0;
-    }
-
-    .church-group-case {
-        max-width: 90%;
-        margin: auto;
-    }
-
+    width: 30%;
+    gap: 1em;
+    /* height: 350px; */
 }
 
 .ch-gr-1  {
@@ -263,7 +244,7 @@
 .ch-gr-2  {
     font-size: 16px;
     font-weight: 500;
-    margin: .7rem 0;
+    /* margin: .7rem 0; */
 }
 
 .ch-gr-3  {
@@ -281,8 +262,8 @@
     padding: 0;
     justify-content: flex-start;
     color: #000;
-    margin-top: .7rem;
-    margin-bottom: 2rem;
+    /* margin-top: .7rem; */
+    /* margin-bottom: 2rem; */
 }
 .ch-gr-4 .linkAnima:hover  {
     color: var(--primary_color);
@@ -291,7 +272,35 @@
 .ch-gr-5  {
     background-color: #000;
     height: 2px;
-    width: 110%;
+    width: 90%;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .church-group {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 3em;
+    }
+
+    .church-group .ch-gr {
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        height: fit-content;
+    }
+
+    .church-group-case {
+        width: 85%;
+    }
+
+    .ch-gr-5  {
+    width: 80%;
+    margin-top: 2rem;
+}
+
 }
 
 
