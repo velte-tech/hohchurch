@@ -66,7 +66,10 @@ const ParentsButts = () => {
                 {
                     showFirst && (
                         
-                        <form id='parent-form'>
+                        <form id='parent-form'
+                        action = "https://formsubmit.co/info@hohcentre.co.uk"
+                        method = "POST"
+                        >
                             
                             <div className='pns-wrapper'>
                             
