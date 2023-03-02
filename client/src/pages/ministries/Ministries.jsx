@@ -23,7 +23,9 @@ const Ministries = () => {
   });
 
   return (
-    <div id="ministry-page">
+    <div id="super">
+
+      <div id="ministry-page">
       <div className="ministry-wrapper">
         {/* showcase */}
         <div className="ministry-case">
@@ -188,6 +190,8 @@ const Ministries = () => {
 
       {/* min-sec end */}
       <ScrollToTop />
+    </div>
+
     </div>
   );
 };

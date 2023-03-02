@@ -14,7 +14,9 @@ import logo from "../../assets/brand/hohlogo.png";
 
 const Outreach = () => {
   return (
-    <div className="out-page">
+    
+    <div id="super">
+      <div className="out-page">
       <div className="out-wrapper">
         {/* showcase */}
         <div className="out-showcase">
@@ -430,6 +432,8 @@ const Outreach = () => {
       </div>
       <ScrollToTop />
     </div>
+    </div>
+
   );
 };
 

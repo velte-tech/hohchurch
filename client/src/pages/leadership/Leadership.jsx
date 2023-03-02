@@ -26,7 +26,10 @@ const Leadership = () => {
   });
 
   return (
-    <div id="super" className="leadership-page">
+    
+    <div id="super">
+
+      <div className="leadership-page">
       <div className="leadership-wrapper">
         {/* shwowcse */}
         <div className="leadership-showcase">
@@ -263,6 +266,9 @@ const Leadership = () => {
       </div>
       <ScrollToTop />
     </div>
+
+    </div>
+
   );
 };
 
