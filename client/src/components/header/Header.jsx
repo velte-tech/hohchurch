@@ -45,7 +45,10 @@ function Header() {
   };
 
   return (
-    <div className={color ? "header-navbar header-bg" : "header-navbar"}>
+    
+    <div id="super">
+
+      <div className={color ? "header-navbar header-bg" : "header-navbar"}>
       <div className="header-wrapper">
         <div className="header">
           <div className="header-1">
@@ -106,7 +109,8 @@ function Header() {
         <div
           className="menu-overlay"
           style={{
-            top: navOpen ? "0" : "-100%",
+            // top: navOpen ? "0" : "-100%",
+            right: navOpen ? "0" : "-100%",
             transitionDelay: navOpen ? "0s" : "0s",
           }}
         >
@@ -315,6 +319,9 @@ function Header() {
         </div>
       </div>
     </div>
+
+    </div>
+
   );
 }
 
