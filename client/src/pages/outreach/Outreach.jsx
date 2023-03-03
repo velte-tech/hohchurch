@@ -230,11 +230,10 @@ const Outreach = () => {
                     href="http://klmission.com/"
                     rel="noreferrer"
                   >
-                  <div className="links linkAnima">
-                    MORE INFO {" "}
-                    <span className="arrow"> </span>
-                  </div>
-                </a>
+                    <div className="links linkAnima">
+                      MORE INFO <span className="arrow"> </span>
+                    </div>
+                  </a>
                 </div>
                 <div className="sop-6"></div>
               </div>
@@ -340,9 +339,8 @@ const Outreach = () => {
 
         <div className="form-wrapper">
           <div className="form-case">
-
             <form
-              action="https://formsubmit.co/info@hohcentre.co.uk"
+              action="https://formsubmit.co/88fcc1b06d43556476d88696654f2534"
               method="POST"
               className="form-connect"
             >

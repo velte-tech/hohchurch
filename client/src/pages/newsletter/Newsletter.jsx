@@ -10,7 +10,7 @@ function Newsletter() {
       </div>
       <div className="newsletter_form">
         <form
-          action="https://formsubmit.co/info@hohcentre.co.uk"
+          action="https://88fcc1b06d43556476d88696654f2534"
           method="POST"
           title="Newsletter"
         >
