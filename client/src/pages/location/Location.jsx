@@ -33,9 +33,9 @@ const Location = () => {
                   United Kingdom
               </div>
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9 & 11 AM</div>
+              {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
                 <Link to="/Aurora" className="links linkAnima">
@@ -58,9 +58,9 @@ const Location = () => {
                   United Kingdom
               </div>
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9, 11 AM, & 6: 30 PM</div>
+              {/* <div className="day">Sunday: 9, 11 AM, & 6: 30 PM</div> */}
 
               <div className="info">
                 <Link to="/Denver" className="links linkAnima">
@@ -81,9 +81,9 @@ const Location = () => {
                   United Kingdom
               </div>
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9 & 11 AM</div>
+              {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
                 <Link to="/Lafayette" className="links linkAnima">
@@ -106,9 +106,9 @@ const Location = () => {
                   United Kingdom
               </div>
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9 & 11 AM</div>
+              {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
                 <Link to="/Longmont" className="links linkAnima">
@@ -129,9 +129,9 @@ const Location = () => {
                   United Kingdom
               </div>
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9, 11 AM, & 6: 30 PM</div>
+              {/* <div className="day">Sunday: 9, 11 AM, & 6: 30 PM</div> */}
 
               <div className="day-1">* ASL Interpreted Service</div>
 
@@ -155,9 +155,9 @@ const Location = () => {
               1730 S Buckley <br></br> RdAurora, CO 80017
             </div> */}
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9 & 11 AM</div>
+              {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
                 <Link to="/" className="links linkAnima">

@@ -115,7 +115,8 @@ a {
     justify-content: flex-start;
     border-bottom: #000 solid 2px;
     width: 350px;
-    height: 420px;
+    /* height: 420px; */
+    height: 320px;
 
 }
 

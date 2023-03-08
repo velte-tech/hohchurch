@@ -1,13 +1,8 @@
 import React from "react";
 import "./Outreach.css";
 import { Link } from "react-router-dom";
-// import spp1 from "../../assets/images/spp1.jpg";
-// import spp2 from "../../assets/images/spp2.jpg";
-// import spp3 from "../../assets/images/spp3.jpg";
-// import { MdCheckBox } from 'react-icons/md';
 import { GrMail } from "react-icons/gr";
 import { AiTwotonePhone } from "react-icons/ai";
-// import Box_check from '../../components/checkbox/Box_check';
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 import CheckboxList from "../../components/checkbox/Box_check";
 import logo from "../../assets/brand/hohlogo.png";

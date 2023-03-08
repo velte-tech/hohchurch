@@ -92,23 +92,16 @@ const Groups = () => {
               <div className="ch-gr">
                 <div className="ch-gr-1">PEACE GROUP</div>
                 <div className="ch-gr-1">LEADER - HANNAH</div>
-                <div className="ch-gr-2">
-                  {/* <br></br> */}
+                {/* <div className="ch-gr-2">
                   Wednesday: 7.30 pm - 8.30 pm
                   <br></br>
-                  {/* BIBLE STUDIES
-                <br></br> */}
-                  {/* Friday: 7.30 - 9 pm */}
-                  {/* <br></br> */}
                   WORSHIP SERVICE
-                  {/* <br></br> */}
-                  {/* Sunday */}
                 </div>
                 <div className="ch-gr-3 hover_overlay">
                   Unit 8 Fountayne House <br></br>
                   2-8 Fountayne Road <br></br>
                   London 4QL
-                </div>
+                </div> */}
                 <div className="ch-gr-4">
                   <Link className="linkAnima">
                     MORE INFO <span className="arrow"></span>{" "}
@@ -120,7 +113,7 @@ const Groups = () => {
               <div className="ch-gr">
                 <div className="ch-gr-1">POWER GROUP</div>
                 <div className="ch-gr-1">LEADER - DORCAS</div>
-                <div className="ch-gr-2">
+                {/* <div className="ch-gr-2">
                   Wednesday at 6: 30 PM <br></br>
                   Content: WeekendMessage
                 </div>
@@ -128,7 +121,7 @@ const Groups = () => {
                   Unit 8 Fountayne House <br></br>
                   2-8 Fountayne Road <br></br>
                   London 4QL
-                </div>
+                </div> */}
                 <div className="ch-gr-4">
                   <Link className="linkAnima">
                     MORE INFO <span className="arrow"></span>{" "}
@@ -140,7 +133,7 @@ const Groups = () => {
               <div className="ch-gr">
                 <div className="ch-gr-1">JOY GROUP</div>
                 <div className="ch-gr-1">LEADER - JODIE</div>
-                <div className="ch-gr-2">
+                {/* <div className="ch-gr-2">
                   Wednesday at 6: 30 PM <br></br>
                   Content: WeekendMessage
                 </div>
@@ -148,7 +141,7 @@ const Groups = () => {
                   Unit 8 Fountayne House <br></br>
                   2-8 Fountayne Road <br></br>
                   London 4QL
-                </div>
+                </div> */}
                 <div className="ch-gr-4">
                   <Link className="linkAnima">
                     MORE INFO <span className="arrow"></span>{" "}
@@ -164,7 +157,7 @@ const Groups = () => {
               <div className="ch-gr">
                 <div className="ch-gr-1">FAITH GROUP</div>
                 <div className="ch-gr-1">LEADER - JOLIE</div>
-                <div className="ch-gr-2">
+                {/* <div className="ch-gr-2">
                   Wednesday at 6: 30 PM <br></br>
                   Content: WeekendMessage
                 </div>
@@ -172,7 +165,7 @@ const Groups = () => {
                   Unit 8 Fountayne House <br></br>
                   2-8 Fountayne Road <br></br>
                   London 4QL
-                </div>
+                </div> */}
                 <div className="ch-gr-4">
                   <Link className="linkAnima">
                     MORE INFO <span className="arrow"></span>{" "}
@@ -184,7 +177,7 @@ const Groups = () => {
               <div className="ch-gr">
                 <div className="ch-gr-1">HOPE GROUP</div>
                 <div className="ch-gr-1">MARCIA</div>
-                <div className="ch-gr-2">
+                {/* <div className="ch-gr-2">
                   Wednesday at 6: 30 PM <br></br>
                   Content: WeekendMessage
                 </div>
@@ -192,7 +185,7 @@ const Groups = () => {
                   Unit 8 Fountayne House <br></br>
                   2-8 Fountayne Road <br></br>
                   London 4QL
-                </div>
+                </div> */}
                 <div className="ch-gr-4">
                   <Link className="linkAnima">
                     MORE INFO <span className="arrow"></span>{" "}
@@ -204,7 +197,7 @@ const Groups = () => {
               <div className="ch-gr">
                 <div className="ch-gr-1">LOVE GROUP</div>
                 <div className="ch-gr-1">LEADER MABEL</div>
-                <div className="ch-gr-2">
+                {/* <div className="ch-gr-2">
                   Wednesday at 6: 30 PM <br></br>
                   Content: WeekendMessage
                 </div>
@@ -212,7 +205,7 @@ const Groups = () => {
                   Unit 8 Fountayne House <br></br>
                   2-8 Fountayne Road <br></br>
                   London 4QL
-                </div>
+                </div> */}
                 <div className="ch-gr-4">
                   <Link className="linkAnima">
                     MORE INFO <span className="arrow"></span>{" "}
@@ -229,7 +222,7 @@ const Groups = () => {
               <div className="ch-gr">
                 <div className="ch-gr-1">MEN'S GROUP</div>
                 <div className="ch-gr-1">LEADER - JOLIE</div>
-                <div className="ch-gr-2">
+                {/* <div className="ch-gr-2">
                   Wednesday at 6: 30 PM <br></br>
                   Content: WeekendMessage
                 </div>
@@ -237,7 +230,7 @@ const Groups = () => {
                   Unit 8 Fountayne House <br></br>
                   2-8 Fountayne Road <br></br>
                   London 4QL
-                </div>
+                </div> */}
                 <div className="ch-gr-4">
                   <Link className="linkAnima">
                     MORE INFO <span className="arrow"></span>{" "}
@@ -249,7 +242,7 @@ const Groups = () => {
               <div className="ch-gr">
                 <div className="ch-gr-1">WOMEN'S GROUP</div>
                 <div className="ch-gr-1">MARCIA</div>
-                <div className="ch-gr-2">
+                {/* <div className="ch-gr-2">
                   Wednesday at 6: 30 PM <br></br>
                   Content: WeekendMessage
                 </div>
@@ -257,7 +250,7 @@ const Groups = () => {
                   Unit 8 Fountayne House <br></br>
                   2-8 Fountayne Road <br></br>
                   London 4QL
-                </div>
+                </div> */}
                 <div className="ch-gr-4">
                   <Link className="linkAnima">
                     MORE INFO <span className="arrow"></span>{" "}
@@ -269,7 +262,7 @@ const Groups = () => {
               <div className="ch-gr">
                 <div className="ch-gr-1">WEEKLY PROGRAMMES</div>
                 <div className="ch-gr-1">LEADER MABEL</div>
-                <div className="ch-gr-2">
+                {/* <div className="ch-gr-2">
                   Wednesday at 6: 30 PM <br></br>
                   Content: WeekendMessage
                 </div>
@@ -277,7 +270,7 @@ const Groups = () => {
                   Unit 8 Fountayne House <br></br>
                   2-8 Fountayne Road <br></br>
                   London 4QL
-                </div>
+                </div> */}
                 <div className="ch-gr-4">
                   <Link className="linkAnima">
                     MORE INFO <span className="arrow"></span>{" "}

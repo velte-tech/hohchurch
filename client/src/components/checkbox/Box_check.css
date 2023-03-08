@@ -1,5 +1,6 @@
 .box-check input {
    margin-right: .5rem;
+   cursor: pointer;
 }
 
 .ch-head {

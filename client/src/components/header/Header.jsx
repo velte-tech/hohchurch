@@ -128,7 +128,7 @@ function Header() {
               {/* <NavLink to='/'> */}
               <div className="hel">
                 <div className="shape"></div>
-                <span className="men">EVENTS & TIMES</span>
+                <span className="men">EVENTS</span>
               </div>
               {/* </NavLink> */}
               <div className="nav-item-wrapper"></div>
