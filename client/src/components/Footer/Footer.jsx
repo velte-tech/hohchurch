@@ -21,6 +21,7 @@ function Footer() {
             <a
               href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=L5USDDJ9JLKZJ"
               target="_blank"
+              rel="noreferrer"
               className="links linkAnima"
             >
               Give <span className="arrow"></span>
@@ -36,8 +37,9 @@ function Footer() {
           <div className="content_Menu2 menu">
             <h3 className="footer_menu_head">External Links</h3>
             <a
-              to={{ pathname: "" }}
+              href=""
               target="_blank"
+              rel="noreferrer"
               className="links linkAnima"
             >
               Kindom Lifstyle Mission<span className="arrow"></span>
@@ -45,6 +47,7 @@ function Footer() {
             <a
               href="http://highwayhouse.co.uk/"
               target="_blank"
+              rel="noreferrer"
               className="links linkAnima"
             >
               HighWay House{" "}
@@ -52,15 +55,17 @@ function Footer() {
               <span className="arrow"></span>
             </a>
             <a
-              to={{ pathname: "" }}
+              href=""
               target="_blank"
+              rel="noreferrer"
               className="links linkAnima"
             >
               kingdom alliance mentorship <span className="arrow"></span>
             </a>
             <a
-              to={{ pathname: "" }}
+              href=""
               target="_blank"
+              rel="noreferrer"
               className="links linkAnima"
             >
               Highway youth club{" "}
@@ -68,8 +73,9 @@ function Footer() {
               <span className="arrow"></span>
             </a>
             <a
-              to={{ pathname: "" }}
+              href=""
               target="_blank"
+              rel="noreferrer"
               className="links linkAnima"
             >
               Suplimentary education{" "}
@@ -77,8 +83,9 @@ function Footer() {
               <span className="arrow"></span>
             </a>
             <a
-              to={{ pathname: "" }}
+              href=""
               target="_blank"
+              rel="noreferrer"
               className="links linkAnima"
             >
               keep it real{" "}
@@ -88,6 +95,7 @@ function Footer() {
             <a
               href="https://linktr.ee/Shift.HY"
               target="_blank"
+              rel="noreferrer"
               className="links linkAnima"
             >
               Shift{" "}
@@ -107,7 +115,7 @@ function Footer() {
             <Link to="/PrivacyPolicy" className="links linkAnima">
               Privacy & Policy <span className="arrow"></span>
             </Link>
-            <Link to="/" className="links linkAnima">
+            <Link to="/Im_new" className="links linkAnima">
               FAQ <span className="arrow"></span>
             </Link>
             {/* <Link to="/ministries" className="links linkAnima">

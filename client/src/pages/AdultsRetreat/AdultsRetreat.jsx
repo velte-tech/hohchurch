@@ -34,7 +34,7 @@ const Lafayette = () => {
       <section id="adult_retreat_showcase">
         <div className="showcase_wrapper">
           <h1 className="focus-in-contract-bck">ADULT RETREAT</h1>
-          <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p>
+          {/* <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p> */}
           <p className="laf_asl focus-in-contract-bck">
             House of Holiness Church
           </p>
