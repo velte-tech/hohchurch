@@ -26,11 +26,13 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  padding: 1rem;
 }
 
 #weekly_programme_showcase h1 {
   color: #fff;
   font-size: 3rem;
+  padding: 0 1rem;
 }
 
 #weekly_programme_showcase .date {

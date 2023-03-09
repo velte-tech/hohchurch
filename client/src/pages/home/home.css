@@ -4,17 +4,18 @@
 
 #home .home_showcase {
   min-height: 40rem;
-  background: url("../../assets/images/tmm3.jpeg") no-repeat center center/cover !important;
+  background-color: #fff;
+  /* background: url("../../assets/images/tmm3.jpeg") no-repeat center center/cover !important; */
   position: relative;
 }
 
-#home .home_showcase:after {
+/* #home .home_showcase:after {
   content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
   inset: 0;
   z-index: 1;
-}
+} */
 
 #home .showcase_content {
   transform: translateY(17rem);
@@ -23,7 +24,8 @@
   z-index: 2;
 }
 #home .showcase_content .top p {
-  color: #fff;
+  color: var(--primary_color) !important;
+  /* color: #fff; */
   font-size: 2.5rem;
 }
 
@@ -44,6 +46,7 @@
   text-transform: uppercase;
   padding: 0 2.5rem 0.6rem 0;
   transition: transform var(--transition);
+  color: var(--primary_color);
 }
 
 /* ======== WELCOM SECTION ======== */
@@ -1487,19 +1490,15 @@
   }
 }
 
-
-
-
 /* pastor alex  */
 #psalex {
   padding: 5rem 0;
 }
 
-
 @media screen and (max-width: 600px) {
   #psalex {
-  padding: 0;
-  padding-bottom: 4rem;
-}
+    padding: 0;
+    padding-bottom: 4rem;
+  }
 }
 /* pastor alex end */
