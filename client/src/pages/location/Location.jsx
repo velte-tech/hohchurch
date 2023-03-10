@@ -33,9 +33,9 @@ const Location = () => {
                   United Kingdom
               </div>
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9 & 11 AM</div>
+              {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
                 <Link to="/Aurora" className="links linkAnima">
@@ -58,9 +58,9 @@ const Location = () => {
                   United Kingdom
               </div>
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9, 11 AM, & 6: 30 PM</div>
+              {/* <div className="day">Sunday: 9, 11 AM, & 6: 30 PM</div> */}
 
               <div className="info">
                 <Link to="/Denver" className="links linkAnima">
@@ -74,16 +74,16 @@ const Location = () => {
             <div className="campus">
               <div className="city">ADULTS RETREAT</div>
 
-              <div className="broad-1">Broadcast Location</div>
+              {/* <div className="broad-1">Broadcast Location</div> */}
 
               <div className="add hover_overlay_2">
                 Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
                   United Kingdom
               </div>
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9 & 11 AM</div>
+              {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
                 <Link to="/Lafayette" className="links linkAnima">
@@ -106,9 +106,9 @@ const Location = () => {
                   United Kingdom
               </div>
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9 & 11 AM</div>
+              {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
                 <Link to="/Longmont" className="links linkAnima">
@@ -122,18 +122,18 @@ const Location = () => {
             <div className="campus">
               <div className="city">21ST CENTURY <br></br> EDUCATION</div>
 
-              <div className="broad"></div>
+              {/* <div className="broad"></div> */}
 
               <div className="add hover_overlay_2">
                 Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
                   United Kingdom
               </div>
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9, 11 AM, & 6: 30 PM</div>
+              {/* <div className="day">Sunday: 9, 11 AM, & 6: 30 PM</div> */}
 
-              <div className="day-1">* ASL Interpreted Service</div>
+              {/* <div className="day-1">* ASL Interpreted Service</div> */}
 
               <div className="info">
                 <Link to="/West" className="links linkAnima">
@@ -147,17 +147,18 @@ const Location = () => {
             <div className="campus">
               <div className="city-1">SHIFT</div>
 
-              {/* <div className='broad'>
-              Broadcast Location
-            </div> */}
+              <div className="add hover_overlay_2">
+                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
+                  United Kingdom
+              </div>
 
               {/* <div className='add'>
               1730 S Buckley <br></br> RdAurora, CO 80017
             </div> */}
 
-              <div className="ser">SERVICES</div>
+              {/* <div className="ser">SERVICES</div> */}
 
-              <div className="day">Sunday: 9 & 11 AM</div>
+              {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
                 <Link to="/" className="links linkAnima">

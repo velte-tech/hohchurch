@@ -175,15 +175,16 @@ function Home() {
                     do this by demonstrating Gods love to the world.
                   </div>
 
-                  <div className="psr3">
-                    <Link to="/" className="links linkAnima">
-                      CONTACT <span className="arrow"></span>
-                    </Link>
-                  </div>
+                <div className="psr3">
+                  <Link to="/contact" className="links linkAnima">
+                    CONTACT <span className="arrow"></span>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
         </div>
 
         {/* PASTOR ALEX end */}
