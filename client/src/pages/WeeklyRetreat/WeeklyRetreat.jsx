@@ -32,8 +32,8 @@ const Longmont = () => {
     <div id="super">
       <section id="weekly_programme_showcase">
         <div className="showcase_wrapper">
-          <h1 className="focus-in-contract-bck">WEEKLY PROGRAMMES</h1>
-          <p className="date focus-in-contract-bck">SUNDAY: 9 & 11 AM</p>
+          <h1 className="focus-in-contract-bck">WEEKLY PROGRAMME</h1>
+          {/* <p className="date focus-in-contract-bck">SUNDAY: 9 & 11 AM</p> */}
           <Search />
         </div>
       </section>
@@ -42,13 +42,15 @@ const Longmont = () => {
         <div className="about_wrapper container">
           <h1 className="text_center">ABOUT</h1>
           <p className="text_center">
-            Our weekly Sunday celebration service takes place every Sunday on our church premises from 11.30 am– 13.30 pm.This is a time of joyous praise and worship, a word of teaching and encouragement is shared and we also dedicate time to prayer and communion.
-            We also meet every Monday, Tuesday and Thursday on our telephone prayer line from 7: 00 pm– 8: 00 pm
-            We meet on Wednesdays from 12 - 1 pm, 3 - 4 pm on our telephone prayer line and at 7.30 pm on our church premises
-            We meet on facebook live every Friday at 7.30 pm
-            for our Bible Academy
-            Prayer Line: 0330 9981 259
- (
+            Our weekly Sunday celebration service takes place every Sunday on
+            our church premises from 11.30 am– 13.30 pm.This is a time of joyous
+            praise and worship, a word of teaching and encouragement is shared
+            and we also dedicate time to prayer and communion. We also meet
+            every Monday, Tuesday and Thursday on our telephone prayer line from
+            7: 00 pm– 8: 00 pm We meet on Wednesdays from 12 - 1 pm, 3 - 4 pm on
+            our telephone prayer line and at 7.30 pm on our church premises We
+            meet on facebook live every Friday at 7.30 pm for our Bible Academy
+            Prayer Line: 0330 9981 259 (
             <Link className="hover_overlay">John 15:12</Link>) .
           </p>
         </div>
@@ -73,8 +75,15 @@ const Longmont = () => {
           >
             <h2>PASTOR ALEX GYESI</h2>
             <p>
-              My wife and I started our ministry 33 years ago when we said“ YES!”to God’ s call.Since then have not looked back.We have embarked on many projects, ranging from providing supplementary education
-              for children in deprived areas - to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site.We have witnessed first - hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.
+              My wife and I started our ministry 33 years ago when we said“
+              YES!”to God’ s call.Since then have not looked back.We have
+              embarked on many projects, ranging from providing supplementary
+              education for children in deprived areas - to running a homeless
+              shelter since 2009 till present day and many more ministries that
+              you will come across as you browse this site.We have witnessed
+              first - hand, how living a life fully surrendered to Christ can
+              positively impact you, your family, friends and society as a
+              whole.
             </p>
             <Link className="linkAnima" to="/contact">
               Contact <span className="arrow"></span>
@@ -84,7 +93,7 @@ const Longmont = () => {
       </section>
 
       <section id="longmont_ministries">
-        <div className="about_welcome container">
+        {/* <div className="about_welcome container">
           <h2>ministries</h2>
           <div className="right">
             <div className="card">
@@ -127,18 +136,18 @@ const Longmont = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* ======= SECTION : PADCAST ======= */}
-      <section id="longmont_podcast">
+      <section id="longmont_podcast" style={{ marginTop: "150px" }}>
         <div className="left ">
           <img src={podcastImg} alt="slideImage" data-aos="fade-right" />
           <div
             className="shape_2"
             data-aos="fade-right"
             data-aos-delay="300"
-            data-aos-anchor-placement="center-bottom"
+            data-aos-anchor-placement="top-center"
           ></div>
         </div>
 
@@ -226,7 +235,7 @@ const Longmont = () => {
               </div>
             </div>
 
-            <div
+            {/* <div
               className="card"
               data-aos-delay="900"
               data-aos="fade-left"
@@ -240,7 +249,7 @@ const Longmont = () => {
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
-            </div>
+            </div> */}
             <div
               className="shape"
               data-aos="slide-left"

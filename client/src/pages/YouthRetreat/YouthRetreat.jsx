@@ -27,8 +27,10 @@ const Denver = () => {
     <div id="super">
       <section id="denver_showcase">
         <div className="showcase_wrapper">
-          <h1 className="focus-in-contract-bck">YOUTH RETREAT</h1>
-          <p className="date focus-in-contract-bck">SUNDAY: 9,11 AM & 6:30PM</p>
+          <h1 className="focus-in-contract-bck">
+            Changed Lives - Youth and young adults retreat
+          </h1>
+          {/* <p className="date focus-in-contract-bck">SUNDAY: 9,11 AM & 6:30PM</p> */}
           <Search />
         </div>
       </section>
@@ -110,9 +112,9 @@ const Denver = () => {
       {/* ======= SECTION: DENVER_EVENTS ======= */}
       <section id="denver_events">
         <div className="denver_events_wrapper">
-          <h2> Youth Retreat Events</h2>
+          <h2> Changed Lives - Youth and Young Adults Retreat</h2>
           <div className="card_wrapper">
-            <div className="card">
+            {/* <div className="card">
               <img src={breakfast} alt="" />
               <div className="text">
                 <p className="hover_overlay ">
@@ -127,8 +129,8 @@ const Denver = () => {
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
-            </div>
-            <div className="card">
+            </div> */}
+            {/* <div className="card">
               <img src={comingSoon} alt="" />
               <div className="text">
                 <p className="hover_overlay ">
@@ -143,7 +145,7 @@ const Denver = () => {
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
