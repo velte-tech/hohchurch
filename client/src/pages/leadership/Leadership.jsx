@@ -82,7 +82,7 @@ const Leadership = () => {
                       Head Pastor   
                     </div>
 
-                    <EmailContactButton emailAddress="info@hohcenter.co.uk" subject="Message" />
+                    <EmailContactButton emailAddress="info@hohcentre.co.uk" subject="Message" />
 
                   </div>
 
@@ -93,7 +93,7 @@ const Leadership = () => {
                     <div className="lf12">Minister Dorcas Gyesi</div>
                     <div className="lf3">Assistant Pastor</div>
 
-                    <EmailContactButton emailAddress="info@hohcenter.co.uk" subject="Message" />
+                    <EmailContactButton emailAddress="info@hohcentre.co.uk" subject="Message" />
 
                   </div>
 
@@ -104,7 +104,7 @@ const Leadership = () => {
                     <div className="lf12">Rev Rolland Owusu Mensah</div>
                     <div className="lf3">Assistant Pastor</div>
 
-                    <EmailContactButton emailAddress="info@hohcenter.co.uk" subject="Message" />
+                    <EmailContactButton emailAddress="info@hohcentre.co.uk" subject="Message" />
 
                   </div>
 
@@ -121,7 +121,7 @@ const Leadership = () => {
                     <div className="lf12">Minister Hannah</div>
                     <div className="lf3">Leader For Peace Group</div>
 
-                    <EmailContactButton emailAddress="hannah@hohcenter.co.uk" subject="Message" />
+                    <EmailContactButton emailAddress="hannah@hohcentre.co.uk" subject="Message" />
 
                   </div>
 
@@ -132,7 +132,7 @@ const Leadership = () => {
                     <div className="lf12">Minister Dorcas</div>
                     <div className="lf3">Leader For Power Group</div>
 
-                    <EmailContactButton emailAddress="dorcas@hohcenter.co.uk" subject="Message" />
+                    <EmailContactButton emailAddress="dorcas@hohcentre.co.uk" subject="Message" />
 
                   </div>
 
@@ -143,7 +143,7 @@ const Leadership = () => {
                     <div className="lf12">Minister Jodie</div>
                     <div className="lf3">Leader For Joy Group</div>
 
-                    <EmailContactButton emailAddress="info@hohcenter.co.uk" subject="Message" />
+                    <EmailContactButton emailAddress="info@hohcentre.co.uk" subject="Message" />
 
                   </div>
 
@@ -160,7 +160,7 @@ const Leadership = () => {
                     <div className="lf12">Minister Jolie</div>
                     <div className="lf3">Leader For Faith Group</div>
 
-                    <EmailContactButton emailAddress="jolie@hohcenter.co.uk" subject="Message" />
+                    <EmailContactButton emailAddress="jolie@hohcentre.co.uk" subject="Message" />
 
                   </div>
 
@@ -171,7 +171,7 @@ const Leadership = () => {
                     <div className="lf12">Minister Mable</div>
                     <div className="lf3">Leader For Love Group</div>
 
-                    <EmailContactButton emailAddress="mabel@hohcenter.co.uk" subject="Message" />
+                    <EmailContactButton emailAddress="mabel@hohcentre.co.uk" subject="Message" />
 
                   </div>
 
@@ -182,7 +182,7 @@ const Leadership = () => {
                     <div className="lf12">Minister Marcia</div>
                     <div className="lf3">Leader For Hope Group</div>
 
-                    <EmailContactButton emailAddress="marcia@hohcenter.co.uk" subject="Message" />
+                    <EmailContactButton emailAddress="marcia@hohcentre.co.uk" subject="Message" />
 
                   </div>
 
