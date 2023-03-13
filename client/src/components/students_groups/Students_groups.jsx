@@ -1,9 +1,10 @@
 import React from 'react'
 import './Students_groups.css'
 import { useState, useEffect } from 'react';
-import weddd from "../../assets/images/weddd.jpg";
+// import weddd from "../../assets/images/weddd.jpg";
+import weddd from "../../assets/images/YAB.jpg";
 import { Link } from 'react-router-dom';
-import worr from '../../assets/images/DD.webp'
+import worr from '../../assets/images/YAB2.jpg'
 import AOS from "aos";
 
 const Students_groups = () => {

@@ -22,15 +22,6 @@ function Header() {
 
   const navigate = useNavigate();
 
-  // const toggle = (screen) => {
-  //   if (screen === "l&t") {
-  //     navigate("/location");
-  //   } else {
-  //     navigate("/");
-  //   }
-  //   setState(screen);
-  // };
-
   const [navOpen, setNavOpen] = useState(false);
 
   const [state, setState] = useState("home");

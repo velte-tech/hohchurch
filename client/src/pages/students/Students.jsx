@@ -1,7 +1,9 @@
 import React from "react";
 import "./Students.css";
-import stuu22 from "../../assets/images/stuu22.jpg";
-import nxtt from "../../assets/images/nxtt.jpg";
+// import stuu22 from "../../assets/images/stuu22.jpg";
+import stuu22 from "../../assets/images/YAB3.jpg";
+// import nxtt from "../../assets/images/nxtt.jpg";
+import nxtt from "../../assets/images/YAB.jpg";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import { useEffect } from "react";
