@@ -6,10 +6,10 @@ import "aos/dist/aos.css";
 import "./YouthRetreat.css";
 import Search from "../../components/searchLocate/Search";
 import AboutSlideIn from "../../components/aboutSlideIn/AboutSlideIn";
-import bellImg from "../../assets/images/churchBell.jpg";
-import personImg from "../../assets/images/ya22.jpeg";
-import breakfast from "../../assets/images/breakfast.jpg";
-import comingSoon from "../../assets/images/comingSoon.jpg";
+import youthImg from "../../assets/images/retreat-01.jpg";
+import personImg from "../../assets/images/retreat-03.jpg";
+// import breakfast from "../../assets/images/breakfast.jpg";
+// import comingSoon from "../../assets/images/comingSoon.jpg";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const Denver = () => {
@@ -60,7 +60,7 @@ const Denver = () => {
               data-aos="fade-left"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={bellImg} alt="" />
+              <img src={youthImg} alt="" />
               <div className="text">
                 <p className="hover_overlay ">HOH-Church Young Adults</p>
                 <p>Joins us and connect with the family.</p>
