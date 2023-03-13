@@ -1,9 +1,10 @@
 import { React, useEffect } from "react";
 import "./Ministries.css";
-import bapp from "../../assets/images/cx5.jpeg";
-// import bapp1 from "../../assets/images/kmm.jpeg";
+// import bapp from "../../assets/images/cx5.jpeg";
+import bapp from "../../assets/images/YAB.jpg";
+import bapp6 from "../../assets/images/kmm.jpeg";
 import bapp2 from "../../assets/images/ya22.jpeg";
-import bapp3 from "../../assets/images/gpo1.jpeg";
+import bapp3 from "../../assets/images/YAB4.jpg";
 import bapp4 from "../../assets/images/gpo2.jpeg";
 import bapp5 from "../../assets/images/gpo3.jpeg";
 import AOS from "aos";
@@ -136,7 +137,7 @@ const Ministries = () => {
 
             <div className="minsec">
               <div className="min-1">
-                <img src={bapp3} alt="" />
+                <img src={bapp6} alt="" />
               </div>
               <div className="min-2">PARENTS</div>
               <div className="min-3">
