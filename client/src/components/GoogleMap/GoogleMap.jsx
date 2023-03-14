@@ -7,6 +7,7 @@ function GoogleMap() {
       <div class="mapouter">
         <div class="gmap_canvas">
           <iframe
+            title="map"
             width="1500px"
             height="500"
             id="gmap_canvas"

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./give.css";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 // import paymentOptions from "../../assets/images/paypal_icon.jpg";
@@ -33,6 +32,7 @@ function Give() {
             <a
               href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=L5USDDJ9JLKZJ"
               target="_blank"
+              rel="noopener noreferrer"
               className="donate_link btn"
             >
               Donate
@@ -42,6 +42,7 @@ function Give() {
         <div className="arrow_down">
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=L5USDDJ9JLKZJ"
           >
             <MdOutlineDoubleArrow />

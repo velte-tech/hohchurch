@@ -15,7 +15,7 @@ function AboutSlideIn() {
       >
         <img src={churchImg} alt="" />
         <div className="text">
-          <p className="hover_overlay ">Leaadership @ HOH-Chruch</p>
+          <p className="hover_overlay ">Leadership @ HOH-Chruch</p>
           <p>Meet the elders and leader of Highway of Holiness Church.</p>
           <Link to="/Leadership" className="linkAnima">
             Learn More <span className="arrow"></span>
