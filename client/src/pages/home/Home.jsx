@@ -16,6 +16,9 @@ import outreachImg from "../../assets/images/outreach.jpg";
 import newHereImg from "../../assets/images/newHere.jpg";
 import phonexxx from "../../assets/images/phone-app.png";
 
+//video
+import pastorVideo from "../../assets/video/video.mp4";
+
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 function Home() {
@@ -33,13 +36,20 @@ function Home() {
     <>
       <section id="home">
         <div className="home_showcase">
+          <video autoPlay muted loop id="video" type="video/mp4">
+            <source src={pastorVideo} />
+          </video>
           <div className="container">
             <div className="showcase_content">
               <div className="top">
-                <p>WELCOME TO</p>
-                <p>HIGHWAY OF HOLINESS CHURCH</p>
+                <p data-aos="zoom-in" data-aos-delay="200">
+                  WELCOME TO
+                </p>
+                <p data-aos="zoom-in" data-aos-delay="400">
+                  HIGHWAY OF HOLINESS CHURCH
+                </p>
               </div>
-              <div className="links">
+              <div className="links" data-aos="zoom-in" data-aos-delay="600">
                 <Link to="/sermon/1" className="link linkAnima">
                   Watch Now
                   <span className="arrow"></span>
@@ -175,16 +185,15 @@ function Home() {
                     do this by demonstrating Gods love to the world.
                   </div>
 
-                <div className="psr3">
-                  <Link to="/contact" className="links linkAnima">
-                    CONTACT <span className="arrow"></span>
-                  </Link>
+                  <div className="psr3">
+                    <Link to="/contact" className="links linkAnima">
+                      CONTACT <span className="arrow"></span>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
         </div>
 
         {/* PASTOR ALEX end */}
@@ -228,7 +237,7 @@ function Home() {
                 <a
                   href="https://www.youtube.com/@highwayofholinesschristian7997"
                   target="_blank"
-                  // rel="noopener noreferrer"mk
+                  rel="noopener noreferrer"
                 >
                   <AiFillYoutube />
                 </a>
@@ -263,6 +272,7 @@ function Home() {
                   <a
                     className="btn"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://youtu.be/NAg3fUq66-o"
                   >
                     VIEW
@@ -286,6 +296,7 @@ function Home() {
                   <a
                     className="btn"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://www.youtube.com/live/aDfTtKRBnBc?feature=share"
                   >
                     VIEW
@@ -307,6 +318,7 @@ function Home() {
                   <a
                     className="btn"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://www.youtube.com/live/ZQyO7YDV0Us?feature=share"
                   >
                     VIEW
@@ -331,6 +343,7 @@ function Home() {
                   <a
                     className="btn"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://www.youtube.com/live/L2gIEE64KbU?feature=share"
                   >
                     VIEW
@@ -352,6 +365,7 @@ function Home() {
                   <a
                     className="btn"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href=" https://www.youtube.com/live/S-vIVk55kbg?feature=share"
                   >
                     VIEW
@@ -374,6 +388,7 @@ function Home() {
                   <a
                     className="btn"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://www.youtube.com/live/5lqmtiGC0WM?feature=share"
                   >
                     VIEW

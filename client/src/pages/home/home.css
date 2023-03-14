@@ -9,13 +9,23 @@
   position: relative;
 }
 
-/* #home .home_showcase:after {
+#video {
+  position: absolute;
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  /* z-index: -1; */
+  border: 0;
+  outline: 0;
+}
+
+#home .home_showcase:after {
   content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
   inset: 0;
   z-index: 1;
-} */
+}
 
 #home .showcase_content {
   transform: translateY(17rem);
@@ -24,9 +34,9 @@
   z-index: 2;
 }
 #home .showcase_content .top p {
-  color: var(--primary_color) !important;
   /* color: #fff; */
   font-size: 2.5rem;
+  color: var(--primary_color) !important;
 }
 
 #home .showcase_content .top p:last-child {
@@ -46,7 +56,7 @@
   text-transform: uppercase;
   padding: 0 2.5rem 0.6rem 0;
   transition: transform var(--transition);
-  color: var(--primary_color);
+  color: #fff;
 }
 
 /* ======== WELCOM SECTION ======== */
