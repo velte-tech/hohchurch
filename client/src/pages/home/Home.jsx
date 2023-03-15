@@ -72,7 +72,7 @@ function Home() {
               data-aos="fade-right"
               data-aos-anchor-placement="top-bottom"
             >
-              Welcome to Highway Of Holiness Church
+              OUR MISSION
             </p>
 
             {/* <p>Highway Of Holiness Church</p> */}
@@ -83,9 +83,9 @@ function Home() {
               data-aos-anchor-placement="center-bottom"
               className="home_text"
             >
-              We meet on Wednesdays from 12- 1pm, 3-4pm on our telephone prayer
-              line and at 7.30pm on our church premises We meet on facebook live
-              every Friday at 7.30pm for our Bible Academy
+              To follow God fully and lead nations to eternity through teaching
+              the word of God and the practical demonstration of the love of God
+              to the world.
             </p>
           </div>
           <div className="right">
