@@ -253,13 +253,13 @@ function Header() {
                 >
                   KIDS
                 </Link>
-                <Link
+                {/* <Link
                   to="/Students"
                   onClick={() => setNavOpen(!navOpen)}
                   className="hover_overlay"
                 >
                   STUDENTS
-                </Link>
+                </Link> */}
                 <Link
                   to="/Prayer"
                   onClick={() => setNavOpen(!navOpen)}
@@ -274,20 +274,20 @@ function Header() {
                 >
                   YOUNG ADULTS
                 </Link>
-                <Link
+                {/* <Link
                   to="/Parents"
                   onClick={() => setNavOpen(!navOpen)}
                   className="hover_overlay"
                 >
                   PARENTS
-                </Link>
-                <Link
+                </Link> */}
+                {/* <Link
                   to="/Care"
                   onClick={() => setNavOpen(!navOpen)}
                   className="hover_overlay"
                 >
                   CARE
-                </Link>
+                </Link> */}
               </div>
 
               {/* drop-dowm end */}

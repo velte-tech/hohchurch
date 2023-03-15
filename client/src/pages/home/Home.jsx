@@ -8,7 +8,8 @@ import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
 import { AiFillYoutube } from "react-icons/ai";
-import kmmm3 from "../../assets/images/alexdocas2.jpg";
+// import kmmm3 from "../../assets/images/alexdocas2.jpg";
+import kmmm3 from "../../assets/images/alexdocas22.png";
 
 // Images
 import churchImg from "../../assets/images/church.jpg";

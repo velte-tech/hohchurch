@@ -306,6 +306,13 @@
     }
 }
 
+@media screen and (max-width: 950px) {
+    .interested-wrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+}
+
 .hoo a {
     color: var(--primary_color);
 }
