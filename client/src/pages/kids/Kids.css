@@ -98,7 +98,7 @@
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
     background: var(--primary_color);
     height: 3rem;
-    width: 85%;
+    width: 60%;
     position: absolute;
     top: 2rem;
     left: 0;
@@ -116,6 +116,7 @@
     font-weight: 800;
     position: absolute;
     top: 2.5rem;
+    left: 10px;
 }
 
 .kc-b {
@@ -170,14 +171,14 @@
         margin-bottom: 2rem;
     }
 
-    .kk-s {
+    /* .kk-s {
         width: 50%;
-    }
+    } */
 }
 
 @media screen and (max-width: 600px) {
      .kk-s {
-        width: 75%;
+        width: 70%;
     }
 
     .kk-txt-2 {
@@ -226,7 +227,7 @@
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
     background: var(--primary_color);
     height: 3rem;
-    width: 35%;
+    width: 45%;
     position: absolute;
     top: 2rem;
     left: 0;
@@ -303,12 +304,21 @@
     font-size: 25px;
 }
 
+.ka-s {
+    width: 50%;
+}
+
 }
 
 @media screen and (max-width: 600px) {
     .kb-txt-2 {
     font-size: 22px;
 }
+
+.ka-s {
+    width: 65%;
+}
+
 }
 
 /* kids outreachend */

@@ -55,7 +55,7 @@ const Kids = () => {
                   <div className="kc-a">
                     <div className="kk-s-over">
                       <div className="kk-s"></div>
-                      <div className="kk-txt">EARLY CHILDHOOD</div>
+                      <div className="kk-txt">KLM KIDS</div>
                     </div>
                   </div>
 
@@ -84,7 +84,7 @@ const Kids = () => {
                   <div className="kc-a2">
                     <div className="kk-s-over">
                       <div className="kk-s"></div>
-                      <div className="kk-txt">EARLY CHILDHOOD</div>
+                      <div className="kk-txt">HOH KIDS</div>
                     </div>
                   </div>
 
@@ -113,7 +113,7 @@ const Kids = () => {
                   <div className="kc-a3">
                     <div className="kk-s-over">
                       <div className="kk-s"></div>
-                      <div className="kk-txt">EARLY CHILDHOOD</div>
+                      <div className="kk-txt">SUNDAY SCHOOL</div>
                     </div>
                   </div>
 
@@ -277,9 +277,9 @@ const Kids = () => {
                       KLM INFANT & CHILD <br></br>
                       DEDICATION
                     </div>
-                    <div className="sem-c-txt-2">
+                    {/* <div className="sem-c-txt-2">
                       February 18, 2023 | Lafayette
-                    </div>
+                    </div> */}
                     <div className="sem-c-txt-3">
                       At Highway of Holiness, Infant & Child dedication is an
                       opportunity for parents to make a commitment...

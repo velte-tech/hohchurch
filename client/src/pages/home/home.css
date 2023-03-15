@@ -1509,6 +1509,13 @@
   padding: 5rem 0;
 }
 
+#psalex .psl-pic img {
+  object-fit: contain;
+  height: 400px;
+  width: 100%;
+  
+}
+
 @media screen and (max-width: 600px) {
   #psalex {
     padding: 0;

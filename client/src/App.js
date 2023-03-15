@@ -24,11 +24,8 @@ import {
   Ministries,
   Outreach,
   Kids,
-  Students,
   Prayer,
   Young_adults,
-  Parents,
-  Care,
   Messages,
   Newsletter,
   Serve,
@@ -83,15 +80,15 @@ const router = createBrowserRouter(
 
       <Route path="/Kids" element={<Kids />} />
 
-      <Route path="/Students" element={<Students />} />
+      {/* <Route path="/Students" element={<Students />} /> */}
 
       <Route path="/Prayer" element={<Prayer />} />
 
       <Route path="/Young_adults" element={<Young_adults />} />
 
-      <Route path="/Parents" element={<Parents />} />
+      {/* <Route path="/Parents" element={<Parents />} /> */}
 
-      <Route path="/Care" element={<Care />} />
+      {/* <Route path="/Care" element={<Care />} /> */}
 
       <Route path="/Messages" element={<Messages />} />
 
