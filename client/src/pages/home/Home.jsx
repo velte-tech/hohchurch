@@ -37,9 +37,9 @@ function Home() {
     <>
       <section id="home">
         <div className="home_showcase">
-          <video autoPlay muted loop id="video" type="video/mp4">
+          {/* <video autoPlay muted loop id="video" type="video/mp4">
             <source src={pastorVideo} />
-          </video>
+          </video> */}
           <div className="container">
             <div className="showcase_content">
               <div className="top">
@@ -158,7 +158,7 @@ function Home() {
                     data-aos-anchor-placement="center-bottom"
                     data-aos-delay="600"
                   >
-                    <img src={kmmm3} alt="" />
+                    <img src={kmmm3} alt="" style={{ objectFit: "contain" }} />
                   </div>
                 </div>
 
