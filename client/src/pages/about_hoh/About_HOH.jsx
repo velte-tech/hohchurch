@@ -76,7 +76,7 @@ const About_HOH = () => {
 
             <div className='bib'>
               <div className='bib-1'>
-                1. LOVE GROUP
+                1. LOVE GROUP <br></br>
                   <span className='hoo'>
                     (1 Corinthians 13: 4 - 7)
                   </span>
@@ -91,7 +91,7 @@ const About_HOH = () => {
             
             <div className='bib'>
               <div className='bib-1'>
-                2. FAITH GROUP
+                2. FAITH GROUP <br></br>
                   <span className='hoo'>
                     (Hebrews 11: 1)
                   </span>
@@ -106,7 +106,7 @@ const About_HOH = () => {
             
             <div className='bib'>
               <div className='bib-1'>
-                3. PEACE GROUP
+                3. PEACE GROUP <br></br>
                   <span className='hoo'>
                     (Philippians 4: 7)
                   </span>
@@ -121,7 +121,7 @@ const About_HOH = () => {
             
             <div className='bib'>
               <div className='bib-1'>
-                4. HOPE GROUP
+                4. HOPE GROUP <br></br>
                   <span className='hoo'>
                     (Romans 15: 13)
                   </span>
@@ -136,7 +136,7 @@ const About_HOH = () => {
             
             <div className='bib'>
               <div className='bib-1'>
-                5. POWER GROUP
+                5. POWER GROUP <br></br>
                   <span className='hoo'>
                     (Luke 24: 49)
                   </span>

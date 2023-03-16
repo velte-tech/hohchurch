@@ -85,6 +85,20 @@ const Groups = () => {
 
         <div className="church-group-wrapper">
           <div className="church-group-case">
+
+            {/* groups txt  */}
+            
+           <div className="fel-grp">
+             <div className="tt-3">
+              Fellowship Groups
+            </div>
+            
+            <div className="tt-2"> 
+                The church congregation is sectioned  into the following fellowship groups that our lead by their respective leaders.
+            </div>
+           </div>
+              
+            {/* groups txt end */}
             
             
             {/* group flex */}
