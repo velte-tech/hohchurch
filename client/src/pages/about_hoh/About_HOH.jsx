@@ -5,7 +5,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 // import kmmm from "../../assets/images/pastor-alex.jpg";
 // import kmmm2 from "../../assets/images/alexdocas.jpg";
-import kmmm3 from "../../assets/images/alexdocas2.jpg";
+// import kmmm3 from "../../assets/images/alexdocas2.jpg";
+import kmmm3 from "../../assets/images/alexdocas22.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const About_HOH = () => {
