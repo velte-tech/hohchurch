@@ -363,3 +363,22 @@
 
 /* second group dropdown list end */
 
+
+
+/* group txt  */
+
+.fel-grp {
+    margin-bottom: 4rem;
+}
+
+.fel-grp .tt-3 {
+    color: var(--primary_color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.fel-grp .tt-2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* group txt end */

@@ -5,7 +5,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 // import kmmm from "../../assets/images/pastor-alex.jpg";
 // import kmmm2 from "../../assets/images/alexdocas.jpg";
-import kmmm3 from "../../assets/images/alexdocas2.jpg";
+// import kmmm3 from "../../assets/images/alexdocas2.jpg";
+import kmmm3 from "../../assets/images/alexdocas22.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const About_HOH = () => {
@@ -76,7 +77,7 @@ const About_HOH = () => {
 
             <div className='bib'>
               <div className='bib-1'>
-                1. LOVE GROUP
+                1. LOVE GROUP <br></br>
                   <span className='hoo'>
                     (1 Corinthians 13: 4 - 7)
                   </span>
@@ -91,7 +92,7 @@ const About_HOH = () => {
             
             <div className='bib'>
               <div className='bib-1'>
-                2. FAITH GROUP
+                2. FAITH GROUP <br></br>
                   <span className='hoo'>
                     (Hebrews 11: 1)
                   </span>
@@ -106,7 +107,7 @@ const About_HOH = () => {
             
             <div className='bib'>
               <div className='bib-1'>
-                3. PEACE GROUP
+                3. PEACE GROUP <br></br>
                   <span className='hoo'>
                     (Philippians 4: 7)
                   </span>
@@ -121,7 +122,7 @@ const About_HOH = () => {
             
             <div className='bib'>
               <div className='bib-1'>
-                4. HOPE GROUP
+                4. HOPE GROUP <br></br>
                   <span className='hoo'>
                     (Romans 15: 13)
                   </span>
@@ -136,7 +137,7 @@ const About_HOH = () => {
             
             <div className='bib'>
               <div className='bib-1'>
-                5. POWER GROUP
+                5. POWER GROUP <br></br>
                   <span className='hoo'>
                     (Luke 24: 49)
                   </span>
@@ -149,26 +150,26 @@ const About_HOH = () => {
               </div>
             </div>
             
-            <div className='bib'>
+            {/* <div className='bib'>
               <div className='bib-1'>
                 MENS'S FELLOWSHIP
               </div>
-              {/* <div className='bib-2'>
+              <div className='bib-2'>
                 Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, and endures all things.
-              </div> */}
-            </div>
+              </div>
+            </div> */}
             
-            <div className='bib'>
+            {/* <div className='bib'>
               <div className='bib-1'>
                 WOMEN'S FELLOWSHIP 
-                  {/* <span className='hoo'>
+                  <span className='hoo'>
                     (1 Corinthians 13: 4 - 7)
-                  </span> */}
+                  </span>
               </div>
-              {/* <div className='bib-2'>
+              <div className='bib-2'>
                 Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, and endures all things. 
-              </div> */}
-            </div>
+              </div>
+            </div> */}
             
             
 
