@@ -6,6 +6,7 @@ import l1 from "../../assets/images/pastor-alex.jpg";
 import l22 from "../../assets/images/pswomen.jpeg";
 import l33 from "../../assets/images/psroll.jpeg";
 import naruto from "../../assets/images/leaders-hoh.jpg";
+import minlogo from "../../assets/brand/hohlogo.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 // import { MdMailOutline } from "react-icons/md";
 // import { GrMail } from "react-icons/gr";
@@ -115,8 +116,8 @@ const Leadership = () => {
                   {/* fleaders 3 flex  */}
 
                   <div className="lead-flex">
-                    <div className="lf1-pic">
-                      <img src={l1} alt="" />
+                    <div className="lf1-pic22">
+                      <img src={minlogo} alt="" />
                     </div>
                     <div className="lf12">Minister Hannah</div>
                     <div className="lf3">Leader For Peace Group</div>
@@ -126,8 +127,8 @@ const Leadership = () => {
                   </div>
 
                   <div className="lead-flex">
-                    <div className="lf1-pic">
-                      <img src={l1} alt="" />
+                    <div className="lf1-pic22">
+                      <img src={minlogo} alt="" />
                     </div>
                     <div className="lf12">Minister Dorcas</div>
                     <div className="lf3">Leader For Power Group</div>
@@ -137,8 +138,8 @@ const Leadership = () => {
                   </div>
 
                   <div className="lead-flex">
-                    <div className="lf1-pic">
-                      <img src={l1} alt="" />
+                    <div className="lf1-pic22">
+                      <img src={minlogo} alt="" />
                     </div>
                     <div className="lf12">Minister Jodie</div>
                     <div className="lf3">Leader For Joy Group</div>
@@ -154,10 +155,10 @@ const Leadership = () => {
                   {/* fleaders 3 flex  */}
 
                   <div className="lead-flex">
-                    <div className="lf1-pic">
-                      <img src={l1} alt="" />
+                    <div className="lf1-pic22">
+                      <img src={minlogo} alt="" />
                     </div>
-                    <div className="lf12">Minister Jolie</div>
+                    <div className="lf12">Minister Julie</div>
                     <div className="lf3">Leader For Faith Group</div>
 
                     <EmailContactButton emailAddress="jolie@hohcentre.co.uk" subject="Message" />
@@ -165,8 +166,8 @@ const Leadership = () => {
                   </div>
 
                   <div className="lead-flex">
-                    <div className="lf1-pic">
-                      <img src={l1} alt="" />
+                    <div className="lf1-pic22">
+                      <img src={minlogo} alt="" />
                     </div>
                     <div className="lf12">Minister Mable</div>
                     <div className="lf3">Leader For Love Group</div>
@@ -176,8 +177,8 @@ const Leadership = () => {
                   </div>
 
                   <div className="lead-flex">
-                    <div className="lf1-pic">
-                      <img src={l1} alt="" />
+                    <div className="lf1-pic22">
+                      <img src={minlogo} alt="" />
                     </div>
                     <div className="lf12">Minister Marcia</div>
                     <div className="lf3">Leader For Hope Group</div>
