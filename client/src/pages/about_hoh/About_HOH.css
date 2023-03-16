@@ -133,7 +133,7 @@
 
 .vision-wrapper .vision .tt-2 {
     color: #000;
-    font-size: 17px;
+    font-size: 1.2rem;
     line-height: 1.6;
     font-weight: 500;
     text-align: left;
@@ -141,8 +141,8 @@
 
 .vision-wrapper .vision .tt-3 {
     color: #000;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     text-align: left;
     text-transform: uppercase;
 }
@@ -160,11 +160,11 @@
 
 .vision-wrapper .vision .tt-2 {
     color: #000;
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 
 .vision-wrapper .vision .tt-3 {
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 }
 
@@ -245,15 +245,16 @@
 
 @media screen and (max-width: 600px) {
     .biblical-wrapper .biblical .bib .bib-1 {
-        font-size: 18px;
+        font-size: 1.3rem;
     }
 }
 
 .biblical-wrapper .biblical .bib .bib-2 {
-    font-size: 16px;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #000;
     line-height: 1.7;
+    margin-left: 1rem;
 }
 
 /* .biblical-wrapper .biblical .bib .bib-2 span {
@@ -523,8 +524,8 @@
 }
 
 .psl-pic img {
-    object-fit: cover;
-    /* object-fit: contain; */
+    /* object-fit: cover; */
+    object-fit: contain;
     width: 100%;
     height: 500px;
     clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%);

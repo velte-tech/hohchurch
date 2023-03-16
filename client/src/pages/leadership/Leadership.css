@@ -6,7 +6,9 @@
 /* SHOWCASE */
 
 .leadership-showcase {
-    background: url('../../assets/images/abthh.jpg') no-repeat center center/cover;
+    /* background: url('../../assets/images/abthh.jpg') no-repeat center center/cover; */
+
+    background: url('../../assets/images/alexdocas22.png') no-repeat center center/cover;
     height: 100vh;
 }
 
@@ -128,12 +130,28 @@
 
 .lf1-pic {
     margin-bottom: .9rem;
-    width: 100%;
+    width: 80%;
+    /* height: 150px; */
+}
+
+.lf1-pic22 {
+    margin-bottom: .9rem;
+    width: 80%;
     /* height: 150px; */
 }
 
 .lf1-pic img {
+    /* object-fit: contain; */
     object-fit: cover;
+    border-radius: 5px;
+    /* width: 100%; */
+    /* width: 300px; */
+    height: 320px;
+}
+
+.lf1-pic22 img {
+    /* object-fit: contain; */
+    object-fit: contain;
     border-radius: 5px;
     /* width: 100%; */
     /* width: 300px; */
@@ -180,6 +198,26 @@
     align-items: center;
     margin: 2rem 1.3rem;
     height: fit-content;
+}
+
+.lf1-pic {
+    margin-bottom: .9rem;
+    width: 70%;
+    /* height: 150px; */
+}
+
+.lf1-pic img {
+    object-fit: cover;
+}
+
+.lf1-pic22 {
+    margin-bottom: .9rem;
+    width: 70%;
+    /* height: 150px; */
+}
+
+.lf1-pic22 img {
+    object-fit: contain;
 }
 
 }
