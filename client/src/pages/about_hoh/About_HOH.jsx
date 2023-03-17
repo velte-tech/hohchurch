@@ -3,7 +3,7 @@ import "./About_HOH.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
-// import kmmm3 from "../../assets/images/alexdocas22.png";
+import kmmm33 from "../../assets/images/alexdocas222.png";
 // import kmmm33 from "../../assets/images/alexdocasbg.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
@@ -193,27 +193,61 @@ const About_HOH = () => {
           <div className="values">
             <div className="values-showcase">
               <div className="values-text-case container">
-                <div className="values-tt1 focus-in-contract-bck">
-                 
-                    {/* OUR HISTORY */}
-                    Welcome message from the pastor and his wife
+                
+
+                {/* docas & alex */}
+                
+                <div className="alex-docas">
+                  
+                  <div className="values-tt1">
+                    Welcome address from Pastor Alex and Pastor Dorcas
+                  </div>
+                  
+                  <div className="ps-alex-wrapper">
+          <div className="ps-alex-show">
+            <div className="ps-alex-case">
+              <div className="ps-left">
+                <div
+                  className="psl-pic"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="600"
+                >
+                  <img src={kmmm33} alt="" />
                 </div>
+              </div>
+
+              <div
+                className="ps-right"
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+              >
+                {/* <div className="psr1">
+                  Welcome address from Pastor Alex and Pastor Dorcas
+                </div> */}
 
                 <div className="psr2">
 
                     We warmly welcome you to Highway of Holiness Church, a place of faith, fellowship and freedom in Christ.  Here at HOH everything we do is centred on the living word of God, the Holy Bible.We believe that the answers to life’ s questions are found within the pages of God’ s holy word. This is the source we stand on to teach, equip and edify God’ s children.  Our desire is to demonstrate how you can live a purposeful life in Christ, being fruitful in your gifts and bringing others to His Kingdom. As believers in Christ we are here on earth to be ambassadors of God’ s Kingdom and we do this by demonstrating Gods love to the world.
                 </div>
+
+                {/* <div className="psr3">
+                  <Link to="/" className="links linkAnima">
+                    CONTACT <span className="arrow"></span>
+                  </Link>
+                </div> */}
                 
+              </div>
+            </div>
+          </div>
+        </div>
+                    
+                </div>
                   
-                  {/* pastor pic  */}
-
-                  {/* <div className="ps-picc">
-                    <div>
-                      <img src={kmmm33} alt="" />
-                    </div>
-                  </div> */}
-
-                  {/* pastor pic end */}
+                {/* docas & alex end */}
+                
+          
 
 
                 {/* <div className="psr3">
