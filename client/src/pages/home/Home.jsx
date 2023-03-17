@@ -18,7 +18,7 @@ import newHereImg from "../../assets/images/newHere.jpg";
 import phonexxx from "../../assets/images/phone-app.png";
 
 //video
-import pastorVideo from "../../assets/video/video.mp4";
+// import pastorVideo from "../../assets/video/video.mp4";
 
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
