@@ -3,10 +3,8 @@ import "./About_HOH.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
-// import kmmm from "../../assets/images/pastor-alex.jpg";
-// import kmmm2 from "../../assets/images/alexdocas.jpg";
-// import kmmm3 from "../../assets/images/alexdocas2.jpg";
-import kmmm3 from "../../assets/images/alexdocas22.png";
+import kmmm33 from "../../assets/images/alexdocas222.png";
+// import kmmm33 from "../../assets/images/alexdocasbg.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const About_HOH = () => {
@@ -189,26 +187,89 @@ const About_HOH = () => {
 
         {/* vision end */}
 
-        {/* OUR VALUES */}
+        {/* OUR VALUES HISTORY */}
 
         <div className="values-wrapper">
           <div className="values">
             <div className="values-showcase">
               <div className="values-text-case container">
-                <div className="values-tt1 focus-in-contract-bck">
-                  {/* OUR VALUES */}
-                  OUR HISTORY
+                
+
+                {/* docas & alex */}
+                
+                <div className="alex-docas">
+                  
+                  <div className="values-tt1">
+                    Welcome address from Pastor Alex and Pastor Dorcas
+                  </div>
+                  
+                  <div className="ps-alex-wrapper">
+          <div className="ps-alex-show">
+            <div className="ps-alex-case">
+              <div className="ps-left">
+                <div
+                  className="psl-pic"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="center-bottom"
+                  data-aos-delay="600"
+                >
+                  <img src={kmmm33} alt="" />
+                </div>
+              </div>
+
+              <div
+                className="ps-right"
+                data-aos="fade-left"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-delay="600"
+              >
+                {/* <div className="psr1">
+                  Welcome address from Pastor Alex and Pastor Dorcas
+                </div> */}
+
+                <div className="psr2">
+
+                    We warmly welcome you to Highway of Holiness Church, a place of faith, fellowship and freedom in Christ.  Here at HOH everything we do is centred on the living word of God, the Holy Bible.We believe that the answers to life’ s questions are found within the pages of God’ s holy word. This is the source we stand on to teach, equip and edify God’ s children.  Our desire is to demonstrate how you can live a purposeful life in Christ, being fruitful in your gifts and bringing others to His Kingdom. As believers in Christ we are here on earth to be ambassadors of God’ s Kingdom and we do this by demonstrating Gods love to the world.
                 </div>
 
-                <div className="values-tt2">
-                  {/* ACTS 2: 42 - 47 */}
+                {/* <div className="psr3">
+                  <Link to="/" className="links linkAnima">
+                    CONTACT <span className="arrow"></span>
+                  </Link>
+                </div> */}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+                    
+                </div>
+                  
+                {/* docas & alex end */}
+                
+          
+
+
+                {/* <div className="psr3">
+                  <Link to="/" className="links linkAnima">
+                    CONTACT <span className="arrow"></span>
+                  </Link>
+                </div> */}
+                  
+
+                {/* <div className="values-tt2">
+                  
+                </div> */}
+
+                {/* <div className="values-tt2">
+                  
                   On January 1 st, 2000, The Highway of Holiness(HOH) was
                   formally established as a church in London, United Kingdom.A
                   tiny classroom was used for the inaugural meeting, which had a
                   starting attendance of only approximately twenty persons.
-                </div>
+                </div> */}
 
-                <div className="values-tt2">
+                {/* <div className="values-tt2">
                   Between January 1, 2000, and, January 31, 2000, the membership
                   quickly increased to about 50 individuals who regularly
                   attended.Early church gatherings were held in a variety of
@@ -216,16 +277,16 @@ const About_HOH = () => {
                   unit at Unit 8 Fountayne House, 2 - 8 Fountayne Road, in
                   London, United Kingdom, in 2001, and this location has served
                   as its headquarters ever since
-                </div>
+                </div> */}
 
-                <div className="values-tt2">
+                {/* <div className="values-tt2">
                   The membership increased to over hundreds over these time
                   periods.During this time, there were also active efforts to
                   plant new churches missionaries, and local congregations were
                   started in nations like Pakistan, Ghana, Sudan, etc.
-                </div>
+                </div> */}
 
-                <div className="values-tt2">
+                {/* <div className="values-tt2">
                   In 2012, the HOH established a tutorial institution(schools)—
                   Kingdom Lifestyle Mission(KLM) which provides after - school
                   programs or tutoring for Christian children in other dominant
@@ -233,9 +294,9 @@ const About_HOH = () => {
                   Ethiopia, etc.As a charity, KLM seeks to inspire, engage and
                   create opportunities for underprivileged children across the
                   globe.
-                </div>
+                </div> */}
 
-                <div className="values-tt2">
+                {/* <div className="values-tt2">
                   Again in 2009, the church established a homeless shelter
                   called Highway Shelter where those living on the streets of
                   London may go for food and visit with the pastor and his wife,
@@ -243,22 +304,23 @@ const About_HOH = () => {
                   about 1000 people have received assistance with accommodation,
                   food, and counseling, as well as the chance to connect with
                   other people through its highway housing program.
-                </div>
+                </div> */}
 
-                <div className="values-tt2">
+                {/* <div className="values-tt2">
                   The Highway of Holiness Christian Love Centre(HOH) is a
                   socially conscious Christian church that upholds the
                   philosophy of Human dignity and Excellence.It engages in
                   promoting and staging events whose impact has reached the
                   depths of London society and brought Christ to the doorsteps
                   of the people.
-                </div>
+                </div> */}
+                
               </div>
             </div>
           </div>
         </div>
 
-        {/* OUR VALUES END */}
+        {/* OUR VALUES HISTORY END */}
 
         {/* BIBLICAL LIST */}
 
@@ -327,7 +389,7 @@ const About_HOH = () => {
 
         {/* PASTOR ALEX */}
 
-        <div className="ps-alex-wrapper">
+        {/* <div className="ps-alex-wrapper">
           <div className="ps-alex-show">
             <div className="ps-alex-case">
               <div className="ps-left">
@@ -352,13 +414,6 @@ const About_HOH = () => {
                 </div>
 
                 <div className="psr2">
-                  {/* Pastor Alex Gyasi is a spiritual leader who is responsible for
-                  guiding the congregation towards a deeper understanding and
-                  relationship with God.He sermons, offers counsel to members,
-                  and provides guidance on spiritual and moral issues.In
-                  addition to preaching and teaching, He also oversee various
-                  programs and activities within the church, such as outreach
-                  efforts, youth groups, and mission trips. */}
 
                     We warmly welcome you to Highway of Holiness Church, a place of faith, fellowship and freedom in Christ.  Here at HOH everything we do is centred on the living word of God, the Holy Bible.We believe that the answers to life’ s questions are found within the pages of God’ s holy word. This is the source we stand on to teach, equip and edify God’ s children.  Our desire is to demonstrate how you can live a purposeful life in Christ, being fruitful in your gifts and bringing others to His Kingdom. As believers in Christ we are here on earth to be ambassadors of God’ s Kingdom and we do this by demonstrating Gods love to the world.
                 </div>
@@ -368,10 +423,11 @@ const About_HOH = () => {
                     CONTACT <span className="arrow"></span>
                   </Link>
                 </div>
+                
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* PASTOR ALEX end */}
 
