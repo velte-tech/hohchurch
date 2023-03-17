@@ -2,7 +2,8 @@ import { React } from "react";
 // import { Link } from "react-router-dom";
 import "./Leadership.css";
 // Images
-import l1 from "../../assets/images/pastor-alex.jpg";
+// import l1 from "../../assets/images/pastor-alex.jpg";
+import l1 from "../../assets/images/unnamed.png";
 import l22 from "../../assets/images/pswomen.jpeg";
 import l33 from "../../assets/images/psroll.jpeg";
 import naruto from "../../assets/images/leaders-hoh.jpg";
