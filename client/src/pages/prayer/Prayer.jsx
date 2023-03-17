@@ -49,18 +49,19 @@ const Prayer = () => {
                       <div className="ft-2"></div>
                     </div>
                     <div className="nl2">
-                      <input required name="Full_name"></input>
+                      <input className="zinn" required name="Full_name"></input>
                     </div>
                   </div>
 
                   <div className="nl">
-                    <div className="nl1">
+                    {/* <div className="nl1">
                       <div className="ft-1">EMAIL</div>
                       <div className="ft-2"></div>
-                    </div>
+                    </div> */}
+
                     <div className="nl2">
                       <div className="sinn">
-                        <MdAllInbox />
+                        Email <MdAllInbox />
                       </div>
                       <input required name="Email" className="zinn"></input>
                     </div>
@@ -73,6 +74,7 @@ const Prayer = () => {
                     </div>
                     <div className="nl2">
                       <textarea
+                        className="txt-ara"
                         required
                         name="Prayer_request"
                         placeholder="Please pray that...(up to 500 characters)"
