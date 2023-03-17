@@ -38,7 +38,7 @@ const Location = () => {
               {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
-                <Link to="/Aurora" className="links linkAnima">
+                <Link to="/Easter_service" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
                 </Link>
               </div>
@@ -63,7 +63,7 @@ const Location = () => {
               {/* <div className="day">Sunday: 9, 11 AM, & 6: 30 PM</div> */}
 
               <div className="info">
-                <Link to="/Denver" className="links linkAnima">
+                <Link to="/Youth_retreat" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
                 </Link>
               </div>
@@ -86,7 +86,7 @@ const Location = () => {
               {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
-                <Link to="/Lafayette" className="links linkAnima">
+                <Link to="/Adult_retreat" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
                 </Link>
               </div>
@@ -111,7 +111,7 @@ const Location = () => {
               {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
-                <Link to="/Longmont" className="links linkAnima">
+                <Link to="/" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
                 </Link>
               </div>
@@ -136,7 +136,7 @@ const Location = () => {
               {/* <div className="day-1">* ASL Interpreted Service</div> */}
 
               <div className="info">
-                <Link to="/West" className="links linkAnima">
+                <Link to="/" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
                 </Link>
               </div>
