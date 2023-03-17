@@ -174,7 +174,7 @@
 /* OUR VISION 2 END */
 
 
-/* OUR VALUES  */
+/* OUR VALUES HISTORY  */
 
 .values-showcase {
     background: url('../../assets/images/nnav.jpg') no-repeat center center/cover;
@@ -192,8 +192,9 @@
 .values-tt1 {
     color: #fff;
     font-size: var(--head_font);
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1.5rem;
+    text-transform: capitalize;
 }
 
 @media screen and (max-width: 600px) {
@@ -215,7 +216,51 @@
     margin-bottom: 0;
 }
 
-/* OUR VALUES END */
+
+/* update  */
+
+.values-text-case .psr2 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+    /* margin-bottom: 4rem; */
+    line-height: 1.8;
+}
+
+.values-text-case .psr3 .linkAnima {
+    justify-content: flex-start;
+    padding: 0;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.values-text-case .ps-picc img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 800px) {
+.values-text-case .psr2 {
+    font-size: 1.1rem;
+}
+.values-text-case .values-tt1 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+.values-text-case .ps-picc img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+}
+
+/* update end */
+
+/* OUR VALUES HISTORY END */
+
+
 
 /* BIBLICAL  */
 
