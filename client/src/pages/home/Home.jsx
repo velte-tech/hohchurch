@@ -12,7 +12,7 @@ import { AiFillYoutube } from "react-icons/ai";
 import kmmm3 from "../../assets/images/alexdocas22.png";
 
 // Images
-import churchImg from "../../assets/images/church.jpg";
+import churchImg from "../../assets/images/obligation-pastor2.jpg";
 import outreachImg from "../../assets/images/outreach.jpg";
 import newHereImg from "../../assets/images/newHere.jpg";
 import phonexxx from "../../assets/images/phone-app.png";
@@ -50,8 +50,12 @@ function Home() {
                   HIGHWAY OF HOLINESS CHURCH
                 </p>
               </div>
-              <div className="links" data-aos="zoom-in" data-aos-delay="600">
-                <Link to="/sermon/1" className="link linkAnima">
+              <div
+                className="links"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              ></div>
+              {/* <Link to="/sermon/1" className="link linkAnima">
                   Watch Now
                   <span className="arrow"></span>
                 </Link>
@@ -59,8 +63,7 @@ function Home() {
                 <Link to="/messages" className="link linkAnima">
                   More In This series
                   <span className="arrow"></span>
-                </Link>
-              </div>
+                </Link> */}
             </div>
           </div>
         </div>
@@ -98,8 +101,8 @@ function Home() {
             >
               <img src={churchImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">Church Services & Time</p>
-                <p>Find our service time and direction to our locations</p>
+                <p className="hover_overlay ">Services & Time</p>
+                <p>Find our services time and direction to our location.</p>
                 <Link to="/groups" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -114,8 +117,8 @@ function Home() {
             >
               <img src={outreachImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">Outreach & Trips</p>
-                <p>Find our service time and direction to our locations</p>
+                <p className="hover_overlay ">Outreach</p>
+                {/* <p>Find our services time and direction to our location</p> */}
                 <Link to="/outreach" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -131,7 +134,7 @@ function Home() {
               <img src={newHereImg} alt="" />
               <div className="text">
                 <p className="hover_overlay ">New Here?</p>
-                <p>Find our service time and direction to our locations</p>
+                {/* <p>Find our services time and direction to our location</p> */}
                 <Link to="/im_new" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -252,7 +255,7 @@ function Home() {
           <div className="message_wrapper container text_center">
             <div className="top">
               <h2>PAST Messages</h2>
-              <p>Checkout out past sermons and services held by HOH-CHURCH.</p>
+              <p>Checkout our past sermons and services held by HOH-CHURCH.</p>
             </div>
 
             <div className="bottom">

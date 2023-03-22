@@ -26,8 +26,8 @@ function Faq() {
         }}
       >
         <div className="faq_wrapper">
-          <h1>Frequently Asked Questions</h1>
-          {faqData.map((item, index) => {
+          <h1>Do You Have Any Questions</h1>
+          {/* {faqData.map((item, index) => {
             return (
               <div className="accordion">
                 <div
@@ -49,7 +49,7 @@ function Faq() {
                 </div>
               </div>
             );
-          })}
+          })} */}
         </div>
       </IconContext.Provider>
     </section>

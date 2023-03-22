@@ -73,26 +73,6 @@ function Footer() {
               <span className="arrow"></span>
             </a>
             <a
-              href=""
-              target="_blank"
-              rel="noreferrer"
-              className="links linkAnima"
-            >
-              Suplimentary education{" "}
-              <small className="footer__small"> (Saturday school) </small>{" "}
-              <span className="arrow"></span>
-            </a>
-            <a
-              href=""
-              target="_blank"
-              rel="noreferrer"
-              className="links linkAnima"
-            >
-              keep it real{" "}
-              <small className="footer__small"> (youth talk show) </small>{" "}
-              <span className="arrow"></span>
-            </a>
-            <a
               href="https://linktr.ee/Shift.HY"
               target="_blank"
               rel="noreferrer"
@@ -128,13 +108,10 @@ function Footer() {
 
           <div className="content_Quick_links2 menu">
             <h3 className="footer_menu_head">Contact Us</h3>
-            <p>You can get intouch with </p>
-            <p>
-              Central Office Address | Unit 8, 2-8 Fountayne Rd, London N15 4QL,
-              United Kingdom
-            </p>
-            <p>Office Hours | M-TH, 10:00 AM – 4:00 PM</p>
-            <p>Email | info@highwayofholinesschurch.com</p>
+            <p>Unit 8, 2-8 Fountayne Road</p>
+            <p>London, N15 4QL</p>
+            <p>Email : info@hohcentre.co.uk</p>
+            <p>Phone number : +442088084444</p>
             <div className="social">
               <a
                 href="https://web.facebook.com/HighwayofHolinessUK"

@@ -9,424 +9,426 @@ import logo from "../../assets/brand/hohlogo.png";
 
 const Outreach = () => {
   return (
-    
     <div id="super">
       <div className="out-page">
-      <div className="out-wrapper">
-        {/* showcase */}
-        <div className="out-showcase">
-          <div className="out-case">
-            <div className="out-text">
-              <h1 className="focus-in-contract-bck">OUTREACH</h1>
+        <div className="out-wrapper">
+          {/* showcase */}
+          <div className="out-showcase">
+            <div className="out-case">
+              <div className="out-text">
+                <h1 className="focus-in-contract-bck">OUTREACH</h1>
+              </div>
             </div>
           </div>
-        </div>
-        {/* showcase end */}
+          {/* showcase end */}
 
-        {/* local outreach */}
+          {/* local outreach */}
 
-        <div className="local-wrapper">
-          <div className="local-case">
-            {/* <div className='local-1'>
+          <div className="local-wrapper">
+            <div className="local-case">
+              {/* <div className='local-1'>
               <span className='ll-1'> LOCAL </span>
               <span className='ll-2'> GLOBAL </span>
             </div> */}
 
-            <div className="local-2">Local Community Missions</div>
-            <div className="local-3">
-              Jesus talked a lot about His love for those who are poor, hurting,
-              broken and forgotten. Each of our campuses strives to partner with
-              local organizations serving their local community.
+              <div className="local-2">Local Community Missions</div>
+              <div className="local-3">
+                Jesus talked a lot about His love for those who are poor,
+                hurting, broken and forgotten. Each of our campuses strives to
+                partner with local organizations serving their local community.
+              </div>
+              <div className="local-4">
+                Select a local mission to learn more.
+              </div>
+              <div className="local-5"></div>
             </div>
-            <div className="local-4">Select a local partner to learn more.</div>
-            <div className="local-5"></div>
           </div>
-        </div>
 
-        {/* local outreach end */}
+          {/* local outreach end */}
 
-        {/* outreach grops sopnsors */}
+          {/* outreach grops sopnsors */}
 
-        <div className="out-spo-wrapper">
-          <div className="out-spo-case">
-            {/* mother flex */}
-            <div className="out-sop-show">
-              {/* three flex */}
-              <div className="out-sop">
-                <div className="sop-1">
-                  <img src={logo} alt="" />
-                </div>
-                {/* <div className='sop-2 hover_overlay_2'>
+          <div className="out-spo-wrapper">
+            <div className="out-spo-case">
+              {/* mother flex */}
+              <div className="out-sop-show">
+                {/* three flex */}
+                <div className="out-sop">
+                  <div className="sop-1">
+                    <img src={logo} alt="" />
+                  </div>
+                  {/* <div className='sop-2 hover_overlay_2'>
                   180 Ministries | 3333 S Bannock <br></br>
                   Street Suite 700 <br></br>
                   Englewood, CO 80110 <br></br>
                 </div> */}
-                {/* <div className='sop-3'>
+                  {/* <div className='sop-3'>
                   Campus Affiliation
                 </div> */}
 
-                {/* <div className='sop-4'>
+                  {/* <div className='sop-4'>
                   Denver
                 </div> */}
 
-                <div className="sop-4">Day Centre</div>
+                  <div className="sop-4">
+                    Highway House Day centre and Shelter
+                  </div>
 
-                <div className="sop-5">
-                  <Link className="linkAnima">
-                    {" "}
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
+                  <div className="sop-5">
+                    <Link className="linkAnima">
+                      {" "}
+                      MORE INFO <span className="arrow"></span>{" "}
+                    </Link>
+                  </div>
+                  <div className="sop-6"></div>
                 </div>
-                <div className="sop-6"></div>
-              </div>
-              {/* three flex end */}
+                {/* three flex end */}
 
-              {/* three flex */}
-              <div className="out-sop">
-                <div className="sop-1">
-                  <img src={logo} alt="" />
-                </div>
-                {/* <div className='sop-2 hover_overlay_2'>
+                {/* three flex */}
+                <div className="out-sop">
+                  <div className="sop-1">
+                    <img src={logo} alt="" />
+                  </div>
+                  {/* <div className='sop-2 hover_overlay_2'>
                   Collegiate Crossings | 1230 Banner <br></br>
                   Circle <br></br>
                   Erie, CO 80516 <br></br>
 
                 </div> */}
-                {/* <div className='sop-3'>
+                  {/* <div className='sop-3'>
                   Campus Affiliation
                 </div> */}
 
-                {/* <div className='sop-4'>
+                  {/* <div className='sop-4'>
                   Denver
                 </div> */}
-                <div className="sop-4">Highway Youth Club</div>
+                  <div className="sop-4">Highway Youth Club</div>
 
-                <div className="sop-5">
-                  <Link className="linkAnima">
-                    {" "}
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
+                  <div className="sop-5">
+                    <Link className="linkAnima">
+                      {" "}
+                      MORE INFO <span className="arrow"></span>{" "}
+                    </Link>
+                  </div>
+                  <div className="sop-6"></div>
                 </div>
-                <div className="sop-6"></div>
-              </div>
-              {/* three flex end */}
+                {/* three flex end */}
 
-              {/* three flex */}
-              <div className="out-sop">
-                <div className="sop-1">
-                  <img src={logo} alt="" />
-                </div>
-                {/* <div className='sop-2 hover_overlay_2'>
+                {/* three flex */}
+                <div className="out-sop">
+                  <div className="sop-1">
+                    <img src={logo} alt="" />
+                  </div>
+                  {/* <div className='sop-2 hover_overlay_2'>
                   Echo | 27640 Hwy 74 <br></br>
                   Evergreen, CO 80437
                 </div> */}
-                {/* <div className='sop-3'>
+                  {/* <div className='sop-3'>
                   Campus Affiliation
                 </div> */}
 
-                {/* <div className='sop-4'>
+                  {/* <div className='sop-4'>
                   West
                 </div>  */}
-                <div className="sop-4">21st Century Education</div>
-                <div className="sop-5">
-                  <Link className="linkAnima">
-                    {" "}
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
+                  <div className="sop-4">21st Century Education</div>
+                  <div className="sop-5">
+                    <Link className="linkAnima">
+                      {" "}
+                      MORE INFO <span className="arrow"></span>{" "}
+                    </Link>
+                  </div>
+                  <div className="sop-6"></div>
                 </div>
-                <div className="sop-6"></div>
-              </div>
-              {/* three flex end */}
+                {/* three flex end */}
 
-              {/* three flex */}
-              <div className="out-sop">
-                <div className="sop-1">
-                  <img src={logo} alt="" />
-                </div>
-                {/* <div className='sop-2 hover_overlay_2'>
+                {/* three flex */}
+                <div className="out-sop">
+                  <div className="sop-1">
+                    <img src={logo} alt="" />
+                  </div>
+                  {/* <div className='sop-2 hover_overlay_2'>
                   Echo | 27640 Hwy 74 <br></br>
                   Evergreen, CO 80437
                 </div> */}
-                {/* <div className='sop-3'>
+                  {/* <div className='sop-3'>
                   Campus Affiliation
                 </div> */}
 
-                {/* <div className='sop-4'>
+                  {/* <div className='sop-4'>
                   West
                 </div>  */}
-                <div className="sop-4">Shift</div>
-                <div className="sop-5">
-                  <Link className="linkAnima">
-                    {" "}
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
+                  <div className="sop-4">Shift</div>
+                  <div className="sop-5">
+                    <Link className="linkAnima">
+                      {" "}
+                      MORE INFO <span className="arrow"></span>{" "}
+                    </Link>
+                  </div>
+                  <div className="sop-6"></div>
                 </div>
-                <div className="sop-6"></div>
+                {/* three flex end */}
               </div>
-              {/* three flex end */}
+              {/* mother flex end */}
             </div>
-            {/* mother flex end */}
           </div>
-        </div>
 
-        {/* outreach grops sopnsors end */}
+          {/* outreach grops sopnsors end */}
 
-        {/* global */}
+          {/* global */}
 
-        <div className="local-wrapper">
-          <div className="local-case">
-            {/* <div className='local-1'>
+          <div className="local-wrapper">
+            <div className="local-case">
+              {/* <div className='local-1'>
               <span className='ll-1'> LOCAL </span>
               <span className='ll-2'> GLOBAL </span>
             </div> */}
 
-            <div className="local-2">Global Mission</div>
-            <div className="local-3">
-              Jesus talked a lot about His love for those who are poor, hurting,
-              broken and forgotten. Each of our campuses strives to partner with
-              global organizations serving the world at large.
+              <div className="local-2">Global Mission</div>
+              <div className="local-3">
+                Jesus talked a lot about His love for those who are poor,
+                hurting, broken and forgotten. Each of our campuses strives to
+                partner with global organizations serving the world at large.
+              </div>
+              <div className="local-4">
+                Select a global mission to learn more.
+              </div>
+              <div className="local-5"></div>
             </div>
-            <div className="local-4">
-              Select a global partner to learn more.
-            </div>
-            <div className="local-5"></div>
           </div>
-        </div>
 
-        {/* local outreach end */}
+          {/* local outreach end */}
 
-        {/* outreach grops sopnsors */}
+          {/* outreach grops sopnsors */}
 
-        <div className="out-spo-wrapper">
-          <div className="out-spo-case">
-            {/* mother flex */}
-            <div className="out-sop-show">
-              {/* three flex */}
-              <div className="out-sop">
-                <div className="sop-1">
-                  <img src={logo} alt="" />
-                </div>
-                {/* <div className='sop-2 hover_overlay_2'>
+          <div className="out-spo-wrapper">
+            <div className="out-spo-case">
+              {/* mother flex */}
+              <div className="out-sop-show">
+                {/* three flex */}
+                <div className="out-sop">
+                  <div className="sop-1">
+                    <img src={logo} alt="" />
+                  </div>
+                  {/* <div className='sop-2 hover_overlay_2'>
                   180 Ministries | 3333 S Bannock <br></br>
                   Street Suite 700 <br></br>
                   Englewood, CO 80110 <br></br>
                 </div> */}
-                {/* <div className='sop-3'>
+                  {/* <div className='sop-3'>
                   Campus Affiliation
                 </div> */}
 
-                {/* <div className='sop-4'>
+                  {/* <div className='sop-4'>
                   Denver
                 </div> */}
 
-                <div className="sop-4">KLM</div>
+                  <div className="sop-4">KLM</div>
 
-                <div className="sop-5">
-                  <a
-                    target="_blank"
-                    href="http://klmission.com/"
-                    rel="noreferrer"
-                  >
-                    <div className="links linkAnima">
-                      MORE INFO <span className="arrow"> </span>
-                    </div>
-                  </a>
+                  <div className="sop-5">
+                    <a
+                      target="_blank"
+                      href="http://klmission.com/"
+                      rel="noreferrer"
+                    >
+                      <div className="links linkAnima">
+                        MORE INFO <span className="arrow"> </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="sop-6"></div>
                 </div>
-                <div className="sop-6"></div>
-              </div>
-              {/* three flex end */}
+                {/* three flex end */}
 
-              {/* three flex */}
-              <div className="out-sop">
-                <div className="sop-1">
-                  <img src={logo} alt="" />
-                </div>
-                {/* <div className='sop-2 hover_overlay_2'>
+                {/* three flex */}
+                <div className="out-sop">
+                  <div className="sop-1">
+                    <img src={logo} alt="" />
+                  </div>
+                  {/* <div className='sop-2 hover_overlay_2'>
                   Collegiate Crossings | 1230 Banner <br></br>
                   Circle <br></br>
                   Erie, CO 80516 <br></br>
 
                 </div> */}
-                {/* <div className='sop-3'>
+                  {/* <div className='sop-3'>
                   Campus Affiliation
                 </div> */}
 
-                {/* <div className='sop-4'>
+                  {/* <div className='sop-4'>
                   Denver
                 </div> */}
-                <div className="sop-4">HOH PAKISTAN</div>
+                  <div className="sop-4">HOH PAKISTAN</div>
 
-                <div className="sop-5">
-                  <Link className="linkAnima">
-                    {" "}
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
+                  <div className="sop-5">
+                    <Link className="linkAnima">
+                      {" "}
+                      MORE INFO <span className="arrow"></span>{" "}
+                    </Link>
+                  </div>
+                  <div className="sop-6"></div>
                 </div>
-                <div className="sop-6"></div>
-              </div>
-              {/* three flex end */}
+                {/* three flex end */}
 
-              {/* three flex */}
-              <div className="out-sop">
-                <div className="sop-1">
-                  <img src={logo} alt="" />
-                </div>
-                {/* <div className='sop-2 hover_overlay_2'>
+                {/* three flex */}
+                <div className="out-sop">
+                  <div className="sop-1">
+                    <img src={logo} alt="" />
+                  </div>
+                  {/* <div className='sop-2 hover_overlay_2'>
                   Echo | 27640 Hwy 74 <br></br>
                   Evergreen, CO 80437
                 </div> */}
-                {/* <div className='sop-3'>
+                  {/* <div className='sop-3'>
                   Campus Affiliation
                 </div> */}
 
-                {/* <div className='sop-4'>
+                  {/* <div className='sop-4'>
                   West
                 </div>  */}
-                <div className="sop-4">Kingdom Culture Alliance (KCA)</div>
-                <div className="sop-5">
-                  <Link className="linkAnima">
-                    {" "}
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
+                  <div className="sop-4">Kingdom Culture Alliance (KCA)</div>
+                  <div className="sop-5">
+                    <Link className="linkAnima">
+                      {" "}
+                      MORE INFO <span className="arrow"></span>{" "}
+                    </Link>
+                  </div>
+                  <div className="sop-6"></div>
                 </div>
-                <div className="sop-6"></div>
-              </div>
-              {/* three flex end */}
+                {/* three flex end */}
 
-              {/* three flex */}
-              <div className="out-sop">
-                <div className="sop-1">
-                  <img src={logo} alt="" />
-                </div>
-                {/* <div className='sop-2 hover_overlay_2'>
+                {/* three flex */}
+                <div className="out-sop">
+                  <div className="sop-1">
+                    <img src={logo} alt="" />
+                  </div>
+                  {/* <div className='sop-2 hover_overlay_2'>
                   Echo | 27640 Hwy 74 <br></br>
                   Evergreen, CO 80437
                 </div> */}
-                {/* <div className='sop-3'>
+                  {/* <div className='sop-3'>
                   Campus Affiliation
                 </div> */}
 
-                {/* <div className='sop-4'>
+                  {/* <div className='sop-4'>
                   West
                 </div>  */}
-                <div className="sop-4">
-                  Affiliated Churches / Mission Support
+                  <div className="sop-4">
+                    Affiliated Churches / Mission Support
+                  </div>
+                  <div className="sop-5">
+                    <Link className="linkAnima">
+                      {" "}
+                      MORE INFO <span className="arrow"></span>{" "}
+                    </Link>
+                  </div>
+                  <div className="sop-6"></div>
                 </div>
-                <div className="sop-5">
-                  <Link className="linkAnima">
-                    {" "}
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link>
-                </div>
-                <div className="sop-6"></div>
+                {/* three flex end */}
               </div>
-              {/* three flex end */}
+              {/* mother flex end */}
             </div>
-            {/* mother flex end */}
           </div>
-        </div>
 
-        {/* outreach grops sopnsors end */}
+          {/* outreach grops sopnsors end */}
 
-        {/* want to get connected */}
-        <div className="to-get">Get Connected</div>
-        {/* want to get connected end */}
+          {/* want to get connected */}
+          <div className="to-get">Get Connected</div>
+          {/* want to get connected end */}
 
-        {/* connect forms */}
+          {/* connect forms */}
 
-        <div className="form-wrapper">
-          <div className="form-case">
-            <form
-              action="https://formsubmit.co/88fcc1b06d43556476d88696654f2534"
-              method="POST"
-              className="form-connect"
-            >
-              <div className="fmcase">
-                <div className="fm-1">
-                  <div className="i-name">
-                    FULL NAME <span className="star-form">*</span>
-                  </div>
-                  <input name="full_name" className="i-form"></input>
-                </div>
-
-                <div className="fm-1">
-                  <div className="i-name">
-                    ADDRESS <span className="star-form">*</span>
-                  </div>
-                  <input name="address" className="i-form"></input>
-                </div>
-              </div>
-
-              {/* SECOND FLEXX */}
-
-              <div className="email-phone-wrapper">
-                <div className="email-phone">
-                  <div className="em-1">
+          <div className="form-wrapper">
+            <div className="form-case">
+              <form
+                action="https://formsubmit.co/88fcc1b06d43556476d88696654f2534"
+                method="POST"
+                className="form-connect"
+              >
+                <div className="fmcase">
+                  <div className="fm-1">
                     <div className="i-name">
-                      EMAIL <span className="star-form">*</span>
+                      FULL NAME <span className="star-form">*</span>
                     </div>
-                    <div className="iii">
-                      <span className="heya">
-                        <GrMail />
-                      </span>
-                      <input
-                        required
-                        name="email"
-                        className="i-form ooo"
-                      ></input>
-                    </div>
+                    <input name="full_name" className="i-form"></input>
                   </div>
 
-                  <div className="em-2">
-                    <div className="i-name">PHONE</div>
-                    <div className="iii">
-                      <span className="heya">
-                        <AiTwotonePhone />
-                      </span>
-                      <input name="address" className="i-form ooo-2"></input>
+                  <div className="fm-1">
+                    <div className="i-name">
+                      ADDRESS <span className="star-form">*</span>
                     </div>
+                    <input name="address" className="i-form"></input>
                   </div>
+                </div>
 
-                  {/* <CheckboxList /> */}
+                {/* SECOND FLEXX */}
 
-                  <div className="em-3">
-                    <CheckboxList />
-                  </div>
+                <div className="email-phone-wrapper">
+                  <div className="email-phone">
+                    <div className="em-1">
+                      <div className="i-name">
+                        EMAIL <span className="star-form">*</span>
+                      </div>
+                      <div className="iii">
+                        <span className="heya">
+                          <GrMail />
+                        </span>
+                        <input
+                          required
+                          name="email"
+                          className="i-form ooo"
+                        ></input>
+                      </div>
+                    </div>
 
-                  {/* <div className='em-4'>
+                    <div className="em-2">
+                      <div className="i-name">PHONE</div>
+                      <div className="iii">
+                        <span className="heya">
+                          <AiTwotonePhone />
+                        </span>
+                        <input name="address" className="i-form ooo-2"></input>
+                      </div>
+                    </div>
+
+                    {/* <CheckboxList /> */}
+
+                    <div className="em-3">
+                      <CheckboxList />
+                    </div>
+
+                    {/* <div className='em-4'>
                     <Link className='btn'>SUBMIT</Link>
                   </div> */}
+                  </div>
                 </div>
-              </div>
 
-              <div className="em-4">
-                <button className="btn">SUBMIT</button>
+                <div className="em-4">
+                  <button className="btn">SUBMIT</button>
 
-                {/* <Link  className="btn">
+                  {/* <Link  className="btn">
                   GIVE
                 </Link> */}
 
-                <a
-                  className="btn"
-                  target="_blank"
-                  href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=L5USDDJ9JLKZJ"
-                  rel="noreferrer"
-                >
-                  DONATE
-                </a>
-              </div>
+                  <a
+                    className="btn"
+                    target="_blank"
+                    href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=L5USDDJ9JLKZJ"
+                    rel="noreferrer"
+                  >
+                    DONATE
+                  </a>
+                </div>
 
-              {/* SECOND FLEXX END */}
-            </form>
+                {/* SECOND FLEXX END */}
+              </form>
+            </div>
           </div>
+
+          {/* connect forms end */}
         </div>
-
-        {/* connect forms end */}
+        <ScrollToTop />
       </div>
-      <ScrollToTop />
     </div>
-    </div>
-
   );
 };
 

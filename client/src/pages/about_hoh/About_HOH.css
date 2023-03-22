@@ -1,34 +1,29 @@
-
-
 .hoh-showcase {
-    background: url('../../assets/images/k5.jpeg') no-repeat center center/cover;
-    height: 100vh;
+  background: url("../../assets/images/k5.jpeg") no-repeat center center/cover;
+  height: 100vh;
 }
 
 .hoh-text-showcase {
-    background: rgba(0, 0, 0, .6);
-    height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
 }
 
 .hoh-text {
-    color: #fff;
-    text-align: center;
-    font-weight: 700;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
-
 
 /* @media screen and (max-width: 600px) {
         .hoh-showcase {
         height: 70vh;
     }
 } */
-
-
 
 /* our vision */
 
@@ -91,197 +86,188 @@
 
 /* our vision */
 
-
 /* OUR VISION 2  */
 
-
-
 .vision-wrapper {
-    padding: 6rem 0;
-    width: 100%;
+  padding: 6rem 0;
+  width: 100%;
 }
 
 .line-case {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .line-case .line-1 {
-    background: var(--primary_color);
-    height: 3px;
-    width: 70%;
+  background: var(--primary_color);
+  height: 3px;
+  width: 70%;
 }
 
 .about-info-case {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1em;
-    margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1em;
+  margin: 3rem 0;
 }
 
 .vision-wrapper .vision .tt-1 {
-    color: var(--primary_color);
-    font-size: 3rem;
-    line-height: normal;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
+  color: var(--primary_color);
+  font-size: 3rem;
+  line-height: normal;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
 }
 
+.vision-wrapper .vision .ttp {
+  max-width: 900px;
+  text-align: center;
+  margin: 1rem auto 2rem auto;
+}
 
 .vision-wrapper .vision .tt-2 {
-    color: #000;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-weight: 500;
-    text-align: left;
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: left;
 }
 
 .vision-wrapper .vision .tt-3 {
-    color: #000;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: left;
-    text-transform: uppercase;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .about-info-case .tt-3 {
-    color: #000;
+  color: #000;
 }
-
 
 @media screen and (max-width: 600px) {
-    .vision-wrapper .vision .tt-1 {
+  .vision-wrapper .vision .tt-1 {
     font-size: 1.5rem;
-}
+  }
 
-
-.vision-wrapper .vision .tt-2 {
+  .vision-wrapper .vision .tt-2 {
     color: #000;
     font-size: 1.1rem;
-}
+  }
 
-.vision-wrapper .vision .tt-3 {
+  .vision-wrapper .vision .tt-3 {
     font-size: 1.5rem;
+  }
 }
-}
-
-
-
 
 /* OUR VISION 2 END */
-
 
 /* OUR VALUES HISTORY  */
 
 .values-showcase {
-    background: url('../../assets/images/nnav.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
-    padding: 5rem 0;
+  background: url("../../assets/images/nnav.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  padding: 5rem 0;
 }
 
 .values-text-case {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .values-tt1 {
-    color: #fff;
-    font-size: 2.5rem;
-    text-align: center;
-    font-weight: 600;
-    /* margin-bottom: 1.5rem; */
-    text-transform: capitalize;
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  /* margin-bottom: 1.5rem; */
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 600px) {
-.values-tt1 {
+  .values-tt1 {
     font-size: 1.5rem;
-}
+  }
 }
 
 .values-tt2 {
-    color: #fff;
-    /* font-size: 22px; */
-    font-size: 17px;
-    line-height: 1.7;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  color: #fff;
+  /* font-size: 22px; */
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .values-tt2:nth-child(4) {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 
 /* update  */
 
 .values-text-case .psr2 {
-    font-size: 1.2rem;
-    color: #fff;
-    font-weight: 600;
-    /* margin-bottom: 4rem; */
-    line-height: 1.8;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  /* margin-bottom: 4rem; */
+  line-height: 1.8;
 }
 
 .values-text-case .psr3 .linkAnima {
-    justify-content: flex-start;
-    padding: 0;
-    color: #fff;
-    font-size: 1.1rem;
+  justify-content: flex-start;
+  padding: 0;
+  color: #fff;
+  font-size: 1.1rem;
 }
 
 .values-text-case .ps-picc img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
-
 
 @media screen and (max-width: 800px) {
-.values-text-case .psr2 {
+  .values-text-case .psr2 {
     font-size: 1.1rem;
-}
-.values-text-case .values-tt1 {
+  }
+  .values-text-case .values-tt1 {
     font-size: 1.5rem;
     text-align: center;
-}
-.values-text-case .ps-picc img {
+  }
+  .values-text-case .ps-picc img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-}
+  }
 }
 
 .alex-docas .ps-left .psl-pic img {
-    height: 400px;
-    width: 100%;
-    /* object-fit: cover; */
+  height: 400px;
+  width: 100%;
+  /* object-fit: cover; */
 }
 
 /* update end */
 
 /* OUR VALUES HISTORY END */
 
-
-
 /* BIBLICAL  */
-
 
 /* .biblical-wrapper {
     padding: 5rem 0;
 } */
 
 .biblical-wrapper .biblical {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
 }
 
 /* .biblical-wrapper .biblical .bib {
@@ -289,24 +275,24 @@
 } */
 
 .biblical-wrapper .biblical .bib .bib-1 {
-    font-size: 20px;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: .5rem;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 600px) {
-    .biblical-wrapper .biblical .bib .bib-1 {
-        font-size: 1.3rem;
-    }
+  .biblical-wrapper .biblical .bib .bib-1 {
+    font-size: 1.3rem;
+  }
 }
 
 .biblical-wrapper .biblical .bib .bib-2 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #000;
-    line-height: 1.7;
-    margin-left: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.7;
+  margin-left: 1rem;
 }
 
 /* .biblical-wrapper .biblical .bib .bib-2 span {
@@ -315,412 +301,378 @@
 } */
 
 .biblical-wrapper .biblical .bib .bib-1 span {
-    color: var(--primary_color);
-    cursor: pointer;
-    margin-left: 1rem;
+  color: var(--primary_color);
+  cursor: pointer;
+  margin-left: 1rem;
 }
-
-
 
 /* BIBLICAL  */
 
-
-
-
-
 /* INTERESTED  */
 
-
 .interested-wrapper {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .interested {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
-
-
 .int {
-    font-size: 40px;
-    color: #000;
-    font-weight: 700;
-    margin: 2rem 0;
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+  margin: 2rem 0;
 }
 
 @media screen and (max-width: 600px) {
-    .int {
-        font-size: 18px;
-    }
+  .int {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 950px) {
-    .interested-wrapper {
+  .interested-wrapper {
     padding-top: 4rem;
     padding-bottom: 4rem;
-}
+  }
 }
 
 .hoo a {
-    color: var(--primary_color);
+  color: var(--primary_color);
 }
 .hoo a:hover {
-    color: #000;
+  color: #000;
 }
 .hoo {
-    color: var(--primary_color);
+  color: var(--primary_color);
 }
 .hoo:hover {
-    color: #000;
+  color: #000;
 }
 
 .hoo-1 .hoo:hover {
-    color: #000;
+  color: #000;
 }
-
 
 /* INTERESTED END */
 
-
-
-
-
 /* KINGDOM & HIGHWAY */
 
-
-
 .kg-hh-wrapper {
-    padding: 5rem 0;
-    max-width: 90%;
-    margin: auto;
+  padding: 5rem 0;
+  max-width: 90%;
+  margin: auto;
 }
 
 .kg-hh {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
 
-
 .kg {
-    width: 32%;
-    /* width: 45%; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  width: 32%;
+  /* width: 45%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .kg-1 {
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--primary_color);
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary_color);
 }
 
 @media screen and (max-width: 600px) {
-    .kg-1 {
+  .kg-1 {
     font-size: 19px;
-}
+  }
 }
 
 .kg-2 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .kg-3 .links {
-    color: #000;
-    justify-content: flex-start;
-    padding: 0;
+  color: #000;
+  justify-content: flex-start;
+  padding: 0;
 }
 
 .hh-3 .links {
-    color: #000;
-    justify-content: flex-start;
-    padding: 0;
+  color: #000;
+  justify-content: flex-start;
+  padding: 0;
 }
 .kg-3:hover .links {
-    color: var(--primary_color);
+  color: var(--primary_color);
 }
 .hh-3 .links:hover {
-    color: var(--primary_color);
+  color: var(--primary_color);
 }
 
 .hh {
-    /* width: 45%; */
-    width: 32%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  /* width: 45%; */
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .klm-case {
-    width: 32%;
+  width: 32%;
 }
 
 .hh-1a {
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--primary_color);
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary_color);
 }
 
 @media screen and (max-width: 600px) {
-    .hh-1a {
+  .hh-1a {
     font-size: 19px;
-}
+  }
 }
 
 .hh-2a {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-
-
 @media screen and (max-width: 600px) {
-    .kg-hh {
+  .kg-hh {
     flex-direction: column;
-    }
+  }
 
-    .kg {
+  .kg {
     width: 100%;
     margin: auto;
     margin-bottom: 4rem;
-    }
-    .hh {
+  }
+  .hh {
     width: 100%;
     margin: auto;
-    }
+  }
 
-    .klm-case {
+  .klm-case {
     width: 100%;
     margin-top: 2rem;
-}
+  }
 
-    .hh-3 .links {
-        justify-content: center;
-        align-items: flex-start;
-        padding: 0;
-        margin: 0;
-    }
+  .hh-3 .links {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .kg-hh {
+  .kg-hh {
     flex-direction: column;
-    }
+  }
 
-    .kg {
+  .kg {
     width: 100%;
     margin: auto;
     margin-bottom: 4rem;
-    }
-    .hh {
+  }
+  .hh {
     width: 100%;
     margin: auto;
-    }
+  }
 
-    .klm-case {
+  .klm-case {
     width: 100%;
     margin-top: 2rem;
+  }
 }
-}
-
-
 
 .abt-hp {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 1rem 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 1rem 0;
 }
 
 .ps-l {
-    width: 50%;
+  width: 50%;
 }
 
 .ps-r {
-    width: 50%;
+  width: 50%;
 }
 
-
 /* KINGDOM & HIGHWAY END */
-
-
 
 /* PASTOR ALEX  */
 
 .ps-alex-wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .ps-alex-case {
-    max-width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .ps-left {
-    width: 50%;
+  width: 50%;
 }
 
 .psl-pic img {
-    /* object-fit: cover; */
-    object-fit: contain;
-    width: 100%;
-    height: 500px;
-    /* clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%); */
+  /* object-fit: cover; */
+  object-fit: contain;
+  width: 100%;
+  height: 500px;
+  /* clip-path: polygon(0 0, 100% 0%, 79% 100%, 0% 100%); */
 }
 
 .ps-right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 2rem;
-    margin-right: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .psr1 {
-    font-size: 1.6rem;
-    color: var(--primary_color);
-    font-weight: 800;
+  font-size: 1.6rem;
+  color: var(--primary_color);
+  font-weight: 800;
 }
 
 .psr2 {
-    font-size: 16px;
-    color: #000;
-    font-weight: 600;
-    margin: 1rem 0;
-    line-height: 1.8;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  margin: 1rem 0;
+  line-height: 1.8;
 }
 
 .psr3 .linkAnima {
-    justify-content: flex-start;
-    padding: 0;
-    color: #000;
-    font-size: 16px;
+  justify-content: flex-start;
+  padding: 0;
+  color: #000;
+  font-size: 16px;
 }
-
 
 .psr3 .linkAnima:hover {
-    color: var(--primary_color);
+  color: var(--primary_color);
 }
 
-
-@media screen and (max-width:950px) {
-    .ps-alex-case {
+@media screen and (max-width: 950px) {
+  .ps-alex-case {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     max-width: 95%;
     margin: auto;
-}
+  }
 
-.ps-right {
+  .ps-right {
     width: 100%;
     margin-left: 0;
     margin-top: 4rem;
     margin-right: 0;
-}
+  }
 
-.ps-left {
+  .ps-left {
     width: 100%;
     margin-top: 4rem;
-}
+  }
 
-.psl-pic img {
+  .psl-pic img {
     height: 420px;
     clip-path: none;
-}
+  }
 
-.psr1 {
+  .psr1 {
     text-align: center;
+  }
 }
 
-}
-
-@media screen and (max-width: 600px ) {
-    .psl-pic img {
+@media screen and (max-width: 600px) {
+  .psl-pic img {
     height: 360px;
     width: 100%;
     object-fit: contain;
-}
-.psr1 {
+  }
+  .psr1 {
     font-size: 1.2rem;
     color: #000;
     font-weight: 800;
+  }
 }
-}
-
-
 
 /* PASTOR ALEX  END */
 
-
-
 /* MISSION STATEMENT  */
 
-
 .ms-stat-wrapper {
-    width: 100%;
-    background: url('../../assets/images/nnav.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
+  width: 100%;
+  background: url("../../assets/images/nnav.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  margin: 5rem 0;
 }
 
 .ms-stat-case {
-    max-width: 90%;
-    margin: auto;
-    color: #fff;
-    padding: 5rem 0;
+  max-width: 90%;
+  margin: auto;
+  color: #fff;
+  padding: 5rem 0;
 }
 
 .ms-stat-show {
-    position: relative;
+  position: relative;
 }
 
 .ms-stat {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* align-items: center; */
-    width: 90%;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  width: 90%;
+  margin: auto;
 }
 
 .ms1 {
-    font-weight: 800;
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 2rem;
+  font-weight: 800;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 2rem;
 }
 
 .ms2 {
-    font-weight: 600;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
 }
 .ms22 {
-    font-weight: 600;
-    font-size: 17px;
-    margin-top: 1rem;
-    line-height: 1.7;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 1rem;
+  line-height: 1.7;
 }
-
-
 
 /* span {
     font-size: 50px;
@@ -756,7 +708,6 @@ span:last-child {
   left: 0;
 }
 
-
 .l-shape2 {
   position: relative;
   height: 100px; /* reduce the height to make it thinner */
@@ -782,50 +733,46 @@ span:last-child {
 }
 
 @media screen and (max-width: 600px) {
-    .ms-stat-case {
+  .ms-stat-case {
     max-width: 90%;
     padding: 2rem 0;
+  }
+
+  .box-1 {
+    position: absolute;
+    width: 10px; /* reduce the width to make it thinner */
+    height: 100%; /* occupy full height of parent element */
+    background-color: #f00; /* set the same color */
+    top: 3rem;
+    left: 0;
+  }
+
+  .box-2 {
+    position: absolute;
+    width: 200px; /* occupy full width of parent element */
+    height: 10px; /* reduce the height to make it thinner */
+    background-color: #f00; /* set the same color */
+    bottom: 50px;
+    left: 0;
+  }
+
+  .box-12 {
+    position: absolute;
+    width: 10px; /* reduce the width to make it thinner */
+    height: 100%; /* occupy full height of parent element */
+    background-color: var(--primary_color); /* set the same color */
+    top: -20px;
+    right: 0;
+  }
+
+  .box-22 {
+    position: absolute;
+    width: 200px; /* occupy full width of parent element */
+    height: 10px; /* reduce the height to make it thinner */
+    background-color: var(--primary_color); /* set the same color */
+    bottom: 20px;
+    right: 0;
+  }
 }
-
-.box-1 {
-  position: absolute;
-  width: 10px; /* reduce the width to make it thinner */
-  height: 100%; /* occupy full height of parent element */
-  background-color: #f00; /* set the same color */
-  top: 3rem;
-  left: 0;
-}
-
-.box-2 {
-  position: absolute;
-  width: 200px; /* occupy full width of parent element */
-  height: 10px; /* reduce the height to make it thinner */
-  background-color: #f00; /* set the same color */
-  bottom: 50px;
-  left: 0;
-}
-
-.box-12 {
-  position: absolute;
-  width: 10px; /* reduce the width to make it thinner */
-  height: 100%; /* occupy full height of parent element */
-  background-color: var(--primary_color); /* set the same color */
-  top: -20px;
-  right: 0;
-}
-
-.box-22 {
-  position: absolute;
-  width: 200px; /* occupy full width of parent element */
-  height: 10px; /* reduce the height to make it thinner */
-  background-color: var(--primary_color); /* set the same color */
-  bottom: 20px;
-  right: 0;
-}
-
-}
-
-
-
 
 /* MISSION STATEMENT END */

@@ -1,27 +1,27 @@
 #ministry-page {
-    background: #fff;
+  background: #fff;
 }
 
 /* showcase */
 .ministry-wrapper {
-    background: url('../../assets/images/xc6.jpeg') no-repeat center center/cover;
-    height: 100vh;
+  background: url("../../assets/images/xc6.jpeg") no-repeat center center/cover;
+  height: 100vh;
 }
 
 .ministry-case {
-    background: rgba(0, 0, 0, .6);
-    height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
 }
 
 .ministry-text {
-    color: #fff;
-    text-align: center;
-    font-weight: 700;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 /* @media screen and (max-width: 600px) {
@@ -33,14 +33,11 @@
 
 /* showcase end */
 
-
-
 /* where */
 
-
 .where-wrap {
-    background: #fff;
-    margin-bottom: 8rem;
+  background: #fff;
+  margin-bottom: 8rem;
 }
 
 /* .where-show {
@@ -48,46 +45,44 @@
 } */
 
 .where-case {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
-
 
 .where-11 {
-    font-size: 19px;
-    color: #000;
-    font-weight: 600;
-    width: 40%;
-    margin-left: 8%;
+  font-size: 19px;
+  color: #000;
+  font-weight: 600;
+  width: 40%;
+  margin-left: 8%;
 }
 .where-11 .w-11-1 {
-    font-size: 30px;
-    margin: 1.5rem 0;
+  font-size: 30px;
+  margin: 1.5rem 0;
 }
 
 .where-22 {
-    width: 60%;
+  width: 60%;
 }
 
-
 .where-22 .w-shape {
-    right: 0;
-    z-index: 1;
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
-    height: 13rem;
-    width: 100%;
-    background: var(--primary_color);
+  right: 0;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+  height: 13rem;
+  width: 100%;
+  background: var(--primary_color);
 }
 
 .where-22 .w-pic {
-    width: 50%;
-    height: 250px;
-    position: absolute;
-    right: 0;
-    top: -80px;
-    background: #D9D9D9;
+  width: 50%;
+  height: 250px;
+  position: absolute;
+  right: 0;
+  top: -80px;
+  background: #d9d9d9;
 }
 
 /* .where-22 .w-pic img {
@@ -96,223 +91,211 @@
 } */
 
 .where-22 .w-tt {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #000;
-    position: absolute;
-    /* right: 250px; */
-    right: 15%;
-    top: 1px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  position: absolute;
+  /* right: 250px; */
+  right: 15%;
+  top: 1px;
 }
 
 @media screen and (max-width: 1024px) {
-    .where-22 .w-tt {
+  .where-22 .w-tt {
     right: 10%;
-}
+  }
 }
 
 @media screen and (max-width: 950px) {
-    .where-22 .w-tt {
+  .where-22 .w-tt {
     right: 9%;
     font-size: 1.7rem;
-}
-.where-11 .w-11-1 {
+  }
+  .where-11 .w-11-1 {
     /* font-size: 30px; */
     margin-top: 2rem;
-}
+  }
 }
 
 @media screen and (max-width: 750px) {
-    .where-22 .w-tt {
+  .where-22 .w-tt {
     right: 9%;
     font-size: 1.5rem;
-}
+  }
 }
 
 @media screen and (max-width: 749px) {
-    .where-case {
+  .where-case {
     flex-direction: column-reverse;
     justify-content: center;
     max-width: 80%;
     margin: auto;
-    }
+  }
 
-    .where-22 {
+  .where-22 {
     width: 100%;
     margin: auto;
-    }
-    .where-11 {
+  }
+  .where-11 {
     width: 100%;
     margin: auto;
     margin-top: 13rem;
-    }
+  }
 
-    .where-22 .w-pic {
+  .where-22 .w-pic {
     width: 90%;
     height: 200px;
     right: 18px;
     top: -40px;
     z-index: 3;
-    }
+  }
 
-    .where-22 .w-shape {
+  .where-22 .w-shape {
     right: 0;
     height: 13rem;
     top: -90px;
     position: absolute;
     z-index: 1;
     width: 97%;
-    }
+  }
 
-    .where-22 .w-tt {
+  .where-22 .w-tt {
     font-size: 1.5rem;
     /* right: 250px; */
     right: 25%;
     top: 10px;
     z-index: 4;
-    }
+  }
 }
 
 @media screen and (max-width: 600px) {
-     .where-22 .w-tt {
+  .where-22 .w-tt {
     right: 20%;
     font-size: 1.3rem;
     top: 0;
-    }
+  }
 
-      .where-22 .w-pic {
+  .where-22 .w-pic {
     width: 90%;
     height: 130px;
     right: 18px;
     top: -40px;
     z-index: 3;
-    }
+  }
 
-    .where-22 .w-shape {
+  .where-22 .w-shape {
     right: 0;
     height: 7rem;
     top: -65px;
     position: absolute;
     z-index: 1;
     width: 97%;
-    }
+  }
 
-     .where-11 {
+  .where-11 {
     width: 100%;
     margin: auto;
     margin-top: 10rem;
-    }
-    
+  }
 }
-
-
-
 
 /* where end */
 
-
-
-
-
-
-
 /* MIN SEC */
 
-
 .min-sec-wrapper {
-    max-width: 85%;
-    margin: auto;
+  max-width: 85%;
+  margin: auto;
 }
 
 .min-sec-case .min-sec {
-    max-width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4rem;
-    /* gap: 2em; */
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  /* gap: 2em; */
 }
 
 .min-sec-case .min-sec .minsec {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: flex-start; */
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 45%;
-    /* height: 620px; */
-    gap: 1.5em;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 45%;
+  /* height: 620px; */
+  gap: 1.5em;
 }
 
 .minsec .min-1 {
-    height: 320px;
-    width: 100%;
+  height: 320px;
+  width: 100%;
 }
 
 .minsec .min-1 img {
-    object-fit: cover;
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
 }
 
 .minsec .min-2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #000;
-    /* margin: .7rem 0; */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  /* margin: .7rem 0; */
 }
 
 .minsec .min-3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .minsec .min-3 .linkAnima {
-    padding: 0;
-    justify-content: flex-start;
-    color: #000;
+  padding: 0;
+  justify-content: flex-start;
+  color: #000;
 }
 .minsec .min-3 .linkAnima:hover {
-    color: var(--primary_color);
+  color: var(--primary_color);
 }
 .minsec .min-3 .linkAnima:nth-child(1) {
-    margin-right: 2.5rem;
+  margin-right: 2.5rem;
 }
 
-
 .minsec .min-4 {
-    background: #000;
-    height: 2px;
-    width: 100%;
-    /* margin-top: 3rem; */
+  background: #000;
+  height: 2px;
+  width: 100%;
+  /* margin-top: 3rem; */
 }
 
 @media screen and (max-width: 750px) {
-    .min-sec-case .min-sec {
+  .min-sec-case .min-sec {
     max-width: 100%;
     flex-direction: column;
     margin-bottom: 2rem;
-    }
+  }
 
-    .min-sec-case .min-sec .minsec {
+  .min-sec-case .min-sec .minsec {
     margin-bottom: 3.5rem;
     width: 90%;
-    }
+  }
 
-    .where-11 .w-11-1 {
+  .where-11 .w-11-1 {
     text-align: center;
-}
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .minsec .min-1 {
+  .minsec .min-1 {
     height: 200px;
     width: 100%;
+  }
 }
-}
-
 
 /* MIN SEC END */

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import churchImg from "../../assets/images/church.jpg";
+import churchImg from "../../assets/images/leaders-hoh.jpg";
 
 function SingleCard() {
   return (
