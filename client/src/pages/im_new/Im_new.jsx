@@ -58,7 +58,7 @@ const Im_new = () => {
             Christian Church that centers on companionship, love, and care. We
             seek to exalt the Lord and build up His people via collective
             worship and teachings that emphasize the sufficiency of God and His
-            Word......
+            Word.
           </p>
           <div
             className="new_expect_links"
@@ -94,15 +94,15 @@ const Im_new = () => {
                 data-aos-delay="300"
                 data-aos-anchor-placement="center-bottom"
               >
-                We are a church that meets every sunday at 11 O'clock AM for
+                We are a church that meets every sunday at 11:00 AM for
                 celebration service in person and online via facebook live. we
-                also meets every wednesday at 7 O'clock PM in person and on
-                facebook live. Our friday Bible Academy meeting happens every
-                friday at 7:30 PM on facebook live. We call ourselves a "me too"
-                community and hope that you feel right at home. Are you in need
-                of prayers or do you know anyone that needs prayers? fill the
-                prayer request form and we will surely get back to you. We HOH
-                leaders and members can not wait to hear from you.
+                also meets every Wednesday at 7:00 PM in person and on facebook
+                live. Our Friday Bible Academy meeting happens every Friday at
+                7:30 PM on facebook live. We call ourselves a "me too" community
+                and hope that you feel right at home. Are you in need of prayers
+                or do you know anyone that needs prayers? Fill the prayer
+                request form and we will surely get back to you. We HOH leaders
+                and members can not wait to hear from you.
               </p>
               <div
                 className="new_expect_links"
@@ -132,14 +132,77 @@ const Im_new = () => {
         </div>
       </section>
       <Faq />
+      <section id="contact_form">
+        <div className="form_wrapper container">
+          <form
+            action="https://88fcc1b06d43556476d88696654f2534"
+            method="POST"
+            autoComplete="off"
+          >
+            <ul>
+              <li>
+                <label for="first_name">
+                  Name <span className="start_sign">*</span>
+                </label>
+                <div className="name_input">
+                  <span>
+                    <input
+                      name="first_name"
+                      id="first_name"
+                      type="text"
+                      required
+                    />
+                    <label for="first_name">First</label>
+                  </span>
+                  <span>
+                    <input name="last_name" id="fiel_4" type="text" required />
+                    <label for="last_name">Last</label>
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <label for="email">
+                  Email <span className="start_sign">*</span>
+                </label>
+                <div>
+                  <input name="email" id="email" type="email" required />
+                </div>
+              </li>
+
+              <li>
+                <label for="comments">Comments and Questions</label>
+                <div>
+                  <textarea
+                    name="comments"
+                    id="comments"
+                    rows="10"
+                    required
+                    placeholder
+                  ></textarea>
+                </div>
+              </li>
+              <div className="am_new_btn">
+                <li>
+                  <input
+                    className="btn new_submit"
+                    type="submit"
+                    value="Submit"
+                  />
+                </li>
+              </div>
+            </ul>
+          </form>
+        </div>
+      </section>
 
       <section id="map">
-        <div className="ask text_center">
+        {/* <div className="ask text_center">
           <Link className="btn" to="/contact">
             DO YOU HAVE ANY
             <br /> QUESTIONS
           </Link>
-        </div>
+        </div> */}
         {/* <div className="main_map">
           <img src={mapImage} alt="" />
         </div> */}

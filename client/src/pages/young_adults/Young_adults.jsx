@@ -97,9 +97,9 @@ const Young_adults = () => {
                       <div className="text">
                         <p>MONDAY MEETING</p>
                         <p>Join us this and every Sunday</p>
-                        <Link className="linkAnima">
+                        {/* <Link className="linkAnima">
                           Learn More <span className="arrow"></span>
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                     <div className="card">
@@ -108,11 +108,11 @@ const Young_adults = () => {
                         <p>HOH FEBRUARY GATHERING</p>
                         <p>
                           Join us on the evening of Thursday, February 9th
-                          starting at 7pm in the evening
+                          starting at 7:00pm in the evening
                         </p>
-                        <Link className="linkAnima">
+                        {/* <Link className="linkAnima">
                           Learn More <span className="arrow"></span>
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                     <div className="card">
@@ -120,12 +120,12 @@ const Young_adults = () => {
                       <div className="text">
                         <p>HOH MARCH GATHERING</p>
                         <p>
-                          Join us on the evening of Thursday, February 9 th
-                          starting at 7 pm on weekends
+                          Join us on the evening of Thursday, February 9th
+                          starting at 7:00 pm on weekends
                         </p>
-                        <Link className="linkAnima">
+                        {/* <Link className="linkAnima">
                           Learn More <span className="arrow"></span>
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>

@@ -170,6 +170,43 @@
   z-index: -1;
 }
 
+.am_new_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+/* 
+.am_new_btn li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.am_new_btn .new_submit {
+  border-radius: 0;
+  font-size: 5rem;
+} */
+#contact_form .form_wrapper .am_new_btn input[type="submit"] {
+  background-color: #fff;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0px;
+  border: 1px solid var(--primary_color);
+  background-color: var(--primary_color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all var(--transition);
+}
+
+#contact_form .form_wrapper input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 #map {
   display: flex;
   align-items: center;

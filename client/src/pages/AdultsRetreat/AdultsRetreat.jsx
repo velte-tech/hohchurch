@@ -4,18 +4,18 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./AdultsRetreat.css";
-import Search from "../../components/searchLocate/Search";
+// import Search from "../../components/searchLocate/Search";
 import SingleCard from "../../components/aboutSlideIn/SingleCard";
 import gatheringImg from "../../assets/images/gathering.jpg";
 import infantImg from "../../assets/images/infant.jpg";
-import womenImg from "../../assets/images/women_group.jpg";
-import familyImg from "../../assets/images/family.jpg";
-import elderlyImg from "../../assets/images/elderly.jpg";
-import parentsImg from "../../assets/images/parents.jpg";
-import seminerImg from "../../assets/images/seminer.jpg";
-import menImg from "../../assets/images/men.jpg";
+// import womenImg from "../../assets/images/women_group.jpg";
+// import familyImg from "../../assets/images/family.jpg";
+// import elderlyImg from "../../assets/images/elderly.jpg";
+// import parentsImg from "../../assets/images/parents.jpg";
+// import seminerImg from "../../assets/images/seminer.jpg";
+// import menImg from "../../assets/images/men.jpg";
 import lafPastorImg from "../../assets/images/pastordocas.jpg";
-import KidsAcc from "../../components/mAccComponents/KidsAcc";
+// import KidsAcc from "../../components/mAccComponents/KidsAcc";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const Lafayette = () => {
@@ -38,7 +38,7 @@ const Lafayette = () => {
           <p className="laf_asl focus-in-contract-bck">
             House of Holiness Church
           </p>
-          <Search />
+          {/* <Search /> */}
         </div>
       </section>
 
@@ -50,12 +50,12 @@ const Lafayette = () => {
             data-aos-delay="400"
             data-aos-anchor-placement="top-bottom"
           >
-            <p>ABOUT US</p>
+            <p>ABOUT ADULT RETREAT</p>
             <p>
               Adult Retreat is a retreat programme held by Highway of Holiness
               Church for members from age 25 and above.
             </p>
-            <p className="asl_welcome">Adult Retreat Service at 9AM</p>
+            <p className="asl_welcome">Adult Retreat Service at 9:00 AM</p>
           </div>
 
           <div className="right">
@@ -69,8 +69,8 @@ const Lafayette = () => {
             >
               <img src={gatheringImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">Outreach & Trips</p>
-                <p>Find our service time and direction to our locations</p>
+                <p className="hover_overlay ">Outreach</p>
+                <p>Checkout our outreach programmes.</p>
                 <Link to="/outreach" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -85,8 +85,10 @@ const Lafayette = () => {
             >
               <img src={infantImg} alt="" />
               <div className="text">
-                <p className="hover_overlay ">INFANT & CHILD DEDICATION</p>
-                <p>Find our service time and direction to our locations</p>
+                <p className="hover_overlay ">KIDS MINISTRY</p>
+                <p>
+                  Find out more about Highway of Holiness church kids ministry.
+                </p>
                 <Link to="/kids" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -103,7 +105,7 @@ const Lafayette = () => {
 
       {/* ======= MINISTRIES SECTION ======= */}
 
-      <section id="ministries">
+      {/* <section id="ministries">
         <div className="ministries_wrapper">
           <h1 className="text_center">MINISTRIES</h1>
 
@@ -176,19 +178,19 @@ const Lafayette = () => {
             </Link>
           </KidsAcc>
         </div>
-      </section>
+      </section> */}
 
       {/* ======= SERVE DIVIDER SETION ======= */}
-      <section id="serve_divider">
+      {/* <section id="serve_divider">
         <h2 className="text_center">Serve With Us</h2>
         <div className="bottom text_center">
           <Link className="hover_overlay">SUNDAYS</Link>
           <Link className="hover_overlay">WEEKENDS</Link>
         </div>
-      </section>
+      </section> */}
 
       {/* ======= LAFAYETTE SECTION ======= */}
-      <section id="lafayette_events">
+      {/* <section id="lafayette_events">
         <div className="about_welcome">
           <h2>Events</h2>
           <div className="right">
@@ -283,7 +285,7 @@ const Lafayette = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="lafayette_reach">
         <div className="reach_wrapper">
@@ -302,11 +304,11 @@ const Lafayette = () => {
             data-aos-delay="600"
             data-aos-anchor-placement="top center"
           >
-            <h2>Pastor Dorcas Gyesi</h2>
-            <p>Pastor</p>
+            <h2>Assocciate Pastor Dorcas Gyesi</h2>
+            <p></p>
             <p>
-              My wife and I started our ministry 33 years ago when we said“
-              YES!”to God’ s call.Since then have not looked back.We have
+              My wife and I started our ministry 33 years ago when we said “
+              YES!” to God’ s call.Since then have not looked back.We have
               embarked on many projects, ranging from providing supplementary
               education for children in deprived areas - to running a homeless
               shelter since 2009 till present day and many more ministries that

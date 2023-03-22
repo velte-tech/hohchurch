@@ -4,7 +4,7 @@ import "./EasterService.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Search from "../../components/searchLocate/Search";
+// import Search from "../../components/searchLocate/Search";
 import AboutSlideIn from "../../components/aboutSlideIn/AboutSlideIn";
 import bellImg from "../../assets/images/churchBell.jpg";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
@@ -25,7 +25,7 @@ const Aurora = () => {
         <div className="showcase_wrapper">
           <h1 className="focus-in-contract-bck">EASTER SERVICE</h1>
           <p className="date focus-in-contract-bck">SUNDAY: 9 & 11AM</p>
-          <Search />
+          {/* <Search /> */}
         </div>
       </section>
 
@@ -37,9 +37,9 @@ const Aurora = () => {
             data-aos-delay="400"
             data-aos-anchor-placement="top-bottom"
           >
-            <p>ABOUT US</p>
+            <p>ABOUT EASTER SERVICE</p>
             <p>
-              Youth retreat at Highway Of Holiness Church has alot to offer by
+              Easter retreat at Highway Of Holiness Church has alot to offer by
               bringing young people of all walks of life to connect with each
               other in the name name of out lord and saviour Jesus Christ.
             </p>
@@ -60,7 +60,7 @@ const Aurora = () => {
               <img src={bellImg} alt="" />
               <div className="text">
                 <p className="hover_overlay ">GIVING @ HoH</p>
-                <p>Support thr work of God, for in giving shall ye receive.</p>
+                <p>Support the work of God, for in giving shall ye receive.</p>
                 <Link to="/About_HOH" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -75,9 +75,9 @@ const Aurora = () => {
         </div>
       </section>
 
-      <section id="aurora_events">
+      {/* <section id="aurora_events">
         <h1 className="focus-in-contract-bck">Easter Events</h1>
-      </section>
+      </section> */}
       <ScrollToTop />
     </div>
   );

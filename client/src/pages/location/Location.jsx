@@ -3,13 +3,12 @@ import "./Location.css";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
-
 const Location = () => {
   return (
     <div className="location-page">
       <div className="loc-wrapper">
         <div className="loc">
-          <div className="loc-1">LOCATIONS & TIMES</div>
+          <div className="loc-1">UPCOMING EVENTS</div>
 
           <div className="loc-2">
             <Link to="/contact" className="links linkAnima">
@@ -29,8 +28,7 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
-                  United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -54,8 +52,7 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
-                  United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -77,8 +74,7 @@ const Location = () => {
               {/* <div className="broad-1">Broadcast Location</div> */}
 
               <div className="add hover_overlay_2">
-                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
-                  United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -97,13 +93,14 @@ const Location = () => {
           <div className="campus-1">
             {/* campus flex */}
             <div className="campus">
-              <div className="city">HIGHWAY YOUTH <br></br> CLUB</div>
+              <div className="city">
+                HIGHWAY YOUTH <br></br> CLUB
+              </div>
 
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
-                  United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -120,13 +117,14 @@ const Location = () => {
 
             {/* campus flex */}
             <div className="campus">
-              <div className="city">21ST CENTURY <br></br> EDUCATION</div>
+              <div className="city">
+                21ST CENTURY <br></br> EDUCATION
+              </div>
 
               {/* <div className="broad"></div> */}
 
               <div className="add hover_overlay_2">
-                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
-                  United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -148,8 +146,7 @@ const Location = () => {
               <div className="city-1">SHIFT</div>
 
               <div className="add hover_overlay_2">
-                Central Office Address | Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL,
-                  United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
               </div>
 
               {/* <div className='add'>

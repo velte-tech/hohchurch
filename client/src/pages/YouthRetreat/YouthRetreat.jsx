@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./YouthRetreat.css";
-import Search from "../../components/searchLocate/Search";
+// import Search from "../../components/searchLocate/Search";
 import AboutSlideIn from "../../components/aboutSlideIn/AboutSlideIn";
 import youthImg from "../../assets/images/retreat-01.jpg";
 import personImg from "../../assets/images/retreat-03.jpg";
@@ -31,7 +31,7 @@ const Denver = () => {
             Changed Lives - Youth and young adults retreat
           </h1>
           {/* <p className="date focus-in-contract-bck">SUNDAY: 9,11 AM & 6:30PM</p> */}
-          <Search />
+          {/* <Search /> */}
         </div>
       </section>
 
@@ -43,11 +43,11 @@ const Denver = () => {
             data-aos-delay="400"
             data-aos-anchor-placement="top-bottom"
           >
-            <p>ABOUT US</p>
+            <p>ABOUT OUR YOUTH RETREAT</p>
             <p>
               Youth retreat at Highway Of Holiness Church has alot to offer by
               bringing young people of all walks of life to connect with each
-              other in the name name of our lord and saviour Jesus Christ.
+              other in the name of our lord and saviour Jesus Christ.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ const Denver = () => {
             <h2>YOUTH RETREAT</h2>
             <p>
               Yought Retreat started at Highway Of Holiness church to focus on
-              bringingthe young people of Highway Of Holiness church together
+              bringing the young people of Highway Of Holiness church together
               and learn more about the changing society and to up-lift the young
               generation. reach this community and tell them about Jesus' love.
             </p>
