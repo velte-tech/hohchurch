@@ -28,7 +28,7 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -52,7 +52,7 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -74,7 +74,7 @@ const Location = () => {
               {/* <div className="broad-1">Broadcast Location</div> */}
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -100,7 +100,7 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -124,7 +124,7 @@ const Location = () => {
               {/* <div className="broad"></div> */}
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -146,7 +146,7 @@ const Location = () => {
               <div className="city-1">SHIFT</div>
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL, United Kingdom
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
               </div>
 
               {/* <div className='add'>
