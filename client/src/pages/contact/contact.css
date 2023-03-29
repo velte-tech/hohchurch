@@ -1,10 +1,20 @@
 #contact_showcase {
+  position: relative;
   height: 30rem;
-  background: url("../../assets/images/contact.png") no-repeat center
+  background: url("../../assets/images/contact2.jpg") no-repeat center
     center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  isolation: isolate;
+}
+
+#contact_showcase::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
 #contact_showcase .showcase_wrapper h2 {
@@ -184,6 +194,22 @@
   font-weight: 400;
 }
 
+#contact_form .email_input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#contact_form input::-webkit-outer-spin-button,
+#contact_form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#contact_form input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
 /* #contact_form .form_wrapper input[type="checkbox"] {
 
 } */

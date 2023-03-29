@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 // import Search from "../../components/searchLocate/Search";
 import AboutSlideIn from "../../components/aboutSlideIn/AboutSlideIn";
-import bellImg from "../../assets/images/churchBell.jpg";
+import donateImg from "../../assets/images/donate.jpg";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const Aurora = () => {
@@ -37,7 +37,7 @@ const Aurora = () => {
             data-aos-delay="400"
             data-aos-anchor-placement="top-bottom"
           >
-            <p>ABOUT EASTER SERVICE</p>
+            <p>HOH EASTER SERVICE</p>
             <p>
               Easter retreat at Highway Of Holiness Church has alot to offer by
               bringing young people of all walks of life to connect with each
@@ -57,7 +57,7 @@ const Aurora = () => {
               data-aos="fade-left"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={bellImg} alt="" />
+              <img src={donateImg} alt="" />
               <div className="text">
                 <p className="hover_overlay ">GIVING @ HoH</p>
                 <p>Support the work of God, for in giving shall ye receive.</p>

@@ -106,8 +106,9 @@ function Header() {
             {/* overlay menu */}
 
             <ul className="nav-links">
-              <li className="nav-item neww hover_overlay">
+              <li className="nav-item neww">
                 <NavLink to="/Im_new" onClick={() => setNavOpen(!navOpen)}>
+                  <div className="shape"></div>
                   I'M NEW
                 </NavLink>
                 <div className="nav-item-wrapper"></div>
@@ -291,15 +292,17 @@ function Header() {
                 {/* drop-dowm end */}
               </li>
 
-              <li className="nav-item neww hover_overlay">
+              <li className="nav-item neww ">
                 <NavLink to="/Messages" onClick={() => setNavOpen(!navOpen)}>
+                  <div className="shape"></div>
                   MESSAGES
                 </NavLink>
                 <div className="nav-item-wrapper"></div>
               </li>
 
-              <li className="nav-item neww hover_overlay">
+              <li className="nav-item neww">
                 <NavLink to="/Contact" onClick={() => setNavOpen(!navOpen)}>
+                  <div className="shape"></div>
                   CONTACT
                 </NavLink>
                 <div className="nav-item-wrapper"></div>

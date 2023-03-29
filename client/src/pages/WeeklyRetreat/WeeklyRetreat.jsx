@@ -44,18 +44,18 @@ const Longmont = () => {
           <h1 className="text_center">WEEKLY PROGRAMMES</h1>
           <p className="text_center">
             Our weekly Sunday celebration service takes place every Sunday on
-            our church premises from 11:30 am– 13:30 pm.
+            our church premises from 11:30 AM to 13:30 PM.
             <br /> <br />
             This is a time of joyous praise and worship, a word of teaching and
             encouragement is shared and we also dedicate time to prayer and
             communion. <br /> <br />
             We also meet every Monday, Tuesday and Thursday on our telephone
-            prayer line from 7:00 pm– 8:00 pm. <br /> <br /> We meet on
-            Wednesdays from 12:00 noon - 1:00 pm, 3:00 pm - 4:00 pm on our
-            telephone prayer line and at 7:30 pm on our church premises. <br />{" "}
-            <br /> We meet on facebook live every Friday at 7.30 pm for our
-            Bible Academy Prayer Line: 0330 9981 259 (
-            <Link className="hover_overlay">John 15:12</Link>) .
+            prayer line from 7:00 PM to 8:00 PM. <br /> <br /> We meet on
+            Wednesdays from 12:00 PM to 1:00 PM, 3:00 PM to 4:00 PM on our
+            telephone prayer line and at 7:30 PM on our church premises. <br />{" "}
+            <br /> We meet on facebook live every Friday at 7:30 PM for our
+            Bible Academy.
+            {/* (Prayer Line: 0330 9981 259). */}
           </p>
         </div>
       </section>
@@ -77,15 +77,15 @@ const Longmont = () => {
             data-aos-delay="600"
             data-aos-anchor-placement="top center"
           >
-            <h2>PASTOR ALEX GYASI MBE</h2>
+            <h2>Pastor Alex Gyasi MBE</h2>
             <p>
               My wife and I started our ministry 33 years ago when we said “
-              YES!” to God’ s call.Since then have not looked back.We have
+              YES!” to God’ s call. Since then have not looked back. We have
               embarked on many projects, ranging from providing supplementary
-              education for children in deprived areas - to running a homeless
+              education for children in deprived areas to running a homeless
               shelter since 2009 till present day and many more ministries that
-              you will come across as you browse this site.We have witnessed
-              first - hand, how living a life fully surrendered to Christ can
+              you will come across as you browse this site. We have witnessed
+              first-hand, how living a life fully surrendered to Christ can
               positively impact you, your family, friends and society as a
               whole.
             </p>
@@ -214,7 +214,7 @@ const Longmont = () => {
             <p>SERVE WITH US</p>
             <p>
               Eye-opening and insightful weekly programmes at Highway of
-              Holiness Church starts from 11:30 am – 13:30 pm.
+              Holiness Church starts from 11:30 AM to 13:30 PM.
             </p>
           </div>
 

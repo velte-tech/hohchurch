@@ -1,203 +1,162 @@
 #prayer-wrapper {
-    width: 100%;
-    background: #fff;
+  width: 100%;
+  background: #fff;
 }
 
 .prayer-case {
-    max-width: 80%;
-    margin: auto;
-    padding-top: 8rem;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 8rem;
 }
 
-
-
 .prayer-show {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .pray-left {
-    width: 20%;
-    border-bottom: #000 solid 1px;
+  width: 20%;
+  border-bottom: #000 solid 1px;
 }
 
 .pl-txt {
-    font-size: 3rem;
-    font-weight: 800;
-    color: #000;
-    padding-bottom: 2rem;
-    margin-right: 3rem;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+  padding-bottom: 2rem;
+  margin-right: 3rem;
 }
 
 .pray-right {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .pr {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 5rem;
 }
 
 .pr-1 {
-    background: #EFEFEF;
-    border-radius: 5px;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    border:  #EFEFEF solid 2px;
+  background: #efefef;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border: #efefef solid 2px;
 }
 
 .pr1-tt1 {
-    font-size: 2.2rem;
-    color: #000;
-    font-weight: 700;
+  font-size: 2.2rem;
+  color: #000;
+  font-weight: 700;
 }
 
 .pr1-tt2 {
-    font-size: 16px;
-    color: #000;
-    font-weight: 400;
-    margin: 1rem 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  margin: 1rem 0;
 }
 .pr1-tt3 {
-    font-size: 16px;
-    color: #000;
-    font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
 }
 
 .pr-2 {
-    width: 100%;
+  width: 100%;
 }
 
 .pf {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    gap: 1rem;
-}
-
-.pf .sinn {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.3rem;
-    margin-bottom: .6rem;
-    font-size: 1.1rem;
-    text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .pf-1 {
-    font-size: 1.2rem;
-    color: #000;
-    font-weight: 700;
-    /* margin-bottom: 1.8rem; */
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
 }
-
 
 .pf .nl {
-    width: 100%;
+  width: 100%;
 }
 .pf .nl .nl2 {
-    width: 100%;
-}
-
-.pf .nl2 .zinn {
-    height: 40px;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    width: 50%;
-}
-
-.pf .ft-1 {
-    margin-bottom: .6rem;
-    font-size: 1.1rem;
-}
-
-
-
-.pf .pr-3 .btn {
-    font-size: 1.1rem;
-}
-
-
-
-@media screen and (max-width: 950px) {
-    
-
-.prayer-show {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.pray-left {
-    width: 100%;
-    border-bottom: #000 solid 1px;
-}
-
-.pl-txt {
-    font-size: 2rem;
-    /* padding-bottom: 2rem; */
-    margin-right: 0;
-}
-
-.pray-right {
-    width: 100%;
-}
-
-.pr1-tt1 {
-    font-size: 2rem;
-}
-
-.pf .nl2 .zinn {
-    height: 40px;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    width: 60%;
-}
-
-}
-
-
-@media screen and (max-width: 600px) {
-    .pr1-tt1 {
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-.pr-1 {
-    padding: 2rem 1rem;
-    /* margin-bottom: 3rem; */
+  width: 100%;
 }
 
 .pr-3 .btn {
-    font-size: 1rem;
+  font-size: 1.1rem;
 }
 
-.pf .nl2 .zinn {
-    height: 40px;
-    border-radius: 5px;
-    font-size: 1.1rem;
+.pr-2 form > div {
+  margin-bottom: 1rem;
+}
+
+.pr-2 form input {
+  width: 300px;
+  height: 35px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #a7a7a7;
+}
+
+@media screen and (max-width: 950px) {
+  .prayer-show {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .pray-left {
     width: 100%;
+    border-bottom: #000 solid 1px;
+  }
+
+  .pl-txt {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .pray-right {
+    width: 100%;
+  }
+
+  .pr1-tt1 {
+    font-size: 2rem;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  .pr1-tt1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .pr-1 {
+    padding: 2rem 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .pr-3 .btn {
+    font-size: 1rem;
+  }
 }
 
 .pf input {
-    padding: 0 1rem ;
-}
-
-.pf .txt-ara {
-    font-size: 14rem;
+  padding: 0 1rem;
 }

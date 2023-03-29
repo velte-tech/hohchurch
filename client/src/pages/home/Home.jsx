@@ -50,20 +50,17 @@ function Home() {
                   HIGHWAY OF HOLINESS CHURCH
                 </p>
               </div>
-              <div
-                className="links"
-                data-aos="zoom-in"
-                data-aos-delay="600"
-              ></div>
-              {/* <Link to="/sermon/1" className="link linkAnima">
-                  Watch Now
-                  <span className="arrow"></span>
+              <div className="links" data-aos="zoom-in" data-aos-delay="600">
+                <Link className="link">
+                  Join Us This Sunday
+                  <span className="arrow_still"></span>
                 </Link>
 
-                <Link to="/messages" className="link linkAnima">
-                  More In This series
+                <Link to="/weekly_programmes" className="link linkAnima">
+                  Weekly Programme
                   <span className="arrow"></span>
-                </Link> */}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -102,8 +99,8 @@ function Home() {
               <img src={churchImg} alt="" />
               <div className="text">
                 <p className="hover_overlay ">Services & Time</p>
-                <p>Find our services time and direction to our location.</p>
-                <Link to="/groups" className="linkAnima">
+                <p>Find our service times and direction to our location.</p>
+                <Link to="/Weekly_programmes" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>

@@ -28,7 +28,7 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL.
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -52,7 +52,7 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL.
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -74,7 +74,7 @@ const Location = () => {
               {/* <div className="broad-1">Broadcast Location</div> */}
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL.
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -100,7 +100,7 @@ const Location = () => {
               <div className="broad"></div>
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL.
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -108,9 +108,9 @@ const Location = () => {
               {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
               <div className="info">
-                <Link to="/" className="links linkAnima">
+                {/* <Link to="/Longmont" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
-                </Link>
+                </Link> */}
               </div>
             </div>
             {/* campus flex end */}
@@ -124,7 +124,7 @@ const Location = () => {
               {/* <div className="broad"></div> */}
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL.
               </div>
 
               {/* <div className="ser">SERVICES</div> */}
@@ -134,9 +134,9 @@ const Location = () => {
               {/* <div className="day-1">* ASL Interpreted Service</div> */}
 
               <div className="info">
-                <Link to="/" className="links linkAnima">
+                {/* <Link to="/West" className="links linkAnima">
                   MORE INFO <span className="arrow"></span>
-                </Link>
+                </Link> */}
               </div>
             </div>
             {/* campus flex end */}
@@ -146,7 +146,7 @@ const Location = () => {
               <div className="city-1">SHIFT</div>
 
               <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL
+                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL.
               </div>
 
               {/* <div className='add'>
@@ -157,11 +157,15 @@ const Location = () => {
 
               {/* <div className="day">Sunday: 9 & 11 AM</div> */}
 
-              <div className="info">
-                <Link to="/" className="links linkAnima">
+              {/* <div className="info">
+                <a
+                  href="https://twitter.com/shift_hy"
+                  target="_blank"
+                  className="links linkAnima"
+                >
                   MORE INFO <span className="arrow"></span>
-                </Link>
-              </div>
+                </a>
+              </div> */}
             </div>
             {/* campus flex end */}
           </div>

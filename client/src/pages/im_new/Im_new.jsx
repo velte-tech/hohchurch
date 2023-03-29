@@ -94,8 +94,8 @@ const Im_new = () => {
                 data-aos-delay="300"
                 data-aos-anchor-placement="center-bottom"
               >
-                We are a church that meets every sunday at 11:00 AM for
-                celebration service in person and online via facebook live. we
+                We are a church that meets every Sunday at 11:00 AM for
+                celebration service in person and online via facebook live. We
                 also meets every Wednesday at 7:00 PM in person and on facebook
                 live. Our Friday Bible Academy meeting happens every Friday at
                 7:30 PM on facebook live. We call ourselves a "me too" community
@@ -162,14 +162,23 @@ const Im_new = () => {
               </li>
 
               <li>
-                <label for="email">
-                  Email <span className="start_sign">*</span>
-                </label>
-                <div>
-                  <input name="email" id="email" type="email" required />
+                <div className="email_input">
+                  <span>
+                    <label for="email">
+                      Email <span className="start_sign">*</span>
+                    </label>
+                    <div>
+                      <input name="email" id="email" type="email" required />
+                    </div>
+                  </span>
+                  <span>
+                    <label for="tel">Mobile number</label>
+                    <div>
+                      <input name="tel" id="tel" type="number" />
+                    </div>
+                  </span>
                 </div>
               </li>
-
               <li>
                 <label for="comments">Comments and Questions</label>
                 <div>

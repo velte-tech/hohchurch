@@ -77,11 +77,21 @@ function Contact() {
               </li>
 
               <li>
-                <label for="email">
-                  Email <span className="start_sign">*</span>
-                </label>
-                <div>
-                  <input name="email" id="email" type="email" required />
+                <div className="email_input">
+                  <span>
+                    <label for="email">
+                      Email <span className="start_sign">*</span>
+                    </label>
+                    <div>
+                      <input name="email" id="email" type="email" required />
+                    </div>
+                  </span>
+                  <span>
+                    <label for="tel">Mobile number</label>
+                    <div>
+                      <input name="tel" id="tel" type="number" />
+                    </div>
+                  </span>
                 </div>
               </li>
 

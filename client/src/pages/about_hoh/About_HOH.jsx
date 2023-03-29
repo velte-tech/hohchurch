@@ -34,6 +34,15 @@ const About_HOH = () => {
           </div>
           {/* showcase end */}
 
+          <div className="tt-1 focus-in-contract-bck">ABOUT US</div>
+          <p className="ttp">
+            The Highway of Holiness Church (HOH) is an Evangelical, Charismatic
+            Christian Church that centers on companionship, love, and care. We
+            seek to exalt the Lord and build up His people via collective
+            worship and teachings that emphasize the sufficiency of God and His
+            Word.
+          </p>
+
           {/* mission statement  */}
 
           <div className="ms-stat-wrapper">
@@ -122,7 +131,7 @@ const About_HOH = () => {
                               We warmly welcome you to Highway of Holiness
                               Church, a place of faith, fellowship and freedom
                               in Christ. Here at HOH everything we do is centred
-                              on the living word of God, the Holy Bible.We
+                              on the living word of God, the Holy Bible. We
                               believe that the answers to life’ s questions are
                               found within the pages of God’ s holy word. This
                               is the source we stand on to teach, equip and
@@ -227,15 +236,6 @@ const About_HOH = () => {
               </div>
 
               <div className="about-info-case">
-                <div className="tt-1 focus-in-contract-bck">ABOUT US</div>
-                <p className="ttp">
-                  The Highway of Holiness Church (HOH) is an Evangelical,
-                  Charismatic Christian Church that centers on companionship,
-                  love, and care. We seek to exalt the Lord and build up His
-                  people via collective worship and teachings that emphasize the
-                  sufficiency of God and His Word.
-                </p>
-
                 {/* <div className="tt-3">
               Leadership – Pastor and Mama D.
             </div>
@@ -259,7 +259,7 @@ const About_HOH = () => {
                     <div className="bib">
                       <div className="bib-1">
                         1. LOVE GROUP <br></br>
-                        <span className="hoo">(1 Corinthians 13: 4 - 7)</span>
+                        <span className="hoo">(1 Corinthians 13 : 4 - 7)</span>
                       </div>
                       <div className="bib-2">
                         Love is patient and kind; love does not envy or boast;
@@ -277,7 +277,7 @@ const About_HOH = () => {
                     <div className="bib">
                       <div className="bib-1">
                         2. FAITH GROUP <br></br>
-                        <span className="hoo">(Hebrews 11: 1)</span>
+                        <span className="hoo">(Hebrews 11 : 1)</span>
                       </div>
                       <div className="bib-2">
                         Now faith is the assurance of things hoped for, the
@@ -306,7 +306,7 @@ const About_HOH = () => {
                     <div className="bib">
                       <div className="bib-1">
                         4. HOPE GROUP <br></br>
-                        <span className="hoo">(Romans 15: 13)</span>
+                        <span className="hoo">(Romans 15 : 13)</span>
                       </div>
                       <div className="bib-2">
                         May the God of hope fill you with all joy and peace in
@@ -321,7 +321,7 @@ const About_HOH = () => {
                     <div className="bib">
                       <div className="bib-1">
                         5. POWER GROUP <br></br>
-                        <span className="hoo">(Luke 24: 49)</span>
+                        <span className="hoo">(Luke 24 : 49)</span>
                       </div>
                       <div className="bib-2">
                         I am going to send you what my Father has promised; but
@@ -529,9 +529,13 @@ const About_HOH = () => {
                 </div>
 
                 <div className="kg-3">
-                  {/* <Link to="/" className="links linkAnima">
+                  <a
+                    href="https://www.facebook.com/kingdomculturealliance?mibextid=LQQJ4d"
+                    target="_blank"
+                    className="links linkAnima"
+                  >
                     LEARN MORE <span className="arrow"></span>
-                  </Link> */}
+                  </a>
                 </div>
               </div>
 
@@ -571,9 +575,9 @@ const About_HOH = () => {
 
                   <div className="hh-2a">
                     Kingdom Lifestyle Mission(KLM) provides FREE supplementary
-                    education for underprivileged children.KLM runs free weekly
+                    education for underprivileged children. KLM runs free weekly
                     Saturday schools and vacation classes during school
-                    holidays.Our goal is to help children in deprived
+                    holidays. Our goal is to help children in deprived
                     communities.
                   </div>
 

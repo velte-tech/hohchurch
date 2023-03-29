@@ -50,12 +50,12 @@ const Lafayette = () => {
             data-aos-delay="400"
             data-aos-anchor-placement="top-bottom"
           >
-            <p>ABOUT ADULT RETREAT</p>
+            <p>HOH ADULT RETREAT</p>
             <p>
               Adult Retreat is a retreat programme held by Highway of Holiness
               Church for members from age 25 and above.
             </p>
-            <p className="asl_welcome">Adult Retreat Service at 9:00 AM</p>
+            {/* <p className="asl_welcome">Adult Retreat Service at 9:00 AM</p> */}
           </div>
 
           <div className="right">
@@ -304,16 +304,16 @@ const Lafayette = () => {
             data-aos-delay="600"
             data-aos-anchor-placement="top center"
           >
-            <h2>Assocciate Pastor Dorcas Gyesi</h2>
-            <p></p>
+            <h2>Pastor Dorcas Gyasi</h2>
+            <p>Associate Pastor</p>
             <p>
               My wife and I started our ministry 33 years ago when we said “
-              YES!” to God’ s call.Since then have not looked back.We have
+              YES!” to God’ s call. Since then have not looked back. We have
               embarked on many projects, ranging from providing supplementary
-              education for children in deprived areas - to running a homeless
+              education for children in deprived areas to running a homeless
               shelter since 2009 till present day and many more ministries that
-              you will come across as you browse this site.We have witnessed
-              first - hand, how living a life fully surrendered to Christ can
+              you will come across as you browse this site. We have witnessed
+              first-hand, how living a life fully surrendered to Christ can
               positively impact you, your family, friends and society as a
               whole.
             </p>

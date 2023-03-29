@@ -113,16 +113,16 @@
   margin: 3rem 0;
 }
 
-.vision-wrapper .vision .tt-1 {
+.tt-1 {
   color: var(--primary_color);
   font-size: 3rem;
   line-height: normal;
   font-weight: 700;
   text-align: center;
-  margin: 0;
+  margin-top: 5rem;
 }
 
-.vision-wrapper .vision .ttp {
+.ttp {
   max-width: 900px;
   text-align: center;
   margin: 1rem auto 2rem auto;
