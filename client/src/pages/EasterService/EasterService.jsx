@@ -24,7 +24,7 @@ const Aurora = () => {
       <section id="about_showcase">
         <div className="showcase_wrapper">
           <h1 className="focus-in-contract-bck">EASTER SERVICE</h1>
-          <p className="date focus-in-contract-bck">SUNDAY: 9 & 11AM</p>
+          <p className="date focus-in-contract-bck">SUNDAY: 11AM</p>
           {/* <Search /> */}
         </div>
       </section>
