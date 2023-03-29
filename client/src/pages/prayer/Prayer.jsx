@@ -4,7 +4,6 @@ import { MdAllInbox } from "react-icons/md";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
 const Prayer = () => {
-
   return (
     <div id="prayer-wrapper">
       <div className="prayer-case">
@@ -49,20 +48,19 @@ const Prayer = () => {
                       <div className="ft-2"></div>
                     </div>
                     <div className="nl2">
-                      <input className="zinn" required name="Full_name"></input>
+                      <input required name="Full_name"></input>
                     </div>
                   </div>
 
                   <div className="nl">
-                    {/* <div className="nl1">
+                    <div className="nl1">
                       <div className="ft-1">EMAIL</div>
                       <div className="ft-2"></div>
-                    </div> */}
-
+                    </div>
                     <div className="nl2">
-                      <div className="sinn">
-                        Email <MdAllInbox />
-                      </div>
+                      {/* <div className="sinn">
+                        <MdAllInbox />
+                      </div> */}
                       <input required name="Email" className="zinn"></input>
                     </div>
                   </div>
@@ -74,7 +72,6 @@ const Prayer = () => {
                     </div>
                     <div className="nl2">
                       <textarea
-                        className="txt-ara"
                         required
                         name="Prayer_request"
                         placeholder="Please pray that...(up to 500 characters)"

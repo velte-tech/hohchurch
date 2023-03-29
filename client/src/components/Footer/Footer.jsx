@@ -51,7 +51,7 @@ function Footer() {
               className="links linkAnima"
             >
               HighWay House{" "}
-              <small className="footer__small"> (Shelter/ day center) </small>{" "}
+              <small className="footer__small"> (Shelter/ day centre) </small>{" "}
               <span className="arrow"></span>
             </a>
             <a
@@ -69,7 +69,7 @@ function Footer() {
               className="links linkAnima"
             >
               Highway youth club{" "}
-              <small className="footer__small"> (bruce grove center) </small>
+              <small className="footer__small"> (bruce grove centre) </small>
               <span className="arrow"></span>
             </a>
             <a

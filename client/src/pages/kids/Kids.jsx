@@ -58,9 +58,9 @@ const Kids = () => {
                   <div className="dir-a">KIDS MINISTRY</div>
                   <div className="dir-b">
                     We want to care for and lead children through a variety of
-                    means, from diapers to discipleship.We are shaping the
+                    means, from diapers to discipleship. We are shaping the
                     future generation of leaders, and we do not take this
-                    responsibility lightly.We take great pleasure in giving our
+                    responsibility lightly. We take great pleasure in giving our
                     kids a real encounter with God, which is accomplished via
                     dependable, biblically - based teaching, in a friendly
                     setting, and with a teaching staff that genuinely cares
@@ -318,8 +318,8 @@ const Kids = () => {
                       February 18, 2023 | Lafayette
                     </div> */}
                       <div className="sem-c-txt-3">
-                        At Highway of Holiness, Infant & Child dedication is an
-                        opportunity for parents to make a commitment.
+                        At Highway of Holiness, our Sunday School service is an
+                        opportunity for children to know more about God.
                       </div>
                       {/* <div className="sem-c-txt-4">
                         <Link to="/ministries" className="linkAnima">

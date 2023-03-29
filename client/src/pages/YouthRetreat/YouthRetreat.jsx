@@ -43,7 +43,7 @@ const Denver = () => {
             data-aos-delay="400"
             data-aos-anchor-placement="top-bottom"
           >
-            <p>ABOUT OUR YOUTH RETREAT</p>
+            <p>HOH YOUTH RETREAT</p>
             <p>
               Youth retreat at Highway Of Holiness Church has alot to offer by
               bringing young people of all walks of life to connect with each

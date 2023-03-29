@@ -1,11 +1,12 @@
 import React from "react";
 import "./Outreach.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { GrMail } from "react-icons/gr";
 import { AiTwotonePhone } from "react-icons/ai";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 import CheckboxList from "../../components/checkbox/Box_check";
 import logo from "../../assets/brand/hohlogo.png";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Outreach = () => {
   return (
@@ -32,11 +33,11 @@ const Outreach = () => {
             </div> */}
 
               <div className="local-2">Local Community Missions</div>
-              <div className="local-3">
+              {/* <div className="local-3">
                 Jesus talked a lot about His love for those who are poor,
                 hurting, broken and forgotten. Each of our campuses strives to
                 partner with local organizations serving their local community.
-              </div>
+              </div> */}
               <div className="local-4">
                 Select a local mission to learn more.
               </div>
@@ -75,7 +76,10 @@ const Outreach = () => {
                   </div>
 
                   <div className="sop-5">
-                    <Link className="linkAnima">
+                    <Link
+                      to="/outreach_detail#outreach_house"
+                      className="linkAnima"
+                    >
                       {" "}
                       MORE INFO <span className="arrow"></span>{" "}
                     </Link>
@@ -105,7 +109,10 @@ const Outreach = () => {
                   <div className="sop-4">Highway Youth Club</div>
 
                   <div className="sop-5">
-                    <Link className="linkAnima">
+                    <Link
+                      to="/outreach_detail#youth_club"
+                      className="linkAnima"
+                    >
                       {" "}
                       MORE INFO <span className="arrow"></span>{" "}
                     </Link>
@@ -132,9 +139,13 @@ const Outreach = () => {
                 </div>  */}
                   <div className="sop-4">21st Century Education</div>
                   <div className="sop-5">
-                    <Link className="linkAnima">
-                      {" "}
-                      MORE INFO <span className="arrow"></span>{" "}
+                    <Link
+                      to="/outreach_detail#centryeducation"
+                      name="#centry_education"
+                      rel="noopener noreferrer"
+                      className="linkAnima"
+                    >
+                      MORE INFO<span className="arrow"></span>
                     </Link>
                   </div>
                   <div className="sop-6"></div>
@@ -159,7 +170,11 @@ const Outreach = () => {
                 </div>  */}
                   <div className="sop-4">Shift</div>
                   <div className="sop-5">
-                    <Link className="linkAnima">
+                    <Link
+                      className="linkAnima"
+                      to="/outreach_detail#outreach_detail_shift"
+                      rel="noopener noreferrer"
+                    >
                       {" "}
                       MORE INFO <span className="arrow"></span>{" "}
                     </Link>
@@ -184,11 +199,11 @@ const Outreach = () => {
             </div> */}
 
               <div className="local-2">Global Mission</div>
-              <div className="local-3">
+              {/* <div className="local-3">
                 Jesus talked a lot about His love for those who are poor,
                 hurting, broken and forgotten. Each of our campuses strives to
                 partner with global organizations serving the world at large.
-              </div>
+              </div> */}
               <div className="local-4">
                 Select a global mission to learn more.
               </div>
@@ -225,15 +240,15 @@ const Outreach = () => {
                   <div className="sop-4">KLM</div>
 
                   <div className="sop-5">
-                    <a
-                      target="_blank"
-                      href="http://klmission.com/"
+                    <Link
+                      className="linkAnima"
+                      to="/outreach_detail#outreach_detail_klm"
                       rel="noreferrer"
                     >
                       <div className="links linkAnima">
                         MORE INFO <span className="arrow"> </span>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="sop-6"></div>
                 </div>
@@ -260,9 +275,14 @@ const Outreach = () => {
                   <div className="sop-4">HOH PAKISTAN</div>
 
                   <div className="sop-5">
-                    <Link className="linkAnima">
-                      {" "}
-                      MORE INFO <span className="arrow"></span>{" "}
+                    <Link
+                      className="linkAnima"
+                      to="/outreach_detail#outreach_pakistan"
+                      rel="noreferrer"
+                    >
+                      <div className="links linkAnima">
+                        MORE INFO <span className="arrow"> </span>
+                      </div>
                     </Link>
                   </div>
                   <div className="sop-6"></div>
@@ -286,10 +306,16 @@ const Outreach = () => {
                   West
                 </div>  */}
                   <div className="sop-4">Kingdom Culture Alliance (KCA)</div>
+
                   <div className="sop-5">
-                    <Link className="linkAnima">
-                      {" "}
-                      MORE INFO <span className="arrow"></span>{" "}
+                    <Link
+                      className="linkAnima"
+                      to="/outreach_detail#outreach_alliance"
+                      rel="noreferrer"
+                    >
+                      <div className="links linkAnima">
+                        MORE INFO <span className="arrow"> </span>
+                      </div>
                     </Link>
                   </div>
                   <div className="sop-6"></div>
@@ -316,7 +342,10 @@ const Outreach = () => {
                     Affiliated Churches / Mission Support
                   </div>
                   <div className="sop-5">
-                    <Link className="linkAnima">
+                    <Link
+                      className="linkAnima"
+                      to="/outreach_detail#outreach_affiliated"
+                    >
                       {" "}
                       MORE INFO <span className="arrow"></span>{" "}
                     </Link>

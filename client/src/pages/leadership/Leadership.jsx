@@ -51,8 +51,8 @@ const Leadership = () => {
                   Highway of Holiness Church.
                 </div>
                 <div className="tt-2">
-                  They are assisted by Pastor Roland Owusu– Mensah and His Wife
-                  Mabel Owusu - Mensah.
+                  They are assisted by Pastor Roland Owusu-Mensah and His Wife
+                  Mabel Owusu-Mensah.
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Leadership = () => {
                       <div className="lf1-pic">
                         <img src={l22} alt="" />
                       </div>
-                      <div className="lf12">Dorcas Gyasi</div>
+                      <div className="lf12">Pastor Dorcas Gyasi</div>
                       <div className="lf3">Associate Pastor</div>
 
                       <EmailContactButton
@@ -97,7 +97,7 @@ const Leadership = () => {
                       <div className="lf1-pic">
                         <img src={l33} alt="" />
                       </div>
-                      <div className="lf12">Rev Roland Owusu Mensah</div>
+                      <div className="lf12">Rev Roland Owusu-Mensah</div>
                       <div className="lf3">Assistant Pastor</div>
 
                       <EmailContactButton

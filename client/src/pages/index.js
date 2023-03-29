@@ -19,6 +19,7 @@ export { default as Location } from "./location/Location";
 export { default as Messages } from "./messages/Messages";
 export { default as Ministries } from "./ministries/Ministries";
 export { default as Outreach } from "./outreach/Outreach";
+export { default as OutreachDetail } from "./OutreachDetail/OutreachDetail";
 // export { default as Parents } from "./parents/Parents";
 export { default as Prayer } from "./prayer/Prayer";
 // export { default as Students } from "./students/Students";

@@ -1,0 +1,72 @@
+#outreach_affiliated {
+  margin-bottom: 5rem;
+}
+
+.wrapper {
+  /* margin: 5rem auto; */
+  padding: 5rem 0 0rem 0;
+  /* border: 1px solid red; */
+}
+
+.wrapper h2 {
+  margin: 1rem 0;
+  color: var(--grey_color);
+}
+
+.wrapper p {
+  margin: 1rem 0;
+  color: var(--grey_color);
+}
+
+.wrapper ul {
+  list-style: none;
+}
+
+.wrapper ul li::before {
+  content: "\2022";
+  color: var(--primary_color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-right: 0.2em;
+}
+
+.wrapper .outreach_detail_social {
+  color: var(--primary_color);
+  font-weight: 500;
+  transition: ease-in-out 300ms;
+}
+
+.wrapper .outreach_detail_social:hover {
+  opacity: 0.6;
+}
+
+.outreach_head {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--primary_color);
+  margin: auto;
+  width: 100%;
+}
+
+.outreach_head:first-child {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .outreach_head {
+    max-width: 90%;
+    font-size: 2rem;
+    margin-bottom: 0rem auto;
+  }
+
+  .outreach_head:first-child {
+    margin-top: 6rem;
+    text-align: center;
+  }
+
+  .wrapper h2 {
+    font-size: 1.7rem;
+  }
+}

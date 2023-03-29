@@ -23,6 +23,7 @@ import {
   Groups,
   Ministries,
   Outreach,
+  OutreachDetail,
   Kids,
   Prayer,
   Young_adults,
@@ -77,6 +78,8 @@ const router = createBrowserRouter(
       <Route path="/Ministries" element={<Ministries />} />
 
       <Route path="/Outreach" element={<Outreach />} />
+
+      <Route path="/outreach_detail" element={<OutreachDetail />} />
 
       <Route path="/Kids" element={<Kids />} />
 
