@@ -12,6 +12,7 @@ import newsImage from "../../assets/images/gpo1.jpeg";
 import voluImg from "../../assets/images/dancing.jpg";
 import mediaImg from "../../assets/images/media.jpg";
 import longPastorImg from "../../assets/images/pastorinagbaja.jpg";
+import l1 from "../../assets/images/unnamed.png";
 // import studentsImg from "../../assets/images/students.jpg";
 // import connectImg from "../../assets/images/connect.jpg";
 // import kidsImg from "../../assets/images/kids.jpg";
@@ -64,7 +65,7 @@ const Longmont = () => {
         <div className="reach_wrapper">
           <div className="left">
             <img
-              src={longPastorImg}
+              src={l1}
               alt=""
               data-aos="fade-right"
               data-aos-anchor-placement="center-bottom"

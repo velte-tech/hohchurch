@@ -207,7 +207,7 @@ const Leadership = () => {
 
           {/* our leaders */}
 
-          <div className="values-wrapper">
+          {/* <div className="values-wrapper">
             <div className="values">
               <div className="values-showcase">
                 <div className="values-text-case    container">
@@ -217,13 +217,13 @@ const Leadership = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* our leaders end */}
 
           {/* ALONE */}
 
-          <div className="alone-wrapper">
+          {/* <div className="alone-wrapper">
             <div className="alone">
               <div className="alone-1" data-aos="fade-right">
                 <div className="lone-1">WE DON'T DO THIS ALONE</div>
@@ -243,14 +243,6 @@ const Leadership = () => {
                   collaborate with others, and a deep commitment to the church
                   's mission and values.
                 </div>
-
-                {/* <div className="lone-3">Contact our elders at</div> */}
-
-                {/* <div className="lone-4">
-                <Link to="/" className="hover_overlay">
-                  elders@highwayofholinesschurch.com
-                </Link>
-              </div> */}
               </div>
 
               <div className="alone-2">
@@ -271,7 +263,7 @@ const Leadership = () => {
                 ></div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* ALONE END */}
         </div>
