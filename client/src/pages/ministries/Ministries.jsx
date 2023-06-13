@@ -38,7 +38,7 @@ const Ministries = () => {
 
         {/* where */}
 
-        {/* <div className="where-wrap">
+        <div className="where-wrap">
           <div className="where-show">
             <div className="where-case">
               <div className="where-11" data-aos="fade-right">
@@ -63,9 +63,7 @@ const Ministries = () => {
                   data-aos="fade-left"
                   data-aos-delay="400"
                   data-aos-anchor-placement="center-bottom"
-                >
-                  
-                </div>
+                ></div>
                 <div className="w-tt focus-in-contract-bck">
                   WHERE WOULD YOU <br></br>
                   LIKE TO SERVE ?
@@ -73,7 +71,7 @@ const Ministries = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* where end */}
 
@@ -184,45 +182,6 @@ const Ministries = () => {
         </div>
 
         {/* min-sec end */}
-
-        {/* where */}
-
-        <div className="where-wrap">
-          <div className="where-show">
-            <div className="where-case">
-              <div className="where-11" data-aos="fade-right">
-                <span className="w-11-1 focus-in-contract-bck">
-                  SERVE WITH US!
-                </span>
-                <br></br>
-                Highway of Holiness is a volunteer - driven community and we
-                need you to make things work! Sign up to serve with one of our
-                teams below.
-              </div>
-
-              <div className="where-22">
-                <div
-                  className="w-shape"
-                  data-aos="fade-left"
-                  data-aos-delay="500"
-                  data-aos-anchor-placement="center-bottom"
-                ></div>
-                <div
-                  className="w-pic"
-                  data-aos="fade-left"
-                  data-aos-delay="400"
-                  data-aos-anchor-placement="center-bottom"
-                ></div>
-                <div className="w-tt focus-in-contract-bck">
-                  WHERE WOULD YOU <br></br>
-                  LIKE TO SERVE ?
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* where end */}
 
         <ScrollToTop />
       </div>

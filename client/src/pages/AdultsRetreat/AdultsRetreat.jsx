@@ -307,7 +307,7 @@ const Lafayette = () => {
             <h2>Pastor Dorcas Gyasi</h2>
             <p>Associate Pastor</p>
             <p>
-              My wife and I started our ministry 33 years ago when we said “
+              My wife and I started our ministry 28 years ago when we said “
               YES!” to God’ s call. Since then have not looked back. We have
               embarked on many projects, ranging from providing supplementary
               education for children in deprived areas to running a homeless

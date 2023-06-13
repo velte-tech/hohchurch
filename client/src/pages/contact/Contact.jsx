@@ -41,7 +41,7 @@ function Contact() {
             understand your struggle and can offer hope.
           </p>
           <Link to="/prayer" className="btn">
-            SUBMIT A PRAYR REQUEST
+            SUBMIT A PRAYER REQUEST
           </Link>
         </div>
       </section>

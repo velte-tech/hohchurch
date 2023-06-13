@@ -126,13 +126,13 @@ function Header() {
                 {/* drop-dowm */}
 
                 <div className="dropdown-menu">
-                  <Link
+                  {/* <Link
                     to="/Easter_service"
                     onClick={() => setNavOpen(!navOpen)}
                     className="hover_overlay"
                   >
                     EASTER SERVICE
-                  </Link>
+                  </Link> */}
                   <Link
                     to="/Youth_retreat"
                     onClick={() => setNavOpen(!navOpen)}

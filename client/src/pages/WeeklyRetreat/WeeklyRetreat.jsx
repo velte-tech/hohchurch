@@ -80,7 +80,7 @@ const Longmont = () => {
           >
             <h2>Pastor Alex Gyasi MBE</h2>
             <p>
-              My wife and I started our ministry 33 years ago when we said “
+              My wife and I started our ministry 28 years ago when we said “
               YES!” to God’ s call. Since then have not looked back. We have
               embarked on many projects, ranging from providing supplementary
               education for children in deprived areas to running a homeless
@@ -215,7 +215,7 @@ const Longmont = () => {
             <p>SERVE WITH US</p>
             <p>
               Eye-opening and insightful weekly programmes at Highway of
-              Holiness Church starts from 11:30 AM to 13:30 PM.
+              Holiness Church.
             </p>
           </div>
 
