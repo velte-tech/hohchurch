@@ -35,6 +35,7 @@ import {
   PrivacyPolicy,
   TermsAndConditions,
   NotFound,
+  Donate,
 } from "./pages/index";
 
 //Layouts
@@ -50,6 +51,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index exact element={<Home />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/donate" element={<Donate />} />
       <Route path="/service" element={<Service />} />
       <Route path="/jobs" element={<Jobs />} />
       <Route path="/newsletter" element={<Newsletter />} />
