@@ -62,7 +62,7 @@ const Donate = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center justify-content-center">
-              <h2 className="mb-4">Other Payment Methods</h2>
+              <h2 className="mb-4">Make Donation</h2>
             </div>
           </div>
 

@@ -7,7 +7,7 @@ export const donateContent = {
     "Bank Account Transfer",
     "Cheque",
     "Paypal",
-    "Other payment methods, as agreed upon between HOH and the client.",
+    "Payment methods, as agreed upon between HOH and the client.",
   ],
   methods: [
     {
