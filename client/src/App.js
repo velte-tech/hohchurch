@@ -42,6 +42,7 @@ import {
 import Layout from "./Layouts/Layout";
 import SlideContent from "./Layouts/SlideContent";
 import MessageDetail from "./Layouts/MessageDetail";
+import { EmailProvider } from "./contexts/EmailContext";
 
 // import { SermonDetailLoader } from "./pages/sermons/Sermon";
 // import Sliders, { SermonLoder } from "./components/msgSlider/Slider";
@@ -116,7 +117,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <EmailProvider><RouterProvider router={router} /></EmailProvider>
     </div>
   );
 }

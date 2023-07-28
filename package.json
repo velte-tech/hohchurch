@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/velte-tech/hohchurch#readme",
   "dependencies": {
+    "@dannybee/popup-modal": "^0.0.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",

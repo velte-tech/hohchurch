@@ -58,6 +58,7 @@
   width: 40%;
   margin-left: 8%;
 }
+
 .where-11 .w-11-1 {
   font-size: 30px;
   margin: 1.5rem 0;
@@ -100,6 +101,23 @@
   top: 1px;
 }
 
+.popup-box .box {
+  width: 54%;
+  margin-top: calc(100vh - 87vh - 20px);
+  max-height: 89vh;
+  overflow-y: hidden;
+}
+
+.popup-box .close-icon {
+  right: calc(24.3% - 30px);
+  top: calc(100vh - 87vh - 33px);
+  color: var(--primary_color);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 1024px) {
   .where-22 .w-tt {
     right: 10%;
@@ -111,6 +129,7 @@
     right: 9%;
     font-size: 1.7rem;
   }
+
   .where-11 .w-11-1 {
     /* font-size: 30px; */
     margin-top: 2rem;
@@ -136,6 +155,7 @@
     width: 100%;
     margin: auto;
   }
+
   .where-11 {
     width: 100%;
     margin: auto;
@@ -260,9 +280,11 @@
   justify-content: flex-start;
   color: #000;
 }
+
 .minsec .min-3 .linkAnima:hover {
   color: var(--primary_color);
 }
+
 .minsec .min-3 .linkAnima:nth-child(1) {
   margin-right: 2.5rem;
 }
