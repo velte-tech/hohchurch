@@ -23,28 +23,6 @@ const Location = () => {
           <div className="campus-1">
             {/* campus flex */}
             <div className="campus">
-              <div className="city">EASTER SERVICE</div>
-
-              <div className="broad"></div>
-
-              <div className="add hover_overlay_2">
-                Unit 8, 2 - 8 Fountayne Rd, London N15 4 QL.
-              </div>
-
-              {/* <div className="ser">SERVICES</div> */}
-
-              {/* <div className="day">Sunday: 9 & 11 AM</div> */}
-
-              <div className="info">
-                <Link to="/Easter_service" className="links linkAnima">
-                  MORE INFO <span className="arrow"></span>
-                </Link>
-              </div>
-            </div>
-            {/* campus flex end */}
-
-            {/* campus flex */}
-            <div className="campus">
               <div className="city">
                 YOUTH & YOUNG <br></br> ADULTS RETREAT
               </div>

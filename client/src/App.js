@@ -1,3 +1,4 @@
+import React from "react";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -117,7 +118,9 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className="App">
-      <EmailProvider><RouterProvider router={router} /></EmailProvider>
+      <EmailProvider>
+        <RouterProvider router={router} />
+      </EmailProvider>
     </div>
   );
 }
