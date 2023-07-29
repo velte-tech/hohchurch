@@ -31,5 +31,6 @@ export { default as MessageDetailPage } from "./messageDetailPage/MessageDetailP
 export { default as Sermon } from "./sermons/Sermon";
 export { default as PrivacyPolicy } from "./PrivacyPolicy/PrivacyPolicy";
 export { default as TermsAndConditions } from "./TermsAndCondistions/TermsAndConditions";
+export { default as Donate } from "./donate/Donate";
 
 export { default as NotFound } from "./notFound/NotFound";

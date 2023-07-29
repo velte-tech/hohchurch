@@ -35,12 +35,14 @@ import {
   PrivacyPolicy,
   TermsAndConditions,
   NotFound,
+  Donate,
 } from "./pages/index";
 
 //Layouts
 import Layout from "./Layouts/Layout";
 import SlideContent from "./Layouts/SlideContent";
 import MessageDetail from "./Layouts/MessageDetail";
+import { EmailProvider } from "./contexts/EmailContext";
 
 // import { SermonDetailLoader } from "./pages/sermons/Sermon";
 // import Sliders, { SermonLoder } from "./components/msgSlider/Slider";
@@ -50,6 +52,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index exact element={<Home />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/donate" element={<Donate />} />
       <Route path="/service" element={<Service />} />
       <Route path="/jobs" element={<Jobs />} />
       <Route path="/newsletter" element={<Newsletter />} />
@@ -114,7 +117,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <EmailProvider><RouterProvider router={router} /></EmailProvider>
     </div>
   );
 }

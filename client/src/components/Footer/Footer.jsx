@@ -18,14 +18,9 @@ function Footer() {
             <Link to="/about_hoh" className="links linkAnima">
               ABOUT-HOH <span className="arrow"></span>
             </Link>
-            <a
-              href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=L5USDDJ9JLKZJ"
-              target="_blank"
-              rel="noreferrer"
-              className="links linkAnima"
-            >
+            <Link to="/Donate" className="links linkAnima">
               Give <span className="arrow"></span>
-            </a>
+            </Link>
             <Link to="/ministries" className="links linkAnima">
               MINISTRIES <span className="arrow"></span>
             </Link>
