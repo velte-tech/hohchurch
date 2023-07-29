@@ -1,0 +1,197 @@
+.supportSection h1 {
+    font-size: 60px !important;
+    color: var(--primary_color);
+    font-weight: 500;
+    text-transform: unset;
+}
+
+.supportSection h1:nth-child(1) {
+    margin: 0 0 0 auto;
+}
+
+.supportSection h1~h1 {
+    margin: 0 auto 0 0;
+}
+
+.supportImg.img-fluid {
+    width: 10rem;
+    object-fit: cover;
+}
+
+.supportMargin {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+}
+
+.supportMargin>h2 {
+    color: var(--primary_color);
+}
+
+.paymentProcess>.container>.row>.col-12>h2 {
+    color: var(--primary_color);
+}
+
+.paymentMethodList h2,
+.paymentProcess h2 {
+    font-weight: 500;
+    text-transform: unset;
+    font-size: 1.5rem;
+}
+
+ul.methodList,
+.paymentProcess ul {
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+ul.methodList li::before,
+.paymentProcess ul li::before {
+    content: "\2022";
+    color: var(--black-color);
+    font-weight: bold;
+    display: flex;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 30px;
+}
+
+ul.methodList li,
+.paymentProcess ul li {
+    /* list-style: disc; */
+    color: var(--blue-dark);
+    display: flex;
+    align-items: center;
+    margin: -20px 0;
+}
+
+.paymentProcess .card {
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.paymentProcess .card-header {
+    padding: 3.5rem 3.5rem 0;
+    border-bottom: none;
+}
+
+.paymentProcess .card-header p {
+    font-size: 15px;
+}
+
+.paymentProcess .bank .card-header {
+    color: var(--dim);
+}
+
+.paymentProcess ul {
+    padding: 0 40px;
+}
+
+.paymentProcess ul li::before {
+    width: unset;
+}
+
+.paymentProcess ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 0;
+    font-size: 15px;
+    color: var(--black-color);
+}
+
+.paymentProcess img.donateIcon {
+    position: absolute;
+    width: 120px;
+    left: 0;
+    right: 0;
+    top: -12%;
+    margin: 0 auto;
+    height: auto !important;
+}
+
+.paymentProcess .card-group {
+    row-gap: 7rem;
+}
+
+.paymentProcess h2.cheque {
+    color: var(--red-variant) !important;
+}
+
+.paymentProcess h2.emailMoney {
+    color: var(--blue-dark-variant);
+}
+
+.paymentProcess .emailMoney span {
+    color: var(--red);
+}
+
+.paymentProcess h2.other {
+    color: var(--brown);
+}
+
+.stickerSection .row {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.btn {
+    position: relative;
+    color: #000;
+    font-weight: 500;
+    padding: 0.75rem 2.3rem;
+    margin: 0.75rem;
+    border: 1px solid var(--primary_color);
+    transition: all var(--transition);
+}
+
+.bank-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    width: 40%;
+    height: 40%;
+}
+
+@media (max-width: 1200px) {
+    .supportImg.img-fluid {
+        width: 11%;
+    }
+
+    .supportSection h1 {
+        font-size: 52px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .supportImg.img-fluid {
+        width: 12%;
+    }
+
+    .supportSection h1 {
+        font-size: 49px !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .supportSection h1 {
+        font-size: 35px !important;
+    }
+
+    .supportMargin {
+        margin: 0;
+    }
+
+    ul.methodList li {
+        margin: 0 0;
+    }
+
+    ul.methodList li::before {
+        width: unset;
+    }
+
+    .stickerSection .row {
+        width: 100%;
+    }
+}

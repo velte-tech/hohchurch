@@ -307,6 +307,14 @@ function Header() {
                 </NavLink>
                 <div className="nav-item-wrapper"></div>
               </li>
+
+              <li className="nav-item neww">
+                <NavLink to="/Donate" onClick={() => setNavOpen(!navOpen)}>
+                  <div className="shape"></div>
+                  DONATE
+                </NavLink>
+                <div className="nav-item-wrapper"></div>
+              </li>
             </ul>
           </div>
         </div>
