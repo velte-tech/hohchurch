@@ -1,4 +1,5 @@
 import { defineField, defineType } from "sanity";
+import { homeContent } from "./defaultData";
 
 export default defineType({
     name: "home",
@@ -6,19 +7,34 @@ export default defineType({
     type: "document",
     fields: [
         defineField({
-            name: "aboutTitle",
-            title: "About Title",
+            name: "welcomeTitle",
+            title: "Welcome Title",
             type: "string",
+            initialValue: homeContent.welcomeTitle,
         }),
         defineField({
-            name: "captionText",
-            title: "Caption Text",
+            name: "welcomeSubtitle",
+            title: "Welcome Subtitle",
             type: "string",
+            initialValue: homeContent.welcomeSubtitle,
         }),
         defineField({
-            name: "aboutDescription",
-            title: "About Description",
+            name: "missionTitle",
+            title: "Mission Title",
+            type: "string",
+            initialValue: homeContent.missionTitle,
+        }),
+        defineField({
+            name: "missionDescription",
+            title: "Mission Description",
             type: "text",
+            initialValue: homeContent.missionDescription,
+        }),
+        defineField({
+            name: "missionCards",
+            title: "Mission Cards",
+            type: "array",
+            of: [{ type: "missionCard" }],
         }),
         defineField({
             name: "aboutImage",
@@ -29,14 +45,16 @@ export default defineType({
             },
         }),
         defineField({
-            name: "serviceTitle",
-            title: "Service Title",
+            name: "aboutTitle",
+            title: "About Title",
             type: "string",
+            initialValue: homeContent.aboutTitle,
         }),
         defineField({
-            name: "serviceDescription",
-            title: "Service Description",
+            name: "aboutDescription",
+            title: "About Description",
             type: "text",
+            initialValue: homeContent.aboutDescription,
         }),
     ],
 });
