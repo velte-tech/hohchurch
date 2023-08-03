@@ -228,8 +228,7 @@
 .home_app {
   position: relative;
   min-height: 35rem;
-  background: url("../../assets/images/woman-using-phone-car.jpg") no-repeat
-    center center/cover;
+  background: url("../../assets/images/woman-using-phone-car.jpg") no-repeat center center/cover;
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -398,6 +397,11 @@
   transform: scaleX(0);
 }
 
+.home_message .messageBorder {
+  border: 1px solid var(--grey_color);
+  padding: 5px;
+}
+
 /* ######### max-width: 1200px ####### */
 
 @media screen and (max-width: 1200px) {
@@ -562,4 +566,5 @@
     padding-bottom: 4rem;
   }
 }
+
 /* pastor alex end */

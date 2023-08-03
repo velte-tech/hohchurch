@@ -1,5 +1,6 @@
 import {
   BrowserRouter,
+  Navigate,
   Route,
   Routes
 } from "react-router-dom";
@@ -119,6 +120,7 @@ function App() {
 
             <Route path="/admin/" element={<AdminLayout />}>
               <Route index element={<AdminPage />} />
+              <Route path="*" element={<Navigate to="/admin" replace />} />
             </Route>
           </Routes>
         </BrowserRouter>

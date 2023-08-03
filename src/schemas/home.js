@@ -35,14 +35,13 @@ export default defineType({
             title: "Mission Cards",
             type: "array",
             of: [{ type: "missionCard" }],
+            initialValue: homeContent.missionCards,
         }),
         defineField({
             name: "aboutImage",
             title: "About Image",
-            type: "image",
-            options: {
-                hotspot: true,
-            },
+            type: "reference",
+            to: [{ type: "gallery" }],
         }),
         defineField({
             name: "aboutTitle",
@@ -55,6 +54,27 @@ export default defineType({
             title: "About Description",
             type: "text",
             initialValue: homeContent.aboutDescription,
+        }),
+        defineField({
+            name: "pastMessagesTitle",
+            title: "Past Messages Title",
+            type: "string",
+            initialValue: homeContent.pastMessagesTitle,
+        }),
+        defineField({
+            name: "pastMessagesText",
+            title: "Past Messages Text",
+            type: "text",
+            description: "This text will appear below the past messages title.",
+            initialValue: homeContent.pastMessagesText,
+        }),
+        defineField({
+            name: "pastMessages",
+            title: "Past Messages",
+            type: "array",
+            description: "The past messages youtube links that will appear on the home page.",
+            of: [{ type: "message" }],
+            initialValue: homeContent.pastMessages,
         }),
     ],
 });
