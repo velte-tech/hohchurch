@@ -49,9 +49,9 @@ const About_HOH = () => {
             <div className="ms-stat-case">
               <div className="ms-stat-show">
                 <div id="lshape">
-                  <div class="l-shape">
-                    <div class="box-1"></div>
-                    <div class="box-2"></div>
+                  <div className="l-shape">
+                    <div className="box-1"></div>
+                    <div className="box-2"></div>
                   </div>
                 </div>
 
@@ -79,9 +79,9 @@ const About_HOH = () => {
                 </div>
 
                 <div id="lshape2">
-                  <div class="l-shape2">
-                    <div class="box-12"></div>
-                    <div class="box-22"></div>
+                  <div className="l-shape2">
+                    <div className="box-12"></div>
+                    <div className="box-22"></div>
                   </div>
                 </div>
               </div>

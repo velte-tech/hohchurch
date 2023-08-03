@@ -22,6 +22,8 @@ import phonexxx from "../../assets/images/phone-app.png";
 
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 
+import sanityClient from "../../client.js";
+
 function Home() {
   useEffect(() => {
     AOS.init(
@@ -32,6 +34,15 @@ function Home() {
       []
     );
   });
+
+  useEffect(() => {
+    sanityClient
+      .fetch(`*[_type == "home"]`)
+      .then((data) => {
+        console.log(data);
+      })
+      .catch(console.error);
+  }, []);
 
   return (
     <>
@@ -265,9 +276,9 @@ function Home() {
                       height="270"
                       src="https://www.youtube.com/embed/NAg3fUq66-o"
                       title="YouTube video player"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </div>
                   <a
@@ -288,9 +299,9 @@ function Home() {
                       height="270"
                       src="https://www.youtube.com/embed/aDfTtKRBnBc"
                       title="YouTube video player"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </div>
 
@@ -311,9 +322,9 @@ function Home() {
                       height="270"
                       src="https://www.youtube.com/embed/ZQyO7YDV0Us"
                       title="YouTube video player"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </div>
                   <a
@@ -336,9 +347,9 @@ function Home() {
                       height="270"
                       src="https://www.youtube.com/embed/L2gIEE64KbU"
                       title="YouTube video player"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </div>
                   <a
@@ -358,9 +369,9 @@ function Home() {
                       height="270"
                       src="https://www.youtube.com/embed/S-vIVk55kbg"
                       title="YouTube video player"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </div>
                   <a
@@ -381,9 +392,9 @@ function Home() {
                       height="270"
                       src="https://www.youtube.com/embed/5lqmtiGC0WM"
                       title="YouTube video player"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                   </div>
                   <a

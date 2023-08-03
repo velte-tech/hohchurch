@@ -4,8 +4,8 @@ import "./map.css";
 function GoogleMap() {
   return (
     <>
-      <div class="mapouter">
-        <div class="gmap_canvas">
+      <div className="mapouter">
+        <div className="gmap_canvas">
           <iframe
             title="map"
             width="1500px"
@@ -13,7 +13,7 @@ function GoogleMap() {
             id="gmap_canvas"
             src="https://www.google.com/maps/embed/v1/place?q=Unit+8,+2-8+Fountayne+Rd,+London+N15+4QL,+United+Kingdom&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
             // src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             marginheight="0"
             marginwidth="0"
