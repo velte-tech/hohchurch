@@ -6,12 +6,14 @@ import home from './home'
 import gallery from './gallery'
 import missionCard from './missionCard'
 import message from './message'
+import slider from './slider'
 
 export const schemaTypes = [
     home,
     gallery,
     missionCard,
     message,
+    slider,
     category,
     blockContent
 ]
