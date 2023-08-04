@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useState } from "react";
 // import { Link } from "react-router-dom";
 import "./Leadership.css";
 // Images
@@ -16,8 +16,11 @@ import AOS from "aos";
 import EmailContactButton from "../../components/mailto/Mailto";
 import { urlFor } from "../../utils/urlFor";
 import sanityClient from "../../client.js";
+import BlockContent from "@sanity/block-content-to-react";
 
 const Leadership = () => {
+  const [leadershipData, setLeadershipData] = useState();
+
   useEffect(() => {
     AOS.init(
       {
@@ -29,7 +32,17 @@ const Leadership = () => {
     );
   });
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "leadership"]{..., headerImage->, leaders[] {..., image->}}`
+      )
+      .then((data) => {
+        console.log("leadership: ", data);
+        setLeadershipData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
 
   return (
     <div id="super">
@@ -38,11 +51,17 @@ const Leadership = () => {
           {/* shwowcse */}
           <div
             className="leadership-showcase"
-            style={{ backgroundImage: `url(${urlFor()})` }}
+            style={{
+              backgroundImage: `url(${urlFor(
+                leadershipData?.headerImage?.image
+              )})`,
+            }}
           >
             <div className="leadership-show">
               <div className="leadership-text">
-                <h1 className="focus-in-contract-bck">LEADERSHIP</h1>
+                <h1 className="focus-in-contract-bck">
+                  {leadershipData?.title}
+                </h1>
               </div>
             </div>
           </div>
@@ -51,16 +70,17 @@ const Leadership = () => {
           <div className="leadd-info-case">
             <div className="leadd-info-show container">
               <div className="leadd">
-                <div className="tt-3">Leadership – Pastor Alex and Mama D.</div>
+                <div className="tt-3">{leadershipData?.leadershipTitle}</div>
 
-                <div className="tt-2">
+                {/* <div className="tt-2">
                   Pastor Alex and Pastor Dorcas are the head shepherds of
                   Highway of Holiness Church.
                 </div>
                 <div className="tt-2">
                   They are assisted by Pastor Roland Owusu-Mensah and His Wife
                   Mabel Owusu-Mensah.
-                </div>
+                </div> */}
+                <BlockContent blocks={leadershipData?.leadershipDescription} />
               </div>
             </div>
           </div>
@@ -74,44 +94,23 @@ const Leadership = () => {
                   <div className="lead-flex-show">
                     {/* fleaders 3 flex  */}
 
-                    <div className="lead-flex">
-                      <div className="lf1-pic">
-                        <img src={l1} alt="" />
+                    {leadershipData?.leaders?.map((leader) => (
+                      <div key={leader._key} className="lead-flex">
+                        <div className="lf1-pic">
+                          <img
+                            src={urlFor(leader?.image?.image)}
+                            alt={leader?.image?.image?.alt}
+                          />
+                        </div>
+                        <div className="lf12">{leader.name}</div>
+                        <div className="lf3">{leader.title}</div>
+
+                        <EmailContactButton
+                          emailAddress="info@hohcentre.co.uk"
+                          subject="Message"
+                        />
                       </div>
-                      <div className="lf12">Pastor Alex Gyasi MBE</div>
-                      <div className="lf3">Head Pastor</div>
-
-                      <EmailContactButton
-                        emailAddress="info@hohcentre.co.uk"
-                        subject="Message"
-                      />
-                    </div>
-
-                    <div className="lead-flex">
-                      <div className="lf1-pic">
-                        <img src={l22} alt="" />
-                      </div>
-                      <div className="lf12">Pastor Dorcas Gyasi</div>
-                      <div className="lf3">Associate Pastor</div>
-
-                      <EmailContactButton
-                        emailAddress="info@hohcentre.co.uk"
-                        subject="Message"
-                      />
-                    </div>
-
-                    <div className="lead-flex">
-                      <div className="lf1-pic">
-                        <img src={l33} alt="" />
-                      </div>
-                      <div className="lf12">Rev Roland Owusu-Mensah</div>
-                      <div className="lf3">Assistant Pastor</div>
-
-                      <EmailContactButton
-                        emailAddress="info@hohcentre.co.uk"
-                        subject="Message"
-                      />
-                    </div>
+                    ))}
 
                     {/* fleaders 3 flex end */}
                   </div>
