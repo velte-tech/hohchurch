@@ -8,6 +8,7 @@ import missionCard from './missionCard'
 import message from './message'
 import slider from './slider'
 import iamnew from './iamnew'
+import leadership from './leadership'
 
 export const schemaTypes = [
     home,
@@ -16,6 +17,6 @@ export const schemaTypes = [
     message,
     slider,
     iamnew,
-    category,
+    leadership,
     blockContent
 ]

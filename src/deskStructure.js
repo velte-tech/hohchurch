@@ -1,5 +1,6 @@
 import { AiOutlineHome } from "react-icons/ai";
 import { HiOutlineInformationCircle, HiOutlineUsers, HiOutlineDocumentDuplicate } from "react-icons/hi"
+import { FcManager } from "react-icons/fc"
 
 export const deskStructure = (S) =>
     S.list()
@@ -22,6 +23,16 @@ export const deskStructure = (S) =>
                         .schemaType('iamnew')
                         .documentId('iamnew')
                 ),
+
+            S.listItem()
+                .title('Leadership Page')
+                .icon(FcManager)
+                .child(
+                    S.editor()
+                        .schemaType('leadership')
+                        .documentId('leadership')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -29,7 +40,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew"
+                        "home", "iamnew", "leadership"
                     ].includes(listItem.getId())
             ),
         ]);

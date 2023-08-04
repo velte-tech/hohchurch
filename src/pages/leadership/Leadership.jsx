@@ -14,6 +14,8 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 import { useEffect } from "react";
 import AOS from "aos";
 import EmailContactButton from "../../components/mailto/Mailto";
+import { urlFor } from "../../utils/urlFor";
+import sanityClient from "../../client.js";
 
 const Leadership = () => {
   useEffect(() => {
@@ -27,12 +29,17 @@ const Leadership = () => {
     );
   });
 
+  useEffect(() => {}, []);
+
   return (
     <div id="super">
       <div className="leadership-page">
         <div className="leadership-wrapper">
           {/* shwowcse */}
-          <div className="leadership-showcase">
+          <div
+            className="leadership-showcase"
+            style={{ backgroundImage: `url(${urlFor()})` }}
+          >
             <div className="leadership-show">
               <div className="leadership-text">
                 <h1 className="focus-in-contract-bck">LEADERSHIP</h1>

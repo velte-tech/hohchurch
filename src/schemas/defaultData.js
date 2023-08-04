@@ -45,3 +45,22 @@ export const iamnewContent = {
     whatToExpectTitle: "What to expect",
     whatToExpectDescription: `We are a church that meets every Sunday at 11:00 AM for celebration service in person and online via facebook live. We also meets every Wednesday at 7:00 PM in person and on facebook live. Our Friday Bible Academy meeting happens every Friday at 7:30 PM on facebook live. We call ourselves a "me too" community and hope that you feel right at home. Are you in need of prayers or do you know anyone that needs prayers? Fill the prayer  request form and we will surely get back to you. We HOH leaders  and members can not wait to hear from you.`,
 }
+
+export const leadershipContent = {
+    title: "Leadership",
+    leadershipTitle: "Leadership – Pastor Alex and Mama D.",
+    leaders: [
+        {
+            name: "Pastor Alex Gyasi MBE",
+            title: "Head Pastor",
+        },
+        {
+            name: "Pastor Dorcas Gyasi",
+            title: "Associate Pastor",
+        },
+        {
+            name: "Rev Roland Owusu-Mensah",
+            title: "Assistant Pastor",
+        }
+    ]
+}
