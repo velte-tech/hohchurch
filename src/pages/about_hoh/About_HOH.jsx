@@ -255,11 +255,11 @@ const About_HOH = () => {
                 {/* BIBLICAL LIST */}
 
                 <div className="biblical-wrapper">
-                  <div className="biblical">
-                    <div className="bib">
+                  <ol type="1" className="biblical">
+                    <li className="bib">
                       <div className="bib-1">
-                        1. LOVE GROUP <br></br>
-                        <span className="hoo">(1 Corinthians 13 : 4 - 7)</span>
+                        LOVE GROUP
+                        <h4 className="hoo">(1 Corinthians 13 : 4 - 7)</h4>
                       </div>
                       <div className="bib-2">
                         Love is patient and kind; love does not envy or boast;
@@ -268,11 +268,8 @@ const About_HOH = () => {
                         rejoice at wrongdoing, but rejoices with the truth. Love
                         bears all things, believes all things, hopes all things,
                         and endures all things. <br></br>
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
                       </div>
-                    </div>
+                    </li>
 
                     <div className="bib">
                       <div className="bib-1">
@@ -353,7 +350,7 @@ const About_HOH = () => {
                 Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, and endures all things. 
               </div>
             </div> */}
-                  </div>
+                  </ol>
                 </div>
 
                 {/* BIBLICAL LIST END */}

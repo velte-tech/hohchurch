@@ -64,3 +64,42 @@ export const leadershipContent = {
         }
     ]
 }
+
+export const aboutContent = {
+    title: "HIGHWAY OF HOLINESS",
+    aboutTitle: "About US",
+    aboutDescription: "The Highway of Holiness Church (HOH) is an Evangelical, Charismatic Christian Church that centers on companionship, love, and care. We seek to exalt the Lord and build up His people via collective worship and teachings that emphasize the sufficiency of God and His Word.",
+    missionTitle: "MISSION STATEMENT",
+    missionDescription: "To follow God fully and lead nations to eternity through teaching the word of God and the practical demonstration of the love of God to the world.",
+    welcomeTitle: "Welcome address from Pastor Alex and Pastor Dorcas",
+    welcomeDescription: "We warmly welcome you to Highway of Holiness Church, a place of faith, fellowship and freedom in Christ. Here at HOH everything we do is centred on the living word of God, the Holy Bible.We believe that the answers to life’ s questions are found within the pages of God’ s holy word. This is the source we stand on to teach, equip and edify God’ s children. Our desire is to demonstrate how you can live a purposeful life in Christ, being fruitful in your gifts and bringing others to His Kingdom. As believers in Christ we are here on earth to be ambassadors of God’ s Kingdom and we do this by demonstrating Gods love to the world.",
+    fellowshipTitle: "FELLOWSHIP GROUPS",
+    fellowshipDescription: "The church congregation is sectioned into 5 fellowship groups that our lead by.",
+    fellowshipGroups: [
+        {
+            name: "LOVE GROUP",
+            bibleVerse: "1 Corinthians 13 : 4 - 7",
+            bibleVerseQuote: "The Love Group is a fellowship group that is led by Pastor Alex and Mama D. The group is made up of the Pastors, Deacons, Deaconesses, and the Church Secretary. The group is responsible for the spiritual and physical welfare of the church. They are also responsible for the day to day running of the church.",
+        },
+        {
+            name: "FAITH GROUP",
+            bibleVerse: "Hebrews 11 : 1",
+            bibleVerseQuote: "Now faith is the assurance of things hoped for, the conviction of things not seen.",
+        },
+        {
+            name: "PEACE GROUP",
+            bibleVerse: "Philippians 4: 7",
+            bibleVerseQuote: "And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.",
+        },
+        {
+            name: "HOPE GROUP",
+            bibleVerse: "Romans 15: 13",
+            bibleVerseQuote: "May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
+        },
+        {
+            name: "POWER GROUP",
+            bibleVerse: "Luke 24 : 49",
+            bibleVerseQuote: "I am going to send you what my Father has promised; but stay in the city until you have been clothed with power from on high."
+        }
+    ]
+}

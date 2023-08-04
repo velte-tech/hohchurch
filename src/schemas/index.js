@@ -9,6 +9,7 @@ import message from './message'
 import slider from './slider'
 import iamnew from './iamnew'
 import leadership from './leadership'
+import about from './about'
 
 export const schemaTypes = [
     home,
@@ -18,5 +19,6 @@ export const schemaTypes = [
     slider,
     iamnew,
     leadership,
+    about,
     blockContent
 ]

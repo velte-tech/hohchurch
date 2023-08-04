@@ -19,6 +19,17 @@
   transform: translate(-50%, -50%);
 }
 
+ol {
+  margin: 0 0 1.5em;
+  margin-left: 1.5em;
+}
+
+ol>li::marker {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 2rem;
+}
+
 /* @media screen and (max-width: 600px) {
         .hoh-showcase {
         height: 70vh;
@@ -235,10 +246,12 @@
   .values-text-case .psr2 {
     font-size: 1.1rem;
   }
+
   .values-text-case .values-tt1 {
     font-size: 1.5rem;
     text-align: center;
   }
+
   .values-text-case .ps-picc img {
     width: 100%;
     height: 300px;
@@ -292,7 +305,7 @@
   font-weight: 600;
   color: #000;
   line-height: 1.7;
-  margin-left: 1rem;
+  margin-left: 0;
 }
 
 /* .biblical-wrapper .biblical .bib .bib-2 span {
@@ -345,12 +358,15 @@
 .hoo a {
   color: var(--primary_color);
 }
+
 .hoo a:hover {
   color: #000;
 }
+
 .hoo {
   color: var(--primary_color);
 }
+
 .hoo:hover {
   color: #000;
 }
@@ -415,9 +431,11 @@
   justify-content: flex-start;
   padding: 0;
 }
+
 .kg-3:hover .links {
   color: var(--primary_color);
 }
+
 .hh-3 .links:hover {
   color: var(--primary_color);
 }
@@ -464,6 +482,7 @@
     margin: auto;
     margin-bottom: 4rem;
   }
+
   .hh {
     width: 100%;
     margin: auto;
@@ -492,6 +511,7 @@
     margin: auto;
     margin-bottom: 4rem;
   }
+
   .hh {
     width: 100%;
     margin: auto;
@@ -616,6 +636,7 @@
     width: 100%;
     object-fit: contain;
   }
+
   .psr1 {
     font-size: 1.2rem;
     color: #000;
@@ -667,6 +688,7 @@
   line-height: 1.7;
   text-align: center;
 }
+
 .ms22 {
   font-weight: 600;
   font-size: 17px;
@@ -687,47 +709,61 @@ span:last-child {
 
 .l-shape {
   position: relative;
-  height: 100px; /* reduce the height to make it thinner */
+  height: 100px;
+  /* reduce the height to make it thinner */
 }
 
 .box-1 {
   position: absolute;
-  width: 10px; /* reduce the width to make it thinner */
-  height: 100%; /* occupy full height of parent element */
-  background-color: var(--primary_color); /* set the same color */
+  width: 10px;
+  /* reduce the width to make it thinner */
+  height: 100%;
+  /* occupy full height of parent element */
+  background-color: var(--primary_color);
+  /* set the same color */
   top: 3rem;
   left: 0;
 }
 
 .box-2 {
   position: absolute;
-  width: 200px; /* occupy full width of parent element */
-  height: 10px; /* reduce the height to make it thinner */
-  background-color: var(--primary_color); /* set the same color */
+  width: 200px;
+  /* occupy full width of parent element */
+  height: 10px;
+  /* reduce the height to make it thinner */
+  background-color: var(--primary_color);
+  /* set the same color */
   bottom: 50px;
   left: 0;
 }
 
 .l-shape2 {
   position: relative;
-  height: 100px; /* reduce the height to make it thinner */
+  height: 100px;
+  /* reduce the height to make it thinner */
   /* transform: rotate(90deg); */
 }
 
 .box-12 {
   position: absolute;
-  width: 10px; /* reduce the width to make it thinner */
-  height: 100%; /* occupy full height of parent element */
-  background-color: var(--primary_color); /* set the same color */
+  width: 10px;
+  /* reduce the width to make it thinner */
+  height: 100%;
+  /* occupy full height of parent element */
+  background-color: var(--primary_color);
+  /* set the same color */
   top: 0;
   right: 0;
 }
 
 .box-22 {
   position: absolute;
-  width: 200px; /* occupy full width of parent element */
-  height: 10px; /* reduce the height to make it thinner */
-  background-color: var(--primary_color); /* set the same color */
+  width: 200px;
+  /* occupy full width of parent element */
+  height: 10px;
+  /* reduce the height to make it thinner */
+  background-color: var(--primary_color);
+  /* set the same color */
   bottom: 0;
   right: 0;
 }
@@ -740,36 +776,48 @@ span:last-child {
 
   .box-1 {
     position: absolute;
-    width: 10px; /* reduce the width to make it thinner */
-    height: 100%; /* occupy full height of parent element */
-    background-color: #f00; /* set the same color */
+    width: 10px;
+    /* reduce the width to make it thinner */
+    height: 100%;
+    /* occupy full height of parent element */
+    background-color: #f00;
+    /* set the same color */
     top: 3rem;
     left: 0;
   }
 
   .box-2 {
     position: absolute;
-    width: 200px; /* occupy full width of parent element */
-    height: 10px; /* reduce the height to make it thinner */
-    background-color: #f00; /* set the same color */
+    width: 200px;
+    /* occupy full width of parent element */
+    height: 10px;
+    /* reduce the height to make it thinner */
+    background-color: #f00;
+    /* set the same color */
     bottom: 50px;
     left: 0;
   }
 
   .box-12 {
     position: absolute;
-    width: 10px; /* reduce the width to make it thinner */
-    height: 100%; /* occupy full height of parent element */
-    background-color: var(--primary_color); /* set the same color */
+    width: 10px;
+    /* reduce the width to make it thinner */
+    height: 100%;
+    /* occupy full height of parent element */
+    background-color: var(--primary_color);
+    /* set the same color */
     top: -20px;
     right: 0;
   }
 
   .box-22 {
     position: absolute;
-    width: 200px; /* occupy full width of parent element */
-    height: 10px; /* reduce the height to make it thinner */
-    background-color: var(--primary_color); /* set the same color */
+    width: 200px;
+    /* occupy full width of parent element */
+    height: 10px;
+    /* reduce the height to make it thinner */
+    background-color: var(--primary_color);
+    /* set the same color */
     bottom: 20px;
     right: 0;
   }

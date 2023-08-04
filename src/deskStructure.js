@@ -25,6 +25,15 @@ export const deskStructure = (S) =>
                 ),
 
             S.listItem()
+                .title('About Page')
+                .icon(HiOutlineInformationCircle)
+                .child(
+                    S.editor()
+                        .schemaType('about')
+                        .documentId('about')
+                ),
+
+            S.listItem()
                 .title('Leadership Page')
                 .icon(FcManager)
                 .child(
@@ -40,7 +49,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership"
+                        "home", "iamnew", "leadership", "about"
                     ].includes(listItem.getId())
             ),
         ]);
