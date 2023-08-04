@@ -37,3 +37,10 @@ export const homeContent = {
         }
     ],
 }
+
+export const iamnewContent = {
+    aboutTitle: "About hoh-church",
+    aboutDescription: "The Highway of Holiness Church (HOH) is an Evangelical, Charismatic Christian Church that centers on companionship, love, and care. We seek to exalt the Lord and build up His people via collective worship and teachings that emphasize the sufficiency of God and His Word.",
+    whatToExpectTitle: "What to expect",
+    whatToExpectDescription: `We are a church that meets every Sunday at 11:00 AM for celebration service in person and online via facebook live. We also meets every Wednesday at 7:00 PM in person and on facebook live. Our Friday Bible Academy meeting happens every Friday at 7:30 PM on facebook live. We call ourselves a "me too" community and hope that you feel right at home. Are you in need of prayers or do you know anyone that needs prayers? Fill the prayer  request form and we will surely get back to you. We HOH leaders  and members can not wait to hear from you.`,
+}

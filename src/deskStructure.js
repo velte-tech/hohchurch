@@ -1,5 +1,5 @@
 import { AiOutlineHome } from "react-icons/ai";
-// import { HiOutlineInformationCircle, HiOutlineUsers, HiOutlineDocumentDuplicate } from "react-icons/hi"
+import { HiOutlineInformationCircle, HiOutlineUsers, HiOutlineDocumentDuplicate } from "react-icons/hi"
 
 export const deskStructure = (S) =>
     S.list()
@@ -13,6 +13,15 @@ export const deskStructure = (S) =>
                         .schemaType("home")
                     // .documentId("74e88acc-4693-4879-a3fc-a69f69823900")
                 ),
+
+            S.listItem()
+                .title('IAMNew Page')
+                .icon(() => `🆕`)
+                .child(
+                    S.editor()
+                        .schemaType('iamnew')
+                        .documentId('iamnew')
+                ),
             // Add a visual divider (optional)
             S.divider(),
 
@@ -20,7 +29,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home",
+                        "home", "iamnew"
                     ].includes(listItem.getId())
             ),
         ]);
