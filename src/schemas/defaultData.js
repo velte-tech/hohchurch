@@ -79,7 +79,7 @@ export const aboutContent = {
         {
             name: "LOVE GROUP",
             bibleVerse: "1 Corinthians 13 : 4 - 7",
-            bibleVerseQuote: "The Love Group is a fellowship group that is led by Pastor Alex and Mama D. The group is made up of the Pastors, Deacons, Deaconesses, and the Church Secretary. The group is responsible for the spiritual and physical welfare of the church. They are also responsible for the day to day running of the church.",
+            bibleVerseQuote: "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, and endures all things.",
         },
         {
             name: "FAITH GROUP",

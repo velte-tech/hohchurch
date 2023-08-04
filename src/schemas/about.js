@@ -16,7 +16,7 @@ export default defineType({
         defineField({
             name: "headerImage",
             description: "The image to be displayed on the header of the page",
-            title: "Header Image",
+            title: "Header Background Image",
             type: "reference",
             to: [{ type: "gallery" }],
         }),
@@ -49,6 +49,7 @@ export default defineType({
             description: "The background image to be displayed on the mission section of the page",
             type: "reference",
             to: [{ type: "gallery" }],
+            title: "Mission Background Image",
         }),
         defineField({
             name: "welcomeTitle",
@@ -66,7 +67,15 @@ export default defineType({
         }),
         defineField({
             name: "welcomeImage",
+            title: "Welcome Background Image",
             description: "The image to be displayed on the welcome section of the page",
+            type: "reference",
+            to: [{ type: "gallery" }],
+        }),
+        defineField({
+            name: "pastorsPhoto",
+            title: "Pastors Photo",
+            description: "The photo to be displayed on the welcome section of the page",
             type: "reference",
             to: [{ type: "gallery" }],
         }),
@@ -105,7 +114,7 @@ export default defineType({
                     {
                         name: "bibleVerseQuote",
                         title: "Bible Verse Quote",
-                        type: "string",
+                        type: "text",
                     },
                 ],
                 preview: {
