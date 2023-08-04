@@ -39,6 +39,7 @@ export const homeContent = {
 }
 
 export const iamnewContent = {
+    title: "I am New",
     aboutTitle: "About hoh-church",
     aboutDescription: "The Highway of Holiness Church (HOH) is an Evangelical, Charismatic Christian Church that centers on companionship, love, and care. We seek to exalt the Lord and build up His people via collective worship and teachings that emphasize the sufficiency of God and His Word.",
     whatToExpectTitle: "What to expect",

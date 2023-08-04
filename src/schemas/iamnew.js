@@ -7,6 +7,20 @@ export default defineType({
     type: "document",
     fields: [
         defineField({
+            name: "title",
+            title: "Title",
+            type: "string",
+            description: "The text to be displayed on the header image of the page",
+            initialValue: iamnewContent.title,
+        }),
+        defineField({
+            name: "headerImage",
+            description: "The image to be displayed on the header of the page",
+            title: "Header Image",
+            type: "reference",
+            to: [{ type: "gallery" }],
+        }),
+        defineField({
             name: "aboutTitle",
             title: "About Title",
             type: "string",

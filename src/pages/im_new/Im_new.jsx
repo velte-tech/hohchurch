@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -8,10 +8,15 @@ import singersImage from "../../assets/images/new-singers.jpg";
 import Faq from "../../components/faq/Faq";
 import GoogleMap from "../../components/GoogleMap/GoogleMap";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
-
+import sanityClient from "../../client.js";
+import { urlFor } from "../../utils/urlFor";
 // import mapImage from "../../assets/images/Figmap.png"
+import showCaseBackground from "../../assets/images/new-showcase.jpg";
+import { iamnewContent } from "../../schemas/defaultData";
 
 const Im_new = () => {
+  const [iamnewData, setIamnew] = useState();
+
   useEffect(() => {
     AOS.init(
       {
@@ -22,18 +27,40 @@ const Im_new = () => {
       []
     );
   });
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "iamnew"]{..., headerImage->, aboutImage->, whatToExpectImage->}`
+      )
+      .then((data) => {
+        console.log("iamnew: ", data);
+        setIamnew(data[0]);
+      })
+      .catch(console.error);
+  }, []);
+
   return (
     <div id="super">
-      <section id="new_showcase">
+      <section
+        id="new_showcase"
+        style={{
+          backgroundImage: `url(${urlFor(iamnewData?.headerImage?.image)})`,
+        }}
+      >
         <div className="showcase_wrapper">
-          <h1>I'M NEW</h1>
+          <h1>{iamnewData?.title}</h1>
         </div>
       </section>
 
       {/* ======= SECTION : EXPECT ======= */}
       <section id="new_expect">
         <div className="left">
-          <img src={newAboutImage} alt="slideImage" data-aos="fade-right" />
+          <img
+            src={urlFor(iamnewData?.aboutImage?.image)}
+            alt={iamnewData?.aboutImage?.image?.alt}
+            data-aos="fade-right"
+          />
           <div
             className="shape_2"
             data-aos="fade-right"
@@ -47,18 +74,14 @@ const Im_new = () => {
             data-aos-delay="300"
             data-aos-anchor-placement="center-bottom"
           >
-            About hoh-church
+            {iamnewData?.aboutTitle || iamnewContent.aboutTitle}
           </h2>
           <p
             data-aos="fade-left"
             data-aos-delay="300"
             data-aos-anchor-placement="center-bottom"
           >
-            The Highway of Holiness Church (HOH) is an Evangelical, Charismatic
-            Christian Church that centers on companionship, love, and care. We
-            seek to exalt the Lord and build up His people via collective
-            worship and teachings that emphasize the sufficiency of God and His
-            Word.
+            {iamnewData?.aboutDescription || iamnewContent.aboutDescription}
           </p>
           <div
             className="new_expect_links"
@@ -87,22 +110,16 @@ const Im_new = () => {
                 data-aos-delay="300"
                 data-aos-anchor-placement="center-bottom"
               >
-                What to expect
+                {iamnewData?.whatToExpectTitle ||
+                  iamnewContent.whatToExpectTitle}
               </h2>
               <p
                 data-aos="fade-right"
                 data-aos-delay="300"
                 data-aos-anchor-placement="center-bottom"
               >
-                We are a church that meets every Sunday at 11:00 AM for
-                celebration service in person and online via facebook live. We
-                also meets every Wednesday at 7:00 PM in person and on facebook
-                live. Our Friday Bible Academy meeting happens every Friday at
-                7:30 PM on facebook live. We call ourselves a "me too" community
-                and hope that you feel right at home. Are you in need of prayers
-                or do you know anyone that needs prayers? Fill the prayer
-                request form and we will surely get back to you. We HOH leaders
-                and members can not wait to hear from you.
+                {iamnewData?.whatToExpectDescription ||
+                  iamnewContent.whatToExpectDescription}
               </p>
               <div
                 className="new_expect_links"
@@ -121,7 +138,11 @@ const Im_new = () => {
           </div>
 
           <div className="right">
-            <img src={singersImage} alt="slideImage" data-aos="fade-left" />
+            <img
+              src={urlFor(iamnewData?.whatToExpectImage?.image)}
+              alt={iamnewData?.whatToExpectImage?.image?.alt}
+              data-aos="fade-left"
+            />
             <div
               className="shape_2"
               data-aos="fade-left"
