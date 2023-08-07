@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -11,8 +11,24 @@ import personImg from "../../assets/images/retreat-03.jpg";
 // import breakfast from "../../assets/images/breakfast.jpg";
 // import comingSoon from "../../assets/images/comingSoon.jpg";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import { urlFor } from "../../utils/urlFor";
+import sanityClient from "../../client.js";
 
 const Denver = () => {
+  const [youthData, setYouthData] = useState();
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "youthRetreat"]{..., headerImage->, youthCards[] {..., image->}, youthSectionImage-> }`
+      )
+      .then((data) => {
+        console.log("youth: ", data);
+        setYouthData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
+
   useEffect(() => {
     AOS.init(
       {
@@ -25,11 +41,14 @@ const Denver = () => {
 
   return (
     <div id="super">
-      <section id="denver_showcase">
+      <section
+        id="denver_showcase"
+        style={{
+          backgroundImage: `url(${urlFor(youthData?.headerImage?.image)})`,
+        }}
+      >
         <div className="showcase_wrapper">
-          <h1 className="focus-in-contract-bck">
-            Changed Lives - Youth and young adults retreat
-          </h1>
+          <h1 className="focus-in-contract-bck">{youthData?.title}</h1>
           {/* <p className="date focus-in-contract-bck">SUNDAY: 9,11 AM & 6:30PM</p> */}
           {/* <Search /> */}
         </div>
@@ -43,16 +62,52 @@ const Denver = () => {
             data-aos-delay="400"
             data-aos-anchor-placement="top-bottom"
           >
-            <p>HOH YOUTH RETREAT</p>
-            <p>
-              Youth retreat at Highway Of Holiness Church has alot to offer by
-              bringing young people of all walks of life to connect with each
-              other in the name of our lord and saviour Jesus Christ.
-            </p>
+            <p>{youthData?.youthCaptionTitle}</p>
+            <p>{youthData?.youthCaptionText}</p>
           </div>
 
           <div className="right">
-            <AboutSlideIn />
+            <div
+              className="card"
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <img
+                src={urlFor(youthData?.youthCards[0]?.image?.image)}
+                alt={youthData?.youthCards[0]?.image?.image?.alt}
+              />
+              <div className="text">
+                <p className="hover_overlay ">
+                  {youthData?.youthCards[0]?.title}
+                </p>
+                <p>{youthData?.youthCards[0]?.description}</p>
+                <Link to={youthData?.youthCards[0]?.link} className="linkAnima">
+                  Learn More <span className="arrow"></span>
+                </Link>
+              </div>
+            </div>
+
+            <div
+              className="card"
+              data-aos="fade-left"
+              data-aos-delay="600"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <img
+                src={urlFor(youthData?.youthCards[1]?.image?.image)}
+                alt={youthData?.youthCards[1]?.image?.image?.alt}
+              />
+              <div className="text">
+                <p className="hover_overlay ">
+                  {youthData?.youthCards[1]?.title}
+                </p>
+                <p>{youthData?.youthCards[1]?.description}</p>
+                <Link to={youthData?.youthCards[1]?.link} className="linkAnima">
+                  Learn More <span className="arrow"></span>
+                </Link>
+              </div>
+            </div>
 
             <div
               className="card"
@@ -60,15 +115,21 @@ const Denver = () => {
               data-aos="fade-left"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={youthImg} alt="" />
+              <img
+                src={urlFor(youthData?.youthCards[2]?.image?.image)}
+                alt={youthData?.youthCards[2]?.image?.image?.alt}
+              />
               <div className="text">
-                <p className="hover_overlay ">HOH-Church Young Adults</p>
-                <p>Joins us and connect with the family.</p>
-                <Link to="/Young_adults" className="linkAnima">
+                <p className="hover_overlay ">
+                  {youthData?.youthCards[2]?.title}
+                </p>
+                <p>{youthData?.youthCards[2]?.description}</p>
+                <Link to={youthData?.youthCards[2]?.link} className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
             </div>
+
             <div
               className="shape"
               data-aos="slide-left"
@@ -82,8 +143,8 @@ const Denver = () => {
         <div className="reach_wrapper">
           <div className="left">
             <img
-              src={personImg}
-              alt=""
+              src={urlFor(youthData?.youthSectionImage?.image)}
+              alt={youthData?.youthSectionImage?.image?.alt}
               data-aos="fade-right"
               data-aos-anchor-placement="center-bottom"
               data-aos-delay="600"
@@ -95,13 +156,8 @@ const Denver = () => {
             data-aos-delay="600"
             data-aos-anchor-placement="top center"
           >
-            <h2>YOUTH RETREAT</h2>
-            <p>
-              Yought Retreat started at Highway Of Holiness church to focus on
-              bringing the young people of Highway Of Holiness church together
-              and learn more about the changing society and to up-lift the young
-              generation. reach this community and tell them about Jesus' love.
-            </p>
+            <h2>{youthData?.youthSectionTitle}</h2>
+            <p>{youthData?.youthSectionText}</p>
             <Link className="linkAnima">
               Contact <span className="arrow"></span>
             </Link>

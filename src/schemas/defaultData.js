@@ -143,3 +143,26 @@ export const easterContent = {
         }
     ]
 }
+
+export const youthContent = {
+    title: "Changed Lives - Youth and young adults retreat",
+    youthCaptionTitle: "HOH YOUTH RETREAT",
+    youthCaptionText: "Youth retreat at Highway Of Holiness Church has alot to offer by bringing young people of all walks of life to connect with each other in the name of our lord and saviour Jesus Christ.",
+    youthCards: [
+        {
+            title: "LEADERSHIP @ HOH-CHRUCH",
+            description: "Meet the elders and leader of Highway of Holiness Church.",
+        },
+        {
+            title: "HOH UPDATES",
+            description: "Get update from Highway of Holiness Church."
+        },
+        {
+            title: "HOH-CHURCH YOUNG ADULTS",
+            description: "Joins us and connect with the family."
+        }
+    ],
+    youthSectionTitle: "YOUTH RETREAT",
+    youthSectionText: "Youth Retreat started at Highway Of Holiness church to focus on bringing the young people of Highway Of Holiness church together and learn more about the changing society and to up-lift the young generation. reach this community and tell them about Jesus' love.",
+
+}

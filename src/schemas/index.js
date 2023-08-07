@@ -13,6 +13,8 @@ import about from './about'
 import aboutPost from './aboutPost'
 import easter from './events/easter'
 import easterCard from './events/easterCard'
+import youth_retreat from './events/youth_retreat'
+import youthCard from './events/youthCard'
 
 export const schemaTypes = [
     home,
@@ -26,5 +28,7 @@ export const schemaTypes = [
     aboutPost,
     easter,
     easterCard,
+    youth_retreat,
+    youthCard,
     blockContent
 ]
