@@ -11,6 +11,8 @@ import iamnew from './iamnew'
 import leadership from './leadership'
 import about from './about'
 import aboutPost from './aboutPost'
+import easter from './events/easter'
+import easterCard from './events/easterCard'
 
 export const schemaTypes = [
     home,
@@ -22,5 +24,7 @@ export const schemaTypes = [
     leadership,
     about,
     aboutPost,
+    easter,
+    easterCard,
     blockContent
 ]

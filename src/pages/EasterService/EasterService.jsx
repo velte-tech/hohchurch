@@ -1,15 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./EasterService.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 // import Search from "../../components/searchLocate/Search";
-import AboutSlideIn from "../../components/aboutSlideIn/AboutSlideIn";
 import donateImg from "../../assets/images/donate.jpg";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import { urlFor } from "../../utils/urlFor";
+import sanityClient from "../../client";
+import churchImg from "../../assets/images/leaders-hoh.jpg";
+import updateImg from "../../assets/images/aboutUpdate.jpg";
 
 const Aurora = () => {
+  const [easterData, setEasterData] = useState();
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "easterPage"]{..., headerImage->, easterCards[] {..., image->}}`
+      )
+      .then((data) => {
+        console.log("easter: ", data);
+        setEasterData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
+
+  useEffect(() => {
+    console.log("easterData: ", easterData);
+  }, [easterData]);
+
   useEffect(() => {
     AOS.init(
       {
@@ -19,12 +40,18 @@ const Aurora = () => {
       []
     );
   });
+
   return (
     <div id="super">
-      <section id="about_showcase">
+      <section
+        id="about_showcase"
+        style={{
+          backgroundImage: `url(${urlFor(easterData?.headerImage?.image)})`,
+        }}
+      >
         <div className="showcase_wrapper">
-          <h1 className="focus-in-contract-bck">EASTER SERVICE</h1>
-          <p className="date focus-in-contract-bck">SUNDAY: 11AM</p>
+          <h1 className="focus-in-contract-bck">{easterData?.title}</h1>
+          <p className="date focus-in-contract-bck">{easterData?.subtitle}</p>
           {/* <Search /> */}
         </div>
       </section>
@@ -37,19 +64,61 @@ const Aurora = () => {
             data-aos-delay="400"
             data-aos-anchor-placement="top-bottom"
           >
-            <p>HOH EASTER SERVICE</p>
-            <p>
-              Easter retreat at Highway Of Holiness Church has alot to offer by
-              bringing young people of all walks of life to connect with each
-              other in the name name of out lord and saviour Jesus Christ.
-            </p>
+            <p>{easterData?.easterCaptionTitle}</p>
+            <p>{easterData?.easterCaptionText}</p>
             <Link to="/contact" className="btn">
               VISIT OUR LOCATION
             </Link>
           </div>
 
           <div className="right">
-            <AboutSlideIn />
+            <div
+              className="card"
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <img
+                src={urlFor(easterData?.easterCards[0]?.image?.image)}
+                alt={easterData?.easterCards[0]?.image?.image?.alt}
+              />
+              <div className="text">
+                <p className="hover_overlay ">
+                  {easterData?.easterCards[0]?.title}
+                </p>
+                <p>{easterData?.easterCards[0]?.description}</p>
+                <Link
+                  to={easterData?.easterCards[0]?.link}
+                  className="linkAnima"
+                >
+                  Learn More <span className="arrow"></span>
+                </Link>
+              </div>
+            </div>
+
+            <div
+              className="card"
+              data-aos="fade-left"
+              data-aos-delay="600"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <img
+                src={urlFor(easterData?.easterCards[1]?.image?.image)}
+                alt={easterData?.easterCards[1]?.image?.image?.alt}
+              />
+              <div className="text">
+                <p className="hover_overlay ">
+                  {easterData?.easterCards[1]?.title}
+                </p>
+                <p>{easterData?.easterCards[1]?.description}</p>
+                <Link
+                  to={easterData?.easterCards[1]?.link}
+                  className="linkAnima"
+                >
+                  Learn More <span className="arrow"></span>
+                </Link>
+              </div>
+            </div>
 
             <div
               className="card"
@@ -57,11 +126,19 @@ const Aurora = () => {
               data-aos="fade-left"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={donateImg} alt="" />
+              <img
+                src={urlFor(easterData?.easterCards[2]?.image?.image)}
+                alt={easterData?.easterCards[2]?.image?.image?.alt}
+              />
               <div className="text">
-                <p className="hover_overlay ">GIVING @ HoH</p>
-                <p>Support the work of God, for in giving shall ye receive.</p>
-                <Link to="/About_HOH" className="linkAnima">
+                <p className="hover_overlay ">
+                  {easterData?.easterCards[2]?.title}
+                </p>
+                <p>{easterData?.easterCards[2]?.description}</p>
+                <Link
+                  to={easterData?.easterCards[2]?.link}
+                  className="linkAnima"
+                >
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>

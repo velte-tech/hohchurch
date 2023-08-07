@@ -1,3 +1,5 @@
+import { siteLinks } from "./siteLinks"
+
 export const homeContent = {
     welcomeTitle: "Welcome to",
     welcomeSubtitle: "HIGHWAY OF HOLINESS CHURCH",
@@ -117,6 +119,27 @@ export const aboutContent = {
             title: "KINGDOM LIFESTYLE MISSION",
             description: "Kingdom Lifestyle Mission(KLM) provides FREE supplementary education for underprivileged children. KLM runs free weekly Saturday schools and vacation classes during school holidays. Our goal is to help children in deprived communities.",
             postLink: "http://klmission.com/"
+        }
+    ]
+}
+
+export const easterContent = {
+    title: "EASTER SERVICE",
+    subtitle: "SUNDAY: 11AM",
+    easterCaptionTitle: "HOH EASTER SERVICE",
+    easterCaptionText: "Easter retreat at Highway Of Holiness Church has alot to offer by bringing young people of all walks of life to connect with each other in the name name of out lord and saviour Jesus Christ.",
+    easterCards: [
+        {
+            title: "LEADERSHIP @ HOH-CHRUCH",
+            description: "Meet the elders and leader of Highway of Holiness Church.",
+        },
+        {
+            title: "HOH UPDATES",
+            description: "Get update from Highway of Holiness Church."
+        },
+        {
+            title: "GIVING @ HOH",
+            description: "Support the work of God, for in giving shall ye receive."
         }
     ]
 }

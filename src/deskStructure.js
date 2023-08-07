@@ -1,6 +1,7 @@
 import { AiOutlineHome } from "react-icons/ai";
 import { HiOutlineInformationCircle, HiOutlineUsers, HiOutlineDocumentDuplicate } from "react-icons/hi"
 import { FcManager } from "react-icons/fc"
+import { PiCrossBold } from "react-icons/pi"
 
 export const deskStructure = (S) =>
     S.list()
@@ -42,6 +43,15 @@ export const deskStructure = (S) =>
                         .documentId('leadership')
                 ),
 
+            S.listItem()
+                .title('Easter Service Page')
+                .icon(PiCrossBold)
+                .child(
+                    S.editor()
+                        .schemaType('easterPage')
+                        .documentId('easterPage')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -49,7 +59,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about"
+                        "home", "iamnew", "leadership", "about", "easterPage"
                     ].includes(listItem.getId())
             ),
         ]);
