@@ -1,5 +1,6 @@
 import { defineField, defineType } from "sanity";
 import { aboutContent } from "./defaultData";
+import ArrayMaxItems from "../components/ArrayMaxItems";
 
 export default defineType({
     name: "about",
@@ -125,6 +126,17 @@ export default defineType({
                 },
             }],
             initialValue: aboutContent.fellowshipGroups,
+        }),
+        defineField({
+            name: "aboutPosts",
+            title: "About Posts",
+            description: "The list of posts to be displayed on the about page",
+            type: "array",
+            of: [{ type: "aboutPost" }],
+            initialValue: aboutContent.aboutPosts,
+
+            components: { input: ArrayMaxItems },
+            validation: (Rule) => Rule.max(3).warning("You can only have 3 posts on the about page"),
         }),
 
     ]

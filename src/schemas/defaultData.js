@@ -101,5 +101,22 @@ export const aboutContent = {
             bibleVerse: "Luke 24 : 49",
             bibleVerseQuote: "I am going to send you what my Father has promised; but stay in the city until you have been clothed with power from on high."
         }
+    ],
+    aboutPosts: [
+        {
+            title: "KINGDOM CULTURE ALLIANCE",
+            description: "Kingdom Culture Alliance(KCA) is a forum for leaders and ministers who desire to build their character and capacity for the advancement of the Kingdom of God.",
+            postLink: "https://www.facebook.com/kingdomculturealliance?mibextid=LQQJ4d"
+        },
+        {
+            title: "HIGHWAY HOUSE",
+            description: "The Highway House Shelter is more than a homeless shelter. We are a shelter based in Tottenham, London that houses up to 35 men at a time. Since we opened our doors in 2009, almost 1000 people have been helped with shelter, food and counselling, along with the opportunity for much needed companionship with others.",
+            postLink: "https://highwayhouse.co.uk/"
+        },
+        {
+            title: "KINGDOM LIFESTYLE MISSION",
+            description: "Kingdom Lifestyle Mission(KLM) provides FREE supplementary education for underprivileged children. KLM runs free weekly Saturday schools and vacation classes during school holidays. Our goal is to help children in deprived communities.",
+            postLink: "http://klmission.com/"
+        }
     ]
 }
