@@ -265,7 +265,7 @@ const About_HOH = () => {
                 <div className="biblical-wrapper">
                   <ol type="1" className="biblical">
                     {aboutData?.fellowshipGroups?.map((group, index) => (
-                      <li className="bib">
+                      <li key={group._key} className="bib">
                         <div className="bib-1">
                           {group?.name}
                           <h4 className="hoo">({group.bibleVerse})</h4>
@@ -462,18 +462,16 @@ const About_HOH = () => {
             <div className="kg-hh">
               <div className="kg" data-aos="fade-right">
                 <div className="kg-1 focus-in-contract-bck">
-                  KINGDOM CULTURE ALLIANCE
+                  {aboutData?.aboutPosts[0]?.title}
                 </div>
 
                 <div className="kg-2">
-                  Kingdom Culture Alliance(KCA) is a forum for leaders and
-                  ministers who desire to build their character and capacity for
-                  the advancement of the Kingdom of God.
+                  {aboutData?.aboutPosts[0]?.description}
                 </div>
 
                 <div className="kg-3">
                   <a
-                    href="https://www.facebook.com/kingdomculturealliance?mibextid=LQQJ4d"
+                    href={aboutData?.aboutPosts[0]?.postLink}
                     target="_blank"
                     className="links linkAnima"
                   >
@@ -483,21 +481,18 @@ const About_HOH = () => {
               </div>
 
               <div className="hh">
-                <div className="hh-1a focus-in-contract-bck">HIGHWAY HOUSE</div>
+                <div className="hh-1a focus-in-contract-bck">
+                  {aboutData?.aboutPosts[1]?.title}
+                </div>
 
                 <div className="hh-2a">
-                  The Highway House Shelter is more than a homeless shelter. We
-                  are a shelter based in Tottenham, London that houses up to 35
-                  men at a time. Since we opened our doors in 2009, almost 1000
-                  people have been helped with shelter, food and counselling,
-                  along with the opportunity for much needed companionship with
-                  others.
+                  {aboutData?.aboutPosts[1]?.description}
                 </div>
 
                 <div className="hh-3">
                   <a
                     target="_blank"
-                    href="https://highwayhouse.co.uk/"
+                    href={aboutData?.aboutPosts[1]?.postLink}
                     rel="noreferrer"
                   >
                     <div className="links linkAnima">
@@ -513,21 +508,17 @@ const About_HOH = () => {
               <div className="klm-case" data-aos="fade-left">
                 <div className="klm-show">
                   <div className="hh-1a focus-in-contract-bck">
-                    KINGDOM LIFESTYLE MISSION
+                    {aboutData?.aboutPosts[2]?.title}
                   </div>
 
                   <div className="hh-2a">
-                    Kingdom Lifestyle Mission(KLM) provides FREE supplementary
-                    education for underprivileged children. KLM runs free weekly
-                    Saturday schools and vacation classes during school
-                    holidays. Our goal is to help children in deprived
-                    communities.
+                    {aboutData?.aboutPosts[2]?.description}
                   </div>
 
                   <div className="hh-3">
                     <a
                       target="_blank"
-                      href="http://klmission.com/"
+                      href={aboutData?.aboutPosts[2]?.postLink}
                       rel="noreferrer"
                     >
                       <div className="links linkAnima">

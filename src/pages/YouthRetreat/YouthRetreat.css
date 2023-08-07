@@ -1,7 +1,6 @@
 #denver_showcase {
   position: relative;
-  background: url("../../assets/images/eating_group.jpg") no-repeat center
-    center/cover;
+  background: no-repeat center center/cover;
   min-height: 40rem;
   display: flex;
   flex-direction: column;

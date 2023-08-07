@@ -1,3 +1,5 @@
+import { siteLinks } from "./siteLinks"
+
 export const homeContent = {
     welcomeTitle: "Welcome to",
     welcomeSubtitle: "HIGHWAY OF HOLINESS CHURCH",
@@ -101,5 +103,91 @@ export const aboutContent = {
             bibleVerse: "Luke 24 : 49",
             bibleVerseQuote: "I am going to send you what my Father has promised; but stay in the city until you have been clothed with power from on high."
         }
+    ],
+    aboutPosts: [
+        {
+            title: "KINGDOM CULTURE ALLIANCE",
+            description: "Kingdom Culture Alliance(KCA) is a forum for leaders and ministers who desire to build their character and capacity for the advancement of the Kingdom of God.",
+            postLink: "https://www.facebook.com/kingdomculturealliance?mibextid=LQQJ4d"
+        },
+        {
+            title: "HIGHWAY HOUSE",
+            description: "The Highway House Shelter is more than a homeless shelter. We are a shelter based in Tottenham, London that houses up to 35 men at a time. Since we opened our doors in 2009, almost 1000 people have been helped with shelter, food and counselling, along with the opportunity for much needed companionship with others.",
+            postLink: "https://highwayhouse.co.uk/"
+        },
+        {
+            title: "KINGDOM LIFESTYLE MISSION",
+            description: "Kingdom Lifestyle Mission(KLM) provides FREE supplementary education for underprivileged children. KLM runs free weekly Saturday schools and vacation classes during school holidays. Our goal is to help children in deprived communities.",
+            postLink: "http://klmission.com/"
+        }
     ]
+}
+
+export const easterContent = {
+    title: "EASTER SERVICE",
+    subtitle: "SUNDAY: 11AM",
+    easterCaptionTitle: "HOH EASTER SERVICE",
+    easterCaptionText: "Easter retreat at Highway Of Holiness Church has alot to offer by bringing young people of all walks of life to connect with each other in the name name of out lord and saviour Jesus Christ.",
+    easterCards: [
+        {
+            title: "LEADERSHIP @ HOH-CHRUCH",
+            description: "Meet the elders and leader of Highway of Holiness Church.",
+        },
+        {
+            title: "HOH UPDATES",
+            description: "Get update from Highway of Holiness Church."
+        },
+        {
+            title: "GIVING @ HOH",
+            description: "Support the work of God, for in giving shall ye receive."
+        }
+    ]
+}
+
+export const youthContent = {
+    title: "Changed Lives - Youth and young adults retreat",
+    youthCaptionTitle: "HOH YOUTH RETREAT",
+    youthCaptionText: "Youth retreat at Highway Of Holiness Church has alot to offer by bringing young people of all walks of life to connect with each other in the name of our lord and saviour Jesus Christ.",
+    youthCards: [
+        {
+            title: "LEADERSHIP @ HOH-CHRUCH",
+            description: "Meet the elders and leader of Highway of Holiness Church.",
+        },
+        {
+            title: "HOH UPDATES",
+            description: "Get update from Highway of Holiness Church."
+        },
+        {
+            title: "HOH-CHURCH YOUNG ADULTS",
+            description: "Joins us and connect with the family."
+        }
+    ],
+    youthSectionTitle: "YOUTH RETREAT",
+    youthSectionText: "Youth Retreat started at Highway Of Holiness church to focus on bringing the young people of Highway Of Holiness church together and learn more about the changing society and to up-lift the young generation. reach this community and tell them about Jesus' love.",
+
+}
+
+export const adultContent = {
+    title: "ADULT RETREAT",
+    subtitle: "HIGHWAY OF HOLINESS CHURCH",
+    adultCaptionTitle: "HOH ADULT RETREAT",
+    adultCaptionText: "Adult Retreat is a retreat programme held by Highway of Holiness Church for members from age 25 and above.",
+    adultCards: [
+        {
+            title: "LEADERSHIP @ HOH-CHRUCH",
+            description: "Meet the elders and leader of Highway of Holiness Church.",
+        },
+        {
+            title: "OUTREACH",
+            description: "Checkout our outreach programmes."
+        },
+        {
+            title: "KIDS MINISTRY",
+            description: "Find out more about Highway of Holiness church kids ministry."
+        }
+    ],
+    pastorName: "Pastor Dorcas Gyasi",
+    pastorTitle: "Associate Pastor",
+    pastorBio: "My wife and I started our ministry 33 years ago when we said “ YES!” to God’ s call. Since then have not looked back. We have embarked on many projects, ranging from providing supplementary education for children in deprived areas to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site. We have witnessed first-hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.",
+
 }

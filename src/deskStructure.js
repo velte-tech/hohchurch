@@ -1,6 +1,9 @@
 import { AiOutlineHome } from "react-icons/ai";
 import { HiOutlineInformationCircle, HiOutlineUsers, HiOutlineDocumentDuplicate } from "react-icons/hi"
 import { FcManager } from "react-icons/fc"
+import { PiCrossBold } from "react-icons/pi"
+import { MdOutlineChildCare } from "react-icons/md"
+import { IoManOutline } from "react-icons/io5"
 
 export const deskStructure = (S) =>
     S.list()
@@ -42,6 +45,33 @@ export const deskStructure = (S) =>
                         .documentId('leadership')
                 ),
 
+            S.listItem()
+                .title('Easter Service Page')
+                .icon(PiCrossBold)
+                .child(
+                    S.editor()
+                        .schemaType('easterPage')
+                        .documentId('easterPage')
+                ),
+
+            S.listItem()
+                .title('Youth Retreat Page')
+                .icon(MdOutlineChildCare)
+                .child(
+                    S.editor()
+                        .schemaType('youthRetreat')
+                        .documentId('youthRetreat')
+                ),
+
+            S.listItem()
+                .title('Adult Retreat Page')
+                .icon(IoManOutline)
+                .child(
+                    S.editor()
+                        .schemaType('adultRetreat')
+                        .documentId('adultRetreat')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -49,7 +79,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat"
                     ].includes(listItem.getId())
             ),
         ]);

@@ -10,6 +10,13 @@ import slider from './slider'
 import iamnew from './iamnew'
 import leadership from './leadership'
 import about from './about'
+import aboutPost from './aboutPost'
+import easter from './events/easter'
+import easterCard from './events/easterCard'
+import youth_retreat from './events/youth_retreat'
+import youthCard from './events/youthCard'
+import adult_retreat from './events/adult_retreat'
+import adultCard from './events/adultCard'
 
 export const schemaTypes = [
     home,
@@ -20,5 +27,12 @@ export const schemaTypes = [
     iamnew,
     leadership,
     about,
+    aboutPost,
+    easter,
+    easterCard,
+    youth_retreat,
+    youthCard,
+    adult_retreat,
+    adultCard,
     blockContent
 ]
