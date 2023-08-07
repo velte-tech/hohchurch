@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useState } from "react";
 import "./About_HOH.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -6,8 +6,13 @@ import AOS from "aos";
 import kmmm33 from "../../assets/images/alexdocas222.png";
 // import kmmm33 from "../../assets/images/alexdocasbg.png";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import sanityClient from "../../client.js";
+import { urlFor } from "../../utils/urlFor";
+import BlockContent from "@sanity/block-content-to-react";
 
 const About_HOH = () => {
+  const [aboutData, setAboutData] = useState();
+
   useEffect(() => {
     AOS.init(
       {
@@ -19,49 +24,67 @@ const About_HOH = () => {
     );
   });
 
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "about"]{..., headerImage->, missionImage->, welcomeImage->, pastorsPhoto->}`
+      )
+      .then((data) => {
+        console.log("about: ", data);
+        setAboutData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
+
   return (
     <div id="super">
       <div className="about-hoh-page">
         <div className="hoh-wrapper">
           {/* showcase */}
-          <div className="hoh-showcase">
+          <div
+            className="hoh-showcase"
+            style={{
+              backgroundImage: `url(${urlFor(aboutData?.headerImage?.image)})`,
+            }}
+          >
             <div className="hoh-text-showcase">
               <div className="hoh-text">
                 {/* <h1 className='focus-in-contract-bck'> ABOUT </h1> */}
-                <h1 className="focus-in-contract-bck"> HIGHWAY OF HOLINESS</h1>
+                <h1 className="focus-in-contract-bck">{aboutData?.title}</h1>
               </div>
             </div>
           </div>
           {/* showcase end */}
 
-          <div className="tt-1 focus-in-contract-bck">ABOUT US</div>
-          <p className="ttp">
-            The Highway of Holiness Church (HOH) is an Evangelical, Charismatic
-            Christian Church that centers on companionship, love, and care. We
-            seek to exalt the Lord and build up His people via collective
-            worship and teachings that emphasize the sufficiency of God and His
-            Word.
-          </p>
+          <div className="tt-1 focus-in-contract-bck">
+            {aboutData?.aboutTitle}
+          </div>
+          <div className="ttp">
+            <BlockContent blocks={aboutData?.aboutDescription} />
+          </div>
 
           {/* mission statement  */}
 
-          <div className="ms-stat-wrapper">
+          <div
+            className="ms-stat-wrapper"
+            style={{
+              backgroundImage: `url(${urlFor(aboutData?.missionImage?.image)})`,
+            }}
+          >
             <div className="ms-stat-case">
               <div className="ms-stat-show">
                 <div id="lshape">
-                  <div class="l-shape">
-                    <div class="box-1"></div>
-                    <div class="box-2"></div>
+                  <div className="l-shape">
+                    <div className="box-1"></div>
+                    <div className="box-2"></div>
                   </div>
                 </div>
 
                 <div className="ms-stat">
-                  <div className="ms1">MISSION STATEMENT</div>
+                  <div className="ms1">{aboutData?.missionTitle}</div>
                   {/* <span>"</span> */}
                   <div className="ms2">
-                    To follow God fully and lead nations to eternity through
-                    teaching the word of God and the practical demonstration of
-                    the love of God to the world.
+                    <BlockContent blocks={aboutData?.missionDescription} />
                   </div>
 
                   {/* <div className="ms22">
@@ -79,9 +102,9 @@ const About_HOH = () => {
                 </div>
 
                 <div id="lshape2">
-                  <div class="l-shape2">
-                    <div class="box-12"></div>
-                    <div class="box-22"></div>
+                  <div className="l-shape2">
+                    <div className="box-12"></div>
+                    <div className="box-22"></div>
                   </div>
                 </div>
               </div>
@@ -99,9 +122,7 @@ const About_HOH = () => {
                   {/* docas & alex */}
 
                   <div className="alex-docas">
-                    <div className="values-tt1">
-                      Welcome address from Pastor Alex and Pastor Dorcas
-                    </div>
+                    <div className="values-tt1">{aboutData?.welcomeTitle}</div>
 
                     <div className="ps-alex-wrapper">
                       <div className="ps-alex-show">
@@ -113,7 +134,10 @@ const About_HOH = () => {
                               data-aos-anchor-placement="center-bottom"
                               data-aos-delay="600"
                             >
-                              <img src={kmmm33} alt="" />
+                              <img
+                                src={urlFor(aboutData?.pastorsPhoto?.image)}
+                                alt={aboutData?.pastorsPhoto?.image?.alt}
+                              />
                             </div>
                           </div>
 
@@ -128,20 +152,7 @@ const About_HOH = () => {
                 </div> */}
 
                             <div className="psr2">
-                              We warmly welcome you to Highway of Holiness
-                              Church, a place of faith, fellowship and freedom
-                              in Christ. Here at HOH everything we do is centred
-                              on the living word of God, the Holy Bible. We
-                              believe that the answers to life’ s questions are
-                              found within the pages of God’ s holy word. This
-                              is the source we stand on to teach, equip and
-                              edify God’ s children. Our desire is to
-                              demonstrate how you can live a purposeful life in
-                              Christ, being fruitful in your gifts and bringing
-                              others to His Kingdom. As believers in Christ we
-                              are here on earth to be ambassadors of God’ s
-                              Kingdom and we do this by demonstrating Gods love
-                              to the world.
+                              {aboutData?.welcomeDescription}
                             </div>
 
                             {/* <div className="psr3">
@@ -245,93 +256,25 @@ const About_HOH = () => {
                 They are assisted by Pastor Roland Owusu– Mensah and His Wife Mabel Owusu - mensah.   
             </div> */}
 
-                <div className="tt-3">Fellowship Groups</div>
+                <div className="tt-3">{aboutData?.fellowshipTitle}</div>
 
-                <div className="tt-2">
-                  The church congregation is sectioned into 5 fellowship groups
-                  that our lead by.
-                </div>
+                <div className="tt-2">{aboutData?.fellowshipDescription}</div>
 
                 {/* BIBLICAL LIST */}
 
                 <div className="biblical-wrapper">
-                  <div className="biblical">
-                    <div className="bib">
-                      <div className="bib-1">
-                        1. LOVE GROUP <br></br>
-                        <span className="hoo">(1 Corinthians 13 : 4 - 7)</span>
-                      </div>
-                      <div className="bib-2">
-                        Love is patient and kind; love does not envy or boast;
-                        it is not arrogant or rude. It does not insist on its
-                        own way; it is not irritable or resentful; it does not
-                        rejoice at wrongdoing, but rejoices with the truth. Love
-                        bears all things, believes all things, hopes all things,
-                        and endures all things. <br></br>
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
-                      </div>
-                    </div>
-
-                    <div className="bib">
-                      <div className="bib-1">
-                        2. FAITH GROUP <br></br>
-                        <span className="hoo">(Hebrews 11 : 1)</span>
-                      </div>
-                      <div className="bib-2">
-                        Now faith is the assurance of things hoped for, the
-                        conviction of things not seen. <br></br>
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
-                      </div>
-                    </div>
-
-                    <div className="bib">
-                      <div className="bib-1">
-                        3. PEACE GROUP <br></br>
-                        <span className="hoo">(Philippians 4: 7)</span>
-                      </div>
-                      <div className="bib-2">
-                        And the peace of God, which transcends all
-                        understanding, will guard your hearts and your minds in
-                        Christ Jesus.
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
-                      </div>
-                    </div>
-
-                    <div className="bib">
-                      <div className="bib-1">
-                        4. HOPE GROUP <br></br>
-                        <span className="hoo">(Romans 15 : 13)</span>
-                      </div>
-                      <div className="bib-2">
-                        May the God of hope fill you with all joy and peace in
-                        believing, so that by the power of the Holy Spirit you
-                        may abound in hope. <br></br>
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
-                      </div>
-                    </div>
-
-                    <div className="bib">
-                      <div className="bib-1">
-                        5. POWER GROUP <br></br>
-                        <span className="hoo">(Luke 24 : 49)</span>
-                      </div>
-                      <div className="bib-2">
-                        I am going to send you what my Father has promised; but
-                        stay in the city until you have been clothed with power
-                        from on high. <br></br>
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
-                      </div>
-                    </div>
+                  <ol type="1" className="biblical">
+                    {aboutData?.fellowshipGroups?.map((group, index) => (
+                      <li className="bib">
+                        <div className="bib-1">
+                          {group?.name}
+                          <h4 className="hoo">({group.bibleVerse})</h4>
+                        </div>
+                        <div className="bib-2">
+                          {group.bibleVerseQuote} <br></br>
+                        </div>
+                      </li>
+                    ))}
 
                     {/* <div className='bib'>
               <div className='bib-1'>
@@ -353,7 +296,7 @@ const About_HOH = () => {
                 Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, and endures all things. 
               </div>
             </div> */}
-                  </div>
+                  </ol>
                 </div>
 
                 {/* BIBLICAL LIST END */}

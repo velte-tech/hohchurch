@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Slides from "../../components/msgSlider/slider";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
@@ -21,8 +21,13 @@ import phonexxx from "../../assets/images/phone-app.png";
 // import pastorVideo from "../../assets/video/video.mp4";
 
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import "../../styles.css";
+import sanityClient from "../../client.js";
+import { urlFor } from "../../utils/urlFor";
 
 function Home() {
+  const [homeData, setHomeData] = useState(null);
+
   useEffect(() => {
     AOS.init(
       {
@@ -32,6 +37,18 @@ function Home() {
       []
     );
   });
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "home"]{..., aboutImage->, missionCards[] {..., image->} }`
+      )
+      .then((data) => {
+        console.log(data);
+        setHomeData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
 
   return (
     <>
@@ -44,10 +61,10 @@ function Home() {
             <div className="showcase_content">
               <div className="top">
                 <p data-aos="zoom-in" data-aos-delay="200">
-                  WELCOME TO
+                  {homeData?.welcomeTitle}
                 </p>
                 <p data-aos="zoom-in" data-aos-delay="400">
-                  HIGHWAY OF HOLINESS CHURCH
+                  {homeData?.welcomeSubtitle}
                 </p>
               </div>
               <div className="links" data-aos="zoom-in" data-aos-delay="600">
@@ -73,7 +90,7 @@ function Home() {
               data-aos="fade-right"
               data-aos-anchor-placement="top-bottom"
             >
-              OUR MISSION
+              {homeData?.missionTitle}
             </p>
 
             {/* <p>Highway Of Holiness Church</p> */}
@@ -84,9 +101,7 @@ function Home() {
               data-aos-anchor-placement="center-bottom"
               className="home_text"
             >
-              To follow God fully and lead nations to eternity through teaching
-              the word of God and the practical demonstration of the love of God
-              to the world.
+              {homeData?.missionDescription}
             </p>
           </div>
           <div className="right">
@@ -96,10 +111,15 @@ function Home() {
               data-aos-delay="400"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={churchImg} alt="" />
+              <img
+                src={urlFor(homeData?.missionCards[0]?.image?.image)}
+                alt={homeData?.missionCards[0]?.image?.image?.alt}
+              />
               <div className="text">
-                <p className="hover_overlay ">Services & Time</p>
-                <p>Find our service times and direction to our location.</p>
+                <p className="hover_overlay ">
+                  {homeData?.missionCards[0]?.title}
+                </p>
+                <p>{homeData?.missionCards[0]?.description || ""}</p>
                 <Link to="/Weekly_programmes" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -112,10 +132,15 @@ function Home() {
               data-aos-delay="600"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={outreachImg} alt="" />
+              <img
+                src={urlFor(homeData?.missionCards[1]?.image?.image)}
+                alt={homeData?.missionCards[1]?.image?.image?.alt}
+              />
               <div className="text">
-                <p className="hover_overlay ">Outreach</p>
-                {/* <p>Find our services time and direction to our location</p> */}
+                <p className="hover_overlay ">
+                  {homeData?.missionCards[1]?.title}
+                </p>
+                <p>{homeData?.missionCards[1]?.description || ""}</p>
                 <Link to="/outreach" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -128,10 +153,16 @@ function Home() {
               data-aos="fade-left"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={newHereImg} alt="" />
+              <img
+                src={urlFor(homeData?.missionCards[2]?.image?.image)}
+                alt={homeData?.missionCards[2]?.image?.image?.alt}
+              />
               <div className="text">
-                <p className="hover_overlay ">New Here?</p>
-                {/* <p>Find our services time and direction to our location</p> */}
+                <p className="hover_overlay ">
+                  {" "}
+                  {homeData?.missionCards[2]?.title}
+                </p>
+                <p>{homeData?.missionCards[2]?.description || ""}</p>
                 <Link to="/im_new" className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
@@ -158,7 +189,11 @@ function Home() {
                     data-aos-anchor-placement="center-bottom"
                     data-aos-delay="600"
                   >
-                    <img src={kmmm3} alt="" style={{ objectFit: "contain" }} />
+                    <img
+                      src={urlFor(homeData?.aboutImage?.image)}
+                      alt={homeData?.aboutImage?.image?.alt}
+                      style={{ objectFit: "contain" }}
+                    />
                   </div>
                 </div>
 
@@ -168,23 +203,9 @@ function Home() {
                   data-aos-anchor-placement="center-bottom"
                   data-aos-delay="600"
                 >
-                  <div className="psr1">
-                    Welcome address from Pastor Alex and Pastor Dorcas
-                  </div>
+                  <div className="psr1">{homeData?.aboutTitle}</div>
 
-                  <div className="psr2">
-                    We warmly welcome you to Highway of Holiness Church, a place
-                    of faith, fellowship and freedom in Christ. Here at HOH
-                    everything we do is centred on the living word of God, the
-                    Holy Bible.We believe that the answers to life’ s questions
-                    are found within the pages of God’ s holy word. This is the
-                    source we stand on to teach, equip and edify God’ s
-                    children. Our desire is to demonstrate how you can live a
-                    purposeful life in Christ, being fruitful in your gifts and
-                    bringing others to His Kingdom. As believers in Christ we
-                    are here on earth to be ambassadors of God’ s Kingdom and we
-                    do this by demonstrating Gods love to the world.
-                  </div>
+                  <div className="psr2">{homeData?.aboutDescription}</div>
 
                   <div className="psr3">
                     <Link to="/contact" className="links linkAnima">
@@ -251,150 +272,71 @@ function Home() {
         <div className="home_message">
           <div className="message_wrapper container text_center">
             <div className="top">
-              <h2>PAST Messages</h2>
-              <p>Checkout our past sermons and services held by HOH-CHURCH.</p>
+              <h2>{homeData?.pastMessagesTitle}</h2>
+              <p>{homeData?.pastMessagesText}</p>
             </div>
 
             <div className="bottom">
               <div className="up">
-                <div className="box">
-                  <div className="hover_overlay">
-                    <iframe
-                      id="utube_video"
-                      width="560"
-                      height="270"
-                      src="https://www.youtube.com/embed/NAg3fUq66-o"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <a
-                    className="btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://youtu.be/NAg3fUq66-o"
+                {homeData?.pastMessages?.slice(0, 3).map((message, index) => (
+                  <div
+                    key={index}
+                    className="col-md-4 px-0 my-2 mr-2 messageBorder"
                   >
-                    VIEW
-                  </a>
-                </div>
-
-                <div className="box">
-                  <div className="hover_overlay">
-                    <iframe
-                      id="utube_video"
-                      width="560"
-                      height="270"
-                      src="https://www.youtube.com/embed/aDfTtKRBnBc"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
+                    <div className="hover_overlay">
+                      <iframe
+                        id="utube_video"
+                        width="360"
+                        height="230"
+                        src={`https://www.youtube.com/embed/${message.youtubeId}`}
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        className=""
+                      ></iframe>
+                    </div>
+                    <a
+                      className="btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={`https://youtu.be/${message.youtubeId}`}
+                    >
+                      VIEW
+                    </a>
                   </div>
-
-                  <a
-                    className="btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.youtube.com/live/aDfTtKRBnBc?feature=share"
-                  >
-                    VIEW
-                  </a>
-                </div>
-                <div className="box">
-                  <div className="hover_overlay">
-                    <iframe
-                      id="utube_video"
-                      width="560"
-                      height="270"
-                      src="https://www.youtube.com/embed/ZQyO7YDV0Us"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <a
-                    className="btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.youtube.com/live/ZQyO7YDV0Us?feature=share"
-                  >
-                    VIEW
-                  </a>
-                </div>
+                ))}
               </div>
 
               <div className="down">
-                <div className="box">
-                  <div className="hover_overlay">
-                    <iframe
-                      id="utube_video"
-                      width="560"
-                      height="270"
-                      src="https://www.youtube.com/embed/L2gIEE64KbU"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <a
-                    className="btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.youtube.com/live/L2gIEE64KbU?feature=share"
+                {homeData?.pastMessages?.slice(3, 6).map((message, index) => (
+                  <div
+                    key={index}
+                    className="col-md-4 px-0 my-2 mr-2 messageBorder"
                   >
-                    VIEW
-                  </a>
-                </div>
-                <div className="box">
-                  <div className="hover_overlay">
-                    <iframe
-                      id="utube_video"
-                      width="560"
-                      height="270"
-                      src="https://www.youtube.com/embed/S-vIVk55kbg"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
+                    <div className="hover_overlay">
+                      <iframe
+                        id="utube_video"
+                        width="360"
+                        height="230"
+                        src={`https://www.youtube.com/embed/${message.youtubeId}`}
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        className=""
+                      ></iframe>
+                    </div>
+                    <a
+                      className="btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={`https://youtu.be/${message.youtubeId}`}
+                    >
+                      VIEW
+                    </a>
                   </div>
-                  <a
-                    className="btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href=" https://www.youtube.com/live/S-vIVk55kbg?feature=share"
-                  >
-                    VIEW
-                  </a>
-                </div>
-
-                <div className="box">
-                  <div className="hover_overlay">
-                    <iframe
-                      id="utube_video"
-                      width="560"
-                      height="270"
-                      src="https://www.youtube.com/embed/5lqmtiGC0WM"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                  <a
-                    className="btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.youtube.com/live/5lqmtiGC0WM?feature=share"
-                  >
-                    VIEW
-                  </a>
-                </div>
+                ))}
               </div>
             </div>
           </div>

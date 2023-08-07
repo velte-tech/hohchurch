@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./slider.css";
 import "slick-carousel/slick/slick.css";
@@ -6,10 +6,13 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { slideData } from "./data";
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
+import sanityClient from "../../client";
+import { urlFor } from "../../utils/urlFor";
 
 function Sliders() {
   const sliderRef = useRef();
   // const sermon = useLoaderData();
+  const [sliderData, setSliderData] = useState([]);
 
   const settings = {
     arrows: false,
@@ -94,6 +97,16 @@ function Sliders() {
     ],
   };
 
+  useEffect(() => {
+    sanityClient
+      .fetch(`*[_type == "slider"]{..., image->}`)
+      .then((data) => {
+        console.log("slider: ", data);
+        setSliderData(data);
+      })
+      .catch(console.error);
+  }, []);
+
   return (
     <div className="slider_wrapper">
       <div className="slider_top">
@@ -114,16 +127,19 @@ function Sliders() {
         </div>
       </div>
       <Slider ref={sliderRef} {...settings}>
-        {slideData.map((item) => (
-          <Link to={`/sermon/${item.id}`} key={item.id} className="card">
+        {sliderData?.map((item) => (
+          <Link to={`/sermon/${item?._id}`} key={item?._id} className="card">
             <div className="card_top">
-              <h2 className="text_on_img">{item.title}</h2>
-              <img src={item.image} alt={item.title} />
+              <h2 className="text_on_img">{item?.title}</h2>
+              <img
+                src={urlFor(item?.image?.image)}
+                alt={item?.image?.image?.alt}
+              />
             </div>
             <div className="card_bottom">
-              <p className="title">{item.cart}</p>
-              <p className="head">{item.title}</p>
-              <p className="name">{item.names}</p>
+              <p className="title">{item?.tag}</p>
+              <p className="head">{item?.title}</p>
+              <p className="name">{item?.author}</p>
             </div>
           </Link>
         ))}
