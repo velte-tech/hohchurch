@@ -1,7 +1,6 @@
 #adult_retreat_showcase {
   position: relative;
-  background: url("../../assets/images/adult_retreat.jpg") no-repeat center
-    center/cover;
+  background: no-repeat center center/cover;
   min-height: 40rem;
   display: flex;
   flex-direction: column;
@@ -94,6 +93,7 @@
   justify-content: center;
   gap: 10rem;
 }
+
 #serve_divider .bottom a {
   font-size: 1.7rem;
   font-weight: bold;

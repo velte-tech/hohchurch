@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -17,8 +17,24 @@ import infantImg from "../../assets/images/infant.jpg";
 import lafPastorImg from "../../assets/images/pastordocas.jpg";
 // import KidsAcc from "../../components/mAccComponents/KidsAcc";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import { urlFor } from "../../utils/urlFor";
+import sanityClient from "../../client.js";
 
 const Lafayette = () => {
+  const [adultData, setAdultData] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "adultRetreat"]{..., headerImage->, adultCards[] {..., image->}, pastorImage->}`
+      )
+      .then((data) => {
+        console.log("adultRetreat: ", data[0]);
+        setAdultData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
+
   useEffect(() => {
     AOS.init(
       {
@@ -31,13 +47,16 @@ const Lafayette = () => {
 
   return (
     <div id="super">
-      <section id="adult_retreat_showcase">
+      <section
+        id="adult_retreat_showcase"
+        style={{
+          backgroundImage: `url(${urlFor(adultData?.headerImage?.image)})`,
+        }}
+      >
         <div className="showcase_wrapper">
-          <h1 className="focus-in-contract-bck">ADULT RETREAT</h1>
+          <h1 className="focus-in-contract-bck">{adultData?.title}</h1>
           {/* <p className="date focus-in-contract-bck">SUNDAY: 9* & 11 AM</p> */}
-          <p className="laf_asl focus-in-contract-bck">
-            Highway of Holiness Church
-          </p>
+          <p className="laf_asl focus-in-contract-bck">{adultData?.subtitle}</p>
           {/* <Search /> */}
         </div>
       </section>
@@ -50,16 +69,32 @@ const Lafayette = () => {
             data-aos-delay="400"
             data-aos-anchor-placement="top-bottom"
           >
-            <p>HOH ADULT RETREAT</p>
-            <p>
-              Adult Retreat is a retreat programme held by Highway of Holiness
-              Church for members from age 25 and above.
-            </p>
+            <p>{adultData?.adultCaptionTitle}</p>
+            <p>{adultData?.adultCaptionText}</p>
             {/* <p className="asl_welcome">Adult Retreat Service at 9:00 AM</p> */}
           </div>
 
           <div className="right">
-            <SingleCard />
+            <div
+              className="card"
+              data-aos="fade-left"
+              data-aos-delay="400"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <img
+                src={urlFor(adultData?.adultCards[0]?.image?.image)}
+                alt={adultData?.adultCards[0]?.image?.image?.alt}
+              />
+              <div className="text">
+                <p className="hover_overlay ">
+                  {adultData?.adultCards[0]?.title}
+                </p>
+                <p>{adultData?.adultCards[0]?.description}</p>
+                <Link to={adultData?.adultCards[0]?.link} className="linkAnima">
+                  Learn More <span className="arrow"></span>
+                </Link>
+              </div>
+            </div>
 
             <div
               className="card"
@@ -67,11 +102,16 @@ const Lafayette = () => {
               data-aos-delay="600"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={gatheringImg} alt="" />
+              <img
+                src={urlFor(adultData?.adultCards[1]?.image?.image)}
+                alt={adultData?.adultCards[1]?.image?.image?.alt}
+              />
               <div className="text">
-                <p className="hover_overlay ">Outreach</p>
-                <p>Checkout our outreach programmes.</p>
-                <Link to="/outreach" className="linkAnima">
+                <p className="hover_overlay ">
+                  {adultData?.adultCards[1]?.title}
+                </p>
+                <p>{adultData?.adultCards[1]?.description}</p>
+                <Link to={adultData?.adultCards[1]?.link} className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -83,13 +123,16 @@ const Lafayette = () => {
               data-aos="fade-left"
               data-aos-anchor-placement="center-bottom"
             >
-              <img src={infantImg} alt="" />
+              <img
+                src={urlFor(adultData?.adultCards[2]?.image?.image)}
+                alt={adultData?.adultCards[2]?.image?.image?.alt}
+              />
               <div className="text">
-                <p className="hover_overlay ">KIDS MINISTRY</p>
-                <p>
-                  Find out more about Highway of Holiness church kids ministry.
+                <p className="hover_overlay ">
+                  {adultData?.adultCards[2]?.title}
                 </p>
-                <Link to="/kids" className="linkAnima">
+                <p>{adultData?.adultCards[2]?.description}</p>
+                <Link to={adultData?.adultCards[2]?.link} className="linkAnima">
                   Learn More <span className="arrow"></span>
                 </Link>
               </div>
@@ -291,8 +334,8 @@ const Lafayette = () => {
         <div className="reach_wrapper">
           <div className="left">
             <img
-              src={lafPastorImg}
-              alt=""
+              src={urlFor(adultData?.pastorImage?.image)}
+              alt={adultData?.pastorImage?.image?.alt}
               data-aos="fade-right"
               data-aos-anchor-placement="center-bottom"
               data-aos-delay="600"
@@ -304,19 +347,9 @@ const Lafayette = () => {
             data-aos-delay="600"
             data-aos-anchor-placement="top center"
           >
-            <h2>Pastor Dorcas Gyasi</h2>
-            <p>Associate Pastor</p>
-            <p>
-              My wife and I started our ministry 33 years ago when we said “
-              YES!” to God’ s call. Since then have not looked back. We have
-              embarked on many projects, ranging from providing supplementary
-              education for children in deprived areas to running a homeless
-              shelter since 2009 till present day and many more ministries that
-              you will come across as you browse this site. We have witnessed
-              first-hand, how living a life fully surrendered to Christ can
-              positively impact you, your family, friends and society as a
-              whole.
-            </p>
+            <h2>{adultData?.pastorName}</h2>
+            <p>{adultData?.pastorTitle}</p>
+            <p>{adultData?.pastorBio}</p>
             <Link className="linkAnima" to="/contact">
               Contact <span className="arrow"></span>
             </Link>

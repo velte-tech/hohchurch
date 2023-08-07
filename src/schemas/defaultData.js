@@ -166,3 +166,28 @@ export const youthContent = {
     youthSectionText: "Youth Retreat started at Highway Of Holiness church to focus on bringing the young people of Highway Of Holiness church together and learn more about the changing society and to up-lift the young generation. reach this community and tell them about Jesus' love.",
 
 }
+
+export const adultContent = {
+    title: "ADULT RETREAT",
+    subtitle: "HIGHWAY OF HOLINESS CHURCH",
+    adultCaptionTitle: "HOH ADULT RETREAT",
+    adultCaptionText: "Adult Retreat is a retreat programme held by Highway of Holiness Church for members from age 25 and above.",
+    adultCards: [
+        {
+            title: "LEADERSHIP @ HOH-CHRUCH",
+            description: "Meet the elders and leader of Highway of Holiness Church.",
+        },
+        {
+            title: "OUTREACH",
+            description: "Checkout our outreach programmes."
+        },
+        {
+            title: "KIDS MINISTRY",
+            description: "Find out more about Highway of Holiness church kids ministry."
+        }
+    ],
+    pastorName: "Pastor Dorcas Gyasi",
+    pastorTitle: "Associate Pastor",
+    pastorBio: "My wife and I started our ministry 33 years ago when we said “ YES!” to God’ s call. Since then have not looked back. We have embarked on many projects, ranging from providing supplementary education for children in deprived areas to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site. We have witnessed first-hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.",
+
+}
