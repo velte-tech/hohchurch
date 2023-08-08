@@ -5,7 +5,7 @@ import { PiCrossBold } from "react-icons/pi"
 import { MdOutlineChildCare } from "react-icons/md"
 import { IoManOutline } from "react-icons/io5"
 import { BsCalendarDay } from "react-icons/bs"
-import { MdGroup } from "react-icons/md"
+import { MdGroup, MdOutlineHomeRepairService } from "react-icons/md"
 
 export const deskStructure = (S) =>
     S.list()
@@ -92,6 +92,15 @@ export const deskStructure = (S) =>
                         .documentId('groupsPage')
                 ),
 
+            S.listItem()
+                .title('Ministries Page')
+                .icon(MdOutlineHomeRepairService)
+                .child(
+                    S.editor()
+                        .schemaType('ministries')
+                        .documentId('ministries')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -99,7 +108,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries"
                     ].includes(listItem.getId())
             ),
         ]);

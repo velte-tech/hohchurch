@@ -21,6 +21,7 @@ import weeklyProgrammes from './events/weekly'
 import weeklyCard from './events/weeklyCard'
 import groups from './getInvolved/groups'
 import group from './getInvolved/group'
+import ministries from './getInvolved/ministries'
 
 export const schemaTypes = [
     home,
@@ -42,5 +43,6 @@ export const schemaTypes = [
     weeklyCard,
     groups,
     group,
+    ministries,
     blockContent
 ]

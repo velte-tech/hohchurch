@@ -267,3 +267,18 @@ export const groupContent = {
         }
     ]
 }
+
+export const ministriesContent = {
+    title: "MINISTRIES",
+    ministryList: [
+        {
+            name: "KIDS MINISTRY",
+        },
+        {
+            name: "YOUNG ADULTS",
+        },
+        {
+            name: "PRAYER",
+        }
+    ]
+}
