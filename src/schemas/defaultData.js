@@ -191,3 +191,35 @@ export const adultContent = {
     pastorBio: "My wife and I started our ministry 33 years ago when we said “ YES!” to God’ s call. Since then have not looked back. We have embarked on many projects, ranging from providing supplementary education for children in deprived areas to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site. We have witnessed first-hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.",
 
 }
+
+export const weeklyContent = {
+    title: "WEEKLY PROGRAMME",
+    weeklyCaptionTitle: "SERVE WITH US",
+    weeklyCaptionText: "Eye-opening and insightful weekly programmes at Highway of Holiness Church starts from 11:30 AM to 13:30 PM.",
+    weeklyTitle: "WEEKLY PROGRAMMES",
+    weeklyText: `Our weekly Sunday celebration service takes place every Sunday on our church premises from 11:30 AM to 13:30 PM.
+
+    This is a time of joyous praise and worship, a word of teaching and encouragement is shared and we also dedicate time to prayer and communion.
+    
+    We also meet every Monday, Tuesday and Thursday on our telephone prayer line from 7:00 PM to 8:00 PM.
+    
+    We meet on Wednesdays from 12:00 PM to 1:00 PM, 3:00 PM to 4:00 PM on our telephone prayer line and at 7:30 PM on our church premises.
+    
+    We meet on facebook live every Friday at 7:30 PM for our Bible Academy.`,
+    pastorName: "Pastor Alex Gyasi MBE",
+    pastorBio: "My wife and I started our ministry 33 years ago when we said “ YES!” to God’ s call. Since then have not looked back. We have embarked on many projects, ranging from providing supplementary education for children in deprived areas to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site. We have witnessed first-hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.",
+    weeklyCards: [
+        {
+            title: "MEDIA",
+            description: "Be part of God's work by joining the media team @ Highway of Holiness Church.",
+        },
+        {
+            title: "WELFARE",
+            description: "Be part of God's work by joining the welfare team @ Highway of Holiness Church."
+        },
+        {
+            title: "USHERING",
+            description: "Be part of God's work by joining the welfare team @ Highway of Holiness Church."
+        }
+    ]
+}

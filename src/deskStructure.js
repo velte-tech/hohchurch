@@ -4,6 +4,7 @@ import { FcManager } from "react-icons/fc"
 import { PiCrossBold } from "react-icons/pi"
 import { MdOutlineChildCare } from "react-icons/md"
 import { IoManOutline } from "react-icons/io5"
+import { BsCalendarDay } from "react-icons/bs"
 
 export const deskStructure = (S) =>
     S.list()
@@ -72,6 +73,15 @@ export const deskStructure = (S) =>
                         .documentId('adultRetreat')
                 ),
 
+            S.listItem()
+                .title('Weekly Programmes Page')
+                .icon(BsCalendarDay)
+                .child(
+                    S.editor()
+                        .schemaType('weeklyProgrammes')
+                        .documentId('weeklyProgrammes')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -79,7 +89,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes"
                     ].includes(listItem.getId())
             ),
         ]);

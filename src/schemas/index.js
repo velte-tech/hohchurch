@@ -17,6 +17,8 @@ import youth_retreat from './events/youth_retreat'
 import youthCard from './events/youthCard'
 import adult_retreat from './events/adult_retreat'
 import adultCard from './events/adultCard'
+import weeklyProgrammes from './events/weekly'
+import weeklyCard from './events/weeklyCard'
 
 export const schemaTypes = [
     home,
@@ -34,5 +36,7 @@ export const schemaTypes = [
     youthCard,
     adult_retreat,
     adultCard,
+    weeklyProgrammes,
+    weeklyCard,
     blockContent
 ]
