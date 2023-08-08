@@ -191,3 +191,98 @@ export const adultContent = {
     pastorBio: "My wife and I started our ministry 33 years ago when we said “ YES!” to God’ s call. Since then have not looked back. We have embarked on many projects, ranging from providing supplementary education for children in deprived areas to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site. We have witnessed first-hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.",
 
 }
+
+export const weeklyContent = {
+    title: "WEEKLY PROGRAMME",
+    weeklyCaptionTitle: "SERVE WITH US",
+    weeklyCaptionText: "Eye-opening and insightful weekly programmes at Highway of Holiness Church starts from 11:30 AM to 13:30 PM.",
+    weeklyTitle: "WEEKLY PROGRAMMES",
+    weeklyText: `Our weekly Sunday celebration service takes place every Sunday on our church premises from 11:30 AM to 13:30 PM.
+
+    This is a time of joyous praise and worship, a word of teaching and encouragement is shared and we also dedicate time to prayer and communion.
+    
+    We also meet every Monday, Tuesday and Thursday on our telephone prayer line from 7:00 PM to 8:00 PM.
+    
+    We meet on Wednesdays from 12:00 PM to 1:00 PM, 3:00 PM to 4:00 PM on our telephone prayer line and at 7:30 PM on our church premises.
+    
+    We meet on facebook live every Friday at 7:30 PM for our Bible Academy.`,
+    pastorName: "Pastor Alex Gyasi MBE",
+    pastorBio: "My wife and I started our ministry 33 years ago when we said “ YES!” to God’ s call. Since then have not looked back. We have embarked on many projects, ranging from providing supplementary education for children in deprived areas to running a homeless shelter since 2009 till present day and many more ministries that you will come across as you browse this site. We have witnessed first-hand, how living a life fully surrendered to Christ can positively impact you, your family, friends and society as a whole.",
+    weeklyCards: [
+        {
+            title: "MEDIA",
+            description: "Be part of God's work by joining the media team @ Highway of Holiness Church.",
+        },
+        {
+            title: "WELFARE",
+            description: "Be part of God's work by joining the welfare team @ Highway of Holiness Church."
+        },
+        {
+            title: "USHERING",
+            description: "Be part of God's work by joining the welfare team @ Highway of Holiness Church."
+        }
+    ]
+}
+
+export const groupContent = {
+    title: "FELLOWSHIP GROUPS",
+    fellowshipTitle: "Fellowship Groups",
+    fellowshipText: "The church congregation is sectioned into the following fellowship groups that our lead by their respective leaders.",
+    groups: [
+        {
+            name: "PEACE GROUP",
+            leader: "SISTER HANNAH",
+            bibleVerse: "Philippians 4: 7",
+            bibleVerseQuote: "And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus."
+        },
+        {
+            name: "POWER GROUP",
+            leader: "SISTER DORCAS",
+            bibleVerse: "Luke 24 : 49",
+            bibleVerseQuote: "I am going to send you what my Father has promised; but stay in the city until you have been clothed with power from on high."
+        },
+        {
+            name: "FAITH GROUP",
+            leader: "SISTER JODIE",
+            bibleVerse: "Hebrews 11 : 1",
+            bibleVerseQuote: "Now faith is confidence in what we hope for and assurance about what we do not see."
+        },
+        {
+            name: "JOY GROUP",
+            leader: "SISTER JULIE",
+            bibleVerse: "Psalm 32:11",
+            bibleVerseQuote: "Be glad in the Lord, and rejoice, O righteous, and shout for joy, all you upright in heart!"
+        },
+        {
+            name: "HOPE GROUP",
+            leader: "SISTER MARCIA",
+            bibleVerse: "Romans 15:13",
+            bibleVerseQuote: "May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope."
+        },
+        {
+            name: "LOVE GROUP",
+            leader: "SISTER MABEL",
+            bibleVerse: "1 Corinthians 13 : 4 - 7",
+            bibleVerseQuote: "Love is patient and kind; love does not envy or boast; it is not arrogant or rude. It does not insist on its own way; it is not irritable or resentful; it does not rejoice at wrongdoing, but rejoices with the truth. Love bears all things, believes all things, hopes all things, and endures all things."
+        }
+    ]
+}
+
+export const ministriesContent = {
+    title: "MINISTRIES",
+    ministryList: [
+        {
+            name: "KIDS MINISTRY",
+        },
+        {
+            name: "YOUNG ADULTS",
+        },
+        {
+            name: "PRAYER",
+        }
+    ]
+}
+
+export const outreachContent = {
+    title: "OUTREACH",
+}

@@ -4,6 +4,9 @@ import { FcManager } from "react-icons/fc"
 import { PiCrossBold } from "react-icons/pi"
 import { MdOutlineChildCare } from "react-icons/md"
 import { IoManOutline } from "react-icons/io5"
+import { BsCalendarDay } from "react-icons/bs"
+import { MdGroup, MdOutlineHomeRepairService } from "react-icons/md"
+import { IoIosHelpBuoy } from "react-icons/io"
 
 export const deskStructure = (S) =>
     S.list()
@@ -72,6 +75,42 @@ export const deskStructure = (S) =>
                         .documentId('adultRetreat')
                 ),
 
+            S.listItem()
+                .title('Weekly Programmes Page')
+                .icon(BsCalendarDay)
+                .child(
+                    S.editor()
+                        .schemaType('weeklyProgrammes')
+                        .documentId('weeklyProgrammes')
+                ),
+
+            S.listItem()
+                .title('Groups Page')
+                .icon(MdGroup)
+                .child(
+                    S.editor()
+                        .schemaType('groupsPage')
+                        .documentId('groupsPage')
+                ),
+
+            S.listItem()
+                .title('Ministries Page')
+                .icon(MdOutlineHomeRepairService)
+                .child(
+                    S.editor()
+                        .schemaType('ministries')
+                        .documentId('ministries')
+                ),
+
+            S.listItem()
+                .title('Outreach Page')
+                .icon(IoIosHelpBuoy)
+                .child(
+                    S.editor()
+                        .schemaType('outreach')
+                        .documentId('outreach')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -79,7 +118,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach"
                     ].includes(listItem.getId())
             ),
         ]);

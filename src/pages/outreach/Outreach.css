@@ -1,5 +1,5 @@
 .out-showcase {
-    background: url('../../assets/images/gpo3.jpeg') no-repeat center center/cover;
+    background: no-repeat center center/cover;
     height: 100vh;
 }
 
@@ -97,26 +97,26 @@
 
 
 @media screen and (max-width: 600px) {
-    
-.local-2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary_color);
-    margin: 2rem 0;
-    text-align: center;
-}
 
-.local-3 {
-    font-size: 16px;
-}
+    .local-2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--primary_color);
+        margin: 2rem 0;
+        text-align: center;
+    }
 
-.local-4 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #000;
-    text-align: center;
-    margin-bottom: 3.5rem;
-}
+    .local-3 {
+        font-size: 16px;
+    }
+
+    .local-4 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
 }
 
 /* local outreach end */
@@ -172,6 +172,7 @@
     cursor: pointer;
     margin: 1rem 0;
 }
+
 .sop-2:hover {
     color: #000;
 }
@@ -196,6 +197,7 @@
     padding: 0;
     color: #000;
 }
+
 .out-sop .linkAnima:hover {
     color: var(--primary_color);
 }
@@ -209,25 +211,26 @@
 
 @media screen and (max-width: 950px) {
     .out-sop-show {
-    flex-direction: column;
-    margin-bottom: 3rem;
-    justify-content: center;
-    align-items: center;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .out-sop {
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 4rem;
-    height: fit-content;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+        height: fit-content;
     }
 
     .out-spo-case {
-    max-width: 90%;
-    margin: auto;
-}
-/* .sop-1  {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    /* .sop-1  {
     width: 80%;
     height: 100px;
     margin-bottom: 12rem;
@@ -236,8 +239,8 @@
 
 @media screen and (max-width: 600px) {
     .sop-4 {
-    font-size: 1.3rem;
-}
+        font-size: 1.3rem;
+    }
 }
 
 /* outreach groups sponsors end */
@@ -254,9 +257,10 @@
 
 @media screen and (max-width: 600px) {
     .to-get {
-    font-size: 1.6rem;
+        font-size: 1.6rem;
+    }
 }
-}
+
 /* wan to get connected end */
 
 
@@ -358,6 +362,7 @@
     margin-right: 3rem;
     height: 36px;
 }
+
 .ooo-2 {
     border-radius: 0 5px 5px 0;
     width: 100%;
@@ -391,38 +396,38 @@
 /* btn */
 .btn,
 .btn {
-  position: relative;
-  color: #000;
-  font-weight: 500;
-  padding: 0.75rem 2.3rem;
-  margin: 0.75rem;
-  border: 1px solid var(--primary_color);
-  transition: transform var(--transition);
-  transition: all .3s ease-in;
+    position: relative;
+    color: #000;
+    font-weight: 500;
+    padding: 0.75rem 2.3rem;
+    margin: 0.75rem;
+    border: 1px solid var(--primary_color);
+    transition: transform var(--transition);
+    transition: all .3s ease-in;
 }
 
 .btn:hover,
-.btn:hover{
-  color: #fff;
-  background-color: var(--primary_color);
+.btn:hover {
+    color: #fff;
+    background-color: var(--primary_color);
 }
 
 .btn::before,
- .btn::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  padding: 0.75rem 2.3rem;
-  background-color: var(--primary_color);
-  transform-origin: top;
-  transition: transform var(--transition);
-  transform: scaleX(0);
+.btn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    padding: 0.75rem 2.3rem;
+    background-color: var(--primary_color);
+    transform-origin: top;
+    transition: transform var(--transition);
+    transform: scaleX(0);
 }
 
- .btn:hover::before,
- .btn:focus::before {
-  transform: scaleX(1);
+.btn:hover::before,
+.btn:focus::before {
+    transform: scaleX(1);
 }
 
 .em-4 .btn {
@@ -449,23 +454,25 @@
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        justify-content: center ;
+        justify-content: center;
     }
 
-    .em-1, .em-2 {
+    .em-1,
+    .em-2 {
         width: 85%;
         margin-right: 0;
         margin: auto;
         margin-bottom: 2rem;
     }
 
-    .em-3, .em-4 {
+    .em-3,
+    .em-4 {
         margin-left: 10%;
     }
 
     .em-4 {
-    width: 80%;
-}
+        width: 80%;
+    }
 }
 
 /* connect forms end */

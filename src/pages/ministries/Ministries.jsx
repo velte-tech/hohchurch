@@ -13,6 +13,8 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 import "../../styles.css";
 import { PopupModal } from "@dannybee/popup-modal";
 import { useEmail } from "../../contexts/EmailContext";
+import sanityClient from "../../client.js";
+import { urlFor } from "../../utils/urlFor";
 
 const Ministries = () => {
   const initialState = {
@@ -27,6 +29,8 @@ const Ministries = () => {
     useState(initialState);
   const [error, setError] = useState(false);
   const [registered, setRegistered] = useState(false);
+
+  const [ministryData, setMinistryData] = useState();
 
   const {
     serveSubmitEmail,
@@ -48,6 +52,16 @@ const Ministries = () => {
   useEffect(() => {
     setFormFields({ name, email, phone, department, subject });
     setInitialState(initialState);
+
+    sanityClient
+      .fetch(
+        `*[_type == "ministries"]{..., headerImage->, ministryList[] {..., image->}}`
+      )
+      .then((data) => {
+        console.log("ministry: ", data[0]);
+        setMinistryData(data[0]);
+      })
+      .catch(console.error);
   }, []);
 
   useEffect(() => {
@@ -79,11 +93,16 @@ const Ministries = () => {
   return (
     <div id="super">
       <div id="ministry-page">
-        <div className="ministry-wrapper">
+        <div
+          className="ministry-wrapper"
+          style={{
+            backgroundImage: `url(${urlFor(ministryData?.headerImage?.image)})`,
+          }}
+        >
           {/* showcase */}
           <div className="ministry-case">
             <div className="ministry-text">
-              <h1 className="focus-in-contract-bck">MINISTRIES</h1>
+              <h1 className="focus-in-contract-bck">{ministryData?.title}</h1>
             </div>
           </div>
           {/* showcase end */}
@@ -137,32 +156,23 @@ const Ministries = () => {
             {/* flrxxxxxxxx */}
 
             <div className="min-sec">
-              <div className="minsec">
-                <div className="min-1">
-                  <img src={bapp4} alt="" />
+              {ministryData?.ministryList?.slice(0, 2).map((ministry) => (
+                <div key={ministry._key} className="minsec">
+                  <div className="min-1">
+                    <img
+                      src={urlFor(ministry?.image?.image)}
+                      alt={ministry?.image?.image?.alt}
+                    />
+                  </div>
+                  <div className="min-2">{ministry?.name}</div>
+                  <div className="min-3">
+                    <Link to={ministry.link} className="linkAnima">
+                      MORE INFO<span className="arrow"></span>
+                    </Link>
+                  </div>
+                  <div className="min-4"></div>
                 </div>
-                <div className="min-2">KIDS MINISTRY</div>
-                <div className="min-3">
-                  <Link to="/Kids" className="linkAnima">
-                    MORE INFO<span className="arrow"></span>
-                  </Link>
-                </div>
-                <div className="min-4"></div>
-              </div>
-
-              <div className="minsec">
-                <div className="min-1">
-                  <img src={bapp3} alt="" />
-                </div>
-                <div className="min-2">YOUNG ADULTS</div>
-                <div className="min-3">
-                  {/* <Link className='linkAnima'>SIGN UP<span className="arrow"></span> </Link> */}
-                  <Link to="/Young_adults" className="linkAnima">
-                    MORE INFO<span className="arrow"></span>{" "}
-                  </Link>
-                </div>
-                <div className="min-4"></div>
-              </div>
+              ))}
             </div>
 
             {/* flexxxxxxxxxxxx */}
@@ -170,18 +180,23 @@ const Ministries = () => {
             {/* flrxxxxxxxx */}
 
             <div className="min-sec">
-              <div className="minsec">
-                <div className="min-1">
-                  <img src={bapp2} alt="" />
+              {ministryData?.ministryList?.slice(2).map((ministry) => (
+                <div key={ministry._key} className="minsec">
+                  <div className="min-1">
+                    <img
+                      src={urlFor(ministry?.image?.image)}
+                      alt={ministry?.image?.image?.alt}
+                    />
+                  </div>
+                  <div className="min-2">{ministry?.name}</div>
+                  <div className="min-3">
+                    <Link to={ministry.link} className="linkAnima">
+                      MORE INFO<span className="arrow"></span>
+                    </Link>
+                  </div>
+                  <div className="min-4"></div>
                 </div>
-                <div className="min-2">PRAYER</div>
-                <div className="min-3">
-                  <Link to="/Prayer" className="linkAnima">
-                    MORE INFO<span className="arrow"></span>
-                  </Link>
-                </div>
-                <div className="min-4"></div>
-              </div>
+              ))}
 
               {/* <div className="minsec">
               <div className="min-1">

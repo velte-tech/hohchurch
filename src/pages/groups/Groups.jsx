@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Groups.css";
 import { Link } from "react-router-dom";
 // import AOS from "aos";
 // import { ImSearch } from 'react-icons/im';
 import GoogleMap from "../../components/GoogleMap/GoogleMap";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import { urlFor } from "../../utils/urlFor";
+import sanityClient from "../../client.js";
 
 const Groups = () => {
   // const [selects, setSelects] = useState();
@@ -12,16 +14,32 @@ const Groups = () => {
   // const [isActive, setIsActive] = useState(false)
 
   // const [selected, setSelected] = useState('');
+  const [groupsData, setGroupsData] = useState();
+
+  useEffect(() => {
+    sanityClient
+      .fetch(`*[_type == "groupsPage"]{..., headerImage->}`)
+      .then((data) => {
+        console.log("groups: ", data[0]);
+        setGroupsData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
 
   return (
     <div id="super">
       <div className="group-page">
         <div className="gropup-wrapper">
-          <div className="group-showcase">
+          <div
+            className="group-showcase"
+            style={{
+              backgroundImage: `url(${urlFor(groupsData?.headerImage?.image)})`,
+            }}
+          >
             <div className="group-case">
               {/* showcase text */}
               <div className="group-text">
-                <h1 className="focus-in-contract-bck">FELLOWSHIP GROUPS</h1>
+                <h1 className="focus-in-contract-bck">{groupsData?.title}</h1>
 
                 {/* <h2 className="focus-in-contract-bck">
                 TIMES ARE IN MOUNTAIN TIMEZONE
@@ -84,224 +102,50 @@ const Groups = () => {
               {/* groups txt  */}
 
               <div className="fel-grp">
-                <div className="tt-3">Fellowship Groups</div>
+                <div className="tt-3">{groupsData?.fellowshipTitle}</div>
 
-                <div className="tt-2">
-                  The church congregation is sectioned into the following
-                  fellowship groups that our lead by their respective leaders.
-                </div>
+                <div className="tt-2">{groupsData?.fellowshipText}</div>
               </div>
 
               {/* groups txt end */}
 
               {/* group flex */}
               <div className="church-group">
-                <div className="ch-gr">
-                  <div className="ch-gr-1">PEACE GROUP</div>
-                  <div className="ch-gr-1">LEADER - SISTER HANNAH</div>
-                  {/* <div className="ch-gr-2">
-                  Wednesday: 7.30 pm - 8.30 pm
-                  <br></br>
-                  WORSHIP SERVICE
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div> */}
-                  <div className="ch-gr-4">
-                    <div className="bib">
-                      <div className="bib-1">
-                        {/* 3. PEACE GROUP <br></br> */}
-                        <span className="hoo">(Philippians 4: 7)</span>
-                      </div>
-                      <div className="bib-2">
-                        And the peace of God, which transcends all
-                        understanding, will guard your hearts and your minds in
-                        Christ Jesus.
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
+                {groupsData?.fellowshipGroups?.slice(0, 3).map((group) => (
+                  <div key={group._key} className="ch-gr">
+                    <div className="ch-gr-1">{group.name}</div>
+                    <div className="ch-gr-1">LEADER - {group.leader}</div>
+                    <div className="ch-gr-4">
+                      <div className="bib">
+                        <div className="bib-1">
+                          <span className="hoo">({group.bibleVerse})</span>
+                        </div>
+                        <div className="bib-2">{group.bibleVerseQuote}</div>
                       </div>
                     </div>
-                    {/* <Link className="linkAnima">
-                    MORE INFO <span className="arrow"></span>{" "}
-                  </Link> */}
+                    <div className="ch-gr-5"></div>
                   </div>
-                  <div className="ch-gr-5"></div>
-                </div>
-
-                <div className="ch-gr">
-                  <div className="ch-gr-1">POWER GROUP</div>
-                  <div className="ch-gr-1">LEADER - SISTER DORCAS</div>
-                  {/* <div className="ch-gr-2">
-                  Wednesday at 6: 30 PM <br></br>
-                  Content: WeekendMessage
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div> */}
-                  <div className="ch-gr-4">
-                    {/* <Link className="linkAnima">
-                      MORE INFO <span className="arrow"></span>{" "}
-                    </Link> */}
-                    <div className="bib">
-                      <div className="bib-1">
-                        {/* 5. POWER GROUP <br></br> */}
-                        <span className="hoo">(Luke 24 : 49)</span>
-                      </div>
-                      <div className="bib-2">
-                        I am going to send you what my Father has promised; but
-                        stay in the city until you have been clothed with power
-                        from on high. <br></br>
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="ch-gr-5"></div>
-                </div>
-
-                <div className="ch-gr">
-                  <div className="ch-gr-1">FAITH GROUP</div>
-                  <div className="ch-gr-1">LEADER - SISTER JODIE</div>
-                  {/* <div className="ch-gr-2">
-                  Wednesday at 6: 30 PM <br></br>
-                  Content: WeekendMessage
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div> */}
-                  <div className="ch-gr-4">
-                    <div className="bib">
-                      <div className="bib-1">
-                        {/* 2. FAITH GROUP <br></br> */}
-                        <span className="hoo">(Hebrews 11 : 1)</span>
-                      </div>
-                      <div className="bib-2">
-                        Now faith is the assurance of things hoped for, the
-                        conviction of things not seen. <br></br>
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
-                      </div>
-                    </div>
-                    {/* <Link className="linkAnima">
-                      MORE INFO <span className="arrow"></span>{" "}
-                    </Link> */}
-                  </div>
-                  <div className="ch-gr-5"></div>
-                </div>
+                ))}
               </div>
               {/* group flex end */}
 
               {/* group flex */}
               <div className="church-group">
-                <div className="ch-gr">
-                  <div className="ch-gr-1">JOY GROUP</div>
-                  <div className="ch-gr-1">LEADER - SISTER JULIE</div>
-                  {/* <div className="ch-gr-2">
-                  Wednesday at 6: 30 PM <br></br>
-                  Content: WeekendMessage
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div> */}
-                  <div className="ch-gr-4">
-                    <div className="bib">
-                      <div className="bib-1">
-                        {/* 3. PEACE GROUP <br></br> */}
-                        <span className="hoo">(Psalm 32:11)</span>
-                      </div>
-                      <div className="bib-2">
-                        Be glad in the Lord, and rejoice, O righteous, and shout
-                        for joy, all you upright in heart!
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
+                {groupsData?.fellowshipGroups?.slice(3, 6).map((group) => (
+                  <div key={group._key} className="ch-gr">
+                    <div className="ch-gr-1">{group.name}</div>
+                    <div className="ch-gr-1">LEADER - {group.leader}</div>
+                    <div className="ch-gr-4">
+                      <div className="bib">
+                        <div className="bib-1">
+                          <span className="hoo">({group.bibleVerse})</span>
+                        </div>
+                        <div className="bib-2">{group.bibleVerseQuote}</div>
                       </div>
                     </div>
-                    {/* <Link className="linkAnima">
-                      MORE INFO <span className="arrow"></span>{" "}
-                    </Link> */}
+                    <div className="ch-gr-5"></div>
                   </div>
-                  <div className="ch-gr-5"></div>
-                </div>
-
-                <div className="ch-gr">
-                  <div className="ch-gr-1">HOPE GROUP</div>
-                  <div className="ch-gr-1">LEADER - SISTER MARCIA</div>
-                  {/* <div className="ch-gr-2">
-                  Wednesday at 6: 30 PM <br></br>
-                  Content: WeekendMessage
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div> */}
-                  <div className="ch-gr-4">
-                    {/* <Link className="linkAnima">
-                      MORE INFO <span className="arrow"></span>{" "}
-                    </Link> */}
-                    <div className="bib">
-                      <div className="bib-1">
-                        {/* 4. HOPE GROUP <br></br> */}
-                        <span className="hoo">(Romans 15 : 13)</span>
-                      </div>
-                      <div className="bib-2">
-                        May the God of hope fill you with all joy and peace in
-                        believing, so that by the power of the Holy Spirit you
-                        may abound in hope. <br></br>
-                        {/* <span className='hoo'>
-                    (1 Corinthians 13: 4 - 7)
-                  </span> */}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="ch-gr-5"></div>
-                </div>
-
-                <div className="ch-gr">
-                  <div className="ch-gr-1">LOVE GROUP</div>
-                  <div className="ch-gr-1">LEADER - SISTER MABEL</div>
-                  {/* <div className="ch-gr-2">
-                  Wednesday at 6: 30 PM <br></br>
-                  Content: WeekendMessage
-                </div>
-                <div className="ch-gr-3 hover_overlay">
-                  Unit 8 Fountayne House <br></br>
-                  2-8 Fountayne Road <br></br>
-                  London 4QL
-                </div> */}
-                  <div className="ch-gr-4">
-                    {/* <Link className="linkAnima">
-                      MORE INFO <span className="arrow"></span>{" "}
-                    </Link> */}
-                    <div className="bib">
-                      <div className="bib-1">
-                        {/* 1. LOVE GROUP <br></br> */}
-                        <span className="hoo">(1 Corinthians 13 : 4 - 7)</span>
-                      </div>
-                      <div className="bib-2">
-                        Love is patient and kind; love does not envy or boast;
-                        it is not arrogant or rude. It does not insist on its
-                        own way; it is not irritable or resentful; it does not
-                        rejoice at wrongdoing, but rejoices with the truth. Love
-                        bears all things, believes all things, hopes all things,
-                        and endures all things. <br></br>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="ch-gr-5"></div>
-                </div>
+                ))}
               </div>
               {/* group flex end */}
 

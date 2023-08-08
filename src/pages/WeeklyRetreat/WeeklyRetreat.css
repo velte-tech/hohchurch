@@ -1,7 +1,6 @@
 #weekly_programme_showcase {
   position: relative;
-  background: url("../../assets/images/church_auditorium.jpg") no-repeat center
-    center/cover;
+  background: no-repeat center center/cover;
   min-height: 40rem;
   display: flex;
   flex-direction: column;
@@ -212,6 +211,7 @@
 }
 
 @media screen and (max-width: 1000px) {
+
   /* ======= LAFAYETTE_REACH SECTION ======= */
   #longmont_reach {
     margin-top: 3rem;

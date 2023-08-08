@@ -4,7 +4,7 @@
 
 /* showcase */
 .group-showcase {
-    background: url('../../assets/images/ll1.jpeg') no-repeat center center/cover;
+    background: no-repeat center center/cover;
     height: 100vh;
 }
 
@@ -78,7 +78,7 @@
 
 
 @media screen and (max-width: 951px) {
-        .map-shape-wrapper {
+    .map-shape-wrapper {
         display: none;
     }
 }
@@ -174,6 +174,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
 .g-head {
     display: flex;
     justify-content: space-between;
@@ -231,7 +232,7 @@
     /* height: 350px; */
 }
 
-.ch-gr-1  {
+.ch-gr-1 {
     font-size: 18px;
     font-weight: 700;
     color: var(--primary_color);
@@ -241,35 +242,36 @@
     color: #000;
 }
 
-.ch-gr-2  {
+.ch-gr-2 {
     font-size: 16px;
     font-weight: 500;
     /* margin: .7rem 0; */
 }
 
-.ch-gr-3  {
+.ch-gr-3 {
     font-size: 16px;
     font-weight: 500;
     color: var(--primary_color);
 }
 
-.ch-gr-3:hover  {
+.ch-gr-3:hover {
     color: #000;
     cursor: pointer;
 }
 
-.ch-gr-4 .linkAnima  {
+.ch-gr-4 .linkAnima {
     padding: 0;
     justify-content: flex-start;
     color: #000;
     /* margin-top: .7rem; */
     /* margin-bottom: 2rem; */
 }
-.ch-gr-4 .linkAnima:hover  {
+
+.ch-gr-4 .linkAnima:hover {
     color: var(--primary_color);
 }
 
-.ch-gr-5  {
+.ch-gr-5 {
     background-color: #000;
     height: 2px;
     width: 90%;
@@ -296,10 +298,10 @@
         width: 85%;
     }
 
-    .ch-gr-5  {
-    width: 80%;
-    margin-top: 2rem;
-}
+    .ch-gr-5 {
+        width: 80%;
+        margin-top: 2rem;
+    }
 
 }
 
@@ -322,11 +324,12 @@
 }
 
 .group-dropdown {
-    width: 400px; 
+    width: 400px;
     /* margin: 100px auto; */
     position: relative;
     user-select: none;
 }
+
 .group-dropdown .dropdown-btn {
     padding: 10px;
     background: #fcfcfc;
@@ -340,23 +343,23 @@
 .group-dropdown .dropdown-content {
     position: absolute;
     top: 110%;
-    padding: 10px ;
+    padding: 10px;
     font-weight: 600;
     font-size: 17px;
     background: #fcfcfc;
     border: #000 solid 1px;
-    color: #000; 
-    width: 100%;   
+    color: #000;
+    width: 100%;
 }
 
 .group-dropdown .dropdown-content .dropdown-item {
-    padding: 10px; 
+    padding: 10px;
     cursor: pointer;
     transition: all .3s ease-in;
 }
 
 .group-dropdown .dropdown-content .dropdown-item:hover {
-    background: var(--primary_color); 
+    background: var(--primary_color);
     color: #fff;
 }
 
@@ -376,6 +379,7 @@
     font-size: 2rem;
     font-weight: 700;
 }
+
 .fel-grp .tt-2 {
     font-size: 1.2rem;
     font-weight: 500;
