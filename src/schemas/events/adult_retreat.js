@@ -61,7 +61,7 @@ export default defineType({
         defineField({
             name: "pastorBio",
             title: "Pastor's Bio",
-            type: "string",
+            type: "text",
             initialValue: adultContent.pastorBio,
         }),
         defineField({

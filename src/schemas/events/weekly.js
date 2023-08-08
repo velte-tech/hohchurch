@@ -55,6 +55,31 @@ export default defineType({
             initialValue: weeklyContent.weeklyCaptionText,
         }),
         defineField({
+            name: "pastorName",
+            title: "Pastor's Name",
+            type: "string",
+            initialValue: weeklyContent.pastorName,
+        }),
+        defineField({
+            name: "pastorBio",
+            title: "Pastor's Bio",
+            type: "text",
+            initialValue: weeklyContent.pastorBio,
+        }),
+        // defineField({
+        //     name: "pastorTitle",
+        //     title: "Pastor's Title",
+        //     type: "text",
+        //     initialValue: weeklyContent.pastorTitle,
+        // }),
+        defineField({
+            name: "pastorImage",
+            title: "Pastor's Image",
+            type: "reference",
+            to: [{ type: "gallery" }],
+            description: "The image to be displayed at the left side of the pastor's bio",
+        }),
+        defineField({
             name: "weeklyCards",
             title: "Weekly Cards",
             type: "array",
