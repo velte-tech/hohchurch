@@ -37,8 +37,7 @@ export default defineType({
         defineField({
             name: "weeklyText",
             title: "Weekly Programmes Text",
-            type: "text",
-            initialValue: weeklyContent.weeklyText,
+            type: "blockContent",
         }),
         defineField({
             name: "weeklyCaptionTitle",
