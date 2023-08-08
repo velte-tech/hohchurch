@@ -250,7 +250,7 @@ export const groupContent = {
         {
             name: "JOY GROUP",
             leader: "SISTER JULIE",
-            biblelVerse: "Psalm 32:11",
+            bibleVerse: "Psalm 32:11",
             bibleVerseQuote: "Be glad in the Lord, and rejoice, O righteous, and shout for joy, all you upright in heart!"
         },
         {

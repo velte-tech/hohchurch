@@ -32,10 +32,9 @@ export default defineType({
             subtitle: "leader",
         },
         prepare({ title, subtitle }) {
-            let subtitleText = subtitle ? `Leader - ${subtitle}` : "";
             return {
                 title,
-                subtitleText,
+                subtitle: `Leader - ${subtitle}`,
             };
         }
     },
