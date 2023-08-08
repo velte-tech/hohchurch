@@ -282,3 +282,7 @@ export const ministriesContent = {
         }
     ]
 }
+
+export const outreachContent = {
+    title: "OUTREACH",
+}

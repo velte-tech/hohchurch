@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Outreach.css";
 // import { Link } from "react-router-dom";
 import { GrMail } from "react-icons/gr";
@@ -7,8 +7,12 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 import CheckboxList from "../../components/checkbox/Box_check";
 import logo from "../../assets/brand/hohlogo.png";
 import { HashLink as Link } from "react-router-hash-link";
+import { urlFor } from "../../utils/urlFor";
+import sanityClient from "../../client.js";
 
 const Outreach = () => {
+  useEffect(() => {}, []);
+
   return (
     <div id="super">
       <div className="out-page">
