@@ -6,6 +6,7 @@ import { MdOutlineChildCare } from "react-icons/md"
 import { IoManOutline } from "react-icons/io5"
 import { BsCalendarDay } from "react-icons/bs"
 import { MdGroup, MdOutlineHomeRepairService } from "react-icons/md"
+import { IoIosHelpBuoy } from "react-icons/io"
 
 export const deskStructure = (S) =>
     S.list()
@@ -101,6 +102,15 @@ export const deskStructure = (S) =>
                         .documentId('ministries')
                 ),
 
+            S.listItem()
+                .title('Outreach Page')
+                .icon(IoIosHelpBuoy)
+                .child(
+                    S.editor()
+                        .schemaType('outreach')
+                        .documentId('outreach')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -108,7 +118,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach"
                     ].includes(listItem.getId())
             ),
         ]);

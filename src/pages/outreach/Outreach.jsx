@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Outreach.css";
 // import { Link } from "react-router-dom";
 import { GrMail } from "react-icons/gr";
@@ -11,17 +11,34 @@ import { urlFor } from "../../utils/urlFor";
 import sanityClient from "../../client.js";
 
 const Outreach = () => {
-  useEffect(() => {}, []);
+  const [outreachData, setOutreachData] = useState();
+
+  useEffect(() => {
+    sanityClient
+      .fetch(`*[_type == "outreach"]{..., headerImage->}`)
+      .then((data) => {
+        setOutreachData(data[0]);
+        console.log(data[0]);
+      })
+      .catch(console.error);
+  }, []);
 
   return (
     <div id="super">
       <div className="out-page">
         <div className="out-wrapper">
           {/* showcase */}
-          <div className="out-showcase">
+          <div
+            className="out-showcase"
+            style={{
+              backgroundImage: `url(${urlFor(
+                outreachData?.headerImage?.image
+              )})`,
+            }}
+          >
             <div className="out-case">
               <div className="out-text">
-                <h1 className="focus-in-contract-bck">OUTREACH</h1>
+                <h1 className="focus-in-contract-bck">{outreachData?.title}</h1>
               </div>
             </div>
           </div>
