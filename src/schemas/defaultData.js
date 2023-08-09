@@ -286,3 +286,10 @@ export const ministriesContent = {
 export const outreachContent = {
     title: "OUTREACH",
 }
+
+export const kidsMinistryContent = {
+    title: "KIDS MINISTRY",
+    kidsShowCase1Title: "KIDS MINISTRY",
+    kidsShowCase1Text: "We want to care for and lead children through a variety of means, from diapers to discipleship. We are shaping the future generation of leaders, and we do not take this responsibility lightly. We take great pleasure in giving our kids a real encounter with God, which is accomplished via dependable, biblically - based teaching, in a friendly setting, and with a teaching staff that genuinely cares about kids and, quite obviously, the greatest at what they do.",
+    kidsShowCase2Text: "At Highway of Holiness, our Sunday School service is an opportunity for children to know more about God."
+}

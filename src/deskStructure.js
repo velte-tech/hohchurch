@@ -7,6 +7,7 @@ import { IoManOutline } from "react-icons/io5"
 import { BsCalendarDay } from "react-icons/bs"
 import { MdGroup, MdOutlineHomeRepairService } from "react-icons/md"
 import { IoIosHelpBuoy } from "react-icons/io"
+import { TbMoodKid } from "react-icons/tb"
 
 export const deskStructure = (S) =>
     S.list()
@@ -111,6 +112,15 @@ export const deskStructure = (S) =>
                         .documentId('outreach')
                 ),
 
+            S.listItem()
+                .title('Kids Ministry Page')
+                .icon(TbMoodKid)
+                .child(
+                    S.editor()
+                        .schemaType('kidsMinistry')
+                        .documentId('kidsMinistry')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -118,7 +128,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach", "kidsMinistry"
                     ].includes(listItem.getId())
             ),
         ]);

@@ -23,6 +23,7 @@ import groups from './getInvolved/groups'
 import group from './getInvolved/group'
 import ministries from './getInvolved/ministries'
 import outreach from './getInvolved/outreach'
+import kidsMinistry from './ministries/kidsMinistry'
 
 export const schemaTypes = [
     home,
@@ -46,5 +47,6 @@ export const schemaTypes = [
     group,
     ministries,
     outreach,
+    kidsMinistry,
     blockContent
 ]
