@@ -333,3 +333,146 @@ export const youngAdultsContent = {
         }
     ]
 }
+
+export const messagePageContent = {
+    title: "LATEST MESSAGE",
+    subtitle: "THE MOUNTAIN OF EDUCATION",
+    messagePageCards: [
+        {
+            title: "The Mountain of Education ",
+            subtitle: " Rev. Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "BWDPWx6DNqM",
+            },
+        },
+        {
+            title: "What is Sanctification",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "JqvJlt-4gQk",
+            },
+        },
+        {
+            title: "Living By What is Written",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "PYbTDJT49nc",
+            },
+        },
+        {
+            title: "Obligation of A Desciple 1",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "WBLse_DpKVY",
+            },
+        },
+        {
+            title: "Obligation of A Desciple 2",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: { youtubeId: "HeAOov1SU5s" },
+        },
+        {
+            title: " Friendship and Hospitality",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "_Z_blghV9uk",
+            },
+        },
+        {
+            title: "Seeds Sown In The Heart",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "dlVNheswTYI",
+            },
+        },
+        {
+            title: "The Messenger's Attitude",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "zXZylyT1ujU",
+            },
+        },
+        {
+            title: "The Messenger's Message",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: { youtubeId: "zjeQDqbVSD0" },
+        },
+        {
+            title: "The Value Of Winning A soul",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "NAg3fUq66-o",
+            },
+        },
+        {
+            title: "OTobiah In The Temple",
+            subtitle: " Pastor Roland Owusu-Mensah",
+            messageLink: {
+                youtubeId: "u4dUa9NXDjk",
+            },
+        },
+        {
+            title: "The Issue of Self Image",
+            subtitle: " Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "nLOAwtJiLlE",
+            },
+        },
+        {
+            title: "Maintain Your Strength",
+            subtitle: " Pastor Roland-Mensah",
+            messageLink: {
+                youtubeId: "GJQW8DwJ43Y",
+            },
+        },
+        {
+            title: "Step Up",
+            subtitle: " Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "T0pJyQRzU2s",
+            },
+        },
+        {
+            title: "Relationship With God",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "OgfLHU4LWM0",
+            },
+        },
+        {
+            title: "The Resurrected Jesus",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "kqz3rblF4tw",
+            },
+        },
+        {
+            title: "Be Fruitful",
+            subtitle: "Pastor Roland-Mensah",
+            messageLink: {
+                youtubeId: "9nxRS0I0pkI",
+            },
+        },
+        {
+            title: "Unsung Heroes 1",
+            subtitle: "Pastor Dorcas Gyasi",
+            messageLink: {
+                youtubeId: "",
+            },
+        },
+        {
+            title: "Unsung Heroes 2",
+            subtitle: "Pastor Dorcas Gyasi",
+            messageLink: {
+                youtubeId: "C86J9ljfuN8",
+            },
+        },
+        {
+            title: "The Change of the Heart",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "oWBEoBjqdrQ",
+            },
+        },
+    ]
+}

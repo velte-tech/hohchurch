@@ -8,6 +8,7 @@ import { BsCalendarDay } from "react-icons/bs"
 import { MdGroup, MdOutlineHomeRepairService } from "react-icons/md"
 import { IoIosHelpBuoy } from "react-icons/io"
 import { TbMoodKid } from "react-icons/tb"
+import { BiBible } from "react-icons/bi"
 
 export const deskStructure = (S) =>
     S.list()
@@ -137,6 +138,15 @@ export const deskStructure = (S) =>
                     S.editor()
                         .schemaType('youngAdults')
                         .documentId('youngAdults')
+                ),
+
+            S.listItem()
+                .title('Messages Page')
+                .icon(BiBible)
+                .child(
+                    S.editor()
+                        .schemaType('messagePage')
+                        .documentId('messagePage')
                 ),
 
             // Add a visual divider (optional)
