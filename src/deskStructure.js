@@ -1,7 +1,7 @@
 import { AiOutlineHome } from "react-icons/ai";
 import { HiOutlineInformationCircle, HiOutlineUsers, HiOutlineDocumentDuplicate } from "react-icons/hi"
 import { FcManager } from "react-icons/fc"
-import { PiCrossBold } from "react-icons/pi"
+import { PiCrossBold, PiHandsPraying } from "react-icons/pi"
 import { MdOutlineChildCare } from "react-icons/md"
 import { IoManOutline } from "react-icons/io5"
 import { BsCalendarDay } from "react-icons/bs"
@@ -121,6 +121,15 @@ export const deskStructure = (S) =>
                         .documentId('kidsMinistry')
                 ),
 
+            S.listItem()
+                .title('Prayer Page')
+                .icon(PiHandsPraying)
+                .child(
+                    S.editor()
+                        .schemaType('prayerPage')
+                        .documentId('prayerPage')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -128,7 +137,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach", "kidsMinistry"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach", "kidsMinistry", "prayerPage"
                     ].includes(listItem.getId())
             ),
         ]);
