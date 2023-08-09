@@ -298,3 +298,38 @@ export const prayerContent = {
     title: "PRAYER",
     prayerSectionTitle: "WHEN LIFE HURTS, PRAYER HELPS!",
 }
+
+export const youngAdultsContent = {
+    title: "YOUNG ADULTS",
+    aboutSectionTitle: "ABOUT HOH YOUNG ADULTS",
+    aboutSectionText: "We are a community of young adults created by you and for you. Here, we hope you discover how to live your life with meaning, in an authentic community, for the real Jesus.",
+    aboutSectionAccordions: [
+        {
+            title: "Live with meaning.",
+            text: "Influence the world around you. And we're not talking about having thousands of followers on Instagram. Highway of Holiness young adults is a community ready to live with purpose to influence the world around us."
+        },
+        {
+            title: "Live in authentic community.",
+            text: "There are no strangers here. Find real friends and experience a genuine community with people who aren't afraid to move past shallow conversations and grow in our faith together."
+        },
+        {
+            title: "Live for Jesus.",
+            text: "We don't shy away from the hard questions and don't think you should either. Instead, we create space for you to ask life's most meaningful questions and get to know the real Jesus in the process."
+        }
+    ],
+    eventsSectionTitle: "Young Adult Events",
+    eventsCards: [
+        {
+            title: "MONDAY MEETING",
+            text: "Join us this and every Sunday"
+        },
+        {
+            title: "HOH FEBRUARY GATHERING",
+            text: "Join us on the evening of Thursday, February 9th starting at 7:00pm in the evening"
+        },
+        {
+            title: "HOH MARCH GATHERING",
+            text: "Join us on the evening of Thursday, February 9th starting at 7:00 pm on weekends"
+        }
+    ]
+}

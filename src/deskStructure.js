@@ -130,6 +130,15 @@ export const deskStructure = (S) =>
                         .documentId('prayerPage')
                 ),
 
+            S.listItem()
+                .title('Young Adults Page')
+                .icon(() => '👩🏽‍🦱')
+                .child(
+                    S.editor()
+                        .schemaType('youngAdults')
+                        .documentId('youngAdults')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -137,7 +146,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach", "kidsMinistry", "prayerPage"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach", "kidsMinistry", "prayerPage", "youngAdults"
                     ].includes(listItem.getId())
             ),
         ]);

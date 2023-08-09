@@ -25,6 +25,9 @@ import ministries from './getInvolved/ministries'
 import outreach from './getInvolved/outreach'
 import kidsMinistry from './ministries/kidsMinistry'
 import prayerPage from './ministries/prayer'
+import youngAdults from './ministries/youngAdults'
+import youngEventsCard from './ministries/youngEventsCard'
+import youngAboutAccordion from './ministries/youngAboutAccordion'
 
 export const schemaTypes = [
     home,
@@ -50,5 +53,8 @@ export const schemaTypes = [
     outreach,
     kidsMinistry,
     prayerPage,
+    youngAdults,
+    youngEventsCard,
+    youngAboutAccordion,
     blockContent
 ]
