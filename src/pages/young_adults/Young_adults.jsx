@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Young_adults.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
@@ -12,8 +12,26 @@ import pdd from "../../assets/brand/hohlogo.png";
 import { MdAllInbox } from "react-icons/md";
 // import Young_groups from "../../components/young_groups/Young_groups";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import PortableText from "@sanity/block-content-to-react";
+import { urlFor } from "../../utils/urlFor";
+import sanityClient from "../../client.js";
+import { serializers } from "../../utils/contentSerializers";
 
 const Young_adults = () => {
+  const [youngAdultsData, setYoungAdultsData] = useState();
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "youngAdults"]{..., headerImage->, aboutSectionImg->, eventsCards[] {..., image->}}`
+      )
+      .then((data) => {
+        console.log("youngAdults: ", data[0]);
+        setYoungAdultsData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
+
   // animation
   useEffect(() => {
     AOS.init(
@@ -30,10 +48,19 @@ const Young_adults = () => {
       <div className="youngadd-wrapper">
         <div className="youngadd-case">
           {/* showcase */}
-          <div className="min-group-showcase-ya">
+          <div
+            className="min-group-showcase-ya"
+            style={{
+              backgroundImage: `url(${urlFor(
+                youngAdultsData?.headerImage?.image
+              )})`,
+            }}
+          >
             <div className="min-group-case-ya">
               <div className="min-group-txt">
-                <h1 className="focus-in-contract-bck">YOUNG ADULTS</h1>
+                <h1 className="focus-in-contract-bck">
+                  {youngAdultsData?.title}
+                </h1>
                 {/* <h2 className="focus-in-contract-bck">
                   POST - COLLEGE <br></br>
                   AGE 22 - 30
@@ -55,7 +82,10 @@ const Young_adults = () => {
                     data-aos-anchor-placement="center-bottom"
                     data-aos-delay="600"
                   >
-                    <img src={yaa} alt="" />
+                    <img
+                      src={urlFor(youngAdultsData?.aboutSectionImg?.image)}
+                      alt={youngAdultsData?.aboutSectionImg?.image?.alt}
+                    />
                   </div>
                 </div>
 
@@ -65,13 +95,18 @@ const Young_adults = () => {
                   data-aos-anchor-placement="center-bottom"
                   data-aos-delay="600"
                 >
-                  <div className="ya-tt1">ABOUT HOH YOUNG ADULTS</div>
-                  <div className="ya-tt2">
-                    We are a community of young adults created by you and for
-                    you. Here, we hope you discover how to live your life with
-                    meaning, in an authentic community, for the real Jesus.
+                  <div className="ya-tt1">
+                    {youngAdultsData?.aboutSectionTitle}
                   </div>
-                  <Aboutya />
+                  <div className="ya-tt2">
+                    <PortableText
+                      blocks={youngAdultsData?.aboutSectionText}
+                      serializers={serializers}
+                    />
+                  </div>
+                  <Aboutya
+                    accordionData={youngAdultsData?.aboutSectionAccordions}
+                  />
                 </div>
               </div>
             </div>
@@ -85,24 +120,26 @@ const Young_adults = () => {
             <div className="ya-events-case">
               <div className="ya-events">
                 <div className="ya-top focus-in-contract-bck">
-                  Young Adult Events
+                  {youngAdultsData?.eventsSectionTitle}
                 </div>
 
                 <div className="ya-bot">
                   {/* card  */}
 
                   <div className="card_wrapper">
-                    <div className="card">
-                      <img src={ya1} alt="" />
-                      <div className="text">
-                        <p>MONDAY MEETING</p>
-                        <p>Join us this and every Sunday</p>
-                        {/* <Link className="linkAnima">
-                          Learn More <span className="arrow"></span>
-                        </Link> */}
+                    {youngAdultsData?.eventsCards?.map((card) => (
+                      <div key={card?._key} className="card">
+                        <img
+                          src={urlFor(card?.image?.image)}
+                          alt={card?.image?.image?.alt}
+                        />
+                        <div className="text">
+                          <p>{card?.title}</p>
+                          <p>{card?.text}</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="card">
+                    ))}
+                    {/* <div className="card">
                       <img src={comingSoon} alt="" />
                       <div className="text">
                         <p>HOH FEBRUARY GATHERING</p>
@@ -110,9 +147,6 @@ const Young_adults = () => {
                           Join us on the evening of Thursday, February 9th
                           starting at 7:00pm in the evening
                         </p>
-                        {/* <Link className="linkAnima">
-                          Learn More <span className="arrow"></span>
-                        </Link> */}
                       </div>
                     </div>
                     <div className="card">
@@ -123,11 +157,8 @@ const Young_adults = () => {
                           Join us on the evening of Thursday, February 9th
                           starting at 7:00 pm on weekends
                         </p>
-                        {/* <Link className="linkAnima">
-                          Learn More <span className="arrow"></span>
-                        </Link> */}
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* card end */}
@@ -185,7 +216,7 @@ const Young_adults = () => {
                     <div className="pod-tt2 hover_overlay">
                       <a
                         className="linkAnima"
-                        href="https://www.youtube.com/@highwayofholinesschristian7997"
+                        href={youngAdultsData?.socialLinks[0]?.url}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -196,7 +227,7 @@ const Young_adults = () => {
                     <div className="pod-tt2 hover_overlay">
                       <a
                         className="linkAnima"
-                        href="https://web.facebook.com/HighwayofHolinessUK"
+                        href={youngAdultsData?.socialLinks[1]?.url}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -207,7 +238,7 @@ const Young_adults = () => {
                     <div className="pod-tt2 hover_overlay">
                       <a
                         className="linkAnima"
-                        href="https://www.instagram.com/shift.hy/"
+                        href={youngAdultsData?.socialLinks[2]?.url}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

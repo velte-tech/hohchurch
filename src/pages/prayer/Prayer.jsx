@@ -4,26 +4,10 @@ import { MdAllInbox } from "react-icons/md";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 import sanityClient from "../../client.js";
 import PortableText from "@sanity/block-content-to-react";
+import { serializers } from "../../utils/contentSerializers";
 
 const Prayer = () => {
   const [prayerData, setPrayerData] = useState();
-
-  const serializers = {
-    types: {
-      block: (props) => {
-        const { style } = props.node;
-        //  normal: (children) => {
-        console.log("children: ", props.children);
-        if (style === "normal") {
-          if (props.children.length === 1 && props.children[0] === "") {
-            return <br />;
-          }
-          return <p>{props.children}</p>;
-        }
-      },
-      // }
-    },
-  };
 
   useEffect(() => {
     sanityClient

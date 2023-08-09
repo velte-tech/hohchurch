@@ -309,7 +309,7 @@ export const youngAdultsContent = {
             text: "Influence the world around you. And we're not talking about having thousands of followers on Instagram. Highway of Holiness young adults is a community ready to live with purpose to influence the world around us."
         },
         {
-            title: "Live in authentic community.",
+            title: "Live in an authentic community.",
             text: "There are no strangers here. Find real friends and experience a genuine community with people who aren't afraid to move past shallow conversations and grow in our faith together."
         },
         {
