@@ -286,3 +286,193 @@ export const ministriesContent = {
 export const outreachContent = {
     title: "OUTREACH",
 }
+
+export const kidsMinistryContent = {
+    title: "KIDS MINISTRY",
+    kidsShowCase1Title: "KIDS MINISTRY",
+    kidsShowCase1Text: "We want to care for and lead children through a variety of means, from diapers to discipleship. We are shaping the future generation of leaders, and we do not take this responsibility lightly. We take great pleasure in giving our kids a real encounter with God, which is accomplished via dependable, biblically - based teaching, in a friendly setting, and with a teaching staff that genuinely cares about kids and, quite obviously, the greatest at what they do.",
+    kidsShowCase2Text: "At Highway of Holiness, our Sunday School service is an opportunity for children to know more about God."
+}
+
+export const prayerContent = {
+    title: "PRAYER",
+    prayerSectionTitle: "WHEN LIFE HURTS, PRAYER HELPS!",
+}
+
+export const youngAdultsContent = {
+    title: "YOUNG ADULTS",
+    aboutSectionTitle: "ABOUT HOH YOUNG ADULTS",
+    aboutSectionText: "We are a community of young adults created by you and for you. Here, we hope you discover how to live your life with meaning, in an authentic community, for the real Jesus.",
+    aboutSectionAccordions: [
+        {
+            title: "Live with meaning.",
+            text: "Influence the world around you. And we're not talking about having thousands of followers on Instagram. Highway of Holiness young adults is a community ready to live with purpose to influence the world around us."
+        },
+        {
+            title: "Live in an authentic community.",
+            text: "There are no strangers here. Find real friends and experience a genuine community with people who aren't afraid to move past shallow conversations and grow in our faith together."
+        },
+        {
+            title: "Live for Jesus.",
+            text: "We don't shy away from the hard questions and don't think you should either. Instead, we create space for you to ask life's most meaningful questions and get to know the real Jesus in the process."
+        }
+    ],
+    eventsSectionTitle: "Young Adult Events",
+    eventsCards: [
+        {
+            title: "MONDAY MEETING",
+            text: "Join us this and every Sunday"
+        },
+        {
+            title: "HOH FEBRUARY GATHERING",
+            text: "Join us on the evening of Thursday, February 9th starting at 7:00pm in the evening"
+        },
+        {
+            title: "HOH MARCH GATHERING",
+            text: "Join us on the evening of Thursday, February 9th starting at 7:00 pm on weekends"
+        }
+    ]
+}
+
+export const messagePageContent = {
+    title: "LATEST MESSAGE",
+    subtitle: "THE MOUNTAIN OF EDUCATION",
+    messagePageCards: [
+        {
+            title: "The Mountain of Education ",
+            subtitle: " Rev. Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "BWDPWx6DNqM",
+            },
+        },
+        {
+            title: "What is Sanctification",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "JqvJlt-4gQk",
+            },
+        },
+        {
+            title: "Living By What is Written",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "PYbTDJT49nc",
+            },
+        },
+        {
+            title: "Obligation of A Desciple 1",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "WBLse_DpKVY",
+            },
+        },
+        {
+            title: "Obligation of A Desciple 2",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: { youtubeId: "HeAOov1SU5s" },
+        },
+        {
+            title: " Friendship and Hospitality",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "_Z_blghV9uk",
+            },
+        },
+        {
+            title: "Seeds Sown In The Heart",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "dlVNheswTYI",
+            },
+        },
+        {
+            title: "The Messenger's Attitude",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "zXZylyT1ujU",
+            },
+        },
+        {
+            title: "The Messenger's Message",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: { youtubeId: "zjeQDqbVSD0" },
+        },
+        {
+            title: "The Value Of Winning A soul",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "NAg3fUq66-o",
+            },
+        },
+        {
+            title: "OTobiah In The Temple",
+            subtitle: " Pastor Roland Owusu-Mensah",
+            messageLink: {
+                youtubeId: "u4dUa9NXDjk",
+            },
+        },
+        {
+            title: "The Issue of Self Image",
+            subtitle: " Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "nLOAwtJiLlE",
+            },
+        },
+        {
+            title: "Maintain Your Strength",
+            subtitle: " Pastor Roland-Mensah",
+            messageLink: {
+                youtubeId: "GJQW8DwJ43Y",
+            },
+        },
+        {
+            title: "Step Up",
+            subtitle: " Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "T0pJyQRzU2s",
+            },
+        },
+        {
+            title: "Relationship With God",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "OgfLHU4LWM0",
+            },
+        },
+        {
+            title: "The Resurrected Jesus",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "kqz3rblF4tw",
+            },
+        },
+        {
+            title: "Be Fruitful",
+            subtitle: "Pastor Roland-Mensah",
+            messageLink: {
+                youtubeId: "9nxRS0I0pkI",
+            },
+        },
+        {
+            title: "Unsung Heroes 1",
+            subtitle: "Pastor Dorcas Gyasi",
+            messageLink: {
+                youtubeId: "",
+            },
+        },
+        {
+            title: "Unsung Heroes 2",
+            subtitle: "Pastor Dorcas Gyasi",
+            messageLink: {
+                youtubeId: "C86J9ljfuN8",
+            },
+        },
+        {
+            title: "The Change of the Heart",
+            subtitle: "Pastor Alex Gyasi MBE",
+            messageLink: {
+                youtubeId: "oWBEoBjqdrQ",
+            },
+        },
+    ]
+}

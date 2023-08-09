@@ -1,12 +1,14 @@
 import { AiOutlineHome } from "react-icons/ai";
 import { HiOutlineInformationCircle, HiOutlineUsers, HiOutlineDocumentDuplicate } from "react-icons/hi"
 import { FcManager } from "react-icons/fc"
-import { PiCrossBold } from "react-icons/pi"
+import { PiCrossBold, PiHandsPraying } from "react-icons/pi"
 import { MdOutlineChildCare } from "react-icons/md"
 import { IoManOutline } from "react-icons/io5"
 import { BsCalendarDay } from "react-icons/bs"
 import { MdGroup, MdOutlineHomeRepairService } from "react-icons/md"
 import { IoIosHelpBuoy } from "react-icons/io"
+import { TbMoodKid } from "react-icons/tb"
+import { BiBible } from "react-icons/bi"
 
 export const deskStructure = (S) =>
     S.list()
@@ -111,6 +113,42 @@ export const deskStructure = (S) =>
                         .documentId('outreach')
                 ),
 
+            S.listItem()
+                .title('Kids Ministry Page')
+                .icon(TbMoodKid)
+                .child(
+                    S.editor()
+                        .schemaType('kidsMinistry')
+                        .documentId('kidsMinistry')
+                ),
+
+            S.listItem()
+                .title('Prayer Page')
+                .icon(PiHandsPraying)
+                .child(
+                    S.editor()
+                        .schemaType('prayerPage')
+                        .documentId('prayerPage')
+                ),
+
+            S.listItem()
+                .title('Young Adults Page')
+                .icon(() => '👩🏽‍🦱')
+                .child(
+                    S.editor()
+                        .schemaType('youngAdults')
+                        .documentId('youngAdults')
+                ),
+
+            S.listItem()
+                .title('Messages Page')
+                .icon(BiBible)
+                .child(
+                    S.editor()
+                        .schemaType('messagePage')
+                        .documentId('messagePage')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -118,7 +156,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach", "kidsMinistry", "prayerPage", "youngAdults"
                     ].includes(listItem.getId())
             ),
         ]);

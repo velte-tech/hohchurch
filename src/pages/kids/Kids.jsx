@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Kids.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
@@ -7,8 +7,24 @@ import sem111 from "../../assets/images/x5.jpeg";
 import kids from "../../assets/images/kidii.jpg";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
 // import Kids_campus from '../../components/kids_campus/Kids_campus';
+import { urlFor } from "../../utils/urlFor";
+import sanityClient from "../../client.js";
 
 const Kids = () => {
+  const [kidsData, setKidsData] = useState();
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "kidsMinistry"]{..., headerImage->, kidsShowCase1Img->, kidsShowCase2Img->}`
+      )
+      .then((data) => {
+        console.log("kids:", data[0]);
+        setKidsData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
+
   useEffect(() => {
     AOS.init(
       {
@@ -24,10 +40,15 @@ const Kids = () => {
       <div id="min-group-wrapper">
         <div className="min-group">
           {/* showcase */}
-          <div className="min-group-showcase">
+          <div
+            className="min-group-showcase"
+            style={{
+              backgroundImage: `url(${urlFor(kidsData?.headerImage?.image)})`,
+            }}
+          >
             <div className="min-group-case">
               <div className="min-group-txt">
-                <h1 className="focus-in-contract-bck">KIDS MINISTRY</h1>
+                <h1 className="focus-in-contract-bck">{kidsData?.title}</h1>
                 {/* <h2 className="focus-in-contract-bck">BIRTH - FIFTH GRADE</h2> */}
               </div>
             </div>
@@ -41,8 +62,8 @@ const Kids = () => {
               <div className="min-dir">
                 <div className="mindir-a">
                   <img
-                    src={sem111}
-                    alt="sem111"
+                    src={urlFor(kidsData?.kidsShowCase1Img?.image)}
+                    alt={kidsData?.kidsShowCase1Img?.image?.alt}
                     data-aos="fade-right"
                     data-aos-anchor-placement="center-bottom"
                     data-aos-delay="600"
@@ -55,18 +76,8 @@ const Kids = () => {
                   data-aos-anchor-placement="center-bottom"
                   data-aos-delay="600"
                 >
-                  <div className="dir-a">KIDS MINISTRY</div>
-                  <div className="dir-b">
-                    We want to care for and lead children through a variety of
-                    means, from diapers to discipleship. We are shaping the
-                    future generation of leaders, and we do not take this
-                    responsibility lightly. We take great pleasure in giving our
-                    kids a real encounter with God, which is accomplished via
-                    dependable, biblically - based teaching, in a friendly
-                    setting, and with a teaching staff that genuinely cares
-                    about kids and, quite obviously, the greatest at what they
-                    do.
-                  </div>
+                  <div className="dir-a">{kidsData?.kidsShowCase1Title}</div>
+                  <div className="dir-b">{kidsData?.kidsShowCase1Text}</div>
                   <div className="dir-c">
                     <Link className="linkAnima" to="/contact">
                       Contact <span className="arrow"></span>
@@ -303,7 +314,10 @@ const Kids = () => {
                     data-aos-anchor-placement="center-bottom"
                     data-aos-delay="600"
                   >
-                    <img src={kids} alt="" />
+                    <img
+                      src={urlFor(kidsData?.kidsShowCase2Img?.image)}
+                      alt={kidsData?.kidsShowCase2Img?.image?.alt}
+                    />
                   </div>
 
                   <div
@@ -318,8 +332,7 @@ const Kids = () => {
                       February 18, 2023 | Lafayette
                     </div> */}
                       <div className="sem-c-txt-3">
-                        At Highway of Holiness, our Sunday School service is an
-                        opportunity for children to know more about God.
+                        {kidsData?.kidsShowCase2Text}
                       </div>
                       {/* <div className="sem-c-txt-4">
                         <Link to="/ministries" className="linkAnima">

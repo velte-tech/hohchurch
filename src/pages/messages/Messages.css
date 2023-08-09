@@ -9,8 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("../../assets//images/message.jpg") no-repeat center
-    center/cover;
+  background: no-repeat center center/cover;
 }
 
 #message_showcase .showcase_wrapper::before {
@@ -77,7 +76,7 @@
   border-bottom: 1px solid #f4f4f4;
 }
 
-#message_messages .messages_wrapper .search input:focus ~ span {
+#message_messages .messages_wrapper .search input:focus~span {
   display: none;
 }
 

@@ -1,37 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Prayer.css";
 import { MdAllInbox } from "react-icons/md";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import sanityClient from "../../client.js";
+import PortableText from "@sanity/block-content-to-react";
+import { serializers } from "../../utils/contentSerializers";
 
 const Prayer = () => {
+  const [prayerData, setPrayerData] = useState();
+
+  useEffect(() => {
+    sanityClient
+      .fetch(`*[_type == "prayerPage"]`)
+      .then((data) => {
+        console.log("prayer: ", data[0]);
+        setPrayerData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
+
   return (
     <div id="prayer-wrapper">
       <div className="prayer-case">
         <div className="prayer-show">
           <div className="pray-left">
-            <div className="pl-txt focus-in-contract-bck">PRAYER</div>
+            <div className="pl-txt focus-in-contract-bck">
+              {prayerData?.title}
+            </div>
           </div>
 
           <div className="pray-right">
             <div className="pr">
               <div className="pr-1">
                 <div className="pr1-tt1 focus-in-contract-bck">
-                  WHEN LIFE HURTS, PRAYER HELPS!
+                  {prayerData?.prayerSectionTitle}
                 </div>
                 <div className="pr1-tt2">
-                  You are not alone in your situation! The Highway Of Holiness
-                  Church Prayer Team exists to call on God for those in need.
-                  Please share your requests with us so that we can stand
-                  alongside you in prayer. If you need some additional support,
-                  let us know so that we can help you get connected with others
-                  at ighway Of Holiness Church that understand your struggle and
-                  can offer hope. Leave your contact info in the request if you
-                  need us to contact you.
+                  <PortableText
+                    blocks={prayerData?.prayerSectionText}
+                    serializers={serializers}
+                  />
                 </div>
-                <div className="pr1-tt3">
+                {/* <div className="pr1-tt3">
                   When Life Hurts…Prayer Helps! If you need prayer, please
                   submit the prayer request form on this page.
-                </div>
+                </div> */}
               </div>
 
               <div className="pr-2">
