@@ -37,7 +37,7 @@ const Messages = () => {
         <div className="messages_wrapper">
           {/* ======= FILTER ======= */}
           <div className="filter">{/* <FilterMsg /> */}</div>
-          <MsgPagination />
+          <MsgPagination messageCards={messagesData?.messagePageCards} />
         </div>
       </section>
       <ScrollToTop />

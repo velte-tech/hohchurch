@@ -156,7 +156,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach", "kidsMinistry", "prayerPage", "youngAdults"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach", "kidsMinistry", "prayerPage", "youngAdults", "messagePage"
                     ].includes(listItem.getId())
             ),
         ]);

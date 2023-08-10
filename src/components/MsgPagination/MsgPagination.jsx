@@ -1,28 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
 import { CgSearchLoading } from "react-icons/cg";
 import "./msgPagination.css";
-import { items } from "./Data";
+// import { items } from "./Data";
+import { urlFor } from "../../utils/urlFor";
 
-function MsgPagination() {
+function MsgPagination({ messageCards }) {
   //   const handlePageClick = (event) => {
   //     console.log(event.selected);
   //   };
+  const itemsPerPage = 9;
+
+  const [items, setItems] = useState([]);
+  const [currentItems, setCurrentItems] = useState();
+  const [pageCount, setPageCount] = useState(
+    Math.ceil(items?.length / itemsPerPage)
+  );
 
   const [itemOffset, setItemOffset] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
 
-  const itemsPerPage = 9;
-
   const endOffset = itemOffset + itemsPerPage;
-  const currentItems = items.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(items.length / itemsPerPage);
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
     setItemOffset(newOffset);
   };
+
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  useEffect(() => {
+    console.log("messageCards", messageCards);
+    setItems(messageCards);
+  }, [messageCards]);
+
+  useEffect(() => {
+    setCurrentItems(items?.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(items?.length / itemsPerPage));
+  }, [items, itemOffset, endOffset]);
 
   return (
     <>
@@ -31,7 +49,7 @@ function MsgPagination() {
           <input
             type="text"
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={(e) => handleSearch(e)}
           />
           <span>Search</span>
           <CgSearchLoading className="search_icon" />
@@ -39,15 +57,18 @@ function MsgPagination() {
         <div className="message_card">
           {items &&
             currentItems
-              .filter((speaker) =>
-                speaker.names.toLowerCase().includes(searchQuery.toLowerCase())
+              ?.filter((speaker) =>
+                speaker?.title.toLowerCase().includes(searchQuery.toLowerCase())
               )
               .map((item) => (
-                <Link to={`/message/${item.id}`} key={item.id}>
-                  <img src={item.image} alt="" />
+                <Link to={`/message/${item._key}`} key={item._key}>
+                  <img
+                    src={urlFor(item?.image?.image)}
+                    alt={item?.image?.image?.alt}
+                  />
                   <div className="bottom">
                     <p>{item.title}</p>
-                    <p>{item.names}</p>
+                    <p>{item.subtitle}</p>
                   </div>
                 </Link>
               ))}
