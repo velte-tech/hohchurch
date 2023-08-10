@@ -1,47 +1,67 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./contact.css";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import { urlFor } from "../../utils/urlFor";
+import sanityClient from "../../client";
 
 function Contact() {
+  const [contactData, setContactData] = useState();
+
+  useEffect(() => {
+    sanityClient
+      .fetch(`*[_type == "contact"]{..., headerImage->, bannerImage->}`)
+      .then((data) => {
+        console.log("contactData: ", data[0]);
+        setContactData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
+
   return (
     <div>
-      <section id="contact_showcase">
+      <section
+        id="contact_showcase"
+        style={{
+          backgroundImage: `url(${urlFor(contactData?.headerImage?.image)})`,
+        }}
+      >
         <div className="showcase_wrapper text_center">
-          <h2>CONTACT US</h2>
+          <h2>{contactData?.title}</h2>
         </div>
       </section>
 
       <section id="contact_address">
         <div className="contact_wrapper">
           <div className="card">
-            <p>Unit 8, 2-8 Fountayne Rd, London N15 4QL, United Kingdom</p>
+            <p>{contactData?.address}</p>
             {/* <p>Office Hours | M-TH, 10:00 AM – 4:00 PM</p> */}
-            <p>Phone | +442088084444</p>
+            <p>Phone | {contactData?.phone}</p>
 
             <p>
               Email |{" "}
-              <a href="mailto:Info@hohcenter.com" className="hover_overlay">
-                Info@hohcentre.co.uk
+              <a
+                href={`mailto:${contactData?.email}`}
+                className="hover_overlay"
+              >
+                {contactData?.email}
               </a>
             </p>
           </div>
         </div>
       </section>
 
-      <section id="contact_prayer">
+      <section
+        id="contact_prayer"
+        style={{
+          backgroundImage: `url(${urlFor(contactData?.bannerImage?.image)})`,
+        }}
+      >
         <div className="prayer_section container text_center">
-          <h2>WHEN LIFE HURTS, PRAYER HELPS!</h2>
-          <p>
-            You are not alone in your situation! The Highway Of Holiness Church
-            Prayer Team exists to call on God for those in need. Please share
-            your requests with us so we can stand alongside you in prayer. If
-            you need some additional support, let us know so that we can help
-            you get connected with others at Highway of Holiness Church who
-            understand your struggle and can offer hope.
-          </p>
+          <h2>{contactData?.bannerTitle}</h2>
+          <p>{contactData?.bannerText}</p>
           <Link to="/prayer" className="btn">
-            SUBMIT A PRAYR REQUEST
+            {contactData?.bannerButtonText}
           </Link>
         </div>
       </section>
@@ -56,7 +76,7 @@ function Contact() {
           >
             <ul>
               <li>
-                <label for="first_name">
+                <label htmlFor="first_name">
                   Name <span className="start_sign">*</span>
                 </label>
                 <div className="name_input">
@@ -67,11 +87,11 @@ function Contact() {
                       type="text"
                       required
                     />
-                    <label for="first_name">First</label>
+                    <label htmlFor="first_name">First</label>
                   </span>
                   <span>
                     <input name="last_name" id="fiel_4" type="text" required />
-                    <label for="last_name">Last</label>
+                    <label htmlFor="last_name">Last</label>
                   </span>
                 </div>
               </li>
@@ -79,7 +99,7 @@ function Contact() {
               <li>
                 <div className="email_input">
                   <span>
-                    <label for="email">
+                    <label htmlFor="email">
                       Email <span className="start_sign">*</span>
                     </label>
                     <div>
@@ -87,7 +107,7 @@ function Contact() {
                     </div>
                   </span>
                   <span>
-                    <label for="tel">Mobile number</label>
+                    <label htmlFor="tel">Mobile number</label>
                     <div>
                       <input name="tel" id="tel" type="number" />
                     </div>
@@ -96,7 +116,7 @@ function Contact() {
               </li>
 
               <li>
-                <label for="comments">Comments and Questions</label>
+                <label htmlFor="comments">Comments and Questions</label>
                 <div>
                   <textarea
                     name="comments"

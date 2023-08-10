@@ -1,8 +1,7 @@
 #contact_showcase {
   position: relative;
   height: 30rem;
-  background: url("../../assets/images/contact2.jpg") no-repeat center
-    center/cover;
+  background: no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,8 +68,7 @@
 
 /* ======= CONTACT_PRAYER SECTION ======= */
 #contact_prayer {
-  background: url("../../assets/images/prayer.jpg") no-repeat center
-    center/cover;
+  background: no-repeat center center/cover;
   background-attachment: fixed;
   position: relative;
   min-height: 300px;
@@ -210,6 +208,7 @@
   -moz-appearance: textfield;
   appearance: textfield;
 }
+
 /* #contact_form .form_wrapper input[type="checkbox"] {
 
 } */

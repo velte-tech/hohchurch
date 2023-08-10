@@ -31,6 +31,7 @@ import youngAboutAccordion from './ministries/youngAboutAccordion'
 import messagePage from './messagePage'
 import messagePageCard from './messagePageCard'
 import outreachDetail from './outreachDetail'
+import contact from './contact'
 
 export const schemaTypes = [
     home,
@@ -62,5 +63,6 @@ export const schemaTypes = [
     messagePage,
     messagePageCard,
     outreachDetail,
+    contact,
     blockContent
 ]
