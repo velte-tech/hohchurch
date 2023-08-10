@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles.css";
 import "./Donate.css";
 import { bankCards, donateSticker, supportImg } from "../../assets/images";
 import { donateContent } from "../../constants/data";
 import ScrollToTop from "../../components/ScrollToTop/ScrollTopTop";
+import sanityClient from "../../client.js";
 
 const Donate = () => {
+  const [donateData, setDonateData] = useState();
+
+  useEffect(() => {
+    sanityClient
+      .fetch(`*[_type == "donate"]`)
+      .then((data) => {
+        console.log("donate data", data[0]);
+        setDonateData(data[0]);
+      })
+      .catch(console.error);
+  }, []);
+
   return (
     <>
       {/* Support a cause */}
@@ -26,7 +39,7 @@ const Donate = () => {
                 <h1 className="supportText text-center">Support a cause</h1>
               </div>
               <div className="px-lg-5 supportMargin">
-                <p>{donateContent.supportText}</p>
+                <p>{donateData?.supportText}</p>
               </div>
             </div>
           </div>
@@ -44,7 +57,7 @@ const Donate = () => {
                 </h2>
 
                 <ul className="methodList">
-                  {donateContent.paymentMethodList.map((method, index) => (
+                  {donateData?.paymentMethodList.map((method, index) => (
                     <li key={"payM#" + index}>
                       <span className="ml-3 ml-lg-0">{method}</span>
                     </li>
@@ -73,24 +86,24 @@ const Donate = () => {
               <div className="card h-100 bank position-relative">
                 <img
                   loading="lazy"
-                  src={donateContent.methods[0].icon}
+                  src={donateContent?.methods[0].icon}
                   className="donateIcon"
                 />
 
                 {/* header */}
                 <div className="card-header text-center">
                   <h2 className="card-title pt-5">
-                    {donateContent.methods[0].title}
+                    {donateData?.methods[0].title}
                   </h2>
                   <p className="card-text px-lg-3">
-                    {donateContent.methods[0].description}
+                    {donateData?.methods[0].description}
                   </p>
                 </div>
 
                 {/* body */}
                 <div className="card-body pb-2">
                   <ul>
-                    {donateContent.methods[0].steps.map((step, index) => (
+                    {donateData?.methods[0].steps.map((step, index) => (
                       <li key={"step#" + index}>
                         <span className="ml-3">{step}</span>
                       </li>
@@ -105,24 +118,24 @@ const Donate = () => {
               <div className="card h-100 bank position-relative">
                 <img
                   loading="lazy"
-                  src={donateContent.methods[1].icon}
+                  src={donateContent?.methods[1].icon}
                   className="donateIcon"
                 />
 
                 {/* header */}
                 <div className="card-header text-center">
                   <h2 className="card-title pt-5 cheque">
-                    {donateContent.methods[1].title}
+                    {donateData?.methods[1].title}
                   </h2>
                   <p className="card-text px-lg-3">
-                    {donateContent.methods[1].description}
+                    {donateData?.methods[1].description}
                   </p>
                 </div>
 
                 {/* body */}
                 <div className="card-body pb-2">
                   <ul>
-                    {donateContent.methods[1].steps.map((step, index) => (
+                    {donateData?.methods[1].steps.map((step, index) => (
                       <li key={"step#" + index}>
                         <span className="ml-3">{step}</span>
                       </li>
@@ -137,18 +150,18 @@ const Donate = () => {
               <div className="card h-100 bank position-relative">
                 <img
                   loading="lazy"
-                  src={donateContent.methods[2].icon}
+                  src={donateContent?.methods[2].icon}
                   className="donateIcon"
                 />
 
                 {/* header */}
                 <div className="card-header text-center">
                   <h2 className="card-title pt-5 emailMoney">
-                    {donateContent.methods[2].title}{" "}
+                    {donateData?.methods[2].title}{" "}
                     {/* <span>info@hohcentre.co.uk</span> */}
                   </h2>
                   <p className="card-text px-lg-3">
-                    {donateContent.methods[2].description}
+                    {donateData?.methods[2].description}
                   </p>
                 </div>
 
@@ -166,7 +179,7 @@ const Donate = () => {
                 {/* body */}
                 <div className="card-body pb-2">
                   <ul>
-                    {donateContent.methods[2].steps.map((step, index) => (
+                    {donateData?.methods[2].steps.map((step, index) => (
                       <li key={"step#" + index}>
                         <span className="ml-3">{step}</span>
                       </li>
@@ -181,17 +194,17 @@ const Donate = () => {
               <div className="card h-100 bank position-relative">
                 <img
                   loading="lazy"
-                  src={donateContent.methods[3].icon}
+                  src={donateContent?.methods[3].icon}
                   className="donateIcon"
                 />
 
                 {/* header */}
                 <div className="card-header text-center">
                   <h2 className="card-title pt-5 other">
-                    {donateContent.methods[3].title}
+                    {donateData?.methods[3].title}
                   </h2>
                   <p className="card-text px-lg-2">
-                    {donateContent.methods[3].description}
+                    {donateData?.methods[3].description}
                   </p>
                 </div>
 
@@ -209,7 +222,7 @@ const Donate = () => {
                 {/* body */}
                 <div className="card-body pb-2">
                   <ul>
-                    {donateContent.methods[3].steps.map((step, index) => (
+                    {donateData?.methods[3].steps.map((step, index) => (
                       <li key={"step#" + index}>
                         <span className="ml-3">{step}</span>
                       </li>
