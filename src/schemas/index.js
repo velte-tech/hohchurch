@@ -32,6 +32,7 @@ import messagePage from './messagePage'
 import messagePageCard from './messagePageCard'
 import outreachDetail from './outreachDetail'
 import contact from './contact'
+import donate from './donate'
 
 export const schemaTypes = [
     home,
@@ -64,5 +65,6 @@ export const schemaTypes = [
     messagePageCard,
     outreachDetail,
     contact,
+    donate,
     blockContent
 ]
