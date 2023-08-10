@@ -51,16 +51,6 @@ function OutreachDetail() {
             blocks={detailData?.the21CenturyText}
             serializers={serializers}
           />
-          {/* <ul>
-            <li>
-              Developing cutting edge skills for Christian Children for the 21st
-              century.
-            </li>
-            <li>
-              Train up the child the way they should go - Proverbs 22:6; Hebrews
-              12:11.
-            </li>
-          </ul> */}
         </div>
       </section>
       <section id="outreach_detail_shift" className="outreach_section">
@@ -70,29 +60,6 @@ function OutreachDetail() {
             blocks={detailData?.shiftText}
             serializers={serializers}
           />
-          {/* <p>Connect with us on our social platforms</p>
-          <p>
-            Twitter -{" "}
-            <a
-              className="outreach_detail_social"
-              href="https://twitter.com/shift_hy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @shift_hy
-            </a>
-          </p>
-          <p>
-            IG -{" "}
-            <a
-              className="outreach_detail_social"
-              href="https://www.instagram.com/shift.hy/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @shift.hy
-            </a>
-          </p> */}
         </div>
       </section>
 

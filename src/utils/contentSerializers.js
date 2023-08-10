@@ -1,30 +1,31 @@
 export const serializers = {
     types: {
         block: (props) => {
-            const { style, markDefs } = props.node;
-            console.log("markDefs", markDefs);
+            const { style } = props.node;
 
             if (style === "normal") {
-                if (markDefs.length !== 0) {
-                    return (
-                        <>{props.children}</>
-                    )
-                }
                 if (props.children.length === 1 && props.children[0] === "") {
                     return <br />;
                 }
                 return <p>{props.children}</p>;
             }
 
-        },
-        link: ({ mark, children }) => {
-            const { href } = mark;
-            console.log("mark", children);
-            return (
-                <a href={href} target="_blank" style={{ color: 'red !important' }}>
-                    {children}
-                </a>
-            );
         }
     },
+    marks: {
+        link: ({ mark, children }) => {
+
+            if (window.location.href.includes("outreach_detail")) {
+                return (
+                    <a href={mark.href} target="_blank"
+                        rel="noopener noreferrer" className="outreach_detail_social">
+                        {children}
+                    </a>
+                )
+            }
+            return (
+                <a href={mark.href} target="_blank" style={{ color: 'red', textDecoration: "underline" }} rel="noopener noreferrer">{children}</a>
+            )
+        }
+    }
 };
