@@ -489,3 +489,13 @@ export const outreachDetailsContent = {
     kcaTitle: "Kingdom Culture Alliance",
     affiliatesTitle: "Affiliated Churches/Mission Support",
 }
+
+export const contactPageContent = {
+    title: "CONTACT US",
+    address: "Unit 8, 2-8 Fountayne Rd, London N15 4QL, United Kingdom",
+    phone: "+442088084444",
+    email: "Info@hohcentre.co.uk",
+    bannerTitle: "WHEN LIFE HURTS, PRAYER HELPS!",
+    bannerText: "You are not alone in your situation! The Highway Of Holiness Church Prayer Team exists to call on God for those in need. Please share your requests with us so we can stand alongside you in prayer. If you need some additional support, let us know so that we can help you get connected with others at Highway of Holiness Church who understand your struggle and can offer hope.",
+    bannerButtonText: "SUBMIT A PRAYR REQUEST"
+}
