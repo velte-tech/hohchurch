@@ -8,7 +8,7 @@ import { BsCalendarDay } from "react-icons/bs"
 import { MdGroup, MdOutlineHomeRepairService } from "react-icons/md"
 import { IoIosHelpBuoy } from "react-icons/io"
 import { TbMoodKid } from "react-icons/tb"
-import { BiBible } from "react-icons/bi"
+import { BiBible, BiDetail } from "react-icons/bi"
 
 export const deskStructure = (S) =>
     S.list()
@@ -149,6 +149,15 @@ export const deskStructure = (S) =>
                         .documentId('messagePage')
                 ),
 
+            S.listItem()
+                .title('Outreach Detail Page')
+                .icon(BiDetail)
+                .child(
+                    S.editor()
+                        .schemaType('outreachDetail')
+                        .documentId('outreachDetail')
+                ),
+
             // Add a visual divider (optional)
             S.divider(),
 
@@ -156,7 +165,7 @@ export const deskStructure = (S) =>
             ...S.documentTypeListItems().filter(
                 (listItem) =>
                     ![
-                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach", "kidsMinistry", "prayerPage", "youngAdults", "messagePage"
+                        "home", "iamnew", "leadership", "about", "easterPage", "youthRetreat", "adultRetreat", "weeklyProgrammes", "groupsPage", "ministries", "outreach", "kidsMinistry", "prayerPage", "youngAdults", "messagePage", "outreachDetail"
                     ].includes(listItem.getId())
             ),
         ]);

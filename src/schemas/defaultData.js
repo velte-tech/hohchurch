@@ -476,3 +476,16 @@ export const messagePageContent = {
         },
     ]
 }
+
+export const outreachDetailsContent = {
+    localCommunityTitle: "LOCAL COMMUNITY MISSIONS",
+    highwayHouseTitle: "Highway House",
+    highwayYouthClubTitle: "Highway Youth Club",
+    the21CenturyTitle: "21st Century Education",
+    shiftTitle: "SHIFT",
+    globalMissionsTitle: "GLOBAL MISSIONS",
+    klmTitle: "KLM",
+    hohPakistanTitle: "Highway of Holiness – Pakistan",
+    kcaTitle: "Kingdom Culture Alliance",
+    affiliatesTitle: "Affiliated Churches/Mission Support",
+}
