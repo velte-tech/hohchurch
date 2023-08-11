@@ -30,6 +30,9 @@ import youngEventsCard from './ministries/youngEventsCard'
 import youngAboutAccordion from './ministries/youngAboutAccordion'
 import messagePage from './messagePage'
 import messagePageCard from './messagePageCard'
+import outreachDetail from './outreachDetail'
+import contact from './contact'
+import donate from './donate'
 
 export const schemaTypes = [
     home,
@@ -60,5 +63,8 @@ export const schemaTypes = [
     youngAboutAccordion,
     messagePage,
     messagePageCard,
+    outreachDetail,
+    contact,
+    donate,
     blockContent
 ]
