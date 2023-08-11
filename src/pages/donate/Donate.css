@@ -153,6 +153,14 @@ ul.methodList li,
     height: 40%;
 }
 
+.btn.btn-paypal {
+    padding: 0.75rem 6rem !important;
+}
+
+ul.ul-paypal {
+    padding: 0 7rem !important;
+}
+
 @media (max-width: 1200px) {
     .supportImg.img-fluid {
         width: 11%;
