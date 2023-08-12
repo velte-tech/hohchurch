@@ -146,7 +146,7 @@ const Donate = () => {
             </div>
 
             {/* email money card */}
-            <div className="col-lg-6 col-12">
+            <div className=" col-12">
               <div className="card h-100 bank position-relative">
                 <img
                   loading="lazy"
@@ -158,7 +158,7 @@ const Donate = () => {
                 <div className="card-header text-center">
                   <h2 className="card-title pt-5 emailMoney">
                     {donateData?.methods[2].title}{" "}
-                    {/* <span>info@hohcentre.co.uk</span> */}
+                    <p>(with your PayPal account or your Credit/Debit Card)</p>
                   </h2>
                   <p className="card-text px-lg-3">
                     {donateData?.methods[2].description}
@@ -167,7 +167,7 @@ const Donate = () => {
 
                 <div className="d-flex justify-content-center">
                   <a
-                    className="btn"
+                    className="btn btn-paypal"
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=L5USDDJ9JLKZJ"
@@ -178,7 +178,7 @@ const Donate = () => {
 
                 {/* body */}
                 <div className="card-body pb-2">
-                  <ul>
+                  <ul className="ul-paypal">
                     {donateData?.methods[2].steps.map((step, index) => (
                       <li key={"step#" + index}>
                         <span className="ml-3">{step}</span>
@@ -190,7 +190,7 @@ const Donate = () => {
             </div>
 
             {/* other payment methods */}
-            <div className="col-lg-6 col-12">
+            {/* <div className="col-lg-6 col-12">
               <div className="card h-100 bank position-relative">
                 <img
                   loading="lazy"
@@ -198,7 +198,6 @@ const Donate = () => {
                   className="donateIcon"
                 />
 
-                {/* header */}
                 <div className="card-header text-center">
                   <h2 className="card-title pt-5 other">
                     {donateData?.methods[3].title}
@@ -219,7 +218,6 @@ const Donate = () => {
                   </a>
                 </div>
 
-                {/* body */}
                 <div className="card-body pb-2">
                   <ul>
                     {donateData?.methods[3].steps.map((step, index) => (
@@ -234,7 +232,7 @@ const Donate = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
